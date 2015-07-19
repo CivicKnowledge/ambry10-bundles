@@ -1,0 +1,42 @@
+about:
+    access: restricted
+    footnote: null
+    grain: null
+    groups: null
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: California
+    subject: null
+    summary: null
+    tags: []
+    time: null
+    title: null
+contacts:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+dependencies: {}
+external_documentation:
+    dataset:
+        description: IQI Dataset Page
+        source: null
+        title: IQI Dataset Page
+        url: http://example.com
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity: {}
+names: {}
+requirements:
+    gdata: gdata
+    gspread: gspread
+    oauth2client: oauth2client
+    OpenSSL: PyOpenSSL
+    
+versions: {}
+
