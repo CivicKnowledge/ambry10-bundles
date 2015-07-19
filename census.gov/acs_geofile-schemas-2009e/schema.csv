@@ -1,0 +1,8 @@
+table,seq,column,is_pk,is_fk,id,type,derivedfrom,description
+geofile_schema,0,id,1,,t5hO5dUag201,INTEGER,,
+geofile_schema,1,seq,,,c5hO5dUag201001,INTEGER,seq,
+geofile_schema,2,name,,,c5hO5dUag201002,VARCHAR,name,
+geofile_schema,3,description,,,c5hO5dUag201003,VARCHAR,description,
+geofile_schema,4,width,,,c5hO5dUag201004,INTEGER,width,
+geofile_schema,5,start,,,c5hO5dUag201005,INTEGER,start,
+geofile_schema,6,geolevels,,,c5hO5dUag201006,VARCHAR,geolevels,
