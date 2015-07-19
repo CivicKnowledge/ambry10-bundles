@@ -1,0 +1,41 @@
+about:
+    access: restricted
+    footnote: null
+    grain: null
+    groups: null
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: California
+    subject: null
+    summary: null
+    tags: []
+    time: null
+    title: null
+contacts:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+dependencies: {}
+external_documentation: {}
+identity:
+    btime: 2009e
+    dataset: acs
+    id: d04s
+    revision: 1
+    source: census.gov
+    subset: geo
+    version: 0.0.1
+names:
+    fqname: census.gov-acs-geo-2009e-0.0.1~d5hO5dUag2001
+    name: census.gov-acs-geo-2009e
+    vid: d5hO5dUag2001
+    vname: census.gov-acs-geo-2009e-0.0.1
+requirements:
+    OpenSSL: PyOpenSSL
+    gdata: gdata
+    gspread: gspread
+    oauth2client: oauth2client
+versions: {}
