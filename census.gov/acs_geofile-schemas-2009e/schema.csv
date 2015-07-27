@@ -1,36 +1,36 @@
-"table","seq","column","is_pk","is_fk","id","type","derivedfrom","description"
-"table_shells",0,"id",1,,"t04s01","INTEGER",,"ACS Table Shells"
-"table_shells",1,"table_id",,,"c04s01001","VARCHAR","table_id",
-"table_shells",2,"line",,,"c04s01002","REAL","line",
-"table_shells",3,"unique_id",,,"c04s01003","VARCHAR","unique_id",
-"table_shells",4,"stub",,,"c04s01004","VARCHAR","stub",
-"table_shells",5,"release",,,"c04s01005","INTEGER","release",
-"table_shells",6,"year",,,"c04s01006","INTEGER","year",
-"table_shells",7,"order",,,"c04s01009","REAL","order",
-"table_shells",8,"type",,,"c04s0100a","VARCHAR","type",
-"table_shells",9,"indent",,,"c04s0100b","INTEGER","indent",
-,,,,,,,,
-"table_sequence",0,"id",1,,"t04s02","INTEGER",,"Table sequence and segment numbers"
-"table_sequence",1,"fileid",,,"c04s02001","VARCHAR","fileid",
-"table_sequence",2,"table_id",,,"c04s02002","VARCHAR","table_id",
-"table_sequence",3,"sequence_number",,,"c04s02003","INTEGER","sequence_number",
-"table_sequence",4,"line",,,"c04s02004","REAL","line",
-"table_sequence",5,"start_position",,,"c04s02005","VARCHAR","start_position",
-"table_sequence",6,"total_cells_in_table",,,"c04s02006","VARCHAR","total_cells_in_table",
-"table_sequence",7,"total_cells_in_sequence",,,"c04s02007","VARCHAR","total_cells_in_sequence",
-"table_sequence",8,"table_title",,,"c04s02008","VARCHAR","table_title",
-"table_sequence",9,"subject_area",,,"c04s02009","VARCHAR","subject_area",
-"table_sequence",10,"release",,,"c04s0200a","INTEGER","release",
-"table_sequence",11,"year",,,"c04s0200b","INTEGER","year",
-"table_sequence",12,"file_id",,,"c04s0200c","VARCHAR","file_id",
-"table_sequence",13,"position",,,"c04s0200d","VARCHAR","position",
-,,,,,,,,
-"geofile_schema",0,"id",1,,"t04s03","INTEGER",,"Geofile schemas"
-"geofile_schema",1,"seq",,,"c04s03001","INTEGER","seq",
-"geofile_schema",2,"name",,,"c04s03002","VARCHAR","name",
-"geofile_schema",3,"description",,,"c04s03003","VARCHAR","description",
-"geofile_schema",4,"width",,,"c04s03004","INTEGER","width",
-"geofile_schema",5,"start",,,"c04s03005","INTEGER","start",
-"geofile_schema",6,"geolevels",,,"c04s03006","VARCHAR","geolevels",
-"geofile_schema",7,"release",,,"c04s03007","VARCHAR","release",
-"geofile_schema",8,"year",,,"c04s03008","INTEGER","year",
+table,seq,column,is_pk,is_fk,id,type,description,derivedfrom
+table_shells,0,id,1,,t04s01,INTEGER,ACS Table Shells,
+table_shells,1,table_id,,,c04s01001,VARCHAR,,table_id
+table_shells,2,line,,,c04s01002,REAL,,line
+table_shells,3,unique_id,,,c04s01003,VARCHAR,,unique_id
+table_shells,4,stub,,,c04s01004,VARCHAR,,stub
+table_shells,5,release,,,c04s01005,INTEGER,,release
+table_shells,6,year,,,c04s01006,INTEGER,,year
+table_shells,7,order,,,c04s01007,REAL,,order
+table_shells,8,type,,,c04s01008,VARCHAR,,type
+table_shells,9,indent,,,c04s01009,INTEGER,,indent
+
+table_sequence,0,id,1,,t04s02,INTEGER,Table sequence and segment numbers,
+table_sequence,1,fileid,,,c04s02001,VARCHAR,,fileid
+table_sequence,2,table_id,,,c04s02002,VARCHAR,,table_id
+table_sequence,3,sequence_number,,,c04s02003,INTEGER,,sequence_number
+table_sequence,4,line,,,c04s02004,REAL,,line
+table_sequence,5,start_position,,,c04s02005,VARCHAR,,start_position
+table_sequence,6,total_cells_in_table,,,c04s02006,VARCHAR,,total_cells_in_table
+table_sequence,7,total_cells_in_sequence,,,c04s02007,VARCHAR,,total_cells_in_sequence
+table_sequence,8,table_title,,,c04s02008,VARCHAR,,table_title
+table_sequence,9,subject_area,,,c04s02009,VARCHAR,,subject_area
+table_sequence,10,release,,,c04s0200a,INTEGER,,release
+table_sequence,11,year,,,c04s0200b,INTEGER,,year
+table_sequence,12,file_id,,,c04s0200c,VARCHAR,,file_id
+table_sequence,13,position,,,c04s0200d,VARCHAR,,position
+
+geofile_schema,0,id,1,,t04s03,INTEGER,Geofile schemas,
+geofile_schema,1,seq,,,c04s03001,INTEGER,,seq
+geofile_schema,2,name,,,c04s03002,VARCHAR,,name
+geofile_schema,3,description,,,c04s03003,VARCHAR,,description
+geofile_schema,4,width,,,c04s03004,INTEGER,,width
+geofile_schema,5,start,,,c04s03005,INTEGER,,start
+geofile_schema,6,geolevels,,,c04s03006,VARCHAR,,geolevels
+geofile_schema,7,release,,,c04s03007,VARCHAR,,release
+geofile_schema,8,year,,,c04s03008,INTEGER,,year

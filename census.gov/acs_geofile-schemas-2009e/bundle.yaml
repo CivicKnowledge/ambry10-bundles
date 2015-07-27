@@ -37,7 +37,10 @@ names:
 pipeline:
     first: 'ambry.etl.Edit( add = {''year'' : lambda e,r: e.source.time, ''release''
         : lambda e,r: str(e.source.grain) if e.source.grain else ''all'' })'
-    last: ambry.etl.PrintRows(print_at='end')
+    last:
+    - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table = ''table_shells''
+        )'
+    - ambry.etl.PrintRows(print_at='end')
 requirements:
     OpenSSL: PyOpenSSL
     gdata: gdata
