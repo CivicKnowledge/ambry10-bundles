@@ -34,13 +34,16 @@ names:
     name: census.gov-acs_geofile-schemas-2009e
     vid: d04s001
     vname: census.gov-acs_geofile-schemas-2009e-0.0.1
-pipeline:
-    first: 'ambry.etl.Edit( add = {''year'' : lambda e,r: e.source.time, ''release''
-        : lambda e,r: str(e.source.grain) if e.source.grain else ''all'' })'
-    last:
-    - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table = ''table_shells''
-        )'
-    - ambry.etl.PrintRows(print_at='end')
+pipelines:
+    build:
+        first:
+        - RemoveBlankColumns
+        - 'Add({ ''year'' : lambda e,r: e.source.time, ''release'' : lambda e,r: str(e.source.grain)
+            if e.source.grain else ''all'' })'
+        last:
+        - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table =
+            ''table_shells'' )'
+        - ambry.etl.PrintRows(print_at='end')
 requirements:
     OpenSSL: PyOpenSSL
     gdata: gdata

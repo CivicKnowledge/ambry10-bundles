@@ -37,8 +37,6 @@ table,position,source_header,dest_header,datatype,valuetype,start,width,size,sum
 2009-5-shell,1,line,line,float,,,,,,
 2009-5-shell,2,unique_id,unique_id,str,,,,,,
 2009-5-shell,3,stub,stub,str,,,,,,
-2009-5-shell,4,column4,blank,str,,,,,,
-2009-5-shell,5,column5,blank,str,,,,,,
 2009-5-shell,6,release,release,int,,,,,,
 2009-5-shell,7,year,year,int,,,,,,
 2009-gs,0,seq,seq,int,,,,,,
