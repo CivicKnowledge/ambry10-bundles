@@ -1,87 +1,44 @@
 table,position,source_header,dest_header,datatype,valuetype,start,width,size,summary,description
-geoschema,1,FILEID,,str,,1,6,,,Always equal to ACS Summary File identification 
-geoschema,1,FILEID ,,str,,1,6,,,Always equal to ACS Summary File identification 
-geoschema,2,STUSAB,,str,,7,2,,,State Postal Abbreviation 
-geoschema,2,STUSAB ,,str,,7,2,,,State Postal Abbreviation 
-geoschema,3,SUMLEVEL,,str,,9,3,,,Summary Level 
-geoschema,3,SUMLEVEL ,,str,,9,3,,,Summary Level 
-geoschema,4,COMPONENT,,str,,12,2,,,Geographic Component 
-geoschema,4,COMPONENT ,,str,,12,2,,,Geographic Component 
-geoschema,5,LOGRECNO,,str,,14,7,,,Logical Record Number 
-geoschema,5,LOGRECNO ,,str,,14,7,,,Logical Record Number 
-geoschema,6,US,,str,,21,1,,,US  
-geoschema,6,US ,,str,,21,1,,,US  
-geoschema,7,REGION,,str,,22,1,,,Census Region 
-geoschema,7,REGION ,,str,,22,1,,,Census Region 
-geoschema,8,DIVISION,,str,,23,1,,,Census Division 
-geoschema,8,DIVISION ,,str,,23,1,,,Census Division 
-geoschema,9,STATECE,,str,,24,2,,,State (Census Code) 
-geoschema,9,STATECE ,,str,,24,2,,,State (Census Code) 
-geoschema,10,STATE,,str,,26,2,,,State (FIPS Code) 
-geoschema,10,STATE ,,str,,26,2,,,State (FIPS Code) 
-geoschema,11,COUNTY,,str,,28,3,,,County of current residence 
-geoschema,11,COUNTY ,,str,,28,3,,,County of current residence 
-geoschema,12,COUSUB,,str,,31,5,,,County Subdivision (FIPS) 
-geoschema,12,COUSUB ,,str,,31,5,,,County Subdivision (FIPS) 
-geoschema,13,PLACE,,str,,36,5,,,Place (FIPS Code) 
-geoschema,13,PLACE ,,str,,36,5,,,Place (FIPS Code) 
-geoschema,14,TRACT,,str,,41,6,,,Census Tract 
-geoschema,14,TRACT ,,str,,41,6,,,Census Tract 
-geoschema,15,BLKGRP,,str,,47,1,,,Block Group 
-geoschema,15,BLKGRP ,,str,,47,1,,,Block Group 
-geoschema,16,CONCIT,,str,,48,5,,,Consolidated City 
-geoschema,16,CONCIT ,,str,,48,5,,,Consolidated City 
-geoschema,17,AIANHH,,str,,53,4,,,American Indian Area/Alaska Native Area/ Hawaiian Home Land (Census)
-geoschema,17,AIANHH ,,str,,53,4,,,American Indian Area/Alaska Native Area/ Hawaiian Home Land (Census)
-geoschema,18,AIANHHFP,,str,,57,5,,,American Indian Area/Alaska Native Area/ Hawaiian Home Land (FIPS) 
-geoschema,18,AIANHHFP ,,str,,57,5,,,American Indian Area/Alaska Native Area/ Hawaiian Home Land (FIPS) 
-geoschema,19,AIHHTLI,,str,,62,1,,,American Indian Trust Land/ Hawaiian Home Land Indicator 
-geoschema,19,AIHHTLI ,,str,,62,1,,,American Indian Trust Land/ Hawaiian Home Land Indicator 
-geoschema,20,AITSCE,,str,,63,3,,,American Indian Tribal Subdivision (Census)  
-geoschema,20,AITSCE ,,str,,63,3,,,American Indian Tribal Subdivision (Census)  
-geoschema,21,AITS,,str,,66,5,,,American Indian Tribal Subdivision (FIPS) 
-geoschema,21,AITS ,,str,,66,5,,,American Indian Tribal Subdivision (FIPS) 
-geoschema,22,ANRC,,str,,71,5,,,Alaska Native Regional Corporation (FIPS) 
-geoschema,22,ANRC ,,str,,71,5,,,Alaska Native Regional Corporation (FIPS) 
-geoschema,23,CBSA,,str,,76,5,,,Metropolitan and Micropolitan Statistical Area 
-geoschema,23,CBSA ,,str,,76,5,,,Metropolitan and Micropolitan Statistical Area 
-geoschema,24,CSA,,str,,81,3,,,Combined Statistical Area 
-geoschema,24,CSA ,,str,,81,3,,,Combined Statistical Area 
-geoschema,25,METDIV,,str,,84,5,,,Metropolitan Statistical Area- Metropolitan Division 
-geoschema,25,METDIV ,,str,,84,5,,,Metropolitan Statistical Area- Metropolitan Division 
-geoschema,26,MACC,,str,,89,1,,,Metropolitan Area Central City 
-geoschema,26,MACC ,,str,,89,1,,,Metropolitan Area Central City 
-geoschema,27,MEMI,,str,,90,1,,,Metropolitan/Micropolitan Indicator Flag  
-geoschema,27,MEMI ,,str,,90,1,,,Metropolitan/Micropolitan Indicator Flag  
-geoschema,28,NECTA,,str,,91,5,,,New England City and Town Area 
-geoschema,28,NECTA ,,str,,91,5,,,New England City and Town Area 
-geoschema,29,CNECTA,,str,,96,3,,,New England City and Town Combined Statistical Area 
-geoschema,29,CNECTA ,,str,,96,3,,,New England City and Town Combined Statistical Area 
-geoschema,30,NECTADIV,,str,,99,5,,,New England City and Town Area Division 
-geoschema,30,NECTADIV ,,str,,99,5,,,New England City and Town Area Division 
-geoschema,31,UA,,str,,104,5,,,Urban Area 
-geoschema,31,UA ,,str,,104,5,,,Urban Area 
-geoschema,33,CDCURR,,str,,114,2,,,Current Congressional District *** 
-geoschema,33,CDCURR ,,str,,114,2,,,Current Congressional District *** 
-geoschema,34,SLDU,,str,,116,3,,,State Legislative District Upper 
-geoschema,34,SLDU ,,str,,116,3,,,State Legislative District Upper 
-geoschema,35,SLDL,,str,,119,3,,,State Legislative District Lower 
-geoschema,35,SLDL ,,str,,119,3,,,State Legislative District Lower 
-geoschema,39,SUBMCD,,str,,136,5,,,Subminor Civil Division (FIPS) 
-geoschema,39,SUBMCD ,,str,,136,5,,,Subminor Civil Division (FIPS) 
-geoschema,40,SDELM,,str,,141,5,,,State-School District (Elementary) 
-geoschema,40,SDELM ,,str,,141,5,,,State-School District (Elementary) 
-geoschema,41,SDSEC,,str,,146,5,,,State-School District (Secondary) 
-geoschema,41,SDSEC ,,str,,146,5,,,State-School District (Secondary) 
-geoschema,42,SDUNI,,str,,151,5,,,State-School District (Unified) 
-geoschema,42,SDUNI ,,str,,151,5,,,State-School District (Unified) 
-geoschema,43,UR,,str,,156,1,,,Urban/Rural 
-geoschema,43,UR ,,str,,156,1,,,Urban/Rural 
-geoschema,44,PCI,,str,,157,1,,,Principal City Indicator 
-geoschema,44,PCI ,,str,,157,1,,,Principal City Indicator 
-geoschema,47,PUMA5,,str,,169,5,,,Public Use Microdata Area 5% File 
-geoschema,47,PUMA5 ,,str,,169,5,,,Public Use Microdata Area 5% File 
-geoschema,49,GEOID,,str,,179,40,,,Geographic Identifier 
-geoschema,49,GEOID ,,str,,179,40,,,Geographic Identifier 
-geoschema,50,NAME,,str,,219,200,,,Area Name 
-geoschema,50,NAME ,,str,,219,200,,,Area Name 
+geoschema,1,fileid,,str,,1,6,,,Always equal to ACS Summary File identification 
+geoschema,2,stusab,,str,,7,2,,,State Postal Abbreviation 
+geoschema,3,sumlevel,,str,,9,3,,,Summary Level 
+geoschema,4,component,,str,,12,2,,,Geographic Component 
+geoschema,5,logrecno,,str,,14,7,,,Logical Record Number 
+geoschema,6,us,,str,,21,1,,,US  
+geoschema,7,region,,str,,22,1,,,Census Region 
+geoschema,8,division,,str,,23,1,,,Census Division 
+geoschema,9,statece,,str,,24,2,,,State (Census Code) 
+geoschema,10,state,,str,,26,2,,,State (FIPS Code) 
+geoschema,11,county,,str,,28,3,,,County of current residence 
+geoschema,12,cousub,,str,,31,5,,,County Subdivision (FIPS) 
+geoschema,13,place,,str,,36,5,,,Place (FIPS Code) 
+geoschema,14,tract,,str,,41,6,,,Census Tract 
+geoschema,15,blkgrp,,str,,47,1,,,Block Group 
+geoschema,16,concit,,str,,48,5,,,Consolidated City 
+geoschema,17,aianhh,,str,,53,4,,,American Indian Area/Alaska Native Area/ Hawaiian Home Land (Census)
+geoschema,18,aianhhfp,,str,,57,5,,,American Indian Area/Alaska Native Area/ Hawaiian Home Land (FIPS) 
+geoschema,19,aihhtli,,str,,62,1,,,American Indian Trust Land/ Hawaiian Home Land Indicator 
+geoschema,20,aitsce,,str,,63,3,,,American Indian Tribal Subdivision (Census)  
+geoschema,21,aits,,str,,66,5,,,American Indian Tribal Subdivision (FIPS) 
+geoschema,22,anrc,,str,,71,5,,,Alaska Native Regional Corporation (FIPS) 
+geoschema,23,cbsa,,str,,76,5,,,Metropolitan and Micropolitan Statistical Area 
+geoschema,24,csa,,str,,81,3,,,Combined Statistical Area 
+geoschema,25,metdiv,,str,,84,5,,,Metropolitan Statistical Area- Metropolitan Division 
+geoschema,26,macc,,str,,89,1,,,Metropolitan Area Central City 
+geoschema,27,memi,,str,,90,1,,,Metropolitan/Micropolitan Indicator Flag  
+geoschema,28,necta,,str,,91,5,,,New England City and Town Area 
+geoschema,29,cnecta,,str,,96,3,,,New England City and Town Combined Statistical Area 
+geoschema,30,nectadiv,,str,,99,5,,,New England City and Town Area Division 
+geoschema,31,ua,,str,,104,5,,,Urban Area 
+geoschema,33,cdcurr,,str,,114,2,,,Current Congressional District *** 
+geoschema,34,sldu,,str,,116,3,,,State Legislative District Upper 
+geoschema,35,sldl,,str,,119,3,,,State Legislative District Lower 
+geoschema,39,submcd,,str,,136,5,,,Subminor Civil Division (FIPS) 
+geoschema,40,sdelm,,str,,141,5,,,State-School District (Elementary) 
+geoschema,41,sdsec,,str,,146,5,,,State-School District (Secondary) 
+geoschema,42,sduni,,str,,151,5,,,State-School District (Unified) 
+geoschema,43,ur,,str,,156,1,,,Urban/Rural 
+geoschema,44,pci,,str,,157,1,,,Principal City Indicator 
+geoschema,47,puma5,,str,,169,5,,,Public Use Microdata Area 5% File 
+geoschema,49,geoid,,str,,179,40,,,Geographic Identifier 
+geoschema,50,name,,str,,219,200,,,Area Name 
