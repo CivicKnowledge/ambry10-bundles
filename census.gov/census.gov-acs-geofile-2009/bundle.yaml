@@ -1,0 +1,46 @@
+about:
+    access: restricted
+    footnote: nll
+    grain: null
+    groups: null
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: null
+    subject: null
+    summary: Dataset Summary
+    tags: []
+    time: null
+    title: American Community Survey Geofile 2009
+contacts:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+dependencies: {}
+external_documentation:
+    dataset:
+        description: Web page the links to the dataset description
+        source: null
+        title: Dataset Page
+        url: https://www.census.gov/programs-surveys/acs
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www2.census.gov/
+identity:
+    btime: '2009'
+    dataset: acs
+    id: dhWL41AmAO
+    revision: 1
+    source: census.gov
+    subset: geofile
+    version: 0.0.1
+names:
+    fqname: census.gov-acs-geofile-2009-0.0.1~dhWL41AmAO001
+    name: census.gov-acs-geofile-2009
+    vid: dhWL41AmAO001
+    vname: census.gov-acs-geofile-2009-0.0.1
+requirements: {}
+versions: {}
