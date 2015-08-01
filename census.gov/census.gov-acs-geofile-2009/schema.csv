@@ -1,46 +1,48 @@
-table,id,sequence_id,t_vid,column,datatype,description
-geoschema,chWL41AmAO01000,0,thWL41AmAO01001,id,integer,
-geoschema,chWL41AmAO01001,1,thWL41AmAO01001,fileid,varchar,Always equal to ACS Summary File identification 
-geoschema,chWL41AmAO01002,2,thWL41AmAO01001,stusab,varchar,State Postal Abbreviation 
-geoschema,chWL41AmAO01003,3,thWL41AmAO01001,sumlevel,varchar,Summary Level 
-geoschema,chWL41AmAO01004,4,thWL41AmAO01001,component,varchar,Geographic Component 
-geoschema,chWL41AmAO01005,5,thWL41AmAO01001,logrecno,varchar,Logical Record Number 
-geoschema,chWL41AmAO01006,6,thWL41AmAO01001,us,varchar,US  
-geoschema,chWL41AmAO01007,7,thWL41AmAO01001,region,varchar,Census Region 
-geoschema,chWL41AmAO01008,8,thWL41AmAO01001,division,varchar,Census Division 
-geoschema,chWL41AmAO01009,9,thWL41AmAO01001,statece,varchar,State (Census Code) 
-geoschema,chWL41AmAO0100a,10,thWL41AmAO01001,state,varchar,State (FIPS Code) 
-geoschema,chWL41AmAO0100b,11,thWL41AmAO01001,county,varchar,County of current residence 
-geoschema,chWL41AmAO0100c,12,thWL41AmAO01001,cousub,varchar,County Subdivision (FIPS) 
-geoschema,chWL41AmAO0100d,13,thWL41AmAO01001,place,varchar,Place (FIPS Code) 
-geoschema,chWL41AmAO0100e,14,thWL41AmAO01001,tract,varchar,Census Tract 
-geoschema,chWL41AmAO0100f,15,thWL41AmAO01001,blkgrp,varchar,Block Group 
-geoschema,chWL41AmAO0100g,16,thWL41AmAO01001,concit,varchar,Consolidated City 
-geoschema,chWL41AmAO0100h,17,thWL41AmAO01001,aianhh,varchar,American Indian Area/Alaska Native Area/ Hawaiian Home Land (Census)
-geoschema,chWL41AmAO0100i,18,thWL41AmAO01001,aianhhfp,varchar,American Indian Area/Alaska Native Area/ Hawaiian Home Land (FIPS) 
-geoschema,chWL41AmAO0100j,19,thWL41AmAO01001,aihhtli,varchar,American Indian Trust Land/ Hawaiian Home Land Indicator 
-geoschema,chWL41AmAO0100k,20,thWL41AmAO01001,aitsce,varchar,American Indian Tribal Subdivision (Census)  
-geoschema,chWL41AmAO0100l,21,thWL41AmAO01001,aits,varchar,American Indian Tribal Subdivision (FIPS) 
-geoschema,chWL41AmAO0100m,22,thWL41AmAO01001,anrc,varchar,Alaska Native Regional Corporation (FIPS) 
-geoschema,chWL41AmAO0100n,23,thWL41AmAO01001,cbsa,varchar,Metropolitan and Micropolitan Statistical Area 
-geoschema,chWL41AmAO0100o,24,thWL41AmAO01001,csa,varchar,Combined Statistical Area 
-geoschema,chWL41AmAO0100p,25,thWL41AmAO01001,metdiv,varchar,Metropolitan Statistical Area- Metropolitan Division 
-geoschema,chWL41AmAO0100q,26,thWL41AmAO01001,macc,varchar,Metropolitan Area Central City 
-geoschema,chWL41AmAO0100r,27,thWL41AmAO01001,memi,varchar,Metropolitan/Micropolitan Indicator Flag  
-geoschema,chWL41AmAO0100s,28,thWL41AmAO01001,necta,varchar,New England City and Town Area 
-geoschema,chWL41AmAO0100t,29,thWL41AmAO01001,cnecta,varchar,New England City and Town Combined Statistical Area 
-geoschema,chWL41AmAO0100u,30,thWL41AmAO01001,nectadiv,varchar,New England City and Town Area Division 
-geoschema,chWL41AmAO0100v,31,thWL41AmAO01001,ua,varchar,Urban Area 
-geoschema,chWL41AmAO0100w,32,thWL41AmAO01001,cdcurr,varchar,Current Congressional District *** 
-geoschema,chWL41AmAO0100x,33,thWL41AmAO01001,sldu,varchar,State Legislative District Upper 
-geoschema,chWL41AmAO0100y,34,thWL41AmAO01001,sldl,varchar,State Legislative District Lower 
-geoschema,chWL41AmAO0100z,35,thWL41AmAO01001,submcd,varchar,Subminor Civil Division (FIPS) 
-geoschema,chWL41AmAO0100A,36,thWL41AmAO01001,sdelm,varchar,State-School District (Elementary) 
-geoschema,chWL41AmAO0100B,37,thWL41AmAO01001,sdsec,varchar,State-School District (Secondary) 
-geoschema,chWL41AmAO0100C,38,thWL41AmAO01001,sduni,varchar,State-School District (Unified) 
-geoschema,chWL41AmAO0100D,39,thWL41AmAO01001,ur,varchar,Urban/Rural 
-geoschema,chWL41AmAO0100E,40,thWL41AmAO01001,pci,varchar,Principal City Indicator 
-geoschema,chWL41AmAO0100F,41,thWL41AmAO01001,puma5,varchar,Public Use Microdata Area 5% File 
-geoschema,chWL41AmAO0100G,42,thWL41AmAO01001,geoid,varchar,Geographic Identifier 
-geoschema,chWL41AmAO0100H,43,thWL41AmAO01001,name,varchar,Area Name 
-,,,,,,
+table,id,sequence_id,t_vid,column,datatype,description,derivedfrom
+geoschema,chWL41AmAO01000,0,thWL41AmAO01001,id,integer,,
+geoschema,chWL41AmAO01001,1,thWL41AmAO01001,fileid,varchar,Always equal to ACS Summary File identification,fileid
+geoschema,chWL41AmAO01002,2,thWL41AmAO01001,stusab,varchar,State Postal Abbreviation,stusab
+geoschema,chWL41AmAO01003,3,thWL41AmAO01001,sumlevel,integer,Summary Level,sumlevel
+geoschema,chWL41AmAO01004,4,thWL41AmAO01001,component,integer,Geographic Component,component
+geoschema,chWL41AmAO01005,5,thWL41AmAO01001,logrecno,integer,Logical Record Number,logrecno
+geoschema,chWL41AmAO01006,6,thWL41AmAO01001,us,varchar,US,us
+geoschema,chWL41AmAO01007,7,thWL41AmAO01001,region,varchar,Census Region,region
+geoschema,chWL41AmAO01008,8,thWL41AmAO01001,division,varchar,Census Division,division
+geoschema,chWL41AmAO01009,9,thWL41AmAO01001,statece,varchar,State (Census Code),statece
+geoschema,chWL41AmAO0100a,10,thWL41AmAO01001,state,integer,State (FIPS Code),state
+geoschema,chWL41AmAO0100b,11,thWL41AmAO01001,county,integer,County of current residence,county
+geoschema,chWL41AmAO0100c,12,thWL41AmAO01001,cousub,integer,County Subdivision (FIPS),cousub
+geoschema,chWL41AmAO0100d,13,thWL41AmAO01001,place,integer,Place (FIPS Code),place
+geoschema,chWL41AmAO0100e,14,thWL41AmAO01001,tract,integer,Census Tract,tract
+geoschema,chWL41AmAO0100f,15,thWL41AmAO01001,blkgrp,integer,Block Group,blkgrp
+geoschema,chWL41AmAO0100g,16,thWL41AmAO01001,concit,varchar,Consolidated City,concit
+geoschema,chWL41AmAO0100h,17,thWL41AmAO01001,aianhh,integer,American Indian Area/Alaska Native Area/ Hawaiian Home Land (Census),aianhh
+geoschema,chWL41AmAO0100i,18,thWL41AmAO01001,aianhhfp,varchar,American Indian Area/Alaska Native Area/ Hawaiian Home Land (FIPS),aianhhfp
+geoschema,chWL41AmAO0100j,19,thWL41AmAO01001,aihhtli,varchar,American Indian Trust Land/ Hawaiian Home Land Indicator,aihhtli
+geoschema,chWL41AmAO0100k,20,thWL41AmAO01001,aitsce,integer,American Indian Tribal Subdivision (Census),aitsce
+geoschema,chWL41AmAO0100l,21,thWL41AmAO01001,aits,varchar,American Indian Tribal Subdivision (FIPS),aits
+geoschema,chWL41AmAO0100m,22,thWL41AmAO01001,anrc,integer,Alaska Native Regional Corporation (FIPS),anrc
+geoschema,chWL41AmAO0100n,23,thWL41AmAO01001,cbsa,integer,Metropolitan and Micropolitan Statistical Area,cbsa
+geoschema,chWL41AmAO0100o,24,thWL41AmAO01001,csa,varchar,Combined Statistical Area,csa
+geoschema,chWL41AmAO0100p,25,thWL41AmAO01001,metdiv,varchar,Metropolitan Statistical Area- Metropolitan Division,metdiv
+geoschema,chWL41AmAO0100q,26,thWL41AmAO01001,macc,varchar,Metropolitan Area Central City,macc
+geoschema,chWL41AmAO0100r,27,thWL41AmAO01001,memi,integer,Metropolitan/Micropolitan Indicator Flag,memi
+geoschema,chWL41AmAO0100s,28,thWL41AmAO01001,necta,varchar,New England City and Town Area,necta
+geoschema,chWL41AmAO0100t,29,thWL41AmAO01001,cnecta,varchar,New England City and Town Combined Statistical Area,cnecta
+geoschema,chWL41AmAO0100u,30,thWL41AmAO01001,nectadiv,varchar,New England City and Town Area Division,nectadiv
+geoschema,chWL41AmAO0100v,31,thWL41AmAO01001,ua,varchar,Urban Area,ua
+geoschema,chWL41AmAO0100w,32,thWL41AmAO01001,cdcurr,integer,Current Congressional District ***,cdcurr
+geoschema,chWL41AmAO0100x,33,thWL41AmAO01001,sldu,varchar,State Legislative District Upper,sldu
+geoschema,chWL41AmAO0100y,34,thWL41AmAO01001,sldl,integer,State Legislative District Lower,sldl
+geoschema,chWL41AmAO0100z,35,thWL41AmAO01001,submcd,varchar,Subminor Civil Division (FIPS),submcd
+geoschema,chWL41AmAO0100A,36,thWL41AmAO01001,sdelm,integer,State-School District (Elementary),sdelm
+geoschema,chWL41AmAO0100B,37,thWL41AmAO01001,sdsec,integer,State-School District (Secondary),sdsec
+geoschema,chWL41AmAO0100C,38,thWL41AmAO01001,sduni,integer,State-School District (Unified),sduni
+geoschema,chWL41AmAO0100D,39,thWL41AmAO01001,ur,varchar,Urban/Rural,ur
+geoschema,chWL41AmAO0100E,40,thWL41AmAO01001,pci,varchar,Principal City Indicator,pci
+geoschema,chWL41AmAO0100F,41,thWL41AmAO01001,puma5,integer,Public Use Microdata Area 5% File,puma5
+geoschema,chWL41AmAO0100G,42,thWL41AmAO01001,geoid,varchar,Geographic Identifier,geoid
+geoschema,chWL41AmAO0100H,43,thWL41AmAO01001,name,varchar,Area Name,name
+,,,,,,,
+geofile,chWL41AmAO02000,0,thWL41AmAO02001,id,integer,,
+,,,,,,,

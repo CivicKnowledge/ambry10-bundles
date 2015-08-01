@@ -42,5 +42,15 @@ names:
     name: census.gov-acs-geofile-2009
     vid: dhWL41AmAO001
     vname: census.gov-acs-geofile-2009-0.0.1
+pipelines:
+    schema:
+        last:
+        - PrintRows(print_at='end')
+    source:
+        last:
+        - PrintRows(print_at='end')
+    test:
+        last:
+        - PrintEvery
 requirements: {}
 versions: {}

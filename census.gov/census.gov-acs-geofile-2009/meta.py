@@ -39,17 +39,27 @@ class Bundle(ambry.bundle.Bundle):
         self.do_sync(force='rtf')
         
     def add_sources(self):
+        
+        year = 2009
+        span = 1
+        source_name = 'dnlpage{}{}'.format(year,span)
+        source = self.source(source_name)
+    
+        
         from ambry.orm import DataSource, File
         from ambry.util import scrape_urls_from_web_page
                 
-        entries = scrape_urls_from_web_page('http://www2.census.gov/acs2009_1yr/summaryfile/Entire_States/')['sources']
+        entries = scrape_urls_from_web_page(source.url)['sources']
         s = self.session
         for k,v in entries.items():
             
             d = {
-                'name': k.lower(),
-                'source_table_name': 'geofile',
-                'dest_table_name': 'geofile',
+                'name': k.lower()+"_{}{}".format(year,span),
+                'source_table_name': 'geoschema',
+                'dest_table_name': 'geoschema',
+                'filetype': 'fixed',
+                'file': 'g2009.*\.txt',
+                'encoding': 'latin1',
                 'url': v['url']
             }
             
@@ -63,8 +73,6 @@ class Bundle(ambry.bundle.Bundle):
             s.merge(ds)
             
         s.commit()
-            
-        self.build_source_files.file(File.BSFILE.SOURCES).objects_to_record()
-        self.do_sync(force='rtf')
+
         
             
