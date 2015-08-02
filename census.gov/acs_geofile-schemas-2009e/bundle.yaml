@@ -44,6 +44,13 @@ pipelines:
         - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table =
             ''table_shells'' )'
         - ambry.etl.PrintRows(print_at='end')
+    source:
+        first:
+        - OnlySource('2007_1_column_meta')
+        - Head(10)
+        - RemoveBlankColumns
+        - 'Add({ ''year'' : lambda e,r: e.source.time, ''release'' : lambda e,r: str(e.source.grain)
+            if e.source.grain else ''all'' })'
 requirements:
     OpenSSL: PyOpenSSL
     gdata: gdata

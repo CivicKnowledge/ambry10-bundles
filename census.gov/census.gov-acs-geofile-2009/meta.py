@@ -96,14 +96,15 @@ class Bundle(ambry.bundle.Bundle):
                 state_name = state_name.replace('/','')
                 url = parts['url']
                 
-                for suffix in ('All_Geographies_Not_Tracts_Block_Groups', 'Tracts_Block_Groups_Only'):
+                for suffix, size in (('All_Geographies_Not_Tracts_Block_Groups', 'L'), 
+                                     ('Tracts_Block_Groups_Only', 'S')):
                     gurl = os.path.join(url, suffix)
                     table_urls = scrape_urls_from_web_page(gurl)['sources']
                     for k, v in table_urls.items():
                         if k.startswith('g20095'):
                             self.log('Found: {}'.format(k))
                             d = {
-                                'name': k,
+                                'name': k+size,
                                 'source_table_name': 'geoschema',
                                 'dest_table_name': 'geoschema',
                                 'filetype': 'fixed',
