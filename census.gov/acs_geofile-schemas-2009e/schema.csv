@@ -24,6 +24,7 @@ table_sequence,c04s0200a,10,t04s02001,release,integer,,release
 table_sequence,c04s0200b,11,t04s02001,year,integer,,year
 table_sequence,c04s0200c,12,t04s02001,file_id,varchar,,file_id
 table_sequence,c04s0200d,13,t04s02001,position,varchar,,position
+table_sequence,c04s0200e,14,t04s02001,line_number,integer,,line_number
 ,,,,,,,
 geofile_schema,c04s03000,0,t04s03001,id,integer,Geofile schemas,
 geofile_schema,c04s03001,1,t04s03001,seq,integer,,seq
