@@ -43,7 +43,6 @@ pipelines:
             if e.source.grain else ''all'' })'
         - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table =
             ''table_shells'' )'
-        - ambry.etl.PrintRows(print_at='end')
     source:
         first:
         - Head(10)

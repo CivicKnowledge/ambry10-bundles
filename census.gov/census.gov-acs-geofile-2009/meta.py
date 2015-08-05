@@ -76,7 +76,9 @@ class Bundle(ambry.bundle.Bundle):
             s.commit()
 
   
+
     def add_5yr_sources(self):
+        """The 5 year release has a different structure because the files are bigger. """
         from ambry.orm import DataSource, File
         from ambry.util import scrape_urls_from_web_page
         import os
@@ -102,7 +104,7 @@ class Bundle(ambry.bundle.Bundle):
                     table_urls = scrape_urls_from_web_page(gurl)['sources']
                     for k, v in table_urls.items():
                         if k.startswith('g20095'):
-                            self.log('Found: {}'.format(k))
+                            self.log('Found: {}{}'.format(k, size))
                             d = {
                                 'name': k+size,
                                 'source_table_name': 'geoschema',
