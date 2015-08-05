@@ -9,27 +9,27 @@ about:
     source: null
     space: null
     subject: null
-    summary: Dataset Summary
+    summary: A regularly updated dataset of open  and recently closed public schools
+        in California.
     tags: []
     time: null
-    title: Dataset Title
+    title: California Public Schools
 contacts:
     creator:
-        email: bob@example.com
-        name: Bob Bobson
-        url: http://example.com
-dependencies: {}
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
 external_documentation:
     dataset:
-        description: Web page the links to the dataset description
+        description: Webpage that links to data files and data dictionaries.
         source: null
-        title: Dataset Page
-        url: http://example.com
-    download:
-        description: Web page that links to the source files.
+        title: Main Dataset Webpage
+        url: http://www.cde.ca.gov/ds/si/ds/pubschls.asp
+    documentation:
+        description: Data dictinoary for public school files.
         source: null
-        title: Download Page
-        url: http://example.com
+        title: Data Dictionary
+        url: http://www.cde.ca.gov/ds/si/ds/fspubschls.asp
 identity:
     dataset: schools
     id: d04z
@@ -38,9 +38,13 @@ identity:
     subset: public
     version: 0.0.1
 names:
-    fqname: cde.ca.gov-schools-public-0.0.1~d00005001
+    fqname: cde.ca.gov-schools-public-0.0.1~d04z001
     name: cde.ca.gov-schools-public
-    vid: d00005001
+    vid: d04z001
     vname: cde.ca.gov-schools-public-0.0.1
+pipelines:
+    schema:
+        first:
+        - Head(5000)
 requirements: {}
 versions: {}

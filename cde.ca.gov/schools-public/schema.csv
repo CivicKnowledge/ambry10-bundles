@@ -1,1 +1,133 @@
-table,seq,column,is_pk,is_fk,id,type,size,description,d_caster,proto_vid,d_row_spec,d_table,d_time
+table,column,datatype,description
+pubschls,id,integer,California public schools
+pubschls,cdscode,varchar,"This 14-digit code is the official, unique identification of a school within California. The first two digits identify the county, the next five digits identify the school district, and the last seven digits identify the school. 
+Please note that a CDS code ending in '0000000' indicates a district record not a school."
+pubschls,ncesdist,varchar,"This field represents the 7-digit National Center for Educational Statistics (NCES) school district identification number. The first 2 digits identify the state and the last 5 digits identify the school district. Combined, they make a unique 7-digit ID for each school district."
+pubschls,ncesschool,varchar,This field represents the 5-digit NCES school identification number. The NCESSchool combined with the NCESDist form a unique 12-digit ID for each school.
+pubschls,statustype,varchar,"This field identifies the status of the school or district. Definitions of the valid status types are listed below:
+
+Active: The district or school is in operation and providing instructional services.
+Closed: The district or school is not in operation and no longer providing instructional services. 
+Merged: The district or school has combined with another district or districts, and the schools within the schools within the districts being combined have been reassigned to the newly joined/formed district. 
+Pending: The district or school has not opened for operation and instructional services yet, but plans to open within the next 912 months."
+pubschls,county,varchar,County name.
+pubschls,district,varchar,District or Administrative Authority name.
+pubschls,school,varchar,School name.
+pubschls,street,varchar,"The unabbreviated street (physical) address of this school, district, or administrative authority. Note: Some entities (primarily closed or retired schools) may not have data in this field."
+pubschls,streetabr,varchar,"The abbreviated street address of the school, district, or administrative authoritys physical location. Note: Some records (primarily records of closed or retired schools) may not have data in this field."
+pubschls,city,varchar,"The city where the school, district, or administrative authority is physically located. Note: Some records (primarily records of closed or retired schools) may not have data in this field."
+pubschls,zip,varchar,"The zip code associated with the street address of the school, district, or administrative authoritys physical location. Note: Some records (primarily records of closed or retired schools) may not have data in this field."
+pubschls,state,varchar,"The state in which the school, district, or administrative authority is located."
+pubschls,mailstreet,varchar,"The unabbreviated mailing address of the school, district, or administrative authority (i.e., P.O. Box). Note: 1) Some entities (primarily closed or retired schools) may not have data in this field; 2) Many active entities have not provided a mailing street address. For your convenience we have filled the unpopulated MailStreet cells with Street data."
+pubschls,mailstrabr,varchar,"The abbreviated mailing street address of the school, district, or administrative authority (i.e., P.O. Box).Note: Many active entities have not provided a mailing street address. For your convenience we have filled the unpopulated MailStrAbr cells with StreetAbr data."
+pubschls,mailcity,varchar,"The city associated with the mailing address of the school, district, or administrative authority. Note: Many entities have not provided a mailing address city. For your convenience we have filled the unpopulated MailCity cells with City data."
+pubschls,mailzip,varchar,"The zip code associated with the mailing address of the school, district, or administrative authority. Note: Many entities have not provided a mailing address zip code. For your convenience we have filled the unpopulated MailZip cells with Zip data."
+pubschls,mailstate,varchar,The state within the mailing address. For your convenience we have filled the unpopulated MailState cells with State data.
+pubschls,phone,varchar,"The area code and phone number of the school, district, or administrative authority."
+pubschls,ext,integer,"The phone number extension of the school, district, or administrative authority."
+pubschls,website,varchar,"The website address of the school, district, or administrative authority."
+pubschls,opendate,date,The date the school opened. A blank cell indicates  the record is for a district or county office.
+pubschls,closeddate,date,The date the school closed. An empty cell indicates that the entity is not closed.
+pubschls,charter,varchar,"This field identifies a charter school. The field is coded as follows:
+
+Y= The school is a charter 
+N = The school is not a charter school"
+pubschls,charternum,varchar,"The  charter school number.
+A 4-digit number assigned to a charter school. A blank value indicates the school is not a charter school."
+pubschls,fundingtype,varchar,"Indicates the charter school funding type. Values are as follows:
+
+Not in CS funding model
+Locally funded
+Directly funded
+Blank"
+pubschls,doc,varchar,"The District Ownership Code (DOC) is the numeric code used to identify the category of the Administrative Authority. 
+
+00  County Office of Education 
+02  State Board of Education 
+03  Statewide Benefit Charter 
+31  State Special Schools 
+34  Non-school Location 
+52  Elementary School District 
+54  Unified School District 
+56  High School District 
+98  Regional Occupation Center/Program (ROC/P)"
+pubschls,doctype,varchar,The District Ownership Code Type is the text description of the DOC category. (See text values in DOC field description above)
+pubschls,soc,integer,"The School Ownership Code is a numeric code used to identify the type of school.
+
+08  Preschool
+09  Special Education Schools (Public)
+10  County Community
+11  Youth Authority Facilities (CEA) 
+13  Opportunity Schools
+14  Juvenile Court Schools
+15  Other County or District Programs
+16  Home & Hospital
+17  Licensed Childcare (Group Home)++
+31  State Special Schools
+60  Elementary School (Public)
+61  Elementary School in 1  School District (Public)
+62  Intermediate/Middle Schools (Public) 
+63  Alternative Schools of Choice 
+64  Junior High Schools (Public)
+65  K-12 Schools (Public
+66  High Schools (Public)
+67  High Schools In 1 School Dist. (Public)
+68  Continuation High Schools
+69  District Community Day Schools
+70  Adult Education Centers
+98  Regional Occupational Center/Program (ROC/P)"
+pubschls,soctype,varchar,"The School Ownership Code Type is the text description of the type of school.
+(See text values in SOC field description above)"
+pubschls,edopscode,varchar,"The Educational Option Code is a short text description of the type of education  offered.
+
+ALTSOC  Alternative School of Choice
+COMM  County Community School 
+COMMDAY  Community Day School 
+CON  Continuation School 
+JUV  Juvenile Court School 
+OPP  Opportunity School 
+YTH  Youth Authority School 
+SSS  State Special School 
+SPEC  Special Education School 
+TRAD  Traditional
+ROP  Regional Occupational Program 
+HOMHOS  Home and Hospital
+SPECON  District Consortia Special Education School"
+pubschls,edopsname,varchar,"The Educational Option Name is the long text description of the type of education being offered.
+(See text values in EdOPsCode field description above)"
+pubschls,eilcode,varchar,"The Educational Instruction Level Code is a short text description of the institutions type relative to the grade range offered.
+
+A  Adult
+ELEM  Elementary
+ELEMHIGH  Elementary-High Combination
+HS  High School 
+INTMIDJR  Intermediate/Middle/Junior High
+PS  Preschool
+UG  Ungraded"
+pubschls,eilname,varchar,"The Educational Instruction Level Name is the long text description of the institutions type relative to the grade range offered.
+(See text values in EILCode field description above)"
+pubschls,gsoffered,varchar,"The grade span offered is the lowest grade and the highest grade offered or supported by the school, district, or administrative authority. This field might differ from the grade span served as reported in the most recent certified California Longitudinal Pupil Achievement (CALPADS) Fall 1 data collection.
+For example XYZ School might display the following data: 
+GSoffered = PAdult
+GSserved = K12"
+pubschls,gsserved,varchar,"This field represents the grade span served. It is the lowest grade and the highest grade of student enrollment as reported in the most recent certified CALPADS Fall 1 data collection. Only K12 enrollment is reported through CALPADS. This field may differ from the grade span offered. 
+Note: Special programs at independent study, alternative education, and special education schools will often exceed the typical grade span for schools of that type (i.e., a high school might serve grades three through twelve)."
+pubschls,virtual,varchar,"This field identifies the  type of virtual instruction offered by the school. Virtual instruction is instruction  in which students and teachers are separated by time and/or location, and  interaction occurs via computers and/or telecommunications technologies. The  field is coded as follows:
+
+F= Full Virtual   The school offers only virtual instruction.
+P = Partial Virtual   The school offers some, but not all, instruction through virtual instruction.
+N = Not Virtual  The  school does not offer any virtual instruction.
+Blank = The type of virtual instruction offered  by the school is not known, or the record is for a district or county office. Data  are only available at the school level, however not all schools in this file  are required to provide this information."
+pubschls,latitude,real,"The angular distance (expressed in degrees) between the location of the school, district, or administrative authority and the equator measured north to south."
+pubschls,longitude,real,"The angular distance (expressed in degrees) between the location of the school, district, or administrative authority and the prime meridian (Greenwich, England) measured from west to east."
+pubschls,admfname1,varchar,"The superintendents or principals first name. Only active and pending districts and schools will display administrator information, if applicable."
+pubschls,admlname1,varchar,"The superintendents or principals last name. Only active and pending districts and schools will display administrator information, if applicable."
+pubschls,admemail1,varchar,"The superintendents or principals e-mail address. Only active and pending districts and schools will display administrator information, if applicable."
+pubschls,admfname2,varchar,"The second principals first name (optional). Only active and pending school records will display principal information, if applicable."
+pubschls,admlname2,varchar,"The second principals last name (optional). Only active and pending school records will display principal information, if applicable."
+pubschls,admemail2,varchar,"The second principals e-mail address (optional). Only active and pending school records will display principal information, if applicable."
+pubschls,admfname3,varchar,"The third principals first name (optional). Only active and pending school records will display principal information, if applicable."
+pubschls,admlname3,varchar,"The third principals last name (optional). Only active and pending school records will display principal information, if applicable"
+pubschls,admemail3,varchar,"The third principals e-mail address (optional). Only active and pending school records will display principal information, if applicable."
+pubschls,lastupdate,date,The date the record was last updated.
+,,,
