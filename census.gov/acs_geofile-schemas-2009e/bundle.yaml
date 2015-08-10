@@ -39,8 +39,8 @@ pipelines:
         first:
         - RemoveBlankColumns
         last:
-        - 'Add({ ''year'' : lambda e,r: e.source.time, ''release'' : lambda e,r: str(e.source.grain)
-            if e.source.grain else ''all'' })'
+        - 'Add({ ''year'' : lambda e,r,v: e.source.time, ''release'' : lambda e,r,v:
+            str(e.source.grain) if e.source.grain else ''all'' })'
         - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table =
             ''table_shells'' )'
     source:

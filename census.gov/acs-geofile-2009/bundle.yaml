@@ -5,6 +5,7 @@ about:
     groups: null
     license: ckdbl
     processed: null
+    remote: census
     rights: public
     source: null
     space: null
@@ -29,6 +30,10 @@ external_documentation:
         source: null
         title: Download Page
         url: http://www2.census.gov/
+    jamvalues:
+        description: Guidelines for Jam Values
+        title: Jam Values
+        url: ftp://ftp.census.gov/acs2009_5yr/prod/JAM_VALUES.pdf
 identity:
     btime: '2009'
     dataset: acs
@@ -38,15 +43,16 @@ identity:
     subset: geofile
     version: 0.0.1
 names:
-    fqname: census.gov-acs-geofile-2009-0.0.1~dhWL41AmAO001
+    fqname: census.gov-acs-geofile-2009-0.0.1~d04w001
     name: census.gov-acs-geofile-2009
-    vid: dhWL41AmAO001
+    vid: d04w001
     vname: census.gov-acs-geofile-2009-0.0.1
 pipelines:
     build:
         replace:
             SelectPartition: 'SelectPartition(lambda s,r:  dict(time=''{}{}''.format(s.time,
-                s.grain), grain=r[''sumlevel'']), as_dict=True)'
+                s.grain), grain=r[''sumlevel''], table=''geofile''+str(r[''sumlevel''])),
+                as_dict=True)'
     schema:
         last:
         - PrintRows(print_at='end')
