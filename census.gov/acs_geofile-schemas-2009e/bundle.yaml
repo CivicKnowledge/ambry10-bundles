@@ -36,6 +36,8 @@ names:
     vname: census.gov-acs_geofile-schemas-2009e-0.0.1
 pipelines:
     build:
+        augment:
+        - Delete(['releases'])
         first:
         - RemoveBlankColumns
         last:
