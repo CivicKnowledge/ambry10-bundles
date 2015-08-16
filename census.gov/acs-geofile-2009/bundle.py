@@ -10,6 +10,8 @@ class Bundle(ambry.bundle.Bundle):
             return int(v)
         except ValueError:
             return None
+            
+    
                  
     def build_reduced_schemas(self):
         """After running once, it is clear that not all columns are used in all summary levels. This routine

@@ -1,6 +1,8 @@
 name,time,grain,urltype,url,generator
 column_meta,,,ref,census.gov-acs_geofile-schemas-2009e-column_meta,
-states,,,ref,census.gov-acs-geofile-2009-geoschema-20095-40,
+geofiles,,,ref,census.gov-acs-geofile-2009,
+states,,,ref,census.gov-acs-geofile-2009-geofile40-20095-40,
+sumlevels,,,ref,census.gov-acs_geofile-schemas-2009e-sumlevels,
 table_meta,,,ref,census.gov-acs_geofile-schemas-2009e-table_meta,
 table_sequence,,,ref,census.gov-acs_geofile-schemas-2009e-table_sequence,
 table_shells,,,ref,census.gov-acs_geofile-schemas-2009e-table_shells,
