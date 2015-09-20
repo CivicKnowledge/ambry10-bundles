@@ -1,2 +1,2 @@
-name,time,description,filetype,encoding,url
-pubschls,2015,Public Schools List,tsv,latin1,ftp://ftp.cde.ca.gov/demo/schlname/pubschls.txt
+sequence_id,name,time,description,filetype,encoding,url
+1,pubschls,2015,Public Schools List,tsv,latin1,ftp://ftp.cde.ca.gov/demo/schlname/pubschls.txt

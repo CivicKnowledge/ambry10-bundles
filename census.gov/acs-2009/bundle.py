@@ -10,6 +10,18 @@ class Bundle(ambry.bundle.Bundle):
 
     _states = None
 
+    def init(self):
+        
+        self.url_root = self.source('root_5').url
+        
+        self.small_url_template = "{root}/{state_name}_Tracts_Block_Groups_Only.zip"
+        self.large_url_template = "{root}/{state_name}_All_Geographies_Not_Tracts_Block_Groups.zip"
+        
+        self.year = self.metadata.about.time
+        self.release = self.metadata.build.release
+        
+        
+
     @property
     @memoize
     def states(self):
@@ -61,10 +73,13 @@ class Bundle(ambry.bundle.Bundle):
             if row['table_id'] in ignore:
                 continue
 
+            if int(row['sequence_number'] ) > 117:
+                # Not sure where the higher sequence numebrs are, but they aren't in this distribution. 
+                continue
+
             table_name = row['table_id']
 
             if row['start_position']:
-                
                 
                 if table_name in seen:
                     ignore.add(table_name)
@@ -74,7 +89,7 @@ class Bundle(ambry.bundle.Bundle):
                 
                 start = int(float(row['start_position']))
                 length = int(row['total_cells_in_table'])
-                slc = "0:6,{}:{}".format(start, start+length)
+                slc = "2,3,5,{}:{}".format(start, start+length)
         
                 tables[table_name] = dict(
                     name = row['table_id'],
@@ -144,69 +159,76 @@ class Bundle(ambry.bundle.Bundle):
             
         self.commit()
             
-    def table_sources(self, table_name, start, length, sequence):
+    def table_sources(self, table):
         
-        from ambry.orm import DataSource
+        from ambry.orm import TransientDataSource
         
-        url_root = self.source('root_5').url
-        
-        small_url_template = "{root}/{state_name}_Tracts_Block_Groups_Only.zip"
-        large_url_template = "{root}/{state_name}_All_Geographies_Not_Tracts_Block_Groups.zip"
-        
-        year = self.metadata.about.time
-        release = self.metadata.build.release
-   
+        table_name = table.name
+        start = table.data['start']
+        length = table.data['length']
+        sequence = table.data['sequence']
+    
         sources  = []
    
         for stusab, state_id, state_name in self.states:
 
             slc = "2,3,5,{}:{}".format(start, start+length)
 
-            file = "e{}{}{}{:04d}000.txt".format(year,release,stusab.lower(),sequence)
+            file = "e{}{}{}{:04d}000.txt".format(self.year,self.release,stusab.lower(),sequence)
 
-            for url_template in [small_url_template, large_url_template]:
+            for url_template in [self.small_url_template, self.large_url_template]:
                 
-                url = url_template.format(root=url_root, state_name=state_name).replace(' ','')
+                url = url_template.format(root=self.url_root, state_name=state_name).replace(' ','')
         
-                sources.append(DataSource(name='{}_{}'.format(stusab, table_name), 
-                                filetype = 'csv', url = url, source_table_name = table_name,
-                                file = file, time=year, space = stusab, segment = slc))
+                sources.append(TransientDataSource(
+                                # Must have id to make segments in SelectPartition
+                                id = int(table.sequence_id) * 100 + int(state_id), 
+                                name='{}_{}'.format(stusab, table_name), 
+                                filetype = 'csv', 
+                                url = url, 
+                                dest_table_name = table_name,
+                                file = file, 
+                                time=self.year, 
+                                space = stusab, 
+                                segment = slc))
           
         return sources
   
+    def create_jobs(self):
+        
+        from ambry.etl import Pipeline, PrintEvery, PrintRows, Slice, AddDestHeader
+        from ambry.dbexceptions import ConfigurationError
+  
+        self.dataset.delete_partitions()
+  
+        skip_sequence = set()
+  
+        for table in self.dataset.tables:
+            sources = self.table_sources(table)
+            
+            self.build(sources=sources)
+                    
+                
     def run_tables(self):
-        from ambry.etl import Pipeline, PrintEvery, PrintRows, Slice, AddHeader
+        from ambry.etl import Pipeline, PrintEvery, PrintRows, Slice, AddDestHeader
         from ambry.dbexceptions import ConfigurationError
   
         skip_sequence = set()
   
         for table in self.dataset.tables:
  
-            start = table.data['start']
-            length = table.data['length']
-            sequence = table.data['sequence']
-            
-            sources =  self.table_sources(table.name, start, length, sequence)
-            
-            headers = [ c.name for c in table.columns ]
-        
-            
             if sequence in skip_sequence:
                 continue
             
             for source in sources:
                 
                 self.log("Starting: {} {}".format(source.name, source.file))
-                
-                print '!!!!', headers[1:]
-                
+
                 pl = Pipeline(bundle = self, 
-                              source = [
-                                  self.source_pipe(source),
+                              source = [ self.source_pipe(source)],
+                              body = [
                                   Slice,
-                                  AddHeader(headers[1:]), # Cut off the 'id' column
-                                  
-                              ],
+                                  AddDestHeader],
                               last = [PrintRows(print_at='end')]
                 )
             

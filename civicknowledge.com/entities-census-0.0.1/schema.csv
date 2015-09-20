@@ -1,0 +1,15 @@
+"table","datatype","column","derivedfrom"
+,,,
+"counties","int","id",
+"counties","usps.StateAbr","stusab",
+"counties","fips.State","state",
+"counties","fips.County","county",
+"counties","census.AcsGeoid","geoid",
+"counties","str","gvid","geoid.gvid"
+"counties","str","name",
+,,,
+"states","int","id",
+"states","usps.StateAbr","stusab",
+"states","fips.State","state",
+"counties","str","gvid","geoid.gvid"
+"states","str","name",

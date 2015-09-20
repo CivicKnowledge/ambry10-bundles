@@ -47,5 +47,11 @@ names:
     name: census.gov-acs-2009
     vid: d04A001
     vname: census.gov-acs-2009-0.0.1
+pipelines:
+    build:
+        body:
+        - Slice
+        - AddDestHeader
+        - PrintRows(print_at='end')
 requirements: {}
 versions: {}

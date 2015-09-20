@@ -1,0 +1,3 @@
+"name","title","source_table","filetype","time","url"
+"counties",,,"partition",2009,"census.gov-acs-geofile-2009-geofile50-20095-50"
+"states",,,"partition",2009,"census.gov-acs-geofile-2009-geofile40-20095-40"

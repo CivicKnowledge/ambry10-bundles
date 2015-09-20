@@ -10,8 +10,9 @@ about:
     source: null
     space: null
     subject: null
-    summary: Geofiles for the 2009 1, 3 and 5 year ACS releases. Each partition has a table tailored to the non-null
-        columns of the geofile for a specific summary level and release. 
+    summary: Geofiles for the 2009 1, 3 and 5 year ACS releases. Each partition has
+        a table tailored to the non-null columns of the geofile for a specific summary
+        level and release.
     tags: []
     time: 2009
     title: American Community Survey Geofile 2009
