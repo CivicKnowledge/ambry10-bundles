@@ -24,6 +24,7 @@ with f.reader as r:
                 number = int(ps.number.number / 100) * 100
                 
                 key = "{} {} {}".format(number, ps.road.name, ps.road.suffix)
+                print row
                 acc[key].add(dt)
         
         if i % 10000 == 0:
