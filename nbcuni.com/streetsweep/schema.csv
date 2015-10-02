@@ -1,10 +1,5 @@
 table,datatype,column
 ,,
-gps_schema,int,id
-gps_schema,str,column_id
-gps_schema,str,sample
-gps_schema,str,description
-,,
 gps,int,id
 gps,int,inthvsid
 gps,int,intvid
@@ -51,3 +46,8 @@ tickets,str,street
 tickets,int,streetnox
 tickets,str,access_add
 tickets,str,st
+,,
+gps_schema,int,id
+gps_schema,str,column_id
+gps_schema,str,sample
+gps_schema,str,description
