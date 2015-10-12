@@ -35,7 +35,7 @@ names:
     vid: d04s001
     vname: census.gov-acs_geofile-schemas-2009e-0.0.1
 pipelines:
-    build:
+    build-foo:
         augment:
         - Delete(['releases'])
         first:
@@ -45,10 +45,7 @@ pipelines:
             str(e.source.grain) if e.source.grain else ''all'' })'
         - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table =
             ''table_shells'' )'
-    source:
-        first:
-        - Head(10)
-        - RemoveBlankColumns
+
 requirements:
     OpenSSL: PyOpenSSL
     gdata: gdata

@@ -5,7 +5,8 @@ import ambry.bundle
 class Bundle(ambry.bundle.Bundle):
     
     
-    def foo(self):
+    def make_dict(self):
+        """An example of how to create a dict mapping from a bundle"""
         from operator import itemgetter
         
         p =  self.partition(table="counties")
