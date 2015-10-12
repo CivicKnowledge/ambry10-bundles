@@ -1,0 +1,13 @@
+table,column,datatype,derivedfrom
+,,,
+counties,id,int,
+counties,stusab,unicode,
+counties,state,int,
+counties,county,int,
+counties,geoid,census.AcsGeoid,
+counties,gvid,str,row.geoid.gvid
+counties,name,census.CountyName,
+counties,mid_name,unicode,row.name.medium_name
+counties,short_name,unicode,row.name.short_name
+counties,admin_division,unicode,row.name.division_name
+counties,state_name,unicode,row.name.state

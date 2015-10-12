@@ -1,0 +1,11 @@
+table,position,source_header,dest_header,datatype,valuetype,start,width,size,summary,description
+counties,1,id,id,,,,,,,
+counties,2,fileid,fileid,,,,,,,
+counties,3,stusab,stusab,,,,,,,
+counties,4,sumlevel,sumlevel,,,,,,,
+counties,5,component,component,,,,,,,
+counties,6,logrecno,logrecno,,,,,,,
+counties,7,state,state,,,,,,,
+counties,8,county,county,,,,,,,
+counties,9,geoid,geoid,,,,,,,
+counties,10,name,name,,,,,,,

@@ -1,0 +1,50 @@
+about:
+    access: public
+    footnote: nll
+    grain: null
+    groups: null
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: null
+    subject: null
+    summary: A collection of names for states, counties and places, from the US census.
+    tags: []
+    time: null
+    title: Geographic Names From the US Census
+contacts:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+    dataset:
+        description: Web page the links to the dataset description
+        source: null
+        title: Dataset Page
+        url: http://example.com
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity:
+    dataset: names
+    id: dtWSOmD1U1
+    revision: 1
+    source: civicknowledge.com
+    subset: census
+    version: 0.0.1
+names:
+    fqname: civicknowledge.com-names-census-0.0.1~dtWSOmD1U1001
+    name: civicknowledge.com-names-census
+    vid: dtWSOmD1U1001
+    vname: civicknowledge.com-names-census-0.0.1
+pipelines:
+    build-counties:
+    - Delete(('fileid','sumlevel','component', 'logrecno'))
+    - AddDerived
+requirements: {}
+versions: {}

@@ -51,15 +51,8 @@ names:
     vname: census.gov-acs-geofile-2009-0.0.1
 pipelines:
     build:
-        replace:
-            SelectPartition: 'SelectPartition(lambda s,r:  dict(time=''{}{}''.format(s.time,
-                s.grain), grain=r[''sumlevel''], table=''geofile''+str(r[''sumlevel''])),
-                as_dict=True)'
-    schema:
-        last:
-        - PrintRows(print_at='end')
-    source:
-        last:
-        - PrintRows(print_at='end')
+        select_partition:
+        - SelectPartition("dict(time=str(source.time)+str(source.grain),grain=row.sumlevel,
+            table='geofile'+str(row.sumlevel))")
 requirements: {}
 versions: {}

@@ -337,27 +337,5 @@ pipelines:
         - Head(10000)
 requirements: {}
 versions: {}
-source_sets:
-    alcohol_outlets:
-    - alcohol_outlets_an
-    - alcohol_outlets_oy
-    housing_cost:
-    - housing_cost_an
-    - housing_cost_os
-    - housing_cost_ty
-    neighborhood_change:
-    - neighborhood_change_al
-    - neighborhood_change_ls
-    - neighborhood_change_sy
-    public_transit:
-    - public_transit_bay
-    - public_transit_sac
-    - public_transit_sc
-    - public_transit_sd
-    traffic_fatalities:
-    - traffic_fatalities_an
-    - traffic_fatalities_oy
-    unsafe_water:
-    - unsafe_water
-    - unsafe_water_oy
+
 

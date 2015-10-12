@@ -1,0 +1,2 @@
+name,dest_table_name,reftype,ref
+counties,counties,partition,census.gov-acs-geofile-2009-geofile50-20095-50
