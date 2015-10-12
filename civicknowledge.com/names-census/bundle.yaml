@@ -32,7 +32,7 @@ external_documentation:
         url: http://example.com
 identity:
     dataset: names
-    id: dtWSOmD1U1
+    id: d04F
     revision: 1
     source: civicknowledge.com
     subset: census
@@ -40,7 +40,7 @@ identity:
 names:
     fqname: civicknowledge.com-names-census-0.0.1~dtWSOmD1U1001
     name: civicknowledge.com-names-census
-    vid: dtWSOmD1U1001
+    vid: d04F
     vname: civicknowledge.com-names-census-0.0.1
 pipelines:
     build-counties:
