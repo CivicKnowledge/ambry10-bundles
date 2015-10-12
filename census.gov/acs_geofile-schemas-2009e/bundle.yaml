@@ -45,7 +45,10 @@ pipelines:
             str(e.source.grain) if e.source.grain else ''all'' })'
         - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table =
             ''table_shells'' )'
-
+    source:
+        first:
+        - Head(10)
+        - RemoveBlankColumns
 requirements:
     OpenSSL: PyOpenSSL
     gdata: gdata
