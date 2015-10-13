@@ -4,7 +4,8 @@ from ambry.util import memoize
 
 from ambry.etl import SourcePipe
 
-
+raise Exception("Convert this bundle's methods to pipes that create the data sets"
+" for tables & slices in one phase, then used those tables in the build phase. ")
 
 class Bundle(ambry.bundle.Bundle):
 
@@ -36,6 +37,11 @@ class Bundle(ambry.bundle.Bundle):
             for row in ts.stream(as_dict = True):
                 if row['component'] == '00':
                     self._states.append((row['stusab'], row['state'], row['name'] ))
+                    
+        p =  self.partition(table="counties")
+
+        x = dict( [row.row for row  in p.select( headers=('gvid', 'mid_name')) ])
+        print x
                     
         return self._states
 
@@ -74,7 +80,7 @@ class Bundle(ambry.bundle.Bundle):
                 continue
 
             if int(row['sequence_number'] ) > 117:
-                # Not sure where the higher sequence numebrs are, but they aren't in this distribution. 
+                # Not sure where the higher sequence numbers are, but they aren't in this distribution. 
                 continue
 
             table_name = row['table_id']
