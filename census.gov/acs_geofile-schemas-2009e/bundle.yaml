@@ -1,57 +1,53 @@
 about:
-    access: public
-    footnote: null
-    grain: null
-    groups: null
-    license: ckdbl
-    processed: null
-    remote: census
-    rights: public
-    source: null
-    space: US
-    subject: null
-    summary: Column names and positions for the fixed-width geofiles
-    tags: []
-    time: 2009/2013
-    title: ACS Geofile Schema Definitions
+  access: public
+  footnote: null
+  grain: null
+  groups: null
+  license: ckdbl
+  processed: null
+  remote: census
+  rights: public
+  source: null
+  space: US
+  subject: null
+  summary: Column names and positions for the fixed-width geofiles
+  tags: []
+  time: 2009/2013
+  title: ACS Geofile Schema Definitions
 contacts:
-    creator:
-        email: eric@sandiegodata.org
-        name: Eric Busboom
-        url: http://www.sandiegodata.org
+  creator:
+    email: eric@sandiegodata.org
+    name: Eric Busboom
+    url: http://www.sandiegodata.org
 dependencies: {}
 external_documentation: {}
 identity:
-    btime: 2009e
-    dataset: acs_geofile
-    id: d04s
-    revision: 1
-    source: census.gov
-    subset: schemas
-    version: 0.0.1
+  btime: 2009e
+  dataset: acs_geofile
+  id: d04s
+  revision: 1
+  source: census.gov
+  subset: schemas
+  version: 0.0.1
 names:
-    fqname: census.gov-acs_geofile-schemas-2009e-0.0.1~d04s001
-    name: census.gov-acs_geofile-schemas-2009e
-    vid: d04s001
-    vname: census.gov-acs_geofile-schemas-2009e-0.0.1
+  fqname: census.gov-acs_geofile-schemas-2009e-0.0.1~d04s001
+  name: census.gov-acs_geofile-schemas-2009e
+  vid: d04s001
+  vname: census.gov-acs_geofile-schemas-2009e-0.0.1
 pipelines:
-    build-foo:
-        augment:
-        - Delete(['releases'])
-        first:
-        - RemoveBlankColumns
-        last:
-        - 'Add({ ''year'' : lambda e,r,v: e.source.time, ''release'' : lambda e,r,v:
-            str(e.source.grain) if e.source.grain else ''all'' })'
-        - 'ambry.etl.Skip(lambda row: not bool(row[''table_id''].strip()), table =
-            ''table_shells'' )'
-    source:
-        first:
-        - Head(10)
-        - RemoveBlankColumns
+  build:
+    first:
+    - RemoveBlankColumns
+    - Delete(['releases'])
+  build-table_shells:
+    first:
+    - Delete(['year', 'releases'])
+    - RemoveBlankColumns
+    last:
+    - ambry.etl.Skip('skip_empty_table_id')
 requirements:
-    OpenSSL: PyOpenSSL
-    gdata: gdata
-    gspread: gspread
-    oauth2client: oauth2client
+  OpenSSL: PyOpenSSL
+  gdata: gdata
+  gspread: gspread
+  oauth2client: oauth2client
 versions: {}

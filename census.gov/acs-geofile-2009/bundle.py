@@ -3,6 +3,9 @@ import ambry.bundle
 
 class Bundle(ambry.bundle.Bundle):
     
+    def init(self):
+        self._sl_map = None
+    
     @staticmethod
     def non_int_is_null(v):
         
@@ -11,11 +14,12 @@ class Bundle(ambry.bundle.Bundle):
         except ValueError:
             return None
             
-    
+
                  
-    def build_reduced_schemas(self):
-        """After running once, it is clear that not all columns are used in all summary levels. This routine
-        builds new tables for all of the summary levels that have only the columns that are used. """
+    def meta_build_reduced_schemas(self):
+        """After running once, it is clear that not all columns are used in all 
+        summary levels. This routine builds new tables for all of the summary 
+        levels that have only the columns that are used. """
         
         from itertools import islice, izip
         
@@ -23,13 +27,16 @@ class Bundle(ambry.bundle.Bundle):
         
         st_map = { c.name:c for c in source_table.columns }
         
-        table_titles = { int(r['sumlevel']): r['description'] for r in self.dep('sumlevels').stream(as_dict=True)}
+        table_titles = { int(r['sumlevel']): r['description'] for r in 
+                         self.dep('sumlevels').stream(as_dict=True)}
         
         for p in self.partitions:
             
             grain = p.grain
 
-            non_empty_rows = zip(*[ row for row in zip(*islice(p.stream(), 1000)) if bool(filter(bool,row[1:])) ])
+            non_empty_rows = zip(*[ row for row 
+                                    in zip(*islice(p.stream(), 1000)) 
+                                    if bool(filter(bool,row[1:])) ])
 
             t = self.dataset.new_table('geofile'+str(grain))
             t.description = 'Geofile for: ' + table_titles[int(grain)]
@@ -44,8 +51,9 @@ class Bundle(ambry.bundle.Bundle):
         self.commit()
         
     
-    def mkschema(self):
-        """Create the 2009 geofile schema from the configuration in the upstream bundle. """
+    def meta_mkschema(self):
+        """Create the 2009 geofile schema from the configuration in the 
+           upstream bundle. """
         from ambry.orm.file import File
    
         t = self.dataset.new_table('geoschema')
@@ -79,7 +87,8 @@ class Bundle(ambry.bundle.Bundle):
         self.build_source_files.file(File.BSFILE.SCHEMA).objects_to_record()
         self.do_sync(force='rtf')
         
-    def add_sources(self):
+    def meta_add_sources(self):
+        """Run once to create to create the soruces.csv file"""
         from ambry.orm import DataSource, File
         from ambry.util import scrape_urls_from_web_page
         
@@ -118,7 +127,7 @@ class Bundle(ambry.bundle.Bundle):
 
   
 
-    def add_5yr_sources(self):
+    def meta_add_5yr_sources(self):
         """The 5 year release has a different structure because the files are bigger. """
         from ambry.orm import DataSource, File
         from ambry.util import scrape_urls_from_web_page
@@ -167,5 +176,22 @@ class Bundle(ambry.bundle.Bundle):
 
                             s.merge(ds)
                             
-                            
+                          
+    def fix_schema(self):
+        """The schema process is overwritting some goefile datatypes with 
+        'unknown'"""
+        t = self.table('geofile')
+        
+        for c in t.columns:
+            if c.datatype == 'unknown':
+                print c.name
+                c.datatype = 'str'
+                
+        self.commit()
+                
+                
+                
+        
+        
+          
     

@@ -15,16 +15,83 @@ class Bundle(ambry.bundle.Bundle):
     
     
     @staticmethod
-    def tc_caster(v):
+    def skip_empty_table_id(row, source):
+        """Predicate for the Skip pipeline to skip lines without a table_id """
+        
+        try:
+            return not bool(row['table_id'].strip())
+        except AttributeError:
+            # row['table_id'] is None, so no .strip()
+            return True
+        except KeyError:
+            self.error("No column for 'table_id' in {}".format(source.name))
+            return False
+
+    def tc_caster(self, pipe, row, v):
         # Value has  an int, or "<int> CELL" or "<int> CELLS"
+
+        orig_value = v
 
         try:
             return int(v)
+        except TypeError: # None
+            return None
         except ValueError:
             try:
-                return int(v.split()[0])
+                v = v.split()[0]
             except IndexError:
                 return None
+                
+            try:
+                return int(v)
+            except ValueError:
+                return int(float(v))
+   
+
+    @staticmethod
+    def fix_group_headings(pipe, row, v):
+        from six import text_type
+
+        if text_type(row.title).endswith('--'):
+            return float(v)/10.0
+        else:
+            return v
+
+    @staticmethod
+    def set_grain(source):
+        return str(source.grain) if source.grain else 'all' 
+
+    def set_is_column(self, pipe, row, accumulator):
+        """In the table_sequence table, the column lines have integer values, 
+        while headers have decimal values and other entries have no line number"""
+        from ambry.valuetype.types import nullify
+       
+        line = nullify(row.line)
+        
+        if not line:
+            accumulator['ts_line'] = 0
+            return 'N'
+            
+        try:
+            
+            # Catch lines that are out of order. These are header lines. Usually
+            # they are offset by .5, but in the 2009 file, they are
+            # all multiplied by 10, so what should be 1.5 appears as 15. 
+            if  line - accumulator['ts_line'] > 1:
+                line = float(line) / 10.0
+            
+            accumulator['ts_line'] = int(line)
+            
+            if int(line) == line: # Check that it is an integer. 
+                return 'Y'
+            else:
+                return 'N'
+                
+        except ValueError:
+            return 'N'
+
+
+    
 
     @property
     @memoize
@@ -40,7 +107,6 @@ class Bundle(ambry.bundle.Bundle):
 
                 # For the entries that have the word ' cell ' in them
                 length = int(row['total_cells_in_table'].split()[0])
-                    
                     
                 table_spans[(row['table_id'], int(row['year']), int(row['release']) )] = (sp, length)
                 

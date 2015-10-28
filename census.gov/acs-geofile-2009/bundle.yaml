@@ -50,9 +50,13 @@ names:
   vid: d04w002
   vname: census.gov-acs-geofile-2009-0.0.2
 pipelines:
-  build:
+  build-geofile:
     select_partition:
-    - SelectPartition("dict(time=str(source.time)+str(source.grain),grain=row.sumlevel,
+    - SelectPartition('dict(time=str(source.time)+str(source.grain),table="geofile")
+      ')
+  split:
+    select_partition:
+    - SelectPartition("dict(time=str(source.time)+str(source.grain), grain=row.sumlevel,
       table='geofile'+str(row.sumlevel))")
 requirements: {}
 versions: {}

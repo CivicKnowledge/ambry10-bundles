@@ -22,7 +22,7 @@ geofile,20,aitsce,aitsce,int,,63,3,,,American Indian Tribal Subdivision (Census)
 geofile,21,aits,aits,unknown,,66,5,,,American Indian Tribal Subdivision (FIPS) 
 geofile,22,anrc,anrc,int,,71,5,,,Alaska Native Regional Corporation (FIPS) 
 geofile,23,cbsa,cbsa,int,,76,5,,,Metropolitan and Micropolitan Statistical Area 
-geofile,24,csa,csa,unknown,,81,3,,,Combined Statistical Area 
+geofile,24,csa,csa,int,,81,3,,,Combined Statistical Area 
 geofile,25,metdiv,metdiv,unknown,,84,5,,,Metropolitan Statistical Area- Metropolitan Division 
 geofile,26,macc,macc,unknown,,89,1,,,Metropolitan Area Central City 
 geofile,27,memi,memi,int,,90,1,,,Metropolitan/Micropolitan Indicator Flag  
@@ -42,3 +42,17 @@ geofile,44,pci,pci,str,,157,1,,,Principal City Indicator
 geofile,47,puma5,puma5,int,,169,5,,,Public Use Microdata Area 5% File 
 geofile,49,geoid,geoid,str,,179,40,,,Geographic Identifier 
 geofile,50,name,name,str,,219,200,,,Area Name 
+geofile_schema,1,id,id,int,,,,,,
+geofile_schema,2,seq,seq,int,,,,,,
+geofile_schema,3,name,name,str,,,,,,
+geofile_schema,4,description,description,str,,,,,,
+geofile_schema,5,width,width,int,,,,,,
+geofile_schema,6,start,start,int,,,,,,
+geofile_schema,7,geolevels,geolevels,str,,,,,,
+geofile_schema,8,year,year,int,,,,,,
+geofile_schema,9,release,release,str,,,,,,
+sumlevels,1,id,id,int,,,,,,
+sumlevels,2,sumlevel,sumlevel,int,,,,,,
+sumlevels,3,description,description,str,,,,,,
+sumlevels,4,year,year,int,,,,,,
+sumlevels,5,release,release,str,,,,,,
