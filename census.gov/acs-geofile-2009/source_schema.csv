@@ -2,7 +2,7 @@ table,position,source_header,dest_header,datatype,valuetype,start,width,size,sum
 geofile,1,fileid,fileid,str,,1,6,,,Always equal to ACS Summary File identification 
 geofile,2,stusab,stusab,str,,7,2,,,State Postal Abbreviation 
 geofile,3,sumlevel,sumlevel,int,,9,3,,,Summary Level 
-geofile,4,component,component,int,,12,2,,,Geographic Component 
+geofile,4,component,component,str,,12,2,,,Geographic Component 
 geofile,5,logrecno,logrecno,int,,14,7,,,Logical Record Number 
 geofile,6,us,us,str,,21,1,,,US  
 geofile,7,region,region,str,,22,1,,,Census Region 
@@ -32,7 +32,7 @@ geofile,30,nectadiv,nectadiv,str,,99,5,,,New England City and Town Area Division
 geofile,31,ua,ua,str,,104,5,,,Urban Area 
 geofile,33,cdcurr,cdcurr,int,,114,2,,,Current Congressional District *** 
 geofile,34,sldu,sldu,str,,116,3,,,State Legislative District Upper 
-geofile,35,sldl,sldl,int,,119,3,,,State Legislative District Lower 
+geofile,35,sldl,sldl,str,,119,3,,,State Legislative District Lower 
 geofile,39,submcd,submcd,str,,136,5,,,Subminor Civil Division (FIPS) 
 geofile,40,sdelm,sdelm,int,,141,5,,,State-School District (Elementary) 
 geofile,41,sdsec,sdsec,int,,146,5,,,State-School District (Secondary) 
