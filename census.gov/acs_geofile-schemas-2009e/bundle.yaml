@@ -39,10 +39,12 @@ pipelines:
     first:
     - RemoveBlankColumns
     - Delete(['releases'])
+    - Nullify
   build-table_shells:
     first:
     - Delete(['year', 'releases'])
     - RemoveBlankColumns
+    - Nullify
     last:
     - ambry.etl.Skip('skip_empty_table_id')
 requirements:

@@ -39,9 +39,10 @@ table_sequence,table_id,str,,
 table_sequence,sequence_number,int,,
 table_sequence,line,float,fix_group_headings,
 table_sequence,is_column,str,^set_is_column,"'Y' if this entry is a real column, 'N' if it is a heading"
-table_sequence,start,str,,
-table_sequence,table_cells,str,tc_caster,
-table_sequence,sequence_cells,str,tc_caster,
+table_sequence,start,int,^save_start,
+table_sequence,table_cells,int,^tc_caster,
+table_sequence,sequence_cells,int,^tc_caster,
+table_sequence,segment_column,int,||segment_column,Column position in the segment file.
 table_sequence,title,str,,
 table_sequence,subject,str,,
 table_sequence,year,int,^source.time,Release year

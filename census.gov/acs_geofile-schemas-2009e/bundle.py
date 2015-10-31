@@ -15,6 +15,44 @@ class Bundle(ambry.bundle.Bundle):
     
     
     @staticmethod
+    def save_start(v, row, accumulator):
+        """Store the start position and sequence number for a table"""
+        from ambry.valuetype.types import int_n, nullify
+        try:
+            v = nullify(v)
+            if v:
+                v = int(v)
+                accumulator[(row.table_id.lower(), 
+                             int_n(row.sequence_number))] = v
+        
+                return v
+        except:
+            print row
+            raise
+    
+        return None
+
+    def segment_column(self, v, row, source, accumulator):
+        """Calculate the 1-indexed column position in the segment file for this 
+        column, base on the sequence_id and start position for the table, 
+        stored by save_start"""
+    
+        try:
+            if row.is_column == 'Y' and row.line:
+                start = accumulator[(row.table_id.lower(), 
+                                     int(row.sequence_number))]
+                pos = start + row.line  - 1
+                return pos
+        except Exception as e:
+            self.error("segment_column exc for source {}: {} "
+                       .format(source.name, e))
+            print accumulator
+            print row
+            raise
+            
+        return None
+    
+    @staticmethod
     def skip_empty_table_id(row, source):
         """Predicate for the Skip pipeline to skip lines without a table_id """
         

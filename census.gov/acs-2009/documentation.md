@@ -18,5 +18,7 @@ In this conversion, all of these values are converted to NULL and a code is adde
 - ' ' -> 'g'
 - NULL -> 'N'
 
+Because the jam_values value can be really long -- 60 'm' characters for an empty row -- it is run length encoded.
+
 The MOE values ( 0 and -1 ) are unaltered
 

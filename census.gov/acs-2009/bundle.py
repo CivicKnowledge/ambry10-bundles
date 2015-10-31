@@ -3,19 +3,122 @@ import ambry.bundle
 from ambry.util import memoize
 
 
+class TableRowGenerator(object):
+    """Generate table rows by combining multuple state files, slicing out 
+    an individual table, and merging the estimates and margins"""
+    
+    def __init__(self, bundle, source):
+        self.source = source
+        self.bundle = bundle
+        self.library = self.bundle.library
+        self.year = int(self.bundle.year)
+        self.release = int(self.bundle.release)
+        self.header_cols = self.bundle.header_cols
+        self.states = self.bundle.states
+        self.url_root = self.bundle.source('base_url_5').ref
+        self.small_url_template = self.bundle.source('small_area_url_5').ref
+        self.large_url_template = self.bundle.source('large_area_url_5').ref
+        
+    def __iter__(self):
+        
+        from ambry_sources import SourceSpec, get_source
+        from ambry.etl import Slice
+        from itertools import izip, chain
+        
+        cache = self.library.download_cache
+        
+        table = self.source.dest_table
+        
+        if isinstance(table, str):
+            table = self.table(table)
+        
+        table_name = table.name
+       
+        start = int(table.data['start'])
+        length = int(table.data['length'])
+        sequence = int(table.data['sequence'])
+        
+        slca_str = ','.join(str(e[4]) for e in self.header_cols)
+        slcb_str =  "{}:{}".format(start-1, start+length-1)
+        
+        # Slice for the stusab, logrecno, etc. 
+        slca, slc_code = Slice.make_slicer(slca_str)
+        # Slice for the data columns
+        slcb, slc_code = Slice.make_slicer(slcb_str)
+        
+        columns = [ c.name for c in table.columns ]
+
+        # Columns before the first data column, by removing the
+        # data columns, which are presumed to all be at the end. 
+        preamble_cols = columns[:-2*len(slcb(range(1,300)))]
+        data_columns =  columns[len(preamble_cols):]
+        
+        header_cols = [e[0] for e in self.header_cols]
+        
+        assert preamble_cols[-1] == 'jam_flags'
+        assert data_columns[0][-3:] == '001'
+        assert data_columns[1][-3:] == 'm90'
+
+        yield header_cols + data_columns
+        
+        for stusab, state_id, state_name in self.states:
+            
+            file = "{}{}{}{:04d}000.txt".format(self.year,self.release,
+                         stusab.lower(),sequence)
+            
+            for (size, url_template) in [('s', self.small_url_template), 
+                                         ('l',self.large_url_template)]:
+                
+                url = url_template.format(root=self.url_root, 
+                                          state_name=state_name).replace(' ','')
+                      
+                spec = SourceSpec(
+                    url = url,
+                    filetype = 'csv', 
+                    reftype = 'zip',
+                    file = 'e'+file
+                )
+                
+                s1 = get_source(spec, cache)
+                  
+                spec.file = 'm'+file
+                s2 = get_source(spec, cache)
+                      
+
+                for i, (row1, row2) in enumerate(izip(s1, s1)):
+                    # Interleave the slices of the of the data rows, prepend
+                    # the stusab, logrecno, etc. 
+                    yield slca(row1)+tuple(chain(*zip(slcb(row1),slcb(row2)))) 
+               
+
+                
+            if self.bundle.test:    
+                break # Only do one table in test. 
+    
+
 class Bundle(ambry.bundle.Bundle):
 
     _states = None
 
+    # Which of the first columns in the data tavbles to use. 
+    header_cols = [
+        # Column name, Description, width, datatype, column position
+        #('FILEID','File Identification',6,'str' ),
+        #('FILETYPE','File Type',6,'str'),
+        ('STUSAB','State/U.S.-Abbreviation (USPS)',2,'str',2 ),
+        ('CHARITER','Character Iteration',3,'str',3 ),
+        ('SEQUENCE','Sequence Number',4,'int',4 ),
+        ('LOGRECNO','Logical Record Number',7,'int',5 )
+    ]
+
     def init(self):
-        
-        self.url_root = self.source('root_5').url
-        
-        self.small_url_template = "{root}/{state_name}_Tracts_Block_Groups_Only.zip"
-        self.large_url_template = "{root}/{state_name}_All_Geographies_Not_Tracts_Block_Groups.zip"
-        
-        self.year = self.metadata.about.time
-        self.release = self.metadata.build.release
+        import isodate
+
+        r,y = self.identity.btime.upper().split('E')
+
+        self.release = int(isodate.parse_duration(r).years)
+        self.year = int(isodate.parse_date(y).year)
+      
         
     jam_map = {
         '.': 'm', # Missing or suppressed value
@@ -39,18 +142,27 @@ class Bundle(ambry.bundle.Bundle):
                 raise
                 
             return None
-            
+        
+     
     def jam_values(self, errors, row):
         """Write the collected jam codes to the jam_value field."""
+        from itertools import chain, groupby
         
         jams =  errors.get('jams')
         
-        # FIXME This is a bit fragile. The -5 is to remove the count of the non
-        # data columns.         
-        if jams == 'm'* (len(row) - 5): # All entries are missing
-            return 'M' # save some space
-        else:
-            return jams
+        def rle(s):
+            "Run-length encoded"
+            return ''.join(str(e) for e in chain(*[(len(list(g)), k) 
+                                            for k,g in groupby(s)]))
+        
+       
+        return rle(jams) if jams else None
+        
+    def join_geoid(self, row):
+        """Add a geoid to the row, from the geofile partition, linked via the
+        state abbreviation and logrecno"""
+        return self.geofile[(row.stusab.upper(), int(row.logrecno))][0]
+        
         
     @property
     @memoize
@@ -61,18 +173,26 @@ class Bundle(ambry.bundle.Bundle):
         
             self._states = []
         
-            with self.source('states').datafile.reader as r:
+            with self.dep('states').datafile.reader as r:
                 for row in r.select( lambda r: r['component'] == '00'):
                     self._states.append((row['stusab'], row['state'], row['name'] ))
                     
         return self._states
+      
+    @property
+    @memoize
+    def geofile(self):
+        with self.dep('geofile').datafile.reader as r:
+            return { (row.stusab, row.logrecno): (row.geoid, row.sumlevel)  
+                     for row in r }
+    
         
     ##
     ## Create Tables
     ##
         
-    def create_tables(self):
-
+    def schema(self, sources = None, tables=None, stage = 1, clean=False):
+        
         self.log("Deleteting old tables and partitions")
         self.dataset.delete_tables_partitions()
         
@@ -90,45 +210,62 @@ class Bundle(ambry.bundle.Bundle):
             
             lr(table_id)
             
-            self.make_table( **d )
+            t = self.make_table( **d )
+            
+            self.make_source(t)
             
         self.commit()
         
         self.sync_out()
-        
+
 
     def make_table(self,  name, universe, description, columns, data):
+        """Meta-phase routine to create a single table, called from 
+        create_tables"""
+        t = self.new_table(name, description = description.title(), 
+                            universe = universe.title(), data = data)
         
-        t = self.new_table(name, description = description.title(), universe = universe.title(),
-                           data = data)
-
-        header_cols = [
-            #('FILEID','File Identification',6 ),
-            #('FILETYPE','File Type',6),
-            ('STUSAB','State/U.S.-Abbreviation (USPS)',2 ),
-            ('CHARITER','Character Iteration',3 ),
-            ('SEQUENCE','Sequence Number',4 ),
-            ('LOGRECNO','Logical Record Number',7 )
-        ]
-        
-        for name, desc, size in header_cols:
-            t.add_column(name, description = desc, size = size)
+        for name, desc, size, dt, pos in self.header_cols:
+            t.add_column(name, 
+                         description = desc, 
+                         size = size,
+                         datatype = dt,
+                         data=dict(start=pos))
            
-        seen = set()
+        # NOTE! All of these added columns must also appear in the
+        # Add pipe in the bundle.yaml metadata
+        t.add_column(name='geoid', datatype='census.AcsGeoid', 
+              description='Geoid from geofile', transform='^join_geoid')
+           
+        t.add_column(name='gvid', datatype='census.GVid', 
+              description='GVid from geoid', transform='||row.geoid.gvid')
+              
+        t.add_column(name='sumlevel', datatype='int', 
+              description='Summary Level', transform='||row.geoid.sl')
+            
+        t.add_column(name='jam_flags', datatype='str', transform='^jam_values',
+              description='Flags for converted Jam values')
+           
+           
+        seen = set() # Mostly for catching errors. 
+           
            
         for col in columns:
             if col['name'] in seen:
                 print col['name'],  "already in name;", seen
                 raise Exception()
                 
-            t.add_column( transform='^jam_float', **col )
+            t.add_column( name=col['name'], 
+                          description=col['description'],
+                          transform='^jam_float', 
+                          datatype='float',
+                          data=col['data'])
             
             seen.add(col['name'])
             
-        t.add_column(name='jam_flags', datatype='str', transform='^jam_values',
-              description='Flags for converted Jam values')
             
-
+        return t
+            
     def tables_list(self,  add_columns = True):
         from collections import defaultdict
         from ambry.orm.source import DataSource
@@ -140,8 +277,8 @@ class Bundle(ambry.bundle.Bundle):
 
         tables = defaultdict(lambda: dict(table=None, universe = None, columns = []))
 
-        year = self.metadata.about.time
-        release = self.metadata.build.release
+        year = self.year
+        release = self.release
 
         table_id = None
         seen = set()
@@ -150,8 +287,8 @@ class Bundle(ambry.bundle.Bundle):
         #name, universe, description, columns
         
         i = 0
-        
-        with self.source('table_sequence').datafile.reader as r:
+
+        with self.dep('table_sequence').datafile.reader as r:
             for row in r:
                 
 
@@ -165,7 +302,6 @@ class Bundle(ambry.bundle.Bundle):
                 if int(row['sequence_number'] ) > 117:
                     # Not sure where the higher sequence numbers are, but they aren't in this distribution. 
                     continue
-
                     
                 i += 1
 
@@ -186,7 +322,7 @@ class Bundle(ambry.bundle.Bundle):
         
                     start = int(float(row['start']))
                     length = int(row['table_cells'])
-                    slc = "2,3,4,5,{}:{}".format(start-1, start+length-1)
+                    
 
                     tables[table_name] = dict(
                         name = row['table_id'],
@@ -197,7 +333,7 @@ class Bundle(ambry.bundle.Bundle):
                             sequence = int(row['sequence_number']),
                             start=start, 
                             length=length, 
-                            slice = slc
+                            
                         )
                     )
         
@@ -205,7 +341,6 @@ class Bundle(ambry.bundle.Bundle):
                     tables[table_name]['universe'] = row['title'].replace('Universe: ','').strip()
 
                 elif add_columns and row['is_column'] == 'Y':
-                    
                     
                     col_name = table_name+"{:03d}".format(int(row['line']))
   
@@ -216,41 +351,51 @@ class Bundle(ambry.bundle.Bundle):
   
                     tables[table_name]['columns'].append(dict(
                         name=col_name,
-                        description=row['title'], datatype = 'float')
+                        description=row['title'], 
+                        datatype = 'float',
+                        data=dict(start=row['segment_column']))
                         )
-                
-        
+                        
+                    # Add the margin of error column
+                    tables[table_name]['columns'].append(dict(
+                        name=col_name+'_m90',
+                        description="Margin of error for: "+col_name, 
+                        datatype = 'float',
+                        data=dict(start=row['segment_column']))
+                        )
+                    
+                    
         return tables
  
+        
+    def make_source(self, table):
+        from ambry.orm.exc import NotFoundError
+
+        try:
+            ds = self._dataset.source_file(table.name)
+        except NotFoundError:
+            ds = self._dataset.new_source(table.name,
+                dest_table_name = table.name, 
+                reftype='generator',
+                ref='TableRowGenerator')
+                
+        except: # Odd error with 'none' in keys for d
+            raise
+ 
+    def test_mk_sources(self):
+        
+        for t in self.tables:
+            self.make_source(t)
+            print t.name
+            
+        self.commit()
+        
+ 
     ##
     ##
     ##
  
-    def create_jobs(self):
-        
-        from ambry.etl import Pipeline, PrintEvery, PrintRows, Slice, AddDestHeader
-        from ambry.dbexceptions import ConfigurationError
-  
-        self.dataset.delete_partitions()
-  
-        skip_sequence = set()
-  
-        for table in self.dataset.tables:
-        
-            if table.name != 'b08526':
-                continue
-        
-            sources = self.table_sources(table)
 
-            if self.test:
-                sources = sources[:10]
-
-            self.log("Table {} with {} sources".format(table.name, len(sources)))
-            
-            self.ingest(sources=sources, update_tables = False)   
-
-            self.build(sources=sources)
-       
     def post_build(self, phase='build'):
         """After the build, update the configuration with the time required for
         the build, then save the schema back to the tables, if it was revised
@@ -271,51 +416,3 @@ class Bundle(ambry.bundle.Bundle):
         self.state = phase + '_done'
 
         self.log("---- Finished Build ---- ")
-
-
-    def table_sources(self, table):
-        """Create a set of transient sources for a single table, one for each of
-        the 52 states and two URLs. """
-        
-        from ambry.orm import TransientDataSource
-        
-        table_name = table.name
-        start = table.data['start']
-        length = table.data['length']
-        sequence = table.data['sequence']
-
-        sources  = []
-   
-        for stusab, state_id, state_name in self.states:
-
-            slc = "2,3,4,5,{}:{}".format(start-1, start+length-1)
-
-            file = "e{}{}{}{:04d}000.txt".format(self.year,self.release,
-                         stusab.lower(),sequence)
-
-            for (size, url_template) in [('s', self.small_url_template), 
-                                         ('l',self.large_url_template)]:
-                
-                url = url_template.format(root=self.url_root, state_name=state_name).replace(' ','')
-        
-                source = TransientDataSource(
-                                # Must have id to make segments in SelectPartition
-                                sequence_id = int(table.sequence_id) * 100 + int(state_id), 
-                                name='{}_{}_{}_{}'.format(stusab, size, file, table_name), 
-                                filetype = 'csv', 
-                                reftype = 'zip',
-                                url = url, 
-                                dest_table_name = table_name,
-                                file = file, 
-                                time=self.year, 
-                                space = stusab, 
-                                start_line = 0, # No header
-                                segment = slc) # The Slice pipe gets the slice from here. 
-                                
-                source._bundle = self
-                
-                sources.append(source)
-          
-        return sources
-  
-
