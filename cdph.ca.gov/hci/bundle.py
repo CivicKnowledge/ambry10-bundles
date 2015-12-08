@@ -4,28 +4,12 @@ import ambry.bundle
 
 class Bundle(ambry.bundle.Bundle):
     
+    RSE_MAX = 100 # Maximum Relative std error
     
-    def dump_headers(self):
-        
-        h = []
-        
-        for t in self.dataset.source_tables:    
-            h.append( [t.name]+[c.source_header for c in t.columns])
-            
-        
-        import json
-        print json.dumps(h)
-            
-        
-        
-        
-        
-    
-    def cluster(self):
-        
-        from ambry.etl import ClusterHeaders
-        
-        ch = ClusterHeaders(self)
-        
-        ch.cluster()
+    def catch_dbz(self, v):
+        """On row 96767 of the Alameda Neighbohoor CHange file there is a
+        very large value that looks like a divide-by-nearly-zero error"""
 
+        return min(v, self.RSE_MAX)
+        
+       

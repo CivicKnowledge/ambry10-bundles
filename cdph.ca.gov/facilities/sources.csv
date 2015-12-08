@@ -1,0 +1,3 @@
+name,title,dest_table_name,space,filetype,reftype,ref,state
+facilities,facilities,facilities,California,csv,,https://cdph.data.ca.gov/api/views/89gy-3cst/rows.csv?accessType=DOWNLOAD,synced
+counties,counties,counties,California,partition,ref,census.gov-index-counties,synced

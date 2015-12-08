@@ -1,0 +1,44 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: zip
+  groups:
+  - health
+  license: ckdbl
+  processed: Data were aggregated from zip codes to counties by Civic Knowledge.
+  rights: public
+  source: '{{source.name}}, {{external_documentation.dataset.title}}, {{external_documentation.dataset.url}}. '
+  space: California
+  subject: births
+  summary: Number of live births by county, based on the zip codes of the mothers
+    residence at the time of delivery, and by race/ethnicity of mother, age of mother,
+    receipt of prenatal care, and infant birthweight.
+  tags: []
+  time: 1989/2012
+  title: Birth Profiles by Zip Code
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  dataset:
+    description: Main webpage for the dataset.
+    source: null
+    title: Birth Profiles by Zip Code
+    url: http://www.cdph.ca.gov/data/statistics/Pages/BirthProfilesbyZIPCode.aspx
+identity:
+  dataset: birth_profiles
+  id: d03Q
+  revision: 6
+  source: cdph.ca.gov
+  version: 0.0.6
+names:
+  fqname: cdph.ca.gov-birth_profiles-0.0.6~d03Q006
+  name: cdph.ca.gov-birth_profiles
+  vid: d03Q006
+  vname: cdph.ca.gov-birth_profiles-0.0.6
+requirements: {}
+versions: {}

@@ -1,0 +1,61 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+birth_profile_county,1,id,int,,"Births by County, Race, Age, Birthweight, and Prenatal Care"
+birth_profile_county,2,county_gvid,str,6,County of Mother's Residence
+birth_profile_county,3,year,int,4,Year
+birth_profile_county,4,mother_age_lt20,int,5,Mother Age: Under 20
+birth_profile_county,5,mother_age_20_29,int,6,Mother Age: 20-29
+birth_profile_county,6,mother_age_30_34,int,6,Mother Age: 30-34
+birth_profile_county,7,mother_age_gt35,int,5,Mother Age: 35+
+birth_profile_county,8,mother_age_unk,int,3,Mother Age: Unknown
+birth_profile_county,9,mother_race_white,int,6,Mother Race: White
+birth_profile_county,10,mother_race_black,int,5,Mother Race: Black
+birth_profile_county,11,mother_race_asian,int,5,Mother Race: Asian
+birth_profile_county,12,mother_race_asianpi,int,5,Mother Race: Asian/Pacific Islander
+birth_profile_county,13,mother_race_seasian,int,5,Mother Race: Southeast Asian
+birth_profile_county,14,mother_race_hisp,int,6,Mother Race: Hispanic/Latino
+birth_profile_county,15,mother_race_amind,int,4,Mother Race: American Indian
+birth_profile_county,16,mother_race_filipino,int,5,Mother Race: Filipino
+birth_profile_county,17,mother_race_hpi,int,4,Mother Race: Hawaiian/Pacific Islander
+birth_profile_county,18,mother_race_multiple,int,5,Mother Race: Multiple
+birth_profile_county,19,mother_race_other,int,5,Mother Race: Other
+birth_profile_county,20,prenatal_none,int,6,Prenatal Care: None
+birth_profile_county,21,prenatal_first,int,6,Prenatal Care: Began 1st Trimester
+birth_profile_county,22,prenatal_second,int,5,Prenatal Care: Began 2nd Trimester
+birth_profile_county,23,prenatal_third,int,5,Prenatal Care: Began 3rd Trimester
+birth_profile_county,24,prenatal_unk,int,5,Prenatal Care: Unknown
+birth_profile_county,25,total_births,int,6,Total Births
+birth_profile_county,26,weight_1500_2499,int,5,Birthweight (Low): 1500-2499 grams
+birth_profile_county,27,weight_gt2500,int,6,Birthweight: 2500+ grams
+birth_profile_county,28,weight_lt1500,int,4,Birthweight (Very Low): Under 1500 grams
+birth_profile_county,29,weight_unk,int,2,Birthweight: Unknown
+,,,,,
+birth_profile,1,id,int,,"Births by Zip Code, Race, Age, Birthweight, and Prenatal Care"
+birth_profile,2,zipcode,int,5,Zip Code Of Mother's Residence
+birth_profile,3,year,int,4,Year
+birth_profile,4,mother_age_lt20,int,5,Mother Age: Under 20
+birth_profile,5,mother_age_20_29,int,6,Mother Age: 20-29
+birth_profile,6,mother_age_30_34,int,6,Mother Age: 30-34
+birth_profile,7,mother_age_gt35,int,5,Mother Age: 35+
+birth_profile,8,mother_age_unk,int,2,Mother Age: Unknown
+birth_profile,9,mother_race_white,int,6,Mother Race: White
+birth_profile,10,mother_race_black,int,5,Mother Race: Black
+birth_profile,11,mother_race_asian,int,5,Mother Race: Asian
+birth_profile,12,mother_race_asianpi,int,3,Mother Race: Asian/Pacific Islander
+birth_profile,13,mother_race_seasian,int,5,Mother Race: Southeast Asian
+birth_profile,14,mother_race_hisp,int,6,Mother Race: Hispanic/Latino
+birth_profile,15,mother_race_amind,int,4,Mother Race: American Indian
+birth_profile,16,mother_race_filipino,int,5,Mother Race: Filipino
+birth_profile,17,mother_race_hpi,int,4,Mother Race: Hawaiian/Pacific Islander
+birth_profile,18,mother_race_multiple,int,5,Mother Race: Multiple
+birth_profile,19,mother_race_other,int,5,Mother Race: Other
+birth_profile,20,prenatal_none,int,6,Prenatal Care: None
+birth_profile,21,prenatal_first,int,6,Prenatal Care: Began 1st Trimester
+birth_profile,22,prenatal_second,int,5,Prenatal Care: Began 2nd Trimester
+birth_profile,23,prenatal_third,int,5,Prenatal Care: Began 3rd Trimester
+birth_profile,24,prenatal_unk,int,5,Prenatal Care: Unknown
+birth_profile,25,total_births,int,6,Total Births
+birth_profile,26,weight_1500_2499,int,5,Birthweight (Low): 1500-2499 grams
+birth_profile,27,weight_gt2500,int,6,Birthweight: 2500+ grams
+birth_profile,28,weight_lt1500,int,4,Birthweight (Very Low): Under 1500 grams
+birth_profile,29,weight_unk,int,2,Birthweight: Unknown

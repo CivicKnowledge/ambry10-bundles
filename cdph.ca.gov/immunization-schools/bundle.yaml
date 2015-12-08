@@ -1,0 +1,50 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: school
+  groups: []
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: California
+  subject: null
+  summary: Most recent summary reports and data files that measure compliance with
+    the school immunization law, conducted in licensed child care facilities and all
+    schools with kindergartens and/or 7th grades. Individual facility/school data
+    is only presented for facilities/schools with 10 or more students.
+  tags: []
+  time: null
+  title: Immunization Levels in Child Care and Schools
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  dataset:
+    description: Main webpage for the dataset.
+    source: null
+    title: Dataset Page
+    url: http://www.cdph.ca.gov/programs/immunize/pages/immunizationlevels.aspx
+  download:
+    description: Web page that links to the source files.
+    source: null
+    title: Download Page
+    url: http://www.cdph.ca.gov/programs/immunize/pages/immunizationlevels.aspx
+identity:
+  dataset: immunization
+  id: d03N
+  revision: 4
+  source: cdph.ca.gov
+  subset: schools
+  version: 0.0.4
+names:
+  fqname: cdph.ca.gov-immunization-schools-0.0.4~d03N004
+  name: cdph.ca.gov-immunization-schools
+  vid: d03N004
+  vname: cdph.ca.gov-immunization-schools-0.0.4
+requirements: {}
+versions: {}

@@ -1,0 +1,17 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+facilities,1,id,int,,Table generated from https://cdph.data.ca.gov/api/views/89gy-3cst/rows.csv?accessType=DOWNLOAD
+facilities,2,facid,str,9,"FACID is the primary key from the FACILITY table used to track facility information for all facilities stored in the Electronic Licensing Management System (ELMS) for CDPH Center of Healthcare Quality, Licensing and Certification Program."
+facilities,3,name,str,75,"NAME is the facility name in the FACILITY table in ELMS, obtained from the Facility's license application form."
+facilities,4,address,str,40,"ADDRESS is the same as FAC_ADDRESS1 in  the FACILITY table in ELMS, obtained from the Facility's license application form."
+facilities,5,city,str,20,"CITY is the same as FAC_CITY in the FACILITY table in ELMS, obtained from the Facility's license application form."
+facilities,6,county,str,15,"COUNTY is the name of the County where the facility is located, derived from COUNTY_CODE in the FACILITY table in ELMS, obtained from the Facility's license application form."
+facilities,7,zip,int,5,"ZIP is the same as FAC_ZIP5 in the FACILITY table in ELMS, obtained from the Facility's license application form."
+facilities,8,type,str,66,"TYPE is the same as DESCRIPTION in the FAC_TYPE table in ELMS.  Values: Specific categories of healthcare facilities ( General Acute Care Hospital, Acute Psychiatric Hospital, Skilled Nursing Facility, Community Clinic,  Surgical Clinic, Intermediate Care Facility, Intermediate Care Facility/Developmentally Disabled,  Intermediate Care Facility/Developmentally Disabled - Habilitative, Intermediate Care Facility/Developmentally Disabled - Nursing,  Hospice Facility, Rehabilitation Clinic, Pediatric Day Health & Respite Care Facility, Home Health Agency,  Adult Day Health Care, Alternative Birthing Center, Chemical Dependency Recovery Hospital, Chronic Dialysis Clinic, Hospice,  Free Clinic, Correctional Treatment Center, Congregate Living Health Facility)"
+facilities,9,capacity,str,4,"CAPACITY  is the same as TOTAL_CAPACITY in the FACILITY table in ELMS, referring to the number of licensed beds, and obtained from the Facility's license application form."
+facilities,10,latitude,float,,"Latitude in decimal degrees (WGS 1984 Web Mercator Auxiliary Sphere; WKID 102100 or EPSG 3857). Geocoded with CDPH geocoding service (Esri: StreetMap Premium, Tom Tom data)."
+facilities,11,longitude,float,,"Latitude in decimal degrees (WGS 1984 Web Mercator Auxiliary Sphere; WKID 102100 or EPSG 3857). Geocoded with CDPH geocoding service (Esri: StreetMap Premium, Tom Tom data)."
+facilities,12,location,str,24,Latitude and longitude combined by Socrata for mapping
+facilities,13,county_gvid,str,6,County geo vid
+facilities,14,zip_gvid,str,6,zip geo vid
+facilities,15,year,int,4,Year of data. This is set to the year the bundle was created.
