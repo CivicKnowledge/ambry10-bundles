@@ -5,17 +5,32 @@ import ambry.bundle
 
 class Bundle(ambry.bundle.Bundle):
     
+    grain_map = {
+        'pl':'place',
+        'co':'county',
+        'ca':'california',
+        'cd':'subcounty',
+        'ct':'tract',
+        'zc': 'zcta',
+        'na': None,
+        're': 'region',
+        'r4':'cmsa',
+        'ms':'msa',
+        'st':'california'
+    }
+    
     def edit_pipeline(self, pl):
         """Alter the pipeline to add the final routine and the custom partition selector"""
         
         from ambry.etl import SelectPartition
         
-    
-        pl.final = [self.edit_descriptions]
+        # No longer needed, now that the table descriptions have been extracted
+        #pl.final = [self.edit_descriptions]
+        
         pl.select_partition = [SelectPartition(
         'dict(table=source.dest_table.name,'
         'segment=source.sequence_id,'
-        'grain=row.geotype.lower())'
+        'grain=bundle.grain_map.get(row.geotype.lower(),\'unk\'))'
         )]
         return pl
   
@@ -55,27 +70,7 @@ class Bundle(ambry.bundle.Bundle):
             
         return v  
         
-    def extract_desc(self, v, row, accumulator):
-        """Extract the table description from the ind_definition field"""
-        
-        # These value are mostly the same for every row, I think. 
-        accumulator[row.ind_id] = row.ind_definition
-        return v
-        
-    def edit_descriptions(self, pl):
-        """Extract the values added to the accumulator by extract_desc and add 
-        them to the table description"""
-         
-        from ambry.etl import CastColumns
-        
-        caster = pl[CastColumns]
-        
-        table = caster.source.dest_table
-        
-        table.description = ','.join( u'HCI Indicator {}: {}'.format(k, v) 
-                     for k, v in caster.accumulator.items())
-                     
-        self.commit()
+
                      
     def extract_geoid(self, v, row):
         
@@ -105,6 +100,8 @@ class Bundle(ambry.bundle.Bundle):
             r = None
         elif row.geotype == 'RE': # Sub-state region, not a census area
             r = None
+        elif row.geotype == 'R4': # Sub-state region, not a census area
+            r = None
         elif row.geotype == 'MS': # Probably an MSA or similar
             r = None
         else:
@@ -123,6 +120,37 @@ class Bundle(ambry.bundle.Bundle):
                 
         self.commit()
         
+        
+    def extract_desc(self, v, row, accumulator):
+        """Extract the table description from the ind_definition field"""
+        
+        # This is no longer needed. It was needed once, to extract the 
+        # titles, but now that the titles are in the schema.csv, 
+        # it doesn't need to be done again. 
+        return
+        
+        # These value are mostly the same for every row, I think. 
+        accumulator[row.ind_id] = row.ind_definition
+        
+        return v
+        
+    def edit_descriptions(self, pl):
+        """Extract the values added to the accumulator by extract_desc and add 
+        them to the table description"""
+         
+        # No longer needed. 
+        return 
+         
+        from ambry.etl import CastColumns
+        
+        caster = pl[CastColumns]
+        
+        table = caster.source.dest_table
+        
+        table.description = ','.join( u'HCI Indicator {}: {}'.format(k, v) 
+                     for k, v in caster.accumulator.items())
+
+        self.commit()
         
         
         

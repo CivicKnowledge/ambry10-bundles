@@ -1,21 +1,29 @@
 
+## Geotype codes
 
-## Region codes
 
 The `geotype` field has a code the describes the type of geography used in 
 aggregating each row. These geographies are generally Census geographies, 
 and are specified with Census geoids, in the `geotypevalue` field. The
 `geotype` codes are:
 
-- `CA` The whole state of California
+- `CA` or `ST` The whole state of California
 - `CO` A county
 - `CD` A county subdivision
 - `PL` A Census Designated Place
 - `RE` A Sub-state region
 - `ZC` ZCTA, the Census version of a ZIP code area.
+- `R4` Consolidated Metropolitan Statistical Areas
+- `MS` Metropolitan Statistical Area
+
+These values, excluding RE, R4 and MS are converted to a GVid for 
+linking to other files. 
+
+On most files the state code is `CA`, but in the Open Space file it is `ST`.
 
 
 ## Caveats
+
 
 As of Dec 1, 2015, In the ``Neighborhood Change`` files, the Relative Standard Error (rse) column is often computed for values that are ver close to zero, so the RSE is very large. In other files in this dataset, the rse value is capped
 at 100. As per Dulce Bustamante-Zamora at CDPH, these values should be blank, (NULL) so this correction is made for rows where the difference is 0. 
