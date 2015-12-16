@@ -6,6 +6,7 @@ import ambry.bundle
 class Bundle(ambry.bundle.Bundle):
     
     def edit_pipeline(self, pl):
+        """Alter the pipeline to add the final routine and the custom partition selector"""
         
         from ambry.etl import SelectPartition
         
@@ -74,6 +75,8 @@ class Bundle(ambry.bundle.Bundle):
         table.description = ','.join( u'HCI Indicator {}: {}'.format(k, v) 
                      for k, v in caster.accumulator.items())
                      
+        self.commit()
+                     
     def extract_geoid(self, v, row):
         
         from geoid.census import Place, County, State, Cosub, Tract, Zcta
@@ -101,6 +104,8 @@ class Bundle(ambry.bundle.Bundle):
         elif row.geotype == 'NA': # Sub-state region, not a census area
             r = None
         elif row.geotype == 'RE': # Sub-state region, not a census area
+            r = None
+        elif row.geotype == 'MS': # Probably an MSA or similar
             r = None
         else:
             self.error("Unknown geotype {} in row {}".format(row.geotype, row))
