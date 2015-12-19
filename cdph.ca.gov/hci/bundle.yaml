@@ -1,5 +1,6 @@
 about:
   access: restricted
+  remote: restricted
   footnote: null
   grain: null
   groups: []
@@ -17,11 +18,14 @@ about:
   time: null
   title: Healthy Communities Data and Indicators Project (HCI)
 contacts:
-  creator:
+  wrangler:
     email: eric@civicknowledge.com
     name: Eric Busboom
     org: Civic Knowledge
     url: http://civicknowledge.com
+  source:
+    org: California Department of Public Health, Office of Health Equity
+    email: HCIOHE@cdph.ca.gov
 dependencies: {}
 external_documentation:
   abuse_neglect:
@@ -32,7 +36,6 @@ external_documentation:
       at risk, and missing child).
 
       Denominator: child population.
-
       Indicator = (Numerator) / (Denominator) * 100'
     source: abuse_neglect
     title: Children reported with neglect or physical or sexual abuse. Narrative and
@@ -250,8 +253,13 @@ external_documentation:
     source: registered_voters
     title: Voter registration and participation. Narrative and Examples.
     url: http://www.cdph.ca.gov/programs/Documents/HCI_RegisteredVoters_653_Narrative_and_examples_6-2-14.pdf
+  how_to_manual:
+    description: An illustrated guide to using, presenting and analysing the indicators. 
+    source: null
+    title: How To Manual
+    url: http://www.cdph.ca.gov/programs/Documents/HCI_How-To_Manual10-2014highres.pdf
   technical_manual:
-    description: null
+    description: Primary technical manual, with detailed descriptions of how each indicator was constructed.
     source: null
     title: Technical Manual
     url: http://www.cdph.ca.gov/programs/Documents/HCI_TechnicalManual_10-23-14.pdf

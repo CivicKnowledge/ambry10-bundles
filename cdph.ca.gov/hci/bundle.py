@@ -85,7 +85,7 @@ class Bundle(ambry.bundle.Bundle):
             gt = row.geotypevalue
             assert int(gt[0:2]) == CA_STATE
             r = County(CA_STATE, int(gt[2:])).convert(GVid)
-        elif row.geotype == 'CA':
+        elif row.geotype == 'CA' or row.geotype == 'ST':
             r = State(CA_STATE).convert(GVid)
         elif row.geotype == 'CD':
             r = Cosub.parse(row.geotypevalue).convert(GVid)
