@@ -1,0 +1,1224 @@
+about:
+    access: example
+    footnote: null
+    grain: hospital
+    groups: []
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: California
+    subject: null
+    summary: This is an example bundle of the Prevention Quality Indicators (PQIs),
+        which identify hospital admissions (age 18 and over) that evidence suggests
+        may have been avoided through access to high-quality outpatient care. It should
+        not be used in production
+    tags: []
+    time: 2005/2013
+    title: Demonstratino of Prevention Quality Indicators (PQIs)
+build:
+    build:
+        requirements:
+            xlrd: xlrd
+    dependencies:
+        counties: census.gov-index-counties
+    extract: {}
+    sources:
+        counties:
+            filetype: partition
+            url: census.gov-index-counties
+            urltype: ref
+        pqi:
+            description: Multi-year PQI file.
+            grain: counties
+            row_spec:
+                data_end_line: null
+                data_start_line: 7
+                header_comment_lines:
+                - 0
+                - 1
+                - 2
+                - 3
+                - 5
+                header_lines:
+                - 4
+                - 6
+            segment: 1
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PQI/PQI_Summary_V45a_2005-2013.xlsx
+    views: {}
+bundle_code: "'''\n\n'''\n\nfrom ambry.bundle.loader import ExcelBuildBundle\nfrom\
+    \ ambry.util import memoize\n\nclass Bundle(ExcelBuildBundle):\n    ''' '''\n\n\
+    \n    @property\n    @memoize # cached output of function after first call\n \
+    \   def county_map(self):\n        \"\"\"Return a memoized map of county names\
+    \ to GVIDs\"\"\"\n        return { r['name'].replace(\" County, California\",'').lower():\
+    \ r['gvid'] \n                     for r in  self.library.dep('counties').partition.rows\
+    \  if int(r['state'] == 6)}\n\n\n    def mangle_column_name(self, i, n):\n   \
+    \     \"\"\"Alter the column names from the source file\"\"\"\n        import\
+    \ re\n        \n        n = re.sub('[\\r\\n]+',' ',n)\n\n        m = re.match(r'^(P.I)\
+    \ \\#(\\d+)(.*)$', n)\n        \n        if not m:\n            mangled =  n.lower()\n\
+    \            \n        else:\n            grp = m.group(1).lower()\n         \
+    \   psi_no = m.group(2)\n            ind_type = re.sub(r'[\\W]+', '_', m.group(3).strip().lower())\n\
+    \            mangled =  \"{}_{}_{}\".format(grp, psi_no, ind_type)\n\n       \
+    \ if mangled in self.col_map and self.col_map[mangled]['col'] :\n            return\
+    \ self.col_map[mangled]['col']\n        else:\n            return mangled\n  \
+    \  \n    def build_modify_row(self, row_gen, p, source, row):\n        \"\"\"\
+    Looks up the county name to set the GVID\"\"\"\n        try:\n            row['gvid']\
+    \ =  self.county_map[row['county'].lower()]\n        except KeyError:\n      \
+    \      pass\n"
+column_map:
+-   col: ''
+    header: county
+-   col: ''
+    header: gvid
+-   col: ''
+    header: id
+-   col: ''
+    header: pqi_10_dehydration_cases
+-   col: ''
+    header: pqi_10_dehydration_observed_rate
+-   col: ''
+    header: pqi_10_dehydration_population
+-   col: ''
+    header: pqi_10_dehydration_risk_adjusted_rate
+-   col: ''
+    header: pqi_11_bacterial_pneumonia_cases
+-   col: ''
+    header: pqi_11_bacterial_pneumonia_observed_rate
+-   col: ''
+    header: pqi_11_bacterial_pneumonia_population
+-   col: ''
+    header: pqi_11_bacterial_pneumonia_risk_adjusted_rate
+-   col: ''
+    header: pqi_12_urinary_tract_infection_cases
+-   col: ''
+    header: pqi_12_urinary_tract_infection_observed_rate
+-   col: ''
+    header: pqi_12_urinary_tract_infection_population
+-   col: ''
+    header: pqi_12_urinary_tract_infection_risk_adjusted_rate
+-   col: ''
+    header: pqi_13_angina_without_procedure_cases
+-   col: ''
+    header: pqi_13_angina_without_procedure_observed_rate
+-   col: ''
+    header: pqi_13_angina_without_procedure_population
+-   col: ''
+    header: pqi_13_angina_without_procedure_risk_adjusted_rate
+-   col: ''
+    header: pqi_14_uncontrolled_diabetes_cases
+-   col: ''
+    header: pqi_14_uncontrolled_diabetes_observed_rate
+-   col: ''
+    header: pqi_14_uncontrolled_diabetes_population
+-   col: ''
+    header: pqi_14_uncontrolled_diabetes_risk_adjusted_rate
+-   col: ''
+    header: pqi_15_asthma_in_younger_adults_cases
+-   col: ''
+    header: pqi_15_asthma_in_younger_adults_observed_rate
+-   col: ''
+    header: pqi_15_asthma_in_younger_adults_population
+-   col: ''
+    header: pqi_15_asthma_in_younger_adults_risk_adjusted_rate
+-   col: ''
+    header: pqi_16_lower_extremity_amputation_among_patients_with_diabetes_cases
+-   col: ''
+    header: pqi_16_lower_extremity_amputation_among_patients_with_diabetes_observed_rate
+-   col: ''
+    header: pqi_16_lower_extremity_amputation_among_patients_with_diabetes_population
+-   col: ''
+    header: pqi_16_lower_extremity_amputation_among_patients_with_diabetes_risk_adjusted_rate
+-   col: ''
+    header: pqi_1_diabetes_short_term_complications_cases
+-   col: ''
+    header: pqi_1_diabetes_short_term_complications_observed_rate
+-   col: ''
+    header: pqi_1_diabetes_short_term_complications_population
+-   col: ''
+    header: pqi_1_diabetes_short_term_complications_risk_adjusted_rate
+-   col: ''
+    header: pqi_2_perforated_appendix_cases
+-   col: ''
+    header: pqi_2_perforated_appendix_observed_rate
+-   col: ''
+    header: pqi_2_perforated_appendix_population
+-   col: ''
+    header: pqi_2_perforated_appendix_risk_adjusted_rate
+-   col: ''
+    header: pqi_3_diabetes_long_term_complications_cases
+-   col: ''
+    header: pqi_3_diabetes_long_term_complications_observed_rate
+-   col: ''
+    header: pqi_3_diabetes_long_term_complications_population
+-   col: ''
+    header: pqi_3_diabetes_long_term_complications_risk_adjusted_rate
+-   col: ''
+    header: pqi_5_copd_or_asthma_in_older_adults_cases
+-   col: ''
+    header: pqi_5_copd_or_asthma_in_older_adults_observed_rate
+-   col: ''
+    header: pqi_5_copd_or_asthma_in_older_adults_population
+-   col: ''
+    header: pqi_5_copd_or_asthma_in_older_adults_risk_adjusted_rate
+-   col: ''
+    header: pqi_7_hypertension_cases
+-   col: ''
+    header: pqi_7_hypertension_observed_rate
+-   col: ''
+    header: pqi_7_hypertension_population
+-   col: ''
+    header: pqi_7_hypertension_risk_adjusted_rate
+-   col: ''
+    header: pqi_8_heart_failure_cases
+-   col: ''
+    header: pqi_8_heart_failure_observed_rate
+-   col: ''
+    header: pqi_8_heart_failure_population
+-   col: ''
+    header: pqi_8_heart_failure_risk_adjusted_rate
+-   col: ''
+    header: pqi_90_overall_composite_cases
+-   col: ''
+    header: pqi_90_overall_composite_observed_rate
+-   col: ''
+    header: pqi_90_overall_composite_population
+-   col: ''
+    header: pqi_90_overall_composite_risk_adjusted_rate
+-   col: ''
+    header: pqi_91_acute_composite_cases
+-   col: ''
+    header: pqi_91_acute_composite_observed_rate
+-   col: ''
+    header: pqi_91_acute_composite_population
+-   col: ''
+    header: pqi_91_acute_composite_risk_adjusted_rate
+-   col: ''
+    header: pqi_92_chronic_composite_cases
+-   col: ''
+    header: pqi_92_chronic_composite_observed_rate
+-   col: ''
+    header: pqi_92_chronic_composite_population
+-   col: ''
+    header: pqi_92_chronic_composite_risk_adjusted_rate
+-   col: ''
+    header: year
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
+    maintainer: {}
+documentation: '
+
+    # {about_title}
+
+
+    {about_summary}
+
+
+
+    '
+external_documentation:
+    dataset:
+        description: Overview of the dataset.
+        source: null
+        title: Dataset page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pqi_overview.html
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pqi_overview.html
+    pqi_spec:
+        description: AHRQ Specification for the Prevention Quality Indicators
+        source: null
+        title: Prevention Quality Indicators Technical Specifications - Version 4.5,
+            May 2013
+        url: http://www.qualityindicators.ahrq.gov/Modules/PQI_TechSpec.aspx
+identity:
+    bspace: null
+    btime: null
+    dataset: pqi
+    id: d03r
+    revision: 2
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.2
+names:
+    fqname: oshpd.ca.gov-pqi-0.0.2~d03r002
+    name: oshpd.ca.gov-pqi
+    vid: d03r002
+    vname: oshpd.ca.gov-pqi-0.0.2
+process: {}
+schema:
+-   column: id
+    d_grain: counties
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Multi-year PQI file.
+    id: t03r01
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: pqi
+    type: INTEGER
+-   column: gvid
+    d_grain: ''
+    d_index: census.gov-index-counties:gvid
+    d_index_version: 0.0.5:gvid
+    d_orig_proto_vid: counties.gvid
+    description: gvid
+    id: c03r01002
+    is_fk: c03x04003
+    is_pk: ''
+    proto_vid: c00109003
+    seq: '2'
+    size: '6'
+    table: pqi
+    type: VARCHAR
+-   column: year
+    d_grain: ''
+    d_index: census.gov-index-counties:year
+    d_index_version: 0.0.5:year
+    d_orig_proto_vid: counties.year
+    description: Year
+    id: c03r01003
+    is_fk: c03x04002
+    is_pk: ''
+    proto_vid: c00109002
+    seq: '3'
+    size: '4'
+    table: pqi
+    type: INTEGER
+-   column: county
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: County
+    id: c03r01005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '15'
+    table: pqi
+    type: VARCHAR
+-   column: pqi_1_diabetes_short_term_complications_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #1 Diabetes Short-term Complications # Cases'
+    id: c03r01006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '5'
+    table: pqi
+    type: INTEGER
+-   column: pqi_1_diabetes_short_term_complications_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #1 Diabetes Short-term Complications Population'
+    id: c03r01007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_1_diabetes_short_term_complications_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #1 Diabetes Short-term Complications Observed Rate'
+    id: c03r01008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_1_diabetes_short_term_complications_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #1 Diabetes Short-term Complications Risk-Adjusted Rate'
+    id: c03r01009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_2_perforated_appendix_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #2 Perforated Appendix # Cases'
+    id: c03r0100a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: '4'
+    table: pqi
+    type: INTEGER
+-   column: pqi_2_perforated_appendix_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #2 Perforated Appendix Population'
+    id: c03r0100b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: '5'
+    table: pqi
+    type: INTEGER
+-   column: pqi_2_perforated_appendix_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #2 Perforated Appendix Observed Rate'
+    id: c03r0100c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_2_perforated_appendix_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #2 Perforated Appendix Risk-Adjusted Rate'
+    id: c03r0100d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_3_diabetes_long_term_complications_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #3 Diabetes Long-term Complications # Cases'
+    id: c03r0100e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: '5'
+    table: pqi
+    type: INTEGER
+-   column: pqi_3_diabetes_long_term_complications_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #3 Diabetes Long-term Complications Population'
+    id: c03r0100f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_3_diabetes_long_term_complications_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #3 Diabetes Long-term Complications Observed Rate'
+    id: c03r0100g
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '16'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_3_diabetes_long_term_complications_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #3 Diabetes Long-term Complications Risk-Adjusted Rate'
+    id: c03r0100h
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '17'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_5_copd_or_asthma_in_older_adults_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #5 COPD or Asthma in Older Adults # Cases'
+    id: c03r0100i
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '18'
+    size: '5'
+    table: pqi
+    type: INTEGER
+-   column: pqi_5_copd_or_asthma_in_older_adults_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #5 COPD or Asthma in Older Adults Population'
+    id: c03r0100j
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '19'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_5_copd_or_asthma_in_older_adults_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #5 COPD or Asthma in Older Adults Observed Rate'
+    id: c03r0100k
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '20'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_5_copd_or_asthma_in_older_adults_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #5 COPD or Asthma in Older Adults Risk-Adjusted Rate'
+    id: c03r0100l
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '21'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_7_hypertension_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #7 Hypertension # Cases'
+    id: c03r0100m
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '22'
+    size: '4'
+    table: pqi
+    type: INTEGER
+-   column: pqi_7_hypertension_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #7 Hypertension Population'
+    id: c03r0100n
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '23'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_7_hypertension_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #7 Hypertension Observed Rate'
+    id: c03r0100o
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '24'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_7_hypertension_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #7 Hypertension Risk-Adjusted Rate'
+    id: c03r0100p
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '25'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_8_heart_failure_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #8 Heart Failure # Cases'
+    id: c03r0100q
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '26'
+    size: '5'
+    table: pqi
+    type: INTEGER
+-   column: pqi_8_heart_failure_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #8 Heart Failure Population'
+    id: c03r0100r
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '27'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_8_heart_failure_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #8 Heart Failure Observed Rate'
+    id: c03r0100s
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '28'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_8_heart_failure_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #8 Heart Failure Risk-Adjusted Rate'
+    id: c03r0100t
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '29'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_10_dehydration_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #10 Dehydration # Cases'
+    id: c03r0100u
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '30'
+    size: '5'
+    table: pqi
+    type: INTEGER
+-   column: pqi_10_dehydration_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #10 Dehydration Population'
+    id: c03r0100v
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '31'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_10_dehydration_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #10 Dehydration Observed Rate'
+    id: c03r0100w
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '32'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_10_dehydration_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #10 Dehydration Risk-Adjusted Rate'
+    id: c03r0100x
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '33'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_11_bacterial_pneumonia_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #11 Bacterial Pneumonia # Cases'
+    id: c03r0100y
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '34'
+    size: '5'
+    table: pqi
+    type: INTEGER
+-   column: pqi_11_bacterial_pneumonia_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #11 Bacterial Pneumonia Population'
+    id: c03r0100z
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '35'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_11_bacterial_pneumonia_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #11 Bacterial Pneumonia Observed Rate'
+    id: c03r0100A
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '36'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_11_bacterial_pneumonia_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #11 Bacterial Pneumonia Risk-Adjusted Rate'
+    id: c03r0100B
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '37'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_12_urinary_tract_infection_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #12 Urinary Tract Infection # Cases'
+    id: c03r0100C
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '38'
+    size: '5'
+    table: pqi
+    type: INTEGER
+-   column: pqi_12_urinary_tract_infection_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #12 Urinary Tract Infection Population'
+    id: c03r0100D
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '39'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_12_urinary_tract_infection_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #12 Urinary Tract Infection Observed Rate'
+    id: c03r0100E
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '40'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_12_urinary_tract_infection_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #12 Urinary Tract Infection Risk-Adjusted Rate'
+    id: c03r0100F
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '41'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_13_angina_without_procedure_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #13 Angina without Procedure # Cases'
+    id: c03r0100G
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '42'
+    size: '4'
+    table: pqi
+    type: INTEGER
+-   column: pqi_13_angina_without_procedure_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #13 Angina without Procedure Population'
+    id: c03r0100H
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '43'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_13_angina_without_procedure_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #13 Angina without Procedure Observed Rate'
+    id: c03r0100I
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '44'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_13_angina_without_procedure_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #13 Angina without Procedure Risk-Adjusted Rate'
+    id: c03r0100J
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '45'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_14_uncontrolled_diabetes_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #14 Uncontrolled Diabetes # Cases'
+    id: c03r0100K
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '46'
+    size: '4'
+    table: pqi
+    type: INTEGER
+-   column: pqi_14_uncontrolled_diabetes_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #14 Uncontrolled Diabetes Population'
+    id: c03r0100L
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '47'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_14_uncontrolled_diabetes_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #14 Uncontrolled Diabetes Observed Rate'
+    id: c03r0100M
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '48'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_14_uncontrolled_diabetes_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #14 Uncontrolled Diabetes Risk-Adjusted Rate'
+    id: c03r0100N
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '49'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_15_asthma_in_younger_adults_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #15 Asthma in Younger Adults # Cases'
+    id: c03r0100O
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '50'
+    size: '4'
+    table: pqi
+    type: INTEGER
+-   column: pqi_15_asthma_in_younger_adults_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #15 Asthma in Younger Adults Population'
+    id: c03r0100P
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '51'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_15_asthma_in_younger_adults_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #15 Asthma in Younger Adults Observed Rate'
+    id: c03r0100Q
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '52'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_15_asthma_in_younger_adults_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #15 Asthma in Younger Adults Risk-Adjusted Rate'
+    id: c03r0100R
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '53'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_16_lower_extremity_amputation_among_patients_with_diabetes_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #16 Lower-Extremity Amputation Among Patients with Diabetes
+        # Cases'
+    id: c03r0100S
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '54'
+    size: '4'
+    table: pqi
+    type: INTEGER
+-   column: pqi_16_lower_extremity_amputation_among_patients_with_diabetes_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #16 Lower-Extremity Amputation Among Patients with Diabetes
+        Population'
+    id: c03r0100T
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '55'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_16_lower_extremity_amputation_among_patients_with_diabetes_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #16 Lower-Extremity Amputation Among Patients with Diabetes
+        Observed Rate'
+    id: c03r0100U
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '56'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_16_lower_extremity_amputation_among_patients_with_diabetes_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #16 Lower-Extremity Amputation Among Patients with Diabetes
+        Risk-Adjusted Rate'
+    id: c03r0100V
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '57'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_90_overall_composite_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #90 Overall Composite # Cases'
+    id: c03r0100W
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '58'
+    size: '6'
+    table: pqi
+    type: INTEGER
+-   column: pqi_90_overall_composite_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #90 Overall Composite Population'
+    id: c03r0100X
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '59'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_90_overall_composite_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #90 Overall Composite Observed Rate'
+    id: c03r0100Y
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '60'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_90_overall_composite_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #90 Overall Composite Risk-Adjusted Rate'
+    id: c03r0100Z
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '61'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_91_acute_composite_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #91 Acute Composite # Cases'
+    id: c03r01010
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '62'
+    size: '6'
+    table: pqi
+    type: INTEGER
+-   column: pqi_91_acute_composite_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #91 Acute Composite Population'
+    id: c03r01011
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '63'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_91_acute_composite_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #91 Acute Composite Observed Rate'
+    id: c03r01012
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '64'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_91_acute_composite_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #91 Acute Composite Risk-Adjusted Rate'
+    id: c03r01013
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '65'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_92_chronic_composite_cases
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #92 Chronic Composite # Cases'
+    id: c03r01014
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '66'
+    size: '6'
+    table: pqi
+    type: INTEGER
+-   column: pqi_92_chronic_composite_population
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #92 Chronic Composite Population'
+    id: c03r01015
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '67'
+    size: '8'
+    table: pqi
+    type: INTEGER
+-   column: pqi_92_chronic_composite_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #92 Chronic Composite Observed Rate'
+    id: c03r01016
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '68'
+    size: ''
+    table: pqi
+    type: REAL
+-   column: pqi_92_chronic_composite_risk_adjusted_rate
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #92 Chronic Composite Risk-Adjusted Rate'
+    id: c03r01017
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '69'
+    size: ''
+    table: pqi
+    type: REAL
+versions:
+    2:
+        date: '2015-04-27T18:10:13.868343'
+        description: Setting new access remotes
+        version: 0.0.2

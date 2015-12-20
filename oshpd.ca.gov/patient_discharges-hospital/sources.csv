@@ -1,0 +1,3 @@
+name,title,dest_table_name,time,space,grain,filetype,reftype,ref,state
+facilities,facilities,facilities,p2010e2013,California,facility,partition,ref,oshpd.ca.gov-facilities-index-facilities_index->=0.0.4,synced
+pddpuf,pddpuf,pddpuf,p2010e2013,California,facility,partition,ref,oshpd.ca.gov-patient_discharges-pdd_puf_c,synced

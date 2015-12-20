@@ -1,0 +1,1059 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+pdd_mdc_23,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 23"
+pdd_mdc_23,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_23,3,year,int,4,Year of discharge
+pdd_mdc_23,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_23,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_23,6,msdrg_939,int,2,Counts for MS-DRG 939
+pdd_mdc_23,7,msdrg_940,int,2,Counts for MS-DRG 940
+pdd_mdc_23,8,msdrg_941,int,2,Counts for MS-DRG 941
+pdd_mdc_23,9,msdrg_945,int,4,Counts for MS-DRG 945
+pdd_mdc_23,10,msdrg_946,int,3,Counts for MS-DRG 946
+pdd_mdc_23,11,msdrg_947,int,2,Counts for MS-DRG 947
+pdd_mdc_23,12,msdrg_948,int,3,Counts for MS-DRG 948
+pdd_mdc_23,13,msdrg_949,int,3,Counts for MS-DRG 949
+pdd_mdc_23,14,msdrg_950,int,2,Counts for MS-DRG 950
+pdd_mdc_23,15,msdrg_951,int,3,Counts for MS-DRG 951
+,,,,,
+pdd_mdc_08,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 08"
+pdd_mdc_08,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_08,3,year,int,4,Year of discharge
+pdd_mdc_08,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_08,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_08,6,msdrg_012,int,1,Counts for MS-DRG 012
+pdd_mdc_08,7,msdrg_013,int,1,Counts for MS-DRG 013
+pdd_mdc_08,8,msdrg_453,int,1,Counts for MS-DRG 453
+pdd_mdc_08,9,msdrg_454,int,2,Counts for MS-DRG 454
+pdd_mdc_08,10,msdrg_455,int,2,Counts for MS-DRG 455
+pdd_mdc_08,11,msdrg_456,int,2,Counts for MS-DRG 456
+pdd_mdc_08,12,msdrg_457,int,2,Counts for MS-DRG 457
+pdd_mdc_08,13,msdrg_458,int,2,Counts for MS-DRG 458
+pdd_mdc_08,14,msdrg_459,int,2,Counts for MS-DRG 459
+pdd_mdc_08,15,msdrg_460,int,3,Counts for MS-DRG 460
+pdd_mdc_08,16,msdrg_461,int,1,Counts for MS-DRG 461
+pdd_mdc_08,17,msdrg_462,int,3,Counts for MS-DRG 462
+pdd_mdc_08,18,msdrg_463,int,2,Counts for MS-DRG 463
+pdd_mdc_08,19,msdrg_464,int,2,Counts for MS-DRG 464
+pdd_mdc_08,20,msdrg_465,int,1,Counts for MS-DRG 465
+pdd_mdc_08,21,msdrg_466,int,2,Counts for MS-DRG 466
+pdd_mdc_08,22,msdrg_467,int,2,Counts for MS-DRG 467
+pdd_mdc_08,23,msdrg_468,int,2,Counts for MS-DRG 468
+pdd_mdc_08,24,msdrg_469,int,2,Counts for MS-DRG 469
+pdd_mdc_08,25,msdrg_470,int,4,Counts for MS-DRG 470
+pdd_mdc_08,26,msdrg_471,int,2,Counts for MS-DRG 471
+pdd_mdc_08,27,msdrg_472,int,2,Counts for MS-DRG 472
+pdd_mdc_08,28,msdrg_473,int,2,Counts for MS-DRG 473
+pdd_mdc_08,29,msdrg_474,int,2,Counts for MS-DRG 474
+pdd_mdc_08,30,msdrg_475,int,1,Counts for MS-DRG 475
+pdd_mdc_08,31,msdrg_476,int,1,Counts for MS-DRG 476
+pdd_mdc_08,32,msdrg_477,int,1,Counts for MS-DRG 477
+pdd_mdc_08,33,msdrg_478,int,2,Counts for MS-DRG 478
+pdd_mdc_08,34,msdrg_479,int,1,Counts for MS-DRG 479
+pdd_mdc_08,35,msdrg_480,int,2,Counts for MS-DRG 480
+pdd_mdc_08,36,msdrg_481,int,3,Counts for MS-DRG 481
+pdd_mdc_08,37,msdrg_482,int,2,Counts for MS-DRG 482
+pdd_mdc_08,38,msdrg_483,int,2,Counts for MS-DRG 483
+pdd_mdc_08,39,msdrg_484,int,2,Counts for MS-DRG 484
+pdd_mdc_08,40,msdrg_485,int,1,Counts for MS-DRG 485
+pdd_mdc_08,41,msdrg_486,int,2,Counts for MS-DRG 486
+pdd_mdc_08,42,msdrg_487,int,1,Counts for MS-DRG 487
+pdd_mdc_08,43,msdrg_488,int,2,Counts for MS-DRG 488
+pdd_mdc_08,44,msdrg_489,int,2,Counts for MS-DRG 489
+pdd_mdc_08,45,msdrg_490,int,3,Counts for MS-DRG 490
+pdd_mdc_08,46,msdrg_491,int,3,Counts for MS-DRG 491
+pdd_mdc_08,47,msdrg_492,int,2,Counts for MS-DRG 492
+pdd_mdc_08,48,msdrg_493,int,2,Counts for MS-DRG 493
+pdd_mdc_08,49,msdrg_494,int,3,Counts for MS-DRG 494
+pdd_mdc_08,50,msdrg_495,int,1,Counts for MS-DRG 495
+pdd_mdc_08,51,msdrg_496,int,2,Counts for MS-DRG 496
+pdd_mdc_08,52,msdrg_497,int,2,Counts for MS-DRG 497
+pdd_mdc_08,53,msdrg_498,int,1,Counts for MS-DRG 498
+pdd_mdc_08,54,msdrg_499,int,1,Counts for MS-DRG 499
+pdd_mdc_08,55,msdrg_500,int,1,Counts for MS-DRG 500
+pdd_mdc_08,56,msdrg_501,int,2,Counts for MS-DRG 501
+pdd_mdc_08,57,msdrg_502,int,2,Counts for MS-DRG 502
+pdd_mdc_08,58,msdrg_503,int,1,Counts for MS-DRG 503
+pdd_mdc_08,59,msdrg_504,int,2,Counts for MS-DRG 504
+pdd_mdc_08,60,msdrg_505,int,2,Counts for MS-DRG 505
+pdd_mdc_08,61,msdrg_506,int,1,Counts for MS-DRG 506
+pdd_mdc_08,62,msdrg_507,int,1,Counts for MS-DRG 507
+pdd_mdc_08,63,msdrg_508,int,1,Counts for MS-DRG 508
+pdd_mdc_08,64,msdrg_509,int,1,Counts for MS-DRG 509
+pdd_mdc_08,65,msdrg_510,int,1,Counts for MS-DRG 510
+pdd_mdc_08,66,msdrg_511,int,2,Counts for MS-DRG 511
+pdd_mdc_08,67,msdrg_512,int,2,Counts for MS-DRG 512
+pdd_mdc_08,68,msdrg_513,int,1,Counts for MS-DRG 513
+pdd_mdc_08,69,msdrg_514,int,2,Counts for MS-DRG 514
+pdd_mdc_08,70,msdrg_515,int,2,Counts for MS-DRG 515
+pdd_mdc_08,71,msdrg_516,int,2,Counts for MS-DRG 516
+pdd_mdc_08,72,msdrg_517,int,2,Counts for MS-DRG 517
+pdd_mdc_08,73,msdrg_533,int,1,Counts for MS-DRG 533
+pdd_mdc_08,74,msdrg_534,int,2,Counts for MS-DRG 534
+pdd_mdc_08,75,msdrg_535,int,2,Counts for MS-DRG 535
+pdd_mdc_08,76,msdrg_536,int,2,Counts for MS-DRG 536
+pdd_mdc_08,77,msdrg_537,int,1,Counts for MS-DRG 537
+pdd_mdc_08,78,msdrg_538,int,1,Counts for MS-DRG 538
+pdd_mdc_08,79,msdrg_539,int,2,Counts for MS-DRG 539
+pdd_mdc_08,80,msdrg_540,int,1,Counts for MS-DRG 540
+pdd_mdc_08,81,msdrg_541,int,1,Counts for MS-DRG 541
+pdd_mdc_08,82,msdrg_542,int,2,Counts for MS-DRG 542
+pdd_mdc_08,83,msdrg_543,int,2,Counts for MS-DRG 543
+pdd_mdc_08,84,msdrg_544,int,1,Counts for MS-DRG 544
+pdd_mdc_08,85,msdrg_545,int,2,Counts for MS-DRG 545
+pdd_mdc_08,86,msdrg_546,int,2,Counts for MS-DRG 546
+pdd_mdc_08,87,msdrg_547,int,2,Counts for MS-DRG 547
+pdd_mdc_08,88,msdrg_548,int,1,Counts for MS-DRG 548
+pdd_mdc_08,89,msdrg_549,int,1,Counts for MS-DRG 549
+pdd_mdc_08,90,msdrg_550,int,1,Counts for MS-DRG 550
+pdd_mdc_08,91,msdrg_551,int,2,Counts for MS-DRG 551
+pdd_mdc_08,92,msdrg_552,int,3,Counts for MS-DRG 552
+pdd_mdc_08,93,msdrg_553,int,1,Counts for MS-DRG 553
+pdd_mdc_08,94,msdrg_554,int,2,Counts for MS-DRG 554
+pdd_mdc_08,95,msdrg_555,int,1,Counts for MS-DRG 555
+pdd_mdc_08,96,msdrg_556,int,2,Counts for MS-DRG 556
+pdd_mdc_08,97,msdrg_557,int,1,Counts for MS-DRG 557
+pdd_mdc_08,98,msdrg_558,int,2,Counts for MS-DRG 558
+pdd_mdc_08,99,msdrg_559,int,2,Counts for MS-DRG 559
+pdd_mdc_08,100,msdrg_560,int,2,Counts for MS-DRG 560
+pdd_mdc_08,101,msdrg_561,int,2,Counts for MS-DRG 561
+pdd_mdc_08,102,msdrg_562,int,2,Counts for MS-DRG 562
+pdd_mdc_08,103,msdrg_563,int,2,Counts for MS-DRG 563
+pdd_mdc_08,104,msdrg_564,int,1,Counts for MS-DRG 564
+pdd_mdc_08,105,msdrg_565,int,1,Counts for MS-DRG 565
+pdd_mdc_08,106,msdrg_566,int,2,Counts for MS-DRG 566
+pdd_mdc_08,107,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_08,108,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_08,109,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_08,110,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_08,111,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_summary_msdrg,1,id,int,,"Patient Discharge counts, aggregated on the msdrg variable"
+pdd_summary_msdrg,2,oshpd_id,str,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges."
+pdd_summary_msdrg,3,year,int,4,Discharge Year. The year the patient was discharged.
+pdd_summary_msdrg,4,msdrg,str,3,"Medicare Severity-Diagnosis Related Group (MS-DRG). MS-DRG code (for example, 028). One MS-DRG is assigned to each inpatient stay. The MS-DRGs are assigned using the principal diagnosis and additional diagnoses, the principal procedure and additional procedures, sex, and discharge status. For a list of MS-DRG codes and labels see Appendix J - Medicare Severity-Diagnosis Related Groups (MS-DRG). Also see the MS-DRG Grouper Version variable (grouper)."
+pdd_summary_msdrg,5,count,int,4,Count of records
+,,,,,
+pdd_mdc_11,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 11"
+pdd_mdc_11,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_11,3,year,int,4,Year of discharge
+pdd_mdc_11,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_11,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_11,6,msdrg_005,int,1,Counts for MS-DRG 005
+pdd_mdc_11,7,msdrg_008,int,2,Counts for MS-DRG 008
+pdd_mdc_11,8,msdrg_010,int,1,Counts for MS-DRG 010
+pdd_mdc_11,9,msdrg_016,int,1,Counts for MS-DRG 016
+pdd_mdc_11,10,msdrg_652,int,3,Counts for MS-DRG 652
+pdd_mdc_11,11,msdrg_653,int,1,Counts for MS-DRG 653
+pdd_mdc_11,12,msdrg_654,int,2,Counts for MS-DRG 654
+pdd_mdc_11,13,msdrg_655,int,2,Counts for MS-DRG 655
+pdd_mdc_11,14,msdrg_656,int,2,Counts for MS-DRG 656
+pdd_mdc_11,15,msdrg_657,int,2,Counts for MS-DRG 657
+pdd_mdc_11,16,msdrg_658,int,2,Counts for MS-DRG 658
+pdd_mdc_11,17,msdrg_659,int,2,Counts for MS-DRG 659
+pdd_mdc_11,18,msdrg_660,int,3,Counts for MS-DRG 660
+pdd_mdc_11,19,msdrg_661,int,3,Counts for MS-DRG 661
+pdd_mdc_11,20,msdrg_662,int,1,Counts for MS-DRG 662
+pdd_mdc_11,21,msdrg_663,int,1,Counts for MS-DRG 663
+pdd_mdc_11,22,msdrg_664,int,1,Counts for MS-DRG 664
+pdd_mdc_11,23,msdrg_665,int,1,Counts for MS-DRG 665
+pdd_mdc_11,24,msdrg_666,int,1,Counts for MS-DRG 666
+pdd_mdc_11,25,msdrg_667,int,1,Counts for MS-DRG 667
+pdd_mdc_11,26,msdrg_668,int,1,Counts for MS-DRG 668
+pdd_mdc_11,27,msdrg_669,int,2,Counts for MS-DRG 669
+pdd_mdc_11,28,msdrg_670,int,2,Counts for MS-DRG 670
+pdd_mdc_11,29,msdrg_671,int,1,Counts for MS-DRG 671
+pdd_mdc_11,30,msdrg_672,int,2,Counts for MS-DRG 672
+pdd_mdc_11,31,msdrg_673,int,2,Counts for MS-DRG 673
+pdd_mdc_11,32,msdrg_674,int,2,Counts for MS-DRG 674
+pdd_mdc_11,33,msdrg_675,int,1,Counts for MS-DRG 675
+pdd_mdc_11,34,msdrg_682,int,3,Counts for MS-DRG 682
+pdd_mdc_11,35,msdrg_683,int,3,Counts for MS-DRG 683
+pdd_mdc_11,36,msdrg_684,int,2,Counts for MS-DRG 684
+pdd_mdc_11,37,msdrg_685,int,2,Counts for MS-DRG 685
+pdd_mdc_11,38,msdrg_686,int,1,Counts for MS-DRG 686
+pdd_mdc_11,39,msdrg_687,int,1,Counts for MS-DRG 687
+pdd_mdc_11,40,msdrg_688,int,1,Counts for MS-DRG 688
+pdd_mdc_11,41,msdrg_689,int,2,Counts for MS-DRG 689
+pdd_mdc_11,42,msdrg_690,int,3,Counts for MS-DRG 690
+pdd_mdc_11,43,msdrg_691,int,2,Counts for MS-DRG 691
+pdd_mdc_11,44,msdrg_692,int,1,Counts for MS-DRG 692
+pdd_mdc_11,45,msdrg_693,int,1,Counts for MS-DRG 693
+pdd_mdc_11,46,msdrg_694,int,2,Counts for MS-DRG 694
+pdd_mdc_11,47,msdrg_695,int,1,Counts for MS-DRG 695
+pdd_mdc_11,48,msdrg_696,int,2,Counts for MS-DRG 696
+pdd_mdc_11,49,msdrg_697,int,1,Counts for MS-DRG 697
+pdd_mdc_11,50,msdrg_698,int,2,Counts for MS-DRG 698
+pdd_mdc_11,51,msdrg_699,int,3,Counts for MS-DRG 699
+pdd_mdc_11,52,msdrg_700,int,2,Counts for MS-DRG 700
+pdd_mdc_11,53,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_11,54,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_11,55,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_11,56,msdrg_986,int,1,Counts for MS-DRG 986
+pdd_mdc_11,57,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_11,58,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_11,59,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_18,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 18"
+pdd_mdc_18,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_18,3,year,int,4,Year of discharge
+pdd_mdc_18,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_18,5,msdrg_004,int,2,Counts for MS-DRG 004
+pdd_mdc_18,6,msdrg_853,int,3,Counts for MS-DRG 853
+pdd_mdc_18,7,msdrg_854,int,2,Counts for MS-DRG 854
+pdd_mdc_18,8,msdrg_855,int,1,Counts for MS-DRG 855
+pdd_mdc_18,9,msdrg_856,int,2,Counts for MS-DRG 856
+pdd_mdc_18,10,msdrg_857,int,2,Counts for MS-DRG 857
+pdd_mdc_18,11,msdrg_858,int,1,Counts for MS-DRG 858
+pdd_mdc_18,12,msdrg_862,int,2,Counts for MS-DRG 862
+pdd_mdc_18,13,msdrg_863,int,2,Counts for MS-DRG 863
+pdd_mdc_18,14,msdrg_864,int,2,Counts for MS-DRG 864
+pdd_mdc_18,15,msdrg_865,int,2,Counts for MS-DRG 865
+pdd_mdc_18,16,msdrg_866,int,2,Counts for MS-DRG 866
+pdd_mdc_18,17,msdrg_867,int,2,Counts for MS-DRG 867
+pdd_mdc_18,18,msdrg_868,int,1,Counts for MS-DRG 868
+pdd_mdc_18,19,msdrg_869,int,1,Counts for MS-DRG 869
+pdd_mdc_18,20,msdrg_870,int,2,Counts for MS-DRG 870
+pdd_mdc_18,21,msdrg_871,int,4,Counts for MS-DRG 871
+pdd_mdc_18,22,msdrg_872,int,3,Counts for MS-DRG 872
+,,,,,
+pdd_mdc_07,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 07"
+pdd_mdc_07,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_07,3,year,int,4,Year of discharge
+pdd_mdc_07,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_07,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_07,6,msdrg_005,int,2,Counts for MS-DRG 005
+pdd_mdc_07,7,msdrg_006,int,2,Counts for MS-DRG 006
+pdd_mdc_07,8,msdrg_010,int,1,Counts for MS-DRG 010
+pdd_mdc_07,9,msdrg_405,int,2,Counts for MS-DRG 405
+pdd_mdc_07,10,msdrg_406,int,3,Counts for MS-DRG 406
+pdd_mdc_07,11,msdrg_407,int,2,Counts for MS-DRG 407
+pdd_mdc_07,12,msdrg_408,int,2,Counts for MS-DRG 408
+pdd_mdc_07,13,msdrg_409,int,2,Counts for MS-DRG 409
+pdd_mdc_07,14,msdrg_410,int,1,Counts for MS-DRG 410
+pdd_mdc_07,15,msdrg_411,int,1,Counts for MS-DRG 411
+pdd_mdc_07,16,msdrg_412,int,1,Counts for MS-DRG 412
+pdd_mdc_07,17,msdrg_413,int,1,Counts for MS-DRG 413
+pdd_mdc_07,18,msdrg_414,int,2,Counts for MS-DRG 414
+pdd_mdc_07,19,msdrg_415,int,2,Counts for MS-DRG 415
+pdd_mdc_07,20,msdrg_416,int,2,Counts for MS-DRG 416
+pdd_mdc_07,21,msdrg_417,int,2,Counts for MS-DRG 417
+pdd_mdc_07,22,msdrg_418,int,2,Counts for MS-DRG 418
+pdd_mdc_07,23,msdrg_419,int,3,Counts for MS-DRG 419
+pdd_mdc_07,24,msdrg_420,int,1,Counts for MS-DRG 420
+pdd_mdc_07,25,msdrg_421,int,1,Counts for MS-DRG 421
+pdd_mdc_07,26,msdrg_422,int,1,Counts for MS-DRG 422
+pdd_mdc_07,27,msdrg_423,int,2,Counts for MS-DRG 423
+pdd_mdc_07,28,msdrg_424,int,1,Counts for MS-DRG 424
+pdd_mdc_07,29,msdrg_425,int,1,Counts for MS-DRG 425
+pdd_mdc_07,30,msdrg_432,int,2,Counts for MS-DRG 432
+pdd_mdc_07,31,msdrg_433,int,2,Counts for MS-DRG 433
+pdd_mdc_07,32,msdrg_434,int,2,Counts for MS-DRG 434
+pdd_mdc_07,33,msdrg_435,int,2,Counts for MS-DRG 435
+pdd_mdc_07,34,msdrg_436,int,2,Counts for MS-DRG 436
+pdd_mdc_07,35,msdrg_437,int,2,Counts for MS-DRG 437
+pdd_mdc_07,36,msdrg_438,int,2,Counts for MS-DRG 438
+pdd_mdc_07,37,msdrg_439,int,2,Counts for MS-DRG 439
+pdd_mdc_07,38,msdrg_440,int,2,Counts for MS-DRG 440
+pdd_mdc_07,39,msdrg_441,int,3,Counts for MS-DRG 441
+pdd_mdc_07,40,msdrg_442,int,3,Counts for MS-DRG 442
+pdd_mdc_07,41,msdrg_443,int,2,Counts for MS-DRG 443
+pdd_mdc_07,42,msdrg_444,int,2,Counts for MS-DRG 444
+pdd_mdc_07,43,msdrg_445,int,2,Counts for MS-DRG 445
+pdd_mdc_07,44,msdrg_446,int,2,Counts for MS-DRG 446
+pdd_mdc_07,45,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_07,46,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_07,47,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_07,48,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_07,49,msdrg_988,int,1,Counts for MS-DRG 988
+,,,,,
+pdd_mdc_13,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 13"
+pdd_mdc_13,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_13,3,year,int,4,Year of discharge
+pdd_mdc_13,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_13,5,msdrg_734,int,2,Counts for MS-DRG 734
+pdd_mdc_13,6,msdrg_735,int,2,Counts for MS-DRG 735
+pdd_mdc_13,7,msdrg_736,int,1,Counts for MS-DRG 736
+pdd_mdc_13,8,msdrg_737,int,2,Counts for MS-DRG 737
+pdd_mdc_13,9,msdrg_738,int,2,Counts for MS-DRG 738
+pdd_mdc_13,10,msdrg_739,int,2,Counts for MS-DRG 739
+pdd_mdc_13,11,msdrg_740,int,2,Counts for MS-DRG 740
+pdd_mdc_13,12,msdrg_741,int,2,Counts for MS-DRG 741
+pdd_mdc_13,13,msdrg_742,int,3,Counts for MS-DRG 742
+pdd_mdc_13,14,msdrg_743,int,3,Counts for MS-DRG 743
+pdd_mdc_13,15,msdrg_744,int,2,Counts for MS-DRG 744
+pdd_mdc_13,16,msdrg_745,int,2,Counts for MS-DRG 745
+pdd_mdc_13,17,msdrg_746,int,2,Counts for MS-DRG 746
+pdd_mdc_13,18,msdrg_747,int,2,Counts for MS-DRG 747
+pdd_mdc_13,19,msdrg_748,int,2,Counts for MS-DRG 748
+pdd_mdc_13,20,msdrg_749,int,1,Counts for MS-DRG 749
+pdd_mdc_13,21,msdrg_750,int,2,Counts for MS-DRG 750
+pdd_mdc_13,22,msdrg_754,int,1,Counts for MS-DRG 754
+pdd_mdc_13,23,msdrg_755,int,2,Counts for MS-DRG 755
+pdd_mdc_13,24,msdrg_756,int,1,Counts for MS-DRG 756
+pdd_mdc_13,25,msdrg_757,int,1,Counts for MS-DRG 757
+pdd_mdc_13,26,msdrg_758,int,1,Counts for MS-DRG 758
+pdd_mdc_13,27,msdrg_759,int,2,Counts for MS-DRG 759
+pdd_mdc_13,28,msdrg_760,int,2,Counts for MS-DRG 760
+pdd_mdc_13,29,msdrg_761,int,2,Counts for MS-DRG 761
+pdd_mdc_13,30,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_13,31,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_13,32,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_13,33,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_13,34,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_13,35,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_20,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 20"
+pdd_mdc_20,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_20,3,year,int,4,Year of discharge
+pdd_mdc_20,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_20,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_20,6,msdrg_894,int,2,Counts for MS-DRG 894
+pdd_mdc_20,7,msdrg_895,int,3,Counts for MS-DRG 895
+pdd_mdc_20,8,msdrg_896,int,2,Counts for MS-DRG 896
+pdd_mdc_20,9,msdrg_897,int,3,Counts for MS-DRG 897
+pdd_mdc_20,10,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_20,11,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_20,12,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_20,13,msdrg_984,int,1,Counts for MS-DRG 984
+pdd_mdc_20,14,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_20,15,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_20,16,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_summary_mdc,1,id,int,,"Patient Discharge counts, aggregated on the mdc variable"
+pdd_summary_mdc,2,oshpd_id,str,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges."
+pdd_summary_mdc,3,year,int,4,Discharge Year. The year the patient was discharged.
+pdd_summary_mdc,4,mdc,str,2,"Major Diagnostic Category (MDC). MDC code (for example, 22). The Major Diagnostic Categories (MDC) are formed by dividing all possible principal diagnoses (from ICD-9) into 25 mutually exclusive diagnosis groupings. The diagnoses in each MDC correspond to a single organ system or etiology and, in general, are associated with a particular medical specialty. MDC 1 to MDC 23 are grouped according to principal diagnosis. Patients are assigned to MDC 24 (Multiple Significant Trauma) with at least two significant trauma diagnosis codes (either as principal or secondary) from different body site categories. Patients assigned to MDC 25 (HIV Infections) must have a principal diagnosis of an HIV Infection or a principal diagnosis of a significant HIV related condition and a secondary diagnosis of an HIV Infection. Some discharges are associated with procedures that are resource intensive and may be associated with multiple diagnosis domains (for example, transplants, MS-DRG 001-017), or procedures that are unrelated to the principal diagnosis (MS-DRG 981-989). These records are assigned to a variety of MDCs, based on the principal diagnosis instead of the MDC associated with the designated DRG. A MDC of 00 is assigned to records that are ungroupable. Ungroupable records include those where the principal diagnosis is not an existing ICD-9-CM code or the sex code does not logically relate to the diagnosis or procedure. For a list of MDC codes and labels see Appendix I - Major Diagnostic Categories (MDC). Note that MDC codes and their associated labels potentially change across years and year-specific code-label crosswalk lists must be used."
+pdd_summary_mdc,5,count,int,4,Count of records
+,,,,,
+pdd_mdc_22,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 22"
+pdd_mdc_22,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_22,3,year,int,4,Year of discharge
+pdd_mdc_22,4,msdrg_003,int,2,Counts for MS-DRG 003
+pdd_mdc_22,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_22,6,msdrg_927,int,2,Counts for MS-DRG 927
+pdd_mdc_22,7,msdrg_928,int,2,Counts for MS-DRG 928
+pdd_mdc_22,8,msdrg_929,int,3,Counts for MS-DRG 929
+pdd_mdc_22,9,msdrg_933,int,2,Counts for MS-DRG 933
+pdd_mdc_22,10,msdrg_934,int,2,Counts for MS-DRG 934
+pdd_mdc_22,11,msdrg_935,int,3,Counts for MS-DRG 935
+,,,,,
+pdd_mdc_16,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 16"
+pdd_mdc_16,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_16,3,year,int,4,Year of discharge
+pdd_mdc_16,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_16,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_16,6,msdrg_005,int,1,Counts for MS-DRG 005
+pdd_mdc_16,7,msdrg_006,int,1,Counts for MS-DRG 006
+pdd_mdc_16,8,msdrg_009,int,2,Counts for MS-DRG 009
+pdd_mdc_16,9,msdrg_014,int,2,Counts for MS-DRG 014
+pdd_mdc_16,10,msdrg_016,int,1,Counts for MS-DRG 016
+pdd_mdc_16,11,msdrg_799,int,1,Counts for MS-DRG 799
+pdd_mdc_16,12,msdrg_800,int,1,Counts for MS-DRG 800
+pdd_mdc_16,13,msdrg_801,int,2,Counts for MS-DRG 801
+pdd_mdc_16,14,msdrg_802,int,1,Counts for MS-DRG 802
+pdd_mdc_16,15,msdrg_803,int,1,Counts for MS-DRG 803
+pdd_mdc_16,16,msdrg_804,int,2,Counts for MS-DRG 804
+pdd_mdc_16,17,msdrg_808,int,2,Counts for MS-DRG 808
+pdd_mdc_16,18,msdrg_809,int,3,Counts for MS-DRG 809
+pdd_mdc_16,19,msdrg_810,int,2,Counts for MS-DRG 810
+pdd_mdc_16,20,msdrg_811,int,2,Counts for MS-DRG 811
+pdd_mdc_16,21,msdrg_812,int,3,Counts for MS-DRG 812
+pdd_mdc_16,22,msdrg_813,int,2,Counts for MS-DRG 813
+pdd_mdc_16,23,msdrg_814,int,2,Counts for MS-DRG 814
+pdd_mdc_16,24,msdrg_815,int,2,Counts for MS-DRG 815
+pdd_mdc_16,25,msdrg_816,int,2,Counts for MS-DRG 816
+pdd_mdc_16,26,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_16,27,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_16,28,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_16,29,msdrg_984,int,1,Counts for MS-DRG 984
+pdd_mdc_16,30,msdrg_985,int,1,Counts for MS-DRG 985
+pdd_mdc_16,31,msdrg_986,int,1,Counts for MS-DRG 986
+pdd_mdc_16,32,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_16,33,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_16,34,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_15,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 15"
+pdd_mdc_15,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_15,3,year,int,4,Year of discharge
+pdd_mdc_15,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_15,5,msdrg_789,int,3,Counts for MS-DRG 789
+pdd_mdc_15,6,msdrg_790,int,3,Counts for MS-DRG 790
+pdd_mdc_15,7,msdrg_791,int,3,Counts for MS-DRG 791
+pdd_mdc_15,8,msdrg_792,int,3,Counts for MS-DRG 792
+pdd_mdc_15,9,msdrg_793,int,3,Counts for MS-DRG 793
+pdd_mdc_15,10,msdrg_794,int,4,Counts for MS-DRG 794
+pdd_mdc_15,11,msdrg_795,int,4,Counts for MS-DRG 795
+,,,,,
+pdd_mdc_03,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 03"
+pdd_mdc_03,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_03,3,year,int,4,Year of discharge
+pdd_mdc_03,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_03,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_03,6,msdrg_011,int,2,Counts for MS-DRG 011
+pdd_mdc_03,7,msdrg_012,int,2,Counts for MS-DRG 012
+pdd_mdc_03,8,msdrg_013,int,2,Counts for MS-DRG 013
+pdd_mdc_03,9,msdrg_129,int,2,Counts for MS-DRG 129
+pdd_mdc_03,10,msdrg_130,int,2,Counts for MS-DRG 130
+pdd_mdc_03,11,msdrg_131,int,2,Counts for MS-DRG 131
+pdd_mdc_03,12,msdrg_132,int,3,Counts for MS-DRG 132
+pdd_mdc_03,13,msdrg_133,int,2,Counts for MS-DRG 133
+pdd_mdc_03,14,msdrg_134,int,3,Counts for MS-DRG 134
+pdd_mdc_03,15,msdrg_135,int,2,Counts for MS-DRG 135
+pdd_mdc_03,16,msdrg_136,int,2,Counts for MS-DRG 136
+pdd_mdc_03,17,msdrg_137,int,2,Counts for MS-DRG 137
+pdd_mdc_03,18,msdrg_138,int,2,Counts for MS-DRG 138
+pdd_mdc_03,19,msdrg_139,int,2,Counts for MS-DRG 139
+pdd_mdc_03,20,msdrg_146,int,1,Counts for MS-DRG 146
+pdd_mdc_03,21,msdrg_147,int,2,Counts for MS-DRG 147
+pdd_mdc_03,22,msdrg_148,int,1,Counts for MS-DRG 148
+pdd_mdc_03,23,msdrg_149,int,2,Counts for MS-DRG 149
+pdd_mdc_03,24,msdrg_150,int,1,Counts for MS-DRG 150
+pdd_mdc_03,25,msdrg_151,int,2,Counts for MS-DRG 151
+pdd_mdc_03,26,msdrg_152,int,2,Counts for MS-DRG 152
+pdd_mdc_03,27,msdrg_153,int,3,Counts for MS-DRG 153
+pdd_mdc_03,28,msdrg_154,int,2,Counts for MS-DRG 154
+pdd_mdc_03,29,msdrg_155,int,2,Counts for MS-DRG 155
+pdd_mdc_03,30,msdrg_156,int,2,Counts for MS-DRG 156
+pdd_mdc_03,31,msdrg_157,int,1,Counts for MS-DRG 157
+pdd_mdc_03,32,msdrg_158,int,2,Counts for MS-DRG 158
+pdd_mdc_03,33,msdrg_159,int,2,Counts for MS-DRG 159
+pdd_mdc_03,34,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_03,35,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_03,36,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_03,37,msdrg_984,int,1,Counts for MS-DRG 984
+pdd_mdc_03,38,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_03,39,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_03,40,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_19,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 19"
+pdd_mdc_19,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_19,3,year,int,4,Year of discharge
+pdd_mdc_19,4,msdrg_876,int,1,Counts for MS-DRG 876
+pdd_mdc_19,5,msdrg_880,int,2,Counts for MS-DRG 880
+pdd_mdc_19,6,msdrg_881,int,3,Counts for MS-DRG 881
+pdd_mdc_19,7,msdrg_882,int,3,Counts for MS-DRG 882
+pdd_mdc_19,8,msdrg_883,int,3,Counts for MS-DRG 883
+pdd_mdc_19,9,msdrg_884,int,2,Counts for MS-DRG 884
+pdd_mdc_19,10,msdrg_885,int,4,Counts for MS-DRG 885
+pdd_mdc_19,11,msdrg_886,int,2,Counts for MS-DRG 886
+pdd_mdc_19,12,msdrg_887,int,2,Counts for MS-DRG 887
+,,,,,
+pdd_mdc_24,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 24"
+pdd_mdc_24,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_24,3,year,int,4,Year of discharge
+pdd_mdc_24,4,msdrg_955,int,2,Counts for MS-DRG 955
+pdd_mdc_24,5,msdrg_956,int,2,Counts for MS-DRG 956
+pdd_mdc_24,6,msdrg_957,int,2,Counts for MS-DRG 957
+pdd_mdc_24,7,msdrg_958,int,2,Counts for MS-DRG 958
+pdd_mdc_24,8,msdrg_959,int,2,Counts for MS-DRG 959
+pdd_mdc_24,9,msdrg_963,int,2,Counts for MS-DRG 963
+pdd_mdc_24,10,msdrg_964,int,2,Counts for MS-DRG 964
+pdd_mdc_24,11,msdrg_965,int,2,Counts for MS-DRG 965
+pdd_mdc_24,12,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_24,13,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_24,14,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_24,15,msdrg_988,int,1,Counts for MS-DRG 988
+,,,,,
+pdd_mdc_05,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 05"
+pdd_mdc_05,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_05,3,year,int,4,Year of discharge
+pdd_mdc_05,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_05,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_05,6,msdrg_016,int,1,Counts for MS-DRG 016
+pdd_mdc_05,7,msdrg_215,int,1,Counts for MS-DRG 215
+pdd_mdc_05,8,msdrg_216,int,2,Counts for MS-DRG 216
+pdd_mdc_05,9,msdrg_217,int,1,Counts for MS-DRG 217
+pdd_mdc_05,10,msdrg_219,int,2,Counts for MS-DRG 219
+pdd_mdc_05,11,msdrg_220,int,2,Counts for MS-DRG 220
+pdd_mdc_05,12,msdrg_221,int,1,Counts for MS-DRG 221
+pdd_mdc_05,13,msdrg_222,int,1,Counts for MS-DRG 222
+pdd_mdc_05,14,msdrg_223,int,1,Counts for MS-DRG 223
+pdd_mdc_05,15,msdrg_224,int,1,Counts for MS-DRG 224
+pdd_mdc_05,16,msdrg_225,int,1,Counts for MS-DRG 225
+pdd_mdc_05,17,msdrg_226,int,1,Counts for MS-DRG 226
+pdd_mdc_05,18,msdrg_227,int,2,Counts for MS-DRG 227
+pdd_mdc_05,19,msdrg_228,int,2,Counts for MS-DRG 228
+pdd_mdc_05,20,msdrg_229,int,2,Counts for MS-DRG 229
+pdd_mdc_05,21,msdrg_230,int,2,Counts for MS-DRG 230
+pdd_mdc_05,22,msdrg_231,int,1,Counts for MS-DRG 231
+pdd_mdc_05,23,msdrg_232,int,1,Counts for MS-DRG 232
+pdd_mdc_05,24,msdrg_233,int,2,Counts for MS-DRG 233
+pdd_mdc_05,25,msdrg_234,int,2,Counts for MS-DRG 234
+pdd_mdc_05,26,msdrg_235,int,2,Counts for MS-DRG 235
+pdd_mdc_05,27,msdrg_236,int,2,Counts for MS-DRG 236
+pdd_mdc_05,28,msdrg_237,int,2,Counts for MS-DRG 237
+pdd_mdc_05,29,msdrg_238,int,2,Counts for MS-DRG 238
+pdd_mdc_05,30,msdrg_239,int,2,Counts for MS-DRG 239
+pdd_mdc_05,31,msdrg_240,int,2,Counts for MS-DRG 240
+pdd_mdc_05,32,msdrg_241,int,1,Counts for MS-DRG 241
+pdd_mdc_05,33,msdrg_242,int,2,Counts for MS-DRG 242
+pdd_mdc_05,34,msdrg_243,int,2,Counts for MS-DRG 243
+pdd_mdc_05,35,msdrg_244,int,2,Counts for MS-DRG 244
+pdd_mdc_05,36,msdrg_245,int,1,Counts for MS-DRG 245
+pdd_mdc_05,37,msdrg_246,int,2,Counts for MS-DRG 246
+pdd_mdc_05,38,msdrg_247,int,3,Counts for MS-DRG 247
+pdd_mdc_05,39,msdrg_248,int,2,Counts for MS-DRG 248
+pdd_mdc_05,40,msdrg_249,int,2,Counts for MS-DRG 249
+pdd_mdc_05,41,msdrg_250,int,2,Counts for MS-DRG 250
+pdd_mdc_05,42,msdrg_251,int,3,Counts for MS-DRG 251
+pdd_mdc_05,43,msdrg_252,int,2,Counts for MS-DRG 252
+pdd_mdc_05,44,msdrg_253,int,2,Counts for MS-DRG 253
+pdd_mdc_05,45,msdrg_254,int,2,Counts for MS-DRG 254
+pdd_mdc_05,46,msdrg_255,int,1,Counts for MS-DRG 255
+pdd_mdc_05,47,msdrg_256,int,1,Counts for MS-DRG 256
+pdd_mdc_05,48,msdrg_257,int,1,Counts for MS-DRG 257
+pdd_mdc_05,49,msdrg_258,int,1,Counts for MS-DRG 258
+pdd_mdc_05,50,msdrg_259,int,1,Counts for MS-DRG 259
+pdd_mdc_05,51,msdrg_260,int,1,Counts for MS-DRG 260
+pdd_mdc_05,52,msdrg_261,int,1,Counts for MS-DRG 261
+pdd_mdc_05,53,msdrg_262,int,1,Counts for MS-DRG 262
+pdd_mdc_05,54,msdrg_263,int,1,Counts for MS-DRG 263
+pdd_mdc_05,55,msdrg_264,int,2,Counts for MS-DRG 264
+pdd_mdc_05,56,msdrg_280,int,2,Counts for MS-DRG 280
+pdd_mdc_05,57,msdrg_281,int,3,Counts for MS-DRG 281
+pdd_mdc_05,58,msdrg_282,int,2,Counts for MS-DRG 282
+pdd_mdc_05,59,msdrg_283,int,2,Counts for MS-DRG 283
+pdd_mdc_05,60,msdrg_284,int,1,Counts for MS-DRG 284
+pdd_mdc_05,61,msdrg_285,int,1,Counts for MS-DRG 285
+pdd_mdc_05,62,msdrg_286,int,2,Counts for MS-DRG 286
+pdd_mdc_05,63,msdrg_287,int,2,Counts for MS-DRG 287
+pdd_mdc_05,64,msdrg_288,int,1,Counts for MS-DRG 288
+pdd_mdc_05,65,msdrg_289,int,1,Counts for MS-DRG 289
+pdd_mdc_05,66,msdrg_290,int,1,Counts for MS-DRG 290
+pdd_mdc_05,67,msdrg_291,int,3,Counts for MS-DRG 291
+pdd_mdc_05,68,msdrg_292,int,3,Counts for MS-DRG 292
+pdd_mdc_05,69,msdrg_293,int,3,Counts for MS-DRG 293
+pdd_mdc_05,70,msdrg_294,int,1,Counts for MS-DRG 294
+pdd_mdc_05,71,msdrg_295,int,1,Counts for MS-DRG 295
+pdd_mdc_05,72,msdrg_296,int,1,Counts for MS-DRG 296
+pdd_mdc_05,73,msdrg_297,int,1,Counts for MS-DRG 297
+pdd_mdc_05,74,msdrg_298,int,1,Counts for MS-DRG 298
+pdd_mdc_05,75,msdrg_299,int,2,Counts for MS-DRG 299
+pdd_mdc_05,76,msdrg_300,int,2,Counts for MS-DRG 300
+pdd_mdc_05,77,msdrg_301,int,2,Counts for MS-DRG 301
+pdd_mdc_05,78,msdrg_302,int,2,Counts for MS-DRG 302
+pdd_mdc_05,79,msdrg_303,int,2,Counts for MS-DRG 303
+pdd_mdc_05,80,msdrg_304,int,1,Counts for MS-DRG 304
+pdd_mdc_05,81,msdrg_305,int,2,Counts for MS-DRG 305
+pdd_mdc_05,82,msdrg_306,int,1,Counts for MS-DRG 306
+pdd_mdc_05,83,msdrg_307,int,1,Counts for MS-DRG 307
+pdd_mdc_05,84,msdrg_308,int,2,Counts for MS-DRG 308
+pdd_mdc_05,85,msdrg_309,int,3,Counts for MS-DRG 309
+pdd_mdc_05,86,msdrg_310,int,2,Counts for MS-DRG 310
+pdd_mdc_05,87,msdrg_311,int,2,Counts for MS-DRG 311
+pdd_mdc_05,88,msdrg_312,int,3,Counts for MS-DRG 312
+pdd_mdc_05,89,msdrg_313,int,3,Counts for MS-DRG 313
+pdd_mdc_05,90,msdrg_314,int,2,Counts for MS-DRG 314
+pdd_mdc_05,91,msdrg_315,int,2,Counts for MS-DRG 315
+pdd_mdc_05,92,msdrg_316,int,2,Counts for MS-DRG 316
+pdd_mdc_05,93,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_05,94,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_05,95,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_05,96,msdrg_985,int,1,Counts for MS-DRG 985
+pdd_mdc_05,97,msdrg_986,int,1,Counts for MS-DRG 986
+pdd_mdc_05,98,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_05,99,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_05,100,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_04,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 04"
+pdd_mdc_04,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_04,3,year,int,4,Year of discharge
+pdd_mdc_04,4,msdrg_002,int,1,Counts for MS-DRG 002
+pdd_mdc_04,5,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_04,6,msdrg_004,int,2,Counts for MS-DRG 004
+pdd_mdc_04,7,msdrg_012,int,1,Counts for MS-DRG 012
+pdd_mdc_04,8,msdrg_163,int,2,Counts for MS-DRG 163
+pdd_mdc_04,9,msdrg_164,int,2,Counts for MS-DRG 164
+pdd_mdc_04,10,msdrg_165,int,2,Counts for MS-DRG 165
+pdd_mdc_04,11,msdrg_166,int,2,Counts for MS-DRG 166
+pdd_mdc_04,12,msdrg_167,int,2,Counts for MS-DRG 167
+pdd_mdc_04,13,msdrg_168,int,1,Counts for MS-DRG 168
+pdd_mdc_04,14,msdrg_175,int,2,Counts for MS-DRG 175
+pdd_mdc_04,15,msdrg_176,int,2,Counts for MS-DRG 176
+pdd_mdc_04,16,msdrg_177,int,2,Counts for MS-DRG 177
+pdd_mdc_04,17,msdrg_178,int,2,Counts for MS-DRG 178
+pdd_mdc_04,18,msdrg_179,int,2,Counts for MS-DRG 179
+pdd_mdc_04,19,msdrg_180,int,2,Counts for MS-DRG 180
+pdd_mdc_04,20,msdrg_181,int,2,Counts for MS-DRG 181
+pdd_mdc_04,21,msdrg_182,int,1,Counts for MS-DRG 182
+pdd_mdc_04,22,msdrg_183,int,2,Counts for MS-DRG 183
+pdd_mdc_04,23,msdrg_184,int,2,Counts for MS-DRG 184
+pdd_mdc_04,24,msdrg_185,int,2,Counts for MS-DRG 185
+pdd_mdc_04,25,msdrg_186,int,2,Counts for MS-DRG 186
+pdd_mdc_04,26,msdrg_187,int,2,Counts for MS-DRG 187
+pdd_mdc_04,27,msdrg_188,int,1,Counts for MS-DRG 188
+pdd_mdc_04,28,msdrg_189,int,3,Counts for MS-DRG 189
+pdd_mdc_04,29,msdrg_190,int,3,Counts for MS-DRG 190
+pdd_mdc_04,30,msdrg_191,int,3,Counts for MS-DRG 191
+pdd_mdc_04,31,msdrg_192,int,3,Counts for MS-DRG 192
+pdd_mdc_04,32,msdrg_193,int,3,Counts for MS-DRG 193
+pdd_mdc_04,33,msdrg_194,int,3,Counts for MS-DRG 194
+pdd_mdc_04,34,msdrg_195,int,3,Counts for MS-DRG 195
+pdd_mdc_04,35,msdrg_196,int,1,Counts for MS-DRG 196
+pdd_mdc_04,36,msdrg_197,int,2,Counts for MS-DRG 197
+pdd_mdc_04,37,msdrg_198,int,2,Counts for MS-DRG 198
+pdd_mdc_04,38,msdrg_199,int,2,Counts for MS-DRG 199
+pdd_mdc_04,39,msdrg_200,int,2,Counts for MS-DRG 200
+pdd_mdc_04,40,msdrg_201,int,2,Counts for MS-DRG 201
+pdd_mdc_04,41,msdrg_202,int,3,Counts for MS-DRG 202
+pdd_mdc_04,42,msdrg_203,int,3,Counts for MS-DRG 203
+pdd_mdc_04,43,msdrg_204,int,2,Counts for MS-DRG 204
+pdd_mdc_04,44,msdrg_205,int,1,Counts for MS-DRG 205
+pdd_mdc_04,45,msdrg_206,int,2,Counts for MS-DRG 206
+pdd_mdc_04,46,msdrg_207,int,3,Counts for MS-DRG 207
+pdd_mdc_04,47,msdrg_208,int,2,Counts for MS-DRG 208
+pdd_mdc_04,48,msdrg_981,int,2,Counts for MS-DRG 981
+pdd_mdc_04,49,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_04,50,msdrg_983,int,2,Counts for MS-DRG 983
+pdd_mdc_04,51,msdrg_984,int,1,Counts for MS-DRG 984
+pdd_mdc_04,52,msdrg_986,int,1,Counts for MS-DRG 986
+pdd_mdc_04,53,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_04,54,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_04,55,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_09,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 09"
+pdd_mdc_09,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_09,3,year,int,4,Year of discharge
+pdd_mdc_09,4,msdrg_001,int,1,Counts for MS-DRG 001
+pdd_mdc_09,5,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_09,6,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_09,7,msdrg_011,int,1,Counts for MS-DRG 011
+pdd_mdc_09,8,msdrg_012,int,1,Counts for MS-DRG 012
+pdd_mdc_09,9,msdrg_570,int,2,Counts for MS-DRG 570
+pdd_mdc_09,10,msdrg_571,int,2,Counts for MS-DRG 571
+pdd_mdc_09,11,msdrg_572,int,2,Counts for MS-DRG 572
+pdd_mdc_09,12,msdrg_573,int,2,Counts for MS-DRG 573
+pdd_mdc_09,13,msdrg_574,int,2,Counts for MS-DRG 574
+pdd_mdc_09,14,msdrg_575,int,2,Counts for MS-DRG 575
+pdd_mdc_09,15,msdrg_576,int,1,Counts for MS-DRG 576
+pdd_mdc_09,16,msdrg_577,int,2,Counts for MS-DRG 577
+pdd_mdc_09,17,msdrg_578,int,2,Counts for MS-DRG 578
+pdd_mdc_09,18,msdrg_579,int,2,Counts for MS-DRG 579
+pdd_mdc_09,19,msdrg_580,int,2,Counts for MS-DRG 580
+pdd_mdc_09,20,msdrg_581,int,3,Counts for MS-DRG 581
+pdd_mdc_09,21,msdrg_582,int,2,Counts for MS-DRG 582
+pdd_mdc_09,22,msdrg_583,int,2,Counts for MS-DRG 583
+pdd_mdc_09,23,msdrg_584,int,2,Counts for MS-DRG 584
+pdd_mdc_09,24,msdrg_585,int,2,Counts for MS-DRG 585
+pdd_mdc_09,25,msdrg_592,int,2,Counts for MS-DRG 592
+pdd_mdc_09,26,msdrg_593,int,2,Counts for MS-DRG 593
+pdd_mdc_09,27,msdrg_594,int,1,Counts for MS-DRG 594
+pdd_mdc_09,28,msdrg_595,int,1,Counts for MS-DRG 595
+pdd_mdc_09,29,msdrg_596,int,2,Counts for MS-DRG 596
+pdd_mdc_09,30,msdrg_597,int,1,Counts for MS-DRG 597
+pdd_mdc_09,31,msdrg_598,int,2,Counts for MS-DRG 598
+pdd_mdc_09,32,msdrg_599,int,1,Counts for MS-DRG 599
+pdd_mdc_09,33,msdrg_600,int,1,Counts for MS-DRG 600
+pdd_mdc_09,34,msdrg_601,int,2,Counts for MS-DRG 601
+pdd_mdc_09,35,msdrg_602,int,2,Counts for MS-DRG 602
+pdd_mdc_09,36,msdrg_603,int,3,Counts for MS-DRG 603
+pdd_mdc_09,37,msdrg_604,int,2,Counts for MS-DRG 604
+pdd_mdc_09,38,msdrg_605,int,3,Counts for MS-DRG 605
+pdd_mdc_09,39,msdrg_606,int,2,Counts for MS-DRG 606
+pdd_mdc_09,40,msdrg_607,int,2,Counts for MS-DRG 607
+pdd_mdc_09,41,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_09,42,msdrg_982,int,2,Counts for MS-DRG 982
+pdd_mdc_09,43,msdrg_983,int,2,Counts for MS-DRG 983
+pdd_mdc_09,44,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_09,45,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_09,46,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_01,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 01"
+pdd_mdc_01,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_01,3,year,int,4,Year of discharge
+pdd_mdc_01,4,msdrg_003,int,2,Counts for MS-DRG 003
+pdd_mdc_01,5,msdrg_004,int,2,Counts for MS-DRG 004
+pdd_mdc_01,6,msdrg_014,int,1,Counts for MS-DRG 014
+pdd_mdc_01,7,msdrg_016,int,1,Counts for MS-DRG 016
+pdd_mdc_01,8,msdrg_020,int,2,Counts for MS-DRG 020
+pdd_mdc_01,9,msdrg_021,int,2,Counts for MS-DRG 021
+pdd_mdc_01,10,msdrg_022,int,1,Counts for MS-DRG 022
+pdd_mdc_01,11,msdrg_023,int,2,Counts for MS-DRG 023
+pdd_mdc_01,12,msdrg_024,int,2,Counts for MS-DRG 024
+pdd_mdc_01,13,msdrg_025,int,3,Counts for MS-DRG 025
+pdd_mdc_01,14,msdrg_026,int,2,Counts for MS-DRG 026
+pdd_mdc_01,15,msdrg_027,int,3,Counts for MS-DRG 027
+pdd_mdc_01,16,msdrg_028,int,2,Counts for MS-DRG 028
+pdd_mdc_01,17,msdrg_029,int,2,Counts for MS-DRG 029
+pdd_mdc_01,18,msdrg_030,int,2,Counts for MS-DRG 030
+pdd_mdc_01,19,msdrg_031,int,1,Counts for MS-DRG 031
+pdd_mdc_01,20,msdrg_032,int,2,Counts for MS-DRG 032
+pdd_mdc_01,21,msdrg_033,int,1,Counts for MS-DRG 033
+pdd_mdc_01,22,msdrg_034,int,1,Counts for MS-DRG 034
+pdd_mdc_01,23,msdrg_035,int,1,Counts for MS-DRG 035
+pdd_mdc_01,24,msdrg_036,int,2,Counts for MS-DRG 036
+pdd_mdc_01,25,msdrg_037,int,1,Counts for MS-DRG 037
+pdd_mdc_01,26,msdrg_038,int,2,Counts for MS-DRG 038
+pdd_mdc_01,27,msdrg_039,int,2,Counts for MS-DRG 039
+pdd_mdc_01,28,msdrg_040,int,2,Counts for MS-DRG 040
+pdd_mdc_01,29,msdrg_041,int,2,Counts for MS-DRG 041
+pdd_mdc_01,30,msdrg_042,int,2,Counts for MS-DRG 042
+pdd_mdc_01,31,msdrg_052,int,2,Counts for MS-DRG 052
+pdd_mdc_01,32,msdrg_053,int,2,Counts for MS-DRG 053
+pdd_mdc_01,33,msdrg_054,int,2,Counts for MS-DRG 054
+pdd_mdc_01,34,msdrg_055,int,2,Counts for MS-DRG 055
+pdd_mdc_01,35,msdrg_056,int,2,Counts for MS-DRG 056
+pdd_mdc_01,36,msdrg_057,int,3,Counts for MS-DRG 057
+pdd_mdc_01,37,msdrg_058,int,1,Counts for MS-DRG 058
+pdd_mdc_01,38,msdrg_059,int,1,Counts for MS-DRG 059
+pdd_mdc_01,39,msdrg_060,int,2,Counts for MS-DRG 060
+pdd_mdc_01,40,msdrg_061,int,2,Counts for MS-DRG 061
+pdd_mdc_01,41,msdrg_062,int,2,Counts for MS-DRG 062
+pdd_mdc_01,42,msdrg_063,int,2,Counts for MS-DRG 063
+pdd_mdc_01,43,msdrg_064,int,3,Counts for MS-DRG 064
+pdd_mdc_01,44,msdrg_065,int,3,Counts for MS-DRG 065
+pdd_mdc_01,45,msdrg_066,int,2,Counts for MS-DRG 066
+pdd_mdc_01,46,msdrg_067,int,1,Counts for MS-DRG 067
+pdd_mdc_01,47,msdrg_068,int,2,Counts for MS-DRG 068
+pdd_mdc_01,48,msdrg_069,int,3,Counts for MS-DRG 069
+pdd_mdc_01,49,msdrg_070,int,2,Counts for MS-DRG 070
+pdd_mdc_01,50,msdrg_071,int,2,Counts for MS-DRG 071
+pdd_mdc_01,51,msdrg_072,int,1,Counts for MS-DRG 072
+pdd_mdc_01,52,msdrg_073,int,2,Counts for MS-DRG 073
+pdd_mdc_01,53,msdrg_074,int,2,Counts for MS-DRG 074
+pdd_mdc_01,54,msdrg_075,int,2,Counts for MS-DRG 075
+pdd_mdc_01,55,msdrg_076,int,2,Counts for MS-DRG 076
+pdd_mdc_01,56,msdrg_077,int,1,Counts for MS-DRG 077
+pdd_mdc_01,57,msdrg_078,int,1,Counts for MS-DRG 078
+pdd_mdc_01,58,msdrg_079,int,1,Counts for MS-DRG 079
+pdd_mdc_01,59,msdrg_080,int,2,Counts for MS-DRG 080
+pdd_mdc_01,60,msdrg_081,int,2,Counts for MS-DRG 081
+pdd_mdc_01,61,msdrg_082,int,2,Counts for MS-DRG 082
+pdd_mdc_01,62,msdrg_083,int,2,Counts for MS-DRG 083
+pdd_mdc_01,63,msdrg_084,int,2,Counts for MS-DRG 084
+pdd_mdc_01,64,msdrg_085,int,2,Counts for MS-DRG 085
+pdd_mdc_01,65,msdrg_086,int,3,Counts for MS-DRG 086
+pdd_mdc_01,66,msdrg_087,int,3,Counts for MS-DRG 087
+pdd_mdc_01,67,msdrg_088,int,1,Counts for MS-DRG 088
+pdd_mdc_01,68,msdrg_089,int,2,Counts for MS-DRG 089
+pdd_mdc_01,69,msdrg_090,int,2,Counts for MS-DRG 090
+pdd_mdc_01,70,msdrg_091,int,2,Counts for MS-DRG 091
+pdd_mdc_01,71,msdrg_092,int,2,Counts for MS-DRG 092
+pdd_mdc_01,72,msdrg_093,int,2,Counts for MS-DRG 093
+pdd_mdc_01,73,msdrg_094,int,1,Counts for MS-DRG 094
+pdd_mdc_01,74,msdrg_095,int,1,Counts for MS-DRG 095
+pdd_mdc_01,75,msdrg_096,int,1,Counts for MS-DRG 096
+pdd_mdc_01,76,msdrg_097,int,1,Counts for MS-DRG 097
+pdd_mdc_01,77,msdrg_098,int,1,Counts for MS-DRG 098
+pdd_mdc_01,78,msdrg_099,int,1,Counts for MS-DRG 099
+pdd_mdc_01,79,msdrg_100,int,2,Counts for MS-DRG 100
+pdd_mdc_01,80,msdrg_101,int,3,Counts for MS-DRG 101
+pdd_mdc_01,81,msdrg_102,int,1,Counts for MS-DRG 102
+pdd_mdc_01,82,msdrg_103,int,2,Counts for MS-DRG 103
+pdd_mdc_01,83,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_01,84,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_01,85,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_01,86,msdrg_985,int,1,Counts for MS-DRG 985
+pdd_mdc_01,87,msdrg_986,int,1,Counts for MS-DRG 986
+pdd_mdc_01,88,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_01,89,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_01,90,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_21,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 21"
+pdd_mdc_21,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_21,3,year,int,4,Year of discharge
+pdd_mdc_21,4,msdrg_001,int,1,Counts for MS-DRG 001
+pdd_mdc_21,5,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_21,6,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_21,7,msdrg_005,int,1,Counts for MS-DRG 005
+pdd_mdc_21,8,msdrg_006,int,1,Counts for MS-DRG 006
+pdd_mdc_21,9,msdrg_013,int,1,Counts for MS-DRG 013
+pdd_mdc_21,10,msdrg_014,int,1,Counts for MS-DRG 014
+pdd_mdc_21,11,msdrg_901,int,1,Counts for MS-DRG 901
+pdd_mdc_21,12,msdrg_902,int,2,Counts for MS-DRG 902
+pdd_mdc_21,13,msdrg_903,int,1,Counts for MS-DRG 903
+pdd_mdc_21,14,msdrg_904,int,2,Counts for MS-DRG 904
+pdd_mdc_21,15,msdrg_905,int,2,Counts for MS-DRG 905
+pdd_mdc_21,16,msdrg_906,int,3,Counts for MS-DRG 906
+pdd_mdc_21,17,msdrg_907,int,2,Counts for MS-DRG 907
+pdd_mdc_21,18,msdrg_908,int,2,Counts for MS-DRG 908
+pdd_mdc_21,19,msdrg_909,int,2,Counts for MS-DRG 909
+pdd_mdc_21,20,msdrg_913,int,1,Counts for MS-DRG 913
+pdd_mdc_21,21,msdrg_914,int,2,Counts for MS-DRG 914
+pdd_mdc_21,22,msdrg_915,int,1,Counts for MS-DRG 915
+pdd_mdc_21,23,msdrg_916,int,2,Counts for MS-DRG 916
+pdd_mdc_21,24,msdrg_917,int,3,Counts for MS-DRG 917
+pdd_mdc_21,25,msdrg_918,int,3,Counts for MS-DRG 918
+pdd_mdc_21,26,msdrg_919,int,2,Counts for MS-DRG 919
+pdd_mdc_21,27,msdrg_920,int,2,Counts for MS-DRG 920
+pdd_mdc_21,28,msdrg_921,int,2,Counts for MS-DRG 921
+pdd_mdc_21,29,msdrg_922,int,2,Counts for MS-DRG 922
+pdd_mdc_21,30,msdrg_923,int,2,Counts for MS-DRG 923
+pdd_mdc_21,31,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_21,32,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_21,33,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_21,34,msdrg_984,int,1,Counts for MS-DRG 984
+pdd_mdc_21,35,msdrg_985,int,1,Counts for MS-DRG 985
+pdd_mdc_21,36,msdrg_986,int,1,Counts for MS-DRG 986
+pdd_mdc_21,37,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_21,38,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_21,39,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_12,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 12"
+pdd_mdc_12,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_12,3,year,int,4,Year of discharge
+pdd_mdc_12,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_12,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_12,6,msdrg_009,int,1,Counts for MS-DRG 009
+pdd_mdc_12,7,msdrg_015,int,1,Counts for MS-DRG 015
+pdd_mdc_12,8,msdrg_016,int,1,Counts for MS-DRG 016
+pdd_mdc_12,9,msdrg_707,int,2,Counts for MS-DRG 707
+pdd_mdc_12,10,msdrg_708,int,3,Counts for MS-DRG 708
+pdd_mdc_12,11,msdrg_709,int,2,Counts for MS-DRG 709
+pdd_mdc_12,12,msdrg_710,int,2,Counts for MS-DRG 710
+pdd_mdc_12,13,msdrg_711,int,2,Counts for MS-DRG 711
+pdd_mdc_12,14,msdrg_712,int,2,Counts for MS-DRG 712
+pdd_mdc_12,15,msdrg_713,int,2,Counts for MS-DRG 713
+pdd_mdc_12,16,msdrg_714,int,3,Counts for MS-DRG 714
+pdd_mdc_12,17,msdrg_715,int,1,Counts for MS-DRG 715
+pdd_mdc_12,18,msdrg_716,int,2,Counts for MS-DRG 716
+pdd_mdc_12,19,msdrg_717,int,1,Counts for MS-DRG 717
+pdd_mdc_12,20,msdrg_718,int,1,Counts for MS-DRG 718
+pdd_mdc_12,21,msdrg_722,int,1,Counts for MS-DRG 722
+pdd_mdc_12,22,msdrg_723,int,2,Counts for MS-DRG 723
+pdd_mdc_12,23,msdrg_724,int,2,Counts for MS-DRG 724
+pdd_mdc_12,24,msdrg_725,int,1,Counts for MS-DRG 725
+pdd_mdc_12,25,msdrg_726,int,2,Counts for MS-DRG 726
+pdd_mdc_12,26,msdrg_727,int,2,Counts for MS-DRG 727
+pdd_mdc_12,27,msdrg_728,int,2,Counts for MS-DRG 728
+pdd_mdc_12,28,msdrg_729,int,2,Counts for MS-DRG 729
+pdd_mdc_12,29,msdrg_730,int,2,Counts for MS-DRG 730
+pdd_mdc_12,30,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_12,31,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_12,32,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_12,33,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_12,34,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_12,35,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_17,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 17"
+pdd_mdc_17,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_17,3,year,int,4,Year of discharge
+pdd_mdc_17,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_17,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_17,6,msdrg_009,int,3,Counts for MS-DRG 009
+pdd_mdc_17,7,msdrg_011,int,1,Counts for MS-DRG 011
+pdd_mdc_17,8,msdrg_012,int,1,Counts for MS-DRG 012
+pdd_mdc_17,9,msdrg_013,int,1,Counts for MS-DRG 013
+pdd_mdc_17,10,msdrg_014,int,3,Counts for MS-DRG 014
+pdd_mdc_17,11,msdrg_015,int,2,Counts for MS-DRG 015
+pdd_mdc_17,12,msdrg_016,int,2,Counts for MS-DRG 016
+pdd_mdc_17,13,msdrg_017,int,2,Counts for MS-DRG 017
+pdd_mdc_17,14,msdrg_820,int,2,Counts for MS-DRG 820
+pdd_mdc_17,15,msdrg_821,int,2,Counts for MS-DRG 821
+pdd_mdc_17,16,msdrg_822,int,2,Counts for MS-DRG 822
+pdd_mdc_17,17,msdrg_823,int,2,Counts for MS-DRG 823
+pdd_mdc_17,18,msdrg_824,int,2,Counts for MS-DRG 824
+pdd_mdc_17,19,msdrg_825,int,2,Counts for MS-DRG 825
+pdd_mdc_17,20,msdrg_826,int,2,Counts for MS-DRG 826
+pdd_mdc_17,21,msdrg_827,int,2,Counts for MS-DRG 827
+pdd_mdc_17,22,msdrg_828,int,2,Counts for MS-DRG 828
+pdd_mdc_17,23,msdrg_829,int,2,Counts for MS-DRG 829
+pdd_mdc_17,24,msdrg_830,int,2,Counts for MS-DRG 830
+pdd_mdc_17,25,msdrg_834,int,2,Counts for MS-DRG 834
+pdd_mdc_17,26,msdrg_835,int,2,Counts for MS-DRG 835
+pdd_mdc_17,27,msdrg_836,int,2,Counts for MS-DRG 836
+pdd_mdc_17,28,msdrg_837,int,2,Counts for MS-DRG 837
+pdd_mdc_17,29,msdrg_838,int,3,Counts for MS-DRG 838
+pdd_mdc_17,30,msdrg_839,int,3,Counts for MS-DRG 839
+pdd_mdc_17,31,msdrg_840,int,2,Counts for MS-DRG 840
+pdd_mdc_17,32,msdrg_841,int,2,Counts for MS-DRG 841
+pdd_mdc_17,33,msdrg_842,int,2,Counts for MS-DRG 842
+pdd_mdc_17,34,msdrg_843,int,1,Counts for MS-DRG 843
+pdd_mdc_17,35,msdrg_844,int,2,Counts for MS-DRG 844
+pdd_mdc_17,36,msdrg_845,int,1,Counts for MS-DRG 845
+pdd_mdc_17,37,msdrg_846,int,3,Counts for MS-DRG 846
+pdd_mdc_17,38,msdrg_847,int,3,Counts for MS-DRG 847
+pdd_mdc_17,39,msdrg_848,int,3,Counts for MS-DRG 848
+pdd_mdc_17,40,msdrg_849,int,2,Counts for MS-DRG 849
+,,,,,
+pdd_mdc_10,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 10"
+pdd_mdc_10,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_10,3,year,int,4,Year of discharge
+pdd_mdc_10,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_10,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_10,6,msdrg_005,int,1,Counts for MS-DRG 005
+pdd_mdc_10,7,msdrg_006,int,1,Counts for MS-DRG 006
+pdd_mdc_10,8,msdrg_007,int,1,Counts for MS-DRG 007
+pdd_mdc_10,9,msdrg_009,int,1,Counts for MS-DRG 009
+pdd_mdc_10,10,msdrg_011,int,1,Counts for MS-DRG 011
+pdd_mdc_10,11,msdrg_012,int,1,Counts for MS-DRG 012
+pdd_mdc_10,12,msdrg_014,int,1,Counts for MS-DRG 014
+pdd_mdc_10,13,msdrg_016,int,1,Counts for MS-DRG 016
+pdd_mdc_10,14,msdrg_614,int,2,Counts for MS-DRG 614
+pdd_mdc_10,15,msdrg_615,int,2,Counts for MS-DRG 615
+pdd_mdc_10,16,msdrg_616,int,1,Counts for MS-DRG 616
+pdd_mdc_10,17,msdrg_617,int,2,Counts for MS-DRG 617
+pdd_mdc_10,18,msdrg_618,int,1,Counts for MS-DRG 618
+pdd_mdc_10,19,msdrg_619,int,2,Counts for MS-DRG 619
+pdd_mdc_10,20,msdrg_620,int,2,Counts for MS-DRG 620
+pdd_mdc_10,21,msdrg_621,int,3,Counts for MS-DRG 621
+pdd_mdc_10,22,msdrg_622,int,1,Counts for MS-DRG 622
+pdd_mdc_10,23,msdrg_623,int,2,Counts for MS-DRG 623
+pdd_mdc_10,24,msdrg_624,int,1,Counts for MS-DRG 624
+pdd_mdc_10,25,msdrg_625,int,1,Counts for MS-DRG 625
+pdd_mdc_10,26,msdrg_626,int,2,Counts for MS-DRG 626
+pdd_mdc_10,27,msdrg_627,int,2,Counts for MS-DRG 627
+pdd_mdc_10,28,msdrg_628,int,2,Counts for MS-DRG 628
+pdd_mdc_10,29,msdrg_629,int,2,Counts for MS-DRG 629
+pdd_mdc_10,30,msdrg_630,int,1,Counts for MS-DRG 630
+pdd_mdc_10,31,msdrg_637,int,2,Counts for MS-DRG 637
+pdd_mdc_10,32,msdrg_638,int,3,Counts for MS-DRG 638
+pdd_mdc_10,33,msdrg_639,int,3,Counts for MS-DRG 639
+pdd_mdc_10,34,msdrg_640,int,3,Counts for MS-DRG 640
+pdd_mdc_10,35,msdrg_641,int,3,Counts for MS-DRG 641
+pdd_mdc_10,36,msdrg_642,int,2,Counts for MS-DRG 642
+pdd_mdc_10,37,msdrg_643,int,2,Counts for MS-DRG 643
+pdd_mdc_10,38,msdrg_644,int,2,Counts for MS-DRG 644
+pdd_mdc_10,39,msdrg_645,int,2,Counts for MS-DRG 645
+pdd_mdc_10,40,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_10,41,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_10,42,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_10,43,msdrg_984,int,1,Counts for MS-DRG 984
+pdd_mdc_10,44,msdrg_985,int,1,Counts for MS-DRG 985
+pdd_mdc_10,45,msdrg_986,int,1,Counts for MS-DRG 986
+pdd_mdc_10,46,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_10,47,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_10,48,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_14,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 14"
+pdd_mdc_14,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_14,3,year,int,4,Year of discharge
+pdd_mdc_14,4,msdrg_765,int,3,Counts for MS-DRG 765
+pdd_mdc_14,5,msdrg_766,int,3,Counts for MS-DRG 766
+pdd_mdc_14,6,msdrg_767,int,3,Counts for MS-DRG 767
+pdd_mdc_14,7,msdrg_768,int,1,Counts for MS-DRG 768
+pdd_mdc_14,8,msdrg_769,int,2,Counts for MS-DRG 769
+pdd_mdc_14,9,msdrg_770,int,2,Counts for MS-DRG 770
+pdd_mdc_14,10,msdrg_774,int,3,Counts for MS-DRG 774
+pdd_mdc_14,11,msdrg_775,int,4,Counts for MS-DRG 775
+pdd_mdc_14,12,msdrg_776,int,2,Counts for MS-DRG 776
+pdd_mdc_14,13,msdrg_777,int,2,Counts for MS-DRG 777
+pdd_mdc_14,14,msdrg_778,int,3,Counts for MS-DRG 778
+pdd_mdc_14,15,msdrg_779,int,2,Counts for MS-DRG 779
+pdd_mdc_14,16,msdrg_780,int,2,Counts for MS-DRG 780
+pdd_mdc_14,17,msdrg_781,int,3,Counts for MS-DRG 781
+pdd_mdc_14,18,msdrg_782,int,2,Counts for MS-DRG 782
+pdd_mdc_14,19,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_14,20,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_14,21,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_14,22,msdrg_989,int,1,Counts for MS-DRG 989
+pdd_mdc_14,23,msdrg_998,int,1,Counts for MS-DRG 998
+,,,,,
+pdd_mdc_02,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 02"
+pdd_mdc_02,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_02,3,year,int,4,Year of discharge
+pdd_mdc_02,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_02,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_02,6,msdrg_009,int,1,Counts for MS-DRG 009
+pdd_mdc_02,7,msdrg_010,int,1,Counts for MS-DRG 010
+pdd_mdc_02,8,msdrg_011,int,1,Counts for MS-DRG 011
+pdd_mdc_02,9,msdrg_012,int,1,Counts for MS-DRG 012
+pdd_mdc_02,10,msdrg_014,int,1,Counts for MS-DRG 014
+pdd_mdc_02,11,msdrg_016,int,1,Counts for MS-DRG 016
+pdd_mdc_02,12,msdrg_113,int,2,Counts for MS-DRG 113
+pdd_mdc_02,13,msdrg_114,int,2,Counts for MS-DRG 114
+pdd_mdc_02,14,msdrg_115,int,2,Counts for MS-DRG 115
+pdd_mdc_02,15,msdrg_116,int,2,Counts for MS-DRG 116
+pdd_mdc_02,16,msdrg_117,int,2,Counts for MS-DRG 117
+pdd_mdc_02,17,msdrg_121,int,2,Counts for MS-DRG 121
+pdd_mdc_02,18,msdrg_122,int,2,Counts for MS-DRG 122
+pdd_mdc_02,19,msdrg_123,int,2,Counts for MS-DRG 123
+pdd_mdc_02,20,msdrg_124,int,2,Counts for MS-DRG 124
+pdd_mdc_02,21,msdrg_125,int,2,Counts for MS-DRG 125
+pdd_mdc_02,22,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_02,23,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_02,24,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_02,25,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_02,26,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_02,27,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_06,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 06"
+pdd_mdc_06,2,oshpd_id,str,9,OSHPD facility id
+pdd_mdc_06,3,year,int,4,Year of discharge
+pdd_mdc_06,4,msdrg_003,int,1,Counts for MS-DRG 003
+pdd_mdc_06,5,msdrg_004,int,1,Counts for MS-DRG 004
+pdd_mdc_06,6,msdrg_326,int,2,Counts for MS-DRG 326
+pdd_mdc_06,7,msdrg_327,int,2,Counts for MS-DRG 327
+pdd_mdc_06,8,msdrg_328,int,2,Counts for MS-DRG 328
+pdd_mdc_06,9,msdrg_329,int,2,Counts for MS-DRG 329
+pdd_mdc_06,10,msdrg_330,int,3,Counts for MS-DRG 330
+pdd_mdc_06,11,msdrg_331,int,2,Counts for MS-DRG 331
+pdd_mdc_06,12,msdrg_332,int,1,Counts for MS-DRG 332
+pdd_mdc_06,13,msdrg_333,int,2,Counts for MS-DRG 333
+pdd_mdc_06,14,msdrg_334,int,2,Counts for MS-DRG 334
+pdd_mdc_06,15,msdrg_335,int,2,Counts for MS-DRG 335
+pdd_mdc_06,16,msdrg_336,int,2,Counts for MS-DRG 336
+pdd_mdc_06,17,msdrg_337,int,2,Counts for MS-DRG 337
+pdd_mdc_06,18,msdrg_338,int,1,Counts for MS-DRG 338
+pdd_mdc_06,19,msdrg_339,int,2,Counts for MS-DRG 339
+pdd_mdc_06,20,msdrg_340,int,3,Counts for MS-DRG 340
+pdd_mdc_06,21,msdrg_341,int,1,Counts for MS-DRG 341
+pdd_mdc_06,22,msdrg_342,int,2,Counts for MS-DRG 342
+pdd_mdc_06,23,msdrg_343,int,3,Counts for MS-DRG 343
+pdd_mdc_06,24,msdrg_344,int,1,Counts for MS-DRG 344
+pdd_mdc_06,25,msdrg_345,int,2,Counts for MS-DRG 345
+pdd_mdc_06,26,msdrg_346,int,2,Counts for MS-DRG 346
+pdd_mdc_06,27,msdrg_347,int,1,Counts for MS-DRG 347
+pdd_mdc_06,28,msdrg_348,int,2,Counts for MS-DRG 348
+pdd_mdc_06,29,msdrg_349,int,2,Counts for MS-DRG 349
+pdd_mdc_06,30,msdrg_350,int,1,Counts for MS-DRG 350
+pdd_mdc_06,31,msdrg_351,int,1,Counts for MS-DRG 351
+pdd_mdc_06,32,msdrg_352,int,2,Counts for MS-DRG 352
+pdd_mdc_06,33,msdrg_353,int,1,Counts for MS-DRG 353
+pdd_mdc_06,34,msdrg_354,int,2,Counts for MS-DRG 354
+pdd_mdc_06,35,msdrg_355,int,2,Counts for MS-DRG 355
+pdd_mdc_06,36,msdrg_356,int,2,Counts for MS-DRG 356
+pdd_mdc_06,37,msdrg_357,int,2,Counts for MS-DRG 357
+pdd_mdc_06,38,msdrg_358,int,2,Counts for MS-DRG 358
+pdd_mdc_06,39,msdrg_368,int,1,Counts for MS-DRG 368
+pdd_mdc_06,40,msdrg_369,int,2,Counts for MS-DRG 369
+pdd_mdc_06,41,msdrg_370,int,1,Counts for MS-DRG 370
+pdd_mdc_06,42,msdrg_371,int,2,Counts for MS-DRG 371
+pdd_mdc_06,43,msdrg_372,int,2,Counts for MS-DRG 372
+pdd_mdc_06,44,msdrg_373,int,2,Counts for MS-DRG 373
+pdd_mdc_06,45,msdrg_374,int,2,Counts for MS-DRG 374
+pdd_mdc_06,46,msdrg_375,int,2,Counts for MS-DRG 375
+pdd_mdc_06,47,msdrg_376,int,2,Counts for MS-DRG 376
+pdd_mdc_06,48,msdrg_377,int,2,Counts for MS-DRG 377
+pdd_mdc_06,49,msdrg_378,int,3,Counts for MS-DRG 378
+pdd_mdc_06,50,msdrg_379,int,2,Counts for MS-DRG 379
+pdd_mdc_06,51,msdrg_380,int,1,Counts for MS-DRG 380
+pdd_mdc_06,52,msdrg_381,int,2,Counts for MS-DRG 381
+pdd_mdc_06,53,msdrg_382,int,1,Counts for MS-DRG 382
+pdd_mdc_06,54,msdrg_383,int,1,Counts for MS-DRG 383
+pdd_mdc_06,55,msdrg_384,int,2,Counts for MS-DRG 384
+pdd_mdc_06,56,msdrg_385,int,1,Counts for MS-DRG 385
+pdd_mdc_06,57,msdrg_386,int,2,Counts for MS-DRG 386
+pdd_mdc_06,58,msdrg_387,int,2,Counts for MS-DRG 387
+pdd_mdc_06,59,msdrg_388,int,2,Counts for MS-DRG 388
+pdd_mdc_06,60,msdrg_389,int,3,Counts for MS-DRG 389
+pdd_mdc_06,61,msdrg_390,int,2,Counts for MS-DRG 390
+pdd_mdc_06,62,msdrg_391,int,2,Counts for MS-DRG 391
+pdd_mdc_06,63,msdrg_392,int,3,Counts for MS-DRG 392
+pdd_mdc_06,64,msdrg_393,int,2,Counts for MS-DRG 393
+pdd_mdc_06,65,msdrg_394,int,2,Counts for MS-DRG 394
+pdd_mdc_06,66,msdrg_395,int,2,Counts for MS-DRG 395
+pdd_mdc_06,67,msdrg_981,int,1,Counts for MS-DRG 981
+pdd_mdc_06,68,msdrg_982,int,1,Counts for MS-DRG 982
+pdd_mdc_06,69,msdrg_983,int,1,Counts for MS-DRG 983
+pdd_mdc_06,70,msdrg_987,int,1,Counts for MS-DRG 987
+pdd_mdc_06,71,msdrg_988,int,1,Counts for MS-DRG 988
+pdd_mdc_06,72,msdrg_989,int,1,Counts for MS-DRG 989
+,,,,,
+pdd_mdc_00,1,id,int,,"MSDRGs counts per hosiptal, per year, for MDC 00"
+pdd_mdc_00,2,oshpd_id,str,,OSHPD facility id
+pdd_mdc_00,3,year,int,,Year of discharge
+pdd_mdc_00,4,msdrg_999,int,,Counts for MS-DRG 999
+,,,,,
+pdd_summary_poa_p,1,id,int,,"Patient Discharge counts, aggregated on the poa_p variable"
+pdd_summary_poa_p,2,oshpd_id,str,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges."
+pdd_summary_poa_p,3,year,int,4,Discharge Year. The year the patient was discharged.
+pdd_summary_poa_p,4,poa_p,str,25,"Present on Admission (POA)  Principal Diagnosis. A condition is considered present on admission (POA) if it is identified in the history and physical examination or documented in the current inpatient medical records (e.g., emergency room, initial progress, initial nursing assessment, clinic/office notes). Facilities were required to begin POA reporting for all discharges on or after July 1, 2008."
+pdd_summary_poa_p,5,count,int,5,Count of records
+,,,,,
+pdd_summary_diag_p,1,id,int,,"Patient Discharge counts, aggregated on the diag_p variable"
+pdd_summary_diag_p,2,oshpd_id,str,9,"Hospital Identification Number. A unique six-digit identifier assigned to each facility by the Office of Statewide Health Planning and Development. The first two digits indicate the county in which the facility is located. The last four digits are unique within each county. Appendix F - Counts by Facility (Discharges) (PDD) lists facility ID number, name, and number of discharges."
+pdd_summary_diag_p,3,year,int,4,Discharge Year. The year the patient was discharged.
+pdd_summary_diag_p,4,diag_p,str,5,"Principal Diagnosis. The condition established, after study, to be the chief cause of the admission of the patient to the hospital for care. Diagnoses are coded according to the ICD-9-CM."
+pdd_summary_diag_p,5,count,int,4,Count of records

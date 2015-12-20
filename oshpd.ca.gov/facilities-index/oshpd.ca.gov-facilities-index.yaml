@@ -1,0 +1,681 @@
+about:
+    access: public
+    footnote: null
+    grain: counties
+    groups: []
+    license: null
+    processed: The partitions {{dependencies.facilities}} and {{dependencies.geoids}}
+        are joined and copied to a new partition, with a table that includes the GVID
+        for the county and both the six and nine character versions of the OSHPD facility
+        ID.
+    rights: null
+    source: '{{contact_source.creator.org}} via the bundles {{dependencies.facilities}}
+        and {{dependencies.geoids}}.'
+    space: California
+    subject: null
+    summary: Index of health care facilities, based on OSHPD&apos;s official list,
+        via {{dependencies.facilities}}.
+    tags: []
+    time: 2010e2014
+    title: OSHPD Health Care Facilities Index
+build:
+    build: {}
+    dependencies:
+        cross: oshpd.ca.gov-facilities-cross-facility_cross
+        facilities: oshpd.ca.gov-facilities-facilities
+        geoids: oshpd.ca.gov-facilities-facilities_geoids
+    sources:
+        cross:
+            filetype: partition
+            url: oshpd.ca.gov-facilities-cross-facility_cross
+            urltype: ref
+        facilities:
+            filetype: partition
+            url: oshpd.ca.gov-facilities-facilities
+            urltype: ref
+        geoids:
+            filetype: partition
+            url: oshpd.ca.gov-facilities-facilities_geoids
+            urltype: ref
+    views: {}
+bundle_code: "\"\"\"\"\"\"\n\nfrom ambry.bundle.loader import LoaderBundle\nfrom ambry.bundle.rowgen\
+    \ import GeneratorRowGenerator\n\n\nclass Bundle(LoaderBundle):\n\n    \"\"\"\"\
+    \"\"\n\n    def meta_schema(self):\n        \"\"\"Create the table from the row\
+    \ generator\"\"\"\n        self.meta_intuit_table('facilities_index', self.row_generator)\n\
+    \        self.schema.write_schema()\n        \n    @property\n    def row_generator(self):\n\
+    \        \"\"\"A row generator function that joins two library tables\"\"\"\n\
+    \        c = self.library.dep('cross').partition\n        f = self.library.dep('facilities').partition\n\
+    \        g = self.library.dep('geoids').partition\n        \n        c.attach(f,'f')\n\
+    \        c.attach(g,'g')\n        \n        \"\"\"\n        \"\"\"\n        \n\
+    \        # There are multiple entries for each facility, so take the most recent\n\
+    \        q = \"\"\"SELECT DISTINCT cross.oshpd_id, cross.oshpd_license_number,\
+    \ cross.oshpd_facility_status, cross.cdph_od_facid, \n        cross.l_c_provider_number,\
+    \ cross.l_c_facility_id, cross.oshpd_facility_number, cross.oshpd_perm_id, \n\
+    \        cross.oshpd_facility_level, cross.parent_oshpd_id, cross.l_c_license_number,\n\
+    \        fac.total_number_beds, fac.facility_status_date, fac.dba_city, fac.facility_name,\
+    \ fac.county_name, \n        fac.license_type_desc, fac.license_category_desc,\
+    \ fac.dba_zip_code, fac.er_service_level_desc, \n        fac.facility_status_desc,\
+    \ fac.county_code, fac.type, fac.dba_address1,\n        geo.*\n        FROM facility_cross\
+    \ AS cross\n        LEFT JOIN f.facilities AS fac ON cross.oshpd_id = fac.oshpd_id\n\
+    \        LEFT JOIN g.facilities_geoids  AS geo ON fac.id = geo.facilities_id \n\
+    \        WHERE cross.oshpd_id IS NOT NULL GROUP BY cross.oshpd_id ORDER BY year\
+    \ desc \"\"\"\n        \n        row_proxy = c.query(q)\n        \n        def\
+    \ rrg():\n\n            for i, row in enumerate(row_proxy):\n                \n\
+    \                if i == 0:\n                    yield row.keys()\n          \
+    \      \n                yield row\n   \n        return GeneratorRowGenerator(rrg)\n\
+    \   \n   \n    def build_modify_row(self, row_gen, p, source, row):\n\n      \
+    \  row['type_code'] = row['oshpd_id'][:3]\n\n        if 'facilities_id' in row:\
+    \ # Just the last part of the OSHPD id, i think. \n            del row['facilities_id']\n\
+    \n        del row['id']\n        \n    def build(self):\n        from ambry.util.datestimes\
+    \ import expand_to_years\n        \n        # First build the full table, with\
+    \ all of the OSHPD ids, names, etc. \n        \n        self.log(\"Build full\
+    \ facilities data set\")\n        facilities = self.partitions.find_or_new(table='facilities')\n\
+    \        facilities.clean()\n        \n        self.build_from_row_gen(self.row_generator,\
+    \ facilities)\n\n        facilities.close()\n\n        # Then build the index,\
+    \ which has just the OSHPD ids. \n        self.log(\"Build the index without years\"\
+    )\n        p = self.partitions.find_or_new(table='facilities_index')\n       \
+    \ p.clean()\n        \n        with p.inserter() as ins:\n            for  row\
+    \ in facilities.rows:\n                ins.insert(row)\n            \n       \
+    \ p.close()\n\n        # Now build the index with years\n        self.log(\"Build\
+    \ the index with years\")\n        p = self.partitions.find_or_new(table='facilities_index',\
+    \ time=self.metadata.about.time)\n        p.clean()\n\n        with p.inserter()\
+    \ as ins:\n            for row in facilities.rows:\n                row = dict(row)\n\
+    \                del row['id']\n                for year in expand_to_years(self.metadata.about.time):\
+    \   \n                    row['year'] = year\n                    ins.insert(row)\n\
+    \n\n        p.close()\n    \n\n        return True\n        \n  \n\n        \n\
+    \        \n"
+contact_bundle:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+    maintainer: {}
+contact_source:
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
+    maintainer: {}
+documentation: '
+
+    # {{about.title}}
+
+
+    {{about.summary}}
+
+    '
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://example.com
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: http://example.com
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity:
+    bspace: null
+    btime: null
+    dataset: facilities
+    id: d041
+    revision: 9
+    source: oshpd.ca.gov
+    subset: index
+    type: null
+    variation: null
+    version: 0.0.9
+names:
+    fqname: oshpd.ca.gov-facilities-index-0.0.9~d041009
+    name: oshpd.ca.gov-facilities-index
+    vid: d041009
+    vname: oshpd.ca.gov-facilities-index-0.0.9
+process: {}
+schema:
+-   column: id
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Index for California health care facilities that have an OSHPD id
+    id: t04101
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: '4'
+    table: facilities_index
+    type: INTEGER
+    ui1: ''
+-   column: oshpd_id
+    d_index: p041002007
+    d_index_name: oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id
+    d_orig_proto_vid: oshpd_facilities.oshpd_id
+    description: A unique nine digit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first three digits
+        indicate the type of facility, the next two digits indicate the county in
+        which the facility is located.The last fourdigits are unique within each county.   See
+        oshod_id_6 for the 6 digit code.
+    id: c04101002
+    is_fk: c04101002
+    is_pk: ''
+    proto_vid: c0010k002
+    seq: '2'
+    size: '9'
+    table: facilities_index
+    type: VARCHAR
+    ui1: '1'
+-   column: year
+    d_index: p041002007
+    d_index_name: oshpd.ca.gov-facilities-index-facilities_index-0.0.7:year
+    d_orig_proto_vid: oshpd_facilities.year
+    description: ''
+    id: c04101003
+    is_fk: c04101003
+    is_pk: ''
+    proto_vid: c0010k003
+    seq: '3'
+    size: '4'
+    table: facilities_index
+    type: INTEGER
+    ui1: '1'
+-   column: ''
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+    ui1: ''
+-   column: id
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: List of OSHPD defined facilities, with details about each facility
+        and links to other agency identifies.
+    id: t04102
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: facilities
+    type: INTEGER
+    ui1: ''
+-   column: oshpd_id
+    d_index: p041002007
+    d_index_name: oshpd.ca.gov-facilities-index-facilities_index-0.0.7:oshpd_id
+    d_orig_proto_vid: oshpd_facilities.oshpd_id
+    description: A unique nine digit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first three digits
+        indicate the type of facility, the next two digits indicate the county in
+        which the facility is located.The last fourdigits are unique within each county.   See
+        oshod_id_6 for the 6 digit code.
+    id: c04102002
+    is_fk: c04101002
+    is_pk: ''
+    proto_vid: c0010k002
+    seq: '2'
+    size: '9'
+    table: facilities
+    type: VARCHAR
+    ui1: '1'
+-   column: type
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Type string. See type_code for the numeric code.
+    id: c04102003
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '3'
+    size: '10'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: facility_name
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Facility Name
+    id: c04102004
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '4'
+    size: '60'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: dba_address1
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Facility address
+    id: c04102005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '40'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: dba_city
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: City of facility location
+    id: c04102006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '21'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: dba_zip_code
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Zip Code
+    id: c04102007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '5'
+    table: facilities
+    type: INTEGER
+    ui1: ''
+-   column: county_code
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: FIPS Code for county of facility location
+    id: c04102008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: '2'
+    table: facilities
+    type: INTEGER
+    ui1: ''
+-   column: county_name
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Name of county  of facility location
+    id: c04102009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: '15'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: facility_status_desc
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Status of facility
+    id: c0410200a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: '8'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: facility_status_date
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Data of last status
+    id: c0410200b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: ''
+    table: facilities
+    type: DATE
+    ui1: ''
+-   column: license_type_desc
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Type of license
+    id: c0410200c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: '26'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: license_category_desc
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: License category
+    id: c0410200d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: '33'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: er_service_level_desc
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: ER Service level
+    id: c0410200e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: '25'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: total_number_beds
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: Total number of beds
+    id: c0410200f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: '4'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: blockgroup_gvid
+    d_index: p03x006005
+    d_index_name: census.gov-index-blockgroups-0.0.5:gvid
+    d_orig_proto_vid: blockgroups.gvid
+    description: GeoID of 2012 blockgroup of facility
+    id: c0410200g
+    is_fk: c03x09003
+    is_pk: ''
+    proto_vid: c0010e003
+    seq: '16'
+    size: '12'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: tract_gvid
+    d_index: p03x005005
+    d_index_name: census.gov-index-tracts-0.0.5:gvid
+    d_orig_proto_vid: tracts.gvid
+    description: GeoID of 2012 tract of facility
+    id: c0410200h
+    is_fk: c03x08003
+    is_pk: ''
+    proto_vid: c0010d003
+    seq: '17'
+    size: '11'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: county_gvid
+    d_index: p03x002005
+    d_index_name: census.gov-index-counties-0.0.5:gvid
+    d_orig_proto_vid: counties.gvid
+    description: GeoID of 2012 county of facility
+    id: c0410200i
+    is_fk: c03x04003
+    is_pk: ''
+    proto_vid: c00109003
+    seq: '18'
+    size: '6'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: type_code
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: oshpd_facilities.type_code
+    description: Three digit prefix to the full code, a numeric code for the type
+        name
+    id: c0410200j
+    is_fk: c0410100k
+    is_pk: ''
+    proto_vid: c0010k005
+    seq: '19'
+    size: '3'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: oshpd_license_number
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: 'The facility license number assigned by
+
+        the California Department of Public Health (CDPH), Licensing & Certification
+        section to the person, persons, firm, partnership, association, corporation,
+        political subdivision of the State, or other governmental agency to whom a
+        license has been issued to operate a health facility or agency.OSHPD collects
+        and stores the information from the license in its Licensed Facility Information
+        System (LFIS).This identifier may or may not match the L&C License Number
+        column.'
+    id: c0410200k
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '20'
+    size: '9'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: oshpd_facility_number
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: A unique sixdigit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first two digits
+        indicate the county in which the facility is located. The last fourdigits
+        are unique within each county.
+    id: c0410200l
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '21'
+    size: '6'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: oshpd_perm_id
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: A unique fivedigit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first digit indicates
+        the type of facility.The last fourdigits are unique within each type.
+    id: c0410200m
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '22'
+    size: '5'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: oshpd_facility_level
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: 'Designated on the facility license as level of business operation:
+        Parent Facility, Consolidated Facility, Distinct Part Facility, Branch'
+    id: c0410200n
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '23'
+    size: '22'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: parent_oshpd_id
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: A unique ninedigit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first three digits
+        indicate the type of facility, the next two digits indicate the county in
+        which the facility is located.The last fourdigits are unique within each county.These
+        may be different from the OSHPD ID based on OSHPD Facility Level.
+    id: c0410200o
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '24'
+    size: '9'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: oshpd_facility_status
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: 'Status of facility: Open, Closed, Suspense, Under Construction'
+    id: c0410200p
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '25'
+    size: '18'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: l_c_license_number
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: The facility license number assigned by the California Department
+        of Public Health (CDPH) to the person, persons, firm, partnership, association,
+        corporation, political subdivision of the State, or other governmental agency
+        to whom a license has been issued to operate a health facility or agency.
+        (Used to verify match with OSHPD License Number).This identifier may or may
+        not match the OSHPD License Number column.
+    id: c0410200q
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '26'
+    size: '9'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: l_c_facility_id
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: 'A unique identifier assigned by the California Department of Public
+        Health (CDPH), Licensing & Certification section. FACID is the primary key
+        from the FACILITY table used to track facility information for all facilities
+        stored in the Electronic Licensing Management System (ELMS) for CDPH Center
+        of Healthcare Quality, Licensing and Certification Program.FACID can be used
+        to link this file''s facility attributes to the following Open Data files:
+        Healthcare Facility Services and Healthcare Facility Bed Types and Counts.
+        This identifier may or may not match the CDPH_OD_FACID column.'
+    id: c0410200r
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '27'
+    size: '9'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: cdph_od_facid
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: 'A unique identifier assigned by the California Department of Public
+        Health (CDPH). (Used to verify match with L&C Facility ID). Derived from the
+        Healthcare Facility Locations dataset available at: https://cdph.data.ca.gov/FacilitiesandServices/HealthcareFacility
+        Locations/n8juifrh This identifier is may or may not match the L&C Facility
+        ID column.'
+    id: c0410200s
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '28'
+    size: '9'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+-   column: l_c_provider_number
+    d_index: ''
+    d_index_name: ''
+    d_orig_proto_vid: ''
+    description: A unique identifier assigned by the California Department of Public
+        Health (CDPH), Licensing & Certification section.
+    id: c0410200t
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '29'
+    size: '7'
+    table: facilities
+    type: VARCHAR
+    ui1: ''
+versions:
+    2:
+        date: '2015-05-14T13:22:59.070917'
+        description: Setting about.access
+        version: 0.0.2
+    3:
+        date: '2015-05-16T17:23:54.885649'
+        description: Added short facility code and type code
+        version: 0.0.3
+    4:
+        date: '2015-05-16T21:40:36.420786'
+        description: 'Put facilities)id back. '
+        version: 0.0.4
+    5:
+        date: '2015-05-19T14:53:05.518986'
+        description: 'Adding title to main table. '
+        version: 0.0.5
+    6:
+        date: '2015-05-20T15:10:38.344493'
+        description: Adding year index
+        version: 0.0.6
+    7:
+        date: '2015-05-21T08:52:20.125374'
+        description: 'Reducing to only one facility_index table, which always has
+            year. '
+        version: 0.0.7
+    8:
+        date: '2015-05-22T15:29:15.210741'
+        description: Cleaning up index names
+        version: 0.0.8
+    9:
+        date: '2015-05-22T15:29:58.276493'
+        description: Cleaning up indexes
+        version: 0.0.9

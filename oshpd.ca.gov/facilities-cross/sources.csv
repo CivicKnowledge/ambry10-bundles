@@ -1,0 +1,3 @@
+name,title,dest_table_name,time,space,grain,description,filetype,reftype,ref,state
+facility_cross,facility_cross,facility_cross,2015,California,facility,Crosswalk between OSHPD and CDPH health care facility numbers,,,https://chhs.data.ca.gov/api/views/tthg-z4mf/rows.csv,synced
+meta,meta,meta,,California,facility,,socrata/json,ref,https://chhs.data.ca.gov/api/views/tthg-z4mf,synced

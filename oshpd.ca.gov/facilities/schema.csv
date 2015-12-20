@@ -1,0 +1,53 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+facilities_index,1,id,int,,Index for OSHPD California Healthcare facilities
+facilities_index,2,year,int,4,Year Facility's status was recorded
+facilities_index,3,type,str,10,"Text describing type of facility: hospital, longterm, etc."
+facilities_index,4,oshpd_id,str,9,OSHPD Facility ID
+facilities_index,5,facility_name,str,60,Facility name
+facilities_index,6,dba_city,str,21,City where facility is registered
+facilities_index,7,dba_zip_code,int,5,Zipcode where facility is registered
+facilities_index,8,blockgroup_gvid,str,12,Geoid for ACS 2012 blockgroup
+facilities_index,9,tract_gvid,str,,Geoid for ACS 2012  tract
+facilities_index,10,county_gvid,str,6,Geoid for census county
+,,,,,
+facilities_addresses,1,id,int,,"Street Addresses for healthcare facilities , geocoded with DTSK"
+facilities_addresses,2,facilities_id,int,5,Link to facilities table
+facilities_addresses,3,street_number,str,6,Street Number
+facilities_addresses,4,street_address,str,33,Street Addresses
+facilities_addresses,5,street_name,str,29,Steet Name
+facilities_addresses,6,zip_code,int,,US Zip code
+facilities_addresses,7,fips_county,str,5,"US County, FIPS"
+facilities_addresses,8,locality,str,22,"Locality. In the US, a city"
+facilities_addresses,9,region,str,2,"Region, In the US, the State"
+facilities_addresses,10,country_code3,str,3,3 Letter country code
+facilities_addresses,11,country_code,str,2,2 Letter country code
+facilities_addresses,12,country_name,str,13,Country name
+facilities_addresses,13,longitude,float,,Longitude
+facilities_addresses,14,latitude,float,,Latitude
+facilities_addresses,15,confidence,float,,"Geocoder confidence, from 0 to 1"
+facilities_addresses,16,data,str,,"Extra data, In JSON format."
+,,,,,
+facilities_geoids,1,id,int,,Census region geoids for healthcare facilities
+facilities_geoids,2,facilities_id,int,5,Link to facilities table
+facilities_geoids,3,blockgroup_gvid,str,12,Geoid for ACS 2012 blockgroup
+facilities_geoids,4,tract_gvid,str,11,Geoid for ACS 2012  tract
+facilities_geoids,5,county_gvid,str,6,Geoid for census county
+,,,,,
+facilities,1,id,int,,California health care facilities.
+facilities,2,year,int,4,
+facilities,3,type,str,10,
+facilities,4,oshpd_id,str,9,
+facilities,5,facility_name,str,60,
+facilities,6,dba_address1,str,40,
+facilities,7,dba_city,str,21,
+facilities,8,dba_zip_code,int,5,
+facilities,9,county_code,str,2,
+facilities,10,county_name,str,15,
+facilities,11,facility_status_desc,str,8,
+facilities,12,facility_status_date,date,,
+facilities,13,license_type_desc,str,26,
+facilities,14,license_category_desc,str,33,
+facilities,15,hyperlink_to_atlas,str,55,
+facilities,16,er_service_level_desc,str,25,
+facilities,17,total_number_beds,int,4,

@@ -1,0 +1,53 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: null
+  groups: []
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: California
+  subject: null
+  summary: Medically Underserved Populations (MUPs) are based on the evaluation of
+    criteria established through federal regulation to identify population groups
+    based on demographic data. Approximately 6% of Californians live in a MUP.
+  tags: []
+  time: 2010
+  title: Medically Underserved Areas / Medically Underserved Population
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  dataset:
+    description: Overview of the MUA / MUP designation
+    source: null
+    title: MUA / MUP Overview
+    url: http://www.oshpd.ca.gov/hwdd/MUA_MUP.html
+  download:
+    description: Web page that links to the source files.
+    source: null
+    title: Download Page
+    url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+  map:
+    description: null
+    source: null
+    title: Map of Medically Underserved Areas and Populations
+    url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MUAP_v12.pdf
+identity:
+  dataset: underserved
+  id: d03m
+  revision: 2
+  source: oshpd.ca.gov
+  version: 0.0.2
+names:
+  fqname: oshpd.ca.gov-underserved-0.0.2~d03m002
+  name: oshpd.ca.gov-underserved
+  vid: d03m002
+  vname: oshpd.ca.gov-underserved-0.0.2
+requirements: {}
+versions: {}

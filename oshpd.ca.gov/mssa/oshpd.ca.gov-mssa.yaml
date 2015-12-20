@@ -1,0 +1,1477 @@
+about:
+    access: restricted
+    grain: null
+    groups:
+    - health
+    license: ckdbl
+    rights: public
+    space: California
+    subject: null
+    summary: Medical Service Study Areas (aka 'MSSA') are a geographic analysis unit
+        defined by the California Office of Statewide Health Planning and Development.
+        Based on US Census tract geography, the MSSA are a good foundation for needs
+        assessment analysis, healthcare planning, and healthcare policy development.
+    tags: []
+    time: 2010
+    title: Medical Service Study Areas
+build:
+    build: {}
+    dependencies: {}
+    extract: {}
+    sources:
+        mssa_2010:
+            description: Shapefile for MSSA areas
+            space: California
+            time: 2010
+            url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_2010ACSv2.zip
+        mssa_tracts_2010:
+            description: Shapefile for tracts, linked to MSSA areas
+            space: California
+            time: 2010
+            url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_ACS_Detailv2.zip
+    views: {}
+bundle_code: "\nfrom  ambry.bundle.loader import GeoBuildBundle\n\nclass Bundle(GeoBuildBundle):\n\
+    \    ''' '''\n    pass\n"
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: California Office of Statewide Planning and Development
+        url: http://www.oshpd.ca.gov/
+    maintainer:
+        email: null
+        name: null
+        url: null
+documentation: '
+
+    # {about_title}
+
+
+    {about_summary}
+
+    '
+external_documentation:
+    boundary_map:
+        description: PDF map of MSSA boundaries
+        source: null
+        title: MSSA Boundary Map
+        url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_Reconfiguration2010.pdf
+    download:
+        description: Web page that links to the MSSA files.
+        source: null
+        title: Medical Service Study Areas Download Page
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+    mssa:
+        description: Overview of the MSSA concept and definition.
+        source: null
+        title: Medical Service Study Areas overview
+        url: http://gis.oshpd.ca.gov/atlas/topics/mssa
+identity:
+    bspace: null
+    btime: null
+    dataset: mssa
+    id: d038
+    revision: 7
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.7
+names:
+    fqname: oshpd.ca.gov-mssa-0.0.7~d038007
+    name: oshpd.ca.gov-mssa
+    vid: d038007
+    vname: oshpd.ca.gov-mssa-0.0.7
+process: {}
+schema:
+-   column: id
+    description: Medical Service Study Areas, 2010, Decomposed to Tracts
+    id: t03801
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: ''
+-   column: objectid
+    description: GIS Item
+    id: c03801002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: tract
+    description: ''
+    id: c03801003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '7'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '7'
+-   column: state_fips
+    description: ''
+    id: c03801004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '2'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '2'
+-   column: cnty_fips
+    description: County FIPS Code
+    id: c03801005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '3'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '3'
+-   column: tract_code
+    description: ''
+    id: c03801006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '6'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '6'
+-   column: census_key
+    description: ''
+    id: c03801007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '11'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '12'
+-   column: county
+    description: County Name
+    id: c03801008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '15'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '20'
+-   column: tract_id
+    description: ''
+    id: c03801009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: '7'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '8'
+-   column: mssa_id
+    description: Medical Service Study Area Identifier
+    id: c0380100a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: '8'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '10'
+-   column: mssa_name
+    description: Medical Service Study Area Name
+    id: c0380100b
+    is_fk: ''
+    is_pk: ''
+    seq: '11'
+    size: '153'
+    table: mssa_tracts_2010
+    type: VARCHAR
+    width: '160'
+-   column: area_sqmi
+    description: Area Square Miles for the MSSA
+    id: c0380100c
+    is_fk: ''
+    is_pk: ''
+    seq: '12'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: pop
+    description: Total Population
+    id: c0380100d
+    is_fk: ''
+    is_pk: ''
+    seq: '13'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pop_civ
+    description: Civilian Population
+    id: c0380100e
+    is_fk: ''
+    is_pk: ''
+    seq: '14'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pop100pov
+    description: Count of persons living below the 100% federal poverty level
+    id: c0380100f
+    is_fk: ''
+    is_pk: ''
+    seq: '15'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct100pov
+    description: Percent of persons living below the 100% federal poverty level
+    id: c0380100g
+    is_fk: ''
+    is_pk: ''
+    seq: '16'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: pop200pov
+    description: Count of persons living below the 200% federal poverty level
+    id: c0380100h
+    is_fk: ''
+    is_pk: ''
+    seq: '17'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct200pov
+    description: Percent of persons living below the 200% federal poverty level
+    id: c0380100i
+    is_fk: ''
+    is_pk: ''
+    seq: '18'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: white
+    description: White count
+    id: c0380100j
+    is_fk: ''
+    is_pk: ''
+    seq: '19'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_white
+    description: Percent of persons identifying as White to total population
+    id: c0380100k
+    is_fk: ''
+    is_pk: ''
+    seq: '20'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: nhs_white
+    description: Non-Hispanic White count
+    id: c0380100l
+    is_fk: ''
+    is_pk: ''
+    seq: '21'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_wh
+    description: Percent of persons identifying as Non-Hispanic White count to total
+        population
+    id: c0380100m
+    is_fk: ''
+    is_pk: ''
+    seq: '22'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: black
+    description: Black count
+    id: c0380100n
+    is_fk: ''
+    is_pk: ''
+    seq: '23'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_black
+    description: Percent of persons identifying as Black to total population
+    id: c0380100o
+    is_fk: ''
+    is_pk: ''
+    seq: '24'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: nhs_black
+    description: Non-Hispanic Black count
+    id: c0380100p
+    is_fk: ''
+    is_pk: ''
+    seq: '25'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_bl
+    description: Percent of persons identifying as Non-Hispanic Black count to total
+        population
+    id: c0380100q
+    is_fk: ''
+    is_pk: ''
+    seq: '26'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: asian
+    description: Asian count
+    id: c0380100r
+    is_fk: ''
+    is_pk: ''
+    seq: '27'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_asian
+    description: Percent of persons identifying as Asian to total population
+    id: c0380100s
+    is_fk: ''
+    is_pk: ''
+    seq: '28'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: nhs_asian
+    description: Non-Hispanic Asian count
+    id: c0380100t
+    is_fk: ''
+    is_pk: ''
+    seq: '29'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_as
+    description: Percent of persons identifying as Non-Hispanic Asian to total population
+    id: c0380100u
+    is_fk: ''
+    is_pk: ''
+    seq: '30'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: amind_esk
+    description: American Indian - Eskimo count
+    id: c0380100v
+    is_fk: ''
+    is_pk: ''
+    seq: '31'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_amind
+    description: Percent of persons identifying as American Indian - Eskimo to total
+        population
+    id: c0380100w
+    is_fk: ''
+    is_pk: ''
+    seq: '32'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: nhs_amind
+    description: Non-Hispanic American Indian - Eskimo count
+    id: c0380100x
+    is_fk: ''
+    is_pk: ''
+    seq: '33'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_am
+    description: Percent of persons identifying as Non-Hispanic American Indian -
+        Eskimo to total population
+    id: c0380100y
+    is_fk: ''
+    is_pk: ''
+    seq: '34'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: islander
+    description: Islander count
+    id: c0380100z
+    is_fk: ''
+    is_pk: ''
+    seq: '35'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_island
+    description: Percent of persons identifying as Islander to total population
+    id: c0380100A
+    is_fk: ''
+    is_pk: ''
+    seq: '36'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: nhs_island
+    description: Non-Hispanic Islander count
+    id: c0380100B
+    is_fk: ''
+    is_pk: ''
+    seq: '37'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_is
+    description: Percent of persons identifying as Non-Hispanic Islander to total
+        population
+    id: c0380100C
+    is_fk: ''
+    is_pk: ''
+    seq: '38'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: other_race
+    description: Other Race count
+    id: c0380100D
+    is_fk: ''
+    is_pk: ''
+    seq: '39'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_other
+    description: Percent of persons identifying as Other
+    id: c0380100E
+    is_fk: ''
+    is_pk: ''
+    seq: '40'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: nhs_other
+    description: Non-Hispanic Other count
+    id: c0380100F
+    is_fk: ''
+    is_pk: ''
+    seq: '41'
+    size: '3'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_ot
+    description: Percent of persons identifying as Non-Hispanic Other
+    id: c0380100G
+    is_fk: ''
+    is_pk: ''
+    seq: '42'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: multi_race
+    description: Multi Race count
+    id: c0380100H
+    is_fk: ''
+    is_pk: ''
+    seq: '43'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_multi
+    description: Percent of persons identifying as Multi Race
+    id: c0380100I
+    is_fk: ''
+    is_pk: ''
+    seq: '44'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: nhs_multi
+    description: Non-Hispanic Multi Race count
+    id: c0380100J
+    is_fk: ''
+    is_pk: ''
+    seq: '45'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_mu
+    description: Percent of persons identifying as Non-Hispanic Multi Race
+    id: c0380100K
+    is_fk: ''
+    is_pk: ''
+    seq: '46'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: hispanic
+    description: Hispanic count
+    id: c0380100L
+    is_fk: ''
+    is_pk: ''
+    seq: '47'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_hspnc
+    description: Percent of persons identifying as Hispanic to total population
+    id: c0380100M
+    is_fk: ''
+    is_pk: ''
+    seq: '48'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: age_under5
+    description: Populaton Age 65 and over
+    id: c0380100N
+    is_fk: ''
+    is_pk: ''
+    seq: '49'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_under5
+    description: Percent of persons Age 65 and over to total population
+    id: c0380100O
+    is_fk: ''
+    is_pk: ''
+    seq: '50'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: age_undr18
+    description: Population Age 18 - 64
+    id: c0380100P
+    is_fk: ''
+    is_pk: ''
+    seq: '51'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_undr18
+    description: Percent of persons Age 18 - 64 to total population
+    id: c0380100Q
+    is_fk: ''
+    is_pk: ''
+    seq: '52'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: age_18_64
+    description: Population under Age 18
+    id: c0380100R
+    is_fk: ''
+    is_pk: ''
+    seq: '53'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_18_64
+    description: Percent of persons under Age 18 to total population
+    id: c0380100S
+    is_fk: ''
+    is_pk: ''
+    seq: '54'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: age_65over
+    description: Population under Age 5
+    id: c0380100T
+    is_fk: ''
+    is_pk: ''
+    seq: '55'
+    size: '4'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_65over
+    description: Percent of persons under Age 5 to total population
+    id: c0380100U
+    is_fk: ''
+    is_pk: ''
+    seq: '56'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: eld_ratio
+    description: Population under Age 18 divided by the population Age 18 - 64
+    id: c0380100V
+    is_fk: ''
+    is_pk: ''
+    seq: '57'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: yth_ratio
+    description: Population Age 65 and over divided by the population Age 18 - 64
+    id: c0380100W
+    is_fk: ''
+    is_pk: ''
+    seq: '58'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: totalpover
+    description: Total Population for whom poverty has been determined (U.S. Census;
+        American Community Survey) - used to calculate percent of poverty
+    id: c0380100X
+    is_fk: ''
+    is_pk: ''
+    seq: '59'
+    size: '5'
+    table: mssa_tracts_2010
+    type: INTEGER
+    width: '9'
+-   column: shape_leng
+    description: GIS Item
+    id: c0380100Y
+    is_fk: ''
+    is_pk: ''
+    seq: '60'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: shape_area
+    description: GIS Item
+    id: c0380100Z
+    is_fk: ''
+    is_pk: ''
+    seq: '61'
+    size: ''
+    table: mssa_tracts_2010
+    type: REAL
+    width: '19'
+-   column: geometry
+    description: ''
+    id: c03801010
+    is_fk: ''
+    is_pk: ''
+    seq: '62'
+    size: ''
+    table: mssa_tracts_2010
+    type: MULTIPOLYGON
+    width: ''
+-   column: ''
+    description: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+    width: ''
+-   column: id
+    description: Medical Study Service Areas, 2010
+    id: t03802
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: mssa_2010
+    type: INTEGER
+    width: ''
+-   column: objectid
+    description: GIS Item
+    id: c03802002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '3'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: unit_count
+    description: Count of U.S. Census tracts within the MSSA
+    id: c03802003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '2'
+    table: mssa_2010
+    type: INTEGER
+    width: '4'
+-   column: cnty_fips
+    description: County FIPS Code
+    id: c03802004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '3'
+    table: mssa_2010
+    type: VARCHAR
+    width: '3'
+-   column: county
+    description: County Name
+    id: c03802005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '15'
+    table: mssa_2010
+    type: VARCHAR
+    width: '20'
+-   column: mssa_id
+    description: Medical Service Study Area Identifier
+    id: c03802006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '8'
+    table: mssa_2010
+    type: VARCHAR
+    width: '10'
+-   column: mssa_name
+    description: Medical Service Study Area Name
+    id: c03802007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '153'
+    table: mssa_2010
+    type: VARCHAR
+    width: '160'
+-   column: definition
+    description: MSSA Rural Definition - Urban, Rural or Frontier   [Rural = population
+        density < 250 persons/sq.mi]  Frontier = population density < 11 persons/sq.mi.  Urban
+        = anything not Rural or Frontier]
+    id: c03802008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '8'
+    table: mssa_2010
+    type: VARCHAR
+    width: '10'
+-   column: popdensity
+    description: Population Density
+    id: c03802009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: area_sqmi
+    description: Area Square Miles for the MSSA
+    id: c0380200a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: pop
+    description: Total Population
+    id: c0380200b
+    is_fk: ''
+    is_pk: ''
+    seq: '11'
+    size: '6'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pop_civ
+    description: Civilian Population
+    id: c0380200c
+    is_fk: ''
+    is_pk: ''
+    seq: '12'
+    size: '6'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pop100pov
+    description: Count of persons living below the 100% federal poverty level
+    id: c0380200d
+    is_fk: ''
+    is_pk: ''
+    seq: '13'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct100pov
+    description: Percent of persons living below the 100% federal poverty level
+    id: c0380200e
+    is_fk: ''
+    is_pk: ''
+    seq: '14'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: pop200pov
+    description: Count of persons living below the 200% federal poverty level
+    id: c0380200f
+    is_fk: ''
+    is_pk: ''
+    seq: '15'
+    size: '6'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct200pov
+    description: Percent of persons living below the 200% federal poverty level
+    id: c0380200g
+    is_fk: ''
+    is_pk: ''
+    seq: '16'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: pcsa
+    description: Primary Care Shortage Area designation 1 = designated
+    id: c0380200h
+    is_fk: ''
+    is_pk: ''
+    seq: '17'
+    size: '1'
+    table: mssa_2010
+    type: INTEGER
+    width: '4'
+-   column: pcsa_score
+    description: Primary Care Shortage Area score
+    id: c0380200i
+    is_fk: ''
+    is_pk: ''
+    seq: '18'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: pcsa_civ
+    description: Primary Care Shortage Area designation civilian population
+    id: c0380200j
+    is_fk: ''
+    is_pk: ''
+    seq: '19'
+    size: '1'
+    table: mssa_2010
+    type: INTEGER
+    width: '4'
+-   column: pcsa_sco_1
+    description: Primary Care Shortage Area score civilian population
+    id: c0380200k
+    is_fk: ''
+    is_pk: ''
+    seq: '20'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: pc_phys
+    description: Primary Care physician count
+    id: c0380200l
+    is_fk: ''
+    is_pk: ''
+    seq: '21'
+    size: '4'
+    table: mssa_2010
+    type: INTEGER
+    width: '4'
+-   column: pc_phys_r
+    description: Primary Care civilian population to physician ratio
+    id: c0380200m
+    is_fk: ''
+    is_pk: ''
+    seq: '22'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: dentist
+    description: Dentist count
+    id: c0380200o
+    is_fk: ''
+    is_pk: ''
+    seq: '24'
+    size: '3'
+    table: mssa_2010
+    type: INTEGER
+    width: '4'
+-   column: dentist_r
+    description: Dentist civilian population to provider ratio
+    id: c0380200p
+    is_fk: ''
+    is_pk: ''
+    seq: '25'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: psych
+    description: Psychiatrist count
+    id: c0380200r
+    is_fk: ''
+    is_pk: ''
+    seq: '27'
+    size: '3'
+    table: mssa_2010
+    type: INTEGER
+    width: '4'
+-   column: psych_r
+    description: Psychiatrist population to provider ratio
+    id: c0380200s
+    is_fk: ''
+    is_pk: ''
+    seq: '28'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: psych_r_ci
+    description: Psychiatrist civilian population to provider ratio
+    id: c0380200t
+    is_fk: ''
+    is_pk: ''
+    seq: '29'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: hispanic
+    description: Hispanic count
+    id: c0380200u
+    is_fk: ''
+    is_pk: ''
+    seq: '30'
+    size: '6'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_hspnc
+    description: Percent of persons identifying as Hispanic to total population
+    id: c0380200v
+    is_fk: ''
+    is_pk: ''
+    seq: '31'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: white
+    description: White count
+    id: c0380200w
+    is_fk: ''
+    is_pk: ''
+    seq: '32'
+    size: '6'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_white
+    description: Percent of persons identifying as White to total population
+    id: c0380200x
+    is_fk: ''
+    is_pk: ''
+    seq: '33'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: nhs_white
+    description: Non-Hispanic White count
+    id: c0380200y
+    is_fk: ''
+    is_pk: ''
+    seq: '34'
+    size: '6'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_wh
+    description: Percent of persons identifying as Non-Hispanic White count to total
+        population
+    id: c0380200z
+    is_fk: ''
+    is_pk: ''
+    seq: '35'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: black
+    description: Black count
+    id: c0380200A
+    is_fk: ''
+    is_pk: ''
+    seq: '36'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_black
+    description: Percent of persons identifying as Black to total population
+    id: c0380200B
+    is_fk: ''
+    is_pk: ''
+    seq: '37'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: nhs_black
+    description: Non-Hispanic Black count
+    id: c0380200C
+    is_fk: ''
+    is_pk: ''
+    seq: '38'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_bl
+    description: Percent of persons identifying as Non-Hispanic Black count to total
+        population
+    id: c0380200D
+    is_fk: ''
+    is_pk: ''
+    seq: '39'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: asian
+    description: Asian count
+    id: c0380200E
+    is_fk: ''
+    is_pk: ''
+    seq: '40'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_asian
+    description: Percent of persons identifying as Asian to total population
+    id: c0380200F
+    is_fk: ''
+    is_pk: ''
+    seq: '41'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: nhs_asian
+    description: Non-Hispanic Asian count
+    id: c0380200G
+    is_fk: ''
+    is_pk: ''
+    seq: '42'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_as
+    description: Percent of persons identifying as Non-Hispanic Asian to total population
+    id: c0380200H
+    is_fk: ''
+    is_pk: ''
+    seq: '43'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: amind_esk
+    description: American Indian - Eskimo count
+    id: c0380200I
+    is_fk: ''
+    is_pk: ''
+    seq: '44'
+    size: '4'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_amind
+    description: Percent of persons identifying as American Indian - Eskimo to total
+        population
+    id: c0380200J
+    is_fk: ''
+    is_pk: ''
+    seq: '45'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: nhs_amind
+    description: Non-Hispanic American Indian - Eskimo count
+    id: c0380200K
+    is_fk: ''
+    is_pk: ''
+    seq: '46'
+    size: '4'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_am
+    description: Percent of persons identifying as Non-Hispanic American Indian -
+        Eskimo to total population
+    id: c0380200L
+    is_fk: ''
+    is_pk: ''
+    seq: '47'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: islander
+    description: Islander count
+    id: c0380200M
+    is_fk: ''
+    is_pk: ''
+    seq: '48'
+    size: '4'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_island
+    description: Percent of persons identifying as Islander to total population
+    id: c0380200N
+    is_fk: ''
+    is_pk: ''
+    seq: '49'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: nhs_island
+    description: Non-Hispanic Islander count
+    id: c0380200O
+    is_fk: ''
+    is_pk: ''
+    seq: '50'
+    size: '4'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_is
+    description: Percent of persons identifying as Non-Hispanic Islander to total
+        population
+    id: c0380200P
+    is_fk: ''
+    is_pk: ''
+    seq: '51'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: other_race
+    description: Other Race count
+    id: c0380200Q
+    is_fk: ''
+    is_pk: ''
+    seq: '52'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_other
+    description: Percent of persons identifying as Other
+    id: c0380200R
+    is_fk: ''
+    is_pk: ''
+    seq: '53'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: nhs_other
+    description: Non-Hispanic Other count
+    id: c0380200S
+    is_fk: ''
+    is_pk: ''
+    seq: '54'
+    size: '4'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_ot
+    description: Percent of persons identifying as Non-Hispanic Other
+    id: c0380200T
+    is_fk: ''
+    is_pk: ''
+    seq: '55'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: multi_race
+    description: Multi Race count
+    id: c0380200U
+    is_fk: ''
+    is_pk: ''
+    seq: '56'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_multi
+    description: Percent of persons identifying as Multi Race
+    id: c0380200V
+    is_fk: ''
+    is_pk: ''
+    seq: '57'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: nhs_multi
+    description: Non-Hispanic Multi Race count
+    id: c0380200W
+    is_fk: ''
+    is_pk: ''
+    seq: '58'
+    size: '4'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_nhs_mu
+    description: Percent of persons identifying as Non-Hispanic Multi Race
+    id: c0380200X
+    is_fk: ''
+    is_pk: ''
+    seq: '59'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: age_65over
+    description: Populaton Age 65 and over
+    id: c0380200Y
+    is_fk: ''
+    is_pk: ''
+    seq: '60'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_65over
+    description: Percent of persons Age 65 and over to total population
+    id: c0380200Z
+    is_fk: ''
+    is_pk: ''
+    seq: '61'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: age_18_64
+    description: Population Age 18 - 64
+    id: c03802010
+    is_fk: ''
+    is_pk: ''
+    seq: '62'
+    size: '6'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_18_64
+    description: Percent of persons Age 18 - 64 to total population
+    id: c03802011
+    is_fk: ''
+    is_pk: ''
+    seq: '63'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: age_undr18
+    description: Population under Age 18
+    id: c03802012
+    is_fk: ''
+    is_pk: ''
+    seq: '64'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_undr18
+    description: Percent of persons under Age 18 to total population
+    id: c03802013
+    is_fk: ''
+    is_pk: ''
+    seq: '65'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: age_under5
+    description: Population under Age 5
+    id: c03802014
+    is_fk: ''
+    is_pk: ''
+    seq: '66'
+    size: '5'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: pct_under5
+    description: Percent of persons under Age 5 to total population
+    id: c03802015
+    is_fk: ''
+    is_pk: ''
+    seq: '67'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: yth_ratio
+    description: Population under Age 18 divided by the population Age 18 - 64
+    id: c03802016
+    is_fk: ''
+    is_pk: ''
+    seq: '68'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: eld_ratio
+    description: Population Age 65 and over divided by the population Age 18 - 64
+    id: c03802017
+    is_fk: ''
+    is_pk: ''
+    seq: '69'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: totalpovpo
+    description: Total Population for whom poverty has been determined (U.S. Census;
+        American Community Survey) - used to calculate percent of poverty
+    id: c03802018
+    is_fk: ''
+    is_pk: ''
+    seq: '70'
+    size: '6'
+    table: mssa_2010
+    type: INTEGER
+    width: '9'
+-   column: shape_leng
+    description: GIS Item
+    id: c03802019
+    is_fk: ''
+    is_pk: ''
+    seq: '71'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: shape_area
+    description: GIS Item
+    id: c0380201a
+    is_fk: ''
+    is_pk: ''
+    seq: '72'
+    size: ''
+    table: mssa_2010
+    type: REAL
+    width: '19'
+-   column: geometry
+    description: ''
+    id: c0380201b
+    is_fk: ''
+    is_pk: ''
+    seq: '73'
+    size: ''
+    table: mssa_2010
+    type: MULTIPOLYGON
+    width: ''
+versions:
+    1:
+        date: null
+        description: Initial Import
+        version: 0.0.1
+    2:
+        date: null
+        description: null
+        version: 0.0.2
+    3:
+        date: '2014-12-20T10:51:41.940690'
+        description: Adding additional files and documentation, Descriptions to schema
+        version: 0.0.3
+    4:
+        date: '2015-01-03T21:36:47.695291'
+        description: Updating to new shapefile import
+        version: 0.0.4
+    5:
+        date: '2015-01-03T21:50:48.264704'
+        description: 'Setting normal schema types, numeric -> real, etc. '
+        version: 0.0.5
+    6:
+        date: '2015-04-19T19:28:34.696235'
+        description: Adding Coverage
+        version: 0.0.6
+    7:
+        date: '2015-04-27T18:10:07.934982'
+        description: Setting new access remotes
+        version: 0.0.7

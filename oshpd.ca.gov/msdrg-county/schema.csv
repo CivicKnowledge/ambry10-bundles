@@ -1,0 +1,15 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+msdrg_county,1,id,int,,Hospital Discharges by County and Medicare Severity-Diagnosis Related Group (MS-DRG)
+msdrg_county,2,year,int,4,Year
+msdrg_county,3,patcnty1,str,15,County Name
+msdrg_county,4,msdrg,int,3,Medicare Severity-Diagnosis Related Group
+msdrg_county,5,discharges,int,6,Discharges
+,,,,,
+msdrg_hospital,1,id,int,,Hospital Discharges by Hospital and Medicare Severity-Diagnosis Related Group (MS-DRG)
+msdrg_hospital,2,year,int,4,Year
+msdrg_hospital,3,oshpd_id,str,6,OSHPD Facility ID
+msdrg_hospital,4,msdrg,int,3,Medicare Severity-Diagnosis Related Group
+msdrg_hospital,5,discharges,int,4,Discharges
+msdrg_hospital,6,facility_name,str,60,Facility Name
+msdrg_hospital,7,county_name,str,15,County Name

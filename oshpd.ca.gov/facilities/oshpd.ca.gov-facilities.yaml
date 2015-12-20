@@ -1,0 +1,1160 @@
+about:
+    access: restricted
+    grain: null
+    groups:
+    - health
+    license: ckdbl
+    rights: public
+    space: California
+    subject: Healthcare Facliities
+    summary: List of California healthcare facilities, including Hospitals, long-term
+        care facilities, clinics and hospices
+    tags: []
+    time: null
+    title: California Healthcare Facilities
+build:
+    build:
+        requirements:
+            xlrd: xlrd
+    dependencies:
+        blockgroups: census.gov-tigerline-2012-blockgroups-ca-geo
+    extract: {}
+    sources:
+        blockgroups:
+            filetype: partition
+            url: census.gov-tigerline-2012-blockgroups-ca-geo
+            urltype: ref
+        hospice_2013:
+            description: Hospices licensed as of December 31, 2013
+            row_data:
+                type: hospice
+            table: facilities
+            time: 2013
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/HHAListing_Dec2013.xlsx
+        hospice_2014:
+            description: Hospices licensed as of June 30, 2014
+            row_data:
+                type: hospice
+            table: facilities
+            time: 2014
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Home-Health-Agencies-and-Hospice-Listing-2014.xlsx
+        hospitals_2013:
+            description: Hospitals licensed as of December 31, 2013
+            row_data:
+                type: hospital
+            table: facilities
+            time: 2013
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/HospitalListing_Dec2013.xlsx
+        hospitals_2014:
+            description: Hospitals licensed as of June 30, 2014
+            row_data:
+                type: hospital
+            table: facilities
+            time: 2014
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Hospital-Listing-2014.xlsx
+        longterm_2013:
+            description: Long term crare facilities icensed as of December 31, 2013
+            row_data:
+                type: longterm
+            table: facilities
+            time: 2013
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/LTCListing_Dec2013.xlsx
+        longterm_2014:
+            description: Long term care facilities licensed as of June 30, 2014
+            row_data:
+                type: longterm
+            table: facilities
+            time: 2014
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Long-Term-Care-Listing-2014.xlsx
+        primary_2013:
+            description: Primary care facilities licensed as of December 31, 2013
+            row_data:
+                type: primary
+            table: facilities
+            time: 2013
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/PCListing_Dec2013.xlsx
+        primary_2014:
+            description: Primary care facilities licensed as of June 30, 2014
+            row_data:
+                type: primary
+            table: facilities
+            time: 2014
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Primary-Care-Clinics-Listing-2014.xlsx
+        speciality_2013:
+            description: Speciality care facilities icensed as of December 31, 2013
+            row_data:
+                type: speciality
+            table: facilities
+            time: 2013
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/SCListing_Dec2013.xlsx
+        speciality_2014:
+            description: Speciality care facilities licensed as of June 30, 2014
+            row_data:
+                type: speciality
+            table: facilities
+            time: 2014
+            url: http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Specialist-Care-Clinics-Listing-2014.xlsx
+    views: {}
+bundle_code: "from  ambry.bundle.loader import ExcelBuildBundle\n\nclass Bundle(ExcelBuildBundle):\n\
+    \    ''' '''\n    \n    def build(self):\n        \n        #self.build_load()\n\
+    \        super(Bundle, self).build()\n        self.build_addresses()\n       \
+    \ self.build_block_cross()\n        return True\n    \n    \n    def build_modify_row(self,\
+    \ row_gen, p, source, row):\n        \"\"\"Called for every row to allow subclasses\
+    \ to modify rows. \"\"\"\n        from xlrd import xldate_as_tuple\n        from\
+    \ datetime import date\n\n        row['year'] = int(source.time)\n        row['facility_status_date']\
+    \  =  date(*xldate_as_tuple(row['facility_status_date'],row_gen.workbook.datemode)[:3])\n\
+    \        row.update(source.row_data.dict)\n        \n    def build_addresses(self):\n\
+    \        \"\"\"Geocode the addresses and build an address table\"\"\"\n      \
+    \  \n        from ambry.geo.geocoders import DstkGeocoder\n\n        facilities\
+    \ = self.partitions.find(table='facilities')\n\n        def address_gen():\n \
+    \           for row in facilities.query(\"SELECT * FROM facilities\"):\n     \
+    \           address = \"{}, {}, {} {}\".format(row['dba_address1'], row['dba_city'],\
+    \ 'CA', row['dba_zip_code'])\n                yield (address, row)\n\n       \
+    \ dstk_service = self.config.service('dstk')\n        \n        dstk_gc = DstkGeocoder(dstk_service,\
+    \ address_gen())\n        \n        p = self.partitions.find_or_new(table='facilities_addresses')\n\
+    \        p.clean()\n        \n        lr = self.init_log_rate(500)\n        \n\
+    \        with p.inserter() as ins:\n            for i, (k, r, inp_row) in enumerate(dstk_gc.geocode()):\n\
+    \                lr(\"Addresses \"+str(i))\n                r['facilities_id']\
+    \ = inp_row['id']\n                ins.insert(r)\n            \n    def build_block_cross(self):\n\
+    \        \"\"\"Build the facilities_blockgroups crosswalk file to assign facilities\
+    \ to blockgroups. \"\"\"\n        from ambry.geo.util import find_geo_containment,\
+    \ find_containment\n        from geoid import civick \n\n        lr = self.init_log_rate(3000)\n\
+    \n        def gen_bound():\n            \n            boundaries = self.library.dep('blockgroups').partition\n\
+    \n            # Note, ogc_fid is the primary key. The id column is created by\
+    \ the shapefile. \n            for i,boundary in enumerate(boundaries.query(\n\
+    \                \"SELECT  AsText(geometry) AS wkt, gvid FROM blockgroups\")):\n\
+    \                lr('Load rtree')\n     \n                yield i, boundary['wkt']\
+    \ , boundary['gvid'] \n        \n        def gen_points():\n\n            for\
+    \ row in self.partitions.find(table = 'facilities_addresses').rows:\n        \
+    \        if  row['longitude'] and row['latitude']:\n                    yield\
+    \ (row['longitude'], row['latitude']), row['facilities_id']\n\n\n        p = self.partitions.find_or_new(table='facilities_geoids')\n\
+    \        p.clean()\n\n        with p.inserter() as ins:\n            for point,\
+    \ point_o, cntr_geo, cntr_o in find_containment(gen_bound(),gen_points()):\n\n\
+    \                blockgroup_gvid = civick.Blockgroup.parse(cntr_o)\n         \
+    \       tract_gvid = blockgroup_gvid.convert(civick.Tract)\n                county_gvid\
+    \ = blockgroup_gvid.convert(civick.County)\n                \n               \
+    \ ins.insert(dict(facilities_id = point_o, \n                                blockgroup_gvid\
+    \ = str(blockgroup_gvid),\n                                tract_gvid = str(tract_gvid),\n\
+    \                                county_gvid = str(county_gvid)\n            \
+    \                    ))\n                                \n                lr('Marking\
+    \ point containment')\n                \n    def build_index(self):\n        \"\
+    \"\"Reduce the other tables into an index file. \"\"\"\n        \n        \n \
+    \       geoids = self.partitions.find_or_new(table='facilities_geoids')\n    \
+    \    addresses = self.partitions.find_or_new(table='facilities_addresses')\n \
+    \       facilities = self.partitions.find(table='facilities')\n        \n    \
+    \    facilities.attach(addresses,'addresses')\n        facilities.attach(geoids,'geoids')\n\
+    \        \n        q = \"\"\"\n        SELECT year, type, oshpd_id, facility_name,\
+    \ dba_city, dba_zip_code, blockgroup_gvid, tract_gvid,  county_gvid\n        FROM\
+    \ facilities\n        JOIN geoids.facilities_geoids AS geoids ON geoids.facilities_id\
+    \ = facilities.id\n        JOIN addresses.facilities_addresses AS addresses ON\
+    \ addresses.facilities_id = facilities.id\n        \"\"\"\n        \n        p\
+    \ = self.partitions.find_or_new(table='facilities_index')\n        p.clean()\n\
+    \        lr = self.init_log_rate()\n        \n        with p.inserter() as ins:\n\
+    \            for row in facilities.query(q):\n                ins.insert(row)\n\
+    \                lr(str(p.identity))\n                \n    def redo_finalize(self):\n\
+    \        \n        for p in self.partitions.all:\n            p.finalize(force=True)\n\
+    \        \n        \n        "
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+documentation: '
+
+    # {about_title}
+
+
+    {about_summary}
+
+
+    The OSHPD ids appear to being with a code that indicates the type of facility:
+
+
+    * 106 Hospitals
+
+    * 206 Care Centers
+
+    * 306 Community Clinics
+
+    * 406 Home healthcare
+
+
+    '
+external_documentation:
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/Listings.html
+identity:
+    bspace: null
+    btime: null
+    dataset: facilities
+    id: d03j
+    revision: 8
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.8
+names:
+    fqname: oshpd.ca.gov-facilities-0.0.8~d03j008
+    name: oshpd.ca.gov-facilities
+    vid: d03j008
+    vname: oshpd.ca.gov-facilities-0.0.8
+process: {}
+schema:
+-   column: id
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: California health care facilities.
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: t03j01
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: facilities
+    type: INTEGER
+-   column: year
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j01002
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '2'
+    size: '4'
+    table: facilities
+    type: INTEGER
+-   column: type
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j01003
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '3'
+    size: '10'
+    table: facilities
+    type: VARCHAR
+-   column: oshpd_id
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: '1'
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j01004
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '4'
+    size: '9'
+    table: facilities
+    type: VARCHAR
+-   column: facility_name
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j01005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '60'
+    table: facilities
+    type: VARCHAR
+-   column: dba_address1
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j01006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '40'
+    table: facilities
+    type: VARCHAR
+-   column: dba_city
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j01007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '21'
+    table: facilities
+    type: VARCHAR
+-   column: dba_zip_code
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j01008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: '5'
+    table: facilities
+    type: INTEGER
+-   column: county_code
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: '1'
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j01009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: '2'
+    table: facilities
+    type: VARCHAR
+-   column: county_name
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0100a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: '15'
+    table: facilities
+    type: VARCHAR
+-   column: facility_status_desc
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0100b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: '8'
+    table: facilities
+    type: VARCHAR
+-   column: facility_status_date
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0100c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: ''
+    table: facilities
+    type: DATE
+-   column: license_type_desc
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0100d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: '26'
+    table: facilities
+    type: VARCHAR
+-   column: license_category_desc
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0100e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: '33'
+    table: facilities
+    type: VARCHAR
+-   column: hyperlink_to_atlas
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0100f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: '55'
+    table: facilities
+    type: VARCHAR
+-   column: er_service_level_desc
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0100g
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '16'
+    size: '25'
+    table: facilities
+    type: VARCHAR
+-   column: total_number_beds
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0100h
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '17'
+    size: '4'
+    table: facilities
+    type: INTEGER
+-   column: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Street Addresses for healthcare facilities , geocoded with DTSK
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: t03j02
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: facilities_addresses
+    type: INTEGER
+-   column: facilities_id
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Link to facilities table
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j02002
+    is_fk: t03j01
+    is_pk: ''
+    proto_vid: ''
+    seq: '2'
+    size: '5'
+    table: facilities_addresses
+    type: INTEGER
+-   column: street_number
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Street Number
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j02003
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '3'
+    size: '6'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: street_address
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Street Addresses
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j02004
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '4'
+    size: '33'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: street_name
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Steet Name
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j02005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '29'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: zip_code
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: US Zip code
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j02006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: ''
+    table: facilities_addresses
+    type: INTEGER
+-   column: fips_county
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: US County, FIPS
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j02007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '5'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: locality
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Locality. In the US, a city
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j02008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: '22'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: region
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Region, In the US, the State
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j02009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: '2'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: country_code3
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 3 Letter country code
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0200a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: '3'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: country_code
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 2 Letter country code
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0200b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: '2'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: country_name
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Country name
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0200c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: '13'
+    table: facilities_addresses
+    type: VARCHAR
+-   column: longitude
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Longitude
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0200d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: ''
+    table: facilities_addresses
+    type: REAL
+-   column: latitude
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Latitude
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0200e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: ''
+    table: facilities_addresses
+    type: REAL
+-   column: confidence
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Geocoder confidence, from 0 to 1
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0200f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: ''
+    table: facilities_addresses
+    type: REAL
+-   column: data
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Extra data, In JSON format.
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j0200g
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '16'
+    size: ''
+    table: facilities_addresses
+    type: TEXT
+-   column: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Census region geoids for healthcare facilities
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: t03j03
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: facilities_geoids
+    type: INTEGER
+-   column: facilities_id
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Link to facilities table
+    i1: '1'
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j03002
+    is_fk: t03j01
+    is_pk: ''
+    proto_vid: ''
+    seq: '2'
+    size: '5'
+    table: facilities_geoids
+    type: INTEGER
+-   column: blockgroup_gvid
+    d_index: census.gov-index-blockgroups-0.0.4:gvid
+    d_orig_proto_vid: blockgroups.gvid
+    description: Geoid for ACS 2012 blockgroup
+    i1: ''
+    i2: '1'
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j03003
+    is_fk: c03x09003
+    is_pk: ''
+    proto_vid: c0010e003
+    seq: '3'
+    size: '12'
+    table: facilities_geoids
+    type: VARCHAR
+-   column: tract_gvid
+    d_index: census.gov-index-tracts-0.0.4:gvid
+    d_orig_proto_vid: tracts.gvid
+    description: Geoid for ACS 2012  tract
+    i1: ''
+    i2: ''
+    i3: '1'
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j03004
+    is_fk: c03x08003
+    is_pk: ''
+    proto_vid: c0010d003
+    seq: '4'
+    size: '11'
+    table: facilities_geoids
+    type: VARCHAR
+-   column: county_gvid
+    d_index: census.gov-index-counties-0.0.4:gvid
+    d_orig_proto_vid: counties.gvid
+    description: Geoid for census county
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: '1'
+    i5: ''
+    i6: ''
+    id: c03j03005
+    is_fk: c03x04003
+    is_pk: ''
+    proto_vid: c00109003
+    seq: '5'
+    size: '6'
+    table: facilities_geoids
+    type: VARCHAR
+-   column: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Index for OSHPD California Healthcare facilities
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: t03j04
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: facilities_index
+    type: INTEGER
+-   column: year
+    d_index: ''
+    d_orig_proto_vid: dates.year
+    description: Year Facility's status was recorded
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: '1'
+    i6: ''
+    id: c03j04002
+    is_fk: ''
+    is_pk: ''
+    proto_vid: c00102003
+    seq: '2'
+    size: '4'
+    table: facilities_index
+    type: INTEGER
+-   column: type
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'Text describing type of facility: hospital, longterm, etc.'
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: '1'
+    id: c03j04003
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '3'
+    size: '10'
+    table: facilities_index
+    type: VARCHAR
+-   column: oshpd_id
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: OSHPD Facility ID
+    i1: '1'
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j04004
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '4'
+    size: '9'
+    table: facilities_index
+    type: VARCHAR
+-   column: facility_name
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Facility name
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j04005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '60'
+    table: facilities_index
+    type: VARCHAR
+-   column: dba_city
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: City where facility is registered
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j04006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '21'
+    table: facilities_index
+    type: VARCHAR
+-   column: dba_zip_code
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Zipcode where facility is registered
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j04007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '5'
+    table: facilities_index
+    type: INTEGER
+-   column: blockgroup_gvid
+    d_index: census.gov-index-blockgroups-0.0.4:gvid
+    d_orig_proto_vid: blockgroups.gvid
+    description: Geoid for ACS 2012 blockgroup
+    i1: ''
+    i2: '1'
+    i3: ''
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j04008
+    is_fk: c03x09003
+    is_pk: ''
+    proto_vid: c0010e003
+    seq: '8'
+    size: '12'
+    table: facilities_index
+    type: VARCHAR
+-   column: tract_gvid
+    d_index: census.gov-index-tracts-0.0.4:gvid
+    d_orig_proto_vid: tracts.gvid
+    description: Geoid for ACS 2012  tract
+    i1: ''
+    i2: ''
+    i3: '1'
+    i4: ''
+    i5: ''
+    i6: ''
+    id: c03j04009
+    is_fk: c03x08003
+    is_pk: ''
+    proto_vid: c0010d003
+    seq: '9'
+    size: ''
+    table: facilities_index
+    type: VARCHAR
+-   column: county_gvid
+    d_index: census.gov-index-counties-0.0.4:gvid
+    d_orig_proto_vid: counties.gvid
+    description: Geoid for census county
+    i1: ''
+    i2: ''
+    i3: ''
+    i4: '1'
+    i5: ''
+    i6: ''
+    id: c03j0400a
+    is_fk: c03x04003
+    is_pk: ''
+    proto_vid: c00109003
+    seq: '10'
+    size: '6'
+    table: facilities_index
+    type: VARCHAR
+versions:
+    2:
+        date: '2014-12-26T11:58:27.712012'
+        description: Adding crosswalks
+        version: 0.0.2
+    3:
+        date: '2015-02-24T13:10:04.105081'
+        description: 'New Vewsion. No Idea. '
+        version: 0.0.3
+    4:
+        date: '2015-03-13T09:43:58.093286'
+        description: 'Added counties and tracts to fecilities blockgroups table. '
+        version: 0.0.4
+    5:
+        date: '2015-03-20T12:19:55.946618'
+        description: Moved to new RowGen code, added facilities index table
+        version: 0.0.5
+    6:
+        date: '2015-04-12T14:13:25.800538'
+        description: ''
+        version: 0.0.6
+    7:
+        date: '2015-04-16T20:30:28.301559'
+        description: Improve prototypes
+        version: 0.0.7
+    8:
+        date: '2015-04-27T18:09:56.826449'
+        description: Setting new access remotes
+        version: 0.0.8

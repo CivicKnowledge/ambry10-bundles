@@ -1,0 +1,42 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: null
+  groups: []
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: California
+  subject: zip codes
+  summary: Boundaries of Zip codes in California
+  tags:
+  - zip
+  time: 2015
+  title: Zip Code Boundaries
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  download_page:
+    description: The web page that links to the file.
+    source: source
+    title: Download Page
+    url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+identity:
+  dataset: zip_boundaries
+  id: d031
+  revision: 4
+  source: oshpd.ca.gov
+  version: 0.0.4
+names:
+  fqname: oshpd.ca.gov-zip_boundaries-0.0.4~d031004
+  name: oshpd.ca.gov-zip_boundaries
+  vid: d031004
+  vname: oshpd.ca.gov-zip_boundaries-0.0.4
+requirements: {}
+versions: {}

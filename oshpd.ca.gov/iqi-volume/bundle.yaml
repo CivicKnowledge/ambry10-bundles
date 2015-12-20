@@ -1,0 +1,57 @@
+about:
+  access: restricted
+  footnote: null
+  grain: hospital
+  groups: []
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: California
+  subject: healthcare quality
+  summary: of 11 Hospital Inpatient Quality Indicators (Inpatient Quality Indicators,
+    Version 4.5) including 6 new subcategories (2 for Pancreatic Resection Volume
+    and 4 for AAA Repair Volume) developed by the federal Agency for Healthcare Research
+    and Quality (AHRQ) and provided by OSHPD for use by California consumers and health
+    care providers.
+  tags: []
+  time: null
+  title: Hospital Volume and Utilization Indicators
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  about_ahrq:
+    description: Federal website about the quality indicator program
+    source: null
+    title: Agency for Healthcare Research and Quality Indicators
+    url: http://www.qualityindicators.ahrq.gov/
+  ahrq_spec:
+    description: AHRQ Sepcification for the Inpatient Quality Indicators
+    source: null
+    title: Inpatient Quality Indicators Technical Specifications - Version 4.5, May
+      2013
+    url: http://www.qualityindicators.ahrq.gov/Modules/IQI_TechSpec.aspx
+  download:
+    description: Web page that links to the source files.
+    source: null
+    title: Download Page
+    url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/
+identity:
+  dataset: iqi
+  id: d03o
+  revision: 2
+  source: oshpd.ca.gov
+  subset: volume
+  version: 0.0.2
+names:
+  fqname: oshpd.ca.gov-iqi-volume-0.0.2~d03o002
+  name: oshpd.ca.gov-iqi-volume
+  vid: d03o002
+  vname: oshpd.ca.gov-iqi-volume-0.0.2
+requirements: {}
+versions: {}

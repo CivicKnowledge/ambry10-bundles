@@ -1,0 +1,22 @@
+name,title,dest_table_name,time,space,grain,description,filetype,reftype,ref,state
+2005Util,2005Util,utilization,2005,California,hospital,2005 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2005Util.xls,synced
+2005Vol,2005Vol,volume,2005,California,hospital,2005 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2005Vol.xls,synced
+2006Util,2006Util,utilization,2006,California,hospital,2006 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2006Util.xls,synced
+2006Vol,2006Vol,volume,2006,California,hospital,2006 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2006Vol.xls,synced
+2007Util,2007Util,utilization,2007,California,hospital,2007 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2007Util.xls,synced
+2007Vol,2007Vol,volume,2007,California,hospital,2007 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2007Vol.xls,synced
+2008Util,2008Util,utilization,2008,California,hospital,2008 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2008Util.xls,synced
+2008Vol,2008Vol,volume,2008,California,hospital,2008 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2008Vol.xls,synced
+2009Util,2009Util,utilization,2009,California,hospital,2009 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2009Util.xls,synced
+2009Vol,2009Vol,volume,2009,California,hospital,2009 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2009Vol.xls,synced
+2010Util,2010Util,utilization,2010,California,hospital,2010 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2010Util.xls,synced
+2010Vol,2010Vol,volume,2010,California,hospital,2010 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2010Vol.xls,synced
+2011Util,2011Util,utilization,2011,California,hospital,2011 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2011Util.xls,synced
+2011Vol,2011Vol,volume,2011,California,hospital,2011 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2011Vol.xls,synced
+2012Util,2012Util,utilization,2012,California,hospital,2012 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2012Util.xls,synced
+2012Vol,2012Vol,volume,2012,California,hospital,2012 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2012Vol.xls,synced
+2013Util,2013Util,utilization,2013,California,hospital,2013 Utilization,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2013Util.xls,synced
+2013Vol,2013Vol,volume,2013,California,hospital,2013 Volume,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2013Vol.xls,synced
+counties,counties,counties,,California,hospital,,partition,ref,census.gov-index-counties,synced
+facility_index,facility_index,facility_index,,California,hospital,,partition,ref,oshpd.ca.gov-facilities-index-facilities_index-2010e2014,synced
+facility_info,facility_info,facility_info,,California,hospital,,partition,ref,oshpd.ca.gov-facilities-index-facilities,synced

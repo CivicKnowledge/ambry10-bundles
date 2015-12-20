@@ -1,0 +1,4 @@
+name,title,dest_table_name,time,space,grain,filetype,reftype,ref,state
+cross,cross,cross,2010e2014,California,counties,partition,ref,oshpd.ca.gov-facilities-cross-facility_cross,synced
+facilities,facilities,facilities,2010e2014,California,counties,partition,ref,oshpd.ca.gov-facilities-facilities,synced
+geoids,geoids,geoids,2010e2014,California,counties,partition,ref,oshpd.ca.gov-facilities-facilities_geoids,synced

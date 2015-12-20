@@ -1,0 +1,63 @@
+about:
+  access: restricted
+  footnote: null
+  grain: hospital
+  groups: []
+  license: ckdbl
+  processed: null
+  remote: restricted
+  rights: public
+  source: null
+  space: California
+  subject: null
+  summary: Prevention Quality Indicators (PQIs), identify hospital admissions (age
+    18 and over) that evidence suggests may have been avoided through access to high-quality
+    outpatient care.
+  tags: []
+  time: 2005/2013
+  title: Prevention Quality Indicators (PQIs)
+contacts:
+  wrangler:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+  source: 
+    org: California Office of Statewide Health Planning and Development (OSHPD)
+    url: 'http://www.oshpd.ca.gov/'
+dependencies: {}
+external_documentation:
+  dataset:
+    description: Overview of the dataset.
+    source: null
+    title: Dataset page
+    url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pqi_overview.html
+  download:
+    description: Web page that links to the source files.
+    source: null
+    title: Download Page
+    url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pqi_overview.html
+  ahrq:
+    title: AHRQ Quality Indicators Program Page
+    description: Home page for the Agency for Healthcare Research and Quality's quality 
+     indicators program.
+    url: http://www.qualityindicators.ahrq.gov/
+  pqi_spec:
+    description: AHRQ Specification for the Prevention Quality Indicators
+    source: null
+    title: Prevention Quality Indicators Technical Specifications - Version 4.5, May
+      2013
+    url: http://www.qualityindicators.ahrq.gov/Modules/PQI_TechSpec.aspx
+identity:
+  dataset: pqi
+  id: d03r
+  revision: 3
+  source: oshpd.ca.gov
+  version: 0.0.3
+names:
+  fqname: oshpd.ca.gov-pqi-0.0.3~d03r003
+  name: oshpd.ca.gov-pqi
+  vid: d03r003
+  vname: oshpd.ca.gov-pqi-0.0.3
+requirements: {}
+versions: {}

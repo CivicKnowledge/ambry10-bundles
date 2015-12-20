@@ -1,0 +1,43 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: null
+  groups:
+  - health
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: California
+  subject: Healthcare Facliities
+  summary: List of California healthcare facilities, including Hospitals, long-term
+    care facilities, clinics and hospices
+  tags: []
+  time: null
+  title: California Healthcare Facilities
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  download:
+    description: Web page that links to the source files.
+    source: null
+    title: Download Page
+    url: http://www.oshpd.ca.gov/HID/Products/Listings.html
+identity:
+  dataset: facilities
+  id: d03j
+  revision: 8
+  source: oshpd.ca.gov
+  version: 0.0.8
+names:
+  fqname: oshpd.ca.gov-facilities-0.0.8~d03j008
+  name: oshpd.ca.gov-facilities
+  vid: d03j008
+  vname: oshpd.ca.gov-facilities-0.0.8
+requirements: {}
+versions: {}

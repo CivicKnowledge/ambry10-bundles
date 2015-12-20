@@ -1,0 +1,55 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: null
+  groups:
+  - health
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: California
+  subject: null
+  summary: Medical Service Study Areas (aka 'MSSA') are a geographic analysis unit
+    defined by the California Office of Statewide Health Planning and Development.
+    Based on US Census tract geography, the MSSA are a good foundation for needs assessment
+    analysis, healthcare planning, and healthcare policy development.
+  tags: []
+  time: 2010
+  title: Medical Service Study Areas
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  boundary_map:
+    description: PDF map of MSSA boundaries
+    source: null
+    title: MSSA Boundary Map
+    url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_Reconfiguration2010.pdf
+  download:
+    description: Web page that links to the MSSA files.
+    source: null
+    title: Medical Service Study Areas Download Page
+    url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+  mssa:
+    description: Overview of the MSSA concept and definition.
+    source: null
+    title: Medical Service Study Areas overview
+    url: http://gis.oshpd.ca.gov/atlas/topics/mssa
+identity:
+  dataset: mssa
+  id: d038
+  revision: 7
+  source: oshpd.ca.gov
+  version: 0.0.7
+names:
+  fqname: oshpd.ca.gov-mssa-0.0.7~d038007
+  name: oshpd.ca.gov-mssa
+  vid: d038007
+  vname: oshpd.ca.gov-mssa-0.0.7
+requirements: {}
+versions: {}

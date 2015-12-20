@@ -1,0 +1,348 @@
+about:
+    access: restricted
+    grain: hospital
+    groups: []
+    license: ckdbl
+    rights: public
+    space: California
+    subject: null
+    summary: The files display the total number of discharges, average charge per
+        stay, average charge per day and average length of stay for the top 25 Medicare-Severity
+        Diagnosis Related Groups (MS-DRGs) for each hospital and for the state as
+        a whole.
+    tags: []
+    time: null
+    title: Top 25 MS-DRGs
+build:
+    build:
+        requirements:
+            xlrd: xlrd
+    dependencies:
+        counties: census.gov-index-counties
+        fac_geo: oshpd.ca.gov-facilities-facilities_geoids->=0.0.4
+        facilities: oshpd.ca.gov-facilities-facilities->=0.0.4
+    sources:
+        2008Top25MSDRG_Pivot:
+            description: null
+            filetype: xls
+            segment: 3
+            table: msdrgs
+            time: 2008
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2008Top25MSDRG_Pivot.xlsm
+        2009Top25MSDRG_Pivot:
+            description: null
+            filetype: xls
+            segment: 3
+            table: msdrgs
+            time: 2009
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2009Top25MSDRG_Pivot.xlsm
+        2010Top25MSDRG_Pivot:
+            description: null
+            filetype: xls
+            segment: 3
+            table: msdrgs
+            time: 2010
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2010Top25MSDRG_Pivot.xlsm
+        2011Top25MSDRG_Pivot:
+            description: null
+            filetype: xls
+            segment: 3
+            table: msdrgs
+            time: 2011
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2011Top25MSDRG_Pivot.xlsm
+        2012Top25MSDRG_Pivot:
+            description: null
+            filetype: xls
+            segment: 3
+            table: msdrgs
+            time: 2012
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2012Top25MSDRG_Pivot.xlsm
+        2013Top25MSDRG_Pivot:
+            description: null
+            filetype: xls
+            segment: 3
+            table: msdrgs
+            time: 2013
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2013Top25MSDRG_Pivot.xlsm
+        counties:
+            filetype: partition
+            url: census.gov-index-counties
+            urltype: ref
+        fac_geo:
+            filetype: partition
+            url: oshpd.ca.gov-facilities-facilities_geoids->=0.0.4
+            urltype: ref
+        facilities:
+            filetype: partition
+            url: oshpd.ca.gov-facilities-facilities->=0.0.4
+            urltype: ref
+    views: {}
+bundle_code: "'''\n\n'''\n\nfrom  ambry.bundle.loader import ExcelBuildBundle\n \n\
+    \n\nclass Bundle(ExcelBuildBundle):\n    ''' '''\n\n    prefix_headers = ['id',\
+    \ 'year']\n\n\n    def build_modify_row(self, row_gen, p, source, row):\n    \
+    \    \"\"\"Called for every row to allow subclasses to modify rows. \"\"\"\n \
+    \       row['year'] = int(source.time)\n        \n        # The '106' indicates\
+    \ a hospital, which is part of the full facility id, but not included \n     \
+    \   # this database because all of the records are for hospitals\n        \n \
+    \       row['facilitynumber'] = '106'+row['facilitynumber']\n        \n      \
+    \   "
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        name: Office of Statewide Health Planning and Development, State of California
+        url: http://www.oshpd.ca.gov/
+    maintainer: {}
+documentation: "\n# {about_title}\n\n{about_summary}\n\n## Citation\n\nSuggested citation,\
+    \ from original source: \n\nOSHPD Patient Discharge Data, <data year>, Office\
+    \ of Statewide Health Planning and Development. Top 25 MS-DRGs; July 8, 2014.\
+    \ Available at http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/default.asp\t\
+    \n\n"
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/
+identity:
+    bspace: null
+    btime: null
+    dataset: msdgr
+    id: d03P
+    revision: 3
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: top25
+    version: 0.0.3
+names:
+    fqname: oshpd.ca.gov-msdgr-top25-0.0.3~d03P003
+    name: oshpd.ca.gov-msdgr-top25
+    vid: d03P003
+    vname: oshpd.ca.gov-msdgr-top25-0.0.3
+process: {}
+schema:
+-   column: id
+    d_segment: '3'
+    d_table: msdrgs
+    description: California Top 25 Medicare Severity Diagnosis Related Groups,  generated
+        from http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2013Top25MSDRG_Pivot.xlsm
+    id: t03P01
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: msdrgs
+    type: INTEGER
+-   column: year
+    d_segment: ''
+    d_table: ''
+    description: Year of record
+    id: c03P01002
+    is_fk: ''
+    is_pk: ''
+    proto_vid: c00102003
+    seq: '2'
+    size: '4'
+    table: msdrgs
+    type: INTEGER
+-   column: facilitynumber
+    d_segment: ''
+    d_table: ''
+    description: FacilityNumber
+    id: c03P01004
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '4'
+    size: '9'
+    table: msdrgs
+    type: VARCHAR
+-   column: facilityname
+    d_segment: ''
+    d_table: ''
+    description: FacilityName
+    id: c03P01005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '60'
+    table: msdrgs
+    type: VARCHAR
+-   column: drgcode
+    d_segment: ''
+    d_table: ''
+    description: A three-digit Medicare Severity Diagnosis Related Group code.
+    id: c03P01006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '3'
+    table: msdrgs
+    type: INTEGER
+-   column: drgdescription
+    d_segment: ''
+    d_table: ''
+    description: A description of the Medicare Severity Diagnosis Related Group.
+    id: c03P01007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '97'
+    table: msdrgs
+    type: VARCHAR
+-   column: discharges
+    d_segment: ''
+    d_table: ''
+    description: The sum of selected discharges.  Discharges refer to the hospital
+        stay.  The unit of analysis is the hospital discharge (i.e., the hospital
+        stay) not a person or patient. This means that a person who is admitted to
+        the hospital multiple times in one year will be counted each time as a separate
+        "discharge" from the hospital.
+    id: c03P01008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: '6'
+    table: msdrgs
+    type: INTEGER
+-   column: dischargeswithcharges
+    d_segment: ''
+    d_table: ''
+    description: The sum of discharges that had a total charge greater than zero.
+    id: c03P01009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: '10'
+    table: msdrgs
+    type: INTEGER64
+-   column: validcharges
+    d_segment: ''
+    d_table: ''
+    description: The sum of the hospital charges for the selected discharges.  Charges  reflect
+        the amount the hospital billed for the entire hospital stay and do not include
+        professional (physician) fees.
+    id: c03P0100a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: '10'
+    table: msdrgs
+    type: INTEGER64
+-   column: avgchgperstay
+    d_segment: ''
+    d_table: ''
+    description: The sum of the hospital charges divided by the number of discharges
+        with charges. [Total Charges] / [DischargesWithCharges]
+    id: c03P0100b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: ''
+    table: msdrgs
+    type: REAL
+-   column: avgchgperday
+    d_segment: ''
+    d_table: ''
+    description: The sum of hospital charges divided by the length of stay for those
+        discharges with total charge greater than zero.  [Total Charges] / [vlos]
+    id: c03P0100c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: ''
+    table: msdrgs
+    type: REAL
+-   column: alos
+    d_segment: ''
+    d_table: ''
+    description: Average length of Stay. The sum of the number of nights the patient
+        remained in the hospital for his or her stay divided by the number of dischages
+        .  [sum_los] / [Discharges]
+    id: c03P0100d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: ''
+    table: msdrgs
+    type: REAL
+-   column: sort
+    d_segment: ''
+    d_table: ''
+    description: 'One of three ways of looking at the data: Number of Discharges,
+        Mean Length of Stay, and Mean Charge per Stay.'
+    id: c03P0100e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: '20'
+    table: msdrgs
+    type: VARCHAR
+-   column: rank
+    d_segment: ''
+    d_table: ''
+    description: Numeric rank 1 to 25 for each type of sort.
+    id: c03P0100f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: '7'
+    table: msdrgs
+    type: INTEGER
+-   column: sum_los
+    d_segment: ''
+    d_table: ''
+    description: The sum of the number of nights the patient remained in the hospital
+        for his or her stay. A patient admitted and discharged on the same day has
+        a length of stay equal to 1.
+    id: c03P0100g
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '16'
+    size: '7'
+    table: msdrgs
+    type: INTEGER
+-   column: vlos
+    d_segment: ''
+    d_table: ''
+    description: The sum of the number of nights the patient remained in the hospital
+        for his or her stay where total chages is greater than zero. A patient admitted
+        and discharged on the same day has a length of stay equal to 1.
+    id: c03P0100h
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '17'
+    size: '7'
+    table: msdrgs
+    type: INTEGER
+versions:
+    2:
+        date: '2015-04-19T19:29:15.191137'
+        description: Adding Coverage
+        version: 0.0.2
+    3:
+        date: '2015-04-27T18:10:41.976369'
+        description: Setting new access remotes
+        version: 0.0.3

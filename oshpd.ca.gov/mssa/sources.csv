@@ -1,0 +1,3 @@
+name,title,dest_table_name,time,space,description,ref,state
+mssa_2010,mssa_2010,mssa_2010,2010,California,Shapefile for MSSA areas,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_2010ACSv2.zip,synced
+mssa_tracts_2010,mssa_tracts_2010,mssa_tracts_2010,2010,California,"Shapefile for tracts, linked to MSSA areas",http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_ACS_Detailv2.zip,synced

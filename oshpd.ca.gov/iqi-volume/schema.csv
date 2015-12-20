@@ -1,0 +1,43 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+utilization,1,id,int,,Utilization Indicators
+utilization,2,year,int,4,
+utilization,3,county_gvid,str,6,County gvid
+utilization,4,oshpd_id,str,,Link to the facility index
+utilization,5,county,str,85,County
+utilization,6,hospital_name,str,85,Hospital Name
+utilization,7,matched_hospital_name,str,,"Hospital name, as it is associated with the oshpd_id in the facilities index"
+utilization,8,uncomplicated_cesarean_delivery_count,float,6,Uncomplicated Cesarean Delivery (Count)
+utilization,9,uncomplicated_cesarean_delivery_observed_rate_per_100_deliveries,float,,Uncomplicated Cesarean Delivery Observed Rate per 100 Deliveries
+utilization,10,uncomplicated_primary_cesarean_delivery_count,float,5,Uncomplicated Primary Cesarean Delivery  (Count)
+utilization,11,uncomplicated_primary_cesarean_delivery_observed_rate_per_100_deliveries,float,,Uncomplicated Primary Cesarean Delivery Observed Rate per 100 Deliveries
+utilization,12,vaginal_birth_after_cesarean_vbac_count,float,4,Vaginal Birth after Cesarean (VBAC) (Count)
+utilization,13,vaginal_birth_after_cesarean_vbac_observed_rate_per_100_deliveries,float,,Vaginal Birth after Cesarean (VBAC) Observed Rate per 100 Deliveries
+utilization,14,uncomplicated_vbac_count,float,4,Uncomplicated VBAC (Count)
+utilization,15,uncomplicated_vbac_observed_rate_per_100_deliveries,float,,Uncomplicated VBAC Observed Rate per 100 Deliveries
+utilization,16,laparoscopic_cholecystectomy_gall_bladder_surgery_count,float,5,Laparoscopic Cholecystectomy  (Gall Bladder Surgery) (Count)
+utilization,17,laparoscopic_cholecystectomy_gall_bladder_surgery_observed_rate_per_100_procedures,float,,Laparoscopic Cholecystectomy  (Gall Bladder Surgery) Observed Rate per 100 Procedures
+utilization,18,all_vaginal_birth_after_cesarean_vbac_count,float,,All Vaginal Birth after Cesarean (VBAC) (Count)
+utilization,19,all_vaginal_birth_after_cesarean_vbac_observed_rate_per_100_deliveries,float,,All Vaginal Birth after Cesarean (VBAC) Observed Rate per 100 Deliveries
+,,,,,
+volume,1,id,int,,Volume indicators
+volume,2,year,int,4,
+volume,3,county_gvid,str,6,County gvid
+volume,4,oshpd_id,str,,Link to the facility index
+volume,5,county,str,84,County
+volume,6,hospital_name,str,84,Hospital Name
+volume,7,matched_hospital_name,str,,"Hospital name, as it is associated with the oshpd_id in the facilities index"
+volume,8,esophageal_resection,int,4,Esophageal  Resection
+volume,9,pancreatic_resection,int,4,Pancreatic  Resection
+volume,10,pancreatic_resection_cancer,int,3,Pancreatic Resection  (Cancer)
+volume,11,pancreatic_resection_other,int,4,Pancreatic Resection  (Other)
+volume,12,aaa_repair,int,4,AAA Repair
+volume,13,aaa_repair_ruptured_open,int,4,"AAA Repair  (Ruptured, Open)"
+volume,14,aaa_repair_un_ruptured_open,int,4,"AAA Repair  (Un-ruptured, Open)"
+volume,15,aaa_repair_ruptured_endovascular,int,4,"AAA Repair  (Ruptured, Endovascular)"
+volume,16,aaa_repair_un_ruptured_endovascular,int,5,"AAA Repair  (Un-ruptured, Endovascular)"
+volume,17,cabg,int,5,CABG
+volume,18,pci,int,5,PCI
+volume,19,carotid_endarterectomy,int,4,Carotid  Endarterectomy
+volume,20,aaa_repair_unruptured_open,int,3,"AAA Repair  (Unruptured, Open)"
+volume,21,aaa_repair_unruptured_endovascular,int,,"AAA Repair  (Unruptured, Endovascular)"

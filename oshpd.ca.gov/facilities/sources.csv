@@ -1,0 +1,12 @@
+name,title,dest_table_name,time,space,description,filetype,reftype,ref,state
+hospice_2013,hospice_2013,facilities,2013,California,"Hospices licensed as of December 31, 2013",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/HHAListing_Dec2013.xlsx,synced
+hospice_2014,hospice_2014,facilities,2014,California,"Hospices licensed as of June 30, 2014",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Home-Health-Agencies-and-Hospice-Listing-2014.xlsx,synced
+hospitals_2013,hospitals_2013,facilities,2013,California,"Hospitals licensed as of December 31, 2013",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/HospitalListing_Dec2013.xlsx,synced
+hospitals_2014,hospitals_2014,facilities,2014,California,"Hospitals licensed as of June 30, 2014",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Hospital-Listing-2014.xlsx,synced
+longterm_2013,longterm_2013,facilities,2013,California,"Long term crare facilities icensed as of December 31, 2013",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/LTCListing_Dec2013.xlsx,synced
+longterm_2014,longterm_2014,facilities,2014,California,"Long term care facilities licensed as of June 30, 2014",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Long-Term-Care-Listing-2014.xlsx,synced
+primary_2013,primary_2013,facilities,2013,California,"Primary care facilities licensed as of December 31, 2013",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/PCListing_Dec2013.xlsx,synced
+primary_2014,primary_2014,facilities,2014,California,"Primary care facilities licensed as of June 30, 2014",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Primary-Care-Clinics-Listing-2014.xlsx,synced
+speciality_2013,speciality_2013,facilities,2013,California,"Speciality care facilities icensed as of December 31, 2013",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/SCListing_Dec2013.xlsx,synced
+speciality_2014,speciality_2014,facilities,2014,California,"Speciality care facilities licensed as of June 30, 2014",,,http://www.oshpd.ca.gov/HID/Products/FacilityList/2014/Specialist-Care-Clinics-Listing-2014.xlsx,synced
+blockgroups,blockgroups,blockgroups,,California,,partition,ref,census.gov-tigerline-2012-blockgroups-ca-geo,synced

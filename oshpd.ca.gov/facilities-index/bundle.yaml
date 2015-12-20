@@ -1,0 +1,57 @@
+about:
+  access: restricted
+  footnote: null
+  grain: counties
+  groups: []
+  license: null
+  processed: The partitions {{dependencies.facilities}} and {{dependencies.geoids}}
+    are joined and copied to a new partition, with a table that includes the GVID
+    for the county and both the six and nine character versions of the OSHPD facility
+    ID.
+  rights: null
+  source: '{{contact_source.creator.org}} via the bundles {{dependencies.facilities}}
+    and {{dependencies.geoids}}.'
+  space: California
+  subject: null
+  summary: Index of health care facilities, based on OSHPD&apos;s official list, via
+    {{dependencies.facilities}}.
+  tags: []
+  time: 2010e2014
+  title: OSHPD Health Care Facilities Index
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  dataset:
+    description: Main webpage for the dataset.
+    source: null
+    title: Dataset Page
+    url: http://example.com
+  documentation:
+    description: The primary documentation file
+    source: null
+    title: Main Documentation
+    url: http://example.com
+  download:
+    description: Web page that links to the source files.
+    source: null
+    title: Download Page
+    url: http://example.com
+identity:
+  dataset: facilities
+  id: d041
+  revision: 9
+  source: oshpd.ca.gov
+  subset: index
+  version: 0.0.9
+names:
+  fqname: oshpd.ca.gov-facilities-index-0.0.9~d041009
+  name: oshpd.ca.gov-facilities-index
+  vid: d041009
+  vname: oshpd.ca.gov-facilities-index-0.0.9
+requirements: {}
+versions: {}

@@ -1,0 +1,204 @@
+about:
+    access: restricted
+    grain: null
+    groups: []
+    license: ckdbl
+    rights: public
+    space: California
+    subject: zip codes
+    summary: Boundaries of Zip codes in California
+    tags:
+    - zip
+    time: 2015
+    title: Zip Code Boundaries
+build:
+    build: {}
+    dependencies: {}
+    extract: {}
+    sources:
+        zips:
+            description: Zip code boundary file
+            space: California
+            time: 2015
+            url: http://www.oshpd.ca.gov/HWDD/MSSA/GIS/GIS-Shapefile-ZipCode.zip
+    views: {}
+bundle_code: "'''\n'''\n\nfrom  ambry.bundle.loader import GeoBuildBundle\n\nclass\
+    \ Bundle(GeoBuildBundle):\n    ''' '''\n    pass\n\n  "
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: null
+        name: Office of Statewide Health Planning and Development
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+    maintainer:
+        email: null
+        name: null
+        url: null
+documentation: '
+
+    # {about_title}
+
+
+    {about_summary}
+
+
+    '
+external_documentation:
+    download_page:
+        description: The web page that links to the file.
+        source: source
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HWDD/Research_Policy_Planning_GIS.html
+identity:
+    bspace: null
+    btime: null
+    dataset: zip_boundaries
+    id: d031
+    revision: 4
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.4
+names:
+    fqname: oshpd.ca.gov-zip_boundaries-0.0.4~d031004
+    name: oshpd.ca.gov-zip_boundaries
+    vid: d031004
+    vname: oshpd.ca.gov-zip_boundaries-0.0.4
+process: {}
+schema:
+-   column: id
+    description: ''
+    id: t03101
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: zips
+    type: INTEGER
+    width: ''
+-   column: objectid
+    description: ''
+    id: c03101002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '4'
+    table: zips
+    type: INTEGER
+    width: '10'
+-   column: id_orig
+    description: ''
+    id: c03101003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: ''
+    table: zips
+    type: REAL
+    width: '19'
+-   column: zip
+    description: ''
+    id: c03101004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '5'
+    table: zips
+    type: VARCHAR
+    width: '5'
+-   column: po_name
+    description: ''
+    id: c03101005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '28'
+    table: zips
+    type: VARCHAR
+    width: '50'
+-   column: county
+    description: ''
+    id: c03101006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '15'
+    table: zips
+    type: VARCHAR
+    width: '20'
+-   column: cnty_fips
+    description: ''
+    id: c03101007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '3'
+    table: zips
+    type: VARCHAR
+    width: '3'
+-   column: sqmile
+    description: ''
+    id: c03101008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: ''
+    table: zips
+    type: REAL
+    width: '19'
+-   column: shape_area
+    description: ''
+    id: c03101009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: ''
+    table: zips
+    type: REAL
+    width: '19'
+-   column: shape_len
+    description: ''
+    id: c0310100a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: ''
+    table: zips
+    type: REAL
+    width: '19'
+-   column: geometry
+    description: ''
+    id: c0310100b
+    is_fk: ''
+    is_pk: ''
+    seq: '11'
+    size: ''
+    table: zips
+    type: MULTIPOLYGON
+    width: ''
+versions:
+    1:
+        date: null
+        description: null
+        version: 0.0.1
+    2:
+        date: null
+        description: Improved documentation, schema
+        version: 0.0.2
+    3:
+        date: '2014-12-30T16:31:14.004935'
+        description: 'Updating for new shapfile import '
+        version: 0.0.3
+    4:
+        date: '2015-04-27T18:10:42.684806'
+        description: Setting new access remotes
+        version: 0.0.4

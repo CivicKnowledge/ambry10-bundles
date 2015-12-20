@@ -1,0 +1,12 @@
+table,sequence_id,column,datatype,size,width
+,,,,,
+zips,1,id,int,,
+zips,2,objectid,int,4,10
+zips,3,id_orig,float,,19
+zips,4,zip,str,5,5
+zips,5,po_name,str,28,50
+zips,6,county,str,15,20
+zips,7,cnty_fips,str,3,3
+zips,8,sqmile,float,,19
+zips,9,shape_area,float,,19
+zips,10,shape_len,float,,19

@@ -1,0 +1,232 @@
+about:
+    access: restricted
+    footnote: null
+    grain: null
+    groups: []
+    license: ckdbl
+    processed: null
+    rights: public
+    source: Custom Data Extraction from the , {{contact_source.creator.org}}, Patient
+        Discharge Data, {{external_documentation.dataset.url}}
+    space: California
+    subject: null
+    summary: " Inpatient discharges from licensed general acute care hospitals, by\
+        \ Medicare Severity-Diagnosis Related Group and county of patient\u2019s residence.;\
+        \ Medicare Severity-Diagnosis Related Group (MS-DRG) are aggregated to the\
+        \ county of the patient's residence and the hospital from which the patient\
+        \ was discharged. "
+    tags: []
+    time: null
+    title: Inpatient Hospital Discharges By County and Hospital, 2009 - 2013
+build:
+    build: {}
+    dependencies: {}
+    sources:
+        msdrg_county:
+            description: MSDRGs by County
+            url: http://ds.civicknowledge.org/oshpd.ca.gov/Patient%20Discharges/MSDRGs%20by%20County%2C%202009-2013.xlsx
+        msdrg_hospital:
+            description: MSDRGs by Hospital
+            url: http://ds.civicknowledge.org/oshpd.ca.gov/Patient%20Discharges/MSDRGs%20by%20Hospital%2C%202009-2013.xlsx
+    views: {}
+bundle_code: "from ambry.bundle.loader import ExcelBuildBundle\n\nclass Bundle(ExcelBuildBundle):\n\
+    \    ''' '''\n\n    pass\n    \n"
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: Karen.Henderson@oshpd.ca.gov
+        name: Karen Henderson, Research Program Specialist, OSHPD
+        org: California Office of Statewide Health Planning and Development, Healthcare
+            Information Division
+    maintainer: {}
+documentation: "\n# {about_title}\n\n{about_summary}\n\nThese files were recieved\
+    \ in response to a data request to OSHPD, so there isn't any online documentation\
+    \ for them. The closest online resources, for datasets derived from the same database,\
+    \ are:\n\n- [Inpatient Hospital Discharges: Frequencies by County](http://www.oshpd.ca.gov/HID/Products/PatDischargeData/FrequencyTables/CountyFreq/index.html)\
+    \ \n- [Patient Discharge Data](http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PublicDataSet/)\n"
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Patient Discharge Data
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PublicDataSet/
+identity:
+    bspace: null
+    btime: null
+    dataset: msdrg
+    id: d03R
+    revision: 3
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: county
+    version: 0.0.3
+names:
+    fqname: oshpd.ca.gov-msdrg-county-0.0.3~d03R003
+    name: oshpd.ca.gov-msdrg-county
+    vid: d03R003
+    vname: oshpd.ca.gov-msdrg-county-0.0.3
+process: {}
+schema:
+-   column: id
+    d_orig_proto_vid: ''
+    description: Hospital Discharges by Hospital and Medicare Severity-Diagnosis Related
+        Group (MS-DRG)
+    id: t03R01
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: msdrg_hospital
+    type: INTEGER
+-   column: year
+    d_orig_proto_vid: oshpd_facility.year
+    description: Year
+    id: c03R01002
+    is_fk: ''
+    is_pk: ''
+    proto_vid: c0010k003
+    seq: '2'
+    size: '4'
+    table: msdrg_hospital
+    type: INTEGER
+-   column: oshpd_id
+    d_orig_proto_vid: oshpd_facility.oshpd_id
+    description: OSHPD Facility ID
+    id: c03R01003
+    is_fk: ''
+    is_pk: ''
+    proto_vid: c0010k002
+    seq: '3'
+    size: '6'
+    table: msdrg_hospital
+    type: VARCHAR
+-   column: msdrg
+    d_orig_proto_vid: ''
+    description: Medicare Severity-Diagnosis Related Group
+    id: c03R01004
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '4'
+    size: '3'
+    table: msdrg_hospital
+    type: INTEGER
+-   column: discharges
+    d_orig_proto_vid: ''
+    description: Discharges
+    id: c03R01005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '4'
+    table: msdrg_hospital
+    type: INTEGER
+-   column: facility_name
+    d_orig_proto_vid: ''
+    description: Facility Name
+    id: c03R01006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '60'
+    table: msdrg_hospital
+    type: VARCHAR
+-   column: county_name
+    d_orig_proto_vid: ''
+    description: County Name
+    id: c03R01007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '15'
+    table: msdrg_hospital
+    type: VARCHAR
+-   column: ''
+    d_orig_proto_vid: ''
+    description: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_orig_proto_vid: ''
+    description: Hospital Discharges by County and Medicare Severity-Diagnosis Related
+        Group (MS-DRG)
+    id: t03R02
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: msdrg_county
+    type: INTEGER
+-   column: year
+    d_orig_proto_vid: ''
+    description: Year
+    id: c03R02002
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '2'
+    size: '4'
+    table: msdrg_county
+    type: INTEGER
+-   column: patcnty1
+    d_orig_proto_vid: ''
+    description: County Name
+    id: c03R02003
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '3'
+    size: '15'
+    table: msdrg_county
+    type: VARCHAR
+-   column: msdrg
+    d_orig_proto_vid: ''
+    description: Medicare Severity-Diagnosis Related Group
+    id: c03R02004
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '4'
+    size: '3'
+    table: msdrg_county
+    type: INTEGER
+-   column: discharges
+    d_orig_proto_vid: ''
+    description: Discharges
+    id: c03R02005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '6'
+    table: msdrg_county
+    type: INTEGER
+versions:
+    2:
+        date: '2015-04-16T22:06:11.756628'
+        description: Adding coverage
+        version: 0.0.2
+    3:
+        date: '2015-04-27T18:10:09.236344'
+        description: Setting new access remotes
+        version: 0.0.3

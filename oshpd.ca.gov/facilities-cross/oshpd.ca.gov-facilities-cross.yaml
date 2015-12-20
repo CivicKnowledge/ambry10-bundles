@@ -1,0 +1,266 @@
+about:
+    access: restricted
+    footnote: null
+    grain: facility
+    groups: []
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: California
+    subject: null
+    summary: This dataset provides a simple cross walk using Office of Statewide Health
+        Planning and Development (OSHPD) assigned licensed facility identification
+        numbers linked with matched California Department of Public Health (CDPH),
+        Licensing and Certification facility lists based on license number.  This
+        is not a comprehensive matched list, facility identification numbers that
+        did not match are also included from both the OSHPD and CDPH lists.  Facility
+        Status or Facility Level designations may explain some OSHPD non-matches,
+        for additional information contact OSHPD directly.  Please contact CDPH directly
+        for more information regarding un-matched facility identifiers that do not
+        have corresponding OSHPD identifiers.
+    tags: []
+    time: null
+    title: Licensed Facility Cross Walk
+build:
+    build: {}
+    dependencies: {}
+    sources:
+        facility_cross:
+            description: Crosswalk between OSHPD and CDPH health care facility numbers
+            space: California
+            time: 2015
+            url: https://chhs.data.ca.gov/api/views/tthg-z4mf/rows.csv
+        meta:
+            filetype: socrata/json
+            is_loadable: false
+            url: https://chhs.data.ca.gov/api/views/tthg-z4mf
+            urltype: ref
+    views: {}
+bundle_code: "'''\n\n'''\n\nfrom ambry.bundle.loader import CsvBundle\n \n\n\nclass\
+    \ Bundle(CsvBundle):\n    ''' '''\n\n    pass\n    \n"
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        email: Charlene.Ellsworth@oshpd.ca.gov
+        name: Charlene Ellsworth, Data Product Specialist, OSHPD
+    maintainer: {}
+documentation: "\n# {about_title}\n\n{about_summary}\n\n\n\nI used the following sources\
+    \ of data and included all records whether matched or unmatched.  The Licensed\
+    \ Facility Listing Report for all types of facilities (http://hfcis.cdph.ca.gov/Reports/GenerateReport.aspx?rpt=FacilityListing),\
+    \ the CDPH Facility list that is on the Open Data Portal  (https://cdph.data.ca.gov/Facilities-and-Services/Healthcare-Facility-Locations/n8ju-ifrh)\
+    \ and OSHPDs Licensed Facility Dimension table from our data warehouse (which\
+    \ is more comprehensive than the facility lists on OSHPDs website -  http://www.oshpd.ca.gov/hid/Products/Listings.html)\
+    \ and merged them together based on license number as a starting point.\n \nI\
+    \ also added L&C Facility ID, Provider Number and address information, all of\
+    \ OSHPDs identifying numbers, and OSHPDs facility level which helps to identify\
+    \ the differences in the way L&C records facilities vs. the way OSHPD does. I\
+    \ also included address and other geography.  The dataset is sorted by OSHPD ID\
+    \ since it is an OSHPD product. Due to unmatched CDPH records OSHPDs do not show\
+    \ in the list until row 3200.\nAs an example on row 3200 you'll see OSHPD Parent\
+    \ ID 106010735 - Alameda Hospital.  There are 12 record combinations for this\
+    \ hospital, but only 3 physical locations, each having the same OSHPD Parent ID\
+    \ and License number.  OSHPD recognizes 3 facility locations, however, CDPH recognizes\
+    \ the SNF beds at the Clinton address as a separate \"facility,\"  thus there\
+    \ is an extra record. OSHPD Facility Level will help identify distinct facilities.\
+    \ \n \nJust by matching on address across the lists you can see why it is so difficult\
+    \ to match across departments or even across programs.  Differences in address,\
+    \ name, type of facility, identifying numbers, etc. all lend to the multiple matches\
+    \ you will see in the attached spreadsheet.  It's a daunting task you are attempting\
+    \ and I wish you well. "
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: https://chhs.data.ca.gov/Facilities-and-Services/Licensed-Facility-Cross-Walk/tthg-z4mf
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: https://chhs.data.ca.gov/api/views/tthg-z4mf/files/Upn6dUlWcojzXui_gaB0aOZ4D4pFge6x96Gh5iQK4f4?filename=Licensed_Facility_Cross_Walk_Data_Dictionary.pdf
+identity:
+    bspace: null
+    btime: null
+    dataset: facilities
+    id: d03U
+    revision: 4
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: cross
+    version: 0.0.4
+names:
+    fqname: oshpd.ca.gov-facilities-cross-0.0.4~d03U004
+    name: oshpd.ca.gov-facilities-cross
+    vid: d03U004
+    vname: oshpd.ca.gov-facilities-cross-0.0.4
+process: {}
+schema:
+-   column: id
+    description: Crosswalk between OSHPD and CDPH health care facility numbers
+    id: t03U01
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: facility_cross
+    type: INTEGER
+-   column: oshpd_license_number
+    description: 'The facility license number assigned by
+
+        the California Department of Public Health (CDPH), Licensing & Certification
+        section to the person, persons, firm, partnership, association, corporation,
+        political subdivision of the State, or other governmental agency to whom a
+        license has been issued to operate a health facility or agency.OSHPD collects
+        and stores the information from the license in its Licensed Facility Information
+        System (LFIS).This identifier may or may not match the L&C License Number
+        column.'
+    id: c03U01002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '9'
+    table: facility_cross
+    type: VARCHAR
+-   column: oshpd_id
+    description: A unique ninedigit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first three digits
+        indicate the type of facility, the next two digits indicate the county in
+        which the facility is located.The last fourdigits are unique within each county.
+    id: c03U01003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '9'
+    table: facility_cross
+    type: VARCHAR
+-   column: oshpd_facility_number
+    description: A unique sixdigit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first two digits
+        indicate the county in which the facility is located. The last fourdigits
+        are unique within each county.
+    id: c03U01004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '6'
+    table: facility_cross
+    type: VARCHAR
+-   column: oshpd_perm_id
+    description: A unique fivedigit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first digit indicates
+        the type of facility.The last fourdigits are unique within each type.
+    id: c03U01005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '5'
+    table: facility_cross
+    type: VARCHAR
+-   column: oshpd_facility_level
+    description: 'Designated on the facility license as level of business operation:
+        Parent Facility, Consolidated Facility, Distinct Part Facility, Branch'
+    id: c03U01006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '22'
+    table: facility_cross
+    type: VARCHAR
+-   column: parent_oshpd_id
+    description: A unique ninedigit identifier assigned to each facility by the Office
+        of Statewide Health Planning and Development (OSHPD).The first three digits
+        indicate the type of facility, the next two digits indicate the county in
+        which the facility is located.The last fourdigits are unique within each county.These
+        may be different from the OSHPD ID based on OSHPD Facility Level.
+    id: c03U01007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '9'
+    table: facility_cross
+    type: VARCHAR
+-   column: oshpd_facility_status
+    description: 'Status of facility: Open, Closed, Suspense, Under Construction'
+    id: c03U01008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '18'
+    table: facility_cross
+    type: VARCHAR
+-   column: l_c_license_number
+    description: The facility license number assigned by the California Department
+        of Public Health (CDPH) to the person, persons, firm, partnership, association,
+        corporation, political subdivision of the State, or other governmental agency
+        to whom a license has been issued to operate a health facility or agency.
+        (Used to verify match with OSHPD License Number).This identifier may or may
+        not match the OSHPD License Number column.
+    id: c03U01009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: '9'
+    table: facility_cross
+    type: VARCHAR
+-   column: l_c_facility_id
+    description: 'A unique identifier assigned by the California Department of Public
+        Health (CDPH), Licensing & Certification section. FACID is the primary key
+        from the FACILITY table used to track facility information for all facilities
+        stored in the Electronic Licensing Management System (ELMS) for CDPH Center
+        of Healthcare Quality, Licensing and Certification Program.FACID can be used
+        to link this file''s facility attributes to the following Open Data files:
+        Healthcare Facility Services and Healthcare Facility Bed Types and Counts.
+        This identifier may or may not match the CDPH_OD_FACID column.'
+    id: c03U0100a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: '9'
+    table: facility_cross
+    type: VARCHAR
+-   column: cdph_od_facid
+    description: 'A unique identifier assigned by the California Department of Public
+        Health (CDPH). (Used to verify match with L&C Facility ID). Derived from the
+        Healthcare Facility Locations dataset available at: https://cdph.data.ca.gov/FacilitiesandServices/HealthcareFacility
+        Locations/n8juifrh This identifier is may or may not match the L&C Facility
+        ID column.'
+    id: c03U0100b
+    is_fk: ''
+    is_pk: ''
+    seq: '11'
+    size: '9'
+    table: facility_cross
+    type: VARCHAR
+-   column: l_c_provider_number
+    description: A unique identifier assigned by the California Department of Public
+        Health (CDPH), Licensing & Certification section.
+    id: c03U0100c
+    is_fk: ''
+    is_pk: ''
+    seq: '12'
+    size: '7'
+    table: facility_cross
+    type: VARCHAR
+versions:
+    2:
+        date: '2015-04-27T18:10:14.546568'
+        description: Setting new access remotes
+        version: 0.0.2
+    3:
+        date: '2015-05-18T09:44:14.890201'
+        description: 'Updating file. '
+        version: 0.0.3
+    4:
+        date: '2015-05-18T13:07:51.444311'
+        description: Added title
+        version: 0.0.4

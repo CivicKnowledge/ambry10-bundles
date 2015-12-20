@@ -1,0 +1,3 @@
+name,title,dest_table_name,time,space,description,ref,state
+zcta,zcta,zcta,2015,California,MSSA boundary shapefile,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/GIS-Shapefile-ZCTA.zip,synced
+zcta_tracts,zcta_tracts,zcta_tracts,2015,California,"Census tracts boundaries, with assocaitions to MSSA",http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MSSA_ACS_Detailv2.zip,synced

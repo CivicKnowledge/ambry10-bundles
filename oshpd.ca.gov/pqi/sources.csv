@@ -1,0 +1,3 @@
+name,title,dest_table_name,time,space,grain,segment,start_line,end_line,header_lines,description,filetype,reftype,ref,state
+counties,counties,counties,2005/2013,California,hospital,,,,,,partition,ref,census.gov-index-counties,synced
+pqi,pqi,pqi,2005/2013,California,counties,1,7,538,"4,6",Multi-year PQI file.,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PQI/PQI_Summary_V45a_2005-2013.xlsx,ingest_done

@@ -1,0 +1,6 @@
+name,title,dest_table_name,time,space,grain,description,ref,state
+dental,dental,dental,201407,california,entity,Dental Designation,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSADentalv201407.zip,synced
+mental,mental,mental,201407,california,entity,Mental Health Designation,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSAMentalHealthv201407.zip,synced
+nurse,nurse,nurse,201407,california,entity,Registered Nurse Shortage Areas,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/RNSAv13.zip,synced
+primarycare,primarycare,primarycare,201407,california,entity,Primary Care Professional Designation,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/PCSAv13.zip,synced
+primarypro,primarypro,primarypro,201407,california,entity,Primary Care Professional Designation,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/HPSAPrimaryCarev201407.zip,synced

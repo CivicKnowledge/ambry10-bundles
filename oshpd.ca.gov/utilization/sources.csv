@@ -1,0 +1,7 @@
+name,title,dest_table_name,time,space,segment,start_line,header_lines,description,ref,state
+Hosp08_util_data_FINAL,Hosp08_util_data_FINAL,hosp_util,2008,California,2,4,"0,3",Hospital Utilization,http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp08_util_data_FINAL.xls,synced
+Hosp09_util_data_Final,Hosp09_util_data_Final,hosp_util,2009,California,2,4,"0,3",Hospital Utilization,http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp09_util_data_Final.xls,synced
+Hosp10_util_data_FINAL,Hosp10_util_data_FINAL,hosp_util,2010,California,2,4,"0,3",Hospital Utilization,http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp10_util_data_FINAL.xlsx,synced
+Hosp11_util_data_Final,Hosp11_util_data_Final,hosp_util,2011,California,2,4,"0,3",Hospital Utilization,http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp11_util_data_Final.xlsx,synced
+Hosp12_util_data_FINAL,Hosp12_util_data_FINAL,hosp_util,2011,California,2,4,"0,3",Hospital Utilization,http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp12_util_data_FINAL.xlsx,synced
+Hosp13_util_data_FINAL,Hosp13_util_data_FINAL,hosp_util,2013,California,2,4,"0,3",Hospital Utilization,http://www.oshpd.ca.gov/hid/Products/Hospitals/Utilization/Text_pdf_files/Hospital/Annual_Utilization/Hosp13_util_data_FINAL.xlsx,synced

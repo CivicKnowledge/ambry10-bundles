@@ -1,0 +1,18 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+msdrgs,1,id,int,,"California Top 25 Medicare Severity Diagnosis Related Groups,  generated from http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2013Top25MSDRG_Pivot.xlsm"
+msdrgs,2,year,int,4,Year of record
+msdrgs,3,facilitynumber,str,9,FacilityNumber
+msdrgs,4,facilityname,str,60,FacilityName
+msdrgs,5,drgcode,int,3,A three-digit Medicare Severity Diagnosis Related Group code.
+msdrgs,6,drgdescription,str,97,A description of the Medicare Severity Diagnosis Related Group.
+msdrgs,7,discharges,int,6,"The sum of selected discharges.  Discharges refer to the hospital stay.  The unit of analysis is the hospital discharge (i.e., the hospital stay) not a person or patient. This means that a person who is admitted to the hospital multiple times in one year will be counted each time as a separate ""discharge"" from the hospital."
+msdrgs,8,dischargeswithcharges,long,10,The sum of discharges that had a total charge greater than zero.
+msdrgs,9,validcharges,long,10,The sum of the hospital charges for the selected discharges.  Charges  reflect the amount the hospital billed for the entire hospital stay and do not include professional (physician) fees.
+msdrgs,10,avgchgperstay,float,,The sum of the hospital charges divided by the number of discharges with charges. [Total Charges] / [DischargesWithCharges]
+msdrgs,11,avgchgperday,float,,The sum of hospital charges divided by the length of stay for those discharges with total charge greater than zero.  [Total Charges] / [vlos]
+msdrgs,12,alos,float,,Average length of Stay. The sum of the number of nights the patient remained in the hospital for his or her stay divided by the number of dischages .  [sum_los] / [Discharges]
+msdrgs,13,sort,str,20,"One of three ways of looking at the data: Number of Discharges, Mean Length of Stay, and Mean Charge per Stay."
+msdrgs,14,rank,int,7,Numeric rank 1 to 25 for each type of sort.
+msdrgs,15,sum_los,int,7,The sum of the number of nights the patient remained in the hospital for his or her stay. A patient admitted and discharged on the same day has a length of stay equal to 1.
+msdrgs,16,vlos,int,7,The sum of the number of nights the patient remained in the hospital for his or her stay where total chages is greater than zero. A patient admitted and discharged on the same day has a length of stay equal to 1.

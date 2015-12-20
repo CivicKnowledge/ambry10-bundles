@@ -1,0 +1,3 @@
+name,title,dest_table_name,time,space,description,ref,state
+mua,mua,mua,2010,California,Medically Underserved Areas,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MUA.zip,synced
+mup,mup,mup,2010,California,Medically Underserved Populations,http://www.oshpd.ca.gov/HWDD/MSSA/GIS/MUP.zip,synced

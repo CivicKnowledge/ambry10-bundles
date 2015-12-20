@@ -1,0 +1,27 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+psi,1,id,int,,Multi-year PQI file.
+psi,2,gvid,str,6,gvid
+psi,3,year,int,4,Year
+psi,4,county,str,15,County
+psi,5,psi_21_retained_surgical_item_or_unretrieved_device_fragment_cases,int,3,PSI #21 Retained Surgical Item or Unretrieved Device Fragment # Cases
+psi,6,psi_21_retained_surgical_item_or_unretrieved_device_fragment_population,int,8,PSI #21 Retained Surgical Item or Unretrieved Device Fragment Population
+psi,7,psi_21_retained_surgical_item_or_unretrieved_device_fragment_observed_rate,float,,PSI #21 Retained Surgical Item or Unretrieved Device Fragment Observed Rate
+psi,8,psi_22_iatrogenic_pneumothorax_cases,int,4,PSI #22 Iatrogenic Pneumothorax # Cases
+psi,9,psi_22_iatrogenic_pneumothorax_population,int,8,PSI #22 Iatrogenic Pneumothorax Population
+psi,10,psi_22_iatrogenic_pneumothorax_observed_rate,float,,PSI #22 Iatrogenic Pneumothorax Observed Rate
+psi,11,psi_23_central_venous_catheter_related_blood_stream_infection_cases,int,4,PSI #23 Central Venous Catheter-Related Blood Stream Infection # Cases
+psi,12,psi_23_central_venous_catheter_related_blood_stream_infection_population,int,8,PSI #23 Central Venous Catheter-Related Blood Stream Infection Population
+psi,13,psi_23_central_venous_catheter_related_blood_stream_infection_observed_rate,float,,PSI #23 Central Venous Catheter-Related Blood Stream Infection Observed Rate
+psi,14,psi_24_postoperative_wound_dehiscence_cases,int,3,PSI #24 Postoperative Wound Dehiscence # Cases
+psi,15,psi_24_postoperative_wound_dehiscence_population,int,8,PSI #24 Postoperative Wound Dehiscence Population
+psi,16,psi_24_postoperative_wound_dehiscence_observed_rate,float,,PSI #24 Postoperative Wound Dehiscence Observed Rate
+psi,17,psi_25_accidental_puncture_or_laceration_cases,int,4,PSI #25 Accidental Puncture or Laceration # Cases
+psi,18,psi_25_accidental_puncture_or_laceration_population,int,8,PSI #25 Accidental Puncture or Laceration Population
+psi,19,psi_25_accidental_puncture_or_laceration_observed_rate,float,,PSI #25 Accidental Puncture or Laceration Observed Rate
+psi,20,psi_26_transfusion_reaction_cases,int,2,PSI #26 Transfusion Reaction # Cases
+psi,21,psi_26_transfusion_reaction_population,int,8,PSI #26 Transfusion Reaction Population
+psi,22,psi_26_transfusion_reaction_observed_rate,float,,PSI #26 Transfusion Reaction Observed Rate
+psi,23,psi_27_perioperative_hemorrhage_or_hematoma_cases,int,4,PSI #27 Perioperative Hemorrhage or Hematoma # Cases
+psi,24,psi_27_perioperative_hemorrhage_or_hematoma_population,int,8,PSI #27 Perioperative Hemorrhage or Hematoma Population
+psi,25,psi_27_perioperative_hemorrhage_or_hematoma_observed_rate,float,,PSI #27 Perioperative Hemorrhage or Hematoma Observed Rate

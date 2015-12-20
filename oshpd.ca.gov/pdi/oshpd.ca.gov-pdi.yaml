@@ -1,0 +1,388 @@
+about:
+    access: restricted
+    footnote: null
+    grain: county
+    groups: []
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: California
+    subject: null
+    summary: Pediatric Quality Indicators (PDIs) use indicators from other AHRQ QI
+        modules with adaptations for use among children. Similar to Prevention Quality
+        Indicators, the PDIs identify hospital admissions that evidence suggests may
+        have been avoided through access to high-quality outpatient care.
+    tags: []
+    time: null
+    title: Pediatric Quality Indicators (PDIs)
+build:
+    build: {}
+    dependencies:
+        counties: census.gov-index-counties
+    sources:
+        PDI_Summary:
+            conversion: http://ds.civicknowledge.org/oshpd.ca.gov/oshpd.ca.gov-pdi/PDI_Summary.csv
+            description: Pediatric Quality Indicators
+            time: 2005/2013
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html/PDI/PDI_Summary.xlsx
+        counties:
+            filetype: partition
+            url: census.gov-index-counties
+            urltype: ref
+    views: {}
+bundle_code: "'''\nThis is basically the same as in psi. \n'''\n\nfrom  ambry.bundle.loader\
+    \ import CsvBundle\nfrom ambry.util import memoize\n\n\nclass Bundle(CsvBundle):\n\
+    \    ''' '''\n\n    def __init__(self,directory=None):\n\n        super(Bundle,\
+    \ self).__init__(directory)\n\n    @property\n    @memoize\n    def counties_map(self):\n\
+    \        counties = { r['name'].replace(\" County, California\",'').lower(): r['gvid']\
+    \ \n                     for r in  self.library.dep('counties').partition.rows\
+    \  if int(r['state'] == 6)}\n\n        return counties\n    \n\n    def mangle_column_name(self,\
+    \ i, n):\n        import re\n        \n        n = re.sub('[\\r\\n]+',' ',n)\n\
+    \n        m = re.match(r'^(P.I) \\#(\\d+)(.*)$', n)\n        \n        if not\
+    \ m:\n            mangled =  n.lower()\n            \n        else:\n        \
+    \    grp = m.group(1).lower()\n            psi_no = m.group(2)\n            ind_type\
+    \ = re.sub(r'[\\W]+', '_', m.group(3).strip().lower())\n            mangled =\
+    \  \"{}_{}_{}\".format(grp, psi_no, ind_type)\n\n        if mangled in self.col_map\
+    \ and self.col_map[mangled]['col'] :\n            return self.col_map[mangled]['col']\n\
+    \        else:\n            return mangled\n\n\n\n    def build_modify_row(self,\
+    \ row_gen, p, source, row):\n\n\n            try:\n                row['gvid']\
+    \ =  self.counties_map[row['county'].lower()]\n            except KeyError:\n\
+    \                pass\n            \n            \n        \n    def test(self):\n\
+    \        \n        p = self.partitions.all.pop()\n        \n        assert p.stats.id.count\
+    \ == 420\n        \n        assert p.stats.gvid.nuniques == 58\n        \n   \
+    \     assert 'Fresno' in p.stats.county.uvalues.keys()\n        "
+column_map:
+-   col: ''
+    header: county
+-   col: ''
+    header: pdi_14_asthma_cases
+-   col: ''
+    header: pdi_14_asthma_risk_adjusted_rate
+-   col: ''
+    header: pdi_15_diabetes_short_term_complications_cases
+-   col: ''
+    header: pdi_15_diabetes_short_term_complications_risk_adjusted_rate
+-   col: ''
+    header: pdi_16_gastroenteritis_cases
+-   col: ''
+    header: pdi_16_gastroenteritis_risk_adjusted_rate
+-   col: ''
+    header: pdi_17_perforated_appendix_cases
+-   col: ''
+    header: pdi_17_perforated_appendix_risk_adjusted_rate
+-   col: ''
+    header: pdi_18_urinary_tract_infection_cases
+-   col: ''
+    header: pdi_18_urinary_tract_infection_risk_adjusted_rate
+-   col: ''
+    header: pqi_9_low_birth_weight_births
+-   col: ''
+    header: pqi_9_low_birth_weight_risk_adjusted_rate
+-   col: ''
+    header: year
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
+    maintainer: {}
+documentation: '
+
+    # {about_title}
+
+
+    {about_summary}
+
+    '
+external_documentation:
+    ahrq_spec:
+        description: AHRQ technical specification for the Pediatric Quality Indicators
+        source: null
+        title: Pediatric Quality Indicators Technical Specifications - Version 4.5,
+            May 2013
+        url: http://www.qualityindicators.ahrq.gov/Modules/PDI_TechSpec.aspx
+    dataset:
+        description: Web page that links to the source files.
+        source: null
+        title: Dataset Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html
+identity:
+    bspace: null
+    btime: null
+    dataset: pdi
+    id: d03C
+    revision: 5
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.5
+names:
+    fqname: oshpd.ca.gov-pdi-0.0.5~d03C005
+    name: oshpd.ca.gov-pdi
+    vid: d03C005
+    vname: oshpd.ca.gov-pdi-0.0.5
+process: {}
+schema:
+-   column: id
+    d_caster: ''
+    d_grain: counties
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Pediatric Quality Indicators
+    id: t03C01
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: pdi_summary
+    type: INTEGER
+-   column: gvid
+    d_caster: ''
+    d_grain: ''
+    d_index: census.gov-index-counties:gvid
+    d_index_version: 0.0.5:gvid
+    d_orig_proto_vid: counties.gvid
+    description: gvid
+    id: c03C01002
+    is_fk: c03x04003
+    is_pk: ''
+    proto_vid: c00109003
+    seq: '2'
+    size: '6'
+    table: pdi_summary
+    type: VARCHAR
+-   column: year
+    d_caster: ''
+    d_grain: ''
+    d_index: census.gov-index-counties:year
+    d_index_version: 0.0.5:year
+    d_orig_proto_vid: counties.year
+    description: Year
+    id: c03C01003
+    is_fk: c03x04002
+    is_pk: ''
+    proto_vid: c00109002
+    seq: '3'
+    size: '4'
+    table: pdi_summary
+    type: INTEGER
+-   column: county
+    d_caster: ''
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: County
+    id: c03C01006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '15'
+    table: pdi_summary
+    type: VARCHAR
+-   column: pdi_14_asthma_cases
+    d_caster: int_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #14 Asthma: # Cases'
+    id: c03C01007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '4'
+    table: pdi_summary
+    type: INTEGER
+-   column: pdi_14_asthma_risk_adjusted_rate
+    d_caster: real_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #14 Asthma: Risk-Adjusted Rate'
+    id: c03C01008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: ''
+    table: pdi_summary
+    type: REAL
+-   column: pdi_15_diabetes_short_term_complications_cases
+    d_caster: int_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #15 Diabetes Short-term Complications: # Cases'
+    id: c03C01009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: '4'
+    table: pdi_summary
+    type: INTEGER
+-   column: pdi_15_diabetes_short_term_complications_risk_adjusted_rate
+    d_caster: real_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #15 Diabetes Short-term Complications: Risk-Adjusted Rate'
+    id: c03C0100a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: ''
+    table: pdi_summary
+    type: REAL
+-   column: pdi_16_gastroenteritis_cases
+    d_caster: int_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #16 Gastroenteritis: # Cases'
+    id: c03C0100b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: '5'
+    table: pdi_summary
+    type: INTEGER
+-   column: pdi_16_gastroenteritis_risk_adjusted_rate
+    d_caster: real_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #16 Gastroenteritis: Risk-Adjusted Rate'
+    id: c03C0100c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: ''
+    table: pdi_summary
+    type: REAL
+-   column: pdi_17_perforated_appendix_cases
+    d_caster: int_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #17 Perforated Appendix: # Cases'
+    id: c03C0100d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: '4'
+    table: pdi_summary
+    type: INTEGER
+-   column: pdi_17_perforated_appendix_risk_adjusted_rate
+    d_caster: real_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #17 Perforated Appendix: Risk-Adjusted Rate'
+    id: c03C0100e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: ''
+    table: pdi_summary
+    type: REAL
+-   column: pdi_18_urinary_tract_infection_cases
+    d_caster: int_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #18 Urinary Tract Infection: # Cases'
+    id: c03C0100f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: '4'
+    table: pdi_summary
+    type: INTEGER
+-   column: pdi_18_urinary_tract_infection_risk_adjusted_rate
+    d_caster: real_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PDI #18 Urinary Tract Infection: Risk-Adjusted Rate'
+    id: c03C0100g
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '16'
+    size: ''
+    table: pdi_summary
+    type: REAL
+-   column: pqi_9_low_birth_weight_births
+    d_caster: int_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #9 Low Birth Weight: # Births'
+    id: c03C0100h
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '17'
+    size: '5'
+    table: pdi_summary
+    type: INTEGER
+-   column: pqi_9_low_birth_weight_risk_adjusted_rate
+    d_caster: real_caster
+    d_grain: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: 'PQI #9 Low Birth Weight: Risk-Adjusted Rate'
+    id: c03C0100i
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '18'
+    size: ''
+    table: pdi_summary
+    type: REAL
+versions:
+    2:
+        date: '2015-02-22T21:01:55.087958'
+        description: 'Prior build failed in production '
+        version: 0.0.2
+    3:
+        date: '2015-04-19T19:28:13.535730'
+        description: Adding coverage
+        version: 0.0.3
+    4:
+        date: '2015-04-27T18:10:19.968490'
+        description: Setting new access remotes
+        version: 0.0.4

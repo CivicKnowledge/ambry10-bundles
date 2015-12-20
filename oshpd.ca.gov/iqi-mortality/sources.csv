@@ -1,0 +1,12 @@
+name,title,dest_table_name,time,space,start_line,end_line,comment_lines,header_lines,description,filetype,reftype,ref,state
+conditions_2012,conditions_2012,conditions,2012,California,13,,"0,1,2,3,4,5,6,7,8,9,10,11",12,2012 Inpatient Mortality Indicators: Conditions,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/2012/AHRQ_IMI_VER4.5_Conditions2012Revised.xls,synced
+indicators_2006,indicators_2006,indicators,2006,California,8,,"0,1,2,3,4,5,6",7,2006 Inpatient Mortality Indicators,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_version3.2_IQI_MORT_2006.xls,synced
+indicators_2007,indicators_2007,indicators,2007,California,8,391,"0,1,2,3,4,5,6",7,2007 Inpatient Mortality Indicators,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_version3.2_IQI_MORT_2007.xls,synced
+indicators_2008,indicators_2008,indicators,2008,California,13,,"0,1,2,3,4,5,6,7,8,9,10,11",12,2008 Inpatient Mortality Indicators,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_IMI_2008.xls,synced
+indicators_2009,indicators_2009,indicators,2009,California,13,,"0,1,2,3,4,5,6,7,8,9,10,11",12,2009 Inpatient Mortality Indicators,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_IMI_2009.xls,synced
+indicators_2010,indicators_2010,indicators,2010,California,13,,"0,1,2,3,4,5,6,7,8,9,10,11",12,2010 Inpatient Mortality Indicators,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_IMI_2010.xls,synced
+indicators_2011,indicators_2011,indicators,2011,California,13,,"0,1,2,3,4,5,6,7,8,9,10,11",12,2011 Inpatient Mortality Indicators,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/AHRQ_IMI_2011.xls,synced
+procedures_2012,procedures_2012,procedures,2012,California,13,,"0,1,2,3,4,5,6,7,8,9,10,11",12,2012 Inpatient Mortality Indicators: Procedures,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/IQI/2012/AHRQ_IMI_VER4.5_Procedures2012Revised.xls,synced
+counties,counties,counties,,California,,,,,,partition,ref,census.gov-index-counties,synced
+facility_index,facility_index,facility_index,,California,,,,,,partition,ref,oshpd.ca.gov-facilities-index-facilities_index-2010e2014,synced
+facility_info,facility_info,facility_info,,California,,,,,,partition,ref,oshpd.ca.gov-facilities-index-facilities,synced

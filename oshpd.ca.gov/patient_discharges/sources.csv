@@ -1,0 +1,17 @@
+name,title,dest_table_name,time,space,description,filetype,ref,state
+puf_10_la,puf_10_la,pdd_puf,2010,California,"Public Discharge Data, Public Use File 2010",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202010/Public10.zip,synced
+puf_10_northa,puf_10_northa,pdd_puf,2010,California,"Public Discharge Data, Public Use File 2010",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202010/Public10.zip,synced
+puf_10_northb,puf_10_northb,pdd_puf,2010,California,"Public Discharge Data, Public Use File 2010",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202010/Public10.zip,synced
+puf_10_south,puf_10_south,pdd_puf,2010,California,"Public Discharge Data, Public Use File 2010",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202010/Public10.zip,synced
+puf_11_la,puf_11_la,pdd_puf,2011,California,"Public Discharge Data, Public Use File 2011",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202011/Public11.zip,synced
+puf_11_northa,puf_11_northa,pdd_puf,2011,California,"Public Discharge Data, Public Use File 2011",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202011/Public11.zip,synced
+puf_11_northb,puf_11_northb,pdd_puf,2011,California,"Public Discharge Data, Public Use File 2011",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202011/Public11.zip,synced
+puf_11_south,puf_11_south,pdd_puf,2011,California,"Public Discharge Data, Public Use File 2011",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202011/Public11.zip,synced
+puf_12_la,puf_12_la,pdd_puf,2012,California,"Public Discharge Data, Public Use File 2012",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202012/Public12.zip,synced
+puf_12_northa,puf_12_northa,pdd_puf,2012,California,"Public Discharge Data, Public Use File 2012",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202012/Public12.zip,synced
+puf_12_northb,puf_12_northb,pdd_puf,2012,California,"Public Discharge Data, Public Use File 2012",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202012/Public12.zip,synced
+puf_12_south,puf_12_south,pdd_puf,2012,California,"Public Discharge Data, Public Use File 2012",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202012/Public12.zip,synced
+puf_13_la,puf_13_la,pdd_puf,2013,California,"Public Discharge Data, Public Use File 2013",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202013/PUBLIC13.zip,synced
+puf_13_northa,puf_13_northa,pdd_puf,2013,California,"Public Discharge Data, Public Use File 2013",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202013/PUBLIC13.zip,synced
+puf_13_northb,puf_13_northb,pdd_puf,2013,California,"Public Discharge Data, Public Use File 2013",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202013/PUBLIC13.zip,synced
+puf_13_south,puf_13_south,pdd_puf,2013,California,"Public Discharge Data, Public Use File 2013",csv,s3://private.source.civicknowledge.com/oshpd.ca.gov/OSHPD%20PDD%20PUF/PDD%20PUF%202013/PUBLIC13.zip,synced

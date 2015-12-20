@@ -1,0 +1,18 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+pdi_summary,1,id,int,,Pediatric Quality Indicators
+pdi_summary,2,gvid,str,6,gvid
+pdi_summary,3,year,int,4,Year
+pdi_summary,4,county,str,15,County
+pdi_summary,5,pdi_14_asthma_cases,int,4,PDI #14 Asthma: # Cases
+pdi_summary,6,pdi_14_asthma_risk_adjusted_rate,float,,PDI #14 Asthma: Risk-Adjusted Rate
+pdi_summary,7,pdi_15_diabetes_short_term_complications_cases,int,4,PDI #15 Diabetes Short-term Complications: # Cases
+pdi_summary,8,pdi_15_diabetes_short_term_complications_risk_adjusted_rate,float,,PDI #15 Diabetes Short-term Complications: Risk-Adjusted Rate
+pdi_summary,9,pdi_16_gastroenteritis_cases,int,5,PDI #16 Gastroenteritis: # Cases
+pdi_summary,10,pdi_16_gastroenteritis_risk_adjusted_rate,float,,PDI #16 Gastroenteritis: Risk-Adjusted Rate
+pdi_summary,11,pdi_17_perforated_appendix_cases,int,4,PDI #17 Perforated Appendix: # Cases
+pdi_summary,12,pdi_17_perforated_appendix_risk_adjusted_rate,float,,PDI #17 Perforated Appendix: Risk-Adjusted Rate
+pdi_summary,13,pdi_18_urinary_tract_infection_cases,int,4,PDI #18 Urinary Tract Infection: # Cases
+pdi_summary,14,pdi_18_urinary_tract_infection_risk_adjusted_rate,float,,PDI #18 Urinary Tract Infection: Risk-Adjusted Rate
+pdi_summary,15,pqi_9_low_birth_weight_births,int,5,PQI #9 Low Birth Weight: # Births
+pdi_summary,16,pqi_9_low_birth_weight_risk_adjusted_rate,float,,PQI #9 Low Birth Weight: Risk-Adjusted Rate

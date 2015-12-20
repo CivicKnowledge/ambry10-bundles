@@ -1,0 +1,10 @@
+name,title,dest_table_name,time,space,grain,segment,filetype,reftype,ref,state
+2008Top25MSDRG_Pivot,2008Top25MSDRG_Pivot,msdrgs,2008,California,hospital,3,xls,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2008Top25MSDRG_Pivot.xlsm,synced
+2009Top25MSDRG_Pivot,2009Top25MSDRG_Pivot,msdrgs,2009,California,hospital,3,xls,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2009Top25MSDRG_Pivot.xlsm,synced
+2010Top25MSDRG_Pivot,2010Top25MSDRG_Pivot,msdrgs,2010,California,hospital,3,xls,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2010Top25MSDRG_Pivot.xlsm,synced
+2011Top25MSDRG_Pivot,2011Top25MSDRG_Pivot,msdrgs,2011,California,hospital,3,xls,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2011Top25MSDRG_Pivot.xlsm,synced
+2012Top25MSDRG_Pivot,2012Top25MSDRG_Pivot,msdrgs,2012,California,hospital,3,xls,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2012Top25MSDRG_Pivot.xlsm,synced
+2013Top25MSDRG_Pivot,2013Top25MSDRG_Pivot,msdrgs,2013,California,hospital,3,xls,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PivotTables/Top25DRGs/2013Top25MSDRG_Pivot.xlsm,synced
+counties,counties,counties,,California,hospital,,partition,ref,census.gov-index-counties,synced
+fac_geo,fac_geo,fac_geo,,California,hospital,,partition,ref,oshpd.ca.gov-facilities-facilities_geoids->=0.0.4,synced
+facilities,facilities,facilities,,California,hospital,,partition,ref,oshpd.ca.gov-facilities-facilities->=0.0.4,synced

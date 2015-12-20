@@ -1,0 +1,962 @@
+about:
+    access: restricted
+    footnote: null
+    grain: hospital
+    groups: []
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: California
+    subject: healthcare quality
+    summary: of 11 Hospital Inpatient Quality Indicators (Inpatient Quality Indicators,
+        Version 4.5) including 6 new subcategories (2 for Pancreatic Resection Volume
+        and 4 for AAA Repair Volume) developed by the federal Agency for Healthcare
+        Research and Quality (AHRQ) and provided by OSHPD for use by California consumers
+        and health care providers.
+    tags: []
+    time: null
+    title: Hospital Volume and Utilization Indicators
+build:
+    build:
+        requirements:
+            openpyxl: openpyxl
+            unidecode: unidecode
+            xlrd: xlrd
+    dependencies:
+        counties: census.gov-index-counties
+        facility_index: oshpd.ca.gov-facilities-index-facilities_index-2010e2014
+        facility_info: oshpd.ca.gov-facilities-index-facilities
+    extract: {}
+    sources:
+        2005Util:
+            description: 2005 Utilization
+            table: utilization
+            time: 2005
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2005Util.xls
+        2005Vol:
+            description: 2005 Volume
+            table: volume
+            time: 2005
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2005Vol.xls
+        2006Util:
+            description: 2006 Utilization
+            table: utilization
+            time: 2006
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2006Util.xls
+        2006Vol:
+            description: 2006 Volume
+            table: volume
+            time: 2006
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2006Vol.xls
+        2007Util:
+            description: 2007 Utilization
+            table: utilization
+            time: 2007
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2007Util.xls
+        2007Vol:
+            description: 2007 Volume
+            table: volume
+            time: 2007
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2007Vol.xls
+        2008Util:
+            description: 2008 Utilization
+            table: utilization
+            time: 2008
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2008Util.xls
+        2008Vol:
+            description: 2008 Volume
+            table: volume
+            time: 2008
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2008Vol.xls
+        2009Util:
+            description: 2009 Utilization
+            table: utilization
+            time: 2009
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2009Util.xls
+        2009Vol:
+            description: 2009 Volume
+            table: volume
+            time: 2009
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2009Vol.xls
+        2010Util:
+            description: 2010 Utilization
+            table: utilization
+            time: 2010
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2010Util.xls
+        2010Vol:
+            description: 2010 Volume
+            table: volume
+            time: 2010
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2010Vol.xls
+        2011Util:
+            description: 2011 Utilization
+            table: utilization
+            time: 2011
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2011Util.xls
+        2011Vol:
+            description: 2011 Volume
+            table: volume
+            time: 2011
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2011Vol.xls
+        2012Util:
+            description: 2012 Utilization
+            table: utilization
+            time: 2012
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2012Util.xls
+        2012Vol:
+            description: 2012 Volume
+            table: volume
+            time: 2012
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2012Vol.xls
+        2013Util:
+            description: 2013 Utilization
+            table: utilization
+            time: 2013
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2013Util.xls
+        2013Vol:
+            description: 2013 Volume
+            table: volume
+            time: 2013
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/2013Vol.xls
+        counties:
+            filetype: partition
+            url: census.gov-index-counties
+            urltype: ref
+        facility_index:
+            filetype: partition
+            url: oshpd.ca.gov-facilities-index-facilities_index-2010e2014
+            urltype: ref
+        facility_info:
+            filetype: partition
+            url: oshpd.ca.gov-facilities-index-facilities
+            urltype: ref
+    views: {}
+bundle_code: "'''\n\n'''\n\nfrom  ambry.bundle.loader import ExcelBuildBundle\nfrom\
+    \ ambry.util import memoize\n\n\nclass Bundle(ExcelBuildBundle):\n    ''' '''\n\
+    \n    @staticmethod\n    def latin_decode(v):\n        \"\"\" A Caster for decoding\
+    \ hospital names\"\"\"\n        from unidecode import unidecode\n        \n  \
+    \      return unidecode(v.decode('latin1'))\n\n    def meta_combine_tables(self):\n\
+    \        \n        self.prepare()\n        \n        with self.session:\n    \
+    \        table = self.schema.add_table(\"utilization\", description=\"Combined\
+    \ columns from all other utilization tables\")\n            self.schema.add_column(table,\
+    \ 'id', datatype='integer', is_primary_key=True)\n            self.schema.add_column(table,\
+    \ 'year', datatype='integer')\n            \n            # This must be in the\
+    \ #sessions' with block. The copy_table() function also has a  session block\n\
+    \            # and the commit in that block will kick the table out of the session.\
+    \ Nesting prevents the commit\n            # until this block exits. \n      \
+    \      for t in self.schema.tables:\n                \n                if t.name.endswith('util'):\n\
+    \                    self.schema.copy_table(t, 'utilization')\n            \n\
+    \        with self.session:\n            table = self.schema.add_table(\"volume\"\
+    , description=\"Combined columns from all other volume tables\")\n           \
+    \ self.schema.add_column(table, 'id', datatype='integer', is_primary_key=True)\n\
+    \            self.schema.add_column(table, 'year', datatype='integer')\n     \
+    \       \n            # This must be in the #sessions' with block. The copy_table()\
+    \ function also has a  session block\n            # and the commit in that block\
+    \ will kick the table out of the session. Nesting prevents the commit\n      \
+    \      # until this block exits. \n            for t in self.schema.tables:\n\
+    \                if t.name.endswith('vol'):\n                    self.schema.copy_table(t,\
+    \ 'volume')                \n                \n        self.schema.write_schema()\n\
+    \        \n    def build(self):\n        super(Bundle, self).build()\n       \
+    \ #self.build_summary()\n        \n        return True\n        \n    \n    def\
+    \ build_summary(self):\n        \"\"\"Use Pandas to sum hospital records to counties.\"\
+    \"\"\n        for table_name in ('utilization', \"volume\"):\n\n            p\
+    \ = self.partitions.find_or_new(table=table_name, grain='county')\n          \
+    \  p.clean()\n        \n            self.log(\"Building {}\".format(p.identity))\n\
+    \        \n            df = self.partitions.find(table=table_name, grain = None).pandas\n\
+    \        \n            df[(df.hospital_name != 'STATEWIDE TOTAL')].groupby(['year','county',\
+    \ 'gvid']).sum().reset_index().drop('id',axis=1)\n        \n            with p.inserter()\
+    \ as ins:\n                for row in df.to_dict(orient='records'):\n        \
+    \            \n                    if row['gvid']:\n                        ins.insert(row)\n\
+    \                        \n    @property\n    @memoize\n    def county_map(self):\n\
+    \        return { r['name'].replace(\" County, California\",'').lower(): r['gvid']\
+    \ \n                     for r in  self.library.dep('counties').partition.rows\
+    \  if int(r['state'] == 6)}\n        \n        \n    @property\n    @memoize\n\
+    \    def facilities_map(self):\n\n        return { r['facility_name'].lower():\
+    \ dict(r) \n                 for r in  self.library.dep('facility_info').partition.rows\
+    \ if r['facility_name']}\n        \n    @property\n    @memoize\n    def hospital_names_by_county(self):\n\
+    \        from collections import defaultdict\n        \n        d = defaultdict(set)\n\
+    \        \n        for r in  self.library.dep('facility_info').partition.rows:\n\
+    \            if r['facility_name']:\n                d[r['county_gvid']].add(r['facility_name'].lower())\n\
+    \n        return d\n\n\n    def build_modify_row(self, row_gen, p, source, row):\n\
+    \        from difflib import get_close_matches\n        \n        row['year']\
+    \ = int(source.time)\n        #row['hospital'] = row['hospital'].decode('latin1')\n\
+    \        \n        if row['county']:\n            row['county_gvid'] = self.county_map[row['county'].lower()]\n\
+    \        else:\n            row['county_gvid'] = None\n\n        hn = row['hospital_name'].lower()\n\
+    \        \n        if hn in self.facilities_map:\n            row['oshpd_id']\
+    \ = self.facilities_map[hn]['oshpd_id']\n           \n        elif row['county_gvid']:\n\
+    \            matches =  get_close_matches(hn,self.hospital_names_by_county[row['county_gvid']])\n\
+    \            \n            if matches:\n                row['matched_hospital_name']\
+    \ = matches[0].title()\n                row['oshpd_id'] = self.facilities_map[matches[0]]['oshpd_id']\n\
+    \            else:\n                self.warn(\"Failed to get OSHPD_ID for \"\
+    +hn)\n        \n        else:\n            self.warn(\"Failed to get OSHPD_ID\
+    \ for \"+hn)\n                        \n     \n\n        \n\n                \
+    \  "
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator:
+        org: Office of Statewide Health Planning and Development
+        url: http://oshpd.ca.gov/
+    maintainer: {}
+documentation: '# {about_title}
+
+
+    {about_summary}
+
+
+    ## Notes
+
+
+    Although the source of this data is OSHPD, the names of the hospitals don''t link
+    to the OSHPD facilities list. Instead, they are connected to the CDPH facilities
+    list, from bundle cdph.ca.gov-facilities.
+
+    '
+external_documentation:
+    about_ahrq:
+        description: Federal website about the quality indicator program
+        source: null
+        title: Agency for Healthcare Research and Quality Indicators
+        url: http://www.qualityindicators.ahrq.gov/
+    ahrq_spec:
+        description: AHRQ Sepcification for the Inpatient Quality Indicators
+        source: null
+        title: Inpatient Quality Indicators Technical Specifications - Version 4.5,
+            May 2013
+        url: http://www.qualityindicators.ahrq.gov/Modules/IQI_TechSpec.aspx
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/ResearchReports/HospIPQualInd/Vol-Util_IndicatorsRpt/
+identity:
+    bspace: null
+    btime: null
+    dataset: iqi
+    id: d03o
+    revision: 2
+    source: oshpd.ca.gov
+    subset: volume
+    type: null
+    variation: null
+    version: 0.0.2
+names:
+    fqname: oshpd.ca.gov-iqi-volume-0.0.2~d03o002
+    name: oshpd.ca.gov-iqi-volume
+    vid: d03o002
+    vname: oshpd.ca.gov-iqi-volume-0.0.2
+process: {}
+schema:
+-   column: id
+    d_caster: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Utilization Indicators
+    i1: ''
+    i2: ''
+    i3: ''
+    id: t03o01
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: utilization
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    d_index: oshpd.ca.gov-facilities-index-facilities_index:year
+    d_index_version: 0.0.7:year
+    d_orig_proto_vid: oshpd_facilities.year
+    description: ''
+    i1: ''
+    i2: '1'
+    i3: ''
+    id: c03o01002
+    is_fk: c04101003
+    is_pk: ''
+    proto_vid: c0010k003
+    seq: '2'
+    size: '4'
+    table: utilization
+    type: INTEGER
+-   column: county_gvid
+    d_caster: ''
+    d_index: census.gov-index-counties:gvid
+    d_index_version: 0.0.5:gvid
+    d_orig_proto_vid: counties.gvid
+    description: County gvid
+    i1: '1'
+    i2: '1'
+    i3: ''
+    id: c03o01003
+    is_fk: c03x04003
+    is_pk: ''
+    proto_vid: c00109003
+    seq: '3'
+    size: '6'
+    table: utilization
+    type: VARCHAR
+-   column: oshpd_id
+    d_caster: ''
+    d_index: oshpd.ca.gov-facilities-index-facilities_index:oshpd_id
+    d_index_version: 0.0.7:oshpd_id
+    d_orig_proto_vid: oshpd_facilities.oshpd_id
+    description: Link to the facility index
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o01004
+    is_fk: c04101002
+    is_pk: ''
+    proto_vid: c0010k002
+    seq: '4'
+    size: ''
+    table: utilization
+    type: VARCHAR
+-   column: county
+    d_caster: latin_decode
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: County
+    i1: ''
+    i2: ''
+    i3: '1'
+    id: c03o01005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '85'
+    table: utilization
+    type: VARCHAR
+-   column: hospital_name
+    d_caster: latin_decode
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Hospital Name
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o01006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '85'
+    table: utilization
+    type: VARCHAR
+-   column: matched_hospital_name
+    d_caster: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Hospital name, as it is associated with the oshpd_id in the facilities
+        index
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o01007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: ''
+    table: utilization
+    type: VARCHAR
+-   column: uncomplicated_cesarean_delivery_count
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Uncomplicated Cesarean Delivery (Count)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o01008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: '6'
+    table: utilization
+    type: REAL
+-   column: uncomplicated_cesarean_delivery_observed_rate_per_100_deliveries
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Uncomplicated Cesarean Delivery Observed Rate per 100 Deliveries
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o01009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: ''
+    table: utilization
+    type: REAL
+-   column: uncomplicated_primary_cesarean_delivery_count
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Uncomplicated Primary Cesarean Delivery  (Count)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: '5'
+    table: utilization
+    type: REAL
+-   column: uncomplicated_primary_cesarean_delivery_observed_rate_per_100_deliveries
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Uncomplicated Primary Cesarean Delivery Observed Rate per 100 Deliveries
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: ''
+    table: utilization
+    type: REAL
+-   column: vaginal_birth_after_cesarean_vbac_count
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Vaginal Birth after Cesarean (VBAC) (Count)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: '4'
+    table: utilization
+    type: REAL
+-   column: vaginal_birth_after_cesarean_vbac_observed_rate_per_100_deliveries
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Vaginal Birth after Cesarean (VBAC) Observed Rate per 100 Deliveries
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: ''
+    table: utilization
+    type: REAL
+-   column: uncomplicated_vbac_count
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Uncomplicated VBAC (Count)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: '4'
+    table: utilization
+    type: REAL
+-   column: uncomplicated_vbac_observed_rate_per_100_deliveries
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Uncomplicated VBAC Observed Rate per 100 Deliveries
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: ''
+    table: utilization
+    type: REAL
+-   column: laparoscopic_cholecystectomy_gall_bladder_surgery_count
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Laparoscopic Cholecystectomy  (Gall Bladder Surgery) (Count)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100g
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '16'
+    size: '5'
+    table: utilization
+    type: REAL
+-   column: laparoscopic_cholecystectomy_gall_bladder_surgery_observed_rate_per_100_procedures
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Laparoscopic Cholecystectomy  (Gall Bladder Surgery) Observed Rate
+        per 100 Procedures
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100h
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '17'
+    size: ''
+    table: utilization
+    type: REAL
+-   column: all_vaginal_birth_after_cesarean_vbac_count
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: All Vaginal Birth after Cesarean (VBAC) (Count)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100i
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '18'
+    size: ''
+    table: utilization
+    type: REAL
+-   column: all_vaginal_birth_after_cesarean_vbac_observed_rate_per_100_deliveries
+    d_caster: real_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: All Vaginal Birth after Cesarean (VBAC) Observed Rate per 100 Deliveries
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0100j
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '19'
+    size: ''
+    table: utilization
+    type: REAL
+-   column: ''
+    d_caster: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: ''
+    i1: ''
+    i2: ''
+    i3: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_caster: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Volume indicators
+    i1: ''
+    i2: ''
+    i3: ''
+    id: t03o02
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: volume
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    d_index: oshpd.ca.gov-facilities-index-facilities_index:year
+    d_index_version: 0.0.7:year
+    d_orig_proto_vid: oshpd_facilities.year
+    description: ''
+    i1: ''
+    i2: '1'
+    i3: ''
+    id: c03o02002
+    is_fk: c04101003
+    is_pk: ''
+    proto_vid: c0010k003
+    seq: '2'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: county_gvid
+    d_caster: ''
+    d_index: census.gov-index-counties:gvid
+    d_index_version: 0.0.5:gvid
+    d_orig_proto_vid: counties.gvid
+    description: County gvid
+    i1: '1'
+    i2: '1'
+    i3: ''
+    id: c03o02003
+    is_fk: c03x04003
+    is_pk: ''
+    proto_vid: c00109003
+    seq: '3'
+    size: '6'
+    table: volume
+    type: VARCHAR
+-   column: oshpd_id
+    d_caster: ''
+    d_index: oshpd.ca.gov-facilities-index-facilities_index:oshpd_id
+    d_index_version: 0.0.7:oshpd_id
+    d_orig_proto_vid: oshpd_facilities.oshpd_id
+    description: Link to the facility index
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o02004
+    is_fk: c04101002
+    is_pk: ''
+    proto_vid: c0010k002
+    seq: '4'
+    size: ''
+    table: volume
+    type: VARCHAR
+-   column: county
+    d_caster: latin_decode
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: County
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o02005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '84'
+    table: volume
+    type: VARCHAR
+-   column: hospital_name
+    d_caster: latin_decode
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Hospital Name
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o02006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '84'
+    table: volume
+    type: VARCHAR
+-   column: matched_hospital_name
+    d_caster: ''
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Hospital name, as it is associated with the oshpd_id in the facilities
+        index
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o02007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: ''
+    table: volume
+    type: VARCHAR
+-   column: esophageal_resection
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Esophageal  Resection
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o02008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: pancreatic_resection
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Pancreatic  Resection
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o02009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: pancreatic_resection_cancer
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Pancreatic Resection  (Cancer)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: '3'
+    table: volume
+    type: INTEGER
+-   column: pancreatic_resection_other
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Pancreatic Resection  (Other)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: aaa_repair
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: AAA Repair
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: aaa_repair_ruptured_open
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: AAA Repair  (Ruptured, Open)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: aaa_repair_un_ruptured_open
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: AAA Repair  (Un-ruptured, Open)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: aaa_repair_ruptured_endovascular
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: AAA Repair  (Ruptured, Endovascular)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: aaa_repair_un_ruptured_endovascular
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: AAA Repair  (Un-ruptured, Endovascular)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200g
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '16'
+    size: '5'
+    table: volume
+    type: INTEGER
+-   column: cabg
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: CABG
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200h
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '17'
+    size: '5'
+    table: volume
+    type: INTEGER
+-   column: pci
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: PCI
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200i
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '18'
+    size: '5'
+    table: volume
+    type: INTEGER
+-   column: carotid_endarterectomy
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: Carotid  Endarterectomy
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200j
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '19'
+    size: '4'
+    table: volume
+    type: INTEGER
+-   column: aaa_repair_unruptured_open
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: AAA Repair  (Unruptured, Open)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200k
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '20'
+    size: '3'
+    table: volume
+    type: INTEGER
+-   column: aaa_repair_unruptured_endovascular
+    d_caster: int_caster
+    d_index: ''
+    d_index_version: ''
+    d_orig_proto_vid: ''
+    description: AAA Repair  (Unruptured, Endovascular)
+    i1: ''
+    i2: ''
+    i3: ''
+    id: c03o0200l
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '21'
+    size: ''
+    table: volume
+    type: INTEGER
+versions:
+    2:
+        date: '2015-04-27T18:10:30.816403'
+        description: Setting new access remotes
+        version: 0.0.2

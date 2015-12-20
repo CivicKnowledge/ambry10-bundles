@@ -1,0 +1,46 @@
+about:
+  access: restricted
+  footnote: null
+  grain: null
+  groups: []
+  license: ckdbl
+  processed: null
+  rights: public
+  source: Custom Data Extraction from the , {{contact_source.creator.org}}, Patient
+    Discharge Data, {{external_documentation.dataset.url}}
+  space: California
+  subject: null
+  summary: " Inpatient discharges from licensed general acute care hospitals, by Medicare\
+    \ Severity-Diagnosis Related Group and county of patient\u2019s residence.; Medicare\
+    \ Severity-Diagnosis Related Group (MS-DRG) are aggregated to the county of the\
+    \ patient's residence and the hospital from which the patient was discharged. "
+  tags: []
+  time: null
+  title: Inpatient Hospital Discharges By County and Hospital, 2009 - 2013
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  dataset:
+    description: Main webpage for the dataset.
+    source: null
+    title: Patient Discharge Data
+    url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/PublicDataSet/
+identity:
+  dataset: msdrg
+  id: d03R
+  revision: 3
+  source: oshpd.ca.gov
+  variation: county
+  version: 0.0.3
+names:
+  fqname: oshpd.ca.gov-msdrg-county-0.0.3~d03R003
+  name: oshpd.ca.gov-msdrg-county
+  vid: d03R003
+  vname: oshpd.ca.gov-msdrg-county-0.0.3
+requirements: {}
+versions: {}

@@ -1,0 +1,498 @@
+about:
+    access: restricted
+    grain: county
+    groups: []
+    license: ckdbl
+    rights: public
+    space: California
+    subject: null
+    summary: Patient Safety Indicators (PSIs) are measures that represent rates of
+        potentially-preventable adverse events that occur during a hospital stay.
+        They provide a perspective on potential complications and errors resulting
+        from a hospital admission and help assess total incidence within a region.
+    tags: []
+    time: null
+    title: Patient Saftey Indicators
+build:
+    build: {}
+    dependencies:
+        counties: census.gov-index-counties
+    sources:
+        counties:
+            filetype: partition
+            url: census.gov-index-counties
+            urltype: ref
+        psi:
+            description: PSI for 2005 to 2013
+            row_spec:
+                data_end_line: null
+                data_start_line: 7
+                header_comment_lines:
+                - 0
+                - 1
+                - 2
+                - 3
+                - 5
+                header_lines:
+                - 4
+                - 6
+            segment: 1
+            url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PSI/PSI_Summary_V45a_2005-2013.xlsx
+    views: {}
+bundle_code: "'''\nThis is basically the same as in pdi\n'''\n\nfrom  ambry.bundle.loader\
+    \ import CsvBundle\nfrom ambry.util import memoize\n\n\nclass Bundle(CsvBundle):\n\
+    \    ''' '''\n\n    @property\n    @memoize\n    def county_map(self):\n     \
+    \   return { r['name'].replace(\" County, California\",'').lower(): r['gvid']\
+    \ \n                     for r in  self.library.dep('counties').partition.rows\
+    \  if int(r['state'] == 6)}\n\n\n    def mangle_column_name(self, i, n):\n   \
+    \     import re\n        \n        n = re.sub('[\\r\\n]+',' ',n)\n\n        m\
+    \ = re.match(r'^(P.I) \\#(\\d+)(.*)$', n)\n        \n        if not m:\n     \
+    \       mangled =  n.lower()\n            \n        else:\n            grp = m.group(1).lower()\n\
+    \            psi_no = m.group(2)\n            ind_type = re.sub(r'[\\W]+', '_',\
+    \ m.group(3).strip().lower())\n            mangled =  \"{}_{}_{}\".format(grp,\
+    \ psi_no, ind_type)\n\n        if mangled in self.col_map and self.col_map[mangled]['col']\
+    \ :\n            return self.col_map[mangled]['col']\n        else:\n        \
+    \    return mangled\n    \n    def build_modify_row(self, row_gen, p, source,\
+    \ row):\n\n        try:\n            row['gvid'] =  self.county_map[row['county'].lower()]\n\
+    \        except KeyError:\n            pass\n\n        \n\n\n\n        \n\n"
+column_map:
+-   col: ''
+    header: ''
+-   col: ''
+    header: '# cases'
+-   col: ''
+    header: ahrq patient safety indicators (psis), 2005-2013
+-   col: ''
+    header: county
+-   col: ''
+    header: observed rate
+-   col: ''
+    header: population
+-   col: ''
+    header: psi_21_retained_surgical_item_or_unretrieved_device_fragment_cases
+-   col: ''
+    header: psi_21_retained_surgical_item_or_unretrieved_device_fragment_observed_rate
+-   col: ''
+    header: psi_21_retained_surgical_item_or_unretrieved_device_fragment_population
+-   col: ''
+    header: psi_22_iatrogenic_pneumothorax_cases
+-   col: ''
+    header: psi_22_iatrogenic_pneumothorax_observed_rate
+-   col: ''
+    header: psi_22_iatrogenic_pneumothorax_population
+-   col: ''
+    header: psi_23_central_venous_catheter_related_blood_stream_infection_cases
+-   col: ''
+    header: psi_23_central_venous_catheter_related_blood_stream_infection_observed_rate
+-   col: ''
+    header: psi_23_central_venous_catheter_related_blood_stream_infection_population
+-   col: ''
+    header: psi_24_postoperative_wound_dehiscence_cases
+-   col: ''
+    header: psi_24_postoperative_wound_dehiscence_observed_rate
+-   col: ''
+    header: psi_24_postoperative_wound_dehiscence_population
+-   col: ''
+    header: psi_25_accidental_puncture_or_laceration_cases
+-   col: ''
+    header: psi_25_accidental_puncture_or_laceration_observed_rate
+-   col: ''
+    header: psi_25_accidental_puncture_or_laceration_population
+-   col: ''
+    header: psi_26_transfusion_reaction_cases
+-   col: ''
+    header: psi_26_transfusion_reaction_observed_rate
+-   col: ''
+    header: psi_26_transfusion_reaction_population
+-   col: ''
+    header: psi_27_perioperative_hemorrhage_or_hematoma_cases
+-   col: ''
+    header: psi_27_perioperative_hemorrhage_or_hematoma_observed_rate
+-   col: ''
+    header: psi_27_perioperative_hemorrhage_or_hematoma_population
+-   col: ''
+    header: year
+contact_bundle:
+    creator:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+    maintainer:
+        email: eric@sandiegodata.org
+        name: Eric Busboom
+        url: http://www.sandiegodata.org
+contact_source:
+    creator: {}
+    maintainer: {}
+documentation: "\n# {about_title}\n\n{about_summary}\n\n## Development Notes\n\nThis\
+    \ bundle requires updating the sources manually, since the Excel files are too\
+    \ complex for manual processing. The \nSource can be automatically cached to the\
+    \ source store, but then it is converted to CSV manually. \n"
+external_documentation:
+    dataset:
+        description: Information about the dataset
+        source: null
+        title: Dataset Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.htm
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.html
+    technotes:
+        description: Technical Notes
+        source: null
+        title: Technical Notes
+        url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.html/PSI/PSI_TechNotes_V45a_2005-2013.pdf
+identity:
+    bspace: null
+    btime: null
+    dataset: psi
+    id: d03B
+    revision: 2
+    source: oshpd.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.2
+names:
+    fqname: oshpd.ca.gov-psi-0.0.2~d03B002
+    name: oshpd.ca.gov-psi
+    vid: d03B002
+    vname: oshpd.ca.gov-psi-0.0.2
+process: {}
+schema:
+-   column: id
+    d_grain: counties
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: Multi-year PQI file.
+    id: t03B01
+    is_fk: ''
+    is_pk: '1'
+    proto_vid: ''
+    seq: '1'
+    size: ''
+    table: psi
+    type: INTEGER
+-   column: gvid
+    d_grain: ''
+    d_index: census.gov-index-counties-0.0.4:gvid
+    d_orig_proto_vid: counties.gvid
+    description: gvid
+    id: c03B01002
+    is_fk: c03x04003
+    is_pk: ''
+    proto_vid: c00109003
+    seq: '2'
+    size: '6'
+    table: psi
+    type: VARCHAR
+-   column: year
+    d_grain: ''
+    d_index: census.gov-index-counties-0.0.4:year
+    d_orig_proto_vid: counties.year
+    description: Year
+    id: c03B01003
+    is_fk: c03x04002
+    is_pk: ''
+    proto_vid: c00109002
+    seq: '3'
+    size: '4'
+    table: psi
+    type: INTEGER
+-   column: county
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: County
+    id: c03B01005
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '5'
+    size: '15'
+    table: psi
+    type: VARCHAR
+-   column: psi_21_retained_surgical_item_or_unretrieved_device_fragment_cases
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #21 Retained Surgical Item or Unretrieved Device Fragment #
+        Cases'
+    id: c03B01006
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '6'
+    size: '3'
+    table: psi
+    type: INTEGER
+-   column: psi_21_retained_surgical_item_or_unretrieved_device_fragment_population
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #21 Retained Surgical Item or Unretrieved Device Fragment Population'
+    id: c03B01007
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '7'
+    size: '8'
+    table: psi
+    type: INTEGER
+-   column: psi_21_retained_surgical_item_or_unretrieved_device_fragment_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #21 Retained Surgical Item or Unretrieved Device Fragment Observed
+        Rate'
+    id: c03B01008
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '8'
+    size: ''
+    table: psi
+    type: REAL
+-   column: psi_22_iatrogenic_pneumothorax_cases
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #22 Iatrogenic Pneumothorax # Cases'
+    id: c03B01009
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '9'
+    size: '4'
+    table: psi
+    type: INTEGER
+-   column: psi_22_iatrogenic_pneumothorax_population
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #22 Iatrogenic Pneumothorax Population'
+    id: c03B0100a
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '10'
+    size: '8'
+    table: psi
+    type: INTEGER
+-   column: psi_22_iatrogenic_pneumothorax_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #22 Iatrogenic Pneumothorax Observed Rate'
+    id: c03B0100b
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '11'
+    size: ''
+    table: psi
+    type: REAL
+-   column: psi_23_central_venous_catheter_related_blood_stream_infection_cases
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #23 Central Venous Catheter-Related Blood Stream Infection #
+        Cases'
+    id: c03B0100c
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '12'
+    size: '4'
+    table: psi
+    type: INTEGER
+-   column: psi_23_central_venous_catheter_related_blood_stream_infection_population
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #23 Central Venous Catheter-Related Blood Stream Infection Population'
+    id: c03B0100d
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '13'
+    size: '8'
+    table: psi
+    type: INTEGER
+-   column: psi_23_central_venous_catheter_related_blood_stream_infection_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #23 Central Venous Catheter-Related Blood Stream Infection Observed
+        Rate'
+    id: c03B0100e
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '14'
+    size: ''
+    table: psi
+    type: REAL
+-   column: psi_24_postoperative_wound_dehiscence_cases
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #24 Postoperative Wound Dehiscence # Cases'
+    id: c03B0100f
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '15'
+    size: '3'
+    table: psi
+    type: INTEGER
+-   column: psi_24_postoperative_wound_dehiscence_population
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #24 Postoperative Wound Dehiscence Population'
+    id: c03B0100g
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '16'
+    size: '8'
+    table: psi
+    type: INTEGER
+-   column: psi_24_postoperative_wound_dehiscence_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #24 Postoperative Wound Dehiscence Observed Rate'
+    id: c03B0100h
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '17'
+    size: ''
+    table: psi
+    type: REAL
+-   column: psi_25_accidental_puncture_or_laceration_cases
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #25 Accidental Puncture or Laceration # Cases'
+    id: c03B0100i
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '18'
+    size: '4'
+    table: psi
+    type: INTEGER
+-   column: psi_25_accidental_puncture_or_laceration_population
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #25 Accidental Puncture or Laceration Population'
+    id: c03B0100j
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '19'
+    size: '8'
+    table: psi
+    type: INTEGER
+-   column: psi_25_accidental_puncture_or_laceration_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #25 Accidental Puncture or Laceration Observed Rate'
+    id: c03B0100k
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '20'
+    size: ''
+    table: psi
+    type: REAL
+-   column: psi_26_transfusion_reaction_cases
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #26 Transfusion Reaction # Cases'
+    id: c03B0100l
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '21'
+    size: '2'
+    table: psi
+    type: INTEGER
+-   column: psi_26_transfusion_reaction_population
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #26 Transfusion Reaction Population'
+    id: c03B0100m
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '22'
+    size: '8'
+    table: psi
+    type: INTEGER
+-   column: psi_26_transfusion_reaction_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #26 Transfusion Reaction Observed Rate'
+    id: c03B0100n
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '23'
+    size: ''
+    table: psi
+    type: REAL
+-   column: psi_27_perioperative_hemorrhage_or_hematoma_cases
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #27 Perioperative Hemorrhage or Hematoma # Cases'
+    id: c03B0100o
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '24'
+    size: '4'
+    table: psi
+    type: INTEGER
+-   column: psi_27_perioperative_hemorrhage_or_hematoma_population
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #27 Perioperative Hemorrhage or Hematoma Population'
+    id: c03B0100p
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '25'
+    size: '8'
+    table: psi
+    type: INTEGER
+-   column: psi_27_perioperative_hemorrhage_or_hematoma_observed_rate
+    d_grain: ''
+    d_index: ''
+    d_orig_proto_vid: ''
+    description: 'PSI #27 Perioperative Hemorrhage or Hematoma Observed Rate'
+    id: c03B0100q
+    is_fk: ''
+    is_pk: ''
+    proto_vid: ''
+    seq: '26'
+    size: ''
+    table: psi
+    type: REAL
+versions:
+    2:
+        date: '2015-04-27T18:10:06.665553'
+        description: Setting new access remotes
+        version: 0.0.2

@@ -1,0 +1,52 @@
+about:
+  access: restricted
+  footnote: null
+  grain: null
+  groups: []
+  license: restricted
+  processed: null
+  rights: restricted
+  source: null
+  space: California
+  subject: null
+  summary: The California Office of Statewide Health Planning and Development (OSHPD)
+    provides public data sets of patient discharge (PDD), emergency department (ED),
+    and ambulatory surgery (AS) data collected from licensed California hospitals,
+    hospital emergency departments, and licensed freestanding ambulatory surgery clinics
+    in California. Each record within the data sets consists of either one inpatient
+    discharge, or one outpatient encounter, also known as a service visit. Data included
+    on the public data sets includes clinical, payer, and facility information.
+  tags: []
+  time: p2010e2013
+  title: Patient Discharge Data, Public Use File
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  dataset:
+    description: Main webpage for the dataset.
+    source: null
+    title: Patient Discharge Data, Public Use File
+    url: http://www.oshpd.ca.gov/HID/Data_Request_Center/PUF.html
+  documentation:
+    description: The primary documentation file
+    source: null
+    title: Main Documentation
+    url: http://www.oshpd.ca.gov/HID/Data_Request_Center/documents/puf/PDD_PublicFileDocumentation_2010_2012.pdf
+identity:
+  dataset: patient_discharges
+  id: d03V
+  revision: 5
+  source: oshpd.ca.gov
+  version: 0.0.5
+names:
+  fqname: oshpd.ca.gov-patient_discharges-0.0.5~d03V005
+  name: oshpd.ca.gov-patient_discharges
+  vid: d03V005
+  vname: oshpd.ca.gov-patient_discharges-0.0.5
+requirements: {}
+versions: {}
