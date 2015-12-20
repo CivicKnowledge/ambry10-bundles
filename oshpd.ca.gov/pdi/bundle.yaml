@@ -17,13 +17,21 @@ about:
   time: null
   title: Pediatric Quality Indicators (PDIs)
 contacts:
-  creator:
+  source:
+    org: California Office of Statewide Health Planning and Development (OSHPD)
+    url: http://www.oshpd.ca.gov/
+  wrangler:
     email: eric@civicknowledge.com
     name: Eric Busboom
     org: Civic Knowledge
     url: http://civicknowledge.com
 dependencies: {}
 external_documentation:
+  ahrq:
+    description: Home page for the Agency for Healthcare Research and Quality's quality
+      indicators program.
+    title: AHRQ Quality Indicators Program Page
+    url: http://www.qualityindicators.ahrq.gov/
   ahrq_spec:
     description: AHRQ technical specification for the Pediatric Quality Indicators
     source: null

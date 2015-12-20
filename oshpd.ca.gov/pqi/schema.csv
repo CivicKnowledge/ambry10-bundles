@@ -1,7 +1,7 @@
 "table","column","datatype","size","description","transform"
 ,,,,,
 "pqi","id","int",,"Multi-year PQI file.",
-"pqi","gvid","str",6,"gvid",
+"pqi","gvid","str",6,"gvid","^extract_county"
 "pqi","year","int",4,"Year",
 "pqi","county","str",15,"County",
 "pqi","pqi_1_diabetes_short_term_complications_cases","int",5,"PQI #1 Diabetes Short-term Complications # Cases",
@@ -68,4 +68,3 @@
 "pqi","pqi_92_chronic_composite_population","int",8,"PQI #92 Chronic Composite Population",
 "pqi","pqi_92_chronic_composite_observed_rate","float",,"PQI #92 Chronic Composite Observed Rate",
 "pqi","pqi_92_chronic_composite_risk_adjusted_rate","float",,"PQI #92 Chronic Composite Risk-Adjusted Rate",
-"pqi","gvid","census.GVid",,"Geographic identifier for the cointy","^extract_county"

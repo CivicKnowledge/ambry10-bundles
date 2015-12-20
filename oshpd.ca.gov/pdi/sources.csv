@@ -1,2 +1,2 @@
-"name","title","dest_table_name","time","description","filetype","reftype","ref"
-"pdi","PDI SUmmary","pdi","PY2005e2013","Pediatric Quality Indicators",,,"http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html/PDI/PDI_Summary.xlsx"
+name,title,dest_table_name,time,start_line,end_line,header_lines,description,ref,state
+pdi,PDI Summary,pdi,PY2005e2013,1,421,0,Pediatric Quality Indicators,http://ds.civicknowledge.org/oshpd.ca.gov/oshpd.ca.gov-pdi/PDI_Summary.csv,ingest_done

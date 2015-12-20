@@ -1,1 +1,15 @@
-table,position,source_header,dest_header,datatype,valuetype,start,width,size,summary,description
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+pdi,1,year,year,int,,False,,,,,Year
+pdi,2,county,county,str,,False,,,,,County
+pdi,3,pdi_14_asthma_cases,pdi_14_asthma_cases,int,,True,,,,,PDI #14 Asthma: # Cases
+pdi,4,pdi_14_asthma_risk_adjusted_rate,pdi_14_asthma_risk_adjusted_rate,float,,False,,,,,PDI #14 Asthma: Risk-Adjusted Rate
+pdi,5,pdi_15_diabetes_short_term_complications_cases,pdi_15_diabetes_short_term_complications_cases,int,,True,,,,,PDI #15 Diabetes Short-term Complications: # Cases
+pdi,6,pdi_15_diabetes_short_term_complications_risk_adjusted_rate,pdi_15_diabetes_short_term_complications_risk_adjusted_rate,float,,False,,,,,PDI #15 Diabetes Short-term Complications: Risk-Adjusted Rate
+pdi,7,pdi_16_gastroenteritis_cases,pdi_16_gastroenteritis_cases,int,,True,,,,,PDI #16 Gastroenteritis: # Cases
+pdi,8,pdi_16_gastroenteritis_risk_adjusted_rate,pdi_16_gastroenteritis_risk_adjusted_rate,float,,False,,,,,PDI #16 Gastroenteritis: Risk-Adjusted Rate
+pdi,9,pdi_17_perforated_appendix_cases,pdi_17_perforated_appendix_cases,int,,True,,,,,PDI #17 Perforated Appendix: # Cases
+pdi,10,pdi_17_perforated_appendix_risk_adjusted_rate,pdi_17_perforated_appendix_risk_adjusted_rate,float,,False,,,,,PDI #17 Perforated Appendix: Risk-Adjusted Rate
+pdi,11,pdi_18_urinary_tract_infection_cases,pdi_18_urinary_tract_infection_cases,int,,True,,,,,PDI #18 Urinary Tract Infection: # Cases
+pdi,12,pdi_18_urinary_tract_infection_risk_adjusted_rate,pdi_18_urinary_tract_infection_risk_adjusted_rate,float,,False,,,,,PDI #18 Urinary Tract Infection: Risk-Adjusted Rate
+pdi,13,pqi_9_low_birth_weight_births,pqi_9_low_birth_weight_births,str,,False,,,,,PQI #9 Low Birth Weight: # Births
+pdi,14,pqi_9_low_birth_weight_risk_adjusted_rate,pqi_9_low_birth_weight_risk_adjusted_rate,float,,False,,,,,PQI #9 Low Birth Weight: Risk-Adjusted Rate
