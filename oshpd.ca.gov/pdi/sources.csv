@@ -1,3 +1,2 @@
-name,title,dest_table_name,time,space,grain,description,filetype,reftype,ref,state
-PDI_Summary,PDI_Summary,PDI_Summary,2005/2013,California,county,Pediatric Quality Indicators,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html/PDI/PDI_Summary.xlsx,synced
-counties,counties,counties,,California,county,,partition,ref,census.gov-index-counties,synced
+"name","title","dest_table_name","time","description","filetype","reftype","ref"
+"pdi","PDI SUmmary","pdi","PY2005e2013","Pediatric Quality Indicators",,,"http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/pdi_overview.html/PDI/PDI_Summary.xlsx"
