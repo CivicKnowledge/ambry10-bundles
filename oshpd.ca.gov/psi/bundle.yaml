@@ -1,5 +1,6 @@
 about:
   access: restricted
+  remote: restricted
   footnote: nll
   grain: county
   groups: []
@@ -15,30 +16,33 @@ about:
     assess total incidence within a region.
   tags: []
   time: null
-  title: Patient Saftey Indicators
+  title: Patient Saftey Indicators (PSIs)
 contacts:
-  creator:
+  wrangler:
     email: eric@civicknowledge.com
     name: Eric Busboom
     org: Civic Knowledge
     url: http://civicknowledge.com
+  source: 
+    org: California Office of Statewide Health Planning and Development (OSHPD)
+    url: 'http://www.oshpd.ca.gov/'
 dependencies: {}
 external_documentation:
   dataset:
     description: Information about the dataset
     source: null
     title: Dataset Page
-    url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.htm
-  download:
-    description: Web page that links to the source files.
-    source: null
-    title: Download Page
-    url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.html
+    url: http://www.oshpd.ca.gov/hid/products/patdischargedata/ahrq/psi_overview.html
   technotes:
     description: Technical Notes
     source: null
     title: Technical Notes
     url: http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/psi_overview.html/PSI/PSI_TechNotes_V45a_2005-2013.pdf
+  ahrq:
+    title: AHRQ Quality Indicators Program Page
+    description: Home page for the Agency for Healthcare Research and Quality's quality 
+     indicators program.
+    url: http://www.qualityindicators.ahrq.gov/
 identity:
   dataset: psi
   id: d03B

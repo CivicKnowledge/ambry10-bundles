@@ -1,3 +1,3 @@
-name,title,dest_table_name,space,grain,segment,start_line,comment_lines,header_lines,description,filetype,reftype,ref,state
-psi,psi,psi,California,county,1,7,"0,1,2,3,5","4,6",PSI for 2005 to 2013,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PSI/PSI_Summary_V45a_2005-2013.xlsx,synced
+name,title,dest_table_name,space,grain,segment,start_line,end_line,header_lines,description,filetype,reftype,ref,state
 counties,counties,counties,California,county,,,,,,partition,ref,census.gov-index-counties,synced
+psi,psi,psi,California,county,1,7,538,"4,6",PSI for 2005 to 2013,,,http://www.oshpd.ca.gov/HID/Products/PatDischargeData/AHRQ/PSI/PSI_Summary_V45a_2005-2013.xlsx,ingest_done

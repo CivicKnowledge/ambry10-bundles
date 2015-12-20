@@ -1,1 +1,24 @@
-table,position,source_header,dest_header,datatype,valuetype,start,width,size,summary,description
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+psi,1,year,year,int,,False,,,,,Year
+psi,2,county,county,str,,False,,,,,County
+psi,3,psi_21_retained_surgical_item_or_unretrieved_device_fragment_cases,psi_21_retained_surgical_item_or_unretrieved_device_fragment_cases,int,,False,,,,,PSI #21 Retained Surgical Item or Unretrieved Device Fragment # Cases
+psi,4,psi_21_retained_surgical_item_or_unretrieved_device_fragment_population,psi_21_retained_surgical_item_or_unretrieved_device_fragment_population,int,,False,,,,,PSI #21 Retained Surgical Item or Unretrieved Device Fragment Population
+psi,5,psi_21_retained_surgical_item_or_unretrieved_device_fragment_observed_rate,psi_21_retained_surgical_item_or_unretrieved_device_fragment_observed_rate,float,,False,,,,,PSI #21 Retained Surgical Item or Unretrieved Device Fragment Observed Rate
+psi,6,psi_22_iatrogenic_pneumothorax_cases,psi_22_iatrogenic_pneumothorax_cases,int,,False,,,,,PSI #22 Iatrogenic Pneumothorax # Cases
+psi,7,psi_22_iatrogenic_pneumothorax_population,psi_22_iatrogenic_pneumothorax_population,int,,False,,,,,PSI #22 Iatrogenic Pneumothorax Population
+psi,8,psi_22_iatrogenic_pneumothorax_observed_rate,psi_22_iatrogenic_pneumothorax_observed_rate,float,,False,,,,,PSI #22 Iatrogenic Pneumothorax Observed Rate
+psi,9,psi_23_central_venous_catheter_related_blood_stream_infection_cases,psi_23_central_venous_catheter_related_blood_stream_infection_cases,int,,False,,,,,PSI #23 Central Venous Catheter-Related Blood Stream Infection # Cases
+psi,10,psi_23_central_venous_catheter_related_blood_stream_infection_population,psi_23_central_venous_catheter_related_blood_stream_infection_population,int,,False,,,,,PSI #23 Central Venous Catheter-Related Blood Stream Infection Population
+psi,11,psi_23_central_venous_catheter_related_blood_stream_infection_observed_rate,psi_23_central_venous_catheter_related_blood_stream_infection_observed_rate,float,,False,,,,,PSI #23 Central Venous Catheter-Related Blood Stream Infection Observed Rate
+psi,12,psi_24_postoperative_wound_dehiscence_cases,psi_24_postoperative_wound_dehiscence_cases,int,,False,,,,,PSI #24 Postoperative Wound Dehiscence # Cases
+psi,13,psi_24_postoperative_wound_dehiscence_population,psi_24_postoperative_wound_dehiscence_population,int,,False,,,,,PSI #24 Postoperative Wound Dehiscence Population
+psi,14,psi_24_postoperative_wound_dehiscence_observed_rate,psi_24_postoperative_wound_dehiscence_observed_rate,float,,False,,,,,PSI #24 Postoperative Wound Dehiscence Observed Rate
+psi,15,psi_25_accidental_puncture_or_laceration_cases,psi_25_accidental_puncture_or_laceration_cases,int,,False,,,,,PSI #25 Accidental Puncture or Laceration # Cases
+psi,16,psi_25_accidental_puncture_or_laceration_population,psi_25_accidental_puncture_or_laceration_population,int,,False,,,,,PSI #25 Accidental Puncture or Laceration Population
+psi,17,psi_25_accidental_puncture_or_laceration_observed_rate,psi_25_accidental_puncture_or_laceration_observed_rate,float,,False,,,,,PSI #25 Accidental Puncture or Laceration Observed Rate
+psi,18,psi_26_transfusion_reaction_cases,psi_26_transfusion_reaction_cases,int,,False,,,,,PSI #26 Transfusion Reaction # Cases
+psi,19,psi_26_transfusion_reaction_population,psi_26_transfusion_reaction_population,int,,False,,,,,PSI #26 Transfusion Reaction Population
+psi,20,psi_26_transfusion_reaction_observed_rate,psi_26_transfusion_reaction_observed_rate,float,,False,,,,,PSI #26 Transfusion Reaction Observed Rate
+psi,21,psi_27_perioperative_hemorrhage_or_hematoma_cases,psi_27_perioperative_hemorrhage_or_hematoma_cases,int,,False,,,,,PSI #27 Perioperative Hemorrhage or Hematoma # Cases
+psi,22,psi_27_perioperative_hemorrhage_or_hematoma_population,psi_27_perioperative_hemorrhage_or_hematoma_population,int,,False,,,,,PSI #27 Perioperative Hemorrhage or Hematoma Population
+psi,23,psi_27_perioperative_hemorrhage_or_hematoma_observed_rate,psi_27_perioperative_hemorrhage_or_hematoma_observed_rate,float,,False,,,,,PSI #27 Perioperative Hemorrhage or Hematoma Observed Rate
