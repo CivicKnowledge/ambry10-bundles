@@ -1,0 +1,45 @@
+about:
+    access: restricted
+    footnote: nll
+    grain: null
+    groups: null
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: null
+    subject: null
+    summary: Dataset Summary
+    tags: []
+    time: null
+    title: AskCHIS Neighborhood Edition Aggregations
+contacts:
+    wrangler:
+        email: bob@example.com
+        name: Bob Bobson
+        url: http://example.com
+dependencies: {}
+external_documentation:
+    dataset:
+        description: Web page the links to the dataset description
+        source: null
+        title: Dataset Page
+        url: http://askchisne.ucla.edu/
+    download:
+        description: API Home Page
+        source: null
+        title: API Page
+        url: https://askchisne.portal.azure-api.net
+identity:
+    dataset: askchisne
+    id: d04Q
+    revision: 1
+    source: ucla.edu
+    version: 0.0.1
+names:
+    fqname: ucla.edu-askchisne-0.0.1~d04Q001
+    name: ucla.edu-askchisne
+    vid: d04Q001
+    vname: ucla.edu-askchisne-0.0.1
+requirements: {}
+versions: {}
