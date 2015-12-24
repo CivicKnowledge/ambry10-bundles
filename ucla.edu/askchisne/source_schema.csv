@@ -1,1 +1,11 @@
-table,position,source_header,dest_header,datatype,valuetype,start,width,size,summary,description
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+variables,1,topic,topic,str,,False,,,,,topic
+variables,2,geovariablemetadataid,geovariablemetadataid,int,,False,,,,,geoVariableMetadataId
+variables,3,name,name,str,,False,,,,,name
+variables,4,sourcevariable,sourcevariable,str,,False,,,,,sourceVariable
+variables,5,label,label,str,,False,,,,,label
+variables,6,responselabel,responselabel,str,,False,,,,,responseLabel
+variables,7,datasetid,datasetid,int,,False,,,,,dataSetId
+variables,8,year,year,str,,False,,,,,year
+variables,9,agegroup,agegroup,str,,False,,,,,ageGroup
+variables,10,description,description,str,,False,,,,,description

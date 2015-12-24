@@ -1,6 +1,5 @@
 about:
-    access: private
-    remote: private
+    access: restricted
     footnote: nll
     grain: null
     groups: null
@@ -13,7 +12,7 @@ about:
     summary: Dataset Summary
     tags: []
     time: null
-    title: AskCHIS Neighborhood Edition Aggregations
+    title: Dataset Title
 contacts:
     wrangler:
         email: bob@example.com
@@ -25,22 +24,22 @@ external_documentation:
         description: Web page the links to the dataset description
         source: null
         title: Dataset Page
-        url: http://askchisne.ucla.edu/
+        url: http://example.com
     download:
-        description: API Home Page
+        description: Web page that links to the source files.
         source: null
-        title: API Page
-        url: https://askchisne.portal.azure-api.net
+        title: Download Page
+        url: http://example.com
 identity:
-    dataset: askchisne
-    id: d04Q
+    dataset: census
+    id: d04R
     revision: 1
-    source: ucla.edu
+    source: nass.usda.gov
     version: 0.0.1
 names:
-    fqname: ucla.edu-askchisne-0.0.1~d04Q001
-    name: ucla.edu-askchisne
-    vid: d04Q001
-    vname: ucla.edu-askchisne-0.0.1
+    fqname: nass.usda.gov-census-0.0.1~d04R001
+    name: nass.usda.gov-census
+    vid: d04R001
+    vname: nass.usda.gov-census-0.0.1
 requirements: {}
 versions: {}
