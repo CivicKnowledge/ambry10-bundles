@@ -59,7 +59,7 @@ class GenerateDataRows(RowGenerator):
         def make_url(f, v):
             return "{}/{}/{}".format(api_source.url, f, v)
 
-        request_headers = {'Ocp-Apim-Subscription-Key': api_source.account.secret}
+        request_headers = {'Ocp-Apim-Subscription-Key': api_source.account.decrypt_secret()}
 
         url = make_url('variable', self._source.name.upper())
 
