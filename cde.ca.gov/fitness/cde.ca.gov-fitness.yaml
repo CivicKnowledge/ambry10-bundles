@@ -1,0 +1,1533 @@
+about:
+    access: restricted
+    footnote: null
+    grain: null
+    groups: []
+    license: public
+    processed: null
+    rights: null
+    source: null
+    space: California
+    subject: null
+    summary: The physical fitness test (PFT) for students in California schools is
+        the FITNESSGRAM. The main goal of the test is to help students in starting
+        life-long habits of regular physical activity.
+    tags: []
+    time: 1999/2014
+    title: Physical Fitness Test  Results
+build:
+    build:
+        requirements: {}
+    dependencies: {}
+    sources:
+        entities01:
+            description: 2001 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2001
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip
+        entities02:
+            description: 2002 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2002
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip
+        entities03:
+            description: 2003 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2003
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip
+        entities04:
+            description: 2004 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2004
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip
+        entities05:
+            description: 2005 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2005
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip
+        entities06:
+            description: 2006 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2006
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip
+        entities07:
+            description: 2007 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2007
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip
+        entities08:
+            description: 2008 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2008
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip
+        entities09:
+            description: 2009 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2009
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip
+        entities10:
+            description: 2010 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 2010
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip
+        entities11:
+            description: 2011 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_10_14
+            time: 2011
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip
+        entities12:
+            description: "2011\u201312 Physical Fitness Entities"
+            encoding: latin-1
+            file: 2011_12_Entities.txt
+            filetype: tsv
+            table: entities_10_14
+            time: 2912
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip
+        entities13:
+            description: "2012\u201313 Physical Fitness Entities"
+            encoding: latin-1
+            file: 2012_13_Entities.txt
+            filetype: tsv
+            table: entities_10_14
+            time: 2013
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip
+        entities14:
+            description: "2013\u201314 Physical Fitness Entities"
+            encoding: latin-1
+            file: 2013_14_Entities.txt
+            filetype: tsv
+            table: entities_10_14
+            time: 2014
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip
+        entities99:
+            description: 1999 PFT Entities
+            encoding: latin-1
+            file: Entities\d+.txt
+            filetype: csv
+            table: entities_99_10
+            time: 1999
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip
+        physfit01:
+            description: 2001 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2001
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip
+        physfit02:
+            description: 2002 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2002
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip
+        physfit03:
+            description: 2003 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2003
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip
+        physfit04:
+            description: 2004 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2004
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip
+        physfit05:
+            description: 2005 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2005
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip
+        physfit06:
+            description: 2006 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2006
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip
+        physfit07:
+            description: 2007 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2007
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip
+        physfit08:
+            description: 2008 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2008
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip
+        physfit09:
+            description: 2009 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2009
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip
+        physfit10:
+            description: 2010 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 2010
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip
+        physfit11:
+            description: 2011 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_10_14
+            time: 2011
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip
+        physfit12:
+            description: "2011\u201312 Physical Fitness Research"
+            encoding: latin-1
+            file: 2011_12_ResearchFile.txt
+            filetype: tsv
+            table: physfit_10_14
+            time: 2012
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip
+        physfit13:
+            description: "2012\u201313 Physical Fitness Research"
+            encoding: latin-1
+            file: 2012_13_ResearchFile.txt
+            filetype: tsv
+            table: physfit_10_14
+            time: 2013
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip
+        physfit14:
+            description: "2013\u201314 Physical Fitness Research"
+            encoding: latin-1
+            file: 2013_14_ResearchFile.txt
+            filetype: csv
+            table: physfit_10_14
+            time: 2014
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip
+        physfit99:
+            description: 1999 PFT Fitness Results
+            encoding: latin-1
+            file: PhysFit\d+.txt
+            filetype: csv
+            table: physfit_99_10
+            time: 1999
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip
+        subgroup01:
+            description: 2001 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2001
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip
+        subgroup02:
+            description: 2002 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2002
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip
+        subgroup03:
+            description: 2003 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2003
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip
+        subgroup04:
+            description: 2004 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2004
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip
+        subgroup05:
+            description: 2005 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2005
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip
+        subgroup06:
+            description: 2006 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2006
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip
+        subgroup07:
+            description: 2007 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2007
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip
+        subgroup08:
+            description: 2008 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2008
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip
+        subgroup09:
+            description: 2009 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2009
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip
+        subgroup10:
+            description: 2010 PFT Subgroup
+            encoding: latin-1
+            file: Subgroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 2010
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip
+        subgroup11:
+            description: 2011 PFT Subgroup
+            encoding: latin-1
+            file: Subgroups\d+.txt
+            filetype: csv
+            table: subgroups_10_14
+            time: 2011
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip
+        subgroup12:
+            description: "2011\u201312 Physical Fitness Subgroups"
+            encoding: latin-1
+            file: 2011_12_Subgroups.txt
+            filetype: tsv
+            table: subgroups_10_14
+            time: 2012
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip
+        subgroup13:
+            description: "2012\u201313 Physical Fitness Subgroups"
+            encoding: latin-1
+            file: 2012_13_Subgroups.txt
+            filetype: tsv
+            table: subgroups_10_14
+            time: 2013
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip
+        subgroup14:
+            description: "2013\u201314 Physical Fitness Subgroups"
+            encoding: latin-1
+            file: 2013_14_Subgroups.txt
+            filetype: csv
+            table: subgroups_10_14
+            time: 2014
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip
+        subgroup99:
+            description: 1999 PFT Subgroup
+            encoding: latin-1
+            file: SubGroups\d+.txt
+            filetype: csv
+            table: subgroups_99_10
+            time: 1999
+            url: http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip
+    views: {}
+bundle_code: "\"\"\"\"\"\"\n\nfrom ambry.bundle.loader import LoaderBundle\n\n\nclass\
+    \ Bundle(LoaderBundle):\n    @staticmethod\n    def clean_stars(v):\n        \n\
+    \        if '*' in v:\n            return None\n        else:\n            return\
+    \ v\n\n    def row_mangler(self, source, row_gen, row):\n        \"\"\"\n    \
+    \    Override this function to alter each row of a source file, just after it\
+    \ is passed out of a Delimited file\n        reader in the DelimitedRowGenerator\n\
+    \        :param row:\n        :return:\n        \"\"\"\n        if row_gen._header\
+    \ and len(row_gen._header) < len(row):\n\n            if '\\t' in row:\n     \
+    \           raise Exception()  # tabs should be handled by filetype in the sources.\n\
+    \n            i = len(row_gen._header) - 1\n            row = row[:i] + [','.join(row[i:])]\n\
+    \n        return row\n\n\n    def build_modify_row(self, row_gen, p, source, row):\n\
+    \n            # If the table has an empty year, and the soruce has a time that\
+    \ converts to an int,\n            # set the time as a year.\n            if not\
+    \ row.get('year', False) and source.time:\n                try:\n            \
+    \        row['year'] = int(source.time)\n                except ValueError:\n\
+    \                    pass\n    "
+column_map:
+-   col: ''
+    header: ccode
+-   col: ''
+    header: cds_code
+-   col: ''
+    header: cdscode
+-   col: ''
+    header: charternum
+-   col: ''
+    header: chrtnum
+-   col: ''
+    header: co
+-   col: ''
+    header: county
+-   col: ''
+    header: dcode
+-   col: ''
+    header: dist
+-   col: ''
+    header: district
+-   col: ''
+    header: gr05_stu
+-   col: ''
+    header: gr07_stu
+-   col: ''
+    header: gr09_stu
+-   col: ''
+    header: gr5pctin
+-   col: ''
+    header: gr5pctnotin
+-   col: ''
+    header: gr7pctin
+-   col: ''
+    header: gr7pctnotin
+-   col: ''
+    header: gr9pctin
+-   col: ''
+    header: gr9pctnotin
+-   col: id_src
+    header: id
+-   col: ''
+    header: level
+-   col: ''
+    header: level_number
+-   col: ''
+    header: line_num
+-   col: ''
+    header: line_number
+-   col: ''
+    header: line_text
+-   col: ''
+    header: linenum
+-   col: ''
+    header: nohfz5
+-   col: ''
+    header: nohfz7
+-   col: ''
+    header: nohfz9
+-   col: ''
+    header: nostud5
+-   col: ''
+    header: nostud7
+-   col: ''
+    header: nostud9
+-   col: ''
+    header: perc5a
+-   col: ''
+    header: perc5b
+-   col: ''
+    header: perc5c
+-   col: ''
+    header: perc7a
+-   col: ''
+    header: perc7b
+-   col: ''
+    header: perc7c
+-   col: ''
+    header: perc9a
+-   col: ''
+    header: perc9b
+-   col: ''
+    header: perc9c
+-   col: ''
+    header: report_number
+-   col: ''
+    header: reporttype
+-   col: ''
+    header: rpttype
+-   col: ''
+    header: schl
+-   col: ''
+    header: school
+-   col: ''
+    header: scode
+-   col: ''
+    header: subgroup
+-   col: ''
+    header: subgrp
+-   col: ''
+    header: table_number
+-   col: ''
+    header: table_type
+contact_bundle:
+    creator:
+        email: roman.suprotkin@developex.org
+        name: Roman Suprotkin
+        org: ''
+        url: ''
+    maintainer: {}
+contact_source:
+    creator:
+        org: California Department of Education
+        url: http://cde.ca.gov/
+    maintainer: {}
+documentation: '
+
+    ## Field Codes
+
+
+    Several of the fields have codes, the most important of which is ``Report_Number``.
+    For a list of the codes, which include a wide variety of demographic groups, [refer
+    to the source documentation.](http://public.source.civicknowledge.com/cde.ca.gov/fitness/PFT%20Research%20File%20Layouts%202014.pdf)'
+external_documentation:
+    dataset:
+        description: The physical fitness test (PFT) for students in California schools
+            is the FITNESSGRAM. The main goal of the test is to help students in starting
+            life-long habits of regular physical activity.
+        source: null
+        title: PFT Statewide Research Files
+        url: http://www.cde.ca.gov/ta/tg/pf/pftresearch.asp
+identity:
+    bspace: null
+    btime: null
+    dataset: fitness
+    id: d04j
+    revision: 2
+    source: cde.ca.gov
+    subset: null
+    type: null
+    variation: null
+    version: 0.0.2
+names:
+    fqname: cde.ca.gov-fitness-0.0.2~d04j002
+    name: cde.ca.gov-fitness
+    vid: d04j002
+    vname: cde.ca.gov-fitness-0.0.2
+process: {}
+schema:
+-   column: id
+    d_caster: ''
+    d_has_codes: ''
+    description: PFT Subgroups 2010 to 2014
+    id: t04j01
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: subgroups_10_14
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    d_has_codes: ''
+    description: Year of release
+    id: c04j01002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '4'
+    table: subgroups_10_14
+    type: INTEGER
+-   column: level_number
+    d_caster: ''
+    d_has_codes: ''
+    description: Level_Number
+    id: c04j01003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '1'
+    table: subgroups_10_14
+    type: INTEGER
+-   column: report_number
+    d_caster: ''
+    d_has_codes: ''
+    description: Report_Number
+    id: c04j01004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '2'
+    table: subgroups_10_14
+    type: INTEGER
+-   column: table_number
+    d_caster: ''
+    d_has_codes: ''
+    description: Table_Number
+    id: c04j01005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '1'
+    table: subgroups_10_14
+    type: INTEGER
+-   column: line_number
+    d_caster: ''
+    d_has_codes: ''
+    description: Line_Number
+    id: c04j01006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '1'
+    table: subgroups_10_14
+    type: INTEGER
+-   column: line_text
+    d_caster: ''
+    d_has_codes: ''
+    description: Line_Text
+    id: c04j01007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '35'
+    table: subgroups_10_14
+    type: VARCHAR
+-   column: table_type
+    d_caster: ''
+    d_has_codes: ''
+    description: Table_Type
+    id: c04j01008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '28'
+    table: subgroups_10_14
+    type: VARCHAR
+-   column: subgroup
+    d_caster: ''
+    d_has_codes: ''
+    description: Subgroup
+    id: c04j01009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: '47'
+    table: subgroups_10_14
+    type: VARCHAR
+-   column: ''
+    d_caster: ''
+    d_has_codes: ''
+    description: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_caster: ''
+    d_has_codes: ''
+    description: PFT Subgroups 1999 to 2010
+    id: t04j02
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: subgroups_99_10
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    d_has_codes: ''
+    description: Year of release
+    id: c04j02002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '4'
+    table: subgroups_99_10
+    type: INTEGER
+-   column: subgrp
+    d_caster: ''
+    d_has_codes: ''
+    description: SubGrp
+    id: c04j02003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '2'
+    table: subgroups_99_10
+    type: INTEGER
+-   column: rpttype
+    d_caster: ''
+    d_has_codes: ''
+    description: RptType
+    id: c04j02004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '1'
+    table: subgroups_99_10
+    type: INTEGER
+-   column: linenum
+    d_caster: ''
+    d_has_codes: ''
+    description: LineNum
+    id: c04j02005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '2'
+    table: subgroups_99_10
+    type: INTEGER
+-   column: reporttype
+    d_caster: ''
+    d_has_codes: ''
+    description: ReportType
+    id: c04j02006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '28'
+    table: subgroups_99_10
+    type: VARCHAR
+-   column: subgroup
+    d_caster: ''
+    d_has_codes: ''
+    description: SubGroup
+    id: c04j02007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '30'
+    table: subgroups_99_10
+    type: VARCHAR
+-   column: line_text
+    d_caster: ''
+    d_has_codes: ''
+    description: line_text
+    id: c04j02008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '30'
+    table: subgroups_99_10
+    type: VARCHAR
+-   column: ''
+    d_caster: ''
+    d_has_codes: ''
+    description: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_caster: ''
+    d_has_codes: ''
+    description: PFT Entities 1999 to 2010
+    id: t04j03
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: entities_99_10
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    d_has_codes: ''
+    description: Year of release
+    id: c04j03002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '4'
+    table: entities_99_10
+    type: INTEGER
+-   column: ccode
+    d_caster: ''
+    d_has_codes: ''
+    description: Ccode
+    id: c04j03003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '2'
+    table: entities_99_10
+    type: INTEGER
+-   column: dcode
+    d_caster: ''
+    d_has_codes: ''
+    description: Dcode
+    id: c04j03004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '5'
+    table: entities_99_10
+    type: INTEGER
+-   column: charternum
+    d_caster: ''
+    d_has_codes: '1'
+    description: charternum
+    id: c04j03005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '4'
+    table: entities_99_10
+    type: VARCHAR
+-   column: scode
+    d_caster: ''
+    d_has_codes: ''
+    description: Scode
+    id: c04j03006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '7'
+    table: entities_99_10
+    type: INTEGER
+-   column: cds_code
+    d_caster: ''
+    d_has_codes: ''
+    description: cds_code
+    id: c04j03007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '14'
+    table: entities_99_10
+    type: INTEGER64
+-   column: county
+    d_caster: ''
+    d_has_codes: ''
+    description: County
+    id: c04j03008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '30'
+    table: entities_99_10
+    type: VARCHAR
+-   column: district
+    d_caster: ''
+    d_has_codes: ''
+    description: District
+    id: c04j03009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: '60'
+    table: entities_99_10
+    type: VARCHAR
+-   column: school
+    d_caster: ''
+    d_has_codes: ''
+    description: school
+    id: c04j0300a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: '60'
+    table: entities_99_10
+    type: VARCHAR
+-   column: ''
+    d_caster: ''
+    d_has_codes: ''
+    description: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_caster: ''
+    d_has_codes: ''
+    description: Physical Fitness Research, 2010 to 2014
+    id: t04j04
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: physfit_10_14
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    d_has_codes: ''
+    description: Year of release
+    id: c04j04002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '4'
+    table: physfit_10_14
+    type: INTEGER
+-   column: level_number
+    d_caster: ''
+    d_has_codes: ''
+    description: 1 = school 2 = district 3 = county 4 = state
+    id: c04j04003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '1'
+    table: physfit_10_14
+    type: INTEGER
+-   column: report_number
+    d_caster: ''
+    d_has_codes: ''
+    description: 'Codes for  demographic category of values in report: gender, race,
+        ethnicity, etc. See source documentation for codes.'
+    id: c04j04004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '2'
+    table: physfit_10_14
+    type: INTEGER
+-   column: table_number
+    d_caster: ''
+    d_has_codes: ''
+    description: Table_Number
+    id: c04j04005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '1'
+    table: physfit_10_14
+    type: INTEGER
+-   column: line_number
+    d_caster: ''
+    d_has_codes: ''
+    description: Line_Number
+    id: c04j04006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '1'
+    table: physfit_10_14
+    type: INTEGER
+-   column: co
+    d_caster: ''
+    d_has_codes: ''
+    description: CO
+    id: c04j04007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '2'
+    table: physfit_10_14
+    type: INTEGER
+-   column: dist
+    d_caster: ''
+    d_has_codes: ''
+    description: DIST
+    id: c04j04008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '5'
+    table: physfit_10_14
+    type: INTEGER
+-   column: schl
+    d_caster: ''
+    d_has_codes: ''
+    description: SCHL
+    id: c04j04009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: '7'
+    table: physfit_10_14
+    type: INTEGER
+-   column: line_text
+    d_caster: ''
+    d_has_codes: ''
+    description: Line_Text
+    id: c04j0400a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: '35'
+    table: physfit_10_14
+    type: VARCHAR
+-   column: nostud5
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: NoStud5
+    id: c04j0400b
+    is_fk: ''
+    is_pk: ''
+    seq: '11'
+    size: '6'
+    table: physfit_10_14
+    type: INTEGER
+-   column: nohfz5
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: NoHFZ5
+    id: c04j0400c
+    is_fk: ''
+    is_pk: ''
+    seq: '12'
+    size: '6'
+    table: physfit_10_14
+    type: INTEGER
+-   column: perc5a
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc5a
+    id: c04j0400d
+    is_fk: ''
+    is_pk: ''
+    seq: '13'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: perc5b
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc5b
+    id: c04j0400e
+    is_fk: ''
+    is_pk: ''
+    seq: '14'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: perc5c
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc5c
+    id: c04j0400f
+    is_fk: ''
+    is_pk: ''
+    seq: '15'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: nostud7
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: NoStud7
+    id: c04j0400g
+    is_fk: ''
+    is_pk: ''
+    seq: '16'
+    size: '6'
+    table: physfit_10_14
+    type: INTEGER
+-   column: nohfz7
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: NoHFZ7
+    id: c04j0400h
+    is_fk: ''
+    is_pk: ''
+    seq: '17'
+    size: '6'
+    table: physfit_10_14
+    type: INTEGER
+-   column: perc7a
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc7a
+    id: c04j0400i
+    is_fk: ''
+    is_pk: ''
+    seq: '18'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: perc7b
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc7b
+    id: c04j0400j
+    is_fk: ''
+    is_pk: ''
+    seq: '19'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: perc7c
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc7c
+    id: c04j0400k
+    is_fk: ''
+    is_pk: ''
+    seq: '20'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: nostud9
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: NoStud9
+    id: c04j0400l
+    is_fk: ''
+    is_pk: ''
+    seq: '21'
+    size: '6'
+    table: physfit_10_14
+    type: INTEGER
+-   column: nohfz9
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: NoHFZ9
+    id: c04j0400m
+    is_fk: ''
+    is_pk: ''
+    seq: '22'
+    size: '6'
+    table: physfit_10_14
+    type: INTEGER
+-   column: perc9a
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc9a
+    id: c04j0400n
+    is_fk: ''
+    is_pk: ''
+    seq: '23'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: perc9b
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc9b
+    id: c04j0400o
+    is_fk: ''
+    is_pk: ''
+    seq: '24'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: perc9c
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Perc9c
+    id: c04j0400p
+    is_fk: ''
+    is_pk: ''
+    seq: '25'
+    size: ''
+    table: physfit_10_14
+    type: REAL
+-   column: chrtnum
+    d_caster: ''
+    d_has_codes: '1'
+    description: ChrtNum
+    id: c04j0400q
+    is_fk: ''
+    is_pk: ''
+    seq: '26'
+    size: '4'
+    table: physfit_10_14
+    type: VARCHAR
+-   column: id_src
+    d_caster: ''
+    d_has_codes: ''
+    description: ID
+    id: c04j0400r
+    is_fk: ''
+    is_pk: ''
+    seq: '27'
+    size: '7'
+    table: physfit_10_14
+    type: INTEGER
+-   column: ''
+    d_caster: ''
+    d_has_codes: ''
+    description: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_caster: ''
+    d_has_codes: ''
+    description: Physical Fitness Research, 1999 to 2010
+    id: t04j05
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: physfit_99_10
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    d_has_codes: ''
+    description: Year of release
+    id: c04j05002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '4'
+    table: physfit_99_10
+    type: INTEGER
+-   column: level
+    d_caster: ''
+    d_has_codes: ''
+    description: Level
+    id: c04j05003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '1'
+    table: physfit_99_10
+    type: INTEGER
+-   column: subgrp
+    d_caster: ''
+    d_has_codes: ''
+    description: SubGrp
+    id: c04j05004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '2'
+    table: physfit_99_10
+    type: INTEGER
+-   column: rpttype
+    d_caster: ''
+    d_has_codes: ''
+    description: RptType
+    id: c04j05005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '1'
+    table: physfit_99_10
+    type: INTEGER
+-   column: line_num
+    d_caster: ''
+    d_has_codes: ''
+    description: line_num
+    id: c04j05006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '2'
+    table: physfit_99_10
+    type: INTEGER
+-   column: ccode
+    d_caster: ''
+    d_has_codes: ''
+    description: Ccode
+    id: c04j05007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '2'
+    table: physfit_99_10
+    type: INTEGER
+-   column: dcode
+    d_caster: ''
+    d_has_codes: ''
+    description: Dcode
+    id: c04j05008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '5'
+    table: physfit_99_10
+    type: INTEGER
+-   column: charternum
+    d_caster: ''
+    d_has_codes: ''
+    description: charternum
+    id: c04j05009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: '4'
+    table: physfit_99_10
+    type: VARCHAR
+-   column: scode
+    d_caster: ''
+    d_has_codes: ''
+    description: Scode
+    id: c04j0500a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: '7'
+    table: physfit_99_10
+    type: INTEGER
+-   column: cds_code
+    d_caster: ''
+    d_has_codes: ''
+    description: cds_code
+    id: c04j0500b
+    is_fk: ''
+    is_pk: ''
+    seq: '11'
+    size: '14'
+    table: physfit_99_10
+    type: INTEGER64
+-   column: gr05_stu
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr05_Stu
+    id: c04j0500c
+    is_fk: ''
+    is_pk: ''
+    seq: '12'
+    size: '6'
+    table: physfit_99_10
+    type: INTEGER
+-   column: gr5pctin
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr5PctIn
+    id: c04j0500d
+    is_fk: ''
+    is_pk: ''
+    seq: '13'
+    size: ''
+    table: physfit_99_10
+    type: REAL
+-   column: gr5pctnotin
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr5PctNotIn
+    id: c04j0500e
+    is_fk: ''
+    is_pk: ''
+    seq: '14'
+    size: ''
+    table: physfit_99_10
+    type: REAL
+-   column: gr07_stu
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr07_Stu
+    id: c04j0500f
+    is_fk: ''
+    is_pk: ''
+    seq: '15'
+    size: '6'
+    table: physfit_99_10
+    type: INTEGER
+-   column: gr7pctin
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr7PctIn
+    id: c04j0500g
+    is_fk: ''
+    is_pk: ''
+    seq: '16'
+    size: ''
+    table: physfit_99_10
+    type: REAL
+-   column: gr7pctnotin
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr7PctNotIn
+    id: c04j0500h
+    is_fk: ''
+    is_pk: ''
+    seq: '17'
+    size: ''
+    table: physfit_99_10
+    type: REAL
+-   column: gr09_stu
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr09_Stu
+    id: c04j0500i
+    is_fk: ''
+    is_pk: ''
+    seq: '18'
+    size: '6'
+    table: physfit_99_10
+    type: INTEGER
+-   column: gr9pctin
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr9PctIn
+    id: c04j0500j
+    is_fk: ''
+    is_pk: ''
+    seq: '19'
+    size: ''
+    table: physfit_99_10
+    type: REAL
+-   column: gr9pctnotin
+    d_caster: clean_stars
+    d_has_codes: '1'
+    description: Gr9PctNotIn
+    id: c04j0500k
+    is_fk: ''
+    is_pk: ''
+    seq: '20'
+    size: ''
+    table: physfit_99_10
+    type: REAL
+-   column: ''
+    d_caster: ''
+    d_has_codes: ''
+    description: ''
+    id: ''
+    is_fk: ''
+    is_pk: ''
+    seq: ''
+    size: ''
+    table: ''
+    type: ''
+-   column: id
+    d_caster: ''
+    d_has_codes: ''
+    description: PFT Entities, 2010 to 2014
+    id: t04j06
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: entities_10_14
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    d_has_codes: ''
+    description: Year of release
+    id: c04j06002
+    is_fk: ''
+    is_pk: ''
+    seq: '2'
+    size: '4'
+    table: entities_10_14
+    type: INTEGER
+-   column: ccode
+    d_caster: ''
+    d_has_codes: ''
+    description: ccode
+    id: c04j06003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '2'
+    table: entities_10_14
+    type: INTEGER
+-   column: dcode
+    d_caster: ''
+    d_has_codes: ''
+    description: dcode
+    id: c04j06004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '5'
+    table: entities_10_14
+    type: INTEGER
+-   column: chrtnum
+    d_caster: ''
+    d_has_codes: '1'
+    description: chrtnum
+    id: c04j06005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '4'
+    table: entities_10_14
+    type: VARCHAR
+-   column: scode
+    d_caster: ''
+    d_has_codes: ''
+    description: scode
+    id: c04j06006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '7'
+    table: entities_10_14
+    type: INTEGER
+-   column: cdscode
+    d_caster: ''
+    d_has_codes: ''
+    description: cdscode
+    id: c04j06007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '14'
+    table: entities_10_14
+    type: INTEGER64
+-   column: county
+    d_caster: ''
+    d_has_codes: ''
+    description: County
+    id: c04j06008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '22'
+    table: entities_10_14
+    type: VARCHAR
+-   column: district
+    d_caster: ''
+    d_has_codes: ''
+    description: District
+    id: c04j06009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: '74'
+    table: entities_10_14
+    type: VARCHAR
+-   column: school
+    d_caster: ''
+    d_has_codes: ''
+    description: School
+    id: c04j0600a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: '106'
+    table: entities_10_14
+    type: VARCHAR
+versions:
+    2:
+        date: '2015-07-21T09:42:21.235910'
+        description: Breaking out report variations
+        version: 0.0.2
