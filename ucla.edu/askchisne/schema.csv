@@ -1,5 +1,4 @@
 table,sequence_id,column,datatype,transform,description
-,,,,,
 regwlka,1,id,int,,Physical activity: Walked at least 150 minutes (18+)
 regwlka,2,geoname,str,,Common name of geographic region
 regwlka,3,geotype,str,,Name of the type of geographic region
@@ -13,7 +12,6 @@ regwlka,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 regwlka,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 regwlka,12,cv,float,,Coefficient of variation of the measurement estimate.
 regwlka,13,mse,float,,Mean Squared Error
-,,,,,
 povertytc,1,id,int,,Poverty: Living In poverty (&lt;100%FPL) (0-17)
 povertytc,2,geoname,str,,Common name of geographic region
 povertytc,3,geotype,str,,Name of the type of geographic region
@@ -27,7 +25,6 @@ povertytc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 povertytc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 povertytc,12,cv,float,,Coefficient of variation of the measurement estimate.
 povertytc,13,mse,float,,Mean Squared Error
-,,,,,
 nhwhitea,1,id,int,,Ethnicity: Non-Hispanic White only (18+)
 nhwhitea,2,geoname,str,,Common name of geographic region
 nhwhitea,3,geotype,str,,Name of the type of geographic region
@@ -41,7 +38,6 @@ nhwhitea,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 nhwhitea,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 nhwhitea,12,cv,float,,Coefficient of variation of the measurement estimate.
 nhwhitea,13,mse,float,,Mean Squared Error
-,,,,,
 variables,1,id,int,,
 variables,2,topic,str,,topic
 variables,3,geovariablemetadataid,int,,geoVariableMetadataId
@@ -53,7 +49,6 @@ variables,8,datasetid,int,,dataSetId
 variables,9,year,str,,year
 variables,10,agegroup,str,,ageGroup
 variables,11,description,str,,description
-,,,,,
 notworka,1,id,int,,Work Status: Not working (18+)
 notworka,2,geoname,str,,Common name of geographic region
 notworka,3,geotype,str,,Name of the type of geographic region
@@ -67,7 +62,6 @@ notworka,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 notworka,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 notworka,12,cv,float,,Coefficient of variation of the measurement estimate.
 notworka,13,mse,float,,Mean Squared Error
-,,,,,
 noncitza,1,id,int,,Nativity / Citizenship: Non-citizen (18+)
 noncitza,2,geoname,str,,Common name of geographic region
 noncitza,3,geotype,str,,Name of the type of geographic region
@@ -81,7 +75,6 @@ noncitza,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 noncitza,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 noncitza,12,cv,float,,Coefficient of variation of the measurement estimate.
 noncitza,13,mse,float,,Mean Squared Error
-,,,,,
 femaletc,1,id,int,,Gender: Female (0-17)
 femaletc,2,geoname,str,,Common name of geographic region
 femaletc,3,geotype,str,,Name of the type of geographic region
@@ -95,7 +88,6 @@ femaletc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 femaletc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 femaletc,12,cv,float,,Coefficient of variation of the measurement estimate.
 femaletc,13,mse,float,,Mean Squared Error
-,,,,,
 othermixa,1,id,int,,Race: Other only/Mixed (18+)
 othermixa,2,geoname,str,,Common name of geographic region
 othermixa,3,geotype,str,,Name of the type of geographic region
@@ -109,7 +101,6 @@ othermixa,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 othermixa,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 othermixa,12,cv,float,,Coefficient of variation of the measurement estimate.
 othermixa,13,mse,float,,Mean Squared Error
-,,,,,
 natrlcitza,1,id,int,,Nativity / Citizenship: Naturalized U.S. citizen (18+)
 natrlcitza,2,geoname,str,,Common name of geographic region
 natrlcitza,3,geotype,str,,Name of the type of geographic region
@@ -123,7 +114,6 @@ natrlcitza,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 natrlcitza,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 natrlcitza,12,cv,float,,Coefficient of variation of the measurement estimate.
 natrlcitza,13,mse,float,,Mean Squared Error
-,,,,,
 asthmaa,1,id,int,,Asthma: Ever diagnosed with asthma (18+)
 asthmaa,2,geoname,str,,Common name of geographic region
 asthmaa,3,geotype,str,,Name of the type of geographic region
@@ -137,7 +127,6 @@ asthmaa,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 asthmaa,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 asthmaa,12,cv,float,,Coefficient of variation of the measurement estimate.
 asthmaa,13,mse,float,,Mean Squared Error
-,,,,,
 obesea,1,id,int,,Obese/Overweight: Obese (BMI &ge; 30) (18+)
 obesea,2,geoname,str,,Common name of geographic region
 obesea,3,geotype,str,,Name of the type of geographic region
@@ -151,7 +140,6 @@ obesea,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 obesea,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 obesea,12,cv,float,,Coefficient of variation of the measurement estimate.
 obesea,13,mse,float,,Mean Squared Error
-,,,,,
 dlycaretc,1,id,int,,Delay in receiving care: Delayed prescriptions/medical services (0-17)
 dlycaretc,2,geoname,str,,Common name of geographic region
 dlycaretc,3,geotype,str,,Name of the type of geographic region
@@ -165,7 +153,6 @@ dlycaretc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 dlycaretc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 dlycaretc,12,cv,float,,Coefficient of variation of the measurement estimate.
 dlycaretc,13,mse,float,,Mean Squared Error
-,,,,,
 latinoa,1,id,int,,Ethnicity: Hispanic or Latino (18+)
 latinoa,2,geoname,str,,Common name of geographic region
 latinoa,3,geotype,str,,Name of the type of geographic region
@@ -179,7 +166,6 @@ latinoa,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 latinoa,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 latinoa,12,cv,float,,Coefficient of variation of the measurement estimate.
 latinoa,13,mse,float,,Mean Squared Error
-,,,,,
 asthmatc,1,id,int,,Asthma: Ever diagnosed with asthma (1-17)
 asthmatc,2,geoname,str,,Common name of geographic region
 asthmatc,3,geotype,str,,Name of the type of geographic region
@@ -193,7 +179,6 @@ asthmatc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 asthmatc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 asthmatc,12,cv,float,,Coefficient of variation of the measurement estimate.
 asthmatc,13,mse,float,,Mean Squared Error
-,,,,,
 nhwhitetc,1,id,int,,Ethnicity: Non-Hispanic White only (0-17)
 nhwhitetc,2,geoname,str,,Common name of geographic region
 nhwhitetc,3,geotype,str,,Name of the type of geographic region
@@ -207,7 +192,6 @@ nhwhitetc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 nhwhitetc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 nhwhitetc,12,cv,float,,Coefficient of variation of the measurement estimate.
 nhwhitetc,13,mse,float,,Mean Squared Error
-,,,,,
 ovrwtobeset,1,id,int,,Obese/Overweight: Overweight or obese (BMI &ge; 85th percentile) (12-17)
 ovrwtobeset,2,geoname,str,,Common name of geographic region
 ovrwtobeset,3,geotype,str,,Name of the type of geographic region
@@ -221,7 +205,6 @@ ovrwtobeset,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 ovrwtobeset,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 ovrwtobeset,12,cv,float,,Coefficient of variation of the measurement estimate.
 ovrwtobeset,13,mse,float,,Mean Squared Error
-,,,,,
 fphealthtc,1,id,int,,Health status: Fair or poor health (0-17)
 fphealthtc,2,geoname,str,,Common name of geographic region
 fphealthtc,3,geotype,str,,Name of the type of geographic region
@@ -235,7 +218,6 @@ fphealthtc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 fphealthtc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 fphealthtc,12,cv,float,,Coefficient of variation of the measurement estimate.
 fphealthtc,13,mse,float,,Mean Squared Error
-,,,,,
 movefrabra,1,id,int,,Mobility: Moved from abroad (18+)
 movefrabra,2,geoname,str,,Common name of geographic region
 movefrabra,3,geotype,str,,Name of the type of geographic region
@@ -249,7 +231,6 @@ movefrabra,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 movefrabra,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 movefrabra,12,cv,float,,Coefficient of variation of the measurement estimate.
 movefrabra,13,mse,float,,Mean Squared Error
-,,,,,
 flushotc,1,id,int,,Flu vaccine: Received flu vaccine (6m-11)
 flushotc,2,geoname,str,,Common name of geographic region
 flushotc,3,geotype,str,,Name of the type of geographic region
@@ -263,7 +244,6 @@ flushotc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 flushotc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 flushotc,12,cv,float,,Coefficient of variation of the measurement estimate.
 flushotc,13,mse,float,,Mean Squared Error
-,,,,,
 lthighscha,1,id,int,,Education: Less than high school (18+)
 lthighscha,2,geoname,str,,Common name of geographic region
 lthighscha,3,geotype,str,,Name of the type of geographic region
@@ -277,7 +257,6 @@ lthighscha,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 lthighscha,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 lthighscha,12,cv,float,,Coefficient of variation of the measurement estimate.
 lthighscha,13,mse,float,,Mean Squared Error
-,,,,,
 blacka,1,id,int,,Race: Black only (18+)
 blacka,2,geoname,str,,Common name of geographic region
 blacka,3,geotype,str,,Name of the type of geographic region
@@ -291,7 +270,6 @@ blacka,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 blacka,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 blacka,12,cv,float,,Coefficient of variation of the measurement estimate.
 blacka,13,mse,float,,Mean Squared Error
-,,,,,
 ovrwtagec,1,id,int,,Obese/Overweight: Overweight for age  (weight &ge; 95th percentile) (2-11)
 ovrwtagec,2,geoname,str,,Common name of geographic region
 ovrwtagec,3,geotype,str,,Name of the type of geographic region
@@ -305,7 +283,6 @@ ovrwtagec,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 ovrwtagec,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 ovrwtagec,12,cv,float,,Coefficient of variation of the measurement estimate.
 ovrwtagec,13,mse,float,,Mean Squared Error
-,,,,,
 dstrsa,1,id,int,,Mental health: Serious psychological distress (18+)
 dstrsa,2,geoname,str,,Common name of geographic region
 dstrsa,3,geotype,str,,Name of the type of geographic region
@@ -319,7 +296,6 @@ dstrsa,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 dstrsa,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 dstrsa,12,cv,float,,Coefficient of variation of the measurement estimate.
 dstrsa,13,mse,float,,Mean Squared Error
-,,,,,
 blacktc,1,id,int,,Race: Black only (0-17)
 blacktc,2,geoname,str,,Common name of geographic region
 blacktc,3,geotype,str,,Name of the type of geographic region
@@ -333,7 +309,6 @@ blacktc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 blacktc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 blacktc,12,cv,float,,Coefficient of variation of the measurement estimate.
 blacktc,13,mse,float,,Mean Squared Error
-,,,,,
 flushote,1,id,int,,Flu vaccine: Received flu vaccine (65+)
 flushote,2,geoname,str,,Common name of geographic region
 flushote,3,geotype,str,,Name of the type of geographic region
@@ -347,7 +322,6 @@ flushote,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 flushote,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 flushote,12,cv,float,,Coefficient of variation of the measurement estimate.
 flushote,13,mse,float,,Mean Squared Error
-,,,,,
 movewusa,1,id,int,,Mobility: Moved within U.S. (18+)
 movewusa,2,geoname,str,,Common name of geographic region
 movewusa,3,geotype,str,,Name of the type of geographic region
@@ -361,7 +335,6 @@ movewusa,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 movewusa,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 movewusa,12,cv,float,,Coefficient of variation of the measurement estimate.
 movewusa,13,mse,float,,Mean Squared Error
-,,,,,
 engonlya,1,id,int,,Language at Home: English only (18+)
 engonlya,2,geoname,str,,Common name of geographic region
 engonlya,3,geotype,str,,Name of the type of geographic region
@@ -375,7 +348,6 @@ engonlya,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 engonlya,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 engonlya,12,cv,float,,Coefficient of variation of the measurement estimate.
 engonlya,13,mse,float,,Mean Squared Error
-,,,,,
 heartda,1,id,int,,Heart disease: Ever diagnosed with heart disease (18+)
 heartda,2,geoname,str,,Common name of geographic region
 heartda,3,geotype,str,,Name of the type of geographic region
@@ -389,7 +361,6 @@ heartda,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 heartda,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 heartda,12,cv,float,,Coefficient of variation of the measurement estimate.
 heartda,13,mse,float,,Mean Squared Error
-,,,,,
 latinotc,1,id,int,,Ethnicity: Hispanic or Latino (0-17)
 latinotc,2,geoname,str,,Common name of geographic region
 latinotc,3,geotype,str,,Name of the type of geographic region
@@ -403,7 +374,6 @@ latinotc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 latinotc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 latinotc,12,cv,float,,Coefficient of variation of the measurement estimate.
 latinotc,13,mse,float,,Mean Squared Error
-,,,,,
 dentc,1,id,int,,Dental visits: Visited dentist (2-11)
 dentc,2,geoname,str,,Common name of geographic region
 dentc,3,geotype,str,,Name of the type of geographic region
@@ -417,7 +387,6 @@ dentc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 dentc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 dentc,12,cv,float,,Coefficient of variation of the measurement estimate.
 dentc,13,mse,float,,Mean Squared Error
-,,,,,
 fphealtha,1,id,int,,Health status: Fair or poor health (18-64)
 fphealtha,2,geoname,str,,Common name of geographic region
 fphealtha,3,geotype,str,,Name of the type of geographic region
@@ -431,7 +400,6 @@ fphealtha,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 fphealtha,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 fphealtha,12,cv,float,,Coefficient of variation of the measurement estimate.
 fphealtha,13,mse,float,,Mean Squared Error
-,,,,,
 dlycarea,1,id,int,,Delay in receiving care: Delayed prescriptions/medical services (18+)
 dlycarea,2,geoname,str,,Common name of geographic region
 dlycarea,3,geotype,str,,Name of the type of geographic region
@@ -445,7 +413,6 @@ dlycarea,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 dlycarea,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 dlycarea,12,cv,float,,Coefficient of variation of the measurement estimate.
 dlycarea,13,mse,float,,Mean Squared Error
-,,,,,
 borncitza,1,id,int,,Nativity / Citizenship: Born U.S. citizen (18+)
 borncitza,2,geoname,str,,Common name of geographic region
 borncitza,3,geotype,str,,Name of the type of geographic region
@@ -459,7 +426,6 @@ borncitza,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 borncitza,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 borncitza,12,cv,float,,Coefficient of variation of the measurement estimate.
 borncitza,13,mse,float,,Mean Squared Error
-,,,,,
 othermixtc,1,id,int,,Race: Other only/Mixed (0-17)
 othermixtc,2,geoname,str,,Common name of geographic region
 othermixtc,3,geotype,str,,Name of the type of geographic region
@@ -473,7 +439,6 @@ othermixtc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 othermixtc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 othermixtc,12,cv,float,,Coefficient of variation of the measurement estimate.
 othermixtc,13,mse,float,,Mean Squared Error
-,,,,,
 femalea,1,id,int,,Gender: Female (18+)
 femalea,2,geoname,str,,Common name of geographic region
 femalea,3,geotype,str,,Name of the type of geographic region
@@ -487,7 +452,6 @@ femalea,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 femalea,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 femalea,12,cv,float,,Coefficient of variation of the measurement estimate.
 femalea,13,mse,float,,Mean Squared Error
-,,,,,
 diaba,1,id,int,,Diabetes: Ever diagnosed with diabetes (18+)
 diaba,2,geoname,str,,Common name of geographic region
 diaba,3,geotype,str,,Name of the type of geographic region
@@ -501,7 +465,6 @@ diaba,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 diaba,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 diaba,12,cv,float,,Coefficient of variation of the measurement estimate.
 diaba,13,mse,float,,Mean Squared Error
-,,,,,
 natrlcitztc,1,id,int,,Nativity / Citizenship: Naturalized U.S. citizen (0-17)
 natrlcitztc,2,geoname,str,,Common name of geographic region
 natrlcitztc,3,geotype,str,,Name of the type of geographic region
@@ -515,7 +478,6 @@ natrlcitztc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 natrlcitztc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 natrlcitztc,12,cv,float,,Coefficient of variation of the measurement estimate.
 natrlcitztc,13,mse,float,,Mean Squared Error
-,,,,,
 borncitztc,1,id,int,,Nativity / Citizenship: Born U.S. citizen (0-17)
 borncitztc,2,geoname,str,,Common name of geographic region
 borncitztc,3,geotype,str,,Name of the type of geographic region
@@ -529,7 +491,6 @@ borncitztc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 borncitztc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 borncitztc,12,cv,float,,Coefficient of variation of the measurement estimate.
 borncitztc,13,mse,float,,Mean Squared Error
-,,,,,
 fslevalla,1,id,int,,Food insecurity: Low-income food insecurity (18+)
 fslevalla,2,geoname,str,,Common name of geographic region
 fslevalla,3,geotype,str,,Name of the type of geographic region
@@ -543,7 +504,6 @@ fslevalla,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 fslevalla,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 fslevalla,12,cv,float,,Coefficient of variation of the measurement estimate.
 fslevalla,13,mse,float,,Mean Squared Error
-,,,,,
 asiantc,1,id,int,,Race: Asian only (0-17)
 asiantc,2,geoname,str,,Common name of geographic region
 asiantc,3,geotype,str,,Name of the type of geographic region
@@ -557,7 +517,6 @@ asiantc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 asiantc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 asiantc,12,cv,float,,Coefficient of variation of the measurement estimate.
 asiantc,13,mse,float,,Mean Squared Error
-,,,,,
 noncitztc,1,id,int,,Nativity / Citizenship: Non-citizen (0-17)
 noncitztc,2,geoname,str,,Common name of geographic region
 noncitztc,3,geotype,str,,Name of the type of geographic region
@@ -571,7 +530,6 @@ noncitztc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 noncitztc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 noncitztc,12,cv,float,,Coefficient of variation of the measurement estimate.
 noncitztc,13,mse,float,,Mean Squared Error
-,,,,,
 fphealthe,1,id,int,,Health status: Fair or poor health (65+)
 fphealthe,2,geoname,str,,Common name of geographic region
 fphealthe,3,geotype,str,,Name of the type of geographic region
@@ -585,7 +543,6 @@ fphealthe,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 fphealthe,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 fphealthe,12,cv,float,,Coefficient of variation of the measurement estimate.
 fphealthe,13,mse,float,,Mean Squared Error
-,,,,,
 asiana,1,id,int,,Race: Asian only (18+)
 asiana,2,geoname,str,,Common name of geographic region
 asiana,3,geotype,str,,Name of the type of geographic region
@@ -599,7 +556,6 @@ asiana,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 asiana,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 asiana,12,cv,float,,Coefficient of variation of the measurement estimate.
 asiana,13,mse,float,,Mean Squared Error
-,,,,,
 workinga,1,id,int,,Work Status: Working (18+)
 workinga,2,geoname,str,,Common name of geographic region
 workinga,3,geotype,str,,Name of the type of geographic region
@@ -613,7 +569,6 @@ workinga,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 workinga,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 workinga,12,cv,float,,Coefficient of variation of the measurement estimate.
 workinga,13,mse,float,,Mean Squared Error
-,,,,,
 whitetc,1,id,int,,Race: White only (0-17)
 whitetc,2,geoname,str,,Common name of geographic region
 whitetc,3,geotype,str,,Name of the type of geographic region
@@ -627,7 +582,6 @@ whitetc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 whitetc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 whitetc,12,cv,float,,Coefficient of variation of the measurement estimate.
 whitetc,13,mse,float,,Mean Squared Error
-,,,,,
 whitea,1,id,int,,Race: White only (18+)
 whitea,2,geoname,str,,Common name of geographic region
 whitea,3,geotype,str,,Name of the type of geographic region
@@ -641,7 +595,6 @@ whitea,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 whitea,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 whitea,12,cv,float,,Coefficient of variation of the measurement estimate.
 whitea,13,mse,float,,Mean Squared Error
-,,,,,
 uninstc,1,id,int,,Uninsured: Currently uninsured (0-17)
 uninstc,2,geoname,str,,Common name of geographic region
 uninstc,3,geotype,str,,Name of the type of geographic region
@@ -655,7 +608,6 @@ uninstc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 uninstc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 uninstc,12,cv,float,,Coefficient of variation of the measurement estimate.
 uninstc,13,mse,float,,Mean Squared Error
-,,,,,
 uninsa,1,id,int,,Uninsured: Currently uninsured (18-64)
 uninsa,2,geoname,str,,Common name of geographic region
 uninsa,3,geotype,str,,Name of the type of geographic region
@@ -669,7 +621,6 @@ uninsa,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 uninsa,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 uninsa,12,cv,float,,Coefficient of variation of the measurement estimate.
 uninsa,13,mse,float,,Mean Squared Error
-,,,,,
 smkcura,1,id,int,,Smoking: Current smoker (18+)
 smkcura,2,geoname,str,,Common name of geographic region
 smkcura,3,geotype,str,,Name of the type of geographic region
@@ -683,7 +634,6 @@ smkcura,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 smkcura,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 smkcura,12,cv,float,,Coefficient of variation of the measurement estimate.
 smkcura,13,mse,float,,Mean Squared Error
-,,,,,
 povertya,1,id,int,,Poverty: Living In poverty (&lt;100%FPL) (18+)
 povertya,2,geoname,str,,Common name of geographic region
 povertya,3,geotype,str,,Name of the type of geographic region
@@ -697,7 +647,6 @@ povertya,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 povertya,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 povertya,12,cv,float,,Coefficient of variation of the measurement estimate.
 povertya,13,mse,float,,Mean Squared Error
-,,,,,
 pakidstc,1,id,int,,Physical activity: Regular physical activity (5-17)
 pakidstc,2,geoname,str,,Common name of geographic region
 pakidstc,3,geotype,str,,Name of the type of geographic region
@@ -711,7 +660,6 @@ pakidstc,10,ci_lb95,float,,Lower bound on the 95% confidence interval
 pakidstc,11,ci_ub95,float,,Upper bound on the 95% confidence interval
 pakidstc,12,cv,float,,Coefficient of variation of the measurement estimate.
 pakidstc,13,mse,float,,Mean Squared Error
-,,,,,
 samehousea,1,id,int,,Mobility: Lived in same home 1 year ago (18+)
 samehousea,2,geoname,str,,Common name of geographic region
 samehousea,3,geotype,str,,Name of the type of geographic region

@@ -1,17 +1,17 @@
 about:
     access: private
-    remote: private
     footnote: nll
     grain: null
     groups: null
     license: ckdbl
     processed: null
+    remote: private
     rights: public
     source: null
     space: null
     subject: null
-    summary: AskCHIS Neighborhood Edition (AskCHIS NE) provides health estimates for California's diverse 
-        population at the local level (zip codes and cities).
+    summary: AskCHIS Neighborhood Edition (AskCHIS NE) provides health estimates for
+        California's diverse population at the local level (zip codes and cities).
     tags: []
     time: null
     title: AskCHIS Neighborhood Edition Aggregations
@@ -35,13 +35,13 @@ external_documentation:
 identity:
     dataset: askchisne
     id: d04Q
-    revision: 1
+    revision: 2
     source: ucla.edu
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: ucla.edu-askchisne-0.0.1~d04Q001
+    fqname: ucla.edu-askchisne-0.0.2~d04Q002
     name: ucla.edu-askchisne
-    vid: d04Q001
-    vname: ucla.edu-askchisne-0.0.1
+    vid: d04Q002
+    vname: ucla.edu-askchisne-0.0.2
 requirements: {}
 versions: {}
