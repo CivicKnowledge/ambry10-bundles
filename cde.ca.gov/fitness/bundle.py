@@ -12,6 +12,7 @@ class FixEnt11(object):
         self._url = url
         
 
+    
         
     def __iter__(self):
         
@@ -42,12 +43,20 @@ class FixEnt11(object):
                 header_len = len(row)
             
             if len(row) > header_len:
-                head = row[:header_len-1]
+                head = list(row)[:header_len-1]
                 tail = [str(e) for e in row[header_len-1:] ]
                 row =  head + [','.join(tail) ]
             
             yield row
     
 class Bundle(ambry.bundle.Bundle):
-    pass
+    
+    
+    def star_is_not_a_number(self, v):
+        if v == '*' or v == '**':
+            return None
+        else:
+            return v
+            
+    
 

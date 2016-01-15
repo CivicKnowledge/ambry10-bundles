@@ -12,7 +12,7 @@ class GenerateVars(RowGenerator):
         def make_url(f):
             return "{}/{}".format(api_source.url, f)
 
-        headers = {'Ocp-Apim-Subscription-Key': api_source.account.secret}
+        headers = {'Ocp-Apim-Subscription-Key': api_source.account.decrypt_secret()}
 
         url = make_url('metadata')
 
@@ -71,13 +71,18 @@ class GenerateDataRows(RowGenerator):
 
         d = r.json()[0]
 
-        yield [h[0] for h in headers]
+        row_headers = [h[0].lower() for h in headers]
+
+        yield row_headers
 
         for drow in d['geographies']:
             row = [drow['geoName'], drow['geoTypeId'],drow['geoId'],
                    drow['isSuppressed'], drow['suppressionReason']]
             row += drow['attributes']
-            
+         
+            d =  dict(zip(row_headers, row))
+            print d['se']
+         
             yield row
         
           
@@ -94,7 +99,7 @@ class Bundle(ambry.bundle.Bundle):
         pl.select_partition = [SelectPartition(
         'dict(table=source.dest_table.name,'
         'segment=source.sequence_id,'
-        'grain=row.geotype)'
+        'grain=row.geotype if \'geotype\' in row else None)'
         )]
         return pl
     

@@ -1,0 +1,53 @@
+about:
+  access: restricted
+  footnote: null
+  grain: null
+  groups: []
+  license: public
+  processed: null
+  rights: null
+  source: null
+  space: California
+  subject: null
+  summary: Values from the cde.ca.gov-fitness bundle, pivoted to move grades into
+    a categorical, ankd split on
+  tags: []
+  time: 1999/2014
+  title: Physical Fitness Test Results, Pivoted
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  dataset:
+    description: Main webpage for the dataset.
+    source: null
+    title: Dataset Page
+    url: http://example.com
+  documentation:
+    description: The primary documentation file
+    source: null
+    title: Main Documentation
+    url: http://example.com
+  download:
+    description: Web page that links to the source files.
+    source: null
+    title: Download Page
+    url: http://example.com
+identity:
+  dataset: fitness
+  id: d04t
+  revision: 1
+  source: cde.ca.gov
+  variation: pivoted
+  version: 0.0.1
+names:
+  fqname: cde.ca.gov-fitness-pivoted-0.0.1~d04t001
+  name: cde.ca.gov-fitness-pivoted
+  vid: d04t001
+  vname: cde.ca.gov-fitness-pivoted-0.0.1
+requirements: {}
+versions: {}

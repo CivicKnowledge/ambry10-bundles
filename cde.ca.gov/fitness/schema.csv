@@ -1,91 +1,85 @@
-table,sequence_id,column,datatype,size,description
-,,,,,
-physfit_99_10,1,id,int,,"Physical Fitness Research, 1999 to 2010"
-physfit_99_10,2,year,int,4,Year of release
-physfit_99_10,3,level,int,1,Level
-physfit_99_10,4,subgrp,int,2,SubGrp
-physfit_99_10,5,rpttype,int,1,RptType
-physfit_99_10,6,line_num,int,2,line_num
-physfit_99_10,7,ccode,int,2,Ccode
-physfit_99_10,8,dcode,int,5,Dcode
-physfit_99_10,9,charternum,str,4,charternum
-physfit_99_10,10,scode,int,7,Scode
-physfit_99_10,11,cds_code,long,14,cds_code
-physfit_99_10,12,gr05_stu,int,6,Gr05_Stu
-physfit_99_10,13,gr5pctin,float,,Gr5PctIn
-physfit_99_10,14,gr5pctnotin,float,,Gr5PctNotIn
-physfit_99_10,15,gr07_stu,int,6,Gr07_Stu
-physfit_99_10,16,gr7pctin,float,,Gr7PctIn
-physfit_99_10,17,gr7pctnotin,float,,Gr7PctNotIn
-physfit_99_10,18,gr09_stu,int,6,Gr09_Stu
-physfit_99_10,19,gr9pctin,float,,Gr9PctIn
-physfit_99_10,20,gr9pctnotin,float,,Gr9PctNotIn
-,,,,,
-subgroups_99_10,1,id,int,,PFT Subgroups 1999 to 2010
-subgroups_99_10,2,year,int,4,Year of release
-subgroups_99_10,3,subgrp,int,2,SubGrp
-subgroups_99_10,4,rpttype,int,1,RptType
-subgroups_99_10,5,linenum,int,2,LineNum
-subgroups_99_10,6,reporttype,str,28,ReportType
-subgroups_99_10,7,subgroup,str,30,SubGroup
-subgroups_99_10,8,line_text,str,30,line_text
-,,,,,
-physfit_10_14,1,id,int,,"Physical Fitness Research, 2010 to 2014"
-physfit_10_14,2,year,int,4,Year of release
-physfit_10_14,3,level_number,int,1,1 = school 2 = district 3 = county 4 = state
-physfit_10_14,4,report_number,int,2,"Codes for  demographic category of values in report: gender, race, ethnicity, etc. See source documentation for codes."
-physfit_10_14,5,table_number,int,1,Table_Number
-physfit_10_14,6,line_number,int,1,Line_Number
-physfit_10_14,7,co,int,2,CO
-physfit_10_14,8,dist,int,5,DIST
-physfit_10_14,9,schl,int,7,SCHL
-physfit_10_14,10,line_text,str,35,Line_Text
-physfit_10_14,11,nostud5,int,6,NoStud5
-physfit_10_14,12,nohfz5,int,6,NoHFZ5
-physfit_10_14,13,perc5a,float,,Perc5a
-physfit_10_14,14,perc5b,float,,Perc5b
-physfit_10_14,15,perc5c,float,,Perc5c
-physfit_10_14,16,nostud7,int,6,NoStud7
-physfit_10_14,17,nohfz7,int,6,NoHFZ7
-physfit_10_14,18,perc7a,float,,Perc7a
-physfit_10_14,19,perc7b,float,,Perc7b
-physfit_10_14,20,perc7c,float,,Perc7c
-physfit_10_14,21,nostud9,int,6,NoStud9
-physfit_10_14,22,nohfz9,int,6,NoHFZ9
-physfit_10_14,23,perc9a,float,,Perc9a
-physfit_10_14,24,perc9b,float,,Perc9b
-physfit_10_14,25,perc9c,float,,Perc9c
-physfit_10_14,26,chrtnum,str,4,ChrtNum
-physfit_10_14,27,id_src,int,7,ID
-,,,,,
-entities_10_14,1,id,int,,"PFT Entities, 2010 to 2014"
-entities_10_14,2,year,int,4,Year of release
-entities_10_14,3,ccode,int,2,ccode
-entities_10_14,4,dcode,int,5,dcode
-entities_10_14,5,chrtnum,str,4,chrtnum
-entities_10_14,6,scode,int,7,scode
-entities_10_14,7,cdscode,long,14,cdscode
-entities_10_14,8,county,str,22,County
-entities_10_14,9,district,str,74,District
-entities_10_14,10,school,str,106,School
-,,,,,
-subgroups_10_14,1,id,int,,PFT Subgroups 2010 to 2014
-subgroups_10_14,2,year,int,4,Year of release
-subgroups_10_14,3,level_number,int,1,Level_Number
-subgroups_10_14,4,report_number,int,2,Report_Number
-subgroups_10_14,5,table_number,int,1,Table_Number
-subgroups_10_14,6,line_number,int,1,Line_Number
-subgroups_10_14,7,line_text,str,35,Line_Text
-subgroups_10_14,8,table_type,str,28,Table_Type
-subgroups_10_14,9,subgroup,str,47,Subgroup
-,,,,,
-entities_99_10,1,id,int,,PFT Entities 1999 to 2010
-entities_99_10,2,year,int,4,Year of release
-entities_99_10,3,ccode,int,2,Ccode
-entities_99_10,4,dcode,int,5,Dcode
-entities_99_10,5,charternum,str,4,charternum
-entities_99_10,6,scode,int,7,Scode
-entities_99_10,7,cds_code,long,14,cds_code
-entities_99_10,8,county,str,30,County
-entities_99_10,9,district,str,60,District
-entities_99_10,10,school,str,60,school
+"table","sequence_id","column","datatype","size","description","transform"
+"entities_10_14",1,"id","int",,"PFT Entities, 2010 to 2014",
+"entities_10_14",2,"year","int",4,"Year of release",
+"entities_10_14",3,"ccode","int",2,"ccode",
+"entities_10_14",4,"dcode","int",5,"dcode",
+"entities_10_14",5,"chrtnum","str",4,"chrtnum",
+"entities_10_14",6,"scode","int",7,"scode",
+"entities_10_14",7,"cdscode","long",14,"cdscode",
+"entities_10_14",8,"county","str",22,"County",
+"entities_10_14",9,"district","str",74,"District",
+"entities_10_14",10,"school","str",106,"School",
+"entities_99_10",1,"id","int",,"PFT Entities 1999 to 2010",
+"entities_99_10",2,"year","int",4,"Year of release",
+"entities_99_10",3,"ccode","int",2,"Ccode",
+"entities_99_10",4,"dcode","int",5,"Dcode",
+"entities_99_10",5,"charternum","str",4,"charternum",
+"entities_99_10",6,"scode","int",7,"Scode",
+"entities_99_10",7,"cds_code","long",14,"cds_code",
+"entities_99_10",8,"county","str",30,"County",
+"entities_99_10",9,"district","str",60,"District",
+"entities_99_10",10,"school","str",60,"school",
+"physfit_10_14",1,"id","int",,"Physical Fitness Research, 2010 to 2014",
+"physfit_10_14",2,"year","int",4,"Year of release",
+"physfit_10_14",3,"level_number","int",1,"1 = school 2 = district 3 = county 4 = state",
+"physfit_10_14",4,"report_number","int",2,"Codes for  demographic category of values in report: gender, race, ethnicity, etc. See source documentation for codes.",
+"physfit_10_14",5,"table_number","int",1,"Table_Number",
+"physfit_10_14",6,"line_number","int",1,"Line_Number",
+"physfit_10_14",7,"co","int",2,"CO",
+"physfit_10_14",8,"dist","int",5,"DIST",
+"physfit_10_14",9,"schl","int",7,"SCHL",
+"physfit_10_14",10,"line_text","str",35,"Line_Text",
+"physfit_10_14",11,"nostud5","int",6,"NoStud5",
+"physfit_10_14",12,"nohfz5","int",6,"NoHFZ5","^star_is_not_a_number"
+"physfit_10_14",13,"perc5a","float",,"Perc5a","^star_is_not_a_number"
+"physfit_10_14",14,"perc5b","float",,"Perc5b","^star_is_not_a_number"
+"physfit_10_14",15,"perc5c","float",,"Perc5c","^star_is_not_a_number"
+"physfit_10_14",16,"nostud7","int",6,"NoStud7",
+"physfit_10_14",17,"nohfz7","int",6,"NoHFZ7","^star_is_not_a_number"
+"physfit_10_14",18,"perc7a","float",,"Perc7a","^star_is_not_a_number"
+"physfit_10_14",19,"perc7b","float",,"Perc7b","^star_is_not_a_number"
+"physfit_10_14",20,"perc7c","float",,"Perc7c","^star_is_not_a_number"
+"physfit_10_14",21,"nostud9","int",6,"NoStud9",
+"physfit_10_14",22,"nohfz9","int",6,"NoHFZ9","^star_is_not_a_number"
+"physfit_10_14",23,"perc9a","float",,"Perc9a","^star_is_not_a_number"
+"physfit_10_14",24,"perc9b","float",,"Perc9b","^star_is_not_a_number"
+"physfit_10_14",25,"perc9c","float",,"Perc9c","^star_is_not_a_number"
+"physfit_10_14",26,"chrtnum","str",4,"ChrtNum",
+"physfit_10_14",27,"id_src","int",7,"ID",
+"physfit_99_10",1,"id","int",,"Physical Fitness Research, 1999 to 2010",
+"physfit_99_10",2,"year","int",4,"Year of release",
+"physfit_99_10",3,"level","int",1,"Level",
+"physfit_99_10",4,"subgrp","int",2,"SubGrp",
+"physfit_99_10",5,"rpttype","int",1,"RptType",
+"physfit_99_10",6,"line_num","int",2,"line_num",
+"physfit_99_10",7,"ccode","int",2,"Ccode",
+"physfit_99_10",8,"dcode","int",5,"Dcode",
+"physfit_99_10",9,"charternum","str",4,"charternum",
+"physfit_99_10",10,"scode","int",7,"Scode",
+"physfit_99_10",11,"cds_code","long",14,"cds_code",
+"physfit_99_10",12,"gr05_stu","int",6,"Gr05_Stu","^star_is_not_a_number"
+"physfit_99_10",13,"gr5pctin","float",,"Gr5PctIn","^star_is_not_a_number"
+"physfit_99_10",14,"gr5pctnotin","float",,"Gr5PctNotIn","^star_is_not_a_number"
+"physfit_99_10",15,"gr07_stu","int",6,"Gr07_Stu","^star_is_not_a_number"
+"physfit_99_10",16,"gr7pctin","float",,"Gr7PctIn","^star_is_not_a_number"
+"physfit_99_10",17,"gr7pctnotin","float",,"Gr7PctNotIn","^star_is_not_a_number"
+"physfit_99_10",18,"gr09_stu","int",6,"Gr09_Stu","^star_is_not_a_number"
+"physfit_99_10",19,"gr9pctin","float",,"Gr9PctIn","^star_is_not_a_number"
+"physfit_99_10",20,"gr9pctnotin","float",,"Gr9PctNotIn","^star_is_not_a_number"
+"subgroups_10_14",1,"id","int",,"PFT Subgroups 2010 to 2014",
+"subgroups_10_14",2,"year","int",4,"Year of release",
+"subgroups_10_14",3,"level_number","int",1,"Level_Number",
+"subgroups_10_14",4,"report_number","int",2,"Report_Number",
+"subgroups_10_14",5,"table_number","int",1,"Table_Number",
+"subgroups_10_14",6,"line_number","int",1,"Line_Number",
+"subgroups_10_14",7,"line_text","str",35,"Line_Text",
+"subgroups_10_14",8,"table_type","str",28,"Table_Type",
+"subgroups_10_14",9,"subgroup","str",47,"Subgroup",
+"subgroups_99_10",1,"id","int",,"PFT Subgroups 1999 to 2010",
+"subgroups_99_10",2,"year","int",4,"Year of release",
+"subgroups_99_10",3,"subgrp","int",2,"SubGrp",
+"subgroups_99_10",4,"rpttype","int",1,"RptType",
+"subgroups_99_10",5,"linenum","int",2,"LineNum",
+"subgroups_99_10",6,"reporttype","str",28,"ReportType",
+"subgroups_99_10",7,"subgroup","str",30,"SubGroup",
+"subgroups_99_10",8,"line_text","str",30,"line_text",

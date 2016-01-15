@@ -1,0 +1,2 @@
+name,title,dest_table_name,time,space,filetype,reftype,ref,state
+fitness,fitness,fitness,1999/2014,California,partition,ref,cde.ca.gov-fitness-physfit_10_14,synced

@@ -1,0 +1,328 @@
+about:
+    access: restricted
+    footnote: null
+    grain: null
+    groups: []
+    license: public
+    processed: null
+    rights: null
+    source: null
+    space: California
+    subject: null
+    summary: Values from the cde.ca.gov-fitness bundle, pivoted to move grades into
+        a categorical, ankd split on
+    tags: []
+    time: 1999/2014
+    title: Physical Fitness Test Results, Pivoted
+build:
+    build: {}
+    dependencies:
+        fitness: cde.ca.gov-fitness-physfit_10_14
+    sources:
+        fitness:
+            filetype: partition
+            url: cde.ca.gov-fitness-physfit_10_14
+            urltype: ref
+    views: {}
+bundle_code: "\"\"\"\"\"\"\n\nfrom ambry.bundle import BuildBundle\n\n\nclass Bundle(BuildBundle):\n\
+    \n    \"\"\"\"\"\"\n    \n    # Maps table numbers to table names, For 2011\n\
+    \    tn_map_2011 = {\n        1: 'fit', # Fitness Areas\n        2: 'compr', #\
+    \ Comparison report\n        3: 'meethfz', # Meeting HFZ\n        4: 'gender',\
+    \ # Gender Summary\n        5: 'ethnicity', # Ethnicity\n        6: 'economic'\
+    \ # Economic\n    }\n    \n    # For later years\n    tn_map = {\n        1: 'fit',\
+    \ # Fitness Areas\n        2: 'meethfz', # Meeting HFZ\n        3: 'gender', #\
+    \ Gender Summary\n        4: 'ethnicity', # Ethnicity\n        5: 'economic' #\
+    \ Economic\n    }\n    \n    # Leven number map\n    level_map = {\n        1:\
+    \ 'school',\n        2: 'district',\n        3: 'county',\n        4: 'state'\n\
+    \        \n    }\n    \n\n    def __init__(self, directory=None):\n\n        super(Bundle,\
+    \ self).__init__(directory)\n\n    @staticmethod\n    def cast_nan(v):\n    \n\
+    \        if str(v) == 'nan':\n            return None\n            \n        return\
+    \ int(v)\n\n    def meta(self):\n        from ambry.util.intuit import Intuiter\n\
+    \        from ambry.bundle.rowgen import GeneratorRowGenerator\n        \n   \
+    \     df = self.build_dataframe(2011, 1000)\n\n        def rowgen():\n       \
+    \     return self.rowgen(df)\n\n        irg = GeneratorRowGenerator(rowgen)\n\n\
+    \        intuiter = Intuiter()\n        intuiter.iterate(irg)\n        table =\
+    \ self.schema.add_table('fitness', description=\"Fitness\", add_id = True)\n \
+    \       \n        self.schema.update_from_intuiter(table.name, intuiter)\n\n \
+    \       self.schema.write_schema()\n\n    def build_dataframe(self, time, level,\
+    \ table_number, limit=None):\n\n        import pandas as pd\n\n        if limit:\n\
+    \            limit_str = 'LIMIT '+str(limit)\n        else:\n            limit_str\
+    \ = ''\n\n        p = self.library.dep('fitness').partition\n\n        \n\n  \
+    \      pf = p.select(\"\"\"\n        SELECT * FROM physfit_10_14 \n        WHERE\
+    \ year = {time} AND level_number = {level} AND table_number = {table} \n     \
+    \   {limit}\"\"\"\n        .format(time=time, level=level, table=table_number,\
+    \ limit=limit_str)).pandas\n        pf.set_index('id')\n         \n        split_cols\
+    \ = ['nostud{}', 'nohfz{}', 'perc{}a', 'perc{}b', 'perc{}c' ]\n        header_cols\
+    \ = ['students_tested', 'in_hfz', 'pct_in_hfz', 'pct_needs_imp', 'pct_high_risk'\
+    \ ]\n        common_cols = ['id', 'year', 'grade', 'level_number', 'report_number',\
+    \ 'table_number', 'line_number', \n                       'co', 'dist', 'schl',\
+    \ 'line_text', 'chrtnum', 'id_src']\n                  \n                 \n \
+    \       # This is essentially pivoting ( stacking ) a groups of columns by extracting\
+    \ a dataframe with just\n        # the columns for a specific grade, then concatenating\
+    \ the dataframe for all three grade. It could probably\n        # be done more\
+    \ efficiently with  stack or unstack, but I don't want to fight with it. \n  \
+    \      \n        dfs = {}\n        pf['grade'] = 0\n        for grade in [5,7,9]:\n\
+    \            select_cols = common_cols + [ c.format(grade) for c in split_cols]\n\
+    \            df = pf[select_cols].copy()\n            df.columns = common_cols\
+    \ + header_cols\n            df['grade'] = grade\n            dfs[grade] = df\n\
+    \n        df = pd.concat(dfs).set_index('id')\n        \n        return df\n \
+    \       \n    def rowgen(self, df):\n        from collections import OrderedDict\n\
+    \        \n        header = ['id']+list(df.columns)\n\n        for idx, series\
+    \ in df.iterrows():\n            yield  OrderedDict(zip(header, [str(idx)] + list(series)))\n\
+    \      \n\n    def build(self):\n        \n        pnames = []\n        for time\
+    \ in [2013, 2012, 2011, 2014]:\n            \n            table_vals = [1,2,3,4,5,6]\
+    \ if time == 2011 else [1,2,3,4,5]\n            \n            for level in [1,2,3,4]\
+    \ : # level_number field\n                for table in table_vals: # Table_number\n\
+    \                    table_name = self.tn_map_2011[table] if time == 2011 else\
+    \ self.tn_map[table]\n                    level_name = self.level_map[level]\n\
+    \                    grain = \"{}_{}\".format(level_name,table_name)\n       \
+    \             pnames.append({ 'time': time, 'grain': grain, \"level\": level,\
+    \ 'table': table})\n                   \n        for pname in pnames:\n      \
+    \       \n            self.log(\"Running partition: {}\".format(str(pname)))\n\
+    \             \n            try:\n                df = self.build_dataframe(\n\
+    \                    time = pname['time'], \n                    level = pname['level'],\
+    \ \n                    table_number = pname['table'])\n                 \n  \
+    \          except StopIteration:\n                self.log(' ... skipping ')\n\
+    \                continue \n                \n            p = self.partitions.new_partition(time\
+    \ = pname['time'], grain = pname['grain'], table = 'fitness')\n\n            self.log(\"\
+    Loading: {}\".format(p.identity.name))\n\n            lr = self.init_log_rate(10000)\n\
+    \n            with p.inserter() as ins:\n\n                for i, row in enumerate(self.rowgen(df)):\n\
+    \                    row['id'] = None\n                    lr()\n\n          \
+    \          ins.insert(row)\n                    \n            p.close()\n\n  \
+    \      return True\n        "
+contact_bundle:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        url: http://civicknowledge.com
+    maintainer:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        url: http://civicknowledge.com
+contact_source:
+    creator:
+        org: California Department of Education
+        url: http://cde.ca.gov/
+    maintainer: {}
+documentation: '
+
+    # {about_title}
+
+
+    {about_summary}
+
+    '
+external_documentation:
+    dataset:
+        description: Main webpage for the dataset.
+        source: null
+        title: Dataset Page
+        url: http://example.com
+    documentation:
+        description: The primary documentation file
+        source: null
+        title: Main Documentation
+        url: http://example.com
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://example.com
+identity:
+    bspace: null
+    btime: null
+    dataset: fitness
+    id: d04t
+    revision: 1
+    source: cde.ca.gov
+    subset: null
+    type: null
+    variation: pivoted
+    version: 0.0.1
+names:
+    fqname: cde.ca.gov-fitness-pivoted-0.0.1~d04t001
+    name: cde.ca.gov-fitness-pivoted
+    vid: d04t001
+    vname: cde.ca.gov-fitness-pivoted-0.0.1
+process: {}
+schema:
+-   column: id
+    d_caster: ''
+    description: Fitness
+    id: t04t01
+    is_fk: ''
+    is_pk: '1'
+    seq: '1'
+    size: ''
+    table: fitness
+    type: INTEGER
+-   column: year
+    d_caster: ''
+    description: year
+    id: c04t01003
+    is_fk: ''
+    is_pk: ''
+    seq: '3'
+    size: '4'
+    table: fitness
+    type: INTEGER
+-   column: grade
+    d_caster: ''
+    description: grade
+    id: c04t01004
+    is_fk: ''
+    is_pk: ''
+    seq: '4'
+    size: '5'
+    table: fitness
+    type: INTEGER
+-   column: level_number
+    d_caster: ''
+    description: level_number
+    id: c04t01005
+    is_fk: ''
+    is_pk: ''
+    seq: '5'
+    size: '12'
+    table: fitness
+    type: INTEGER
+-   column: report_number
+    d_caster: ''
+    description: report_number
+    id: c04t01006
+    is_fk: ''
+    is_pk: ''
+    seq: '6'
+    size: '13'
+    table: fitness
+    type: INTEGER
+-   column: table_number
+    d_caster: ''
+    description: table_number
+    id: c04t01007
+    is_fk: ''
+    is_pk: ''
+    seq: '7'
+    size: '12'
+    table: fitness
+    type: INTEGER
+-   column: line_number
+    d_caster: ''
+    description: line_number
+    id: c04t01008
+    is_fk: ''
+    is_pk: ''
+    seq: '8'
+    size: '11'
+    table: fitness
+    type: INTEGER
+-   column: co
+    d_caster: ''
+    description: County FIPS code
+    id: c04t01009
+    is_fk: ''
+    is_pk: ''
+    seq: '9'
+    size: '2'
+    table: fitness
+    type: INTEGER
+-   column: dist
+    d_caster: ''
+    description: dist
+    id: c04t0100a
+    is_fk: ''
+    is_pk: ''
+    seq: '10'
+    size: '5'
+    table: fitness
+    type: VARCHAR
+-   column: schl
+    d_caster: ''
+    description: schl
+    id: c04t0100b
+    is_fk: ''
+    is_pk: ''
+    seq: '11'
+    size: '7'
+    table: fitness
+    type: VARCHAR
+-   column: line_text
+    d_caster: ''
+    description: line_text
+    id: c04t0100c
+    is_fk: ''
+    is_pk: ''
+    seq: '12'
+    size: '35'
+    table: fitness
+    type: VARCHAR
+-   column: chrtnum
+    d_caster: ''
+    description: chrtnum
+    id: c04t0100d
+    is_fk: ''
+    is_pk: ''
+    seq: '13'
+    size: '7'
+    table: fitness
+    type: VARCHAR
+-   column: id_src
+    d_caster: ''
+    description: id_src
+    id: c04t0100e
+    is_fk: ''
+    is_pk: ''
+    seq: '14'
+    size: '7'
+    table: fitness
+    type: VARCHAR
+-   column: students_tested
+    d_caster: ''
+    description: students_tested
+    id: c04t0100f
+    is_fk: ''
+    is_pk: ''
+    seq: '15'
+    size: '15'
+    table: fitness
+    type: INTEGER
+-   column: in_hfz
+    d_caster: cast_nan
+    description: in_hfz
+    id: c04t0100g
+    is_fk: ''
+    is_pk: ''
+    seq: '16'
+    size: '6'
+    table: fitness
+    type: INTEGER
+-   column: pct_in_hfz
+    d_caster: ''
+    description: pct_in_hfz
+    id: c04t0100h
+    is_fk: ''
+    is_pk: ''
+    seq: '17'
+    size: '10'
+    table: fitness
+    type: REAL
+-   column: pct_needs_imp
+    d_caster: ''
+    description: pct_needs_imp
+    id: c04t0100i
+    is_fk: ''
+    is_pk: ''
+    seq: '18'
+    size: '13'
+    table: fitness
+    type: REAL
+-   column: pct_high_risk
+    d_caster: ''
+    description: pct_high_risk
+    id: c04t0100j
+    is_fk: ''
+    is_pk: ''
+    seq: '19'
+    size: '13'
+    table: fitness
+    type: REAL

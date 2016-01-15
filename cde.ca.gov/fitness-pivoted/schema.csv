@@ -1,0 +1,20 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+fitness,1,id,int,,Fitness
+fitness,2,year,int,4,year
+fitness,3,grade,int,5,grade
+fitness,4,level_number,int,12,level_number
+fitness,5,report_number,int,13,report_number
+fitness,6,table_number,int,12,table_number
+fitness,7,line_number,int,11,line_number
+fitness,8,co,int,2,County FIPS code
+fitness,9,dist,str,5,dist
+fitness,10,schl,str,7,schl
+fitness,11,line_text,str,35,line_text
+fitness,12,chrtnum,str,7,chrtnum
+fitness,13,id_src,str,7,id_src
+fitness,14,students_tested,int,15,students_tested
+fitness,15,in_hfz,int,6,in_hfz
+fitness,16,pct_in_hfz,float,10,pct_in_hfz
+fitness,17,pct_needs_imp,float,13,pct_needs_imp
+fitness,18,pct_high_risk,float,13,pct_high_risk
