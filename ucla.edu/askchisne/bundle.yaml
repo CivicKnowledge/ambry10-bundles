@@ -1,6 +1,6 @@
 about:
     access: private
-    footnote: nll
+    footnote: null
     grain: null
     groups: null
     license: ckdbl
@@ -10,8 +10,8 @@ about:
     source: null
     space: null
     subject: null
-    summary: AskCHIS Neighborhood Edition (AskCHIS NE) provides health estimates for
-        California's diverse population at the local level (zip codes and cities).
+    summary: AskCHIS Neighborhood Edition (AskCHIS NE), based on CHIS 2011-2012,  provides health estimates for
+         the diverse population of California at the local level (zip codes and cities).
     tags: []
     time: null
     title: AskCHIS Neighborhood Edition Aggregations
@@ -32,6 +32,12 @@ external_documentation:
         source: null
         title: API Page
         url: https://askchisne.portal.azure-api.net
+    wieghting:
+        description: Description of the weighting and variance estimation methods used in CHIS 2011-2012. 
+            This report presents the steps used to create the analytical weights for analyzing the data from the 
+            adult, child, and adolescent interviews.
+        title: Weighting and Variance Estimation
+        url: http://healthpolicy.ucla.edu/chis/design/Documents/chis2011-2012-method-5_2014-07-30.pdf
 identity:
     dataset: askchisne
     id: d04Q

@@ -53,7 +53,7 @@ class GenerateDataRows(RowGenerator):
     
     def __iter__(self):
         import requests
-        
+
         api_source = self._bundle.source('api')
 
         def make_url(f, v):
@@ -80,9 +80,8 @@ class GenerateDataRows(RowGenerator):
                    drow['isSuppressed'], drow['suppressionReason']]
             row += drow['attributes']
          
-            d =  dict(zip(row_headers, row))
-            print d['se']
-         
+            #d =  dict(zip(row_headers, row))
+
             yield row
         
           
@@ -110,53 +109,35 @@ class Bundle(ambry.bundle.Bundle):
             return 0
         else:
             return v
-        
-    
-    def test_api(self):
-        import requests
-        
-        s = self.source('api')
-        print s.url
-        print s.account.secret
-        
-        def make_url(f, v):
-            return "{}/{}/{}".format(s.url, f, v)
-
-        headers = {'Ocp-Apim-Subscription-Key': s.account.secret}
-
-        url = make_url('variable', 'FLUSHOTE')
-
-        self.log(url)
-
-        r = requests.get(url, headers=headers)
-
-        r.raise_for_status()
-
-        import json
-        with open('flushote.json', 'w') as f:
-            f.write(json.dumps(r.json(), indent = 4)) 
-
-
-    def parse_file(self):
-        import json
-
-        with open('dentc.json', 'r') as f:
-            d = json.load(f)
-
-        d = d[0]
-
-        print zip(d['attributeLabels'], d['attributeTypes'])
-
-        for k in d:
-            print k
-
-        for drow in d['geographies']:
-            row = [drow['geoName'], drow['geoTypeId'],drow['geoId'],
-                   drow['isSuppressed'], drow['suppressionReason']]
-            row += drow['attributes']
             
-            if not drow['isSuppressed']:
-                print row
+    def parse_geoid(self, row):
+        from geoid.census import County, Zcta, Place, Sldl, Sldu, Cdcurr, State
+        from geoid.civick import GVid
+      
+        if row.geotype == 'ZCTA':
+             return Zcta.parse(row.geoid.zfill(5)).convert(GVid)
+             
+        elif row.geotype == 'COUNTIES':
+             return County.parse(row.geoid.zfill(5)).convert(GVid)
+             
+        elif row.geotype == 'CITIES':
+             return Place.parse(row.geoid.zfill(7)).convert(GVid)
+             
+        elif row.geotype == 'CONGRESS':
+             return Cdcurr.parse(row.geoid.zfill(4)).convert(GVid)
+             
+        elif row.geotype == 'SENATE':
+             return Sldu.parse(row.geoid.replace('SS','').zfill(5)).convert(GVid)
+             
+        elif row.geotype == 'ASSEMBLY':
+             return Sldl.parse(row.geoid.replace('SA','').zfill(5)).convert(GVid)
+             
+        elif row.geotype == 'STATE':
+            return State.parse('06').convert(GVid)
+             
+   
+        return None
+        
             
     def meta_make_schema(self):
         
@@ -196,6 +177,24 @@ class Bundle(ambry.bundle.Bundle):
                 )
             self.commit()
 
-          
-
         self.build_source_files.sources.sync_out()
+        
+        
+    def meta_add_gvid(self):
+        """Add the gvid to the schema"""
+        
+        for t in self.tables:
+            
+            t.add_column('gvid', datatype='civick.GVid', description='GVid version of geoid', 
+                         transform='^parse_geoid')
+                         
+        self.commit()
+        
+        from ambry.orm import File
+        bsf = self.build_source_files.file(File.BSFILE.SCHEMA)
+        bsf.objects_to_record()
+        bsf.record_to_fs()
+            
+        
+        
+        
