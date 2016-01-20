@@ -1,0 +1,49 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: null
+  groups:
+  - Health
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: US
+  subject: Healthy food
+  summary: Census Tract Level State Maps of the Modified Retail Food Environment Index
+    (mRFEI), which can be used to help identify census tracts within states or communities
+    that either lack access to healthy food retailers such as supermarkets or contain
+    very high densities of fast food restaurants and convenience stores relative to
+    the number of healthy food retailers.
+  tags:
+  - food
+  - retail
+  - index
+  time: null
+  title: Modified Retail Food Environment Index
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  main_documentation:
+    description: Main Documentation
+    source: source
+    title: Main Documentation
+    url: ftp://ftp.cdc.gov/pub/Publications/dnpao/census-tract-level-state-maps-mrfei_TAG508.pdf
+identity:
+  dataset: mrfei
+  id: d030
+  revision: 2
+  source: cdc.gov
+  version: 0.0.2
+names:
+  fqname: cdc.gov-mrfei-0.0.2~d030002
+  name: cdc.gov-mrfei
+  vid: d030002
+  vname: cdc.gov-mrfei-0.0.2
+requirements: {}
+versions: {}

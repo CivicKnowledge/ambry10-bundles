@@ -1,0 +1,6 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+mrfei,1,id,int,,Modified retail food environment index
+mrfei,2,state,str,2,State abbreviation
+mrfei,3,fips,str,13,"Census tract FIPS code, probably also a census geoid"
+mrfei,4,mrfei,float,,mREFI value
