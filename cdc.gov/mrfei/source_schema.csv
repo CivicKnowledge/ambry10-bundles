@@ -1,1 +1,4 @@
-table,position,source_header,dest_header,datatype,valuetype,start,width,size,summary,description
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+data,1,state,state,str,,False,,,,,state
+data,2,fips,fips,int,,False,,,,,fips
+data,3,mrfei,mrfei,float,,False,,,,,mrfei
