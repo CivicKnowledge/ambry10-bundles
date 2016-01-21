@@ -63,7 +63,7 @@ class AlcoholLicensesDataGenerator(object):
         # header = [c.name for c in partition.table.columns]
         # target_cities = self.metadata.meta.target_cities
 
-        for city in CITIES[0:1]:
+        for city in CITIES:
             self._bundle.log('Downloading `{}` city page'.format(city))
             cache_state, page = self._download_page(city, report_type='p_Retail')
             if cache_state == 'new':

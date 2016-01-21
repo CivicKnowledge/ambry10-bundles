@@ -1,1 +1,12 @@
-table,position,source_header,dest_header,datatype,valuetype,start,width,size,summary,description
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+licenses,1,license_number,license_number,int,,False,,,,,License Number
+licenses,2,status,status,str,,False,,,,,Status
+licenses,3,license_type,license_type,int,,False,,,,,License Type
+licenses,4,orig_iss_date,orig_iss_date,date,,False,,,,,Orig. Iss. Date
+licenses,5,expir_date,expir_date,date,,False,,,,,Expir Date
+licenses,6,primary_owner,primary_owner,str,,False,,,,,Primary Owner
+licenses,7,premises_addr,premises_addr,str,,False,,,,,Premises Addr.
+licenses,8,tract,tract,float,,True,,,,,Tract
+licenses,9,business_name,business_name,str,,False,,,,,Business Name
+licenses,10,mailing_address,mailing_address,str,,False,,,,,Mailing Address
+licenses,11,geo_code,geo_code,int,,False,,,,,Geo Code

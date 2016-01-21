@@ -1,3 +1,2 @@
-name,source_table_name,dest_table_name,time,space,end_line,description,reftype,ref
-alcohol_licenses,alcohol_licenses,alcohol_licenses,,,,,generator,AlcoholLicensesDataGenerator
-
+name,source_table_name,dest_table_name,start_line,end_line,header_lines,reftype,ref,state
+licenses,licenses,licenses,1,226,0,generator,AlcoholLicensesDataGenerator,ingest_done
