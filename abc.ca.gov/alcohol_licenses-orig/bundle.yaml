@@ -1,0 +1,44 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: null
+  groups: []
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: California
+  subject: null
+  summary: Records extracted from the California Alcohol Beverage Control website
+    for the 18 SANDAG cities; Carlsbad, Chula Vista, Coronado, Del Mar, El Cajon,
+    Encinitas, Escondido,  Imperial Beach, La Mesa, Lemon Grove, National City, Oceanside,  Poway,
+    San Diego, San Marcos, Santee, Solana Beach, Vista
+  tags:
+  - government
+  - gov-licenses
+  - business
+  - bus-economy
+  time: null
+  title: San Diego County Alcohol Permits
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation: {}
+identity:
+  dataset: alcohol_licenses
+  id: d004
+  revision: 2
+  source: abc.ca.gov
+  variation: orig
+  version: 0.1.2
+names:
+  fqname: abc.ca.gov-alcohol_licenses-orig-0.1.2~d004002
+  name: abc.ca.gov-alcohol_licenses-orig
+  vid: d004002
+  vname: abc.ca.gov-alcohol_licenses-orig-0.1.2
+requirements: {}
+versions: {}
