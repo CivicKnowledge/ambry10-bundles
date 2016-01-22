@@ -9,27 +9,24 @@ about:
     source: null
     space: California
     subject: null
-    summary: The physical fitness test (PFT) for students in California schools is
-        the FITNESSGRAM. The main goal of the test is to help students in starting
-        life-long habits of regular physical activity.
+    summary: California public school enrollments, from 1993 on. For each school, enrollment is broken out in 
+        up to 18 records, with records for race, ethnicity, gender and other factors.  
     tags: []
-    time: 1999/2014
-    title: Physical Fitness Test  Results
+    time: 1993/2014
+    title: California Public School Enrollment
 contacts:
-    creator:
+    wrangler:
         email: eric@civicknowledge.com
         name: Eric Busboom
         org: Civic Knowledge
         url: http://civicknowledge.com
 dependencies: {}
 external_documentation:
-    dataset:
-        description: The physical fitness test (PFT) for students in California schools
-            is the FITNESSGRAM. The main goal of the test is to help students in starting
-            life-long habits of regular physical activity.
+    download:
+        description: 
         source: null
-        title: PFT Statewide Research Files
-        url: http://www.cde.ca.gov/ta/tg/pf/pftresearch.asp
+        title: Enrollment data download page
+        url: http://www.cde.ca.gov/ds/sd/sd/filesenr.asp
 identity:
     btime: 1993e
     dataset: enrollment
@@ -42,21 +39,7 @@ names:
     name: cde.ca.gov-enrollment-1993e
     vid: d04y001
     vname: cde.ca.gov-enrollment-1993e-0.0.1
-pipelines:
-    build:
-        augment:
-        - 'Expand({ (''_year'',''_county_fips'', ''_district_code'', ''_school_code'')
-            : lambda p,r,v: [ p.source.time, r[0][:2], r[0][2:7], r[0][7:] ] })'
-        - bundle.LookupCDS
-        first:
-        - Head(400)
-    schema:
-        augment:
-        - 'Add([''_year'',''_county_fips'', ''_district_code'', ''_school_code'']) '
-        first:
-        - Head(400)
-    source:
-        first:
-        - Sample(400)
+
+
 requirements: {}
 versions: {}

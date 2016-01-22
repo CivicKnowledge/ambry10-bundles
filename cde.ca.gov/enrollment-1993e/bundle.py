@@ -4,13 +4,12 @@ import ambry.bundle
 class Bundle(ambry.bundle.Bundle):
     pass
 
-from ambry.etl.pipeline import Modify
 
-class  LookupCDS(Modify):
-
-    def process_body(self, row):
-
-        # Eventually, we'll get a dataset for the county, district and school numbers 
-        # and map all of the unset values for county, district and school. 
-
-        return row
+    def edit_pipeline(self, pl):
+        """The -L option limits each source build to the first 400 rows"""
+        from ambry.etl.pipeline import Head
+        if self.limited_run:
+            pl.first = [Head(400)]
+            
+        return pl
+            
