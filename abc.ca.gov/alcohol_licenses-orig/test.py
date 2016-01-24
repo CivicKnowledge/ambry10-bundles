@@ -2,7 +2,11 @@
 # Bundle test code
 
 from ambry.bundle.test import BundleTest
-from ambry.bundle.events import after_ingest, before_ingest
+from ambry.bundle.events import after_ingest
+
 
 class Test(BundleTest):
-    pass
+
+    @after_ingest
+    def test_after_ingest(self):
+        self.assertEqual(['licenses'], [t.name for t in self.bundle.dataset.source_tables])
