@@ -3,6 +3,9 @@
 "enrollment","int",,"id",
 "enrollment","str","cds_code","cds_code",
 "enrollment","int",,"year","^source.time"
+"enrollment","str",,"county",
+"enrollment","str",,"district",
+"enrollment","str",,"school",
 "enrollment","str",,"county_fips","^row.cds_code[:2]"
 "enrollment","str",,"district_code","^row.cds_code[2:7]"
 "enrollment","str",,"school_code","^row.cds_code[7:]"

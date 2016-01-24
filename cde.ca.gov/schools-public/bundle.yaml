@@ -42,9 +42,6 @@ names:
     name: cde.ca.gov-schools-public
     vid: d04z001
     vname: cde.ca.gov-schools-public-0.0.1
-pipelines:
-    schema:
-        first:
-        - Head(5000)
+
 requirements: {}
 versions: {}

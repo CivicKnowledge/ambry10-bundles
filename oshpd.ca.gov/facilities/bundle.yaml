@@ -16,7 +16,7 @@ about:
   time: null
   title: California Healthcare Facilities
 contacts:
-  creator:
+  wrangler:
     email: eric@civicknowledge.com
     name: Eric Busboom
     org: Civic Knowledge
@@ -34,6 +34,7 @@ identity:
   revision: 8
   source: oshpd.ca.gov
   version: 0.0.8
+
 names:
   fqname: oshpd.ca.gov-facilities-0.0.8~d03j008
   name: oshpd.ca.gov-facilities

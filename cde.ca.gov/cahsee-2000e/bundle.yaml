@@ -1,0 +1,52 @@
+about:
+    access: restricted
+    footnote: nll
+    grain: null
+    groups: null
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: null
+    subject: null
+    summary: The California High School Exit Examination was a graduation requirement from 2006 to 2015. 
+    tags: []
+    time: null
+    title: California High School Exit Examination (CAHSEE)
+contacts:
+    wrangler:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+    overview:
+        description: Overview of the CAHSEE program.
+        source: null
+        title: California High School Exit Examination (CAHSEE)
+        url: http://www.cde.ca.gov/ta/tg/hs/
+    dataset:
+        description: Web page the links to other CAHSEE pages.
+        source: null
+        title: CAHSEE Links
+        url: http://cahsee.cde.ca.gov/
+    download:
+        description: Web page that links to the source files.
+        source: null
+        title: Download Page
+        url: http://cahsee.cde.ca.gov/datafiles.asp
+identity:
+    btime: 2000e
+    dataset: cahsee
+    id: d059
+    revision: 1
+    source: cde.ca.gov
+    version: 0.0.1
+names:
+    fqname: cde.ca.gov-cahsee-2000e-0.0.1~d059001
+    name: cde.ca.gov-cahsee-2000e
+    vid: d059001
+    vname: cde.ca.gov-cahsee-2000e-0.0.1
+requirements: {}
+versions: {}

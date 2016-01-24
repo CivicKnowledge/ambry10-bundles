@@ -1,7 +1,5 @@
 
-# {about_title}
-
-{about_summary}
+# Wranger Notes
 
 The OSHPD ids appear to being with a code that indicates the type of facility:
 
