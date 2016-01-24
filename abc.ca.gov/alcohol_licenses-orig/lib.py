@@ -2,7 +2,7 @@
 # Ambry Bundle Library File
 # Use this file for code that may be imported into other bundles
 
-from datetime import datetime
+from datetime import datetime, date
 
 from bs4 import BeautifulSoup
 import requests
@@ -43,16 +43,11 @@ class AlcoholLicensesDataGenerator(object):
     def __init__(self, bundle, source=None):
         self._bundle = bundle
         self._source = source
-        self._downloads_cache = {}  # Need to prevent downloading twice - while ingesting and while building.
 
     def __iter__(self):
         """ Generates header and rows with data of all cities. """
 
         header = None
-
-        # partition = self.partitions.find_or_new(table='licenses', time=str(datetime.date.today().year))
-        # header = [c.name for c in partition.table.columns]
-        # target_cities = self.metadata.meta.target_cities
 
         for city in CITIES:
             self._bundle.log('Getting `{}` city page content'.format(city))
@@ -92,7 +87,16 @@ class AlcoholLicensesDataGenerator(object):
 
     def _download_page(self, city_name, report_type=None):
         """Download and cache a page, or return a cached version if it is less than a month old. """
-        if city_name not in self._downloads_cache:
+        # ensure cache directories exist.
+        year_month = '{}_{}'.format(date.today().year, date.today().month)
+        if not self._bundle.library.download_cache.exists('html'):
+            self._bundle.library.download_cache.makedir('html')
+        if not self._bundle.library.download_cache.exists('html/{}'.format(year_month)):
+            self._bundle.library.download_cache.makedir('html/{}'.format(year_month))
+
+        city_html = 'html/{}/{}.html'.format(year_month, city_name)
+        page_content = ''
+        if not self._bundle.library.download_cache.exists(city_html):
             self._bundle.log('Downloading `{}` city page'.format(city_name))
             payload = {
                 'q_CityLOV': city_name.upper(),
@@ -103,10 +107,16 @@ class AlcoholLicensesDataGenerator(object):
             response = requests.post(API_URL, data=payload)
             assert response.status_code == 200, \
                 'Download error: status_code: {}, text: {}'.format(response.status_code, response.text)
-            self._downloads_cache[city_name] = response.text
+
+            self._bundle.library.download_cache.createfile(city_html)
+            with self._bundle.library.download_cache.open(city_html, 'w') as f:
+                page_content = response.text
+                f.write(response.text)
         else:
+            page_content = self._bundle.library.download_cache.open(city_html, 'r').read()
             self._bundle.log('Returning `{}` city page content from cache'.format(city_name))
-        return self._downloads_cache[city_name]
+        assert page_content
+        return page_content
 
     def _retrieve_row(self, tr_elem):
         """ Converts tr_elem to list of strings.
