@@ -89,12 +89,14 @@ class AlcoholLicensesDataGenerator(object):
         """Download and cache a page, or return a cached version if it is less than a month old. """
         # ensure cache directories exist.
         year_month = '{}_{}'.format(date.today().year, date.today().month)
-        if not self._bundle.library.download_cache.exists('html'):
-            self._bundle.library.download_cache.makedir('html')
-        if not self._bundle.library.download_cache.exists('html/{}'.format(year_month)):
-            self._bundle.library.download_cache.makedir('html/{}'.format(year_month))
+        if not self._bundle.library.download_cache.exists('abc.ca.gov'):
+            self._bundle.library.download_cache.makedir('abc.ca.gov')
+        if not self._bundle.library.download_cache.exists('abc.ca.gov/html'):
+            self._bundle.library.download_cache.makedir('abc.ca.gov/html')
+        if not self._bundle.library.download_cache.exists('abc.ca.gov/html/{}'.format(year_month)):
+            self._bundle.library.download_cache.makedir('abc.ca.gov/html/{}'.format(year_month))
 
-        city_html = 'html/{}/{}.html'.format(year_month, city_name)
+        city_html = 'abc.ca.gov/html/{}/{}.html'.format(year_month, city_name)
         page_content = ''
         if not self._bundle.library.download_cache.exists(city_html):
             self._bundle.log('Downloading `{}` city page'.format(city_name))
