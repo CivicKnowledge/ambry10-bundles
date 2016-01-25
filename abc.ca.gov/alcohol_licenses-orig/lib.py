@@ -2,8 +2,7 @@
 # Ambry Bundle Library File
 # Use this file for code that may be imported into other bundles
 
-from datetime import datetime
-import time
+from datetime import datetime, date
 
 from bs4 import BeautifulSoup
 import requests
@@ -18,24 +17,24 @@ HEADER = [
     'Mailing Address', 'Geo Code']
 
 CITIES = [
-    'CARLSBAD',
-    'CHULA VISTA',
-    'CORONADO',
-    'DEL MAR',
-    'EL CAJON',
-    'ENCINITAS',
-    'ESCONDIDO',
-    'IMPERIAL BEACH',
-    'LA MESA',
-    'LEMON GROVE',
-    'NATIONAL CITY',
-    'OCEANSIDE',
-    'POWAY',
-    'SAN DIEGO',
-    'SAN MARCOS',
-    'SANTEE',
-    'SOLANA BEACH',
-    'VISTA',
+    'Carlsbad',
+    'Chula Vista',
+    'Coronado',
+    'Del Mar',
+    'El Cajon',
+    'Encinitas',
+    'Escondido',
+    'Imperial Beach',
+    'La Mesa',
+    'Lemon Grove',
+    'National City',
+    'Oceanside',
+    'Poway',
+    'San Diego',
+    'San Marcos',
+    'Santee',
+    'Solana Beach',
+    'Vista',
 ]
 
 
@@ -45,44 +44,27 @@ class AlcoholLicensesDataGenerator(object):
         self._bundle = bundle
         self._source = source
 
-        '''
-        if source:
-            self.year = int(source.time)
-            self.space = source.space
-        else:
-            self.year = 2010
-            self.space = 'CA'
-        '''
-
     def __iter__(self):
         """ Generates header and rows with data of all cities. """
 
         header = None
 
-        # partition = self.partitions.find_or_new(table='licenses', time=str(datetime.date.today().year))
-        # header = [c.name for c in partition.table.columns]
-        # target_cities = self.metadata.meta.target_cities
-
         for city in CITIES:
-            self._bundle.log('Downloading `{}` city page'.format(city))
-            cache_state, page = self._download_page(city, report_type='p_Retail')
-            if cache_state == 'new':
-                # Why do we need to sleep?
-                time.sleep(5)
-            else:
-                self._bundel.log('Page was cached')
-
-            self._bundle.log('Parsing {} city page'.format(city))
-            bf = BeautifulSoup(page)
-
-            tr_elems = bf.select('tr.report_column')
-            # FIXME: assert self._contains_header(tr_elems[0])
+            self._bundle.log('Getting `{}` city page content'.format(city))
+            page = self._download_page(city, report_type='p_Retail')
 
             if not header:
                 header = HEADER
                 self._bundle.debug('Generate header: {}'.format(header))
                 yield header
 
+            self._bundle.log('Parsing {} city page'.format(city))
+            bf = BeautifulSoup(page)
+
+            tr_elems = bf.select('tr.report_column')
+
+            # We are going to skip first row, so ensure it's a header.
+            self._assert_contains_header(tr_elems[0])
             for i, tr_elem in enumerate(tr_elems[1:]):
                 row = self._retrieve_row(tr_elem)
                 self._bundle.debug('{} row of {} city retrieved as {}'.format(i, city, row))
@@ -94,68 +76,53 @@ class AlcoholLicensesDataGenerator(object):
                         .format(city, i, row, new_row))
                     yield new_row
 
-            # with partition.database.inserter(partition.table, cache_size=0) as ins:
-            #    for row in table:
-            #        ins.insert(dict(zip(header, row)))
+    def _assert_contains_header(self, tr_elem):
+        header = []
+        for th_elem in tr_elem.select('th'):
+            header.append(' '.join(th_elem.strings).strip())
+        assert header[1].lower() == HEADER[0].lower(), \
+            'Header mismatch: expected: {}, downloaded: {}'.format(HEADER[1], header[1])
+        assert header[2].lower() == HEADER[1].lower(), \
+            'Header mismatch: expected: {}, downloaded: {}'.format(HEADER[1], header[2])
 
     def _download_page(self, city_name, report_type=None):
         """Download and cache a page, or return a cached version if it is less than a month old. """
+        # ensure cache directories exist.
+        year_month = '{}_{}'.format(date.today().year, date.today().month)
+        if not self._bundle.library.download_cache.exists('html'):
+            self._bundle.library.download_cache.makedir('html')
+        if not self._bundle.library.download_cache.exists('html/{}'.format(year_month)):
+            self._bundle.library.download_cache.makedir('html/{}'.format(year_month))
 
-        # partition = self.partitions.find_or_new(table='page_cache')
-
-        #
-        # Look in the cache for the page.
-        #
-
-        # from sqlalchemy.sql import text
-        # s = text(""" SELECT date, page FROM page_cache WHERE city = :city_name
-        #         AND report_type = :report_type
-        #         AND date > date('now','-1 month')
-        #         ORDER BY date desc
-        #         """)
-
-        # row = partition.database.connection.execute(s,
-        #                                             city_name=city_name,
-        #                                             report_type=report_type
-        #                                            ).first()
-
-        # if row:
-        #    return 'cached', row[1]
-
-        #
-        # Not found, get it from the web.
-        #
-
-        payload = {
-            'q_CityLOV': city_name,
-            'RPTYPE': report_type,
-            'SUBMIT1': 'Continue'
-        }
-
-        response = requests.post(API_URL, data=payload)
-        assert response.status_code == 200, \
-            'Download error: status_code: {}, text: {}'.format(response.status_code, response.text)
-
-        ''' FIXME: cache the downloaded page.
-
-        with partition.database.inserter() as ins:
-            row = {
-                'date': datetime.datetime.now(),
-                'city': city_name,
-                'license_type': '01',
-                'report_type': report_type,
-                'page': r.text
+        city_html = 'html/{}/{}.html'.format(year_month, city_name)
+        page_content = ''
+        if not self._bundle.library.download_cache.exists(city_html):
+            self._bundle.log('Downloading `{}` city page'.format(city_name))
+            payload = {
+                'q_CityLOV': city_name.upper(),
+                'RPTYPE': report_type,
+                'SUBMIT1': 'Continue'
             }
-            ins.insert(row)
-        '''
 
-        return 'new', response.text
+            response = requests.post(API_URL, data=payload)
+            assert response.status_code == 200, \
+                'Download error: status_code: {}, text: {}'.format(response.status_code, response.text)
+
+            self._bundle.library.download_cache.createfile(city_html)
+            with self._bundle.library.download_cache.open(city_html, 'w') as f:
+                page_content = response.text
+                f.write(response.text)
+        else:
+            page_content = self._bundle.library.download_cache.open(city_html, 'r').read()
+            self._bundle.log('Returning `{}` city page content from cache'.format(city_name))
+        assert page_content
+        return page_content
 
     def _retrieve_row(self, tr_elem):
         """ Converts tr_elem to list of strings.
 
         Args:
-            tr_elem (FIXME:):
+            tr_elem (bs4.element.Tag):
 
         Returns:
             list of str:
@@ -191,7 +158,7 @@ class AlcoholLicensesDataGenerator(object):
 
 
 #
-# Following code should not be used by other bundles. I created it only for testing
+# Following code should not be used by ambry. I created it only for testing
 # while developing the generator.
 #
 
