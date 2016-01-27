@@ -1,11 +1,12 @@
-table,sequence_id,column,datatype,size,description
+"table","column","datatype","size","description","transform"
 ,,,,,
-mrfei,1,id,int,,Modified retail food environment index
-mrfei,2,state,str,2,State abbreviation
-mrfei,3,fips,str,13,"Census tract FIPS code, probably also a census geoid"
-mrfei,4,mrfei,float,,mREFI value
-,,,,,
-data,1,id,int,,
-data,2,state,str,,state
-data,3,fips,int,,fips
-data,4,mrfei,float,,mrfei
+"mrfei","id","int",,"Modified retail food environment index",
+"mrfei","state","str",2,"State abbreviation",
+"mrfei","fips","census.TigerGeoid",13,"Census tract FIPS code, probably also a census geoid","^parse_tiger_tract"
+"mrfei","mrfei","float",,"mREFI value",
+"mrfei","geoid","census.AcsGeoid",,"The tracts as an ACS geoid","||row.fips.geoid"
+"mrfei","gvid","census.GVid",,"The tract as a Gvid","||row.fips.gvid"
+"mrfei","state_fips","int",,"State FIPS code","||row.fips.state"
+"mrfei","state_name","int",,"State name","||row.fips.state_name"
+"mrfei","county_fips","int",,"County FIPS code","||row.fips.county"
+"mrfei","county_name","int",,"County name","||row.fips.county_name"

@@ -22,7 +22,7 @@ about:
     time: null
     title: Modified Retail Food Environment Index
 contacts:
-    creator:
+    wrangler:
         email: eric@civicknowledge.com
         name: Eric Busboom
         org: Civic Knowledge

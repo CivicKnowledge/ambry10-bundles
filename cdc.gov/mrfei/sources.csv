@@ -1,2 +1,2 @@
-name,title,dest_table_name,space,start_line,end_line,header_lines,description,ref,state
-data,data,data,US,1,65346,0,Excel version of the data table,http://www.cdc.gov/obesity/downloads/2_16_mrfei_data_table.xls,ingest_done
+name,dest_table_name,start_line,header_lines,description,ref,state
+mrfei,mrfei,1,0,Excel version of the data table,http://www.cdc.gov/obesity/downloads/2_16_mrfei_data_table.xls,ingest_done
