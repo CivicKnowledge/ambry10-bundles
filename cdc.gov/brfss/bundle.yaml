@@ -1,54 +1,54 @@
 about:
-  access: restricted
-  footnote: nll
-  grain: null
-  groups: []
-  license: ckdbl
-  processed: null
-  rights: public
-  source: null
-  space: US
-  subject: null
-  summary: The Behavioral Risk Factor Surveillance System (BRFSS) is the world's largest,
-    on-going telephone health survey system.
-  tags: []
-  time: null
-  title: Behavioral Risk Factor Surveillance System (BRFSS)
+    access: restricted
+    footnote: nll
+    grain: null
+    groups: []
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: US
+    subject: null
+    summary: The Behavioral Risk Factor Surveillance System (BRFSS) is the world's
+        largest, on-going telephone health survey system.
+    tags: []
+    time: null
+    title: Behavioral Risk Factor Surveillance System (BRFSS)
 contacts:
-  creator:
-    email: eric@civicknowledge.com
-    name: Eric Busboom
-    org: Civic Knowledge
-    url: http://civicknowledge.com
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
 dependencies: {}
 external_documentation:
-  datadictionary:
-    description: Provides information on the background, design, data collection and
-      processing, statistical, and analytical issues for the combined landline and
-      cell phone data set.
-    source: null
-    title: 2013 BRFSS Codebook
-    url: http://www.cdc.gov/brfss/annual_data/2013/pdf/CODEBOOK13_LLCP.pdf
-  download:
-    description: Download page for the BRFSS
-    source: null
-    title: BRFSS 2013 Survey Data and Documentation
-    url: http://www.cdc.gov/brfss/annual_data/annual_2013.html
-  homepage:
-    description: Top level page for the BRFSS telephone survey
-    source: null
-    title: BRFSS homepage
-    url: http://www.cdc.gov/brfss/
+    datadictionary:
+        description: Provides information on the background, design, data collection
+            and processing, statistical, and analytical issues for the combined landline
+            and cell phone data set.
+        source: null
+        title: 2013 BRFSS Codebook
+        url: http://www.cdc.gov/brfss/annual_data/2013/pdf/CODEBOOK13_LLCP.pdf
+    download:
+        description: Download page for the BRFSS
+        source: null
+        title: BRFSS 2013 Survey Data and Documentation
+        url: http://www.cdc.gov/brfss/annual_data/annual_2013.html
+    homepage:
+        description: Top level page for the BRFSS telephone survey
+        source: null
+        title: BRFSS homepage
+        url: http://www.cdc.gov/brfss/
 identity:
-  dataset: brfss
-  id: d034
-  revision: 3
-  source: cdc.gov
-  version: 0.0.3
+    dataset: brfss
+    id: d034
+    revision: 3
+    source: cdc.gov
+    version: 0.0.3
 names:
-  fqname: cdc.gov-brfss-0.0.3~d034003
-  name: cdc.gov-brfss
-  vid: d034003
-  vname: cdc.gov-brfss-0.0.3
+    fqname: cdc.gov-brfss-0.0.3~d034003
+    name: cdc.gov-brfss
+    vid: d034003
+    vname: cdc.gov-brfss-0.0.3
 requirements: {}
 versions: {}
