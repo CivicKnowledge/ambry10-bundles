@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 # Ambry Bundle Library File
 # Use this file for code that may be imported into other bundles
+import os
 
 from datetime import datetime, date
 
@@ -89,16 +90,17 @@ class AlcoholLicensesDataGenerator(object):
         """Download and cache a page, or return a cached version if it is less than a month old. """
         # ensure cache directories exist.
         year_month = '{}_{}'.format(date.today().year, date.today().month)
-        if not self._bundle.library.download_cache.exists('abc.ca.gov'):
-            self._bundle.library.download_cache.makedir('abc.ca.gov')
-        if not self._bundle.library.download_cache.exists('abc.ca.gov/html'):
-            self._bundle.library.download_cache.makedir('abc.ca.gov/html')
-        if not self._bundle.library.download_cache.exists('abc.ca.gov/html/{}'.format(year_month)):
-            self._bundle.library.download_cache.makedir('abc.ca.gov/html/{}'.format(year_month))
+        download_cache = self._bundle.library.download_cache
+        if not download_cache.exists('abc.ca.gov'):
+            download_cache.makedir('abc.ca.gov')
+        if not download_cache.exists('abc.ca.gov/html'):
+            download_cache.makedir('abc.ca.gov/html')
+        if not download_cache.exists('abc.ca.gov/html/{}'.format(year_month)):
+            download_cache.makedir('abc.ca.gov/html/{}'.format(year_month))
 
         city_html = 'abc.ca.gov/html/{}/{}.html'.format(year_month, city_name)
         page_content = ''
-        if not self._bundle.library.download_cache.exists(city_html):
+        if not download_cache.exists(city_html):
             self._bundle.log('Downloading `{}` city page'.format(city_name))
             payload = {
                 'q_CityLOV': city_name.upper(),
@@ -110,12 +112,12 @@ class AlcoholLicensesDataGenerator(object):
             assert response.status_code == 200, \
                 'Download error: status_code: {}, text: {}'.format(response.status_code, response.text)
 
-            self._bundle.library.download_cache.createfile(city_html)
-            with self._bundle.library.download_cache.open(city_html, 'w') as f:
+            download_cache.createfile(city_html)
+            with download_cache.open(city_html, 'w') as f:
                 page_content = response.text
                 f.write(response.text)
         else:
-            page_content = self._bundle.library.download_cache.open(city_html, 'r').read()
+            page_content = download_cache.open(city_html, 'r').read()
             self._bundle.log('Returning `{}` city page content from cache'.format(city_name))
         assert page_content
         return page_content
@@ -163,9 +165,19 @@ class AlcoholLicensesDataGenerator(object):
 # Following code should not be used by ambry. I created it only for testing
 # while developing the generator.
 #
+# How to run developer test:
+# python lib.py
 
 
 def _test():
+
+    from fs.opener import fsopendir
+
+    class LibraryLike(object):
+        """ Represents minimal library. """
+        if not os.path.exists('/tmp/dev_test1k'):
+            os.mkdir('/tmp/dev_test1k')
+        download_cache = fsopendir('/tmp/dev_test1k')
 
     class BundleLike(object):
         # simple mock of a bundle for development purposes.
