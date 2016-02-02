@@ -40,13 +40,13 @@ external_documentation:
 identity:
   dataset: patient_discharges
   id: d03V
-  revision: 5
+  revision: 6
   source: oshpd.ca.gov
-  version: 0.0.5
+  version: 0.0.6
 names:
   fqname: oshpd.ca.gov-patient_discharges-0.0.5~d03V005
   name: oshpd.ca.gov-patient_discharges
-  vid: d03V005
+  vid: d03V006
   vname: oshpd.ca.gov-patient_discharges-0.0.5
 requirements: {}
 versions: {}

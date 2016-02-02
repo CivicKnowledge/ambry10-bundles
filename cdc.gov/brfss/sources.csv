@@ -1,3 +1,4 @@
-name,title,dest_table_name,time,space,description,header_lines,start_line,filetype,reftype,ref,state
-brfss2013,brfss2013,brfss2013,2013,US,BRFSS 2013 Survey Data,[],0,fixed,,http://www.cdc.gov/brfss/annual_data/2013/files/LLCP2013ASC.ZIP,synced
-states,states,states,,US,,,,partition,ref,civicknowledge.com-geography-census-states-2010,synced
+"name","title","dest_table_name","time","space","description","header_lines","start_line","encoding","filetype","reftype","ref","state"
+"brfss2013","brfss2013","brfss2013",2013,"US","BRFSS 2013 Survey Data","[]",0,"latin1","fixed",,"http://www.cdc.gov/brfss/annual_data/2013/files/LLCP2013ASC.ZIP","synced"
+"states","states","states",,"US",,,,,"partition","ref","civicknowledge.com-geography-census-states-2010","synced"
+"datadict","Data Dictionary",,,,,,,,,"ref","http://www.cdc.gov/brfss/annual_data/2013/pdf/CODEBOOK13_LLCP.pdf",
