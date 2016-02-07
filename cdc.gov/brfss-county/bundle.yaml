@@ -1,0 +1,62 @@
+about:
+  access: restricted
+  footnote: nll
+  grain: counties
+  groups: []
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: US
+  subject: null
+  summary: The Selected Metropolitan/Micropolitan Area Risk Trends (SMART) project
+    uses the Behavioral Risk Factor Surveillance System (BRFSS) to analyze the data
+    of selected metropolitan and micropolitan statistical areas (MMSAs) with 500 or
+    more respondents. BRFSS data can be used to identify emerging health problems,
+    establish and track health objectives, and develop and evaluate public health
+    policies and programs.
+  tags: []
+  time: 2012
+  title: 2012 SMART BRFSS County Data and Documentation
+contacts:
+  creator:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  codebook:
+    description: A Data Dictionary and codebook for the 2012 BRFSS
+    source: null
+    title: BRFSS Codebook
+    url: http://www.cdc.gov/brfss/annual_data/2013/pdf/CODEBOOK13_LLCP.pdf
+  dataset:
+    description: SMART dataset page.
+    source: null
+    title: SMART BRFSS City and County Data and Documentation
+    url: http://www.cdc.gov/brfss/smart/smart_data.htm
+  download:
+    description: Web page that links to the source files.
+    source: null
+    title: Download Page
+    url: http://www.cdc.gov/brfss/smart/smart_2012.html
+  faq:
+    description: null
+    source: null
+    title: Frequently Asked Questions
+    url: http://www.cdc.gov/brfss/smart/smart_faq.htm
+identity:
+  dataset: brfss
+  id: d03G
+  revision: 4
+  source: cdc.gov
+  subset: county
+  version: 0.0.4
+names:
+  fqname: cdc.gov-brfss-county-0.0.4~d03G004
+  name: cdc.gov-brfss-county
+  vid: d03G004
+  vname: cdc.gov-brfss-county-0.0.4
+requirements: {}
+versions: {}
