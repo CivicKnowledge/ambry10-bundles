@@ -1,0 +1,60 @@
+about:
+  access: private
+  footnote: nll
+  grain: null
+  groups: []
+  license: ckdbl
+  processed: null
+  rights: public
+  source: null
+  space: California
+  subject: null
+  summary: The California Health Interview Survey (CHIS) is the nations largest state
+    health survey and a critical source of data on Californians as well as on the
+    states various racial and ethnic groups.
+  tags: []
+  time: null
+  title: California Health Interview Survey, Adult
+contacts:
+  wrangler:
+    email: eric@civicknowledge.com
+    name: Eric Busboom
+    org: Civic Knowledge
+    url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+  citation:
+    description: How to cite CHIS data
+    source: null
+    title: How to cite CHIS data
+    url: http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Documents/cite_puf.pdf
+  download:
+    description: Download page for public CHIS files. You will need to create an account
+      to access the files.
+    source: null
+    title: Download page
+    url: http://healthpolicy.ucla.edu/chis/data/Pages/public-use-data.aspx
+  faq:
+    description: Frequently asked questions
+    source: null
+    title: Frequently asked Questions
+    url: http://healthpolicy.ucla.edu/chis/faq/Pages/default.aspx
+  terms:
+    description: Restrictions on the Use of California Health Interview Survey Data
+    source: null
+    title: Source Terms of Use
+    url: http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Pages/TermsOfUse.aspx
+identity:
+  dataset: chis
+  id: d037
+  revision: 2
+  source: healthpolicy.ucla.edu
+  subset: public
+  version: 0.0.2
+names:
+  fqname: healthpolicy.ucla.edu-chis-public-0.0.2~d037002
+  name: healthpolicy.ucla.edu-chis-public
+  vid: d037002
+  vname: healthpolicy.ucla.edu-chis-public-0.0.2
+requirements: {}
+versions: {}

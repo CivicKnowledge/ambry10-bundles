@@ -1,0 +1,937 @@
+table,sequence_id,column,datatype,size,description
+,,,,,
+chis_puf_x,1,id,int,,CHIS public use imputation flags
+chis_puf_x,2,aa5c_x,int,3,Imputation flag for: ENROLLED MEMBER IN RECOGNIZED TRIBE
+chis_puf_x,3,ab1_x,int,3,Imputation flag for: GENERAL HEALTH CONDITION
+chis_puf_x,4,ab100_x,int,3,Imputation flag for: HAD FLU SHOT OR NASAL FLU VACCINE
+chis_puf_x,5,ab106_p_x,int,,Imputation flag for: ER/URGT CARE VISIT FOR ASTHMA PAST YR (CURRENT ASTHMATIC) (PUF RECODE)
+chis_puf_x,6,ab108_x,int,3,Imputation flag for: CONFIDENCE TO CONTROL AND MANAGE ASTHMA
+chis_puf_x,7,ab109_x,int,3,Imputation flag for: VISITED ER FOR DIABETES IN PAST 12 MOS
+chis_puf_x,8,ab110_p_x,int,,Imputation flag for: VISITED ER FOR DIABETES BECAUSE UNABLE TO SEE OWN DR (PUF RECODE)
+chis_puf_x,9,ab111_x,int,3,Imputation flag for: ADMITTED TO HOSPITAL OVERNIGHT OR LONGER FOR DIABETES PAST 12 MOS
+chis_puf_x,10,ab112_x,int,3,Imputation flag for: MEDICAL PROVIDERS DEVELOP DIABETES CARE
+chis_puf_x,11,ab113_x,int,3,Imputation flag for: HAVE WRITTEN COPY OF DIABETES CARE PLAN
+chis_puf_x,12,ab114_x,int,3,Imputation flag for: CONFIDENCE TO CONTROL AND MANAGE DIABETES
+chis_puf_x,13,ab115_x,int,3,Imputation flag for: VISITED ER FOR HEART DISEASE IN PAST 12 MOS
+chis_puf_x,14,ab116_p_x,int,,Imputation flag for: VISITED ER FOR HEART DX B/C UNABLE TO SEE OWN DR (PUF RECODE)
+chis_puf_x,15,ab117_x,int,3,Imputation flag for: ADMITTED TO HOSPITAL OVERNIGHT/LONGER FOR HEART DX PAST 12 MOS
+chis_puf_x,16,ab118_x,int,3,Imputation flag for: MEDICAL PROVIDERS DEVELOPED HEART DISEASE PLAN
+chis_puf_x,17,ab119_x,int,3,Imputation flag for: HAVE WRITTEN COPY OF HEART DISEASE CARE
+chis_puf_x,18,ab120_x,int,3,Imputation flag for: CONFIDENCE TO CONTROL AND MANAGE HEART DISEASE
+chis_puf_x,19,ab127_x,int,3,"Imputation flag for: HAD JOINT PAIN, STIFFNESS PAST 30 DAYS"
+chis_puf_x,20,ab142_x,int,3,Imputation flag for: PROF MAKE RECOMNDS TO AVOID FALLING
+chis_puf_x,21,ab143_x,int,3,Imputation flag for: PROF RECOMND CHANGE MEDS DUE TO FALLS
+chis_puf_x,22,ab144_x,int,3,Imputation flag for: PROF RECOMND PHYS THRPY/EXERC DUE TO FALLS
+chis_puf_x,23,ab145_x,int,3,Imputation flag for: PROF RECOMND HOME CHANGES DUE TO FALLS
+chis_puf_x,24,ab146_x,int,3,Imputation flag for: PROF RECOMND CANE/WALKER DUE TO FALLS
+chis_puf_x,25,ab147_x,int,3,Imputation flag for: PROF RECOMND CHANGE ROUTINE DUE TO FALLS
+chis_puf_x,26,ab16_x,int,3,Imputation flag for: LIMITATION OF ACTIVITIES B/C OF JOINT PROBLEMS
+chis_puf_x,27,ab17_x,int,3,Imputation flag for: DOCTOR EVER TOLD HAVE ASTHMA
+chis_puf_x,28,ab18_x,int,3,Imputation flag for: TAKING DAILY MEDICATION TO CONTROL ASTHMA
+chis_puf_x,29,ab19_x,int,3,Imputation flag for: HOW OFTEN HAD ASTHMA SYMPTOMS IN PAST 12 MOS: CURRENT ASTHMATICS
+chis_puf_x,30,ab22_x,int,3,Imputation flag for: DOCTOR EVER TOLD HAVE DIABETES
+chis_puf_x,31,ab23_p_x,int,,Imputation flag for: AGE FIRST TOLD HAVE DIABETES (PUF RECODE)
+chis_puf_x,32,ab24_x,int,3,Imputation flag for: CURRENTLY TAKING INSULIN
+chis_puf_x,33,ab25_x,int,3,Imputation flag for: CURRENTLY TAKING DIABETIC PILLS TO LOWER BLOOD SUGAR
+chis_puf_x,34,ab26_x,int,3,Imputation flag for: # OF TIMES R/R'S FAMILY/R'S FRIEND CHECK BLOOD FOR GLUCOSE
+chis_puf_x,35,ab27_x,int,3,Imputation flag for: # OF TIMES DOC CHECKED FOR HEMOGLOBIN A ONE C LAST YR
+chis_puf_x,36,ab28_x,int,3,Imputation flag for: # OF TIMES DOC CHECKED FEET FOR SORES LAST YR
+chis_puf_x,37,ab29_x,int,3,Imputation flag for: DOCTOR EVER TOLD HAVE HIGH BLOOD PRESSURE
+chis_puf_x,38,ab30_x,int,3,Imputation flag for: CURRENTLY TAKING MEDICATIONS TO CONTROL HIGH BLOOD PRESSURE
+chis_puf_x,39,ab34_x,int,3,Imputation flag for: DOCTOR EVER TOLD HAVE ANY KIND OF HEART DISEASE
+chis_puf_x,40,ab40_x,int,3,Imputation flag for: STILL HAS ASTHMA
+chis_puf_x,41,ab41_x,int,3,Imputation flag for: ASTHMA EPISODE/ATTACK IN PAST 12 MOS
+chis_puf_x,42,ab42_x,int,3,Imputation flag for: WORKDAYS MISSED DUE TO ASTHMA IN PAST 12 MOS
+chis_puf_x,43,ab43_x,int,3,Imputation flag for: HEALTH PROFESSIONAL EVER GAVE ASTHMA MANAGEMENT PLAN
+chis_puf_x,44,ab51_x,int,3,Imputation flag for: TYPE I OR TYPE II DIABETES
+chis_puf_x,45,ab52_x,int,3,Imputation flag for: EVER TOLD HAVE HEART FAILURE/CONGESTIVE
+chis_puf_x,46,ab57_x,int,3,Imputation flag for: KIND OF PLACE GOT LAST FLU SHOT
+chis_puf_x,47,ab60_x,int,3,Imputation flag for: HOW FIRST FOUND OUT HAD BREAST CANCER
+chis_puf_x,48,ab63_x,int,3,Imputation flag for: LAST EYE EXAM DILATED PUPILS
+chis_puf_x,49,ab64_x,int,3,Imputation flag for: DOCTOR EVER TOLD HAVE ARTH/GOUT/LUPUS
+chis_puf_x,50,ab66_x,int,3,Imputation flag for: HOW OFTEN HAD ASTHMA SYMPTOMS IN PAST 12 MOS: PREVIOUS ASTHMATICS
+chis_puf_x,51,ab67_x,int,3,Imputation flag for: ER/URGENT CRE VISIT FOR ASTHMA LAST 12 MOS: PREVIOUS ASTHMATICS
+chis_puf_x,52,ab80_x,int,3,Imputation flag for: HOSPITAL OVERNIGHT FOR ASTHMA PAST 12 MOS: PREVIOUS ASTHMATICS
+chis_puf_x,53,ab81_x,int,3,Imputation flag for: DOCTOR TOLD HAD DIABETES ONLY DURING PREGNANCY
+chis_puf_x,54,ab91_x,int,3,Imputation flag for: RECEIVED MEDICAL CARE BECAUSE OF FALLS
+chis_puf_x,55,ab92_x,int,3,Imputation flag for: PROF TALKED ABOUT HOW TO AVOID FALLS
+chis_puf_x,56,ab93_x,int,3,Imputation flag for: PROF REVIEWED MEDS DUE TO FALLS
+chis_puf_x,57,ab94_x,int,3,Imputation flag for: STARTED PHYS THRPY/EXERC DUE TO FALLS
+chis_puf_x,58,ab95_x,int,3,Imputation flag for: CHANGED HOME DUE TO FALLS
+chis_puf_x,59,ab96_x,int,3,Imputation flag for: STARTED TO USE CANE/WALKER DUE TO FALLS
+chis_puf_x,60,ab97_x,int,3,Imputation flag for: CHANGED DAILY ROUTINES DUE TO FALLS
+chis_puf_x,61,ab98_x,int,3,Imputation flag for: HAVE WRITTEN COPY OF ASTHMA CARE PLAN
+chis_puf_x,62,ab99_x,int,3,Imputation flag for: DOC EVER TOLD HAVE PRE- OR BORDERLINE DIABETES
+chis_puf_x,63,ac11_x,int,3,Imputation flag for: # OF TIMES DRANK SODA LAST MONTH
+chis_puf_x,64,ac17_x,int,3,Imputation flag for: SMOKING EVER ALLOWED INSIDE HOME
+chis_puf_x,65,ac31_x,int,3,Imputation flag for: # TIMES ATE FAST FOOD PAST WEEK
+chis_puf_x,66,ac32_x,int,3,Imputation flag for: HAD ALCOHOL PAST 12 MONTHS
+chis_puf_x,67,ac34_x,int,3,Imputation flag for: # DAYS HAD 5+ DRINKS PAST 12 MONTHS
+chis_puf_x,68,ac35_x,int,3,Imputation flag for: # DAYS HAD 4+ DRINKS PAST 12 MONTHS
+chis_puf_x,69,ac42_p_x,int,,Imputation flag for: HOW OFTEN FIND FRESH FRUIT/VEG IN NEIGHB (PUF RECODE)
+chis_puf_x,70,ac43_x,int,3,Imputation flag for: HOW OFTEN FIND FRESH FRUIT/VEG NEAR WORK
+chis_puf_x,71,ac44_x,int,3,Imputation flag for: NEIGHBORHOOD FRUIT/VEG AFFORDABLE
+chis_puf_x,72,ac45_x,int,3,Imputation flag for: WORKPLACE FRUIT/VEG AFFORDABLE
+chis_puf_x,73,ac6_x,int,3,Imputation flag for: DOCTOR EVER TOLD HAD STROKE
+chis_puf_x,74,ac7_x,int,3,Imputation flag for: FALLEN TO GROUND MORE THAN ONCE IN PAST YR
+chis_puf_x,75,acmdnum_x,int,,Imputation flag for: # OF DOCTOR VISITS PAST YEAR
+chis_puf_x,76,ad13_x,int,3,Imputation flag for: CURRENTLY PREGNANT
+chis_puf_x,77,ad14_x,int,3,Imputation flag for: EVER HAD MAMMOGRAM
+chis_puf_x,78,ad17_x,int,3,Imputation flag for: HOW LONG SINCE LAST MAMMOGRAM
+chis_puf_x,79,ad18_x,int,3,Imputation flag for: REASON FOR HAVING LAST MAMMOGRAM
+chis_puf_x,80,ad19_x,int,3,Imputation flag for: EVER HAD MAMMOGRAM W/ ABNORMAL RESULTS
+chis_puf_x,81,ad20_x,int,3,Imputation flag for: EVER HAD OPERATION TO REMOVE LUMP FROM BREAST
+chis_puf_x,82,ad21_x,int,3,Imputation flag for: LUMP TURNED OUT TO BE CANCER
+chis_puf_x,83,ad22_p_x,int,,Imputation flag for: # OF BREAST OPERATIONS TO REMOVE NONCANCER (PUF RECODE)
+chis_puf_x,84,ad23_x,int,3,Imputation flag for: EVER HAVE OTHER TESTS/SURGERIES WHEN MAMMOGRAM ABNORMAL
+chis_puf_x,85,ad25_x,int,3,Imputation flag for: MAIN REASON FOR HAVING NO MAMMOGRAM
+chis_puf_x,86,ad26_x,int,3,Imputation flag for: DOCTOR RECOMMENDED MAMMOGRAM IN PAST TWO YRS
+chis_puf_x,87,ad32_x,int,3,Imputation flag for: # OF CIGARETTES PER DAY
+chis_puf_x,88,ad34_x,int,3,Imputation flag for: # OF DAYS PER WEEK ANY SMOKING INSIDE HOME
+chis_puf_x,89,ad37w_x,int,3,Imputation flag for: WALKED AT LEAST 10 MIN FOR TRANSPORT PAST 7 DAYS
+chis_puf_x,90,ad38w_x,int,3,Imputation flag for: # TIMES WALKED AT LEAST 10 MIN FOR TRANSPORT PAST 7 DAYS
+chis_puf_x,91,ad39w_x,int,3,Imputation flag for: AVERAGE LENGTH OF TIME WALKED FOR TRANSPORTION (MINS)
+chis_puf_x,92,ad40w_x,int,3,Imputation flag for: WALKED AT LEAST 10 MIN FOR LEISURE PAST 7 DAYS
+chis_puf_x,93,ad41w_x,int,3,Imputation flag for: # TIMES WALKED AT LEAST 10 MIN FOR LEISURE PAST 7 DAYS
+chis_puf_x,94,ad42w_x,int,3,Imputation flag for: AVERAGE LENGTH OF TIME WALKED FOR LEISURE (MINS)
+chis_puf_x,95,ad50_x,int,3,Imputation flag for: BLIND/DEAF OR HAS SEVERE VISION/HEARING PROBLEM
+chis_puf_x,96,ad51_x,int,3,"Imputation flag for: HAS DIFFICULTY LEARNING, REMEMBERING, CONCENTRATING"
+chis_puf_x,97,ad52_x,int,3,"Imputation flag for: HAS DIFFICULTY DRESSING, BATHING, GETTING AROUND"
+chis_puf_x,98,ad53_x,int,3,Imputation flag for: HAS DIFFICULTY GOING OUTSIDE HOME ALONE
+chis_puf_x,99,ad54_x,int,3,Imputation flag for: HAS DIFFICULTY WORKING AT A JOB
+chis_puf_x,100,ad57_x,int,3,Imputation flag for: CONDITION LIMITS BASIC PHYS ACTIVITY
+chis_puf_x,101,ae15_x,int,3,Imputation flag for: SMOKED 100 OR MORE CIGARETTES IN ENTIRE LIFETIME
+chis_puf_x,102,ae15a_x,int,3,"Imputation flag for: SMOKES CIGARETTES EVERYDAY, SOME DAYS OR NOT AT ALL"
+chis_puf_x,103,ae16_x,int,3,Imputation flag for: # OF CIGARETTES PER DAY
+chis_puf_x,104,ae2_x,int,3,Imputation flag for: # TIMES ATE FRUIT IN PAST MO
+chis_puf_x,105,ae3_x,int,3,"Imputation flag for: # TIMES ATE FRNCH FRIES, HME FRIES, HSH BRWNS IN PAST MO"
+chis_puf_x,106,ae30_x,int,3,Imputation flag for: FLU SHOT IN PAST 12 MOS
+chis_puf_x,107,ae50_x,int,3,Imputation flag for: MOST RECENT MAMMOGRAM RECOMENDED BY DOCT
+chis_puf_x,108,ae7_x,int,3,Imputation flag for: # OF TIMES ATE VEGETABLES IN PAST MO
+chis_puf_x,109,ae91_x,int,3,Imputation flag for: PROPORTION PAID FOR COST OF MOST RECENT MAMMOGRAM
+chis_puf_x,110,ae92_x,int,3,Imputation flag for: DOCTOR EVER TOLD WOMEN OWN AGE NEED MAMMOGRAM EVERY OTHER YR
+chis_puf_x,111,ae94_x,int,3,Imputation flag for: DOCTOR EVER DISCUSSED WHEN TO STOP MAMMOGRAMS
+chis_puf_x,112,ae_fries_x,int,,Imputation flag for: # OF TIME EATING FRIES PER WEEK
+chis_puf_x,113,ae_fruit_x,int,,Imputation flag for: # OF TIMES EATING FRUIT PER WEEK
+chis_puf_x,114,ae_soda_x,int,,Imputation flag for: # OF TIMES DRINKING SODA PER WEEK
+chis_puf_x,115,ae_vegi_x,int,,Imputation flag for: # OF TIMES EATING VEGETABLES PER WEEK
+chis_puf_x,116,af37_x,int,3,Imputation flag for: DOCTOR EXAMINED BREAST FOR LUMPS PAST 12 MOS
+chis_puf_x,117,af62_x,int,3,Imputation flag for: ANY MONTH PAST 12 MONTHS FELT WORSE
+chis_puf_x,118,af63_x,int,3,Imputation flag for: FEEL NERVOUS WORST MONTH
+chis_puf_x,119,af64_x,int,3,Imputation flag for: FEEL HOPELESS WORST MONTH
+chis_puf_x,120,af65_x,int,3,Imputation flag for: FEEL RESTLESS WORST MONTH
+chis_puf_x,121,af66_x,int,3,Imputation flag for: FEEL DEPRESSED WORST MONTH
+chis_puf_x,122,af67_x,int,3,Imputation flag for: FEEL EVERYTHING AN EFFORT WORST MONTH
+chis_puf_x,123,af68_x,int,3,Imputation flag for: FEEL WORTHLESS WORST MONTH
+chis_puf_x,124,af69b_x,int,3,Imputation flag for: EMOTIONS INTERFERE W/WORK WORST MONTH
+chis_puf_x,125,af70b_x,int,3,Imputation flag for: EMOTIONS INTERFERE W/CHORES WORST MONTH
+chis_puf_x,126,af71b_x,int,3,Imputation flag for: EMOTIONS INTERFERE W/SOCIAL LIFE WORST MONTH
+chis_puf_x,127,af72b_x,int,3,Imputation flag for: EMOTIONS INTERFERE W/RELATIONSHIPS WORST MONTH
+chis_puf_x,128,ag10_x,int,3,Imputation flag for: RESPONDENT USUALLY WORKS
+chis_puf_x,129,ag11_x,int,3,Imputation flag for: SPOUSE USUALLY WORKS
+chis_puf_x,130,ag20_x,int,3,Imputation flag for: LANGUAGE SPEAK WITH FRIENDS
+chis_puf_x,131,ag21_x,int,3,"Imputation flag for: LANGUAGE OF TV, RADIO, NEWSPAPERS"
+chis_puf_x,132,ag22_x,int,3,Imputation flag for: EVER SERVE IN U.S. ARMED FORCES
+chis_puf_x,133,ag8_x,int,3,Imputation flag for: WORK STATUS OF SPOUSE LAST WEEK
+chis_puf_x,134,ag9_x,int,3,Imputation flag for: TYPE OF EMPLOYER ON SPOUSE'S MAIN JOB
+chis_puf_x,135,ah1_x,int,3,Imputation flag for: HAVE USUAL SOURCE OF HEALTH CARE
+chis_puf_x,136,ah100_x,int,3,Imputation flag for: ANYONE HELP FIND HEALTH PLAN
+chis_puf_x,137,ah101_p_x,int,,Imputation flag for: PERSON WHO HELPED FIND HEALTH PLAN (PUF RECODE)
+chis_puf_x,138,ah102_p_x,int,,Imputation flag for: # NIGHTS IN HOSPITAL PAST 12 MOS (PUF RECODE)
+chis_puf_x,139,ah103_x,int,3,Imputation flag for: BUY HEALTH PLAN DIRECTLY FROM INS CO/HMO
+chis_puf_x,140,ah12_x,int,3,Imputation flag for: VISITED EMERGENCY ROOM FOR OWN HEALTH IN PAST 12 MOS
+chis_puf_x,141,ah13a_x,int,3,Imputation flag for: ER/URGENT CRE VISIT FOR ASTHMA LAST 12 MOS: CURRENT ASTHMATICS
+chis_puf_x,142,ah14_x,int,3,Imputation flag for: PATIENT IN HOSP OVERNIGHT DURING PAST 12 MOS
+chis_puf_x,143,ah15a_x,int,3,Imputation flag for: HOSPITAL OVERNIGHT FOR ASTHMA PAST 12 MOS: CURRENT ASTHMATICS
+chis_puf_x,144,ah16_x,int,3,Imputation flag for: DELAY GETTING PRESCRIPTION IN PAST 12 MO
+chis_puf_x,145,ah22_x,int,3,Imputation flag for: DELAY OTHER MEDICAL CARE IN PAST 12 MOS
+chis_puf_x,146,ah3_x,int,3,Imputation flag for: KIND OF PLACE FOR USUAL SOURCE OF HEALTH CARE
+chis_puf_x,147,ah33new_x,int,,Imputation flag for: BORN IN U.S.
+chis_puf_x,148,ah34new_x,int,,Imputation flag for: MOTHER BORN IN U.S.
+chis_puf_x,149,ah35new_x,int,,Imputation flag for: FATHER BORN IN U.S.
+chis_puf_x,150,ah37_x,int,3,Imputation flag for: HOW WELL YOU SPEAK ENGLISH
+chis_puf_x,151,ah43a_x,int,3,Imputation flag for: LIVING WITH A PARENT
+chis_puf_x,152,ah44_x,int,3,Imputation flag for: SPOUSE LIVING IN SAME HOUSEHOLD
+chis_puf_x,153,ah44a_x,int,3,Imputation flag for: USED PAID CHILDCARE FOR CHILDREN UNDER 14
+chis_puf_x,154,ah49_x,int,3,Imputation flag for: MEDICARE COVERAGE PROVIDED THROUGH HMO
+chis_puf_x,155,ah5_x,int,3,Imputation flag for: # TIMES SAW MD IN PAST 12 MOS
+chis_puf_x,156,ah50_p_x,int,,Imputation flag for: NAME OF MEDICARE HMO PLAN (PUF RECODE)
+chis_puf_x,157,ah52_x,int,3,Imputation flag for: SIGN UP FOR MEDICARE HMO DIRECTLY OR OTHERWISE
+chis_puf_x,158,ah6_x,int,3,Imputation flag for: HOW LONG SINCE LAST SAW DOCTOR ABOUT OWN HEALTH
+chis_puf_x,159,ah71_x,int,3,"Imputation flag for: HEALTH PLAN DEDUCTIBLE MORE THAN $1,000"
+chis_puf_x,160,ah72_x,int,3,"Imputation flag for: HEALTH PLAN DEDUCTIBLE MORE THAN $2,000"
+chis_puf_x,161,ah73_x,int,3,Imputation flag for: SPECIAL FUND TO PAY MEDICAL EXPENSES
+chis_puf_x,162,ah74_x,int,3,Imputation flag for: TRIED TO FIND HEALTH INSURANCE ON OWN
+chis_puf_x,163,ah75_x,int,3,Imputation flag for: TRIED TO FIND HEALTH INSURANCE ON OWN
+chis_puf_x,164,ah77_x,int,3,Imputation flag for: FREE PRENATAL CARE DURING PAST 12 MOS
+chis_puf_x,165,ah95_p_x,int,,Imputation flag for: # TIMES VISITED ER IN PAST 12 MOS (PUF RECODE)
+chis_puf_x,166,ah96_p_x,int,,"Imputation flag for: HEALTH PLAN DEDUCTIBLE > $2,000 (PUF RECODE)"
+chis_puf_x,167,ah97_p_x,int,,"Imputation flag for: PLAN DEDUCTIBLE COVERING ALL PERSONS >$4,000 (PUF RECODE)"
+chis_puf_x,168,ah98_x,int,3,Imputation flag for: DIFFICULTY FINDING PLAN WITH NEEDED COVERAGE
+chis_puf_x,169,ah99_x,int,3,Imputation flag for: DIFFICULTY FINDING PLAN THAT IS AFFORDABLE
+chis_puf_x,170,ahchldc_x,int,,Imputation flag for: AMOUNT SPENT ON CHILD CARE PER WEEK
+chis_puf_x,171,aheduc_x,int,,Imputation flag for: EDUCATIONAL ATTAINMENT
+chis_puf_x,172,ai15_x,int,3,Imputation flag for: MAIN REASON NOT IN EMPLOYER'S HEALTH PLAN
+chis_puf_x,173,ai15a_x,int,3,Imputation flag for: MAIN REASON INELIGIBLE FOR EMPLOYER'S HEALTH PLAN
+chis_puf_x,174,ai22a_p_x,int,,Imputation flag for: NAME OF HEALTH PLAN (PUF RECODE)
+chis_puf_x,175,ai22c_x,int,3,Imputation flag for: MAIN HEALTH PLAN IS HMO
+chis_puf_x,176,ai25_x,int,3,Imputation flag for: COVERED FOR PRESCRIPTION DRUGS
+chis_puf_x,177,ai25new_x,int,,Imputation flag for: RX COVERAGE EDITED FOR MEDICAL/HF
+chis_puf_x,178,ai28_x,int,3,Imputation flag for: HOW LONG SINCE LAST HAD HEALTH INS
+chis_puf_x,179,ai33_6_x,int,3,Imputation flag for: OTHER INS: BOUGHT DIRECT
+chis_puf_x,180,ai37a_x,int,3,Imputation flag for: SPOUSE COVERED BY MEDICARE SUPPL POLICY
+chis_puf_x,181,ai4_x,int,3,Imputation flag for: COVERED BY MEDICARE SUPPL POLICY
+chis_puf_x,182,ai45_x,int,3,Imputation flag for: MAIN REASON SPOUSE NOT IN EMPLOYER'S HEALTH PLAN
+chis_puf_x,183,ai45a_x,int,3,Imputation flag for: MAIN REASON SPOUSE INELIGIBLE FOR EMPLOYER'S HEALTH PLAN
+chis_puf_x,184,aj1_x,int,3,Imputation flag for: INS COVERS TREATMENT FOR MNTL HEALTH PROBLEMS
+chis_puf_x,185,aj10_x,int,3,Imputation flag for: NEEDED SOMEONE ELSE TO HELP UNDERSTAND DOCTOR
+chis_puf_x,186,aj102_x,int,3,Imputation flag for: SOUGHT APPNT W/DOC IN 2 DAYS PAST YR
+chis_puf_x,187,aj103_x,int,3,Imputation flag for: HOW OFTEN GET APPNT IN 2 DAYS
+chis_puf_x,188,aj104_x,int,3,Imputation flag for: COULD GET APPNT W/DOC IN 2 DAYS IF NEEDED
+chis_puf_x,189,aj105_x,int,3,Imputation flag for: KNOW RIGHTS TO INTERPRETOR DURING MED VISIT
+chis_puf_x,190,aj106_x,int,3,Imputation flag for: USUAL PLACE FOR HLTH CARE CHANGED PAST YR
+chis_puf_x,191,aj107_x,int,3,Imputation flag for: CHANGE USUAL PLACE DUE TO INSURANCE PLAN
+chis_puf_x,192,aj108_x,int,3,Imputation flag for: EVER USED INTERNET
+chis_puf_x,193,aj109_x,int,3,Imputation flag for: USED INTERNET TO FIND MED INFO PAST 12 MOS
+chis_puf_x,194,aj11_x,int,3,Imputation flag for: WHO HELPED YOU UNDERSTAND DOCTOR
+chis_puf_x,195,aj110_x,int,3,Imputation flag for: CONFIDENCE TO COMPLETE APPL ONLINE ON OWN
+chis_puf_x,196,aj111_x,int,3,Imputation flag for: SOMEONE TO HELP FILL OUT APPL ONLINE
+chis_puf_x,197,aj112_x,int,3,Imputation flag for: HOW OFTEN DOC LISTENS CAREFULLY
+chis_puf_x,198,aj113_x,int,3,Imputation flag for: HOW OFTEN DOC CLEARLY EXPLAINS WHAT TO DO
+chis_puf_x,199,aj19_x,int,3,Imputation flag for: COST/NO INSUR DELAYED GETTING PRESCRIPTION
+chis_puf_x,200,aj20_x,int,3,Imputation flag for: COST/NO INSR DELAYED GETTING NEEDED CARE
+chis_puf_x,201,aj29_x,int,3,Imputation flag for: FEEL NERVOUS PAST 30 DAYS
+chis_puf_x,202,aj30_x,int,3,Imputation flag for: FEEL HOPELESS PAST 30 DAYS
+chis_puf_x,203,aj31_x,int,3,Imputation flag for: FELL RESTLESS PAST 30 DAYS
+chis_puf_x,204,aj32_x,int,3,Imputation flag for: FEEL DEPRESSED PAST 30 DAYS
+chis_puf_x,205,aj33_x,int,3,Imputation flag for: FEEL EVERYTHING AN EFFORT PAST 30 DAYS
+chis_puf_x,206,aj34_x,int,3,Imputation flag for: FEEL WORTHLESS PAST 30 DAYS
+chis_puf_x,207,aj50_p_x,int,,Imputation flag for: LANGUAGE DOCTOR SPEAKS TO R (PUF RECODE)
+chis_puf_x,208,aj77_x,int,3,Imputation flag for: HAVE PERSONAL DOCTOR AS MAIN MEDICAL PROVIDER
+chis_puf_x,209,aj78_x,int,3,Imputation flag for: CONTACT DOC'S OFFICE WITH MEDICAL QUESTION PAST 12 MOS
+chis_puf_x,210,aj79_x,int,3,Imputation flag for: HOW OFTEN GOT RESPONSE FROM DOC'S OFFICE
+chis_puf_x,211,aj8_x,int,3,Imputation flag for: HAD HARD TIME UNDERSTANDING DOCTOR LAST VISIT
+chis_puf_x,212,aj80_x,int,3,Imputation flag for: DOC'S OFFICE HELP COORDINATE CARE W/ OTHER MED SVCS
+chis_puf_x,213,aj81_x,int,3,Imputation flag for: DELAYED PRESCRIPTION FOR ASTHMA
+chis_puf_x,214,aj82_x,int,3,Imputation flag for: DELAYED PRESCRIPTION FOR DIABETES
+chis_puf_x,215,aj83_x,int,3,Imputation flag for: DELAYED PRESCRIPTION FOR HEART DISEASE
+chis_puf_x,216,aj84_x,int,3,Imputation flag for: DELAYED MEDICAL CARE FOR ASTHMA
+chis_puf_x,217,aj85_x,int,3,Imputation flag for: DELAYED MEDICAL CARE FOR DIABETES
+chis_puf_x,218,aj86_x,int,3,Imputation flag for: DELAYED MEDICAL CARE FOR HEART DISEASE
+chis_puf_x,219,aj9_x,int,3,Imputation flag for: MD SPOKE DIFFERENT LANGUAGE REASON WHY DIFFICULT TO UNDERSTAND
+chis_puf_x,220,ak1_x,int,3,Imputation flag for: WORK STATUS LAST WEEK
+chis_puf_x,221,ak10_p_x,int,,Imputation flag for: RESPONDENT'S EARNINGS LAST MONTH (PUF RECODE)
+chis_puf_x,222,ak10a_p_x,int,,Imputation flag for: SPOUSE'S EARNINGS LAST MONTH (PUF RECODE)
+chis_puf_x,223,ak2_x,int,3,Imputation flag for: MAIN REASON FOR NOT WORKING LAST WEEK
+chis_puf_x,224,ak20_x,int,3,Imputation flag for: # OF HRS PER WEEK SPOUSE USUALLY WORKS
+chis_puf_x,225,ak22_p_x,int,,Imputation flag for: HOUSEHOLD'S TOTAL ANNUAL INC (PUF RECODE)
+chis_puf_x,226,ak23_x,int,3,"Imputation flag for: LIVE IN HOUSE, DUPLEX, BUILDING WITH 3+ UNITS, OR MOBILE HOME"
+chis_puf_x,227,ak25_x,int,3,Imputation flag for: OWN OR RENT HOME
+chis_puf_x,228,ak28_x,int,3,Imputation flag for: HOW OFTEN FEEL SAFE IN NEIGHBORHOOD
+chis_puf_x,229,ak3_x,int,3,Imputation flag for: # OF USUAL HRS WORKED PER WEEK
+chis_puf_x,230,ak4_x,int,3,Imputation flag for: TYPE OF EMPLOYER AT MAIN JOB
+chis_puf_x,231,ak7_x,int,3,Imputation flag for: LENGTH OF TIME WORKING AT MAIN JOB
+chis_puf_x,232,ak8_x,int,3,Imputation flag for: # PEOPLE WORK FOR EMPLOYER/YOU
+chis_puf_x,233,akwklng_x,int,,Imputation flag for: TIME AT MAIN JOB
+chis_puf_x,234,al15_x,int,3,Imputation flag for: RECVD ALIMONY/CHILD SUPPORT/MONEY FROM GOVT LAST MONTH
+chis_puf_x,235,al16_p_x,int,,Imputation flag for: TOTAL RECVD FROM ALIMONY/CHILD SUPPORT/GOVT LAST MONTH (PUF RECODE)
+chis_puf_x,236,al17_x,int,3,Imputation flag for: PAID ALIMONY OR CHILD SUPPORT LAST MONTH
+chis_puf_x,237,al18_p_x,int,,Imputation flag for: TOTAL ALIMONY/CHILD SUPPORT PAID LAST MONTH (PUF RECODE)
+chis_puf_x,238,al18a_x,int,3,Imputation flag for: RECVD SOCIAL SECURITY OR PENSION LAST MONTH
+chis_puf_x,239,al18b_p_x,int,,Imputation flag for: TOTAL SOCIAL SECURITY/PENSION RECVD LAST MONTH (PUF RECODE)
+chis_puf_x,240,al2_x,int,3,Imputation flag for: CURRENTLY ON TANF OR CALWORKS
+chis_puf_x,241,al22_x,int,3,Imputation flag for: RECEIVING SOCIAL SECURITY DISABILITY INS
+chis_puf_x,242,al5_x,int,3,Imputation flag for: RECEIVING FOOD STAMP BENEFITS
+chis_puf_x,243,al6_x,int,3,Imputation flag for: RECEIVING SSI (SUPPLEMENTAL SECURITY INCOME)
+chis_puf_x,244,al7_x,int,3,Imputation flag for: CURRENTLY ON WIC
+chis_puf_x,245,am1_x,int,3,"Imputation flag for: HOW OFTEN FOOD DIDN'T LAST,COULDN'T AFFORD MORE, PAST 12 MOS"
+chis_puf_x,246,am19_x,int,3,Imputation flag for: PEOPLE IN NEIGHBORHOOD WILLING TO HELP EACH OTHER
+chis_puf_x,247,am2_x,int,3,Imputation flag for: HOW OFTEN COULDN'T AFFORD TO EAT BALANCED MEALS
+chis_puf_x,248,am21_x,int,3,Imputation flag for: PEOPLE IN NEIGHBORHOOD CAN BE TRUSTED
+chis_puf_x,249,am3_x,int,3,Imputation flag for: ALL ADULTS CUT/SKIPPED MEALS IN PAST 12 MOS FOR MONEY
+chis_puf_x,250,am34_x,int,3,Imputation flag for: TELEPHONE CALLS RECEIVED
+chis_puf_x,251,am35_x,int,3,Imputation flag for: NEIGHBORHOOD WATCHES OUT FOR CHILDREN'S SAFETY
+chis_puf_x,252,am36_x,int,3,Imputation flag for: DID VOLUNTEER WORK OR COMMUNITY SERVICES PAST YR
+chis_puf_x,253,am37_x,int,3,Imputation flag for: CURRENTLY PAYING OFF MORTGAGE/HOME LOAN
+chis_puf_x,254,am38_x,int,3,Imputation flag for: MAIN REASON FOR LAST MOVE
+chis_puf_x,255,am39_x,int,3,Imputation flag for: VOLUNTEER IN ORG DEALING W/COMM PROB PAST YR
+chis_puf_x,256,am3a_x,int,3,Imputation flag for: HOW OFTEN ALL ADULTS CUT/SKIPPED MEALS IN PAST 12 MOS FOR MONEY
+chis_puf_x,257,am4_x,int,3,Imputation flag for: ATE LESS THAN SHOULD BECAUSE OF MONEY IN PAST 12 MOS
+chis_puf_x,258,am40_x,int,3,Imputation flag for: MEET INFORMALLY TO DEAL W/COMM PROB PAST YR
+chis_puf_x,259,am5_x,int,3,Imputation flag for: HOW OFTEN HUNGRY BUT DIDN'T EAT B/C OF MONEY IN PAST 12 MOS
+chis_puf_x,260,asian8_x,int,,Imputation flag for: ASIAN SUBTYPES- (8 TYPES) (PUF RECODE)
+chis_puf_x,261,asnhp2_p_x,int,,"Imputation flag for: ASIAN GROUP - UCLA CHPR DEFINITION (PUF RECODE), UNBRIDGED"
+chis_puf_x,262,astcur_x,int,,Imputation flag for: CURRENT ASTHMA STATUS
+chis_puf_x,263,asts_x,int,,Imputation flag for: ASTHMA SYMPTOMS PAST 12 MOS FOR POPULATION DIAGNOSED W/ ASTHMA
+chis_puf_x,264,astyr_x,int,,Imputation flag for: ASTHMA SYMPTOMS PAST 12 MOS FOR POPULATION CURRENTLY W/ ASTHMA
+chis_puf_x,265,binge12_x,int,,"Imputation flag for: BINGE DRINKING IN PAST YEAR. 5+ DRINKS (MALE), 4+ DRINKS (FEMALE)"
+chis_puf_x,266,bmi_p_x,int,,Imputation flag for: BODY MASS INDEX (PUF RECODE)
+chis_puf_x,267,catribe_x,int,,Imputation flag for: CALIFORNIA TRIBE
+chis_puf_x,268,chores2_x,int,,Imputation flag for: CHORE IMPAIRMENT PAST 12 MONTHS
+chis_puf_x,269,citizen2_x,int,,Imputation flag for: CITIZENSHIP STATUS - 3 LEVELS
+chis_puf_x,270,cntryf_x,int,,Imputation flag for: COUNTRY FATHER BORN
+chis_puf_x,271,cntrym_x,int,,Imputation flag for: COUNTRY MOTHER BORN
+chis_puf_x,272,cntrys_x,int,,Imputation flag for: COUNTRY BORN
+chis_puf_x,273,diabck_x,int,,Imputation flag for: # OF TIMES CHECKING FOR GLUCOSE/SUGAR PER MONTH
+chis_puf_x,274,diamed_x,int,,Imputation flag for: TAKING INSULIN OR PILLS
+chis_puf_x,275,disable_x,int,,Imputation flag for: DISABILITY STATUS DUE TO PHYS/MENT/EMOT CONDITION
+chis_puf_x,276,distress_x,int,,Imputation flag for: SERIOUS PSYCHOLOGICAL DISTRESS
+chis_puf_x,277,doct_yr_x,int,,Imputation flag for: VISITED DOCTOR IN PAST 12 MOS
+chis_puf_x,278,dstrs12_x,int,,Imputation flag for: LIKELY HAS HAD PSYCHOLOGICAL DISTRESS IN THE LAST YEAR
+chis_puf_x,279,dstrs30_x,int,,Imputation flag for: LIKELY HAS HAD PSYCHOLOGICAL DISTRESS IN THE PAST MONTH
+chis_puf_x,280,dstrsyr_x,int,,Imputation flag for: SERIOUS PSYCHOLOGICAL DISTRESS FOR WORST MONTH PAST YR (K6 SCORE)
+chis_puf_x,281,elder_idx_x,int,,Imputation flag for: ELDER INCOME BELOW COUNTY THRESHOLD FOR COST OF LIVING
+chis_puf_x,282,eligprg3_x,int,,Imputation flag for: MEDI-CAL (MEDICAID)/HEALTHY FAM ELIG. - UNINSURED
+chis_puf_x,283,er_x,int,,Imputation flag for: ER VISIT WITHIN THE PAST YEAR
+chis_puf_x,284,fam_type_x,int,,Imputation flag for: FAMILY TYPE
+chis_puf_x,285,family2_x,int,,Imputation flag for: FAMILY LIFE IMPAIRMENT PAST 12 MONTHS
+chis_puf_x,286,famtyp_p_x,int,,Imputation flag for: FAMILY TYPE (PUF RECODE)
+chis_puf_x,287,fslev_x,int,,Imputation flag for: FOOD SECURITY STATUS LEVEL
+chis_puf_x,288,fslevcb_x,int,,Imputation flag for: FOOD SECURITY STATUS - 2 LVLS
+chis_puf_x,289,heighm_p_x,int,,Imputation flag for: HEIGHT: METERS - UCLA (PUF RECODE)
+chis_puf_x,290,hghti_p_x,int,,Imputation flag for: HEIGHT: INCHES (PUF RECODE)
+chis_puf_x,291,hghtm_p_x,int,,Imputation flag for: HEIGHT: METERS (PUF RECODE)
+chis_puf_x,292,hhsize_p_x,int,,Imputation flag for: HOUSEHOLD SIZE (PUF RECODE)
+chis_puf_x,293,hhsmk_x,int,,Imputation flag for: HOUSEHOLD SMOKING
+chis_puf_x,294,hmo_x,int,,Imputation flag for: HMO STATUS
+chis_puf_x,295,ihs_x,int,,Imputation flag for: COVERED BY INDIAN HEALTH SERVICES
+chis_puf_x,296,ihs_s_x,int,,Imputation flag for: SPOUSE COVERED BY INDIAN HEALTH SERVICES
+chis_puf_x,297,impair2_x,int,,Imputation flag for: FUNCTIONAL ROLE IMPAIRMENT DUE TO EMOTIONS PAST 12 MONTHS
+chis_puf_x,298,ins_x,int,,Imputation flag for: CURRENTLY INSURED
+chis_puf_x,299,ins12m_x,int,,Imputation flag for: MOS COVERED BY HEALTH PLANS LAST 12 MOS
+chis_puf_x,300,ins64_p_x,int,,Imputation flag for: CURRENT HEALTH COVERAGE - < 65 YRS (PUF RECODE)
+chis_puf_x,301,ins64s_p_x,int,,Imputation flag for: SPOUSE'S CURRENT HEALTH COVG - < 65 YRS (PUF RECODE)
+chis_puf_x,302,ins65_x,int,,Imputation flag for: TYPE OF CURRENT HEALTH COVERAGE SOURCE FOR ELDERLY 65+
+chis_puf_x,303,ins65_s_x,int,,Imputation flag for: TYPE OF CURRENT HEALTH COVERAGE FOR SPOUSE 65+
+chis_puf_x,304,ins_s_x,int,,Imputation flag for: SPOUSE CURRENTLY INSURED
+chis_puf_x,305,insany_x,int,,Imputation flag for: ANY INS IN LAST 12 MOS
+chis_puf_x,306,insem_x,int,,Imputation flag for: COVERED BY EMPLOYER-BASED PLANS
+chis_puf_x,307,insem_s_x,int,,Imputation flag for: SPOUSE COVERED BY EMPLOYER-BASED PLANS
+chis_puf_x,308,insmc_x,int,,Imputation flag for: COVERED BY MEDICARE
+chis_puf_x,309,insmc_s_x,int,,Imputation flag for: SPOUSE COVERED BY MEDICARE
+chis_puf_x,310,insmd_x,int,,Imputation flag for: COVERED BY MEDI-CAL
+chis_puf_x,311,insmd_s_x,int,,Imputation flag for: SPOUSE COVERED BY MEDI-CAL
+chis_puf_x,312,insog_x,int,,Imputation flag for: COVERED BY OTHER GOVT PLANS
+chis_puf_x,313,insog_s_x,int,,Imputation flag for: SPOUSE COVERED BY OTHER GOVT PLANS
+chis_puf_x,314,inspr_x,int,,Imputation flag for: COVERED BY PLANS PURCHASED ON OWN
+chis_puf_x,315,inspr_s_x,int,,Imputation flag for: SPOUSE COVERED BY PLANS PURCHASED ON OWN
+chis_puf_x,316,insps_x,int,,Imputation flag for: PRIMARY OR SECONDARY COVERAGE
+chis_puf_x,317,insps_s_x,int,,Imputation flag for: SPOUSE PRIMARY OR SECONDARY COVERAGE
+chis_puf_x,318,inst_12_x,int,,"Imputation flag for: HEALTH INS COVERAGE IN LAST 12 MOS, INCL CURRENT STATUS:8 LVLS"
+chis_puf_x,319,instyp_p_x,int,,Imputation flag for: TYPE OF CURRENT HEALTH COVERAGE SOURCE FOR ALL AGES (PUF RECODE)
+chis_puf_x,320,intvlang_x,int,,Imputation flag for: LANGUAGE OF INTERVIEW
+chis_puf_x,321,langhome_x,int,,Imputation flag for: LANGUAGE SPOKEN AT HOME
+chis_puf_x,322,latin9tp_x,int,,Imputation flag for: LATIN/HISPANIC SUBTYPES - 9 LVLS
+chis_puf_x,323,mam_scrn_x,int,,Imputation flag for: MAMMOGRAM IN PAST 2 YRS
+chis_puf_x,324,marit_x,int,,Imputation flag for: MARITAL STATUS- 3 CATEGORIES
+chis_puf_x,325,marit2_x,int,,Imputation flag for: MARITAL STATUS- 4 CATEGORIES
+chis_puf_x,326,marit_45_x,int,,Imputation flag for: MARITAL STATUS - AGE 45 AND OLDER
+chis_puf_x,327,numcig_x,int,,Imputation flag for: # OF CIGARETTES PER DAY
+chis_puf_x,328,offtk_x,int,,"Imputation flag for: OFFER, ELIGIBILITY, ACCEPTANCE OF EMPLOYER BASED INS"
+chis_puf_x,329,offtk_s_x,int,,"Imputation flag for: OFFER, ELIGIBILITY, ACCEPTANCE OF EMPLOYER-BASED INS: SPOUSE"
+chis_puf_x,330,ombsraso_x,int,,Imputation flag for: OMB S-R NONHISPANIC ASIAN GROUP (ONLY)
+chis_puf_x,331,ombsrreo_x,int,,Imputation flag for: OMB/CURRENT DOF RACE - ETHNICITY
+chis_puf_x,332,ovrwt_x,int,,Imputation flag for: OVERWEIGHT OR OBESE
+chis_puf_x,333,pctlf_p_x,int,,Imputation flag for: PERCENT LIFE IN US (PUF RECODE)
+chis_puf_x,334,povgwd_p_x,int,,Imputation flag for: FAMILY POVERTY THRESHOLD LEVEL (PUF RECODE)
+chis_puf_x,335,povll_x,int,,Imputation flag for: POVERTY LEVEL
+chis_puf_x,336,povll2_p_x,int,,Imputation flag for: POVERTY LEVEL - 100% FPL (PUF RECODE)
+chis_puf_x,337,proxy_x,int,,Imputation flag for: A PROXY INTERVIEW
+chis_puf_x,338,puf_id_x,int,,Imputation flag for: PUBLIC USE FILE ID
+chis_puf_x,339,racecen_x,int,,Imputation flag for: RACE - CENSUS 2000 DEFINITION
+chis_puf_x,340,racedof_x,int,,Imputation flag for: FORMER DOF RACE - ETHNICITY
+chis_puf_x,341,racehpr2_x,int,,"Imputation flag for: RACE - UCLA CHPR DEFINITION, UNABRIDGED"
+chis_puf_x,342,rakedw0_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - FULL SAMPLE
+chis_puf_x,343,rakedw1_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 1
+chis_puf_x,344,rakedw10_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 10
+chis_puf_x,345,rakedw11_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 11
+chis_puf_x,346,rakedw12_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 12
+chis_puf_x,347,rakedw13_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 13
+chis_puf_x,348,rakedw14_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 14
+chis_puf_x,349,rakedw15_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 15
+chis_puf_x,350,rakedw16_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 16
+chis_puf_x,351,rakedw17_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 17
+chis_puf_x,352,rakedw18_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 18
+chis_puf_x,353,rakedw19_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 19
+chis_puf_x,354,rakedw2_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 2
+chis_puf_x,355,rakedw20_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 20
+chis_puf_x,356,rakedw21_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 21
+chis_puf_x,357,rakedw22_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 22
+chis_puf_x,358,rakedw23_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 23
+chis_puf_x,359,rakedw24_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 24
+chis_puf_x,360,rakedw25_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 25
+chis_puf_x,361,rakedw26_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 26
+chis_puf_x,362,rakedw27_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 27
+chis_puf_x,363,rakedw28_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 28
+chis_puf_x,364,rakedw29_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 29
+chis_puf_x,365,rakedw3_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 3
+chis_puf_x,366,rakedw30_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 30
+chis_puf_x,367,rakedw31_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 31
+chis_puf_x,368,rakedw32_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 32
+chis_puf_x,369,rakedw33_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 33
+chis_puf_x,370,rakedw34_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 34
+chis_puf_x,371,rakedw35_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 35
+chis_puf_x,372,rakedw36_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 36
+chis_puf_x,373,rakedw37_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 37
+chis_puf_x,374,rakedw38_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 38
+chis_puf_x,375,rakedw39_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 39
+chis_puf_x,376,rakedw4_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 4
+chis_puf_x,377,rakedw40_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 40
+chis_puf_x,378,rakedw41_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 41
+chis_puf_x,379,rakedw42_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 42
+chis_puf_x,380,rakedw43_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 43
+chis_puf_x,381,rakedw44_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 44
+chis_puf_x,382,rakedw45_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 45
+chis_puf_x,383,rakedw46_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 46
+chis_puf_x,384,rakedw47_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 47
+chis_puf_x,385,rakedw48_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 48
+chis_puf_x,386,rakedw49_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 49
+chis_puf_x,387,rakedw5_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 5
+chis_puf_x,388,rakedw50_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 50
+chis_puf_x,389,rakedw51_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 51
+chis_puf_x,390,rakedw52_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 52
+chis_puf_x,391,rakedw53_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 53
+chis_puf_x,392,rakedw54_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 54
+chis_puf_x,393,rakedw55_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 55
+chis_puf_x,394,rakedw56_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 56
+chis_puf_x,395,rakedw57_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 57
+chis_puf_x,396,rakedw58_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 58
+chis_puf_x,397,rakedw59_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 59
+chis_puf_x,398,rakedw6_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 6
+chis_puf_x,399,rakedw60_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 60
+chis_puf_x,400,rakedw61_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 61
+chis_puf_x,401,rakedw62_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 62
+chis_puf_x,402,rakedw63_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 63
+chis_puf_x,403,rakedw64_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 64
+chis_puf_x,404,rakedw65_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 65
+chis_puf_x,405,rakedw66_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 66
+chis_puf_x,406,rakedw67_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 67
+chis_puf_x,407,rakedw68_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 68
+chis_puf_x,408,rakedw69_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 69
+chis_puf_x,409,rakedw7_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 7
+chis_puf_x,410,rakedw70_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 70
+chis_puf_x,411,rakedw71_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 71
+chis_puf_x,412,rakedw72_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 72
+chis_puf_x,413,rakedw73_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 73
+chis_puf_x,414,rakedw74_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 74
+chis_puf_x,415,rakedw75_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 75
+chis_puf_x,416,rakedw76_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 76
+chis_puf_x,417,rakedw77_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 77
+chis_puf_x,418,rakedw78_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 78
+chis_puf_x,419,rakedw79_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 79
+chis_puf_x,420,rakedw8_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 8
+chis_puf_x,421,rakedw80_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 80
+chis_puf_x,422,rakedw9_x,int,,Imputation flag for: CHIS2011 RAKED WEIGHT - REPLICATE 9
+chis_puf_x,423,rbmi_x,int,,Imputation flag for: BMI DESCRIPTIVE
+chis_puf_x,424,rsn_uni2_x,int,,Imputation flag for: REASON FOR UNINSURED STATUS ANYTIME PAST 12 MONTHS
+chis_puf_x,425,rsn_unin_x,int,,Imputation flag for: REASON FOR CURRENTLY UNINSURED STATUS
+chis_puf_x,426,served_x,int,,Imputation flag for: LENGTH OF TIME SERVED IN ACTIVE DUTY
+chis_puf_x,427,smkcur_x,int,,Imputation flag for: CURRENT SMOKER
+chis_puf_x,428,smoking_x,int,,Imputation flag for: CURRENT SMOKING HABITS
+chis_puf_x,429,social2_x,int,,Imputation flag for: SOCIAL LIFE IMPAIRMENT PAST 12 MONTHS
+chis_puf_x,430,spk_eng_x,int,,Imputation flag for: ENGLISH USE AND PROFICIENCY
+chis_puf_x,431,sraa_x,int,,Imputation flag for: SELF-REPORTED AFRICAN AMERICAN
+chis_puf_x,432,srage_p_x,int,,Imputation flag for: AGE (PUF RECODE)
+chis_puf_x,433,srai_x,int,,Imputation flag for: SELF-REPORTED AMERICAN INDIAN
+chis_puf_x,434,sras_x,int,,Imputation flag for: SELF-REPORTED ASIAN
+chis_puf_x,435,sraso_x,int,,Imputation flag for: SELF-REPORTED OTHER ASIAN GROUP
+chis_puf_x,436,srch_x,int,,Imputation flag for: SELF-REPORTED CHINESE
+chis_puf_x,437,srh_x,int,,Imputation flag for: SELF-REPORTED HISPANIC
+chis_puf_x,438,srkr_x,int,,Imputation flag for: SELF-REPORTED KOREAN
+chis_puf_x,439,sro_x,int,,Imputation flag for: SELF-REPORTED OTHER RACE
+chis_puf_x,440,srph_x,int,,Imputation flag for: SELF-REPORTED FILIPINO
+chis_puf_x,441,srpi_x,int,,Imputation flag for: SELF-REPORTED PI AND NTV HW
+chis_puf_x,442,srsex_x,int,,Imputation flag for: GENDER
+chis_puf_x,443,srtenr_x,int,,Imputation flag for: SELF-REPORTED HOUSEHOLD TENURE (HH)
+chis_puf_x,444,srvt_x,int,,Imputation flag for: SELF-REPORTED VIETNAMESE
+chis_puf_x,445,srw_x,int,,Imputation flag for: SELF-REPORTED WHITE
+chis_puf_x,446,timead_x,int,,Imputation flag for: LENGTH OF TIME LIVED AT CURRENT ADDRESS (MONTHS)
+chis_puf_x,447,uninsany_x,int,,Imputation flag for: UNINSURED IN PAST 12 MOS
+chis_puf_x,448,ur_bg_x,int,,Imputation flag for: RURAL AND URBAN - CLARITAS (BY BLOCK GROUP)
+chis_puf_x,449,ur_clrt_x,int,,Imputation flag for: RURAL AND URBAN - CLARITAS (BY ZIPCODE) (4 LVLS)
+chis_puf_x,450,ur_clrt2_x,int,,Imputation flag for: RURAL AND URBAN - CLARITAS (BY ZIPCODE) (2 LVLS)
+chis_puf_x,451,ur_ihs_x,int,,Imputation flag for: RURAL AND URBAN - IHS
+chis_puf_x,452,ur_omb_x,int,,Imputation flag for: RURAL AND URBAN - OMB
+chis_puf_x,453,ur_rhp_x,int,,Imputation flag for: RURAL AND URBAN - RHP
+chis_puf_x,454,ur_tract_x,int,,Imputation flag for: RURAL AND URBAN - CLARITAS (BY CENSUS TRACT)
+chis_puf_x,455,usoc_x,int,,Imputation flag for: USUAL SOURCE OF CARE OTHER THAN ER
+chis_puf_x,456,usual_x,int,,Imputation flag for: HAVE USUAL PLACE TO GO TO WHEN SICK OR NEEDING HEALTH ADVICE
+chis_puf_x,457,usual5tp_x,int,,Imputation flag for: USUAL SOURCE OF CARE - 5 LVLS
+chis_puf_x,458,usual_tp_x,int,,Imputation flag for: USUAL SOURCE OF CARE - 7 LVLS
+chis_puf_x,459,weighk_p_x,int,,Imputation flag for: WEIGHT: KG - UCLA (PUF RECODE)
+chis_puf_x,460,wghtk_p_x,int,,Imputation flag for: WEIGHT: KG (PUF RECODE)
+chis_puf_x,461,wghtp_p_x,int,,Imputation flag for: WEIGHT: LBS (PUF RECODE)
+chis_puf_x,462,work2_x,int,,Imputation flag for: WORK IMPAIRMENT PAST 12 MONTHS
+chis_puf_x,463,wrkst_x,int,,Imputation flag for: WORKING STATUS
+chis_puf_x,464,wrkst_s_x,int,,Imputation flag for: SPOUSE WORKING STATUS
+chis_puf_x,465,wt18k_p_x,int,,Imputation flag for: WEIGHT AT 18: KILOS (PUF RECODE)
+chis_puf_x,466,wt18p_p_x,int,,Imputation flag for: WEIGHT AT 18: LBS (PUF RECODE)
+chis_puf_x,467,yrus_x,int,,Imputation flag for: YEARS LIVED IN THE U.S.
+,,,,,
+chis_puf,1,id,int,,CHIS public use data
+chis_puf,2,aa5c,int,2,ENROLLED MEMBER IN RECOGNIZED TRIBE
+chis_puf,3,ab1,int,1,GENERAL HEALTH CONDITION
+chis_puf,4,ab100,int,2,HAD FLU SHOT OR NASAL FLU VACCINE
+chis_puf,5,ab106_p,int,2,ER/URGT CARE VISIT FOR ASTHMA PAST YR (CURRENT ASTHMATIC) (PUF RECODE)
+chis_puf,6,ab108,int,2,CONFIDENCE TO CONTROL AND MANAGE ASTHMA
+chis_puf,7,ab109,int,2,VISITED ER FOR DIABETES IN PAST 12 MOS
+chis_puf,8,ab110_p,int,2,VISITED ER FOR DIABETES BECAUSE UNABLE TO SEE OWN DR (PUF RECODE)
+chis_puf,9,ab111,int,2,ADMITTED TO HOSPITAL OVERNIGHT OR LONGER FOR DIABETES PAST 12 MOS
+chis_puf,10,ab112,int,2,MEDICAL PROVIDERS DEVELOP DIABETES CARE
+chis_puf,11,ab113,int,2,HAVE WRITTEN COPY OF DIABETES CARE PLAN
+chis_puf,12,ab114,int,2,CONFIDENCE TO CONTROL AND MANAGE DIABETES
+chis_puf,13,ab115,int,2,VISITED ER FOR HEART DISEASE IN PAST 12 MOS
+chis_puf,14,ab116_p,int,2,VISITED ER FOR HEART DX B/C UNABLE TO SEE OWN DR (PUF RECODE)
+chis_puf,15,ab117,int,2,ADMITTED TO HOSPITAL OVERNIGHT/LONGER FOR HEART DX PAST 12 MOS
+chis_puf,16,ab118,int,2,MEDICAL PROVIDERS DEVELOPED HEART DISEASE PLAN
+chis_puf,17,ab119,int,2,HAVE WRITTEN COPY OF HEART DISEASE CARE
+chis_puf,18,ab120,int,2,CONFIDENCE TO CONTROL AND MANAGE HEART DISEASE
+chis_puf,19,ab127,int,2,"HAD JOINT PAIN, STIFFNESS PAST 30 DAYS"
+chis_puf,20,ab142,int,2,PROF MAKE RECOMNDS TO AVOID FALLING
+chis_puf,21,ab143,int,2,PROF RECOMND CHANGE MEDS DUE TO FALLS
+chis_puf,22,ab144,int,2,PROF RECOMND PHYS THRPY/EXERC DUE TO FALLS
+chis_puf,23,ab145,int,2,PROF RECOMND HOME CHANGES DUE TO FALLS
+chis_puf,24,ab146,int,2,PROF RECOMND CANE/WALKER DUE TO FALLS
+chis_puf,25,ab147,int,2,PROF RECOMND CHANGE ROUTINE DUE TO FALLS
+chis_puf,26,ab16,int,2,LIMITATION OF ACTIVITIES B/C OF JOINT PROBLEMS
+chis_puf,27,ab17,int,1,DOCTOR EVER TOLD HAVE ASTHMA
+chis_puf,28,ab18,int,2,TAKING DAILY MEDICATION TO CONTROL ASTHMA
+chis_puf,29,ab19,int,2,HOW OFTEN HAD ASTHMA SYMPTOMS IN PAST 12 MOS: CURRENT ASTHMATICS
+chis_puf,30,ab22,int,1,DOCTOR EVER TOLD HAVE DIABETES
+chis_puf,31,ab23_p,int,2,AGE FIRST TOLD HAVE DIABETES (PUF RECODE)
+chis_puf,32,ab24,int,2,CURRENTLY TAKING INSULIN
+chis_puf,33,ab25,int,2,CURRENTLY TAKING DIABETIC PILLS TO LOWER BLOOD SUGAR
+chis_puf,34,ab26,int,4,# OF TIMES R/R'S FAMILY/R'S FRIEND CHECK BLOOD FOR GLUCOSE
+chis_puf,35,ab27,int,3,# OF TIMES DOC CHECKED FOR HEMOGLOBIN A ONE C LAST YR
+chis_puf,36,ab28,int,2,# OF TIMES DOC CHECKED FEET FOR SORES LAST YR
+chis_puf,37,ab29,int,1,DOCTOR EVER TOLD HAVE HIGH BLOOD PRESSURE
+chis_puf,38,ab30,int,2,CURRENTLY TAKING MEDICATIONS TO CONTROL HIGH BLOOD PRESSURE
+chis_puf,39,ab34,int,1,DOCTOR EVER TOLD HAVE ANY KIND OF HEART DISEASE
+chis_puf,40,ab40,int,2,STILL HAS ASTHMA
+chis_puf,41,ab41,int,2,ASTHMA EPISODE/ATTACK IN PAST 12 MOS
+chis_puf,42,ab42,int,3,WORKDAYS MISSED DUE TO ASTHMA IN PAST 12 MOS
+chis_puf,43,ab43,int,2,HEALTH PROFESSIONAL EVER GAVE ASTHMA MANAGEMENT PLAN
+chis_puf,44,ab51,int,2,TYPE I OR TYPE II DIABETES
+chis_puf,45,ab52,int,2,EVER TOLD HAVE HEART FAILURE/CONGESTIVE
+chis_puf,46,ab57,int,2,KIND OF PLACE GOT LAST FLU SHOT
+chis_puf,47,ab60,int,2,HOW FIRST FOUND OUT HAD BREAST CANCER
+chis_puf,48,ab63,int,2,LAST EYE EXAM DILATED PUPILS
+chis_puf,49,ab64,int,1,DOCTOR EVER TOLD HAVE ARTH/GOUT/LUPUS
+chis_puf,50,ab66,int,2,HOW OFTEN HAD ASTHMA SYMPTOMS IN PAST 12 MOS: PREVIOUS ASTHMATICS
+chis_puf,51,ab67,int,2,ER/URGENT CRE VISIT FOR ASTHMA LAST 12 MOS: PREVIOUS ASTHMATICS
+chis_puf,52,ab80,int,2,HOSPITAL OVERNIGHT FOR ASTHMA PAST 12 MOS: PREVIOUS ASTHMATICS
+chis_puf,53,ab81,int,2,DOCTOR TOLD HAD DIABETES ONLY DURING PREGNANCY
+chis_puf,54,ab91,int,2,RECEIVED MEDICAL CARE BECAUSE OF FALLS
+chis_puf,55,ab92,int,2,PROF TALKED ABOUT HOW TO AVOID FALLS
+chis_puf,56,ab93,int,2,PROF REVIEWED MEDS DUE TO FALLS
+chis_puf,57,ab94,int,2,STARTED PHYS THRPY/EXERC DUE TO FALLS
+chis_puf,58,ab95,int,2,CHANGED HOME DUE TO FALLS
+chis_puf,59,ab96,int,2,STARTED TO USE CANE/WALKER DUE TO FALLS
+chis_puf,60,ab97,int,2,CHANGED DAILY ROUTINES DUE TO FALLS
+chis_puf,61,ab98,int,2,HAVE WRITTEN COPY OF ASTHMA CARE PLAN
+chis_puf,62,ab99,int,2,DOC EVER TOLD HAVE PRE- OR BORDERLINE DIABETES
+chis_puf,63,ac11,int,3,# OF TIMES DRANK SODA LAST MONTH
+chis_puf,64,ac17,int,1,SMOKING EVER ALLOWED INSIDE HOME
+chis_puf,65,ac31,int,2,# TIMES ATE FAST FOOD PAST WEEK
+chis_puf,66,ac32,int,1,HAD ALCOHOL PAST 12 MONTHS
+chis_puf,67,ac34,int,3,# DAYS HAD 5+ DRINKS PAST 12 MONTHS
+chis_puf,68,ac35,int,3,# DAYS HAD 4+ DRINKS PAST 12 MONTHS
+chis_puf,69,ac42_p,int,1,HOW OFTEN FIND FRESH FRUIT/VEG IN NEIGHB (PUF RECODE)
+chis_puf,70,ac43,int,2,HOW OFTEN FIND FRESH FRUIT/VEG NEAR WORK
+chis_puf,71,ac44,int,2,NEIGHBORHOOD FRUIT/VEG AFFORDABLE
+chis_puf,72,ac45,int,2,WORKPLACE FRUIT/VEG AFFORDABLE
+chis_puf,73,ac6,int,1,DOCTOR EVER TOLD HAD STROKE
+chis_puf,74,ac7,int,2,FALLEN TO GROUND MORE THAN ONCE IN PAST YR
+chis_puf,75,acmdnum,int,2,# OF DOCTOR VISITS PAST YEAR
+chis_puf,76,ad13,int,2,CURRENTLY PREGNANT
+chis_puf,77,ad14,int,2,EVER HAD MAMMOGRAM
+chis_puf,78,ad17,int,2,HOW LONG SINCE LAST MAMMOGRAM
+chis_puf,79,ad18,int,2,REASON FOR HAVING LAST MAMMOGRAM
+chis_puf,80,ad19,int,2,EVER HAD MAMMOGRAM W/ ABNORMAL RESULTS
+chis_puf,81,ad20,int,2,EVER HAD OPERATION TO REMOVE LUMP FROM BREAST
+chis_puf,82,ad21,int,2,LUMP TURNED OUT TO BE CANCER
+chis_puf,83,ad22_p,int,2,# OF BREAST OPERATIONS TO REMOVE NONCANCER (PUF RECODE)
+chis_puf,84,ad23,int,2,EVER HAVE OTHER TESTS/SURGERIES WHEN MAMMOGRAM ABNORMAL
+chis_puf,85,ad25,int,2,MAIN REASON FOR HAVING NO MAMMOGRAM
+chis_puf,86,ad26,int,2,DOCTOR RECOMMENDED MAMMOGRAM IN PAST TWO YRS
+chis_puf,87,ad32,int,3,# OF CIGARETTES PER DAY
+chis_puf,88,ad34,int,2,# OF DAYS PER WEEK ANY SMOKING INSIDE HOME
+chis_puf,89,ad37w,int,1,WALKED AT LEAST 10 MIN FOR TRANSPORT PAST 7 DAYS
+chis_puf,90,ad38w,int,2,# TIMES WALKED AT LEAST 10 MIN FOR TRANSPORT PAST 7 DAYS
+chis_puf,91,ad39w,int,3,AVERAGE LENGTH OF TIME WALKED FOR TRANSPORTION (MINS)
+chis_puf,92,ad40w,int,2,WALKED AT LEAST 10 MIN FOR LEISURE PAST 7 DAYS
+chis_puf,93,ad41w,int,2,# TIMES WALKED AT LEAST 10 MIN FOR LEISURE PAST 7 DAYS
+chis_puf,94,ad42w,int,3,AVERAGE LENGTH OF TIME WALKED FOR LEISURE (MINS)
+chis_puf,95,ad50,int,1,BLIND/DEAF OR HAS SEVERE VISION/HEARING PROBLEM
+chis_puf,96,ad51,int,1,"HAS DIFFICULTY LEARNING, REMEMBERING, CONCENTRATING"
+chis_puf,97,ad52,int,1,"HAS DIFFICULTY DRESSING, BATHING, GETTING AROUND"
+chis_puf,98,ad53,int,1,HAS DIFFICULTY GOING OUTSIDE HOME ALONE
+chis_puf,99,ad54,int,2,HAS DIFFICULTY WORKING AT A JOB
+chis_puf,100,ad57,int,1,CONDITION LIMITS BASIC PHYS ACTIVITY
+chis_puf,101,ae15,int,1,SMOKED 100 OR MORE CIGARETTES IN ENTIRE LIFETIME
+chis_puf,102,ae15a,int,2,"SMOKES CIGARETTES EVERYDAY, SOME DAYS OR NOT AT ALL"
+chis_puf,103,ae16,int,2,# OF CIGARETTES PER DAY
+chis_puf,104,ae2,int,3,# TIMES ATE FRUIT IN PAST MO
+chis_puf,105,ae3,int,3,"# TIMES ATE FRNCH FRIES, HME FRIES, HSH BRWNS IN PAST MO"
+chis_puf,106,ae30,int,1,FLU SHOT IN PAST 12 MOS
+chis_puf,107,ae50,int,2,MOST RECENT MAMMOGRAM RECOMENDED BY DOCT
+chis_puf,108,ae7,int,3,# OF TIMES ATE VEGETABLES IN PAST MO
+chis_puf,109,ae91,int,2,PROPORTION PAID FOR COST OF MOST RECENT MAMMOGRAM
+chis_puf,110,ae92,int,2,DOCTOR EVER TOLD WOMEN OWN AGE NEED MAMMOGRAM EVERY OTHER YR
+chis_puf,111,ae94,int,2,DOCTOR EVER DISCUSSED WHEN TO STOP MAMMOGRAMS
+chis_puf,112,ae_fries,int,2,# OF TIME EATING FRIES PER WEEK
+chis_puf,113,ae_fruit,int,3,# OF TIMES EATING FRUIT PER WEEK
+chis_puf,114,ae_soda,int,2,# OF TIMES DRINKING SODA PER WEEK
+chis_puf,115,ae_vegi,int,2,# OF TIMES EATING VEGETABLES PER WEEK
+chis_puf,116,af37,int,2,DOCTOR EXAMINED BREAST FOR LUMPS PAST 12 MOS
+chis_puf,117,af62,int,2,ANY MONTH PAST 12 MONTHS FELT WORSE
+chis_puf,118,af63,int,2,FEEL NERVOUS WORST MONTH
+chis_puf,119,af64,int,2,FEEL HOPELESS WORST MONTH
+chis_puf,120,af65,int,2,FEEL RESTLESS WORST MONTH
+chis_puf,121,af66,int,2,FEEL DEPRESSED WORST MONTH
+chis_puf,122,af67,int,2,FEEL EVERYTHING AN EFFORT WORST MONTH
+chis_puf,123,af68,int,2,FEEL WORTHLESS WORST MONTH
+chis_puf,124,af69b,int,2,EMOTIONS INTERFERE W/WORK WORST MONTH
+chis_puf,125,af70b,int,2,EMOTIONS INTERFERE W/CHORES WORST MONTH
+chis_puf,126,af71b,int,2,EMOTIONS INTERFERE W/SOCIAL LIFE WORST MONTH
+chis_puf,127,af72b,int,2,EMOTIONS INTERFERE W/RELATIONSHIPS WORST MONTH
+chis_puf,128,ag10,int,2,RESPONDENT USUALLY WORKS
+chis_puf,129,ag11,int,2,SPOUSE USUALLY WORKS
+chis_puf,130,ag20,int,2,LANGUAGE SPEAK WITH FRIENDS
+chis_puf,131,ag21,int,2,"LANGUAGE OF TV, RADIO, NEWSPAPERS"
+chis_puf,132,ag22,int,1,EVER SERVE IN U.S. ARMED FORCES
+chis_puf,133,ag8,int,2,WORK STATUS OF SPOUSE LAST WEEK
+chis_puf,134,ag9,int,2,TYPE OF EMPLOYER ON SPOUSE'S MAIN JOB
+chis_puf,135,ah1,int,1,HAVE USUAL SOURCE OF HEALTH CARE
+chis_puf,136,ah100,int,2,ANYONE HELP FIND HEALTH PLAN
+chis_puf,137,ah101_p,int,2,PERSON WHO HELPED FIND HEALTH PLAN (PUF RECODE)
+chis_puf,138,ah102_p,int,2,# NIGHTS IN HOSPITAL PAST 12 MOS (PUF RECODE)
+chis_puf,139,ah103,int,2,BUY HEALTH PLAN DIRECTLY FROM INS CO/HMO
+chis_puf,140,ah12,int,2,VISITED EMERGENCY ROOM FOR OWN HEALTH IN PAST 12 MOS
+chis_puf,141,ah13a,int,2,ER/URGENT CRE VISIT FOR ASTHMA LAST 12 MOS: CURRENT ASTHMATICS
+chis_puf,142,ah14,int,2,PATIENT IN HOSP OVERNIGHT DURING PAST 12 MOS
+chis_puf,143,ah15a,int,2,HOSPITAL OVERNIGHT FOR ASTHMA PAST 12 MOS: CURRENT ASTHMATICS
+chis_puf,144,ah16,int,1,DELAY GETTING PRESCRIPTION IN PAST 12 MO
+chis_puf,145,ah22,int,1,DELAY OTHER MEDICAL CARE IN PAST 12 MOS
+chis_puf,146,ah3,int,2,KIND OF PLACE FOR USUAL SOURCE OF HEALTH CARE
+chis_puf,147,ah33new,int,1,BORN IN U.S.
+chis_puf,148,ah34new,int,2,MOTHER BORN IN U.S.
+chis_puf,149,ah35new,int,2,FATHER BORN IN U.S.
+chis_puf,150,ah37,int,2,HOW WELL YOU SPEAK ENGLISH
+chis_puf,151,ah43a,int,2,LIVING WITH A PARENT
+chis_puf,152,ah44,int,2,SPOUSE LIVING IN SAME HOUSEHOLD
+chis_puf,153,ah44a,int,2,USED PAID CHILDCARE FOR CHILDREN UNDER 14
+chis_puf,154,ah49,int,2,MEDICARE COVERAGE PROVIDED THROUGH HMO
+chis_puf,155,ah5,int,3,# TIMES SAW MD IN PAST 12 MOS
+chis_puf,156,ah50_p,int,2,NAME OF MEDICARE HMO PLAN (PUF RECODE)
+chis_puf,157,ah52,int,2,SIGN UP FOR MEDICARE HMO DIRECTLY OR OTHERWISE
+chis_puf,158,ah6,int,2,HOW LONG SINCE LAST SAW DOCTOR ABOUT OWN HEALTH
+chis_puf,159,ah71,int,2,"HEALTH PLAN DEDUCTIBLE MORE THAN $1,000"
+chis_puf,160,ah72,int,2,"HEALTH PLAN DEDUCTIBLE MORE THAN $2,000"
+chis_puf,161,ah73,int,2,SPECIAL FUND TO PAY MEDICAL EXPENSES
+chis_puf,162,ah74,int,2,TRIED TO FIND HEALTH INSURANCE ON OWN
+chis_puf,163,ah75,int,2,TRIED TO FIND HEALTH INSURANCE ON OWN
+chis_puf,164,ah77,int,2,FREE PRENATAL CARE DURING PAST 12 MOS
+chis_puf,165,ah95_p,int,2,# TIMES VISITED ER IN PAST 12 MOS (PUF RECODE)
+chis_puf,166,ah96_p,int,2,"HEALTH PLAN DEDUCTIBLE > $2,000 (PUF RECODE)"
+chis_puf,167,ah97_p,int,2,"PLAN DEDUCTIBLE COVERING ALL PERSONS >$4,000 (PUF RECODE)"
+chis_puf,168,ah98,int,2,DIFFICULTY FINDING PLAN WITH NEEDED COVERAGE
+chis_puf,169,ah99,int,2,DIFFICULTY FINDING PLAN THAT IS AFFORDABLE
+chis_puf,170,ahchldc,int,2,AMOUNT SPENT ON CHILD CARE PER WEEK
+chis_puf,171,aheduc,int,2,EDUCATIONAL ATTAINMENT
+chis_puf,172,ai15,int,2,MAIN REASON NOT IN EMPLOYER'S HEALTH PLAN
+chis_puf,173,ai15a,int,2,MAIN REASON INELIGIBLE FOR EMPLOYER'S HEALTH PLAN
+chis_puf,174,ai22a_p,int,2,NAME OF HEALTH PLAN (PUF RECODE)
+chis_puf,175,ai22c,int,2,MAIN HEALTH PLAN IS HMO
+chis_puf,176,ai25,int,2,COVERED FOR PRESCRIPTION DRUGS
+chis_puf,177,ai25new,int,2,RX COVERAGE EDITED FOR MEDICAL/HF
+chis_puf,178,ai28,int,2,HOW LONG SINCE LAST HAD HEALTH INS
+chis_puf,179,ai33_6,int,2,OTHER INS: BOUGHT DIRECT
+chis_puf,180,ai37a,int,2,SPOUSE COVERED BY MEDICARE SUPPL POLICY
+chis_puf,181,ai4,int,2,COVERED BY MEDICARE SUPPL POLICY
+chis_puf,182,ai45,int,2,MAIN REASON SPOUSE NOT IN EMPLOYER'S HEALTH PLAN
+chis_puf,183,ai45a,int,2,MAIN REASON SPOUSE INELIGIBLE FOR EMPLOYER'S HEALTH PLAN
+chis_puf,184,aj1,int,2,INS COVERS TREATMENT FOR MNTL HEALTH PROBLEMS
+chis_puf,185,aj10,int,2,NEEDED SOMEONE ELSE TO HELP UNDERSTAND DOCTOR
+chis_puf,186,aj102,int,2,SOUGHT APPNT W/DOC IN 2 DAYS PAST YR
+chis_puf,187,aj103,int,2,HOW OFTEN GET APPNT IN 2 DAYS
+chis_puf,188,aj104,int,2,COULD GET APPNT W/DOC IN 2 DAYS IF NEEDED
+chis_puf,189,aj105,int,2,KNOW RIGHTS TO INTERPRETOR DURING MED VISIT
+chis_puf,190,aj106,int,2,USUAL PLACE FOR HLTH CARE CHANGED PAST YR
+chis_puf,191,aj107,int,2,CHANGE USUAL PLACE DUE TO INSURANCE PLAN
+chis_puf,192,aj108,int,2,EVER USED INTERNET
+chis_puf,193,aj109,int,2,USED INTERNET TO FIND MED INFO PAST 12 MOS
+chis_puf,194,aj11,int,2,WHO HELPED YOU UNDERSTAND DOCTOR
+chis_puf,195,aj110,int,2,CONFIDENCE TO COMPLETE APPL ONLINE ON OWN
+chis_puf,196,aj111,int,2,SOMEONE TO HELP FILL OUT APPL ONLINE
+chis_puf,197,aj112,int,2,HOW OFTEN DOC LISTENS CAREFULLY
+chis_puf,198,aj113,int,2,HOW OFTEN DOC CLEARLY EXPLAINS WHAT TO DO
+chis_puf,199,aj19,int,2,COST/NO INSUR DELAYED GETTING PRESCRIPTION
+chis_puf,200,aj20,int,2,COST/NO INSR DELAYED GETTING NEEDED CARE
+chis_puf,201,aj29,int,2,FEEL NERVOUS PAST 30 DAYS
+chis_puf,202,aj30,int,2,FEEL HOPELESS PAST 30 DAYS
+chis_puf,203,aj31,int,2,FELL RESTLESS PAST 30 DAYS
+chis_puf,204,aj32,int,2,FEEL DEPRESSED PAST 30 DAYS
+chis_puf,205,aj33,int,2,FEEL EVERYTHING AN EFFORT PAST 30 DAYS
+chis_puf,206,aj34,int,2,FEEL WORTHLESS PAST 30 DAYS
+chis_puf,207,aj50_p,int,2,LANGUAGE DOCTOR SPEAKS TO R (PUF RECODE)
+chis_puf,208,aj77,int,2,HAVE PERSONAL DOCTOR AS MAIN MEDICAL PROVIDER
+chis_puf,209,aj78,int,2,CONTACT DOC'S OFFICE WITH MEDICAL QUESTION PAST 12 MOS
+chis_puf,210,aj79,int,2,HOW OFTEN GOT RESPONSE FROM DOC'S OFFICE
+chis_puf,211,aj8,int,2,HAD HARD TIME UNDERSTANDING DOCTOR LAST VISIT
+chis_puf,212,aj80,int,2,DOC'S OFFICE HELP COORDINATE CARE W/ OTHER MED SVCS
+chis_puf,213,aj81,int,2,DELAYED PRESCRIPTION FOR ASTHMA
+chis_puf,214,aj82,int,2,DELAYED PRESCRIPTION FOR DIABETES
+chis_puf,215,aj83,int,2,DELAYED PRESCRIPTION FOR HEART DISEASE
+chis_puf,216,aj84,int,2,DELAYED MEDICAL CARE FOR ASTHMA
+chis_puf,217,aj85,int,2,DELAYED MEDICAL CARE FOR DIABETES
+chis_puf,218,aj86,int,2,DELAYED MEDICAL CARE FOR HEART DISEASE
+chis_puf,219,aj9,int,2,MD SPOKE DIFFERENT LANGUAGE REASON WHY DIFFICULT TO UNDERSTAND
+chis_puf,220,ak1,int,1,WORK STATUS LAST WEEK
+chis_puf,221,ak10_p,int,5,RESPONDENT'S EARNINGS LAST MONTH (PUF RECODE)
+chis_puf,222,ak10a_p,int,5,SPOUSE'S EARNINGS LAST MONTH (PUF RECODE)
+chis_puf,223,ak2,int,2,MAIN REASON FOR NOT WORKING LAST WEEK
+chis_puf,224,ak20,int,2,# OF HRS PER WEEK SPOUSE USUALLY WORKS
+chis_puf,225,ak22_p,int,6,HOUSEHOLD'S TOTAL ANNUAL INC (PUF RECODE)
+chis_puf,226,ak23,int,1,"LIVE IN HOUSE, DUPLEX, BUILDING WITH 3+ UNITS, OR MOBILE HOME"
+chis_puf,227,ak25,int,2,OWN OR RENT HOME
+chis_puf,228,ak28,int,2,HOW OFTEN FEEL SAFE IN NEIGHBORHOOD
+chis_puf,229,ak3,int,2,# OF USUAL HRS WORKED PER WEEK
+chis_puf,230,ak4,int,2,TYPE OF EMPLOYER AT MAIN JOB
+chis_puf,231,ak7,int,3,LENGTH OF TIME WORKING AT MAIN JOB
+chis_puf,232,ak8,int,2,# PEOPLE WORK FOR EMPLOYER/YOU
+chis_puf,233,akwklng,int,2,TIME AT MAIN JOB
+chis_puf,234,al15,int,2,RECVD ALIMONY/CHILD SUPPORT/MONEY FROM GOVT LAST MONTH
+chis_puf,235,al16_p,int,4,TOTAL RECVD FROM ALIMONY/CHILD SUPPORT/GOVT LAST MONTH (PUF RECODE)
+chis_puf,236,al17,int,2,PAID ALIMONY OR CHILD SUPPORT LAST MONTH
+chis_puf,237,al18_p,int,4,TOTAL ALIMONY/CHILD SUPPORT PAID LAST MONTH (PUF RECODE)
+chis_puf,238,al18a,int,2,RECVD SOCIAL SECURITY OR PENSION LAST MONTH
+chis_puf,239,al18b_p,int,4,TOTAL SOCIAL SECURITY/PENSION RECVD LAST MONTH (PUF RECODE)
+chis_puf,240,al2,int,2,CURRENTLY ON TANF OR CALWORKS
+chis_puf,241,al22,int,2,RECEIVING SOCIAL SECURITY DISABILITY INS
+chis_puf,242,al5,int,2,RECEIVING FOOD STAMP BENEFITS
+chis_puf,243,al6,int,2,RECEIVING SSI (SUPPLEMENTAL SECURITY INCOME)
+chis_puf,244,al7,int,2,CURRENTLY ON WIC
+chis_puf,245,am1,int,2,"HOW OFTEN FOOD DIDN'T LAST,COULDN'T AFFORD MORE, PAST 12 MOS"
+chis_puf,246,am19,int,2,PEOPLE IN NEIGHBORHOOD WILLING TO HELP EACH OTHER
+chis_puf,247,am2,int,2,HOW OFTEN COULDN'T AFFORD TO EAT BALANCED MEALS
+chis_puf,248,am21,int,2,PEOPLE IN NEIGHBORHOOD CAN BE TRUSTED
+chis_puf,249,am3,int,2,ALL ADULTS CUT/SKIPPED MEALS IN PAST 12 MOS FOR MONEY
+chis_puf,250,am34,int,2,TELEPHONE CALLS RECEIVED
+chis_puf,251,am35,int,2,NEIGHBORHOOD WATCHES OUT FOR CHILDREN'S SAFETY
+chis_puf,252,am36,int,1,DID VOLUNTEER WORK OR COMMUNITY SERVICES PAST YR
+chis_puf,253,am37,int,2,CURRENTLY PAYING OFF MORTGAGE/HOME LOAN
+chis_puf,254,am38,int,2,MAIN REASON FOR LAST MOVE
+chis_puf,255,am39,int,1,VOLUNTEER IN ORG DEALING W/COMM PROB PAST YR
+chis_puf,256,am3a,int,2,HOW OFTEN ALL ADULTS CUT/SKIPPED MEALS IN PAST 12 MOS FOR MONEY
+chis_puf,257,am4,int,2,ATE LESS THAN SHOULD BECAUSE OF MONEY IN PAST 12 MOS
+chis_puf,258,am40,int,1,MEET INFORMALLY TO DEAL W/COMM PROB PAST YR
+chis_puf,259,am5,int,2,HOW OFTEN HUNGRY BUT DIDN'T EAT B/C OF MONEY IN PAST 12 MOS
+chis_puf,260,asian8,int,2,ASIAN SUBTYPES- (8 TYPES) (PUF RECODE)
+chis_puf,261,asnhp2_p,int,2,"ASIAN GROUP - UCLA CHPR DEFINITION (PUF RECODE), UNBRIDGED"
+chis_puf,262,astcur,int,1,CURRENT ASTHMA STATUS
+chis_puf,263,asts,int,2,ASTHMA SYMPTOMS PAST 12 MOS FOR POPULATION DIAGNOSED W/ ASTHMA
+chis_puf,264,astyr,int,2,ASTHMA SYMPTOMS PAST 12 MOS FOR POPULATION CURRENTLY W/ ASTHMA
+chis_puf,265,binge12,int,1,"BINGE DRINKING IN PAST YEAR. 5+ DRINKS (MALE), 4+ DRINKS (FEMALE)"
+chis_puf,266,bmi_p,float,,BODY MASS INDEX (PUF RECODE)
+chis_puf,267,catribe,int,2,CALIFORNIA TRIBE
+chis_puf,268,chores2,int,2,CHORE IMPAIRMENT PAST 12 MONTHS
+chis_puf,269,citizen2,int,1,CITIZENSHIP STATUS - 3 LEVELS
+chis_puf,270,cntryf,int,2,COUNTRY FATHER BORN
+chis_puf,271,cntrym,int,2,COUNTRY MOTHER BORN
+chis_puf,272,cntrys,int,1,COUNTRY BORN
+chis_puf,273,diabck,int,3,# OF TIMES CHECKING FOR GLUCOSE/SUGAR PER MONTH
+chis_puf,274,diamed,int,2,TAKING INSULIN OR PILLS
+chis_puf,275,disable,int,1,DISABILITY STATUS DUE TO PHYS/MENT/EMOT CONDITION
+chis_puf,276,distress,int,2,SERIOUS PSYCHOLOGICAL DISTRESS
+chis_puf,277,doct_yr,int,1,VISITED DOCTOR IN PAST 12 MOS
+chis_puf,278,dstrs12,int,2,LIKELY HAS HAD PSYCHOLOGICAL DISTRESS IN THE LAST YEAR
+chis_puf,279,dstrs30,int,2,LIKELY HAS HAD PSYCHOLOGICAL DISTRESS IN THE PAST MONTH
+chis_puf,280,dstrsyr,int,2,SERIOUS PSYCHOLOGICAL DISTRESS FOR WORST MONTH PAST YR (K6 SCORE)
+chis_puf,281,elder_idx,int,2,ELDER INCOME BELOW COUNTY THRESHOLD FOR COST OF LIVING
+chis_puf,282,eligprg3,int,2,MEDI-CAL (MEDICAID)/HEALTHY FAM ELIG. - UNINSURED
+chis_puf,283,er,int,1,ER VISIT WITHIN THE PAST YEAR
+chis_puf,284,fam_type,int,1,FAMILY TYPE
+chis_puf,285,family2,int,2,FAMILY LIFE IMPAIRMENT PAST 12 MONTHS
+chis_puf,286,famtyp_p,int,1,FAMILY TYPE (PUF RECODE)
+chis_puf,287,fslev,int,2,FOOD SECURITY STATUS LEVEL
+chis_puf,288,fslevcb,int,2,FOOD SECURITY STATUS - 2 LVLS
+chis_puf,289,heighm_p,float,,HEIGHT: METERS - UCLA (PUF RECODE)
+chis_puf,290,hghti_p,int,2,HEIGHT: INCHES (PUF RECODE)
+chis_puf,291,hghtm_p,float,,HEIGHT: METERS (PUF RECODE)
+chis_puf,292,hhsize_p,int,2,HOUSEHOLD SIZE (PUF RECODE)
+chis_puf,293,hhsmk,int,1,HOUSEHOLD SMOKING
+chis_puf,294,hmo,int,1,HMO STATUS
+chis_puf,295,ihs,int,1,COVERED BY INDIAN HEALTH SERVICES
+chis_puf,296,ihs_s,int,2,SPOUSE COVERED BY INDIAN HEALTH SERVICES
+chis_puf,297,impair2,float,,FUNCTIONAL ROLE IMPAIRMENT DUE TO EMOTIONS PAST 12 MONTHS
+chis_puf,298,ins,int,1,CURRENTLY INSURED
+chis_puf,299,ins12m,int,2,MOS COVERED BY HEALTH PLANS LAST 12 MOS
+chis_puf,300,ins64_p,int,2,CURRENT HEALTH COVERAGE - < 65 YRS (PUF RECODE)
+chis_puf,301,ins64s_p,int,2,SPOUSE'S CURRENT HEALTH COVG - < 65 YRS (PUF RECODE)
+chis_puf,302,ins65,int,2,TYPE OF CURRENT HEALTH COVERAGE SOURCE FOR ELDERLY 65+
+chis_puf,303,ins65_s,int,2,TYPE OF CURRENT HEALTH COVERAGE FOR SPOUSE 65+
+chis_puf,304,ins_s,int,2,SPOUSE CURRENTLY INSURED
+chis_puf,305,insany,int,1,ANY INS IN LAST 12 MOS
+chis_puf,306,insem,int,1,COVERED BY EMPLOYER-BASED PLANS
+chis_puf,307,insem_s,int,2,SPOUSE COVERED BY EMPLOYER-BASED PLANS
+chis_puf,308,insmc,int,1,COVERED BY MEDICARE
+chis_puf,309,insmc_s,int,2,SPOUSE COVERED BY MEDICARE
+chis_puf,310,insmd,int,1,COVERED BY MEDI-CAL
+chis_puf,311,insmd_s,int,2,SPOUSE COVERED BY MEDI-CAL
+chis_puf,312,insog,int,1,COVERED BY OTHER GOVT PLANS
+chis_puf,313,insog_s,int,2,SPOUSE COVERED BY OTHER GOVT PLANS
+chis_puf,314,inspr,int,1,COVERED BY PLANS PURCHASED ON OWN
+chis_puf,315,inspr_s,int,2,SPOUSE COVERED BY PLANS PURCHASED ON OWN
+chis_puf,316,insps,int,2,PRIMARY OR SECONDARY COVERAGE
+chis_puf,317,insps_s,int,2,SPOUSE PRIMARY OR SECONDARY COVERAGE
+chis_puf,318,inst_12,int,2,"HEALTH INS COVERAGE IN LAST 12 MOS, INCL CURRENT STATUS:8 LVLS"
+chis_puf,319,instyp_p,int,1,TYPE OF CURRENT HEALTH COVERAGE SOURCE FOR ALL AGES (PUF RECODE)
+chis_puf,320,intvlang,int,1,LANGUAGE OF INTERVIEW
+chis_puf,321,langhome,int,2,LANGUAGE SPOKEN AT HOME
+chis_puf,322,latin9tp,int,2,LATIN/HISPANIC SUBTYPES - 9 LVLS
+chis_puf,323,mam_scrn,int,2,MAMMOGRAM IN PAST 2 YRS
+chis_puf,324,marit,int,1,MARITAL STATUS- 3 CATEGORIES
+chis_puf,325,marit2,int,1,MARITAL STATUS- 4 CATEGORIES
+chis_puf,326,marit_45,int,2,MARITAL STATUS - AGE 45 AND OLDER
+chis_puf,327,numcig,int,1,# OF CIGARETTES PER DAY
+chis_puf,328,offtk,int,2,"OFFER, ELIGIBILITY, ACCEPTANCE OF EMPLOYER BASED INS"
+chis_puf,329,offtk_s,int,2,"OFFER, ELIGIBILITY, ACCEPTANCE OF EMPLOYER-BASED INS: SPOUSE"
+chis_puf,330,ombsraso,int,1,OMB S-R NONHISPANIC ASIAN GROUP (ONLY)
+chis_puf,331,ombsrreo,int,1,OMB/CURRENT DOF RACE - ETHNICITY
+chis_puf,332,ovrwt,int,1,OVERWEIGHT OR OBESE
+chis_puf,333,pctlf_p,int,1,PERCENT LIFE IN US (PUF RECODE)
+chis_puf,334,povgwd_p,float,,FAMILY POVERTY THRESHOLD LEVEL (PUF RECODE)
+chis_puf,335,povll,int,1,POVERTY LEVEL
+chis_puf,336,povll2_p,float,,POVERTY LEVEL - 100% FPL (PUF RECODE)
+chis_puf,337,proxy,int,1,A PROXY INTERVIEW
+chis_puf,338,puf_id,float,,PUBLIC USE FILE ID
+chis_puf,339,racecen,int,1,RACE - CENSUS 2000 DEFINITION
+chis_puf,340,racedof,int,1,FORMER DOF RACE - ETHNICITY
+chis_puf,341,racehpr2,int,1,"RACE - UCLA CHPR DEFINITION, UNABRIDGED"
+chis_puf,342,rakedw0,float,,CHIS2011 RAKED WEIGHT - FULL SAMPLE
+chis_puf,343,rakedw1,float,,CHIS2011 RAKED WEIGHT - REPLICATE 1
+chis_puf,344,rakedw10,float,,CHIS2011 RAKED WEIGHT - REPLICATE 10
+chis_puf,345,rakedw11,float,,CHIS2011 RAKED WEIGHT - REPLICATE 11
+chis_puf,346,rakedw12,float,,CHIS2011 RAKED WEIGHT - REPLICATE 12
+chis_puf,347,rakedw13,float,,CHIS2011 RAKED WEIGHT - REPLICATE 13
+chis_puf,348,rakedw14,float,,CHIS2011 RAKED WEIGHT - REPLICATE 14
+chis_puf,349,rakedw15,float,,CHIS2011 RAKED WEIGHT - REPLICATE 15
+chis_puf,350,rakedw16,float,,CHIS2011 RAKED WEIGHT - REPLICATE 16
+chis_puf,351,rakedw17,float,,CHIS2011 RAKED WEIGHT - REPLICATE 17
+chis_puf,352,rakedw18,float,,CHIS2011 RAKED WEIGHT - REPLICATE 18
+chis_puf,353,rakedw19,float,,CHIS2011 RAKED WEIGHT - REPLICATE 19
+chis_puf,354,rakedw2,float,,CHIS2011 RAKED WEIGHT - REPLICATE 2
+chis_puf,355,rakedw20,float,,CHIS2011 RAKED WEIGHT - REPLICATE 20
+chis_puf,356,rakedw21,float,,CHIS2011 RAKED WEIGHT - REPLICATE 21
+chis_puf,357,rakedw22,float,,CHIS2011 RAKED WEIGHT - REPLICATE 22
+chis_puf,358,rakedw23,float,,CHIS2011 RAKED WEIGHT - REPLICATE 23
+chis_puf,359,rakedw24,float,,CHIS2011 RAKED WEIGHT - REPLICATE 24
+chis_puf,360,rakedw25,float,,CHIS2011 RAKED WEIGHT - REPLICATE 25
+chis_puf,361,rakedw26,float,,CHIS2011 RAKED WEIGHT - REPLICATE 26
+chis_puf,362,rakedw27,float,,CHIS2011 RAKED WEIGHT - REPLICATE 27
+chis_puf,363,rakedw28,float,,CHIS2011 RAKED WEIGHT - REPLICATE 28
+chis_puf,364,rakedw29,float,,CHIS2011 RAKED WEIGHT - REPLICATE 29
+chis_puf,365,rakedw3,float,,CHIS2011 RAKED WEIGHT - REPLICATE 3
+chis_puf,366,rakedw30,float,,CHIS2011 RAKED WEIGHT - REPLICATE 30
+chis_puf,367,rakedw31,float,,CHIS2011 RAKED WEIGHT - REPLICATE 31
+chis_puf,368,rakedw32,float,,CHIS2011 RAKED WEIGHT - REPLICATE 32
+chis_puf,369,rakedw33,float,,CHIS2011 RAKED WEIGHT - REPLICATE 33
+chis_puf,370,rakedw34,float,,CHIS2011 RAKED WEIGHT - REPLICATE 34
+chis_puf,371,rakedw35,float,,CHIS2011 RAKED WEIGHT - REPLICATE 35
+chis_puf,372,rakedw36,float,,CHIS2011 RAKED WEIGHT - REPLICATE 36
+chis_puf,373,rakedw37,float,,CHIS2011 RAKED WEIGHT - REPLICATE 37
+chis_puf,374,rakedw38,float,,CHIS2011 RAKED WEIGHT - REPLICATE 38
+chis_puf,375,rakedw39,float,,CHIS2011 RAKED WEIGHT - REPLICATE 39
+chis_puf,376,rakedw4,float,,CHIS2011 RAKED WEIGHT - REPLICATE 4
+chis_puf,377,rakedw40,float,,CHIS2011 RAKED WEIGHT - REPLICATE 40
+chis_puf,378,rakedw41,float,,CHIS2011 RAKED WEIGHT - REPLICATE 41
+chis_puf,379,rakedw42,float,,CHIS2011 RAKED WEIGHT - REPLICATE 42
+chis_puf,380,rakedw43,float,,CHIS2011 RAKED WEIGHT - REPLICATE 43
+chis_puf,381,rakedw44,float,,CHIS2011 RAKED WEIGHT - REPLICATE 44
+chis_puf,382,rakedw45,float,,CHIS2011 RAKED WEIGHT - REPLICATE 45
+chis_puf,383,rakedw46,float,,CHIS2011 RAKED WEIGHT - REPLICATE 46
+chis_puf,384,rakedw47,float,,CHIS2011 RAKED WEIGHT - REPLICATE 47
+chis_puf,385,rakedw48,float,,CHIS2011 RAKED WEIGHT - REPLICATE 48
+chis_puf,386,rakedw49,float,,CHIS2011 RAKED WEIGHT - REPLICATE 49
+chis_puf,387,rakedw5,float,,CHIS2011 RAKED WEIGHT - REPLICATE 5
+chis_puf,388,rakedw50,float,,CHIS2011 RAKED WEIGHT - REPLICATE 50
+chis_puf,389,rakedw51,float,,CHIS2011 RAKED WEIGHT - REPLICATE 51
+chis_puf,390,rakedw52,float,,CHIS2011 RAKED WEIGHT - REPLICATE 52
+chis_puf,391,rakedw53,float,,CHIS2011 RAKED WEIGHT - REPLICATE 53
+chis_puf,392,rakedw54,float,,CHIS2011 RAKED WEIGHT - REPLICATE 54
+chis_puf,393,rakedw55,float,,CHIS2011 RAKED WEIGHT - REPLICATE 55
+chis_puf,394,rakedw56,float,,CHIS2011 RAKED WEIGHT - REPLICATE 56
+chis_puf,395,rakedw57,float,,CHIS2011 RAKED WEIGHT - REPLICATE 57
+chis_puf,396,rakedw58,float,,CHIS2011 RAKED WEIGHT - REPLICATE 58
+chis_puf,397,rakedw59,float,,CHIS2011 RAKED WEIGHT - REPLICATE 59
+chis_puf,398,rakedw6,float,,CHIS2011 RAKED WEIGHT - REPLICATE 6
+chis_puf,399,rakedw60,float,,CHIS2011 RAKED WEIGHT - REPLICATE 60
+chis_puf,400,rakedw61,float,,CHIS2011 RAKED WEIGHT - REPLICATE 61
+chis_puf,401,rakedw62,float,,CHIS2011 RAKED WEIGHT - REPLICATE 62
+chis_puf,402,rakedw63,float,,CHIS2011 RAKED WEIGHT - REPLICATE 63
+chis_puf,403,rakedw64,float,,CHIS2011 RAKED WEIGHT - REPLICATE 64
+chis_puf,404,rakedw65,float,,CHIS2011 RAKED WEIGHT - REPLICATE 65
+chis_puf,405,rakedw66,float,,CHIS2011 RAKED WEIGHT - REPLICATE 66
+chis_puf,406,rakedw67,float,,CHIS2011 RAKED WEIGHT - REPLICATE 67
+chis_puf,407,rakedw68,float,,CHIS2011 RAKED WEIGHT - REPLICATE 68
+chis_puf,408,rakedw69,float,,CHIS2011 RAKED WEIGHT - REPLICATE 69
+chis_puf,409,rakedw7,float,,CHIS2011 RAKED WEIGHT - REPLICATE 7
+chis_puf,410,rakedw70,float,,CHIS2011 RAKED WEIGHT - REPLICATE 70
+chis_puf,411,rakedw71,float,,CHIS2011 RAKED WEIGHT - REPLICATE 71
+chis_puf,412,rakedw72,float,,CHIS2011 RAKED WEIGHT - REPLICATE 72
+chis_puf,413,rakedw73,float,,CHIS2011 RAKED WEIGHT - REPLICATE 73
+chis_puf,414,rakedw74,float,,CHIS2011 RAKED WEIGHT - REPLICATE 74
+chis_puf,415,rakedw75,float,,CHIS2011 RAKED WEIGHT - REPLICATE 75
+chis_puf,416,rakedw76,float,,CHIS2011 RAKED WEIGHT - REPLICATE 76
+chis_puf,417,rakedw77,float,,CHIS2011 RAKED WEIGHT - REPLICATE 77
+chis_puf,418,rakedw78,float,,CHIS2011 RAKED WEIGHT - REPLICATE 78
+chis_puf,419,rakedw79,float,,CHIS2011 RAKED WEIGHT - REPLICATE 79
+chis_puf,420,rakedw8,float,,CHIS2011 RAKED WEIGHT - REPLICATE 8
+chis_puf,421,rakedw80,float,,CHIS2011 RAKED WEIGHT - REPLICATE 80
+chis_puf,422,rakedw9,float,,CHIS2011 RAKED WEIGHT - REPLICATE 9
+chis_puf,423,rbmi,int,1,BMI DESCRIPTIVE
+chis_puf,424,rsn_uni2,int,2,REASON FOR UNINSURED STATUS ANYTIME PAST 12 MONTHS
+chis_puf,425,rsn_unin,int,2,REASON FOR CURRENTLY UNINSURED STATUS
+chis_puf,426,served,int,2,LENGTH OF TIME SERVED IN ACTIVE DUTY
+chis_puf,427,smkcur,int,1,CURRENT SMOKER
+chis_puf,428,smoking,int,1,CURRENT SMOKING HABITS
+chis_puf,429,social2,int,2,SOCIAL LIFE IMPAIRMENT PAST 12 MONTHS
+chis_puf,430,spk_eng,int,1,ENGLISH USE AND PROFICIENCY
+chis_puf,431,sraa,int,1,SELF-REPORTED AFRICAN AMERICAN
+chis_puf,432,srage_p,int,2,AGE (PUF RECODE)
+chis_puf,433,srai,int,1,SELF-REPORTED AMERICAN INDIAN
+chis_puf,434,sras,int,1,SELF-REPORTED ASIAN
+chis_puf,435,sraso,int,1,SELF-REPORTED OTHER ASIAN GROUP
+chis_puf,436,srch,int,1,SELF-REPORTED CHINESE
+chis_puf,437,srh,int,1,SELF-REPORTED HISPANIC
+chis_puf,438,srkr,int,1,SELF-REPORTED KOREAN
+chis_puf,439,sro,int,1,SELF-REPORTED OTHER RACE
+chis_puf,440,srph,int,1,SELF-REPORTED FILIPINO
+chis_puf,441,srpi,int,1,SELF-REPORTED PI AND NTV HW
+chis_puf,442,srsex,int,1,GENDER
+chis_puf,443,srtenr,int,1,SELF-REPORTED HOUSEHOLD TENURE (HH)
+chis_puf,444,srvt,int,1,SELF-REPORTED VIETNAMESE
+chis_puf,445,srw,int,1,SELF-REPORTED WHITE
+chis_puf,446,timead,int,4,LENGTH OF TIME LIVED AT CURRENT ADDRESS (MONTHS)
+chis_puf,447,uninsany,int,2,UNINSURED IN PAST 12 MOS
+chis_puf,448,ur_bg,int,1,RURAL AND URBAN - CLARITAS (BY BLOCK GROUP)
+chis_puf,449,ur_clrt,int,1,RURAL AND URBAN - CLARITAS (BY ZIPCODE) (4 LVLS)
+chis_puf,450,ur_clrt2,int,1,RURAL AND URBAN - CLARITAS (BY ZIPCODE) (2 LVLS)
+chis_puf,451,ur_ihs,int,1,RURAL AND URBAN - IHS
+chis_puf,452,ur_omb,int,1,RURAL AND URBAN - OMB
+chis_puf,453,ur_rhp,int,1,RURAL AND URBAN - RHP
+chis_puf,454,ur_tract,int,1,RURAL AND URBAN - CLARITAS (BY CENSUS TRACT)
+chis_puf,455,usoc,int,1,USUAL SOURCE OF CARE OTHER THAN ER
+chis_puf,456,usual,int,1,HAVE USUAL PLACE TO GO TO WHEN SICK OR NEEDING HEALTH ADVICE
+chis_puf,457,usual5tp,int,1,USUAL SOURCE OF CARE - 5 LVLS
+chis_puf,458,usual_tp,int,1,USUAL SOURCE OF CARE - 7 LVLS
+chis_puf,459,weighk_p,float,,WEIGHT: KG - UCLA (PUF RECODE)
+chis_puf,460,wghtk_p,float,,WEIGHT: KG (PUF RECODE)
+chis_puf,461,wghtp_p,int,3,WEIGHT: LBS (PUF RECODE)
+chis_puf,462,work2,int,2,WORK IMPAIRMENT PAST 12 MONTHS
+chis_puf,463,wrkst,int,1,WORKING STATUS
+chis_puf,464,wrkst_s,int,2,SPOUSE WORKING STATUS
+chis_puf,465,wt18k_p,int,3,WEIGHT AT 18: KILOS (PUF RECODE)
+chis_puf,466,wt18p_p,int,3,WEIGHT AT 18: LBS (PUF RECODE)
+chis_puf,467,yrus,int,2,YEARS LIVED IN THE U.S.

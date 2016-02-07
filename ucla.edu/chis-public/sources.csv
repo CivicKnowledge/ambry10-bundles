@@ -1,0 +1,8 @@
+"name","title","dest_table_name","space","description","ref","state"
+"chis12d","chis12d","chis12d","California","CHIS 2011-2012 Adult Public Use File. SAS Version, Release 1.","s3://ds.civicknowledge.org/healthpolicy.ucla.edu/chis-public/2012/chis11-12_adult_sas.zip","synced"
+"chis12f","chis12f","chis12f","California","CHIS 2011-2012 Adult Public Use File. Imputation Flags, SAS Version, Release 1.","s3://ds.civicknowledge.org/healthpolicy.ucla.edu/chis-public/2012/chis11-12_adult_sas.zip","synced"
+"chis12l","chis12l","chis12l","California","CHIS 2011-2012 Adult Public Use File. Stata version, Release 1.","s3://ds.civicknowledge.org/healthpolicy.ucla.edu/chis-public/2012/chis11-12_adult_stata.zip","synced"
+"chis13dd_adult",,,,"CHIS 2013 Data Dictionary, Adults","http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Documents/CHIS%202013%20Data%20Dictionary%20PUF%20-%20Adult_September%202015.pdf",
+"chis13dd_teen",,,,"CHIS 2013 Data Dictionary, Adolescents","http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Documents/CHIS%202013%20Data%20Dictionary%20PUF%20-%20Teen_September%202015.pdf",
+"chis13dd_child",,,,"CHIS 2013 Data Dictionary, Children","http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Documents/CHIS%202013%20Data%20Dictionary%20PUF%20-%20Child_September%202015.pdf",
+,,,,,"http://healthpolicy.ucla.edu/chis/data/public-use-data-file/Pages/TermsOfUse.aspx?file=/chis/data/public-use-data-file/Documents/chis13_adult_stata.zip",
