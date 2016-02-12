@@ -1,0 +1,5 @@
+name,time,description,filetype,encoding,reftype,ref,state
+code_bundle,,"Earlier bundle, for library code",,,ref,cdc.gov-brfss-2013,synced
+codebooktxt,,,,,ref,data/codebook.txt,synced
+columnlist,,,,,ref,http://www.cdc.gov/brfss/annual_data/2014/llcp_varlayout_14_onecolumn.html,synced
+brfss,2014,BRFSS 2014 Survey Data,fixed,latin1,,http://www.cdc.gov/brfss/annual_data/2014/files/LLCP2014ASC.ZIP,ingest_done

@@ -1,3 +1,5 @@
-name,title,dest_table_name,time,space,grain,end_line,description,filetype,encoding,reftype,ref,state
-counties,counties,counties,2012,US,counties,,,partition,,ref,census.gov-index-counties,synced
-brfss_county,brfss_county,brfss_county,2012,US,counties,223988,Fixed Width source file for the data.,fixed,latin1,,http://www.cdc.gov/brfss/smart/2012/CNTY12ASC.zip,ingest_done
+"name","title","dest_table_name","time","space","grain","description","filetype","encoding","reftype","ref","state"
+"columnspec",,,,,,"SAS File which has column positions",,,"ref","http://www.cdc.gov/brfss/smart/2012/CNTY12_SASOUT.SAS","synced"
+"counties","counties","counties",2012,"US","counties",,"partition",,"ref","census.gov-index-counties","synced"
+"brfss_county","brfss_county","brfss_county",2012,"US","counties","Fixed Width source file for the data.","fixed","latin1",,"http://www.cdc.gov/brfss/smart/2012/CNTY12ASC.zip","ingest_done"
+"varnames",,,,,,,,,"ref","cdc.gov-brfss-2013",

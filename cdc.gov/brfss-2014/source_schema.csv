@@ -1,0 +1,266 @@
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+brfss,1,_STATE,_state,int,,False,1,2,,,State FIPS Code
+brfss,2,FMONTH,fmonth,int,,False,16,2,,,File Month
+brfss,3,IMONTH,imonth,int,,False,18,2,,,Interview Month
+brfss,4,IDATE,idate,int,,False,18,8,,,Interview Date
+brfss,5,IDAY,iday,int,,False,20,2,,,Interview Day
+brfss,6,IYEAR,iyear,int,,False,22,4,,,Interview Year
+brfss,7,DISPCODE,dispcode,int,,False,31,4,,,Final Disposition
+brfss,8,SEQNO,seqno,int,,False,35,10,,,Annual Sequence Number
+brfss,9,_PSU,_psu,int,,False,35,10,,,Primary Sampling Unit (Equal to Annual Sequence Number)
+brfss,10,CTELENUM,ctelenum,int,,False,62,1,,,Correct Telephone Number?
+brfss,11,PVTRESD1,pvtresd1,int,,False,63,1,,,"Is this a private residence? [READ ONLY IF NECESSARY: “By private residence, we mean someplace like a house"
+brfss,12,COLGHOUS,colghous,int,,False,64,1,,,Do you live in college housing?
+brfss,13,STATERES,stateres,int,,False,65,1,,,Do you reside in ____(state)____?
+brfss,14,LADULT,ladult,int,,False,67,1,,,Are you 18 years of age or older?
+brfss,15,NUMADULT,numadult,int,,False,68,2,,,Number of Adults in Household
+brfss,16,NUMMEN,nummen,int,,False,70,2,,,Number of Adult Men in Household
+brfss,17,NUMWOMEN,numwomen,int,,False,72,2,,,Number of Adult Women in Household
+brfss,18,GENHLTH,genhlth,int,,False,80,1,,,Would you say that in general your health is:
+brfss,19,PHYSHLTH,physhlth,int,,False,81,2,,,"Now thinking about your physical health, which includes physical illness and injury, for how many days during the past"
+brfss,20,MENTHLTH,menthlth,int,,False,83,2,,,"Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many"
+brfss,21,POORHLTH,poorhlth,int,,False,85,2,,,"During the past 30 days, for about how many days did poor physical or mental health keep you from doing your usual"
+brfss,22,HLTHPLN1,hlthpln1,int,,False,87,1,,,"Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government"
+brfss,23,PERSDOC2,persdoc2,int,,False,88,1,,,"Do you have one person you think of as your personal doctor or health care provider? (If ""No"" ask ""Is there more than"
+brfss,24,MEDCOST,medcost,int,,False,89,1,,,Was there a time in the past 12 months when you needed to see a doctor but could not because of cost?
+brfss,25,CHECKUP1,checkup1,int,,False,90,1,,,About how long has it been since you last visited a doctor for a routine checkup? [A routine checkup is a general
+brfss,26,EXERANY2,exerany2,int,,False,91,1,,,"During the past month, other than your regular job, did you participate in any physical activities or exercises such as"
+brfss,27,SLEPTIM1,sleptim1,int,,False,92,2,,,"On average, how many hours of sleep do you get in a 24-hour period?"
+brfss,28,CVDINFR4,cvdinfr4,int,,False,94,1,,,"(Ever told) you had a heart attack, also called a myocardial infarction?"
+brfss,29,CVDCRHD4,cvdcrhd4,int,,False,95,1,,,(Ever told) you had angina or coronary heart disease?
+brfss,30,CVDSTRK3,cvdstrk3,int,,False,96,1,,,(Ever told) you had a stroke.
+brfss,31,ASTHMA3,asthma3,int,,False,97,1,,,(Ever told) you had asthma?
+brfss,32,ASTHNOW,asthnow,int,,False,98,1,,,Do you still have asthma?
+brfss,33,CHCSCNCR,chcscncr,int,,False,99,1,,,(Ever told) you had skin cancer?
+brfss,34,CHCOCNCR,chcocncr,int,,False,100,1,,,(Ever told) you had any other types of cancer?
+brfss,35,CHCCOPD1,chccopd1,int,,False,101,1,,,"(Ever told) you have Chronic Obstructive Pulmonary Disease or COPD, emphysema or chronic bronchitis?"
+brfss,36,HAVARTH3,havarth3,int,,False,102,1,,,"(Ever told) you have some form of arthritis, rheumatoid arthritis, gout, lupus, or fibromyalgia? (Arthritis diagnoses"
+brfss,37,ADDEPEV2,addepev2,int,,False,103,1,,,"(Ever told) you that you have a depressive disorder, including depression, major depression, dysthymia, or minor"
+brfss,38,CHCKIDNY,chckidny,int,,False,104,1,,,"(Ever told) you have kidney disease? Do NOT include kidney stones, bladder infection or incontinence.(Incontinence is"
+brfss,39,DIABETE3,diabete3,int,,False,105,1,,,"(Ever told) you have diabetes (If ""Yes"" and respondent is female, ask ""Was this only when you were pregnant?"". If"
+brfss,40,DIABAGE2,diabage2,int,,False,106,2,,,How old were you when you were told you have diabetes?
+brfss,41,LASTDEN3,lastden3,int,,False,108,1,,,"How long has it been since you last visited a dentist or a dental clinic for any reason? Include visits to dental specialists,"
+brfss,42,RMVTETH3,rmvteth3,int,,False,109,1,,,How many of your permanent teeth have been removed because of tooth decay or gum disease? Include teeth lost to
+brfss,43,VETERAN3,veteran3,int,,False,146,1,,,"Have you ever served on active duty in the United States Armed Forces, either in the regular military or in a National"
+brfss,44,MARITAL,marital,int,,False,147,1,,,Are you: (marital status)
+brfss,45,CHILDREN,children,int,,False,148,2,,,How many children less than 18 years of age live in your household?
+brfss,46,EDUCA,educa,int,,False,150,1,,,What is the highest grade or year of school you completed?
+brfss,47,EMPLOY1,employ1,int,,False,151,1,,,Are you currently…?
+brfss,48,INCOME2,income2,int,,False,152,2,,,"Is your annual household income from all sources: (If respondent refuses at any income level, code ""Refused."")"
+brfss,49,WEIGHT2,weight2,int,,False,154,4,,,"About how much do you weigh without shoes? (If respondent answers in metrics, put a 9 in the first column)[Round"
+brfss,50,HEIGHT3,height3,int,,False,158,4,,,"About how tall are you without shoes? (If respondent answers in metrics, put a 9 in the first column)[Round fractions"
+brfss,51,NUMHHOL2,numhhol2,int,,False,170,1,,,Do you have more than one telephone number in your household? Do not include cell phones or numbers that are only
+brfss,52,NUMPHON2,numphon2,int,,False,171,1,,,How many of these telephone numbers are residential numbers?
+brfss,53,CPDEMO1,cpdemo1,int,,False,172,1,,,Do you have a cell phone for personal use? Please include cell phones used for both business and personal use
+brfss,54,INTERNET,internet,int,,False,176,1,,,Have you used the internet in the past 30 days?
+brfss,55,RENTHOM1,renthom1,int,,False,177,1,,,Do you own or rent your home? (Home is defined as the place where you live most of the time/the majority of the year.)
+brfss,56,SEX,sex,int,,False,178,1,,,Indicate sex of respondent.
+brfss,57,PREGNANT,pregnant,int,,False,179,1,,,"To your knowledge, are you now pregnant?"
+brfss,58,QLACTLM2,qlactlm2,int,,False,180,1,,,"Are you limited in any way in any activities because of physical, mental, or emotional problems?"
+brfss,59,USEEQUIP,useequip,int,,False,181,1,,,"Do you now have any health problem that requires you to use special equipment, such as a cane, a wheelchair, a"
+brfss,60,BLIND,blind,int,,False,182,1,,,"Are you blind or do you have serious difficulty seeing, even when wearing glasses?"
+brfss,61,DECIDE,decide,int,,False,183,1,,,"Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or"
+brfss,62,DIFFWALK,diffwalk,int,,False,184,1,,,Do you have serious difficulty walking or climbing stairs?
+brfss,63,DIFFDRES,diffdres,int,,False,185,1,,,Do you have difficulty dressing or bathing?
+brfss,64,DIFFALON,diffalon,int,,False,186,1,,,"Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a"
+brfss,65,SMOKE100,smoke100,int,,False,187,1,,,Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]
+brfss,66,SMOKDAY2,smokday2,int,,False,188,1,,,"Do you now smoke cigarettes every day, some days, or not at all?"
+brfss,67,STOPSMK2,stopsmk2,int,,False,189,1,,,"During the past 12 months, have you stopped smoking for one day or longer because you were trying to quit smoking?"
+brfss,68,LASTSMK2,lastsmk2,int,,False,190,2,,,"How long has it been since you last smoked a cigarette, even one or two puffs?"
+brfss,69,USENOW3,usenow3,int,,False,192,1,,,"Do you currently use chewing tobacco, snuff, or snus every day, some days, or not at all? (Snus (Swedish for snuff) is"
+brfss,70,ALCDAY5,alcday5,int,,False,193,3,,,"During the past 30 days, how many days per week or per month did you have at least one drink of any alcoholic"
+brfss,71,AVEDRNK2,avedrnk2,int,,False,196,2,,,"One drink is equivalent to a 12-ounce beer, a 5-ounce glass of wine, or a drink with one shot of liquor. During the past 30"
+brfss,72,DRNK3GE5,drnk3ge5,int,,False,198,2,,,"Considering all types of alcoholic beverages, how many times during the past 30 days did you have 5 or more drinks for"
+brfss,73,MAXDRNKS,maxdrnks,int,,False,200,2,,,"During the past 30 days, what is the largest number of drinks you had on any occasion?"
+brfss,74,FLUSHOT6,flushot6,int,,False,202,1,,,"During the past 12 months, have you had either a flu shot or a flu vaccine that was sprayed in your nose? (A new flu"
+brfss,75,FLSHTMY2,flshtmy2,int,,False,203,6,,,During what month and year did you receive your most recent flu shot injected into your arm or flu vaccine that was
+brfss,76,PNEUVAC3,pneuvac3,int,,False,209,1,,,A pneumonia shot or pneumococcal vaccine is usually given only once or twice in a person´s lifetime and is different
+brfss,77,SHINGLE2,shingle2,int,,False,210,1,,,Have you ever had the shingles or zoster vaccine?
+brfss,78,FALL12MN,fall12mn,int,,False,211,2,,,"In the past 12 months, how many times have you fallen?"
+brfss,79,FALLINJ2,fallinj2,int,,False,213,2,,,"How many of these falls caused an injury? By an injury, we mean the fall caused you to limit your regular activities for at"
+brfss,80,SEATBELT,seatbelt,int,,False,215,1,,,How often do you use seat belts when you drive or ride in a car? Would you say—
+brfss,81,DRNKDRI2,drnkdri2,int,,False,216,2,,,"During the past 30 days, how many times have you driven when you’ve had perhaps too much to drink?"
+brfss,82,HADMAM,hadmam,int,,False,218,1,,,A mammogram is an x-ray of each breast to look for breast cancer. Have you ever had a mammogram?
+brfss,83,HOWLONG,howlong,int,,False,219,1,,,How long has it been since you had your last mammogram?
+brfss,84,PROFEXAM,profexam,int,,False,220,1,,,"A clinical breast exam is when a doctor, nurse, or other health professional feels the breast for lumps. Have you ever"
+brfss,85,LENGEXAM,lengexam,int,,False,221,1,,,How long has it been since your last breast exam?
+brfss,86,HADPAP2,hadpap2,int,,False,222,1,,,A Pap test is a test for cancer of the cervix. Have you ever had a Pap test?
+brfss,87,LASTPAP2,lastpap2,int,,False,223,1,,,How long has it been since you had your last Pap test?
+brfss,88,HADHYST2,hadhyst2,int,,False,224,1,,,Have you had a hysterectomy? (A hysterectomy is an operation to remove the uterus (womb).)
+brfss,89,PCPSAAD2,pcpsaad2,int,,False,225,1,,,"Has a doctor, nurse, or other health professional EVER talked with you about the advantages of the PSA test?"
+brfss,90,PCPSADI1,pcpsadi1,int,,False,226,1,,,"Has a doctor, nurse, or other health professional EVER talked with you about the disadvantages of the PSA test?"
+brfss,91,PCPSARE1,pcpsare1,int,,False,227,1,,,"Has a doctor, nurse, or other health professional EVER recommended that you have a PSA test?"
+brfss,92,PSATEST1,psatest1,int,,False,228,1,,,Have you EVER HAD a PSA test?
+brfss,93,PSATIME,psatime,int,,False,229,1,,,How long has it been since you had your last PSA test?
+brfss,94,PCPSARS1,pcpsars1,int,,False,230,1,,,What was the MAIN reason you had this PSA test – was it …?
+brfss,95,BLDSTOOL,bldstool,int,,False,231,1,,,A blood stool test is a test that may use a special kit at home to determine whether the stool contains blood. Have you
+brfss,96,LSTBLDS3,lstblds3,int,,False,232,1,,,How long has it been since you had your last blood stool test using a home kit?
+brfss,97,HADSIGM3,hadsigm3,int,,False,233,1,,,Sigmoidoscopy and colonoscopy are exams in which a tube is inserted in the rectum to view the colon for signs of
+brfss,98,HADSGCO1,hadsgco1,int,,False,234,1,,,"For a SIGMOIDOSCOPY, a flexible tube is inserted into the rectum to look for problems. A COLONOSCOPY is similar,"
+brfss,99,LASTSIG3,lastsig3,int,,False,235,1,,,How long has it been since you had your last sigmoidoscopy or colonoscopy?
+brfss,100,HIVTST6,hivtst6,int,,False,236,1,,,Have you ever been tested for HIV? Do not count tests you may have had as part of a blood donation. Include testing
+brfss,101,HIVTSTD3,hivtstd3,int,,False,237,6,,,"Not including blood donations, in what month and year was your last HIV test? (If response is before January 1985,"
+brfss,102,WHRTST10,whrtst10,int,,False,243,2,,,"Where did you have your last HIV test — at a private doctor or HMO office, at a counseling and testing site, in the"
+brfss,103,PDIABTST,pdiabtst,int,,False,255,1,,,Have you had a test for high blood sugar or diabetes within the past three years?
+brfss,104,PREDIAB1,prediab1,int,,False,256,1,,,Have you ever been told by a doctor or other health professional that you have pre-diabetes or borderline diabetes? (If
+brfss,105,INSULIN,insulin,int,,False,257,1,,,Are you now taking insulin?
+brfss,106,BLDSUGAR,bldsugar,int,,False,258,3,,,About how often do you check your blood for glucose or sugar? Include times when checked by a family member or
+brfss,107,FEETCHK2,feetchk2,int,,False,261,3,,,About how often do you check your feet for any sores or irritations? Include times when checked by a family member
+brfss,108,DOCTDIAB,doctdiab,int,,False,264,2,,,"About how many times in the past 12 months have you seen a doctor, nurse, or other health professional for your"
+brfss,109,CHKHEMO3,chkhemo3,int,,False,266,2,,,A test for “A one C” measures the average level of blood sugar over the past three months. About how many times in
+brfss,110,FEETCHK,feetchk,int,,False,268,2,,,About how many times in the past 12 months has a health professional checked your feet for any sores or irritations?
+brfss,111,EYEEXAM,eyeexam,int,,False,270,1,,,When was the last time you had an eye exam in which the pupils were dilated? This would have made you temporarily
+brfss,112,DIABEYE,diabeye,int,,False,271,1,,,Has a doctor ever told you that diabetes has affected your eyes or that you had retinopathy?
+brfss,113,DIABEDU,diabedu,int,,False,272,1,,,Have you ever taken a course or class in how to manage your diabetes yourself?
+brfss,114,PAINACT2,painact2,int,,False,273,2,,,"During the past 30 days, for about how many days did pain make it hard for you to do your usual activities, such as"
+brfss,115,QLMENTL2,qlmentl2,int,,False,275,2,,,"During the past 30 days, for about how may days have you felt sad, blue, or depressed?"
+brfss,116,QLSTRES2,qlstres2,int,,False,277,2,,,"During the past 30 days, for about how many days have you felt worried, tense, or anxious?"
+brfss,117,QLHLTH2,qlhlth2,int,,False,279,2,,,"During the past 30 days, for about how many days have you felt very healthy and full of energy?"
+brfss,118,MEDICARE,medicare,int,,False,281,1,,,Do you have Medicare? (Medicare is a coverage plan for people 65 or over and for certain disabled people.)
+brfss,119,HLTHCVR1,hlthcvr1,int,,False,282,2,,,What is the primary source of your health care coverage? Is it…
+brfss,120,DELAYMED,delaymed,int,,False,284,1,,,Have you delayed getting needed medical care for any of the following reasons in the past 12 months? Select the most
+brfss,121,DLYOTHER,dlyother,int,,False,285,25,,,Delayed Getting Medical Care Other Response
+brfss,122,NOCOV121,nocov121,int,,False,310,1,,,In the PAST 12 MONTHS was there any time when you did NOT have ANY health insurance or coverage?
+brfss,123,LSTCOVRG,lstcovrg,int,,False,311,1,,,About how long has it been since you last had health care coverage?
+brfss,124,DRVISITS,drvisits,int,,False,312,2,,,"How many times have you been to a doctor, nurse, or other health professional in the past 12 months?"
+brfss,125,MEDSCOST,medscost,int,,False,314,1,,,Was there a time in the past 12 months when you did not take your medication as prescribed because of cost? Do not
+brfss,126,CARERCVD,carercvd,int,,False,315,1,,,"In general, how satisfied are you with the health care you received? Would you say—"
+brfss,127,MEDBILL1,medbill1,int,,False,316,1,,,Do you currently have any health care bills that are being paid off over time? (This could include medical bills being
+brfss,128,ASBIALCH,asbialch,int,,False,317,1,,,"You told me earlier that your last routine checkup was [within the past year/within the past 2 years]. At that checkup,"
+brfss,129,ASBIDRNK,asbidrnk,int,,False,318,1,,,Did the health care provider ask you in person or on a form how much you drink?
+brfss,130,ASBIBING,asbibing,int,,False,319,1,,,Did the healthcare provider specifically ask whether you drank [5 FOR MEN /4 FOR WOMEN] or more alcoholic drinks
+brfss,131,ASBIADVC,asbiadvc,int,,False,320,1,,,Were you offered advice about what level of drinking is harmful or risky for your health?
+brfss,132,ASBIRDUC,asbirduc,int,,False,321,1,,,"At your last routine checkup, were you advised to reduce or quit your drinking?"
+brfss,133,WTCHSALT,wtchsalt,int,,False,322,1,,,Are you currently watching or reducing your sodium or salt intake?
+brfss,134,LONGWTCH,longwtch,int,,False,323,3,,,"How many days, weeks, months, or years have you been watching or reducing your sodium or salt intake?"
+brfss,135,DRADVISE,dradvise,int,,False,326,1,,,Has a doctor or other health professional ever advised you to reduce sodium or salt intake?
+brfss,136,ASTHMAGE,asthmage,int,,False,327,2,,,"How old were you when you were first told by a doctor, nurse or other health professional that you had asthma?"
+brfss,137,ASATTACK,asattack,int,,False,329,1,,,"During the past 12 months, have you had an episode of asthma or an asthma attack?"
+brfss,138,ASERVIST,aservist,int,,False,330,2,,,"During the past 12 months, how many times did you visit an emergency room or urgent care center because of your"
+brfss,139,ASDRVIST,asdrvist,int,,False,332,2,,,"During the past 12 months, how many times did you see a doctor, nurse or other health professional for urgent"
+brfss,140,ASRCHKUP,asrchkup,int,,False,334,2,,,"During the past 12 months, how many times did you see a doctor, nurse, or other health professional for a routine"
+brfss,141,ASACTLIM,asactlim,int,,False,336,3,,,"During the past 12 months, how many days were you unable to work or carry out your usual activities because of your"
+brfss,142,ASYMPTOM,asymptom,int,,False,339,1,,,"Symptoms of asthma include cough, wheezing, shortness of breath, chest tightness and phlegm production when you"
+brfss,143,ASNOSLEP,asnoslep,int,,False,340,1,,,"During the past 30 days, how many days did symptoms of asthma make it difficult for you to stay asleep? Would you"
+brfss,144,ASTHMED3,asthmed3,int,,False,341,1,,,"During the past 30 days, how many days did you take a prescription asthma medication to PREVENT an asthma attack"
+brfss,145,ASINHALR,asinhalr,int,,False,342,1,,,"During the past 30 days, how often did you use a prescription asthma inhaler DURING AN ASTHMA ATTACK to stop it?"
+brfss,146,IMFVPLAC,imfvplac,int,,False,343,2,,,At what kind of place did you get your last flu shot/vaccine?
+brfss,147,TETANUS,tetanus,int,,False,345,1,,,"Since 2005, have you had a tetanus shot? (If yes, ask: “Was this Tdap, the tetanus shot that also has pertussis or"
+brfss,148,HPVTEST,hpvtest,int,,False,346,1,,,An HPV test is sometimes given with the Pap test for cervical cancer screening. Have you ever had an HPV test?
+brfss,149,HPLSTTST,hplsttst,int,,False,347,1,,,How long has it been since you had your last HPV test?
+brfss,150,HPVADVC2,hpvadvc2,int,,False,348,1,,,"Have you ever had the HPV vaccination? (Human Papilloma Virus (Human Pap•uh•loh•muh Virus), Gardasil"
+brfss,151,HPVADSHT,hpvadsht,int,,False,349,2,,,How many HPV shots did you receive?
+brfss,152,CNCRDIFF,cncrdiff,int,,False,351,1,,,How many different types of cancer have you had?
+brfss,153,CNCRAGE,cncrage,int,,False,352,2,,,"At what age were you told that you had cancer? (If Response = 2 (Two) or 3 (Three or more), ask: “At what age was"
+brfss,154,CNCRTYP1,cncrtyp1,int,,False,354,2,,,"What type of cancer was it? (If Response = 2 (Two) or 3 (Three or more), ask: “With your most recent diagnoses of"
+brfss,155,CSRVTRT1,csrvtrt1,int,,False,356,1,,,"Are you currently receiving treatment for cancer? By treatment, we mean surgery, radiation therapy, chemotherapy, or"
+brfss,156,CSRVDOC1,csrvdoc1,int,,False,357,2,,,What type of doctor provides the majority of your health care?
+brfss,157,CSRVSUM,csrvsum,int,,False,359,1,,,"Did any doctor, nurse, or other health professional EVER give you a written summary of all the cancer treatments that"
+brfss,158,CSRVRTRN,csrvrtrn,int,,False,360,1,,,"Have you EVER received instructions from a doctor, nurse, or other health professional about where you should return"
+brfss,159,CSRVINST,csrvinst,int,,False,361,1,,,Were these instructions written down or printed on paper for you?
+brfss,160,CSRVINSR,csrvinsr,int,,False,362,1,,,"With your most recent diagnosis of cancer, did you have health insurance that paid for all or part of your cancer"
+brfss,161,CSRVDEIN,csrvdein,int,,False,363,1,,,Were you EVER denied health insurance or life insurance coverage because of your cancer?
+brfss,162,CSRVCLIN,csrvclin,int,,False,364,1,,,Did you participate in a clinical trial as part of your cancer treatment?
+brfss,163,CSRVPAIN,csrvpain,int,,False,365,1,,,Do you currently have physical pain caused by your cancer or cancer treatment?
+brfss,164,CSRVCTL1,csrvctl1,int,,False,366,1,,,Is your pain currently under control?
+brfss,165,RRCLASS2,rrclass2,int,,False,367,1,,,"How do other people usually classify you in this country? Would you say White, Black or African American, Hispanic or"
+brfss,166,RRCOGNT2,rrcognt2,int,,False,368,1,,,"How often do you think about your race? Would you say never, once a year, once a month, once a week, once a day,"
+brfss,167,RRATWRK2,rratwrk2,int,,False,369,1,,,"Within the past 12 months at work, do you feel you were treated worse than, the same as, or better than people of other"
+brfss,168,RRHCARE3,rrhcare3,int,,False,370,1,,,"Within the past 12 months when seeking health care, do you feel your experiences were worse than, the same as, or"
+brfss,169,RRPHYSM2,rrphysm2,int,,False,371,1,,,"Within the past 30 days, have you experienced any physical symptoms, for example, a headache, an upset stomach,"
+brfss,170,RREMTSM2,rremtsm2,int,,False,372,1,,,"Within the past 30 days, have you felt emotionally upset, for example angry, sad, or frustrated, as a result of how you"
+brfss,171,SCNTMNY1,scntmny1,int,,False,573,1,,,How often in the past 12 months would you say you were worried or stressed about having enough money to pay your
+brfss,172,SCNTMEL1,scntmel1,int,,False,574,1,,,How often in the past 12 months would you say you were worried or stressed about having enough money to buy
+brfss,173,SCNTPAID,scntpaid,int,,False,575,1,,,"At your main job or business, how are you generally paid for the work you do. Are you:"
+brfss,174,SCNTWRK1,scntwrk1,int,,False,576,2,,,About how many hours do you work per week on all of your jobs and businesses combined?
+brfss,175,SCNTLPAD,scntlpad,int,,False,578,1,,,"Thinking about the last time you worked, at your main job or business, how were you generally paid for the work you do?"
+brfss,176,SCNTLWK1,scntlwk1,int,,False,579,2,,,"Thinking about the last time you worked, about how many hours did you work per week at all of your jobs and"
+brfss,177,SCNTVOT1,scntvot1,int,,False,581,1,,,Did you vote in the last presidential election? [The November 2012 election between Barack Obama and Mitt
+brfss,178,SXORIENT,sxorient,int,,False,582,1,,,Do you consider yourself to be: (We ask this question in order to better understand the health and health care needs of
+brfss,179,TRNSGNDR,trnsgndr,int,,False,583,1,,,"Do you consider yourself to be transgender? (If yes, ask “Do you consider yourself to be male-to-female,"
+brfss,180,RCSBIRTH,rcsbirth,int,,False,584,6,,,What is the birth month and year of the “Xth” child?
+brfss,181,RCSGENDR,rcsgendr,int,,False,590,1,,,Is the child a boy or a girl?
+brfss,182,RCHISLA1,rchisla1,int,,False,591,4,,,"Is the child Hispanic, Latino/a, or Spanish origin?"
+brfss,183,RCSRACE1,rcsrace1,int,,False,595,28,,,Which one or more of the following would you say is the race of the child? (If 40 (Asian) or 50 (Pacific Islander) is
+brfss,184,RCSBRAC1,rcsbrac1,int,,False,623,2,,,Which one of these groups would you say best represents the child’s race? (If 40 (Asian) or 50 (Pacific Islander) is
+brfss,185,RCSRLTN2,rcsrltn2,int,,False,625,1,,,How are you related to the child?
+brfss,186,CASTHDX2,casthdx2,int,,False,626,1,,,"Has a doctor, nurse or other health professional EVER said that the child has asthma?"
+brfss,187,CASTHNO2,casthno2,int,,False,627,1,,,Does the child still have asthma?
+brfss,188,EMTSUPRT,emtsuprt,int,,False,628,1,,,How often do you get the social and emotional support you need?
+brfss,189,LSATISFY,lsatisfy,int,,False,629,1,,,"In general, how satisfied are you with your life?"
+brfss,190,QSTVER,qstver,int,,False,645,2,,,Questionnaire Version Identifier
+brfss,191,QSTLANG,qstlang,int,,False,647,2,,,Language identifier
+brfss,192,MSCODE,mscode,int,,False,1356,1,,,Metropolitan Status Code
+brfss,193,_STSTR,_ststr,int,,False,1357,6,,,"Sample Design Stratification Variable (A five digit number that combines the values for _STATE (first two characters),"
+brfss,194,_STRWT,_strwt,int,,False,1363,10,,,Stratum weight (Number of records in a stratum (NRECSTR) divided by the number of records selected (NRECSEL).)
+brfss,195,_RAWRAKE,_rawrake,int,,False,1393,10,,,"Raw weighting factor used in raking (Number of adults in the household (NUMADULT, maximum of 5) divided by the"
+brfss,196,_WT2RAKE,_wt2rake,int,,False,1403,10,,,Design weight used in raking (Stratum weight (_STRWT) multiplied by the raw weighting factor (_RAWRAKE).)
+brfss,197,_AGE80,_age80,int,,False,1417,2,,,Imputed Age value collapsed above 80
+brfss,198,_IMPRACE,_imprace,int,,False,1419,2,,,"Imputed race/ethnicity value (This value is the reported race/ethnicity or an imputed race/ethnicity, if the respondent"
+brfss,199,_IMPNPH,_impnph,int,,False,1421,1,,,Imputed number of phones used in weighting
+brfss,200,_IMPEDUC,_impeduc,int,,False,1425,1,,,"Imputed Education Level (This value is the reported education level or an imputed education level, if the respondent"
+brfss,201,_IMPMRTL,_impmrtl,int,,False,1426,1,,,"Imputed Marital Status (This value is the reported marital status or an imputed marital status, if the respondent refused"
+brfss,202,_IMPHOME,_imphome,int,,False,1427,1,,,"Imputed Own or Rent Home (This value is the reported tenure (rent or own home) or an imputed tenure, if the"
+brfss,203,_LANDWT2,_landwt2,int,,False,1430,10,,,
+brfss,204,_LANDWT,_landwt,int,,False,1473,10,,,
+brfss,205,_CHISPNC,_chispnc,int,,False,1612,1,,,"Child Hispanic, Latino/a, or Spanish origin calculated variable"
+brfss,206,_CPRACE,_cprace,int,,False,1669,2,,,Preferred Child Race Categories
+brfss,207,_CRACE1,_crace1,int,,False,1671,2,,,Child multiracial race categorization
+brfss,208,_IMPCAGE,_impcage,int,,False,1673,1,,,Imputed Child Age
+brfss,209,_IMPCRAC,_impcrac,int,,False,1674,1,,,Imputed Child Race/Ethnicity
+brfss,210,_IMPCSEX,_impcsex,int,,False,1675,1,,,Imputed Child Gender
+brfss,211,_CLANDWT,_clandwt,int,,False,1711,10,,,
+brfss,212,NPHH,nphh,int,,False,1907,3,,,
+brfss,213,NAHH,nahh,int,,False,1910,3,,,
+brfss,214,NCHH,nchh,int,,False,1913,3,,,
+brfss,215,_HHOLDWT,_hholdwt,int,,False,1916,10,,,
+brfss,216,_RFHLTH,_rfhlth,int,,False,2155,1,,,Adults with good or better health
+brfss,217,_HCVU651,_hcvu651,int,,False,2156,1,,,Respondents aged 18-64 who have any form of health care coverage
+brfss,218,_TOTINDA,_totinda,int,,False,2157,1,,,Adults who reported doing physical activity or exercise during the past 30 days other than their regular job
+brfss,219,_LTASTH1,_ltasth1,int,,False,2158,1,,,Adults who have ever been told they have asthma
+brfss,220,_CASTHM1,_casthm1,int,,False,2159,1,,,Adults who have been told they currently have asthma
+brfss,221,_ASTHMS1,_asthms1,int,,False,2160,1,,,Computed asthma status
+brfss,222,_DRDXAR1,_drdxar1,int,,False,2161,1,,,Respondents who have had a doctor diagnose them as having some form of arthritis
+brfss,223,_EXTETH2,_exteth2,int,,False,2162,1,,,Adults aged 18+ who have had permanent teeth extracted
+brfss,224,_ALTETH2,_alteth2,int,,False,2163,1,,,Adults aged 65+ who have had all their natural teeth extracted
+brfss,225,_DENVST2,_denvst2,int,,False,2164,1,,,"Adults who have visited a dentist, dental hygenist or dental clinic within the past year"
+brfss,226,_PRACE1,_prace1,int,,False,2221,2,,,Preferred race category
+brfss,227,_MRACE1,_mrace1,int,,False,2223,2,,,Calculated multiracial race categorization
+brfss,228,_HISPANC,_hispanc,int,,False,2227,1,,,"Hispanic, Latino/a, or Spanish origin calculated variable"
+brfss,229,_RACE,_race,int,,False,2228,1,,,Race/ethnicity categories
+brfss,230,_RACEG21,_raceg21,int,,False,2229,1,,,White non-Hispanic race group
+brfss,231,_RACEGR3,_racegr3,int,,False,2230,1,,,Five-level race/ethnicity category
+brfss,232,_RACE_G1,_race_g1,int,,False,2231,1,,,Race groups used for internet prevalence tables
+brfss,233,_AGEG5YR,_ageg5yr,int,,False,2232,2,,,Fourteen-level age category
+brfss,234,_AGE65YR,_age65yr,int,,False,2234,1,,,Two-level age category
+brfss,235,_AGE_G,_age_g,int,,False,2235,1,,,Six-level imputed age category
+brfss,236,HTIN4,htin4,int,,False,2236,3,,,Reported height in inches
+brfss,237,HTM4,htm4,int,,False,2239,3,,,Reported height in meters
+brfss,238,WTKG3,wtkg3,int,,False,2242,5,,,Reported weight in kilograms
+brfss,239,_BMI5,_bmi5,int,,False,2247,4,,,Body Mass Index (BMI)
+brfss,240,_BMI5CAT,_bmi5cat,int,,False,2251,1,,,Four-categories of Body Mass Index (BMI)
+brfss,241,_RFBMI5,_rfbmi5,int,,False,2252,1,,,Adults who have a body mass index greater than 25.00 (Overweight or Obese)
+brfss,242,_CHLDCNT,_chldcnt,int,,False,2253,1,,,Number of children in household
+brfss,243,_EDUCAG,_educag,int,,False,2254,1,,,Level of education completed
+brfss,244,_INCOMG,_incomg,int,,False,2255,1,,,Income categories
+brfss,245,_SMOKER3,_smoker3,int,,False,2256,1,,,"Four-level smoker status: Everyday smoker, Someday smoker, Former smoker, Non-smoker"
+brfss,246,_RFSMOK3,_rfsmok3,int,,False,2257,1,,,Adults who are current smokers
+brfss,247,DRNKANY5,drnkany5,int,,False,2258,1,,,Adults who reported having had at least one drink of alcohol in the past 30 days.
+brfss,248,DROCDY3_,drocdy3_,int,,False,2259,3,,,Drink-occasions-per-day
+brfss,249,_RFBING5,_rfbing5,int,,False,2262,1,,,"Binge drinkers (males having five or more drinks on one occasion, females having four or more drinks on one occasion)"
+brfss,250,_DRNKDY4,_drnkdy4,int,,False,2263,4,,,Calculated total number of alcoholic beverages consumed per day
+brfss,251,_DRNKMO4,_drnkmo4,int,,False,2267,4,,,Calculated total number of alcoholic beverages consumed per month
+brfss,252,_RFDRHV4,_rfdrhv4,int,,False,2271,1,,,Heavy drinkers (adult men having more than two drinks per day and adult women having more than one drink per day)
+brfss,253,_RFDRMN4,_rfdrmn4,int,,False,2272,1,,,Adult Men who are Heavy drinkers (having more than two drinks per day)
+brfss,254,_RFDRWM4,_rfdrwm4,int,,False,2273,1,,,Adult Women who are Heavy drinkers (having more than one drink per day)
+brfss,255,_FLSHOT6,_flshot6,int,,False,2274,1,,,Adults aged 65+ who have had a flu shot within the past year
+brfss,256,_PNEUMO2,_pneumo2,int,,False,2275,1,,,Adults aged 65+ who have ever had a pneumonia vaccination
+brfss,257,_RFSEAT2,_rfseat2,int,,False,2276,1,,,Always or Nearly Always Wear Seat Belts Calculated Variable
+brfss,258,_RFSEAT3,_rfseat3,int,,False,2277,1,,,Always Wear Seat Belts Calculated Variable
+brfss,259,_RFMAM2Y,_rfmam2y,int,,False,2278,1,,,Women respondents aged 40+ who have had a mammogram in the past two years
+brfss,260,_MAM502Y,_mam502y,int,,False,2279,1,,,Women respondents aged 50+ who have had a mammogram in the past two years
+brfss,261,_RFPAP32,_rfpap32,int,,False,2281,1,,,Women respondents aged 18+ who have had a pap test in the past three years
+brfss,262,_RFPSA21,_rfpsa21,int,,False,2283,1,,,Male respondents aged 40+ who have had a PSA test in the past 2 years
+brfss,263,_RFBLDS2,_rfblds2,int,,False,2284,1,,,Respondents aged 50+ who have had a blood stool test within the past two years
+brfss,264,_RFSIGM2,_rfsigm2,int,,False,2286,1,,,Respondents aged 50 or older who have had a sigmoidoscopy or colonoscopy
+brfss,265,_AIDTST3,_aidtst3,int,,False,2292,1,,,

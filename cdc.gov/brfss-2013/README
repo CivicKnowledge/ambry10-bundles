@@ -1,0 +1,4 @@
+
+The codebook.txt file is just the cut-and-paste text from the codebook PDF, 
+using <cmd>-A, <cmd>-C, <cmd>-V. Attepts to extact text programaticaly 
+failed when the extraction code misordered text. 

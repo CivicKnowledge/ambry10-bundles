@@ -1,1 +1,0 @@
-This directory contains files used to create source_schema.csv.

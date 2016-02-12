@@ -1,0 +1,52 @@
+about:
+    access: restricted
+    footnote: nll
+    grain: ''
+    groups: []
+    license: ckdbl
+    processed: ''
+    remote: ''
+    rights: public
+    source: ''
+    space: US
+    subject: ''
+    summary: The Behavioral Risk Factor Surveillance System (BRFSS) is the world's
+        largest, on-going telephone health survey system.
+    tags: []
+    time: ''
+    title: Behavioral Risk Factor Surveillance System (BRFSS), 2013
+contacts:
+    wrangler:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+external_documentation:
+    codebook:
+        description: Codebook for the file showing variable name, location, and frequency
+            of values for all reporting areas combined for the combined landline and
+            cell phone data set.
+        source: brfss
+        title: Codebook / Data Dictionary
+        url: http://www.cdc.gov/brfss/annual_data/2013/pdf/codebook13_llcp.pdf
+    dataset:
+        description: Web page the links to the dataset description
+        source: null
+        title: Dataset Page
+        url: http://www.cdc.gov/brfss/annual_data/annual_2013.html
+    program:
+        description: Homepage of the  Behavioral Risk Factor Surveillance System program
+        title: BRFSS Program Home
+        url: http://www.cdc.gov/brfss/about/index.htm
+identity:
+    btime: '2013'
+    dataset: brfss
+    id: d05e
+    revision: 1
+    source: cdc.gov
+    version: 0.0.1
+names:
+    fqname: cdc.gov-brfss-2013-0.0.1~d05e001
+    name: cdc.gov-brfss-2013
+    vid: d05e001
+    vname: cdc.gov-brfss-2013-0.0.1

@@ -1,0 +1,270 @@
+table,sequence_id,column,datatype,description
+,,,,
+docde_bundle,1,id,int,
+,,,,
+brfss,1,id,int,
+brfss,2,_state,int,State FIPS Code
+brfss,3,fmonth,int,File Month
+brfss,4,imonth,int,Interview Month
+brfss,5,idate,int,Interview Date
+brfss,6,iday,int,Interview Day
+brfss,7,iyear,int,Interview Year
+brfss,8,dispcode,int,Final Disposition
+brfss,9,seqno,int,Annual Sequence Number
+brfss,10,_psu,int,Primary Sampling Unit (Equal to Annual Sequence Number)
+brfss,11,ctelenum,int,Correct Telephone Number?
+brfss,12,pvtresd1,int,"Is this a private residence? [READ ONLY IF NECESSARY: “By private residence, we mean someplace like a house"
+brfss,13,colghous,int,Do you live in college housing?
+brfss,14,stateres,int,Do you reside in ____(state)____?
+brfss,15,ladult,int,Are you 18 years of age or older?
+brfss,16,numadult,int,Number of Adults in Household
+brfss,17,nummen,int,Number of Adult Men in Household
+brfss,18,numwomen,int,Number of Adult Women in Household
+brfss,19,genhlth,int,Would you say that in general your health is:
+brfss,20,physhlth,int,"Now thinking about your physical health, which includes physical illness and injury, for how many days during the past"
+brfss,21,menthlth,int,"Now thinking about your mental health, which includes stress, depression, and problems with emotions, for how many"
+brfss,22,poorhlth,int,"During the past 30 days, for about how many days did poor physical or mental health keep you from doing your usual"
+brfss,23,hlthpln1,int,"Do you have any kind of health care coverage, including health insurance, prepaid plans such as HMOs, or government"
+brfss,24,persdoc2,int,"Do you have one person you think of as your personal doctor or health care provider? (If ""No"" ask ""Is there more than"
+brfss,25,medcost,int,Was there a time in the past 12 months when you needed to see a doctor but could not because of cost?
+brfss,26,checkup1,int,About how long has it been since you last visited a doctor for a routine checkup? [A routine checkup is a general
+brfss,27,exerany2,int,"During the past month, other than your regular job, did you participate in any physical activities or exercises such as"
+brfss,28,sleptim1,int,"On average, how many hours of sleep do you get in a 24-hour period?"
+brfss,29,cvdinfr4,int,"(Ever told) you had a heart attack, also called a myocardial infarction?"
+brfss,30,cvdcrhd4,int,(Ever told) you had angina or coronary heart disease?
+brfss,31,cvdstrk3,int,(Ever told) you had a stroke.
+brfss,32,asthma3,int,(Ever told) you had asthma?
+brfss,33,asthnow,int,Do you still have asthma?
+brfss,34,chcscncr,int,(Ever told) you had skin cancer?
+brfss,35,chcocncr,int,(Ever told) you had any other types of cancer?
+brfss,36,chccopd1,int,"(Ever told) you have Chronic Obstructive Pulmonary Disease or COPD, emphysema or chronic bronchitis?"
+brfss,37,havarth3,int,"(Ever told) you have some form of arthritis, rheumatoid arthritis, gout, lupus, or fibromyalgia? (Arthritis diagnoses"
+brfss,38,addepev2,int,"(Ever told) you that you have a depressive disorder, including depression, major depression, dysthymia, or minor"
+brfss,39,chckidny,int,"(Ever told) you have kidney disease? Do NOT include kidney stones, bladder infection or incontinence.(Incontinence is"
+brfss,40,diabete3,int,"(Ever told) you have diabetes (If ""Yes"" and respondent is female, ask ""Was this only when you were pregnant?"". If"
+brfss,41,diabage2,int,How old were you when you were told you have diabetes?
+brfss,42,lastden3,int,"How long has it been since you last visited a dentist or a dental clinic for any reason? Include visits to dental specialists,"
+brfss,43,rmvteth3,int,How many of your permanent teeth have been removed because of tooth decay or gum disease? Include teeth lost to
+brfss,44,veteran3,int,"Have you ever served on active duty in the United States Armed Forces, either in the regular military or in a National"
+brfss,45,marital,int,Are you: (marital status)
+brfss,46,children,int,How many children less than 18 years of age live in your household?
+brfss,47,educa,int,What is the highest grade or year of school you completed?
+brfss,48,employ1,int,Are you currently…?
+brfss,49,income2,int,"Is your annual household income from all sources: (If respondent refuses at any income level, code ""Refused."")"
+brfss,50,weight2,int,"About how much do you weigh without shoes? (If respondent answers in metrics, put a 9 in the first column)[Round"
+brfss,51,height3,int,"About how tall are you without shoes? (If respondent answers in metrics, put a 9 in the first column)[Round fractions"
+brfss,52,numhhol2,int,Do you have more than one telephone number in your household? Do not include cell phones or numbers that are only
+brfss,53,numphon2,int,How many of these telephone numbers are residential numbers?
+brfss,54,cpdemo1,int,Do you have a cell phone for personal use? Please include cell phones used for both business and personal use
+brfss,55,internet,int,Have you used the internet in the past 30 days?
+brfss,56,renthom1,int,Do you own or rent your home? (Home is defined as the place where you live most of the time/the majority of the year.)
+brfss,57,sex,int,Indicate sex of respondent.
+brfss,58,pregnant,int,"To your knowledge, are you now pregnant?"
+brfss,59,qlactlm2,int,"Are you limited in any way in any activities because of physical, mental, or emotional problems?"
+brfss,60,useequip,int,"Do you now have any health problem that requires you to use special equipment, such as a cane, a wheelchair, a"
+brfss,61,blind,int,"Are you blind or do you have serious difficulty seeing, even when wearing glasses?"
+brfss,62,decide,int,"Because of a physical, mental, or emotional condition, do you have serious difficulty concentrating, remembering, or"
+brfss,63,diffwalk,int,Do you have serious difficulty walking or climbing stairs?
+brfss,64,diffdres,int,Do you have difficulty dressing or bathing?
+brfss,65,diffalon,int,"Because of a physical, mental, or emotional condition, do you have difficulty doing errands alone such as visiting a"
+brfss,66,smoke100,int,Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]
+brfss,67,smokday2,int,"Do you now smoke cigarettes every day, some days, or not at all?"
+brfss,68,stopsmk2,int,"During the past 12 months, have you stopped smoking for one day or longer because you were trying to quit smoking?"
+brfss,69,lastsmk2,int,"How long has it been since you last smoked a cigarette, even one or two puffs?"
+brfss,70,usenow3,int,"Do you currently use chewing tobacco, snuff, or snus every day, some days, or not at all? (Snus (Swedish for snuff) is"
+brfss,71,alcday5,int,"During the past 30 days, how many days per week or per month did you have at least one drink of any alcoholic"
+brfss,72,avedrnk2,int,"One drink is equivalent to a 12-ounce beer, a 5-ounce glass of wine, or a drink with one shot of liquor. During the past 30"
+brfss,73,drnk3ge5,int,"Considering all types of alcoholic beverages, how many times during the past 30 days did you have 5 or more drinks for"
+brfss,74,maxdrnks,int,"During the past 30 days, what is the largest number of drinks you had on any occasion?"
+brfss,75,flushot6,int,"During the past 12 months, have you had either a flu shot or a flu vaccine that was sprayed in your nose? (A new flu"
+brfss,76,flshtmy2,int,During what month and year did you receive your most recent flu shot injected into your arm or flu vaccine that was
+brfss,77,pneuvac3,int,A pneumonia shot or pneumococcal vaccine is usually given only once or twice in a person´s lifetime and is different
+brfss,78,shingle2,int,Have you ever had the shingles or zoster vaccine?
+brfss,79,fall12mn,int,"In the past 12 months, how many times have you fallen?"
+brfss,80,fallinj2,int,"How many of these falls caused an injury? By an injury, we mean the fall caused you to limit your regular activities for at"
+brfss,81,seatbelt,int,How often do you use seat belts when you drive or ride in a car? Would you say—
+brfss,82,drnkdri2,int,"During the past 30 days, how many times have you driven when you’ve had perhaps too much to drink?"
+brfss,83,hadmam,int,A mammogram is an x-ray of each breast to look for breast cancer. Have you ever had a mammogram?
+brfss,84,howlong,int,How long has it been since you had your last mammogram?
+brfss,85,profexam,int,"A clinical breast exam is when a doctor, nurse, or other health professional feels the breast for lumps. Have you ever"
+brfss,86,lengexam,int,How long has it been since your last breast exam?
+brfss,87,hadpap2,int,A Pap test is a test for cancer of the cervix. Have you ever had a Pap test?
+brfss,88,lastpap2,int,How long has it been since you had your last Pap test?
+brfss,89,hadhyst2,int,Have you had a hysterectomy? (A hysterectomy is an operation to remove the uterus (womb).)
+brfss,90,pcpsaad2,int,"Has a doctor, nurse, or other health professional EVER talked with you about the advantages of the PSA test?"
+brfss,91,pcpsadi1,int,"Has a doctor, nurse, or other health professional EVER talked with you about the disadvantages of the PSA test?"
+brfss,92,pcpsare1,int,"Has a doctor, nurse, or other health professional EVER recommended that you have a PSA test?"
+brfss,93,psatest1,int,Have you EVER HAD a PSA test?
+brfss,94,psatime,int,How long has it been since you had your last PSA test?
+brfss,95,pcpsars1,int,What was the MAIN reason you had this PSA test – was it …?
+brfss,96,bldstool,int,A blood stool test is a test that may use a special kit at home to determine whether the stool contains blood. Have you
+brfss,97,lstblds3,int,How long has it been since you had your last blood stool test using a home kit?
+brfss,98,hadsigm3,int,Sigmoidoscopy and colonoscopy are exams in which a tube is inserted in the rectum to view the colon for signs of
+brfss,99,hadsgco1,int,"For a SIGMOIDOSCOPY, a flexible tube is inserted into the rectum to look for problems. A COLONOSCOPY is similar,"
+brfss,100,lastsig3,int,How long has it been since you had your last sigmoidoscopy or colonoscopy?
+brfss,101,hivtst6,int,Have you ever been tested for HIV? Do not count tests you may have had as part of a blood donation. Include testing
+brfss,102,hivtstd3,int,"Not including blood donations, in what month and year was your last HIV test? (If response is before January 1985,"
+brfss,103,whrtst10,int,"Where did you have your last HIV test — at a private doctor or HMO office, at a counseling and testing site, in the"
+brfss,104,pdiabtst,int,Have you had a test for high blood sugar or diabetes within the past three years?
+brfss,105,prediab1,int,Have you ever been told by a doctor or other health professional that you have pre-diabetes or borderline diabetes? (If
+brfss,106,insulin,int,Are you now taking insulin?
+brfss,107,bldsugar,int,About how often do you check your blood for glucose or sugar? Include times when checked by a family member or
+brfss,108,feetchk2,int,About how often do you check your feet for any sores or irritations? Include times when checked by a family member
+brfss,109,doctdiab,int,"About how many times in the past 12 months have you seen a doctor, nurse, or other health professional for your"
+brfss,110,chkhemo3,int,A test for “A one C” measures the average level of blood sugar over the past three months. About how many times in
+brfss,111,feetchk,int,About how many times in the past 12 months has a health professional checked your feet for any sores or irritations?
+brfss,112,eyeexam,int,When was the last time you had an eye exam in which the pupils were dilated? This would have made you temporarily
+brfss,113,diabeye,int,Has a doctor ever told you that diabetes has affected your eyes or that you had retinopathy?
+brfss,114,diabedu,int,Have you ever taken a course or class in how to manage your diabetes yourself?
+brfss,115,painact2,int,"During the past 30 days, for about how many days did pain make it hard for you to do your usual activities, such as"
+brfss,116,qlmentl2,int,"During the past 30 days, for about how may days have you felt sad, blue, or depressed?"
+brfss,117,qlstres2,int,"During the past 30 days, for about how many days have you felt worried, tense, or anxious?"
+brfss,118,qlhlth2,int,"During the past 30 days, for about how many days have you felt very healthy and full of energy?"
+brfss,119,medicare,int,Do you have Medicare? (Medicare is a coverage plan for people 65 or over and for certain disabled people.)
+brfss,120,hlthcvr1,int,What is the primary source of your health care coverage? Is it…
+brfss,121,delaymed,int,Have you delayed getting needed medical care for any of the following reasons in the past 12 months? Select the most
+brfss,122,dlyother,str,Delayed Getting Medical Care Other Response
+brfss,123,nocov121,int,In the PAST 12 MONTHS was there any time when you did NOT have ANY health insurance or coverage?
+brfss,124,lstcovrg,int,About how long has it been since you last had health care coverage?
+brfss,125,drvisits,int,"How many times have you been to a doctor, nurse, or other health professional in the past 12 months?"
+brfss,126,medscost,int,Was there a time in the past 12 months when you did not take your medication as prescribed because of cost? Do not
+brfss,127,carercvd,int,"In general, how satisfied are you with the health care you received? Would you say—"
+brfss,128,medbill1,int,Do you currently have any health care bills that are being paid off over time? (This could include medical bills being
+brfss,129,asbialch,int,"You told me earlier that your last routine checkup was [within the past year/within the past 2 years]. At that checkup,"
+brfss,130,asbidrnk,int,Did the health care provider ask you in person or on a form how much you drink?
+brfss,131,asbibing,int,Did the healthcare provider specifically ask whether you drank [5 FOR MEN /4 FOR WOMEN] or more alcoholic drinks
+brfss,132,asbiadvc,int,Were you offered advice about what level of drinking is harmful or risky for your health?
+brfss,133,asbirduc,int,"At your last routine checkup, were you advised to reduce or quit your drinking?"
+brfss,134,wtchsalt,int,Are you currently watching or reducing your sodium or salt intake?
+brfss,135,longwtch,int,"How many days, weeks, months, or years have you been watching or reducing your sodium or salt intake?"
+brfss,136,dradvise,int,Has a doctor or other health professional ever advised you to reduce sodium or salt intake?
+brfss,137,asthmage,int,"How old were you when you were first told by a doctor, nurse or other health professional that you had asthma?"
+brfss,138,asattack,int,"During the past 12 months, have you had an episode of asthma or an asthma attack?"
+brfss,139,aservist,int,"During the past 12 months, how many times did you visit an emergency room or urgent care center because of your"
+brfss,140,asdrvist,int,"During the past 12 months, how many times did you see a doctor, nurse or other health professional for urgent"
+brfss,141,asrchkup,int,"During the past 12 months, how many times did you see a doctor, nurse, or other health professional for a routine"
+brfss,142,asactlim,int,"During the past 12 months, how many days were you unable to work or carry out your usual activities because of your"
+brfss,143,asymptom,int,"Symptoms of asthma include cough, wheezing, shortness of breath, chest tightness and phlegm production when you"
+brfss,144,asnoslep,int,"During the past 30 days, how many days did symptoms of asthma make it difficult for you to stay asleep? Would you"
+brfss,145,asthmed3,int,"During the past 30 days, how many days did you take a prescription asthma medication to PREVENT an asthma attack"
+brfss,146,asinhalr,int,"During the past 30 days, how often did you use a prescription asthma inhaler DURING AN ASTHMA ATTACK to stop it?"
+brfss,147,imfvplac,int,At what kind of place did you get your last flu shot/vaccine?
+brfss,148,tetanus,int,"Since 2005, have you had a tetanus shot? (If yes, ask: “Was this Tdap, the tetanus shot that also has pertussis or"
+brfss,149,hpvtest,int,An HPV test is sometimes given with the Pap test for cervical cancer screening. Have you ever had an HPV test?
+brfss,150,hplsttst,int,How long has it been since you had your last HPV test?
+brfss,151,hpvadvc2,int,"Have you ever had the HPV vaccination? (Human Papilloma Virus (Human Pap•uh•loh•muh Virus), Gardasil"
+brfss,152,hpvadsht,int,How many HPV shots did you receive?
+brfss,153,cncrdiff,int,How many different types of cancer have you had?
+brfss,154,cncrage,int,"At what age were you told that you had cancer? (If Response = 2 (Two) or 3 (Three or more), ask: “At what age was"
+brfss,155,cncrtyp1,int,"What type of cancer was it? (If Response = 2 (Two) or 3 (Three or more), ask: “With your most recent diagnoses of"
+brfss,156,csrvtrt1,int,"Are you currently receiving treatment for cancer? By treatment, we mean surgery, radiation therapy, chemotherapy, or"
+brfss,157,csrvdoc1,int,What type of doctor provides the majority of your health care?
+brfss,158,csrvsum,int,"Did any doctor, nurse, or other health professional EVER give you a written summary of all the cancer treatments that"
+brfss,159,csrvrtrn,int,"Have you EVER received instructions from a doctor, nurse, or other health professional about where you should return"
+brfss,160,csrvinst,int,Were these instructions written down or printed on paper for you?
+brfss,161,csrvinsr,int,"With your most recent diagnosis of cancer, did you have health insurance that paid for all or part of your cancer"
+brfss,162,csrvdein,int,Were you EVER denied health insurance or life insurance coverage because of your cancer?
+brfss,163,csrvclin,int,Did you participate in a clinical trial as part of your cancer treatment?
+brfss,164,csrvpain,int,Do you currently have physical pain caused by your cancer or cancer treatment?
+brfss,165,csrvctl1,int,Is your pain currently under control?
+brfss,166,rrclass2,int,"How do other people usually classify you in this country? Would you say White, Black or African American, Hispanic or"
+brfss,167,rrcognt2,int,"How often do you think about your race? Would you say never, once a year, once a month, once a week, once a day,"
+brfss,168,rratwrk2,int,"Within the past 12 months at work, do you feel you were treated worse than, the same as, or better than people of other"
+brfss,169,rrhcare3,int,"Within the past 12 months when seeking health care, do you feel your experiences were worse than, the same as, or"
+brfss,170,rrphysm2,int,"Within the past 30 days, have you experienced any physical symptoms, for example, a headache, an upset stomach,"
+brfss,171,rremtsm2,int,"Within the past 30 days, have you felt emotionally upset, for example angry, sad, or frustrated, as a result of how you"
+brfss,172,scntmny1,int,How often in the past 12 months would you say you were worried or stressed about having enough money to pay your
+brfss,173,scntmel1,int,How often in the past 12 months would you say you were worried or stressed about having enough money to buy
+brfss,174,scntpaid,int,"At your main job or business, how are you generally paid for the work you do. Are you:"
+brfss,175,scntwrk1,int,About how many hours do you work per week on all of your jobs and businesses combined?
+brfss,176,scntlpad,int,"Thinking about the last time you worked, at your main job or business, how were you generally paid for the work you do?"
+brfss,177,scntlwk1,int,"Thinking about the last time you worked, about how many hours did you work per week at all of your jobs and"
+brfss,178,scntvot1,int,Did you vote in the last presidential election? [The November 2012 election between Barack Obama and Mitt
+brfss,179,sxorient,int,Do you consider yourself to be: (We ask this question in order to better understand the health and health care needs of
+brfss,180,trnsgndr,int,"Do you consider yourself to be transgender? (If yes, ask “Do you consider yourself to be male-to-female,"
+brfss,181,rcsbirth,int,What is the birth month and year of the “Xth” child?
+brfss,182,rcsgendr,int,Is the child a boy or a girl?
+brfss,183,rchisla1,int,"Is the child Hispanic, Latino/a, or Spanish origin?"
+brfss,184,rcsrace1,int,Which one or more of the following would you say is the race of the child? (If 40 (Asian) or 50 (Pacific Islander) is
+brfss,185,rcsbrac1,int,Which one of these groups would you say best represents the child’s race? (If 40 (Asian) or 50 (Pacific Islander) is
+brfss,186,rcsrltn2,int,How are you related to the child?
+brfss,187,casthdx2,int,"Has a doctor, nurse or other health professional EVER said that the child has asthma?"
+brfss,188,casthno2,int,Does the child still have asthma?
+brfss,189,emtsuprt,int,How often do you get the social and emotional support you need?
+brfss,190,lsatisfy,int,"In general, how satisfied are you with your life?"
+brfss,191,qstver,int,Questionnaire Version Identifier
+brfss,192,qstlang,int,Language identifier
+brfss,193,mscode,int,Metropolitan Status Code
+brfss,194,_ststr,int,"Sample Design Stratification Variable (A five digit number that combines the values for _STATE (first two characters),"
+brfss,195,_strwt,int,Stratum weight (Number of records in a stratum (NRECSTR) divided by the number of records selected (NRECSEL).)
+brfss,196,_rawrake,int,"Raw weighting factor used in raking (Number of adults in the household (NUMADULT, maximum of 5) divided by the"
+brfss,197,_wt2rake,int,Design weight used in raking (Stratum weight (_STRWT) multiplied by the raw weighting factor (_RAWRAKE).)
+brfss,198,_age80,int,Imputed Age value collapsed above 80
+brfss,199,_imprace,int,"Imputed race/ethnicity value (This value is the reported race/ethnicity or an imputed race/ethnicity, if the respondent"
+brfss,200,_impnph,int,Imputed number of phones used in weighting
+brfss,201,_impeduc,int,"Imputed Education Level (This value is the reported education level or an imputed education level, if the respondent"
+brfss,202,_impmrtl,int,"Imputed Marital Status (This value is the reported marital status or an imputed marital status, if the respondent refused"
+brfss,203,_imphome,int,"Imputed Own or Rent Home (This value is the reported tenure (rent or own home) or an imputed tenure, if the"
+brfss,204,_landwt2,int,
+brfss,205,_landwt,int,
+brfss,206,_chispnc,int,"Child Hispanic, Latino/a, or Spanish origin calculated variable"
+brfss,207,_cprace,int,Preferred Child Race Categories
+brfss,208,_crace1,int,Child multiracial race categorization
+brfss,209,_impcage,int,Imputed Child Age
+brfss,210,_impcrac,int,Imputed Child Race/Ethnicity
+brfss,211,_impcsex,int,Imputed Child Gender
+brfss,212,_clandwt,int,
+brfss,213,nphh,int,
+brfss,214,nahh,int,
+brfss,215,nchh,int,
+brfss,216,_hholdwt,int,
+brfss,217,_rfhlth,int,Adults with good or better health
+brfss,218,_hcvu651,int,Respondents aged 18-64 who have any form of health care coverage
+brfss,219,_totinda,int,Adults who reported doing physical activity or exercise during the past 30 days other than their regular job
+brfss,220,_ltasth1,int,Adults who have ever been told they have asthma
+brfss,221,_casthm1,int,Adults who have been told they currently have asthma
+brfss,222,_asthms1,int,Computed asthma status
+brfss,223,_drdxar1,int,Respondents who have had a doctor diagnose them as having some form of arthritis
+brfss,224,_exteth2,int,Adults aged 18+ who have had permanent teeth extracted
+brfss,225,_alteth2,int,Adults aged 65+ who have had all their natural teeth extracted
+brfss,226,_denvst2,int,"Adults who have visited a dentist, dental hygenist or dental clinic within the past year"
+brfss,227,_prace1,int,Preferred race category
+brfss,228,_mrace1,int,Calculated multiracial race categorization
+brfss,229,_hispanc,int,"Hispanic, Latino/a, or Spanish origin calculated variable"
+brfss,230,_race,int,Race/ethnicity categories
+brfss,231,_raceg21,int,White non-Hispanic race group
+brfss,232,_racegr3,int,Five-level race/ethnicity category
+brfss,233,_race_g1,int,Race groups used for internet prevalence tables
+brfss,234,_ageg5yr,int,Fourteen-level age category
+brfss,235,_age65yr,int,Two-level age category
+brfss,236,_age_g,int,Six-level imputed age category
+brfss,237,htin4,int,Reported height in inches
+brfss,238,htm4,int,Reported height in meters
+brfss,239,wtkg3,int,Reported weight in kilograms
+brfss,240,_bmi5,int,Body Mass Index (BMI)
+brfss,241,_bmi5cat,int,Four-categories of Body Mass Index (BMI)
+brfss,242,_rfbmi5,int,Adults who have a body mass index greater than 25.00 (Overweight or Obese)
+brfss,243,_chldcnt,int,Number of children in household
+brfss,244,_educag,int,Level of education completed
+brfss,245,_incomg,int,Income categories
+brfss,246,_smoker3,int,"Four-level smoker status: Everyday smoker, Someday smoker, Former smoker, Non-smoker"
+brfss,247,_rfsmok3,int,Adults who are current smokers
+brfss,248,drnkany5,int,Adults who reported having had at least one drink of alcohol in the past 30 days.
+brfss,249,drocdy3,int,Drink-occasions-per-day
+brfss,250,_rfbing5,int,"Binge drinkers (males having five or more drinks on one occasion, females having four or more drinks on one occasion)"
+brfss,251,_drnkdy4,int,Calculated total number of alcoholic beverages consumed per day
+brfss,252,_drnkmo4,int,Calculated total number of alcoholic beverages consumed per month
+brfss,253,_rfdrhv4,int,Heavy drinkers (adult men having more than two drinks per day and adult women having more than one drink per day)
+brfss,254,_rfdrmn4,int,Adult Men who are Heavy drinkers (having more than two drinks per day)
+brfss,255,_rfdrwm4,int,Adult Women who are Heavy drinkers (having more than one drink per day)
+brfss,256,_flshot6,int,Adults aged 65+ who have had a flu shot within the past year
+brfss,257,_pneumo2,int,Adults aged 65+ who have ever had a pneumonia vaccination
+brfss,258,_rfseat2,int,Always or Nearly Always Wear Seat Belts Calculated Variable
+brfss,259,_rfseat3,int,Always Wear Seat Belts Calculated Variable
+brfss,260,_rfmam2y,int,Women respondents aged 40+ who have had a mammogram in the past two years
+brfss,261,_mam502y,int,Women respondents aged 50+ who have had a mammogram in the past two years
+brfss,262,_rfpap32,int,Women respondents aged 18+ who have had a pap test in the past three years
+brfss,263,_rfpsa21,int,Male respondents aged 40+ who have had a PSA test in the past 2 years
+brfss,264,_rfblds2,int,Respondents aged 50+ who have had a blood stool test within the past two years
+brfss,265,_rfsigm2,int,Respondents aged 50 or older who have had a sigmoidoscopy or colonoscopy
+brfss,266,_aidtst3,int,

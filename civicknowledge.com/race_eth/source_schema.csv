@@ -1,0 +1,7 @@
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+codes,1,text_code,text_code,str,,False,,,,,text_code
+codes,2,ck_numeric_code,ck_numeric_code,int,,False,,,,,ck_numeric_code
+codes,3,hci_race_eth_name,hci_race_eth_name,str,,False,,,,,hci_race_eth_name
+codes,4,hci_race_eth_code,hci_race_eth_code,int,,False,,,,,hci_race_eth_code
+codes,5,census_table_code,census_table_code,str,,False,,,,,census_table_code
+codes,6,description,description,str,,False,,,,,description

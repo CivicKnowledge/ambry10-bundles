@@ -20,7 +20,8 @@ contacts:
         name: Eric Busboom
         org: Civic Knowledge
         url: http://civicknowledge.com
-dependencies: {}
+dependencies:
+    pdfminer: pdfminer
 external_documentation:
     datadictionary:
         description: Provides information on the background, design, data collection

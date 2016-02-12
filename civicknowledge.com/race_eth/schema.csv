@@ -1,0 +1,9 @@
+"table","column","datatype","description"
+,,,
+"codes","id","int","Codes for common race/ethnicity combinations"
+"codes","text_code","str","Civic Kowledge text code"
+"codes","ck_numeric_code","int","Civic Knowledge numeric code"
+"codes","hci_race_eth_name","str","Name code from the California Healthy Communities Indicators"
+"codes","hci_race_eth_code","int","Numeric code from the California Healthy Communities Indicators"
+"codes","census_table_code","str","Census table name suffix code"
+"codes","description","str","Description"

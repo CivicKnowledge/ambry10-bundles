@@ -2,3 +2,4 @@
 "brfss2013","brfss2013","brfss2013",2013,"US","BRFSS 2013 Survey Data","[]",0,"latin1","fixed",,"http://www.cdc.gov/brfss/annual_data/2013/files/LLCP2013ASC.ZIP","synced"
 "states","states","states",,"US",,,,,"partition","ref","civicknowledge.com-geography-census-states-2010","synced"
 "datadict","Data Dictionary",,,,,,,,,"ref","http://www.cdc.gov/brfss/annual_data/2013/pdf/CODEBOOK13_LLCP.pdf",
+"columnlist",,,,,,,,,,"ref","http://www.cdc.gov/brfss/annual_data/2013/llcp_varlayout_13_onecolumn.html",

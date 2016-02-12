@@ -1,0 +1,36 @@
+about:
+    access: public
+    footnote: nll
+    grain: null
+    groups: null
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: null
+    subject: null
+    summary: Top-level codes for common race / ethnicity combinations. These codes have mappings to the codes used in the
+        California Healthy Communities Indicators collection and US Census table suffixes. 
+    tags: []
+    time: null
+    title: Race / Ethnicity Codes
+contacts:
+    wrangler:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        url: http://civicknowledge.com
+dependencies: {}
+
+identity:
+    dataset: race_eth
+    id: d05b
+    revision: 1
+    source: civicknowledge.com
+    version: 0.0.1
+names:
+    fqname: civicknowledge.com-race_eth-0.0.1~d05b001
+    name: civicknowledge.com-race_eth
+    vid: d05b001
+    vname: civicknowledge.com-race_eth-0.0.1
+requirements: {}
+versions: {}

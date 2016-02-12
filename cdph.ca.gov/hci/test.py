@@ -6,5 +6,3 @@ from ambry.bundle.events import after_ingest, before_ingest
 
 class Test(BundleTest):
     pass
-
-
