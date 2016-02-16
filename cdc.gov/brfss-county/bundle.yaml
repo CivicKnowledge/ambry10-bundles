@@ -31,6 +31,9 @@ external_documentation:
         source: null
         title: BRFSS Codebook
         url: http://www.cdc.gov/brfss/annual_data/2013/pdf/CODEBOOK13_LLCP.pdf
+    methodolody:
+        title: Methodology
+        url: http://www.cdc.gov/brfss/smart/2012/2012_smart_brfss_county_methodology.pdf
     dataset:
         description: SMART dataset page.
         source: null

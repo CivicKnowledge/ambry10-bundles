@@ -1,5 +1,5 @@
-"name","title","source_table","dest_table","description","time","space","grain","start_line","header_lines","encoding","filetype","reftype","ref"
-"columnlist",,,,,,,,,,,,"ref","http://www.cdc.gov/brfss/annual_data/2013/llcp_varlayout_13_onecolumn.html"
-"brfss",,,,"BRFSS 2013 Survey Data",2013,,,0,"[]","latin1","fixed",,"http://www.cdc.gov/brfss/annual_data/2013/files/LLCP2013ASC.ZIP"
-"labels",,,,,,,,,,,,"ref","data/LLCP2013.dct"
-"codebooktxt",,,,,,,,,,,,"ref","data/codebook.txt"
+name,time,description,filetype,encoding,reftype,ref,state
+codebooktxt,,,,,ref,data/codebook.txt,synced
+columnlist,,,,,ref,http://www.cdc.gov/brfss/annual_data/2013/llcp_varlayout_13_onecolumn.html,synced
+labels,,,,,ref,data/LLCP2013.dct,synced
+brfss,2013,BRFSS 2013 Survey Data,fixed,latin1,,http://www.cdc.gov/brfss/annual_data/2013/files/LLCP2013ASC.ZIP,ingest_done

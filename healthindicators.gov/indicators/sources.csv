@@ -1,0 +1,1296 @@
+name,title,source_table_name,dest_table_name,stage,start_line,end_line,header_lines,description,reftype,ref,state
+api,API Root Url,,,0,,,,,ref,http://services.healthindicators.gov/v5/REST.svc/,synced
+indicator_50115,,indicator,indicator,2,,,,Aspirin use for secondary prevention (percent),generator,GenerateIndicator;50115,synced
+ind_descr,IndicatorDescriptions,,,1,1,1292,0,,generator,GenerateDescriptions,built
+indicator_1000,,indicator,indicator,2,,,,Hepatitis A vaccination: children 19-35 months,generator,GenerateIndicator;1000,synced
+indicator_10000,,indicator,indicator,2,,,,Population estimates (number),generator,GenerateIndicator;10000,synced
+indicator_10001,,indicator,indicator,2,,,,Population density (per square mile),generator,GenerateIndicator;10001,synced
+indicator_10002,,indicator,indicator,2,,,,Population distributions (percent),generator,GenerateIndicator;10002,synced
+indicator_10003,,indicator,indicator,2,,,,Median Household Income (dollars),generator,GenerateIndicator;10003,synced
+indicator_10004,,indicator,indicator,2,,,,Estimated Poverty (percent) (Source: SAIPE),generator,GenerateIndicator;10004,synced
+indicator_10005,,indicator,indicator,2,,,,Free school lunch eligibility (percent),generator,GenerateIndicator;10005,synced
+indicator_10008,,indicator,indicator,2,,,,"Preterm births, 32-36 weeks of gestation (percent)",generator,GenerateIndicator;10008,synced
+indicator_1001,,indicator,indicator,2,,,,"HepB vaccination, birth dose",generator,GenerateIndicator;1001,waiting
+indicator_10014,,indicator,indicator,2,,,,Medicaid beneficiaries (number in thousands),generator,GenerateIndicator;10014,synced
+indicator_10015,,indicator,indicator,2,1,525,0,Medicaid managed care beneficiaries (percent),generator,GenerateIndicator;10015,synced
+indicator_10016,,indicator,indicator,2,,,,"Drug poisoning deaths (per 100,000)",generator,GenerateIndicator;10016,synced
+indicator_10017,,indicator,indicator,2,,,,Medicaid payments per beneficiary (dollars),generator,GenerateIndicator;10017,synced
+indicator_10018,,indicator,indicator,2,,,,"HIV prevalence (per 100,000)",generator,GenerateIndicator;10018,synced
+indicator_10019,,indicator,indicator,2,,,,Physician use delayed due to cost (percent) (Source: BRFSS),generator,GenerateIndicator;10019,synced
+indicator_1002,,indicator,indicator,2,,,,Rotavirus vaccination: children 19-35 months,generator,GenerateIndicator;1002,synced
+indicator_10020,,indicator,indicator,2,,,,Medicare managed care beneficiaries (percent),generator,GenerateIndicator;10020,synced
+indicator_10026,,indicator,indicator,2,,,,Salmonellosis (number),generator,GenerateIndicator;10026,synced
+indicator_10027,,indicator,indicator,2,,,,Shigellosis (number),generator,GenerateIndicator;10027,synced
+indicator_10028,,indicator,indicator,2,,,,Spotted Fever Rickettsiosis (number),generator,GenerateIndicator;10028,synced
+indicator_1003,,indicator,indicator,2,,,,DTaP vaccination: kindergarteners,generator,GenerateIndicator;1003,synced
+indicator_10033,,indicator,indicator,2,,,,Ambulatory Surgical Centers (number),generator,GenerateIndicator;10033,synced
+indicator_10034,,indicator,indicator,2,,,,Children’s Hospitals (number),generator,GenerateIndicator;10034,synced
+indicator_10035,,indicator,indicator,2,,,,Clinical Laboratory Improvement Act (CLIA) Providers (number),generator,GenerateIndicator;10035,synced
+indicator_10036,,indicator,indicator,2,,,,Community Mental Health Centers (number),generator,GenerateIndicator;10036,synced
+indicator_10037,,indicator,indicator,2,,,,Comprehensive Outpatient Rehabilitation Facilities (number),generator,GenerateIndicator;10037,synced
+indicator_10038,,indicator,indicator,2,,,,Critical Access Hospitals (number),generator,GenerateIndicator;10038,synced
+indicator_10039,,indicator,indicator,2,,,,End Stage Renal Disease Facilities (number),generator,GenerateIndicator;10039,synced
+indicator_1004,,indicator,indicator,2,,,,MMR vaccination: kindergarteners,generator,GenerateIndicator;1004,synced
+indicator_10040,,indicator,indicator,2,,,,Federally Qualified Health Centers (number),generator,GenerateIndicator;10040,synced
+indicator_10041,,indicator,indicator,2,,,,Home Health Agencies (number),generator,GenerateIndicator;10041,synced
+indicator_10042,,indicator,indicator,2,,,,Hospice Facilities (number),generator,GenerateIndicator;10042,synced
+indicator_10043,,indicator,indicator,2,,,,Long-Term Care Hospitals (number),generator,GenerateIndicator;10043,synced
+indicator_10044,,indicator,indicator,2,,,,Organ Procurement Organizations (number),generator,GenerateIndicator;10044,synced
+indicator_10045,,indicator,indicator,2,,,,Outpatient physical therapy/speech pathology facilities (number),generator,GenerateIndicator;10045,synced
+indicator_10046,,indicator,indicator,2,,,,Portable X-Ray providers (number),generator,GenerateIndicator;10046,synced
+indicator_10047,,indicator,indicator,2,,,,Psychiatric  hospitals (number),generator,GenerateIndicator;10047,synced
+indicator_10048,,indicator,indicator,2,,,,Rehabilitation Hospitals (number),generator,GenerateIndicator;10048,synced
+indicator_10049,,indicator,indicator,2,,,,Religious Nonmedical Health Care Institutions (number),generator,GenerateIndicator;10049,synced
+indicator_1005,,indicator,indicator,2,,,,Polio vaccination: kindergarteners,generator,GenerateIndicator;1005,synced
+indicator_10050,,indicator,indicator,2,,,,Rural Health Clinics (number),generator,GenerateIndicator;10050,synced
+indicator_10051,,indicator,indicator,2,,,,Short stay  hospitals (number),generator,GenerateIndicator;10051,synced
+indicator_10052,,indicator,indicator,2,,,,Skilled Nursing Home Title 18 Facilities (number),generator,GenerateIndicator;10052,synced
+indicator_10053,,indicator,indicator,2,,,,Nursing home (Title 18/19) facilities (number),generator,GenerateIndicator;10053,synced
+indicator_1006,,indicator,indicator,2,,,,Hepatitis B vaccination: kindergarteners,generator,GenerateIndicator;1006,synced
+indicator_10062,,indicator,indicator,2,,,,"Gonorrhea rate (per 100,000)",generator,GenerateIndicator;10062,synced
+indicator_10065,,indicator,indicator,2,,,,Sweetened beverages not offered: schools,generator,GenerateIndicator;10065,synced
+indicator_10066,,indicator,indicator,2,,,,Fruit/vegetable availability required: school districts,generator,GenerateIndicator;10066,synced
+indicator_1007,,indicator,indicator,2,,,,Varicella vaccination: kindergarteners,generator,GenerateIndicator;1007,synced
+indicator_10070,,indicator,indicator,2,,,,Parent employed year round and full time: children,generator,GenerateIndicator;10070,synced
+indicator_10071,,indicator,indicator,2,,,,Enrollment in college immediately after high school: high school completers,generator,GenerateIndicator;10071,synced
+indicator_10072,,indicator,indicator,2,,,,Poverty,generator,GenerateIndicator;10072,synced
+indicator_10073,,indicator,indicator,2,,,,Poverty: children < 18 years,generator,GenerateIndicator;10073,synced
+indicator_10075,,indicator,indicator,2,,,,"Pharmacist training, counseling for health promotion",generator,GenerateIndicator;10075,synced
+indicator_10076,,indicator,indicator,2,,,,"Pharmacist training, cultural diversity",generator,GenerateIndicator;10076,synced
+indicator_10077,,indicator,indicator,2,,,,"Pharmacist training, evaluation of health sciences literature",generator,GenerateIndicator;10077,synced
+indicator_10078,,indicator,indicator,2,,,,"Pharmacist training, environmental health",generator,GenerateIndicator;10078,synced
+indicator_10079,,indicator,indicator,2,,,,"Pharmacist training,  public health systems",generator,GenerateIndicator;10079,synced
+indicator_1008,,indicator,indicator,2,,,,Complete vaccination: children 19-35 months,generator,GenerateIndicator;1008,synced
+indicator_10080,,indicator,indicator,2,,,,"Pharmacist training, global health",generator,GenerateIndicator;10080,synced
+indicator_10081,,indicator,indicator,2,,,,"Dentist training, counseling for health promotion",generator,GenerateIndicator;10081,synced
+indicator_10082,,indicator,indicator,2,,,,"Dentist training, cultural diversity",generator,GenerateIndicator;10082,synced
+indicator_10083,,indicator,indicator,2,,,,"Dentist training, evaluation of health sciences literature",generator,GenerateIndicator;10083,synced
+indicator_10084,,indicator,indicator,2,,,,"Dentist training, environmental health",generator,GenerateIndicator;10084,synced
+indicator_10085,,indicator,indicator,2,,,,"Dentist training, public health systems",generator,GenerateIndicator;10085,synced
+indicator_10086,,indicator,indicator,2,,,,"Dentist training, global health",generator,GenerateIndicator;10086,synced
+indicator_10087,,indicator,indicator,2,,,,Interprofessional experiences: schools with health professions education programs,generator,GenerateIndicator;10087,synced
+indicator_1009,,indicator,indicator,2,,,,Vaccination record keeping,generator,GenerateIndicator;1009,synced
+indicator_10091,,indicator,indicator,2,,,,Population-based HP 2020 objectives with race and ethnicity data,generator,GenerateIndicator;10091,synced
+indicator_10092,,indicator,indicator,2,,,,Population-based HP 2020 objectives with sex data,generator,GenerateIndicator;10092,synced
+indicator_10093,,indicator,indicator,2,,,,Population-based HP 2020 objectives with socioeconomic status data,generator,GenerateIndicator;10093,synced
+indicator_10094,,indicator,indicator,2,,,,Known health risks: news on foodborne disease outbreaks or national disasters,generator,GenerateIndicator;10094,synced
+indicator_10095,,indicator,indicator,2,,,,Unknown risks to health: news on foodborne disease outbreaks or national disasters,generator,GenerateIndicator;10095,synced
+indicator_10096,,indicator,indicator,2,,,,Event occurrence: news stories on foodborne disease outbreaks or national disasters,generator,GenerateIndicator;10096,synced
+indicator_10097,,indicator,indicator,2,,,,Steps to reduce risk promoted: news on foodborne disease outbreaks or national disasters,generator,GenerateIndicator;10097,synced
+indicator_10098,,indicator,indicator,2,,,,Empathy about health risk: news on foodborne disease outbreaks or national disasters,generator,GenerateIndicator;10098,synced
+indicator_10099,,indicator,indicator,2,,,,Commitment to reduce risk: news on foodborne disease outbreaks or national disasters,generator,GenerateIndicator;10099,synced
+indicator_1010,,indicator,indicator,2,,,,Tdap vaccination: teens 13-15 years,generator,GenerateIndicator;1010,synced
+indicator_10100,,indicator,indicator,2,,,,Self-report good or better physical health: adults,generator,GenerateIndicator;10100,synced
+indicator_10101,,indicator,indicator,2,,,,Self-report good or better mental health: adults,generator,GenerateIndicator;10101,synced
+indicator_10103,,indicator,indicator,2,,,,Housing 30% of income: households,generator,GenerateIndicator;10103,synced
+indicator_10104,,indicator,indicator,2,,,,Housing 30% of income: poor households,generator,GenerateIndicator;10104,synced
+indicator_10105,,indicator,indicator,2,,,,Housing > 50% of income: households,generator,GenerateIndicator;10105,synced
+indicator_10106,,indicator,indicator,2,,,,Housing > 50% of income: renter households,generator,GenerateIndicator;10106,synced
+indicator_10107,,indicator,indicator,2,,,,Flu vaccination: children 6 months-17 years,generator,GenerateIndicator;10107,synced
+indicator_10108,,indicator,indicator,2,,,,Flu vaccination: adults,generator,GenerateIndicator;10108,synced
+indicator_10109,,indicator,indicator,2,,,,Flu vaccination: health care personnel,generator,GenerateIndicator;10109,synced
+indicator_1011,,indicator,indicator,2,,,,Varicella vaccination: teens 13-15 years,generator,GenerateIndicator;1011,synced
+indicator_10111,,indicator,indicator,2,,,,Laboratories monitor health status: States,generator,GenerateIndicator;10111,synced
+indicator_10112,,indicator,indicator,2,,,,Laboratories support investigating community health problems: States,generator,GenerateIndicator;10112,synced
+indicator_10113,,indicator,indicator,2,,,,Laboratories educate people about health issues: States,generator,GenerateIndicator;10113,synced
+indicator_10114,,indicator,indicator,2,,,,Laboratories mobilize community partnerships: States,generator,GenerateIndicator;10114,synced
+indicator_10115,,indicator,indicator,2,,,,Laboratories develop policies and plans for health efforts: States,generator,GenerateIndicator;10115,synced
+indicator_10116,,indicator,indicator,2,,,,Laboratories enforcment of laws and regulations to protect health: States,generator,GenerateIndicator;10116,synced
+indicator_10117,,indicator,indicator,2,,,,Laboratories linking to personal health services: States,generator,GenerateIndicator;10117,synced
+indicator_10118,,indicator,indicator,2,,,,Laboratories assuring a competent health care workforce: States,generator,GenerateIndicator;10118,synced
+indicator_10119,,indicator,indicator,2,,,,Laboratories evaluating health services: States,generator,GenerateIndicator;10119,synced
+indicator_1012,,indicator,indicator,2,,,,Meningococcal vaccination: teens 13-15 years,generator,GenerateIndicator;1012,synced
+indicator_10120,,indicator,indicator,2,,,,Laboratories support innovative research: States,generator,GenerateIndicator;10120,synced
+indicator_1013,,indicator,indicator,2,,,,HPV vaccination: girls 13-15 years,generator,GenerateIndicator;1013,synced
+indicator_10134,,indicator,indicator,2,,,,"Data systems in HP2020 that collect data on lesbian, gay, and bisexual populations",generator,GenerateIndicator;10134,synced
+indicator_10135,,indicator,indicator,2,,,,Data systems in HP2020 that collect data on transgender populations,generator,GenerateIndicator;10135,synced
+indicator_10136,,indicator,indicator,2,,,,HPV vaccination: males 13-15 years,generator,GenerateIndicator;10136,synced
+indicator_10141,,indicator,indicator,2,,,,Preemptive stronger local tobacco control laws on licensure: States,generator,GenerateIndicator;10141,synced
+indicator_10142,,indicator,indicator,2,,,,Proper handwashing by restaurant employees in fast-food restaurants,generator,GenerateIndicator;10142,synced
+indicator_10143,,indicator,indicator,2,,,,No contact with ready-to-eat foods by employees with bare hands in fast-food restaurants,generator,GenerateIndicator;10143,synced
+indicator_10144,,indicator,indicator,2,,,,Properly cleaned and sanitized food contact surfaces in fast-food restaurants,generator,GenerateIndicator;10144,synced
+indicator_10145,,indicator,indicator,2,,,,Properly refrigerated foods in fast-food restaurants,generator,GenerateIndicator;10145,synced
+indicator_10146,,indicator,indicator,2,,,,Proper hot holding in fast-food restaurants,generator,GenerateIndicator;10146,synced
+indicator_10147,,indicator,indicator,2,,,,Proper handwashing in full-service restaurants,generator,GenerateIndicator;10147,synced
+indicator_10148,,indicator,indicator,2,,,,No bare hand contact of RTE foods in full- service restaurants,generator,GenerateIndicator;10148,synced
+indicator_10149,,indicator,indicator,2,,,,Food contact surfaces cleaned and sanitized in full-service restaurants,generator,GenerateIndicator;10149,synced
+indicator_10150,,indicator,indicator,2,,,,Proper refrigeration in full-service restaurants,generator,GenerateIndicator;10150,synced
+indicator_10151,,indicator,indicator,2,,,,Proper hot holding in full-service restaurants,generator,GenerateIndicator;10151,synced
+indicator_10157,,indicator,indicator,2,,,,High-tech tax stamps on cigarette packs,generator,GenerateIndicator;10157,synced
+indicator_1016,,indicator,indicator,2,,,,Hepatitis B vaccination: health care workers,generator,GenerateIndicator;1016,synced
+indicator_10167,,indicator,indicator,2,,,,HIV testing: persons 15-44 years,generator,GenerateIndicator;10167,synced
+indicator_10168,,indicator,indicator,2,,,,Antibiotics for ear infections: children <5 years,generator,GenerateIndicator;10168,synced
+indicator_10169,,indicator,indicator,2,,,,Antibiotic use: persons with the common colds,generator,GenerateIndicator;10169,synced
+indicator_10170,,indicator,indicator,2,,,,Aerobic physical activity meeting guidelines: teens,generator,GenerateIndicator;10170,synced
+indicator_10171,,indicator,indicator,2,,,,Epidemiology services: Local public health agencies,generator,GenerateIndicator;10171,synced
+indicator_1018,,indicator,indicator,2,,,,Pneumococcal vaccination: older adults,generator,GenerateIndicator;1018,synced
+indicator_1019,,indicator,indicator,2,,,,Pneumococcal vaccination: high-risk adults,generator,GenerateIndicator;1019,synced
+indicator_1020,,indicator,indicator,2,,,,Pneumococcal vaccination: nursing home residents,generator,GenerateIndicator;1020,synced
+indicator_1022,,indicator,indicator,2,,,,Hepatitis C infection status awareness,generator,GenerateIndicator;1022,synced
+indicator_1024,,indicator,indicator,2,,,,"Rabies surveillance, electronic: states",generator,GenerateIndicator;1024,synced
+indicator_1025,,indicator,indicator,2,,,,Immunization information system participation: States,generator,GenerateIndicator;1025,synced
+indicator_1026,,indicator,indicator,2,,,,Kindergarten vaccination record keeping: States,generator,GenerateIndicator;1026,synced
+indicator_1027,,indicator,indicator,2,,,,Shingles vaccination: older adults,generator,GenerateIndicator;1027,synced
+indicator_1028,,indicator,indicator,2,,,,Influenza-virus resistance to antivirals monitoring: States,generator,GenerateIndicator;1028,synced
+indicator_1039,,indicator,indicator,2,,,,"Vaccination, zero doses: children 18-35 months",generator,GenerateIndicator;1039,synced
+indicator_1040,,indicator,indicator,2,,,,"Poisonings, nonfatal",generator,GenerateIndicator;1040,synced
+indicator_1041,,indicator,indicator,2,,,,Homicide deaths,generator,GenerateIndicator;1041,synced
+indicator_1042,,indicator,indicator,2,,,,Firearm-related deaths,generator,GenerateIndicator;1042,synced
+indicator_1043,,indicator,indicator,2,,,,Nonfatal firearm-related injuries,generator,GenerateIndicator;1043,synced
+indicator_1045,,indicator,indicator,2,,,,Pedestrian deaths,generator,GenerateIndicator;1045,synced
+indicator_1046,,indicator,indicator,2,,,,"Pedestrian injuries, nonfatal",generator,GenerateIndicator;1046,synced
+indicator_1047,,indicator,indicator,2,,,,Safety belt use,generator,GenerateIndicator;1047,synced
+indicator_1048,,indicator,indicator,2,,,,Motorcycle helmet use,generator,GenerateIndicator;1048,synced
+indicator_1049,,indicator,indicator,2,,,,Bicycle helmet laws: states,generator,GenerateIndicator;1049,synced
+indicator_105,,indicator,indicator,2,,,,Toxic chemicals (pounds),generator,GenerateIndicator;105,synced
+indicator_1050,,indicator,indicator,2,,,,Residential fire deaths,generator,GenerateIndicator;1050,synced
+indicator_1051,,indicator,indicator,2,,,,Physical assaults: persons 12+ years,generator,GenerateIndicator;1051,synced
+indicator_1052,,indicator,indicator,2,,,,Physical fighting: teens,generator,GenerateIndicator;1052,synced
+indicator_1053,,indicator,indicator,2,,,,Weapon carrying on school property: teens,generator,GenerateIndicator;1053,synced
+indicator_1054,,indicator,indicator,2,,,,Vehicle restraint proper use: infants 0-12 months,generator,GenerateIndicator;1054,synced
+indicator_1055,,indicator,indicator,2,,,,Vehicle restraint proper use: children 1-3 years,generator,GenerateIndicator;1055,synced
+indicator_1056,,indicator,indicator,2,,,,Vehicle restraint proper use: children 4-7 years,generator,GenerateIndicator;1056,synced
+indicator_1057,,indicator,indicator,2,,,,Vehicle restraint proper use: children 8-12 years,generator,GenerateIndicator;1057,synced
+indicator_1059,,indicator,indicator,2,,,,Traumatic brain injury deaths,generator,GenerateIndicator;1059,synced
+indicator_1060,,indicator,indicator,2,,,,Traumatic brain injury hospitalizations,generator,GenerateIndicator;1060,synced
+indicator_1061,,indicator,indicator,2,,,,Traumatic brain injury ED visits,generator,GenerateIndicator;1061,synced
+indicator_1062,,indicator,indicator,2,,,,Spinal cord injury deaths,generator,GenerateIndicator;1062,synced
+indicator_1063,,indicator,indicator,2,,,,Spinal cord injury hospitalizations,generator,GenerateIndicator;1063,synced
+indicator_1064,,indicator,indicator,2,,,,Poisoning deaths,generator,GenerateIndicator;1064,synced
+indicator_1065,,indicator,indicator,2,,,,Poisoning deaths: adults 35-54 years,generator,GenerateIndicator;1065,synced
+indicator_1066,,indicator,indicator,2,,,,"Poisoning deaths, unintentional/undetermined",generator,GenerateIndicator;1066,synced
+indicator_1067,,indicator,indicator,2,,,,"Poisoning deaths, unintentional/undetermined: adults 35-54 years",generator,GenerateIndicator;1067,synced
+indicator_1068,,indicator,indicator,2,,,,"Suffocation deaths, unintentional",generator,GenerateIndicator;1068,synced
+indicator_1069,,indicator,indicator,2,,,,"Suffocation deaths, unintentional: infants",generator,GenerateIndicator;1069,synced
+indicator_1070,,indicator,indicator,2,,,,"Suffocation deaths, unintentional: older adults",generator,GenerateIndicator;1070,synced
+indicator_1071,,indicator,indicator,2,,,,Injury deaths,generator,GenerateIndicator;1071,synced
+indicator_1072,,indicator,indicator,2,,,,Injury hospitalizations,generator,GenerateIndicator;1072,synced
+indicator_1073,,indicator,indicator,2,,,,Injury ED visits,generator,GenerateIndicator;1073,synced
+indicator_1074,,indicator,indicator,2,,,,"Injury deaths, unintentional",generator,GenerateIndicator;1074,synced
+indicator_1075,,indicator,indicator,2,,,,"Injuries, nonfatal unintentional",generator,GenerateIndicator;1075,synced
+indicator_1076,,indicator,indicator,2,,,,Motor vehicle traffic deaths,generator,GenerateIndicator;1076,synced
+indicator_1077,,indicator,indicator,2,,,,Motor vehicle crash deaths,generator,GenerateIndicator;1077,synced
+indicator_1078,,indicator,indicator,2,,,,"Motor vehicle injuries, nonfatal",generator,GenerateIndicator;1078,synced
+indicator_1079,,indicator,indicator,2,,,,"Fall deaths, unintentional",generator,GenerateIndicator;1079,synced
+indicator_1080,,indicator,indicator,2,,,,Fall deaths: older adults,generator,GenerateIndicator;1080,synced
+indicator_1081,,indicator,indicator,2,,,,Drownings,generator,GenerateIndicator;1081,synced
+indicator_1082,,indicator,indicator,2,,,,Protective gear use in physical education: schools,generator,GenerateIndicator;1082,synced
+indicator_1083,,indicator,indicator,2,,,,Protective gear use in intramural activities: schools,generator,GenerateIndicator;1083,synced
+indicator_1084,,indicator,indicator,2,,,,"Child maltreatment, nonfatal",generator,GenerateIndicator;1084,synced
+indicator_1085,,indicator,indicator,2,,,,Child maltreatment deaths,generator,GenerateIndicator;1085,synced
+indicator_1093,,indicator,indicator,2,,,,E-code collection in emergency department: states,generator,GenerateIndicator;1093,synced
+indicator_1094,,indicator,indicator,2,,,,E-code collection at hospital discharge: states,generator,GenerateIndicator;1094,synced
+indicator_1096,,indicator,indicator,2,,,,"Trauma care access, by population",generator,GenerateIndicator;1096,synced
+indicator_1097,,indicator,indicator,2,,,,"Trauma care access, by land mass",generator,GenerateIndicator;1097,synced
+indicator_1098,,indicator,indicator,2,,,,"Injuries, sports and recreation",generator,GenerateIndicator;1098,synced
+indicator_1099,,indicator,indicator,2,,,,"Physical assault injuries, nonfatal",generator,GenerateIndicator;1099,synced
+indicator_1100,,indicator,indicator,2,,,,"Self-harm injuries, nonfatal",generator,GenerateIndicator;1100,synced
+indicator_1101,,indicator,indicator,2,,,,Violent death surveillance: states,generator,GenerateIndicator;1101,synced
+indicator_1102,,indicator,indicator,2,,,,Bullying: teens,generator,GenerateIndicator;1102,synced
+indicator_1103,,indicator,indicator,2,,,,Pedal-cyclist deaths,generator,GenerateIndicator;1103,synced
+indicator_1104,,indicator,indicator,2,,,,Violence exposure: children,generator,GenerateIndicator;1104,synced
+indicator_1105,,indicator,indicator,2,,,,Suicide deaths,generator,GenerateIndicator;1105,synced
+indicator_1106,,indicator,indicator,2,,,,Suicide attempts requiring medical attention: teens,generator,GenerateIndicator;1106,synced
+indicator_1107,,indicator,indicator,2,,,,Mental health services receipt: homeless adults,generator,GenerateIndicator;1107,synced
+indicator_1108,,indicator,indicator,2,,,,Eating disorders: teens,generator,GenerateIndicator;1108,synced
+indicator_1109,,indicator,indicator,2,,,,Mental health treatment provision: primary care facilities,generator,GenerateIndicator;1109,synced
+indicator_1110,,indicator,indicator,2,,,,Treatment: children with mental health problems,generator,GenerateIndicator;1110,synced
+indicator_1111,,indicator,indicator,2,,,,Mental health screening: juvenile justice facilities,generator,GenerateIndicator;1111,synced
+indicator_1116,,indicator,indicator,2,,,,Employment: persons with serious mental illness,generator,GenerateIndicator;1116,synced
+indicator_1117,,indicator,indicator,2,,,,Treatment: adults with serious mental illness,generator,GenerateIndicator;1117,synced
+indicator_1118,,indicator,indicator,2,,,,Treatment: adults with major depressive episode,generator,GenerateIndicator;1118,synced
+indicator_1119,,indicator,indicator,2,,,,Treatment: adults substance abuse and mental disorders,generator,GenerateIndicator;1119,synced
+indicator_1120,,indicator,indicator,2,,,,Depression screening by primary care providers: adults,generator,GenerateIndicator;1120,synced
+indicator_1121,,indicator,indicator,2,,,,Depression screening by primary care providers: teens,generator,GenerateIndicator;1121,synced
+indicator_1122,,indicator,indicator,2,,,,Major depressive episode: adults,generator,GenerateIndicator;1122,synced
+indicator_1123,,indicator,indicator,2,,,,Major depressive episode: teens,generator,GenerateIndicator;1123,synced
+indicator_1124,,indicator,indicator,2,,,,Deaths: children 1-4 years,generator,GenerateIndicator;1124,synced
+indicator_1125,,indicator,indicator,2,,,,Deaths: children 5-9 years,generator,GenerateIndicator;1125,synced
+indicator_1126,,indicator,indicator,2,,,,Deaths: children 10-14 years,generator,GenerateIndicator;1126,synced
+indicator_1127,,indicator,indicator,2,,,,Deaths: teens 15-19 years,generator,GenerateIndicator;1127,synced
+indicator_1128,,indicator,indicator,2,,,,Deaths: adults 20-24 years,generator,GenerateIndicator;1128,synced
+indicator_1129,,indicator,indicator,2,,,,Maternal deaths,generator,GenerateIndicator;1129,synced
+indicator_1130,,indicator,indicator,2,,,,Maternal illness and complications due to pregnancy,generator,GenerateIndicator;1130,synced
+indicator_1131,,indicator,indicator,2,,,,"Prenatal care, first trimester",generator,GenerateIndicator;1131,synced
+indicator_1132,,indicator,indicator,2,,,,"Prenatal care, early and adequate",generator,GenerateIndicator;1132,synced
+indicator_1133,,indicator,indicator,2,,,,"Cesarean delivery, first",generator,GenerateIndicator;1133,synced
+indicator_1134,,indicator,indicator,2,,,,"Cesarean delivery, repeat",generator,GenerateIndicator;1134,synced
+indicator_1135,,indicator,indicator,2,,,,Low birth weight deliveries,generator,GenerateIndicator;1135,synced
+indicator_1136,,indicator,indicator,2,,,,Very low birth weight deliveries,generator,GenerateIndicator;1136,synced
+indicator_1137,,indicator,indicator,2,,,,"Preterm births, total",generator,GenerateIndicator;1137,synced
+indicator_1138,,indicator,indicator,2,,,,"Preterm births, 34-36 weeks of gestation",generator,GenerateIndicator;1138,synced
+indicator_1139,,indicator,indicator,2,,,,"Preterm births, 32-33 weeks of gestation",generator,GenerateIndicator;1139,synced
+indicator_1140,,indicator,indicator,2,,,,"Preterm births, <32 weeks of gestation",generator,GenerateIndicator;1140,synced
+indicator_1141,,indicator,indicator,2,,,,Infants put to sleep on their backs,generator,GenerateIndicator;1141,synced
+indicator_1142,,indicator,indicator,2,,,,"Alcohol abstinence, prenatal",generator,GenerateIndicator;1142,synced
+indicator_1143,,indicator,indicator,2,,,,"Binge drinking abstinence, prenatal",generator,GenerateIndicator;1143,synced
+indicator_1144,,indicator,indicator,2,,,,"Cigarette abstinence, prenatal",generator,GenerateIndicator;1144,synced
+indicator_1145,,indicator,indicator,2,,,,"Illicit drug abstinence, prenatal",generator,GenerateIndicator;1145,synced
+indicator_1146,,indicator,indicator,2,,,,Fetal alcohol syndrome,generator,GenerateIndicator;1146,synced
+indicator_1147,,indicator,indicator,2,,,,"Breastfeeding, ever",generator,GenerateIndicator;1147,synced
+indicator_1148,,indicator,indicator,2,,,,"Breastfeeding, at 6 months",generator,GenerateIndicator;1148,synced
+indicator_1149,,indicator,indicator,2,,,,"Breastfeeding, at 1 year",generator,GenerateIndicator;1149,synced
+indicator_115,,indicator,indicator,2,,,,Pap test: women 18+ (percent),generator,GenerateIndicator;115,synced
+indicator_1150,,indicator,indicator,2,,,,"Breastfeeding, exclusively through 3 months",generator,GenerateIndicator;1150,synced
+indicator_1151,,indicator,indicator,2,,,,"Breastfeeding, exclusively through 6 months",generator,GenerateIndicator;1151,synced
+indicator_1152,,indicator,indicator,2,,,,Medical home: children,generator,GenerateIndicator;1152,synced
+indicator_1153,,indicator,indicator,2,,,,Medical home: children with special needs,generator,GenerateIndicator;1153,synced
+indicator_1154,,indicator,indicator,2,,,,Comprehensive care systems: children with special needs,generator,GenerateIndicator;1154,synced
+indicator_1155,,indicator,indicator,2,,,,Comprehensive care systems: teens with special needs,generator,GenerateIndicator;1155,synced
+indicator_1156,,indicator,indicator,2,,,,Fetal deaths,generator,GenerateIndicator;1156,synced
+indicator_1157,,indicator,indicator,2,,,,Perinatal deaths,generator,GenerateIndicator;1157,synced
+indicator_1158,,indicator,indicator,2,,,,"Infant deaths, all",generator,GenerateIndicator;1158,synced
+indicator_1159,,indicator,indicator,2,,,,Infant deaths within first 28 days of life,generator,GenerateIndicator;1159,synced
+indicator_116,,indicator,indicator,2,,,,Mammogram: women 50+ (percent) (Source: BRFSS),generator,GenerateIndicator;116,synced
+indicator_1160,,indicator,indicator,2,,,,Infant deaths between 28 days-1 year,generator,GenerateIndicator;1160,synced
+indicator_1161,,indicator,indicator,2,,,,Infant deaths due to birth defects,generator,GenerateIndicator;1161,synced
+indicator_1162,,indicator,indicator,2,,,,Infant deaths: congenital heart defects,generator,GenerateIndicator;1162,synced
+indicator_1163,,indicator,indicator,2,,,,Infant deaths: sudden infant death syndrome,generator,GenerateIndicator;1163,synced
+indicator_1164,,indicator,indicator,2,,,,Infant deaths: sudden unexpected/unexplained causes,generator,GenerateIndicator;1164,synced
+indicator_1167,,indicator,indicator,2,,,,Disorders diagnosed through newborn blood spot screening,generator,GenerateIndicator;1167,synced
+indicator_1168,,indicator,indicator,2,,,,Low birth weight: children with cerebral palsy,generator,GenerateIndicator;1168,synced
+indicator_1169,,indicator,indicator,2,,,,Spina bifida,generator,GenerateIndicator;1169,synced
+indicator_117,,indicator,indicator,2,,,,Colonoscopy/sigmoidoscopy: adults 50+ (percent),generator,GenerateIndicator;117,synced
+indicator_1170,,indicator,indicator,2,,,,Anencephaly,generator,GenerateIndicator;1170,synced
+indicator_1171,,indicator,indicator,2,,,,Folic acid intake: reproductive-aged women,generator,GenerateIndicator;1171,synced
+indicator_1172,,indicator,indicator,2,,,,Blood folate concentration: reproductive-aged women,generator,GenerateIndicator;1172,synced
+indicator_1173,,indicator,indicator,2,,,,Newborn screening verification: states,generator,GenerateIndicator;1173,synced
+indicator_1174,,indicator,indicator,2,,,,Follow-up to newborn screening,generator,GenerateIndicator;1174,synced
+indicator_1179,,indicator,indicator,2,,,,"Multivitamins/folic acid use, preconception",generator,GenerateIndicator;1179,synced
+indicator_118,,indicator,indicator,2,,,,Pneumococcal vaccination: adults 65+ (percent) (Source: BRFSS),generator,GenerateIndicator;118,synced
+indicator_1180,,indicator,indicator,2,,,,"Smoking abstinence, preconception",generator,GenerateIndicator;1180,synced
+indicator_1181,,indicator,indicator,2,,,,"Alcohol abstinence, preconception",generator,GenerateIndicator;1181,synced
+indicator_1182,,indicator,indicator,2,,,,Healthy weight prior to pregnancy,generator,GenerateIndicator;1182,synced
+indicator_1184,,indicator,indicator,2,,,,Worksite lactation support programs,generator,GenerateIndicator;1184,synced
+indicator_1185,,indicator,indicator,2,,,,Formula supplementation: breastfed newborns,generator,GenerateIndicator;1185,synced
+indicator_1186,,indicator,indicator,2,,,,Lactation care in birthing facilities,generator,GenerateIndicator;1186,synced
+indicator_1187,,indicator,indicator,2,,,,Deaths: infants with Down syndrome,generator,GenerateIndicator;1187,synced
+indicator_1188,,indicator,indicator,2,,,,Autism spectrum disorder screening,generator,GenerateIndicator;1188,synced
+indicator_1189,,indicator,indicator,2,,,,Timely evaluation: children with Autism spectrum disorder,generator,GenerateIndicator;1189,synced
+indicator_119,,indicator,indicator,2,,,,Flu vaccination: adults 65+ (percent) (Source: BRFSS),generator,GenerateIndicator;119,synced
+indicator_1190,,indicator,indicator,2,,,,Special services: children with Autism spectrum disorders,generator,GenerateIndicator;1190,synced
+indicator_1193,,indicator,indicator,2,,,,Impaired fecundity: women 18-44 years,generator,GenerateIndicator;1193,synced
+indicator_1195,,indicator,indicator,2,,,,Very low birth weight infants born at level III hospitals,generator,GenerateIndicator;1195,synced
+indicator_1196,,indicator,indicator,2,,,,Hospitals reporting adverse drug events,generator,GenerateIndicator;1196,synced
+indicator_120,,indicator,indicator,2,,,,No exercise: adults (percent) (Source: BRFSS),generator,GenerateIndicator;120,synced
+indicator_1202,,indicator,indicator,2,,,,Safe and effective medical products: predictive biomarkers,generator,GenerateIndicator;1202,synced
+indicator_1203,,indicator,indicator,2,,,,Overdose ED visits for oral anticoagulants,generator,GenerateIndicator;1203,synced
+indicator_1204,,indicator,indicator,2,,,,Overdose ED visits for injectable antidiabetic agents,generator,GenerateIndicator;1204,synced
+indicator_1205,,indicator,indicator,2,,,,Overdose ED visits for narrow-therapeutic-index medications,generator,GenerateIndicator;1205,synced
+indicator_1206,,indicator,indicator,2,,,,Overdose ED visits: children <5 years,generator,GenerateIndicator;1206,synced
+indicator_1207,,indicator,indicator,2,,,,Healthy weight: adults,generator,GenerateIndicator;1207,synced
+indicator_1208,,indicator,indicator,2,,,,Obesity: adults,generator,GenerateIndicator;1208,synced
+indicator_1209,,indicator,indicator,2,,,,Iron deficiency: children 1-2 years,generator,GenerateIndicator;1209,synced
+indicator_121,,indicator,indicator,2,,,,Few fruits/vegetables: adults (percent),generator,GenerateIndicator;121,synced
+indicator_1210,,indicator,indicator,2,,,,Iron deficiency: children 3-4 years,generator,GenerateIndicator;1210,synced
+indicator_1211,,indicator,indicator,2,,,,Iron deficiency: females of childbearing age,generator,GenerateIndicator;1211,synced
+indicator_1212,,indicator,indicator,2,,,,Iron deficiency: pregnant females,generator,GenerateIndicator;1212,synced
+indicator_1213,,indicator,indicator,2,,,,Obesity: children 2-5 years,generator,GenerateIndicator;1213,synced
+indicator_1214,,indicator,indicator,2,1,36,0,Obesity: children 6-11 years,generator,GenerateIndicator;1214,synced
+indicator_1215,,indicator,indicator,2,,,,Obesity: teens 12-19 years,generator,GenerateIndicator;1215,synced
+indicator_1216,,indicator,indicator,2,,,,Obesity: children 2-19 years,generator,GenerateIndicator;1216,synced
+indicator_1217,,indicator,indicator,2,,,,Fruit consumption,generator,GenerateIndicator;1217,synced
+indicator_1218,,indicator,indicator,2,,,,Vegetable consumption,generator,GenerateIndicator;1218,synced
+indicator_1219,,indicator,indicator,2,,,,Vegetable consumption,generator,GenerateIndicator;1219,synced
+indicator_1220,,indicator,indicator,2,,,,Whole grain consumption,generator,GenerateIndicator;1220,synced
+indicator_1221,,indicator,indicator,2,,,,Saturated fat consumption,generator,GenerateIndicator;1221,synced
+indicator_1222,,indicator,indicator,2,,,,Sodium consumption,generator,GenerateIndicator;1222,synced
+indicator_1223,,indicator,indicator,2,,,,Calcium consumption,generator,GenerateIndicator;1223,synced
+indicator_1225,,indicator,indicator,2,,,,"Nutrition counseling: patients with CVD, diabetes, or hyperlipidemia",generator,GenerateIndicator;1225,synced
+indicator_1226,,indicator,indicator,2,,,,"Weight loss, nutrition or physical activity counseling: obese patients",generator,GenerateIndicator;1226,synced
+indicator_1227,,indicator,indicator,2,,,,Nutrition counseling at physician visits,generator,GenerateIndicator;1227,synced
+indicator_1228,,indicator,indicator,2,,,,Food insecurity: households with children,generator,GenerateIndicator;1228,synced
+indicator_123,,indicator,indicator,2,,,,High blood pressure: adults 18+ (percent) (Source: BRFSS),generator,GenerateIndicator;123,synced
+indicator_1234,,indicator,indicator,2,,,,Body mass index assessment of adults by physicians,generator,GenerateIndicator;1234,synced
+indicator_1235,,indicator,indicator,2,,,,Body mass index assessment of children by physicians,generator,GenerateIndicator;1235,synced
+indicator_1236,,indicator,indicator,2,,,,Solid fat consumption,generator,GenerateIndicator;1236,synced
+indicator_1237,,indicator,indicator,2,,,,Added sugar consumption,generator,GenerateIndicator;1237,synced
+indicator_1238,,indicator,indicator,2,,,,Solid fat and added sugar consumption,generator,GenerateIndicator;1238,synced
+indicator_1239,,indicator,indicator,2,,,,Incentive policies for food retail: states,generator,GenerateIndicator;1239,synced
+indicator_1240,,indicator,indicator,2,,,,Nutrition standards for child care: states,generator,GenerateIndicator;1240,synced
+indicator_1243,,indicator,indicator,2,,,,Food insecurity: households,generator,GenerateIndicator;1243,synced
+indicator_1245,,indicator,indicator,2,,,,Functional limitations: older adults,generator,GenerateIndicator;1245,synced
+indicator_1249,,indicator,indicator,2,,,,Pressure ulcer-related hospitalizations: older adults,generator,GenerateIndicator;1249,synced
+indicator_125,,indicator,indicator,2,,,,Diabetes: adults (percent),generator,GenerateIndicator;125,synced
+indicator_1250,,indicator,indicator,2,,,,Geriatric physicians,generator,GenerateIndicator;1250,synced
+indicator_1251,,indicator,indicator,2,,,,Geriatric psychiatrists,generator,GenerateIndicator;1251,synced
+indicator_1252,,indicator,indicator,2,,,,Geriatric nurses,generator,GenerateIndicator;1252,synced
+indicator_1253,,indicator,indicator,2,,,,Geriatric dentists,generator,GenerateIndicator;1253,synced
+indicator_1254,,indicator,indicator,2,,,,Geriatric physical therapists,generator,GenerateIndicator;1254,synced
+indicator_1255,,indicator,indicator,2,,,,Geriatric dieticians,generator,GenerateIndicator;1255,synced
+indicator_1256,,indicator,indicator,2,,,,"Elder abuse, neglect, and exploitation information: States",generator,GenerateIndicator;1256,synced
+indicator_1258,,indicator,indicator,2,,,,Leisure-time physical activity: older adults,generator,GenerateIndicator;1258,synced
+indicator_1259,,indicator,indicator,2,,,,Fall ED visits: older adults,generator,GenerateIndicator;1259,synced
+indicator_1260,,indicator,indicator,2,,,,Welcome to Medicare benefit use,generator,GenerateIndicator;1260,synced
+indicator_1261,,indicator,indicator,2,,,,Clinical preventive measure use: males 65+ years,generator,GenerateIndicator;1261,synced
+indicator_1262,,indicator,indicator,2,,,,Clinical preventive measure use: females 65+ years,generator,GenerateIndicator;1262,synced
+indicator_1263,,indicator,indicator,2,,,,Diabetes management benefit use: diabetic older adults,generator,GenerateIndicator;1263,synced
+indicator_1264,,indicator,indicator,2,,,,Oral and pharyngeal cancer early detection,generator,GenerateIndicator;1264,synced
+indicator_1265,,indicator,indicator,2,,,,Fluoridation of community water,generator,GenerateIndicator;1265,synced
+indicator_1266,,indicator,indicator,2,,,,Oral health care system use,generator,GenerateIndicator;1266,synced
+indicator_1267,,indicator,indicator,2,,,,Dental service use: low-income children,generator,GenerateIndicator;1267,synced
+indicator_1268,,indicator,indicator,2,,,,Oral and craniofacial health surveillance: states,generator,GenerateIndicator;1268,synced
+indicator_1269,,indicator,indicator,2,,,,Dental caries experience: children 3-5 years,generator,GenerateIndicator;1269,synced
+indicator_1270,,indicator,indicator,2,,,,Dental caries experience: children 6-9 years,generator,GenerateIndicator;1270,synced
+indicator_1271,,indicator,indicator,2,,,,Dental caries experience: teens 13-15 years,generator,GenerateIndicator;1271,synced
+indicator_1272,,indicator,indicator,2,,,,"Dental decay, untreated: children 3-5 years",generator,GenerateIndicator;1272,synced
+indicator_1273,,indicator,indicator,2,,,,"Dental decay, untreated: children 6-9 years",generator,GenerateIndicator;1273,synced
+indicator_1274,,indicator,indicator,2,,,,"Dental decay, untreated: teens 13-15 years",generator,GenerateIndicator;1274,synced
+indicator_1275,,indicator,indicator,2,,,,"Dental decay, untreated: adults 35-44 years",generator,GenerateIndicator;1275,synced
+indicator_1276,,indicator,indicator,2,,,,"Dental decay, untreated: adults 65-74 years",generator,GenerateIndicator;1276,synced
+indicator_1277,,indicator,indicator,2,,,,"Dental decay, untreated: adults 75+ years",generator,GenerateIndicator;1277,synced
+indicator_1278,,indicator,indicator,2,,,,"Tooth loss, any permanent: adults 45-64 years",generator,GenerateIndicator;1278,synced
+indicator_1279,,indicator,indicator,2,,,,"Tooth loss, all permanent: adults 65-74 years",generator,GenerateIndicator;1279,synced
+indicator_1280,,indicator,indicator,2,,,,Periodontal disease: adults 45-74 years,generator,GenerateIndicator;1280,synced
+indicator_1281,,indicator,indicator,2,,,,Dental sealants: children 3-5 years,generator,GenerateIndicator;1281,synced
+indicator_1282,,indicator,indicator,2,,,,Dental sealants: children 6-9 years,generator,GenerateIndicator;1282,synced
+indicator_1283,,indicator,indicator,2,,,,Dental sealants: teens 13-15 years,generator,GenerateIndicator;1283,synced
+indicator_1284,,indicator,indicator,2,,,,Dental sealant programs: school-based health centers,generator,GenerateIndicator;1284,synced
+indicator_1285,,indicator,indicator,2,,,,Dental care programs: school-based health centers,generator,GenerateIndicator;1285,synced
+indicator_1286,,indicator,indicator,2,,,,Fluoride programs: school-based health centers,generator,GenerateIndicator;1286,synced
+indicator_1287,,indicator,indicator,2,,,,Oral health program: Federally qualified health centers,generator,GenerateIndicator;1287,synced
+indicator_1288,,indicator,indicator,2,,,,Oral health program: Local health departments,generator,GenerateIndicator;1288,synced
+indicator_1291,,indicator,indicator,2,,,,Dental professional directing dental program: state & local agencies,generator,GenerateIndicator;1291,synced
+indicator_1292,,indicator,indicator,2,,,,Dental professional directing dental program: IHS programs,generator,GenerateIndicator;1292,synced
+indicator_1296,,indicator,indicator,2,,,,Oral health services receipt at health centers,generator,GenerateIndicator;1296,synced
+indicator_1297,,indicator,indicator,2,,,,Overexertion or repetitive motion injuries/illness from work,generator,GenerateIndicator;1297,synced
+indicator_1298,,indicator,indicator,2,,,,Pneumoconiosis deaths,generator,GenerateIndicator;1298,synced
+indicator_1299,,indicator,indicator,2,,,,"Homicides, work-related",generator,GenerateIndicator;1299,synced
+indicator_13,,indicator,indicator,2,,,,Cigarette smoking: adults (percent) (Source: BRFSS),generator,GenerateIndicator;13,synced
+indicator_130,,indicator,indicator,2,,,,"Dentist rate (per 100,000)",generator,GenerateIndicator;130,synced
+indicator_1300,,indicator,indicator,2,,,,"Lead, elevated level, work-related",generator,GenerateIndicator;1300,synced
+indicator_1301,,indicator,indicator,2,,,,"Skin diseases or disorders, work-related",generator,GenerateIndicator;1301,synced
+indicator_1302,,indicator,indicator,2,,,,"Hearing loss, noise-induced, work-related",generator,GenerateIndicator;1302,synced
+indicator_1303,,indicator,indicator,2,,,,"Injury deaths, work-related, all industries",generator,GenerateIndicator;1303,synced
+indicator_1304,,indicator,indicator,2,,,,"Injury deaths, work-related, mining",generator,GenerateIndicator;1304,synced
+indicator_1305,,indicator,indicator,2,,,,"Injury deaths, work-related, construction",generator,GenerateIndicator;1305,synced
+indicator_1306,,indicator,indicator,2,,,,"Injury deaths, work-related, transportation/warehousing: persons 16+ years",generator,GenerateIndicator;1306,synced
+indicator_1307,,indicator,indicator,2,,,,"Injury deaths, work-related, farming/forestry/fishing/hunting",generator,GenerateIndicator;1307,synced
+indicator_1308,,indicator,indicator,2,,,,"Injuries, non-fatal, work-related",generator,GenerateIndicator;1308,synced
+indicator_1309,,indicator,indicator,2,,,,"Injuries, treated in ED, non-fatal, work-related",generator,GenerateIndicator;1309,synced
+indicator_1310,,indicator,indicator,2,,,,"Injuries, treated in ED, non-fatal, work-related: teens",generator,GenerateIndicator;1310,synced
+indicator_1311,,indicator,indicator,2,,,,"Assaults, work-related",generator,GenerateIndicator;1311,synced
+indicator_1313,,indicator,indicator,2,,,,Lack of leisure-time physical activity: adults,generator,GenerateIndicator;1313,synced
+indicator_1314,,indicator,indicator,2,,,,Physical education required daily: elementary schools,generator,GenerateIndicator;1314,synced
+indicator_1315,,indicator,indicator,2,,,,Physical education required daily: middle/junior high schools,generator,GenerateIndicator;1315,synced
+indicator_1316,,indicator,indicator,2,,,,Physical education required daily: high schools,generator,GenerateIndicator;1316,synced
+indicator_1317,,indicator,indicator,2,,,,"Physical education, daily at school: teens",generator,GenerateIndicator;1317,synced
+indicator_1318,,indicator,indicator,2,,,,"School athletic facilities, public access",generator,GenerateIndicator;1318,synced
+indicator_1319,,indicator,indicator,2,,,,Aerobic physical activity meeting guidelines: adults,generator,GenerateIndicator;1319,synced
+indicator_1320,,indicator,indicator,2,,,,Aerobic physical activity meeting high  guidelines: adults,generator,GenerateIndicator;1320,synced
+indicator_1321,,indicator,indicator,2,,,,Muscle-strengthening activity meeting guidelines: adults,generator,GenerateIndicator;1321,synced
+indicator_1322,,indicator,indicator,2,,,,Aerobic physical and muscle-strengthening activity: adults,generator,GenerateIndicator;1322,synced
+indicator_1326,,indicator,indicator,2,,,,Screen time: children 0-2 years,generator,GenerateIndicator;1326,synced
+indicator_1327,,indicator,indicator,2,,,,Screen time: children 2-5 years,generator,GenerateIndicator;1327,synced
+indicator_1328,,indicator,indicator,2,,,,Screen time: children 6-14 years,generator,GenerateIndicator;1328,synced
+indicator_1329,,indicator,indicator,2,,,,Screen time: teens,generator,GenerateIndicator;1329,synced
+indicator_1330,,indicator,indicator,2,,,,"Screen time, computer: children 2-5 years",generator,GenerateIndicator;1330,synced
+indicator_1331,,indicator,indicator,2,,,,"Screen time, computer: children 6-14 years",generator,GenerateIndicator;1331,synced
+indicator_1332,,indicator,indicator,2,,,,"Screen time, computer: teens",generator,GenerateIndicator;1332,synced
+indicator_1338,,indicator,indicator,2,,,,"Recess, required in elementary school: States",generator,GenerateIndicator;1338,synced
+indicator_1339,,indicator,indicator,2,,,,"Recess, required in elementary school: school districts",generator,GenerateIndicator;1339,synced
+indicator_1340,,indicator,indicator,2,,,,Recess for 20+ min. in elementary school: school districts,generator,GenerateIndicator;1340,synced
+indicator_1341,,indicator,indicator,2,,,,Physician physical activity counseling: adults with chronic conditions,generator,GenerateIndicator;1341,synced
+indicator_1342,,indicator,indicator,2,,,,Physician physical activity counseling,generator,GenerateIndicator;1342,synced
+indicator_1343,,indicator,indicator,2,,,,Physical activity policies for child care settings: States,generator,GenerateIndicator;1343,synced
+indicator_1344,,indicator,indicator,2,,,,Physical activity intensity policies for child care settings: States,generator,GenerateIndicator;1344,synced
+indicator_1345,,indicator,indicator,2,,,,Physical activity duration policies for child care settings: States,generator,GenerateIndicator;1345,synced
+indicator_1349,,indicator,indicator,2,,,,Laboratories support disease prevention/control: States,generator,GenerateIndicator;1349,synced
+indicator_1350,,indicator,indicator,2,,,,Laboratories support data management: States,generator,GenerateIndicator;1350,synced
+indicator_1351,,indicator,indicator,2,,,,Laboratories support reference & specialized testing: States,generator,GenerateIndicator;1351,synced
+indicator_1352,,indicator,indicator,2,,,,Laboratories support environmental health: States,generator,GenerateIndicator;1352,synced
+indicator_1353,,indicator,indicator,2,,,,Laboratories support food safety: States,generator,GenerateIndicator;1353,synced
+indicator_1354,,indicator,indicator,2,,,,Laboratories support lab improvement: States,generator,GenerateIndicator;1354,synced
+indicator_1355,,indicator,indicator,2,,,,Laboratories support policy development: States,generator,GenerateIndicator;1355,synced
+indicator_1356,,indicator,indicator,2,,,,Laboratories support emergency response: States,generator,GenerateIndicator;1356,synced
+indicator_1357,,indicator,indicator,2,,,,Laboratories support health research: States,generator,GenerateIndicator;1357,synced
+indicator_1358,,indicator,indicator,2,,,,Laboratories support training/education: States,generator,GenerateIndicator;1358,synced
+indicator_1359,,indicator,indicator,2,,,,Laboratories support partnerships: States,generator,GenerateIndicator;1359,synced
+indicator_1360,,indicator,indicator,2,,,,Formal training epidemiology: state epidemiologists,generator,GenerateIndicator;1360,synced
+indicator_1362,,indicator,indicator,2,,,,Epidemiology services: State public health agencies,generator,GenerateIndicator;1362,synced
+indicator_1365,,indicator,indicator,2,,,,National tracking of HP 2020 objectives: baseline data,generator,GenerateIndicator;1365,synced
+indicator_1366,,indicator,indicator,2,,,,National tracking of HP 2020 objectives: two data points,generator,GenerateIndicator;1366,synced
+indicator_1367,,indicator,indicator,2,,,,National tracking of HP 2020 objectives: data every three years,generator,GenerateIndicator;1367,synced
+indicator_1372,,indicator,indicator,2,,,,Competencies for public health professionals: Local agencies,generator,GenerateIndicator;1372,synced
+indicator_1373,,indicator,indicator,2,,,,Core Competencies in Public Health in curricula,generator,GenerateIndicator;1373,synced
+indicator_1375,,indicator,indicator,2,,,,Public health system assessment: State public health systems,generator,GenerateIndicator;1375,synced
+indicator_1376,,indicator,indicator,2,,,,Public health system assessment: Local public health systems,generator,GenerateIndicator;1376,synced
+indicator_1382,,indicator,indicator,2,,,,"Certificates of birth, use of latest standard form: States",generator,GenerateIndicator;1382,synced
+indicator_1383,,indicator,indicator,2,,,,"Certificates of death, use of latest standard form: States",generator,GenerateIndicator;1383,synced
+indicator_1384,,indicator,indicator,2,,,,"Reports of fetal death, use of latest standard form: States",generator,GenerateIndicator;1384,synced
+indicator_1385,,indicator,indicator,2,,,,Public health majors: 4-year colleges/universities,generator,GenerateIndicator;1385,synced
+indicator_1386,,indicator,indicator,2,,,,Public health minors: 4-year colleges/universities,generator,GenerateIndicator;1386,synced
+indicator_1388,,indicator,indicator,2,,,,Associate degrees in public health: 2-year colleges,generator,GenerateIndicator;1388,synced
+indicator_1389,,indicator,indicator,2,,,,Certificate programs in public health: 2-year colleges,generator,GenerateIndicator;1389,synced
+indicator_1394,,indicator,indicator,2,,,,Emergency personnel response time,generator,GenerateIndicator;1394,synced
+indicator_1396,,indicator,indicator,2,,,,"Laboratory proficiency, chemical threat agents",generator,GenerateIndicator;1396,synced
+indicator_1397,,indicator,indicator,2,,,,Improvement plan development: health emergencies/exercises,generator,GenerateIndicator;1397,synced
+indicator_1398,,indicator,indicator,2,,,,Asthma hospitalizations: children <5 years,generator,GenerateIndicator;1398,synced
+indicator_1399,,indicator,indicator,2,,,,Asthma hospitalizations: persons 5-64 years,generator,GenerateIndicator;1399,synced
+indicator_1400,,indicator,indicator,2,,,,Asthma hospitalizations: older adults,generator,GenerateIndicator;1400,synced
+indicator_1401,,indicator,indicator,2,,,,Asthma ED visits: children <5 years,generator,GenerateIndicator;1401,synced
+indicator_1402,,indicator,indicator,2,,,,Asthma ED visits: persons 5-64 years,generator,GenerateIndicator;1402,synced
+indicator_1403,,indicator,indicator,2,,,,Asthma ED visits: older adults,generator,GenerateIndicator;1403,synced
+indicator_1404,,indicator,indicator,2,,,,Activity limitations: persons with asthma,generator,GenerateIndicator;1404,synced
+indicator_1405,,indicator,indicator,2,,,,Activity limitations: adults 45+ years with COPD,generator,GenerateIndicator;1405,synced
+indicator_1406,,indicator,indicator,2,,,,COPD deaths: adults 45+ years,generator,GenerateIndicator;1406,synced
+indicator_1407,,indicator,indicator,2,,,,Asthma deaths: persons <35 years,generator,GenerateIndicator;1407,synced
+indicator_1408,,indicator,indicator,2,,,,Asthma deaths: adults 35-64 years,generator,GenerateIndicator;1408,synced
+indicator_1409,,indicator,indicator,2,,,,Asthma deaths: older adults,generator,GenerateIndicator;1409,synced
+indicator_1410,,indicator,indicator,2,,,,Missed school days: children 5-17 with asthma,generator,GenerateIndicator;1410,synced
+indicator_1411,,indicator,indicator,2,,,,Missed work days: adults 18-64 with asthma,generator,GenerateIndicator;1411,synced
+indicator_1412,,indicator,indicator,2,,,,Asthma patient education receipt,generator,GenerateIndicator;1412,synced
+indicator_1413,,indicator,indicator,2,,,,Asthma management plans receipt from health care provider,generator,GenerateIndicator;1413,synced
+indicator_1414,,indicator,indicator,2,,,,"Asthma inhalers, receipt of instructions",generator,GenerateIndicator;1414,synced
+indicator_1415,,indicator,indicator,2,,,,"Asthma signs/symptoms and responses, education receipt",generator,GenerateIndicator;1415,synced
+indicator_1416,,indicator,indicator,2,,,,"Asthma medication regimen, appropriate",generator,GenerateIndicator;1416,synced
+indicator_1417,,indicator,indicator,2,,,,"Asthma exposure risks, advise to reduce: persons with asthma",generator,GenerateIndicator;1417,synced
+indicator_1420,,indicator,indicator,2,,,,Consultation received for work related asthma: adults,generator,GenerateIndicator;1420,synced
+indicator_1421,,indicator,indicator,2,,,,Asthma surveillance systems: states,generator,GenerateIndicator;1421,synced
+indicator_1422,,indicator,indicator,2,,,,COPD hospitalizations: adults 45+ years,generator,GenerateIndicator;1422,synced
+indicator_1423,,indicator,indicator,2,,,,COPD ED visits: adults 45+ years,generator,GenerateIndicator;1423,synced
+indicator_1425,,indicator,indicator,2,,,,Cirrhosis deaths,generator,GenerateIndicator;1425,synced
+indicator_1426,,indicator,indicator,2,,,,Drug-induced deaths,generator,GenerateIndicator;1426,synced
+indicator_1427,,indicator,indicator,2,,,,Riding with a driver who has been drinking: teens,generator,GenerateIndicator;1427,synced
+indicator_1428,,indicator,indicator,2,,,,"Alcohol, never use: at risk teens",generator,GenerateIndicator;1428,synced
+indicator_1429,,indicator,indicator,2,,,,"Marijuana, never use: at risk teens",generator,GenerateIndicator;1429,synced
+indicator_1430,,indicator,indicator,2,,,,"Alcohol, never use: high school seniors",generator,GenerateIndicator;1430,synced
+indicator_1431,,indicator,indicator,2,,,,"Illicit drugs, never use: high school seniors",generator,GenerateIndicator;1431,synced
+indicator_1432,,indicator,indicator,2,,,,"Illicit drugs, recent use: teens",generator,GenerateIndicator;1432,synced
+indicator_1433,,indicator,indicator,2,,,,"Marijuana, recent use: teens",generator,GenerateIndicator;1433,synced
+indicator_1434,,indicator,indicator,2,,,,"Illicit drugs, recent use: adults",generator,GenerateIndicator;1434,synced
+indicator_1435,,indicator,indicator,2,,,,Binge drinking: high school seniors,generator,GenerateIndicator;1435,synced
+indicator_1436,,indicator,indicator,2,,,,Binge drinking: college students,generator,GenerateIndicator;1436,synced
+indicator_1437,,indicator,indicator,2,,,,Binge drinking: adults,generator,GenerateIndicator;1437,synced
+indicator_1438,,indicator,indicator,2,,,,Binge drinking: teens,generator,GenerateIndicator;1438,synced
+indicator_1439,,indicator,indicator,2,,,,Alcohol sold,generator,GenerateIndicator;1439,synced
+indicator_1440,,indicator,indicator,2,,,,Steroid use: 8th graders,generator,GenerateIndicator;1440,synced
+indicator_1441,,indicator,indicator,2,,,,Steroid use: 10th graders,generator,GenerateIndicator;1441,synced
+indicator_1442,,indicator,indicator,2,,,,Steroid use: high school seniors,generator,GenerateIndicator;1442,synced
+indicator_1443,,indicator,indicator,2,,,,Inhalant use: teens,generator,GenerateIndicator;1443,synced
+indicator_1444,,indicator,indicator,2,,,,Disapproval of heavy drinking: 8th graders,generator,GenerateIndicator;1444,synced
+indicator_1445,,indicator,indicator,2,,,,Disapproval of heavy drinking: 10th graders,generator,GenerateIndicator;1445,synced
+indicator_1446,,indicator,indicator,2,,,,Disapproval of heavy drinking: high school seniors,generator,GenerateIndicator;1446,synced
+indicator_1447,,indicator,indicator,2,,,,Disapproval of trying marijuana: 8th graders,generator,GenerateIndicator;1447,synced
+indicator_1448,,indicator,indicator,2,,,,Disapproval of trying marijuana: 10th graders,generator,GenerateIndicator;1448,synced
+indicator_1449,,indicator,indicator,2,,,,Disapproval of trying marijuana: high school seniors,generator,GenerateIndicator;1449,synced
+indicator_1450,,indicator,indicator,2,,,,"Risk perception, binge drinking: at risk teens",generator,GenerateIndicator;1450,synced
+indicator_1451,,indicator,indicator,2,,,,"Risk perception, marijuana: at risk teens",generator,GenerateIndicator;1451,synced
+indicator_1452,,indicator,indicator,2,,,,"Risk perception, cocaine: at risk teens",generator,GenerateIndicator;1452,synced
+indicator_1453,,indicator,indicator,2,,,,Injection drug use admissions,generator,GenerateIndicator;1453,synced
+indicator_1454,,indicator,indicator,2,,,,Illicit drug treatment receipt,generator,GenerateIndicator;1454,synced
+indicator_1455,,indicator,indicator,2,,,,Alcohol and/or illicit drug treatment receipt,generator,GenerateIndicator;1455,synced
+indicator_1456,,indicator,indicator,2,,,,Alcohol treatment receipt,generator,GenerateIndicator;1456,synced
+indicator_1458,,indicator,indicator,2,,,,Excessive drinking: adults,generator,GenerateIndicator;1458,synced
+indicator_1460,,indicator,indicator,2,,,,Alcohol Screening and Brief Intervention: primary care & trauma centers,generator,GenerateIndicator;1460,synced
+indicator_1461,,indicator,indicator,2,,,,Prescription pain reliever abuse,generator,GenerateIndicator;1461,synced
+indicator_1462,,indicator,indicator,2,,,,Prescription tranquilizers abuse,generator,GenerateIndicator;1462,synced
+indicator_1463,,indicator,indicator,2,,,,Prescription stimulants abuse,generator,GenerateIndicator;1463,synced
+indicator_1464,,indicator,indicator,2,,,,Prescription sedatives abuse,generator,GenerateIndicator;1464,synced
+indicator_1465,,indicator,indicator,2,,,,Prescription psychotherapeutic drug abuse,generator,GenerateIndicator;1465,synced
+indicator_1466,,indicator,indicator,2,,,,Alcohol-impaired driving deaths,generator,GenerateIndicator;1466,synced
+indicator_1467,,indicator,indicator,2,,,,Alcohol-attributable deaths,generator,GenerateIndicator;1467,synced
+indicator_1468,,indicator,indicator,2,,,,Mandatory ignition interlock laws: States,generator,GenerateIndicator;1468,synced
+indicator_1469,,indicator,indicator,2,,,,Obstructive sleep apnea evaluation: adults,generator,GenerateIndicator;1469,synced
+indicator_1470,,indicator,indicator,2,,,,Motor vehicle crashes involving drowsy driving,generator,GenerateIndicator;1470,synced
+indicator_1471,,indicator,indicator,2,,,,Sufficient sleep: teens,generator,GenerateIndicator;1471,synced
+indicator_1472,,indicator,indicator,2,,,,Sufficient sleep: adults,generator,GenerateIndicator;1472,synced
+indicator_1473,,indicator,indicator,2,,,,Pelvic inflammatory disease,generator,GenerateIndicator;1473,synced
+indicator_1474,,indicator,indicator,2,,,,"Syphilis, congenital",generator,GenerateIndicator;1474,synced
+indicator_1475,,indicator,indicator,2,,,,Chlamydia: females 15-24 years attending family planning clinics,generator,GenerateIndicator;1475,synced
+indicator_1476,,indicator,indicator,2,,,,Chlamydia: females <24 years in a national job training program,generator,GenerateIndicator;1476,synced
+indicator_1477,,indicator,indicator,2,,,,Chlamydia: males <24 years in a national job training program,generator,GenerateIndicator;1477,synced
+indicator_1478,,indicator,indicator,2,,,,Gonorrhea: females 15-44 years,generator,GenerateIndicator;1478,synced
+indicator_1479,,indicator,indicator,2,,,,Gonorrhea: males 15-44 years,generator,GenerateIndicator;1479,synced
+indicator_1480,,indicator,indicator,2,,,,"Syphilis, primary and secondary: females",generator,GenerateIndicator;1480,synced
+indicator_1481,,indicator,indicator,2,,,,"Syphilis, primary and secondary: males",generator,GenerateIndicator;1481,synced
+indicator_1482,,indicator,indicator,2,,,,Genital herpes simplex type 2: adults 20-29 years,generator,GenerateIndicator;1482,synced
+indicator_1486,,indicator,indicator,2,,,,Chlamydia screening: females 16-20 years with Medicaid,generator,GenerateIndicator;1486,synced
+indicator_1487,,indicator,indicator,2,,,,Chlamydia screening: females 21-24 years with Medicaid,generator,GenerateIndicator;1487,synced
+indicator_1488,,indicator,indicator,2,,,,Chlamydia screening: females 16-20 years with private health insurance,generator,GenerateIndicator;1488,synced
+indicator_1489,,indicator,indicator,2,,,,Chlamydia screening: females 21-24 years with private health insurance,generator,GenerateIndicator;1489,synced
+indicator_1491,,indicator,indicator,2,,,,Smoking cessation during pregnancy,generator,GenerateIndicator;1491,synced
+indicator_1492,,indicator,indicator,2,,,,Employment at indoor workplaces that prohibit smoking,generator,GenerateIndicator;1492,synced
+indicator_1493,,indicator,indicator,2,,,,Enforcement of illegal tobacco sales to minors laws: States,generator,GenerateIndicator;1493,synced
+indicator_1494,,indicator,indicator,2,,,,Enforcement of illegal tobacco sales to minors laws: Territories,generator,GenerateIndicator;1494,synced
+indicator_1495,,indicator,indicator,2,,,,Evidence-based tobacco control programs - States,generator,GenerateIndicator;1495,synced
+indicator_1498,,indicator,indicator,2,,,,Cigarette smoking: adults,generator,GenerateIndicator;1498,synced
+indicator_1499,,indicator,indicator,2,,,,Smokeless tobacco use: adults,generator,GenerateIndicator;1499,synced
+indicator_15,,indicator,indicator,2,,,,Obesity: adults (percent) (Source: BRFSS),generator,GenerateIndicator;15,synced
+indicator_150,,indicator,indicator,2,,,,Excessive drinking: adults (percent) (Source: BRFSS),generator,GenerateIndicator;150,synced
+indicator_1500,,indicator,indicator,2,,,,Cigar smoking: adults,generator,GenerateIndicator;1500,synced
+indicator_1501,,indicator,indicator,2,,,,Tobacco use in past month: teens,generator,GenerateIndicator;1501,synced
+indicator_1502,,indicator,indicator,2,,,,Cigarette use in past month: teens,generator,GenerateIndicator;1502,synced
+indicator_1503,,indicator,indicator,2,,,,Smokeless tobacco use in past month: teens,generator,GenerateIndicator;1503,synced
+indicator_1504,,indicator,indicator,2,,,,Cigar use in past month: teens,generator,GenerateIndicator;1504,synced
+indicator_1505,,indicator,indicator,2,,,,Tobacco use initiation: teens,generator,GenerateIndicator;1505,synced
+indicator_1506,,indicator,indicator,2,,,,Cigarette use initiation: teens,generator,GenerateIndicator;1506,synced
+indicator_1507,,indicator,indicator,2,,,,Smokeless tobacco use initiation: teens,generator,GenerateIndicator;1507,synced
+indicator_1508,,indicator,indicator,2,,,,Cigar use initiation: teens,generator,GenerateIndicator;1508,synced
+indicator_1509,,indicator,indicator,2,,,,Tobacco use initiation: adults 18-25 years,generator,GenerateIndicator;1509,synced
+indicator_1510,,indicator,indicator,2,,,,Cigarette use initiation: adults 18-25 years,generator,GenerateIndicator;1510,synced
+indicator_1511,,indicator,indicator,2,,,,Smokeless tobacco use initiation: adults 18-25 years,generator,GenerateIndicator;1511,synced
+indicator_1512,,indicator,indicator,2,,,,Cigar use initiation: adults 18-25 years,generator,GenerateIndicator;1512,synced
+indicator_1513,,indicator,indicator,2,,,,Smoking cessation attempts: adult smokers,generator,GenerateIndicator;1513,synced
+indicator_1515,,indicator,indicator,2,,,,Smoking cessation attempts: teen smokers,generator,GenerateIndicator;1515,synced
+indicator_1516,,indicator,indicator,2,,,,Medicaid coverage for nicotine treatment: States,generator,GenerateIndicator;1516,synced
+indicator_1517,,indicator,indicator,2,,,,Secondhand smoke exposure: nonsmokers 3-11 years,generator,GenerateIndicator;1517,synced
+indicator_1518,,indicator,indicator,2,,,,Secondhand smoke exposure: nonsmokers 12-17 years,generator,GenerateIndicator;1518,synced
+indicator_1519,,indicator,indicator,2,,,,Secondhand smoke exposure: adult nonsmokers,generator,GenerateIndicator;1519,synced
+indicator_1520,,indicator,indicator,2,,,,Tobacco free environments: junior high schools,generator,GenerateIndicator;1520,synced
+indicator_1521,,indicator,indicator,2,,,,Tobacco free environments: middle schools,generator,GenerateIndicator;1521,synced
+indicator_1522,,indicator,indicator,2,,,,Tobacco free environments: high schools,generator,GenerateIndicator;1522,synced
+indicator_1524,,indicator,indicator,2,,,,Smoke-free air laws covering private workplaces: States,generator,GenerateIndicator;1524,synced
+indicator_1525,,indicator,indicator,2,,,,Smoke-free air laws covering public workplaces: States,generator,GenerateIndicator;1525,synced
+indicator_1526,,indicator,indicator,2,,,,Smoke-free air laws covering restaurants: States,generator,GenerateIndicator;1526,synced
+indicator_1527,,indicator,indicator,2,,,,Smoke-free air laws covering bars: States,generator,GenerateIndicator;1527,synced
+indicator_1528,,indicator,indicator,2,,,,Smoke-free indoor air laws covering gaming halls: States,generator,GenerateIndicator;1528,synced
+indicator_1529,,indicator,indicator,2,,,,Smoke-free air laws covering commercial daycare centers: States,generator,GenerateIndicator;1529,synced
+indicator_1530,,indicator,indicator,2,,,,Smoke-free air laws covering home based daycare centers: States,generator,GenerateIndicator;1530,synced
+indicator_1531,,indicator,indicator,2,,,,Smoke-free air laws covering public transportation: States,generator,GenerateIndicator;1531,synced
+indicator_1532,,indicator,indicator,2,,,,Smoke-free air laws covering hotels and motels: States,generator,GenerateIndicator;1532,synced
+indicator_1533,,indicator,indicator,2,,,,Smoke-free air laws covering multiunit housing: States,generator,GenerateIndicator;1533,synced
+indicator_1534,,indicator,indicator,2,,,,Smoke-free air laws covering vehicles with children: States,generator,GenerateIndicator;1534,synced
+indicator_1535,,indicator,indicator,2,,,,Smoke-free air laws covering Prisons: States,generator,GenerateIndicator;1535,synced
+indicator_1536,,indicator,indicator,2,,,,Smoke-free indoor air laws: substance abuse treatment facilities,generator,GenerateIndicator;1536,synced
+indicator_1537,,indicator,indicator,2,,,,Smoke-free indoor air laws: mental health treatment facilities,generator,GenerateIndicator;1537,synced
+indicator_1538,,indicator,indicator,2,,,,Smoke-free indoor air laws: entrances/exits of all public places,generator,GenerateIndicator;1538,synced
+indicator_1539,,indicator,indicator,2,,,,Smoke-free indoor air laws covering hospital campuses: States,generator,GenerateIndicator;1539,synced
+indicator_1540,,indicator,indicator,2,,,,Smoke-free indoor air laws: college/university campuses,generator,GenerateIndicator;1540,synced
+indicator_1541,,indicator,indicator,2,,,,"Tobacco marketing exposure, internet: teens",generator,GenerateIndicator;1541,synced
+indicator_1542,,indicator,indicator,2,,,,"Tobacco marketing exposure, magazine/newspaper: teens",generator,GenerateIndicator;1542,synced
+indicator_1543,,indicator,indicator,2,,,,"Tobacco marketing exposure, television/movies: teens",generator,GenerateIndicator;1543,synced
+indicator_1544,,indicator,indicator,2,,,,"Tobacco marketing exposure, point of purchase: teens",generator,GenerateIndicator;1544,synced
+indicator_1545,,indicator,indicator,2,,,,Preemptive smoke-free air laws: States,generator,GenerateIndicator;1545,synced
+indicator_1546,,indicator,indicator,2,,,,Preemptive tobacco advertising laws: States,generator,GenerateIndicator;1546,synced
+indicator_1547,,indicator,indicator,2,,,,"Preemptive tobacco control laws, youth access: States",generator,GenerateIndicator;1547,synced
+indicator_1548,,indicator,indicator,2,,,,Tobacco tax increases on cigarettes: States/Federal,generator,GenerateIndicator;1548,synced
+indicator_1549,,indicator,indicator,2,,,,Tobacco tax increases on smokeless tobacco: States/Federal,generator,GenerateIndicator;1549,synced
+indicator_1551,,indicator,indicator,2,,,,"Tobacco cessation counseling: physician office visits, adults (percent)",generator,GenerateIndicator;1551,synced
+indicator_1552,,indicator,indicator,2,,,,"Tobacco cessation counseling: hospital outpatient dept. visits, adults",generator,GenerateIndicator;1552,synced
+indicator_1553,,indicator,indicator,2,,,,Tobacco cessation counseling offered by general practice dentists,generator,GenerateIndicator;1553,synced
+indicator_1554,,indicator,indicator,2,,,,Tobacco cessation counseling: substance abuse care settings,generator,GenerateIndicator;1554,synced
+indicator_1555,,indicator,indicator,2,,,,Smoking cessation success,generator,GenerateIndicator;1555,synced
+indicator_1557,,indicator,indicator,2,,,,"Tobacco screening: physician office visits, adults",generator,GenerateIndicator;1557,synced
+indicator_1558,,indicator,indicator,2,,,,"Tobacco screening: hospital outpatient dept. visits, adults",generator,GenerateIndicator;1558,synced
+indicator_1559,,indicator,indicator,2,,,,Tobacco screening by general practice dentists,generator,GenerateIndicator;1559,synced
+indicator_1560,,indicator,indicator,2,,,,Tobacco screening in substance abuse care setting: persons 12+ years,generator,GenerateIndicator;1560,synced
+indicator_1561,,indicator,indicator,2,,,,Smoke-free homes: adults,generator,GenerateIndicator;1561,synced
+indicator_1562,,indicator,indicator,2,,,,Vision screening: children &le;5 years,generator,GenerateIndicator;1562,synced
+indicator_1563,,indicator,indicator,2,,,,Visual impairment: children <18 years,generator,GenerateIndicator;1563,synced
+indicator_1564,,indicator,indicator,2,,,,Occupational eye injuries resulting in lost work days,generator,GenerateIndicator;1564,synced
+indicator_1565,,indicator,indicator,2,,,,Occupational eye injuries treated in emergency departments,generator,GenerateIndicator;1565,synced
+indicator_1566,,indicator,indicator,2,,,,Dilated eye examinations: adults,generator,GenerateIndicator;1566,synced
+indicator_1567,,indicator,indicator,2,,,,Visual impairment due to refractive errors: persons 12+ years,generator,GenerateIndicator;1567,synced
+indicator_1568,,indicator,indicator,2,,,,Visual impairment due to diabetic retinopathy: diabetic adults,generator,GenerateIndicator;1568,synced
+indicator_1569,,indicator,indicator,2,,,,Visual impairments due to glaucoma: adults 45+ years,generator,GenerateIndicator;1569,synced
+indicator_1570,,indicator,indicator,2,,,,Visual impairment due to cataracts: older adults,generator,GenerateIndicator;1570,synced
+indicator_1571,,indicator,indicator,2,,,,Visual impairment due to macular degeneration: adults 45+ years,generator,GenerateIndicator;1571,synced
+indicator_1572,,indicator,indicator,2,,,,Protective eyeware use at home: children,generator,GenerateIndicator;1572,synced
+indicator_1573,,indicator,indicator,2,,,,Protective eyeware use at home: adults,generator,GenerateIndicator;1573,synced
+indicator_1574,,indicator,indicator,2,,,,Visual rehabilitation services use: adults with visual impairments,generator,GenerateIndicator;1574,synced
+indicator_1575,,indicator,indicator,2,,,,Assistive/adaptive devices use: adults with visual impairment,generator,GenerateIndicator;1575,synced
+indicator_160,,indicator,indicator,2,,,,Hospital inpatient Medicare users (number),generator,GenerateIndicator;160,synced
+indicator_161,,indicator,indicator,2,,,,Hospital inpatient Medicare utilization (percent),generator,GenerateIndicator;161,synced
+indicator_17,,indicator,indicator,2,,,,Binge drinking: adults (percent),generator,GenerateIndicator;17,synced
+indicator_187,,indicator,indicator,2,,,,Hospital outpatient Medicare users (number),generator,GenerateIndicator;187,synced
+indicator_188,,indicator,indicator,2,,,,Hospital outpatient Medicare utilization (percent),generator,GenerateIndicator;188,synced
+indicator_20,,indicator,indicator,2,,,,"Chlamydia (per 100,000)",generator,GenerateIndicator;20,synced
+indicator_200,,indicator,indicator,2,,,,Long term care hospital Medicare users (number),generator,GenerateIndicator;200,synced
+indicator_2001,,indicator,indicator,2,,,,"Hospital inpatient Medicare admissions (per 1,000 beneficiaries)",generator,GenerateIndicator;2001,synced
+indicator_2005,,indicator,indicator,2,,,,"Inpatient rehabilitation facility Medicare admissions (per 1,000 beneficiaries)",generator,GenerateIndicator;2005,synced
+indicator_2006,,indicator,indicator,2,,,,"Long term care hospital Medicare admissions (per 1,000 beneficiaries)",generator,GenerateIndicator;2006,synced
+indicator_2007,,indicator,indicator,2,,,,"Hospice Medicare admissions (per 1,000 beneficiaries)",generator,GenerateIndicator;2007,synced
+indicator_2008,,indicator,indicator,2,,,,"Skilled nursing facility Medicare admissions (per 1,000 beneficiaries)",generator,GenerateIndicator;2008,synced
+indicator_2009,,indicator,indicator,2,,,,"Hospital inpatient Medicare days (per 1,000 beneficiaries)",generator,GenerateIndicator;2009,synced
+indicator_201,,indicator,indicator,2,,,,Long term care hospital Medicare utilization (percent),generator,GenerateIndicator;201,synced
+indicator_2013,,indicator,indicator,2,,,,"Inpatient rehabilitation facility Medicare days (per 1,000 beneficiaries)",generator,GenerateIndicator;2013,synced
+indicator_2014,,indicator,indicator,2,,,,"Long term care hospital Medicare days (per 1,000 beneficiaries)",generator,GenerateIndicator;2014,synced
+indicator_2015,,indicator,indicator,2,,,,"Hospice Medicare days (per 1,000 beneficiaries)",generator,GenerateIndicator;2015,synced
+indicator_2016,,indicator,indicator,2,,,,"Skilled nursing facility Medicare days (per 1,000 beneficiaries)",generator,GenerateIndicator;2016,synced
+indicator_2017,,indicator,indicator,2,,,,"Home health Medicare visits (per 1,000 beneficiaries)",generator,GenerateIndicator;2017,synced
+indicator_2018,,indicator,indicator,2,,,,"Home health Medicare episodes (per 1,000 beneficiaries)",generator,GenerateIndicator;2018,synced
+indicator_2019,,indicator,indicator,2,,,,"Hospital outpatient Medicare visits (per 1,000 beneficiaries)",generator,GenerateIndicator;2019,synced
+indicator_2020,,indicator,indicator,2,,,,"Ambulatory surgical center Medicare service events (per 1,000 beneficiaries)",generator,GenerateIndicator;2020,synced
+indicator_2021,,indicator,indicator,2,,,,"Physician evaluation and management Medicare service events (per 1,000 beneficiaries)",generator,GenerateIndicator;2021,synced
+indicator_2022,,indicator,indicator,2,,,,"Physician procedures Medicare service events (per 1,000 beneficiaries)",generator,GenerateIndicator;2022,synced
+indicator_2023,,indicator,indicator,2,,,,"Imaging Medicare service events (per 1,000 beneficiaries)",generator,GenerateIndicator;2023,synced
+indicator_2026,,indicator,indicator,2,,,,"Durable medical equipment Medicare service events (per 1,000 beneficiaries)",generator,GenerateIndicator;2026,synced
+indicator_2038,,indicator,indicator,2,,,,"Diabetes long-term complications admission rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2038,synced
+indicator_2039,,indicator,indicator,2,,,,"Chronic obstructive pulmonary disease admission rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2039,synced
+indicator_2040,,indicator,indicator,2,,,,"Hypertension admission rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2040,synced
+indicator_2041,,indicator,indicator,2,,,,"Congestive heart failure admission rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2041,synced
+indicator_2042,,indicator,indicator,2,,,,"Dehydration admission rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2042,synced
+indicator_2043,,indicator,indicator,2,,,,"Bacterial pneumonia admission rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2043,synced
+indicator_2044,,indicator,indicator,2,,,,"Urinary tract infection admission rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2044,synced
+indicator_2045,,indicator,indicator,2,,,,"Asthma in younger adults admission rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2045,synced
+indicator_2046,,indicator,indicator,2,,,,"Amputation among diabetics rate (per 100,000 beneficiaries)",generator,GenerateIndicator;2046,synced
+indicator_207,,indicator,indicator,2,,,,Inpatient rehab Medicare users (number),generator,GenerateIndicator;207,synced
+indicator_208,,indicator,indicator,2,,,,Inpatient rehab Medicare utilization (percent),generator,GenerateIndicator;208,synced
+indicator_214,,indicator,indicator,2,,,,Skilled nursing facility Medicare users (number),generator,GenerateIndicator;214,synced
+indicator_215,,indicator,indicator,2,,,,Skilled nursing facility Medicare utilization (percent),generator,GenerateIndicator;215,synced
+indicator_22,,indicator,indicator,2,,,,"Births: females 15-19 years (per 1,000)",generator,GenerateIndicator;22,synced
+indicator_221,,indicator,indicator,2,,,,Home health Medicare users (number),generator,GenerateIndicator;221,synced
+indicator_222,,indicator,indicator,2,,,,Home health Medicare utilization (percent),generator,GenerateIndicator;222,synced
+indicator_227,,indicator,indicator,2,,,,Hospice Medicare users (number),generator,GenerateIndicator;227,synced
+indicator_228,,indicator,indicator,2,,,,Hospice Medicare utilization (percent),generator,GenerateIndicator;228,synced
+indicator_23,,indicator,indicator,2,,,,"Health insurance, none: <65 years (percent) (Source: SAHIE)",generator,GenerateIndicator;23,synced
+indicator_233,,indicator,indicator,2,,,,Ambulatory surgery center Medicare users (number),generator,GenerateIndicator;233,synced
+indicator_234,,indicator,indicator,2,,,,Ambulatory surgery center Medicare utilization (percent),generator,GenerateIndicator;234,synced
+indicator_239,,indicator,indicator,2,,,,Physician evaluation and management Medicare users (number),generator,GenerateIndicator;239,synced
+indicator_240,,indicator,indicator,2,,,,Physician evaluation and management Medicare utilization (percent),generator,GenerateIndicator;240,synced
+indicator_245,,indicator,indicator,2,,,,Physician procedures Medicare users (number),generator,GenerateIndicator;245,synced
+indicator_246,,indicator,indicator,2,,,,Physician procedures Medicare utilization (percent),generator,GenerateIndicator;246,synced
+indicator_25,,indicator,indicator,2,,,,"Primary care providers (per 100,000)",generator,GenerateIndicator;25,synced
+indicator_251,,indicator,indicator,2,,,,Imaging Medicare users (number),generator,GenerateIndicator;251,synced
+indicator_252,,indicator,indicator,2,,,,Imaging Medicare utilization (percent),generator,GenerateIndicator;252,synced
+indicator_257,,indicator,indicator,2,,,,Durable medical equipment Medicare users (number),generator,GenerateIndicator;257,synced
+indicator_258,,indicator,indicator,2,,,,Durable medical equipment Medicare utilization (percent),generator,GenerateIndicator;258,synced
+indicator_269,,indicator,indicator,2,,,,Part B drug Medicare users (number),generator,GenerateIndicator;269,synced
+indicator_27,,indicator,indicator,2,,,,"Preventable hospitalizations: Medicare beneficiaries (per 1,000)",generator,GenerateIndicator;27,synced
+indicator_270,,indicator,indicator,2,,,,Part B drugs Medicare utilization (percent),generator,GenerateIndicator;270,synced
+indicator_278,,indicator,indicator,2,,,,Acute hospital readmissions (number),generator,GenerateIndicator;278,synced
+indicator_279,,indicator,indicator,2,,,,Acute hospital readmissions (percent),generator,GenerateIndicator;279,synced
+indicator_281,,indicator,indicator,2,,,,Emergency department visits (number),generator,GenerateIndicator;281,synced
+indicator_282,,indicator,indicator,2,,,,"Emergency department visit rate (per 1,000 beneficiaries)",generator,GenerateIndicator;282,synced
+indicator_283,,indicator,indicator,2,,,,Heart attack Medicare beneficiaries  (number),generator,GenerateIndicator;283,synced
+indicator_284,,indicator,indicator,2,,,,Heart attack Medicare beneficiaries (percent),generator,GenerateIndicator;284,synced
+indicator_285,,indicator,indicator,2,,,,Atrial fibrillation Medicare beneficiaries (number),generator,GenerateIndicator;285,synced
+indicator_286,,indicator,indicator,2,,,,Atrial fibrillation Medicare beneficiaries (percent),generator,GenerateIndicator;286,synced
+indicator_287,,indicator,indicator,2,,,,Chronic kidney disease Medicare beneficiaries (number),generator,GenerateIndicator;287,synced
+indicator_288,,indicator,indicator,2,,,,Chronic kidney disease Medicare beneficiaries (percent),generator,GenerateIndicator;288,synced
+indicator_289,,indicator,indicator,2,,,,Chronic obstructive pulmonary disease (COPD) Medicare beneficiaries (number),generator,GenerateIndicator;289,synced
+indicator_29,,indicator,indicator,2,,,,HbA1c test: diabetic Medicare beneficiaries (percent),generator,GenerateIndicator;29,synced
+indicator_290,,indicator,indicator,2,,,,Chronic obstructive pulmonary disease (COPD) Medicare beneficiaries (percent),generator,GenerateIndicator;290,synced
+indicator_291,,indicator,indicator,2,,,,Depression Medicare beneficiaries (number),generator,GenerateIndicator;291,synced
+indicator_292,,indicator,indicator,2,,,,Depression Medicare beneficiaries (percent),generator,GenerateIndicator;292,synced
+indicator_293,,indicator,indicator,2,,,,Diabetes Medicare beneficiaries (number),generator,GenerateIndicator;293,synced
+indicator_294,,indicator,indicator,2,,,,Diabetes Medicare beneficiaries (percent),generator,GenerateIndicator;294,synced
+indicator_295,,indicator,indicator,2,,,,Heart failure Medicare beneficiaries (number),generator,GenerateIndicator;295,synced
+indicator_296,,indicator,indicator,2,,,,Heart failure Medicare beneficiaries (percent),generator,GenerateIndicator;296,synced
+indicator_297,,indicator,indicator,2,,,,Ischemic heart disease Medicare beneficiaries (number),generator,GenerateIndicator;297,synced
+indicator_298,,indicator,indicator,2,,,,Ischemic heart disease Medicare beneficiaries (percent),generator,GenerateIndicator;298,synced
+indicator_299,,indicator,indicator,2,,,,Breast cancer Medicare beneficiaries (number),generator,GenerateIndicator;299,synced
+indicator_3,,indicator,indicator,2,,,,"Years of potential life lost before age 75 (per 100,000)",generator,GenerateIndicator;3,synced
+indicator_300,,indicator,indicator,2,,,,Breast cancer Medicare beneficiaries (percent),generator,GenerateIndicator;300,synced
+indicator_301,,indicator,indicator,2,,,,Colorectal cancer Medicare beneficiaries (number),generator,GenerateIndicator;301,synced
+indicator_302,,indicator,indicator,2,,,,Colorectal cancer Medicare beneficiaries (percent),generator,GenerateIndicator;302,synced
+indicator_303,,indicator,indicator,2,,,,Lung cancer Medicare beneficiaries (number),generator,GenerateIndicator;303,synced
+indicator_304,,indicator,indicator,2,,,,Lung cancer Medicare beneficiaries (percent),generator,GenerateIndicator;304,synced
+indicator_305,,indicator,indicator,2,,,,Prostate cancer Medicare beneficiaries (number),generator,GenerateIndicator;305,synced
+indicator_306,,indicator,indicator,2,,,,Prostate cancer Medicare beneficiaries (percent),generator,GenerateIndicator;306,synced
+indicator_307,,indicator,indicator,2,,,,Medicare beneficiaries (number),generator,GenerateIndicator;307,synced
+indicator_308,,indicator,indicator,2,,,,Average age of Medicare beneficiaries  (mean),generator,GenerateIndicator;308,synced
+indicator_309,,indicator,indicator,2,,,,Female Medicare beneficiaries  (percent),generator,GenerateIndicator;309,synced
+indicator_310,,indicator,indicator,2,,,,Male Medicare beneficiaries  (percent),generator,GenerateIndicator;310,synced
+indicator_311,,indicator,indicator,2,,,,Non-Hispanic White Medicare beneficiaries  (percent),generator,GenerateIndicator;311,synced
+indicator_312,,indicator,indicator,2,,,,African American Medicare beneficiaries  (percent),generator,GenerateIndicator;312,synced
+indicator_313,,indicator,indicator,2,,,,Hispanic Medicare beneficiaries  (percent),generator,GenerateIndicator;313,synced
+indicator_316,,indicator,indicator,2,,,,Other or Unknown race Medicare beneficiaries  (percent),generator,GenerateIndicator;316,synced
+indicator_317,,indicator,indicator,2,,,,Medicare beneficiaries  who are also eligible for Medicaid (percent),generator,GenerateIndicator;317,synced
+indicator_318,,indicator,indicator,2,,,,Average total hierarchical condition category score for Medicare beneficiaries  (mean),generator,GenerateIndicator;318,synced
+indicator_34,,indicator,indicator,2,,,,College degree: adults 25+ (percent),generator,GenerateIndicator;34,synced
+indicator_35,,indicator,indicator,2,,,,Unemployed: persons 16+ (percent),generator,GenerateIndicator;35,synced
+indicator_36,,indicator,indicator,2,,,,Poverty: children < 18 years (percent),generator,GenerateIndicator;36,synced
+indicator_368,,indicator,indicator,2,,,,Health insurance: <65 years,generator,GenerateIndicator;368,synced
+indicator_37,,indicator,indicator,2,,,,Gini coefficient (ratio),generator,GenerateIndicator;37,synced
+indicator_372,,indicator,indicator,2,,,,Usual primary care provider,generator,GenerateIndicator;372,synced
+indicator_375,,indicator,indicator,2,,,,Source of ongoing care: all ages,generator,GenerateIndicator;375,synced
+indicator_376,,indicator,indicator,2,,,,Source of ongoing care: <18 years,generator,GenerateIndicator;376,synced
+indicator_377,,indicator,indicator,2,,,,Source of ongoing care: 18 to 64 years,generator,GenerateIndicator;377,synced
+indicator_378,,indicator,indicator,2,,,,Source of ongoing care: 65+ years,generator,GenerateIndicator;378,synced
+indicator_379,,indicator,indicator,2,,,,Inability to obtain  medical/dental care or prescriptions,generator,GenerateIndicator;379,synced
+indicator_380,,indicator,indicator,2,,,,Inability to obtain or delayed medical care,generator,GenerateIndicator;380,synced
+indicator_381,,indicator,indicator,2,,,,Inability to obtain or delayed dental care,generator,GenerateIndicator;381,synced
+indicator_382,,indicator,indicator,2,,,,Inability to obtain or delayed prescription meds,generator,GenerateIndicator;382,synced
+indicator_394,,indicator,indicator,2,,,,"High school graduates, on-time with regular diploma",generator,GenerateIndicator;394,synced
+indicator_395,,indicator,indicator,2,,,,High school diploma: students with disabilities,generator,GenerateIndicator;395,synced
+indicator_396,,indicator,indicator,2,,,,Proficiency in reading: 4th grade,generator,GenerateIndicator;396,synced
+indicator_397,,indicator,indicator,2,,,,Proficiency in reading: 8th grade,generator,GenerateIndicator;397,synced
+indicator_398,,indicator,indicator,2,,,,Proficiency in reading: 12th grade,generator,GenerateIndicator;398,synced
+indicator_399,,indicator,indicator,2,,,,Proficiency in math: 4th grade,generator,GenerateIndicator;399,synced
+indicator_40,,indicator,indicator,2,,,,Single-parent households (percent),generator,GenerateIndicator;40,synced
+indicator_400,,indicator,indicator,2,,,,Proficiency in math: 8th grade,generator,GenerateIndicator;400,synced
+indicator_401,,indicator,indicator,2,,,,Proficiency in math: 12th grade,generator,GenerateIndicator;401,synced
+indicator_402,,indicator,indicator,2,,,,School work meaningful: teens aged 12-17,generator,GenerateIndicator;402,synced
+indicator_403,,indicator,indicator,2,,,,School absenteeism from illness/injury: teens 12-17,generator,GenerateIndicator;403,synced
+indicator_404,,indicator,indicator,2,,,,Extracurricular activities: teens aged 12-17,generator,GenerateIndicator;404,synced
+indicator_405,,indicator,indicator,2,,,,Wellness check-up: teens aged 12-17,generator,GenerateIndicator;405,synced
+indicator_406,,indicator,indicator,2,,,,Sexual orientation/identity harassment prohibited at school,generator,GenerateIndicator;406,synced
+indicator_407,,indicator,indicator,2,,,,Safety at school: perception of teens' parents,generator,GenerateIndicator;407,synced
+indicator_408,,indicator,indicator,2,,,,Serious violent incidents in public schools,generator,GenerateIndicator;408,synced
+indicator_409,,indicator,indicator,2,,,,Adolescents having an adult to discuss problems with,generator,GenerateIndicator;409,synced
+indicator_410,,indicator,indicator,2,,,,Adolescents whose parents attend activities/events,generator,GenerateIndicator;410,synced
+indicator_411,,indicator,indicator,2,,,,Illegal drugs on school property,generator,GenerateIndicator;411,synced
+indicator_412,,indicator,indicator,2,,,,Transition to self-sufficiency from foster care,generator,GenerateIndicator;412,synced
+indicator_413,,indicator,indicator,2,,,,Violent crimes: perpetrators 10-24 years,generator,GenerateIndicator;413,synced
+indicator_414,,indicator,indicator,2,,,,Serious property crimes: perpetrators 10-24 years,generator,GenerateIndicator;414,synced
+indicator_417,,indicator,indicator,2,,,,Breakfast program: schools,generator,GenerateIndicator;417,synced
+indicator_418,,indicator,indicator,2,,,,Joint pain: adults with arthritis,generator,GenerateIndicator;418,synced
+indicator_419,,indicator,indicator,2,,,,Arthritis activity limitation: adults with arthritis,generator,GenerateIndicator;419,synced
+indicator_420,,indicator,indicator,2,,,,Personal care limitations: adults with arthritis,generator,GenerateIndicator;420,synced
+indicator_421,,indicator,indicator,2,,,,Weight loss counseling: overweight adults with arthritis,generator,GenerateIndicator;421,synced
+indicator_422,,indicator,indicator,2,,,,Physical activity counseling: adults with arthritis,generator,GenerateIndicator;422,synced
+indicator_423,,indicator,indicator,2,,,,Unemployment: adults 18-64 years with arthritis,generator,GenerateIndicator;423,synced
+indicator_424,,indicator,indicator,2,,,,Work limitations: adults 18-64 years with arthritis,generator,GenerateIndicator;424,synced
+indicator_425,,indicator,indicator,2,,,,Health provider seen: adults with joint-related symptoms,generator,GenerateIndicator;425,synced
+indicator_426,,indicator,indicator,2,,,,Arthritis education: adults with arthritis,generator,GenerateIndicator;426,synced
+indicator_427,,indicator,indicator,2,,,,Osteoporosis: adults 50+ years,generator,GenerateIndicator;427,synced
+indicator_428,,indicator,indicator,2,,,,Activity limitation due to chronic back conditions,generator,GenerateIndicator;428,synced
+indicator_429,,indicator,indicator,2,,,,Hip fractures: female older adults,generator,GenerateIndicator;429,synced
+indicator_430,,indicator,indicator,2,,,,Hip fractures: male older adults,generator,GenerateIndicator;430,synced
+indicator_431,,indicator,indicator,2,,,,Joint difficulty walking 3 blocks: adults with arthritis,generator,GenerateIndicator;431,synced
+indicator_432,,indicator,indicator,2,,,,Joint difficulty walking up 10 steps: adults with arthritis,generator,GenerateIndicator;432,synced
+indicator_433,,indicator,indicator,2,,,,Joint difficulty stooping/bending/ kneeling: adults with arthritis,generator,GenerateIndicator;433,synced
+indicator_434,,indicator,indicator,2,,,,Joint difficulty grasping: adults with arthritis,generator,GenerateIndicator;434,synced
+indicator_435,,indicator,indicator,2,,,,Serious psychological distress: adults with arthritis,generator,GenerateIndicator;435,synced
+indicator_436,,indicator,indicator,2,,,,Blood donations: adults,generator,GenerateIndicator;436,synced
+indicator_44,,indicator,indicator,2,,,,Particulate matter days (percent),generator,GenerateIndicator;44,synced
+indicator_441,,indicator,indicator,2,,,,Venous thromboembolism physician visits,generator,GenerateIndicator;441,synced
+indicator_443,,indicator,indicator,2,,,,von Willebrand Disease diagnosis: women,generator,GenerateIndicator;443,synced
+indicator_444,,indicator,indicator,2,,,,Reduced joint mobility: persons with hemophilia,generator,GenerateIndicator;444,synced
+indicator_45,,indicator,indicator,2,,,,Ozone days (number),generator,GenerateIndicator;45,synced
+indicator_462,,indicator,indicator,2,,,,End-stage renal disease,generator,GenerateIndicator;462,synced
+indicator_463,,indicator,indicator,2,,,,End-stage renal disease deaths: hemodialysis patients,generator,GenerateIndicator;463,synced
+indicator_464,,indicator,indicator,2,,,,Early death: hemodialysis patients,generator,GenerateIndicator;464,synced
+indicator_465,,indicator,indicator,2,,,,Cardiovascular death: hemodialysis patients,generator,GenerateIndicator;465,synced
+indicator_466,,indicator,indicator,2,,,,Death: kidney transplant patients,generator,GenerateIndicator;466,synced
+indicator_467,,indicator,indicator,2,,,,Cardiovascular death: kidney transplant patients,generator,GenerateIndicator;467,synced
+indicator_468,,indicator,indicator,2,,,,Nephrologist seen at least 12 months before hemodialysis initiation,generator,GenerateIndicator;468,synced
+indicator_469,,indicator,indicator,2,,,,Vascular access for hemodialysis,generator,GenerateIndicator;469,synced
+indicator_470,,indicator,indicator,2,,,,Catheter use for vascular access: hemodialysis patients,generator,GenerateIndicator;470,synced
+indicator_471,,indicator,indicator,2,,,,Arteriovenous fistula use: hemodialysis patients,generator,GenerateIndicator;471,synced
+indicator_472,,indicator,indicator,2,,,,Kidney waitlist/transplantation: hemodialysis patients < 70 years,generator,GenerateIndicator;472,synced
+indicator_473,,indicator,indicator,2,,,,Kidney transplantation within 3 years: hemodialysis patients,generator,GenerateIndicator;473,synced
+indicator_474,,indicator,indicator,2,,,,Preemptive transplantation in end stage kidney failure,generator,GenerateIndicator;474,synced
+indicator_475,,indicator,indicator,2,,,,End-stage kidney failure due to diabetes,generator,GenerateIndicator;475,synced
+indicator_476,,indicator,indicator,2,,,,End-stage kidney failure: diabetics,generator,GenerateIndicator;476,synced
+indicator_477,,indicator,indicator,2,,,,Medical evaluation: chronic kidney disease older adults,generator,GenerateIndicator;477,synced
+indicator_478,,indicator,indicator,2,,,,Medical evaluation: chronic kidney disease & diabetes older adults,generator,GenerateIndicator;478,synced
+indicator_479,,indicator,indicator,2,,,,Medical treatment: chronic kidney disease & diabetes older adults,generator,GenerateIndicator;479,synced
+indicator_48,,indicator,indicator,2,,,,Healthy food outlets (percent),generator,GenerateIndicator;48,synced
+indicator_480,,indicator,indicator,2,,,,Hypertension: adults with chronic kidney disease,generator,GenerateIndicator;480,synced
+indicator_481,,indicator,indicator,2,,,,High blood cholesterol: adults with chronic kidney disease,generator,GenerateIndicator;481,synced
+indicator_482,,indicator,indicator,2,,,,Renal evaluation after kidney injury: Medicare,generator,GenerateIndicator;482,synced
+indicator_483,,indicator,indicator,2,,,,Chronic kidney disease: adults,generator,GenerateIndicator;483,synced
+indicator_484,,indicator,indicator,2,,,,Chronic kidney disease deaths: adults,generator,GenerateIndicator;484,synced
+indicator_485,,indicator,indicator,2,,,,Renal function knowledge: chronic kidney disease adults aged 45+,generator,GenerateIndicator;485,synced
+indicator_486,,indicator,indicator,2,,,,"Cancer deaths, total",generator,GenerateIndicator;486,synced
+indicator_487,,indicator,indicator,2,,,,Lung cancer deaths,generator,GenerateIndicator;487,synced
+indicator_488,,indicator,indicator,2,,,,Breast cancer deaths,generator,GenerateIndicator;488,synced
+indicator_489,,indicator,indicator,2,,,,Uterine cervix cancer deaths,generator,GenerateIndicator;489,synced
+indicator_490,,indicator,indicator,2,,,,"Colorectal cancer deaths, including unspecified sites",generator,GenerateIndicator;490,synced
+indicator_491,,indicator,indicator,2,,,,Oropharyngeal cancer deaths,generator,GenerateIndicator;491,synced
+indicator_492,,indicator,indicator,2,,,,Prostate cancer deaths,generator,GenerateIndicator;492,synced
+indicator_493,,indicator,indicator,2,,,,Melanoma cancer deaths,generator,GenerateIndicator;493,synced
+indicator_494,,indicator,indicator,2,,,,Mammography counseling: women 50-74 years,generator,GenerateIndicator;494,synced
+indicator_495,,indicator,indicator,2,,,,Pap test counseling: women 21-65 years,generator,GenerateIndicator;495,synced
+indicator_497,,indicator,indicator,2,,,,Statewide cancer registries,generator,GenerateIndicator;497,synced
+indicator_498,,indicator,indicator,2,,,,Cancer survival,generator,GenerateIndicator;498,synced
+indicator_5,,indicator,indicator,2,,,,Fair or poor health: adults (percent) (Source: BRFSS),generator,GenerateIndicator;5,synced
+indicator_500,,indicator,indicator,2,,,,Sunburn: adults,generator,GenerateIndicator;500,synced
+indicator_50001,,indicator,indicator,2,,,,"Federally Qualified Health Center and Rural Health Clinic visits (per 1,000 beneficiaries)",generator,GenerateIndicator;50001,synced
+indicator_50002,,indicator,indicator,2,,,,Federally Qualified Health Center and Rural Health Clinic Medicare users (number),generator,GenerateIndicator;50002,synced
+indicator_50003,,indicator,indicator,2,,,,Federally Qualified Health Center and Rural Health Clinic Medicare utilization (percent),generator,GenerateIndicator;50003,synced
+indicator_50004,,indicator,indicator,2,,,,"Dialysis Medicare visits (per 1,000 beneficiaries)",generator,GenerateIndicator;50004,synced
+indicator_50005,,indicator,indicator,2,,,,Dialysis Medicare users (number),generator,GenerateIndicator;50005,synced
+indicator_50006,,indicator,indicator,2,,,,Dialysis Medicare utilization (percent),generator,GenerateIndicator;50006,synced
+indicator_50007,,indicator,indicator,2,,,,Asthma Medicare beneficiaries (number),generator,GenerateIndicator;50007,synced
+indicator_50008,,indicator,indicator,2,,,,Asthma Medicare beneficiaries (percent),generator,GenerateIndicator;50008,synced
+indicator_50009,,indicator,indicator,2,,,,Hypertension Medicare beneficiaries (number),generator,GenerateIndicator;50009,synced
+indicator_50010,,indicator,indicator,2,,,,Hypertension Medicare beneficiaries (percent),generator,GenerateIndicator;50010,synced
+indicator_50011,,indicator,indicator,2,,,,"Diabetes deaths (per 100,000)",generator,GenerateIndicator;50011,synced
+indicator_50012,,indicator,indicator,2,,,,"Chronic lower respiratory disease deaths (per 100,000)",generator,GenerateIndicator;50012,synced
+indicator_50013,,indicator,indicator,2,,,,"Influenza and pneumonia deaths (per 100,000)",generator,GenerateIndicator;50013,synced
+indicator_50014,,indicator,indicator,2,,,,"Kidney diseases deaths (per 100,000)",generator,GenerateIndicator;50014,synced
+indicator_50015,,indicator,indicator,2,,,,"Alzheimer's disease deaths (per 100,000)",generator,GenerateIndicator;50015,synced
+indicator_50016,,indicator,indicator,2,,,,"Alzheimer's Disease, Related Disorders, or Senile Dementia Medicare beneficiaries (number)",generator,GenerateIndicator;50016,synced
+indicator_50017,,indicator,indicator,2,,,,Arthritis Medicare beneficiaries (number),generator,GenerateIndicator;50017,synced
+indicator_50018,,indicator,indicator,2,,,,High cholesterol Medicare beneficiaries (number),generator,GenerateIndicator;50018,synced
+indicator_50019,,indicator,indicator,2,,,,Osteoporosis Medicare beneficiaries (number),generator,GenerateIndicator;50019,synced
+indicator_50020,,indicator,indicator,2,,,,Stroke Medicare beneficiaries (number),generator,GenerateIndicator;50020,synced
+indicator_50021,,indicator,indicator,2,,,,"Alzheimer's Disease, Related Disorders, or Senile Dementia Medicare beneficiaries (percent)",generator,GenerateIndicator;50021,synced
+indicator_50022,,indicator,indicator,2,,,,Arthritis Medicare beneficiaries (percent),generator,GenerateIndicator;50022,synced
+indicator_50023,,indicator,indicator,2,,,,High cholesterol Medicare beneficiaries (percent),generator,GenerateIndicator;50023,synced
+indicator_50024,,indicator,indicator,2,,,,Osteoporosis Medicare beneficiaries (percent),generator,GenerateIndicator;50024,synced
+indicator_50025,,indicator,indicator,2,,,,Stroke Medicare beneficiaries (percent),generator,GenerateIndicator;50025,synced
+indicator_50026,,indicator,indicator,2,,,,Transplant Centers  (number),generator,GenerateIndicator;50026,synced
+indicator_50028,,indicator,indicator,2,,,,Social-emotional support lacking: Adults (percent),generator,GenerateIndicator;50028,synced
+indicator_50031,,indicator,indicator,2,,,,Asthma: children (percent),generator,GenerateIndicator;50031,synced
+indicator_50032,,indicator,indicator,2,,,,Asthma attack in past 12 months: children (percent),generator,GenerateIndicator;50032,synced
+indicator_50033,,indicator,indicator,2,,,,ADHD: children (percent),generator,GenerateIndicator;50033,synced
+indicator_50034,,indicator,indicator,2,,,,Serious emotional/behavioral difficulties: children (percent),generator,GenerateIndicator;50034,synced
+indicator_50035,,indicator,indicator,2,,,,Food allergy: children (percent),generator,GenerateIndicator;50035,synced
+indicator_50036,,indicator,indicator,2,,,,Skin allergy: children (percent),generator,GenerateIndicator;50036,synced
+indicator_50037,,indicator,indicator,2,,,,Hay fever/respiratory allergy: children (percent),generator,GenerateIndicator;50037,synced
+indicator_50038,,indicator,indicator,2,,,,"Ear infections, 3+ in 12 months: children (percent)",generator,GenerateIndicator;50038,synced
+indicator_50039,,indicator,indicator,2,,,,"Headache or migraine, severe: adults (percent)",generator,GenerateIndicator;50039,synced
+indicator_50040,,indicator,indicator,2,,,,Low back pain: adults (percent),generator,GenerateIndicator;50040,synced
+indicator_50041,,indicator,indicator,2,,,,Neck pain: adults (percent),generator,GenerateIndicator;50041,synced
+indicator_50042,,indicator,indicator,2,,,,Basic actions difficulty: adults (percent),generator,GenerateIndicator;50042,synced
+indicator_50043,,indicator,indicator,2,,,,Complex activity limitation: adults (percent),generator,GenerateIndicator;50043,synced
+indicator_50044,,indicator,indicator,2,,,,Heart disease prevalence: adults (percent),generator,GenerateIndicator;50044,synced
+indicator_50045,,indicator,indicator,2,,,,Cancer prevalence: adults (percent),generator,GenerateIndicator;50045,synced
+indicator_50046,,indicator,indicator,2,,,,Stroke prevalence: adults (percent),generator,GenerateIndicator;50046,synced
+indicator_50047,,indicator,indicator,2,,,,Vision limitations: adults (percent),generator,GenerateIndicator;50047,synced
+indicator_50048,,indicator,indicator,2,,,,Fair or poor health (percent) (Source: NHIS),generator,GenerateIndicator;50048,synced
+indicator_50049,,indicator,indicator,2,,,,Basic action difficulty/Complex activity limitation: adults (percent),generator,GenerateIndicator;50049,synced
+indicator_50051,,indicator,indicator,2,,,,Mammography: women 40+ (percent) (Source: NHIS),generator,GenerateIndicator;50051,synced
+indicator_50052,,indicator,indicator,2,,,,Pap smears: women 18+ (percent) (Source: NHIS),generator,GenerateIndicator;50052,synced
+indicator_50053,,indicator,indicator,2,,,,Dental visits: ages 2+ (percent) (Source: NHIS),generator,GenerateIndicator;50053,synced
+indicator_50054,,indicator,indicator,2,,,,Private health insurance: <65 years (percent) (Source: NHIS),generator,GenerateIndicator;50054,synced
+indicator_50055,,indicator,indicator,2,,,,Serious psychological distress: adults (percent),generator,GenerateIndicator;50055,synced
+indicator_50056,,indicator,indicator,2,,,,"Health insurance coverage, through workplace: persons <65 (percent)",generator,GenerateIndicator;50056,synced
+indicator_50057,,indicator,indicator,2,,,,Medicaid coverage: persons <65 (percent),generator,GenerateIndicator;50057,synced
+indicator_50058,,indicator,indicator,2,,,,"Health insurance, none: persons <65 (percent) (Source: NHIS)",generator,GenerateIndicator;50058,synced
+indicator_50059,,indicator,indicator,2,,,,Pap smears: women 18+ without hysterectomy (percent),generator,GenerateIndicator;50059,synced
+indicator_50060,,indicator,indicator,2,,,,"Source of usual care, none: children (percent)",generator,GenerateIndicator;50060,synced
+indicator_50061,,indicator,indicator,2,,,,"Source of usual care, none: adults <65 years (percent)",generator,GenerateIndicator;50061,synced
+indicator_50062,,indicator,indicator,2,,,,Deaf or a lot of trouble hearing: adults (percent),generator,GenerateIndicator;50062,synced
+indicator_50064,,indicator,indicator,2,,,,Colonoscopy use: adults 50-75 (percent) (Source: NHIS),generator,GenerateIndicator;50064,synced
+indicator_50065,,indicator,indicator,2,,,,Medical care delayed or not received due to cost (percent),generator,GenerateIndicator;50065,synced
+indicator_50066,,indicator,indicator,2,,,,Prescription drugs not received due to cost (percent),generator,GenerateIndicator;50066,synced
+indicator_50067,,indicator,indicator,2,,,,Dental care not received due to cost (percent),generator,GenerateIndicator;50067,synced
+indicator_50068,,indicator,indicator,2,,,,No health care visits: children (percent),generator,GenerateIndicator;50068,synced
+indicator_50069,,indicator,indicator,2,,,,"Septicemia deaths (per 100,000)",generator,GenerateIndicator;50069,synced
+indicator_50070,,indicator,indicator,2,,,,Test Medicare users (number),generator,GenerateIndicator;50070,synced
+indicator_50071,,indicator,indicator,2,,,,Test Medicare utilization (percent),generator,GenerateIndicator;50071,synced
+indicator_50072,,indicator,indicator,2,,,,"Test Medicare service events (per 1,000 beneficiaries)",generator,GenerateIndicator;50072,synced
+indicator_50073,,indicator,indicator,2,,,,Cholesterol management (percent),generator,GenerateIndicator;50073,synced
+indicator_50074,,indicator,indicator,2,,,,Medicare Advantage beneficiaries (number),generator,GenerateIndicator;50074,synced
+indicator_50075,,indicator,indicator,2,,,,Medicare beneficiaries (number),generator,GenerateIndicator;50075,synced
+indicator_50076,,indicator,indicator,2,,,,Medicare Advange participation (percent),generator,GenerateIndicator;50076,synced
+indicator_50077,,indicator,indicator,2,,,,Ambulance Medicare users (number),generator,GenerateIndicator;50077,synced
+indicator_50078,,indicator,indicator,2,,,,Ambulance Medicare utilization (percent),generator,GenerateIndicator;50078,synced
+indicator_50079,,indicator,indicator,2,,,,Actual Medicare total costs (dollars),generator,GenerateIndicator;50079,synced
+indicator_50080,,indicator,indicator,2,,,,Standardized Medicare total costs (dollars),generator,GenerateIndicator;50080,synced
+indicator_50081,,indicator,indicator,2,,,,Hospital inpatient actual Medicare costs (dollars),generator,GenerateIndicator;50081,synced
+indicator_50082,,indicator,indicator,2,1,29513,0,Hospital inpatient standardized Medicare costs (dollars),generator,GenerateIndicator;50082,synced
+indicator_50083,,indicator,indicator,2,,,,Long term care hospital actual Medicare costs (dollars),generator,GenerateIndicator;50083,synced
+indicator_50084,,indicator,indicator,2,,,,Long term care hospital standardized Medicare costs (dollars),generator,GenerateIndicator;50084,synced
+indicator_50085,,indicator,indicator,2,,,,Inpatient rehabilitation facility actual Medicare costs (dollars),generator,GenerateIndicator;50085,synced
+indicator_50086,,indicator,indicator,2,,,,Inpatient rehabilitation facility standardized Medicare costs (dollars),generator,GenerateIndicator;50086,synced
+indicator_50087,,indicator,indicator,2,,,,Skilled nursing facility actual Medicare costs (dollars),generator,GenerateIndicator;50087,synced
+indicator_50088,,indicator,indicator,2,,,,Skilled nursing facility standardized Medicare costs (dollars),generator,GenerateIndicator;50088,synced
+indicator_50089,,indicator,indicator,2,,,,Home health actual Medicare costs (dollars),generator,GenerateIndicator;50089,synced
+indicator_50090,,indicator,indicator,2,,,,Home health standardized Medicare costs (dollars),generator,GenerateIndicator;50090,synced
+indicator_50091,,indicator,indicator,2,,,,Hospice actual Medicare costs (dollars),generator,GenerateIndicator;50091,synced
+indicator_50092,,indicator,indicator,2,,,,Hospice standardized Medicare costs (dollars),generator,GenerateIndicator;50092,synced
+indicator_50093,,indicator,indicator,2,,,,Hospital outpatient actual Medicare costs (dollars),generator,GenerateIndicator;50093,synced
+indicator_50094,,indicator,indicator,2,,,,Hospital outpatient standardized Medicare costs (dollars),generator,GenerateIndicator;50094,synced
+indicator_50095,,indicator,indicator,2,,,,Federally qualified health center & rural health center actual Medicare costs  (dollars),generator,GenerateIndicator;50095,synced
+indicator_50096,,indicator,indicator,2,,,,Federally qualified health center & rural health center standardized Medicare costs (dollars),generator,GenerateIndicator;50096,synced
+indicator_50097,,indicator,indicator,2,,,,Outpatient dialysis facility actual Medicare costs  (dollars),generator,GenerateIndicator;50097,synced
+indicator_50098,,indicator,indicator,2,,,,Outpatient dialysis facility standardized Medicare costs (dollars),generator,GenerateIndicator;50098,synced
+indicator_50099,,indicator,indicator,2,,,,Ambulatory Surgery Center actual Medicare costs  (dollars),generator,GenerateIndicator;50099,synced
+indicator_501,,indicator,indicator,2,,,,Artificial UV tanning: teens,generator,GenerateIndicator;501,synced
+indicator_50100,,indicator,indicator,2,,,,Ambulatory surgery center standardized Medicare costs (dollars),generator,GenerateIndicator;50100,synced
+indicator_50101,,indicator,indicator,2,,,,Physician evaluation and management actual Medicare costs (dollars),generator,GenerateIndicator;50101,synced
+indicator_50102,,indicator,indicator,2,,,,Physician evaluation and management standardized Medicare costs (dollars),generator,GenerateIndicator;50102,synced
+indicator_50103,,indicator,indicator,2,,,,Physician procedures actual Medicare costs  (dollars),generator,GenerateIndicator;50103,synced
+indicator_50104,,indicator,indicator,2,,,,Physician procedures standardized Medicare costs (dollars),generator,GenerateIndicator;50104,synced
+indicator_50105,,indicator,indicator,2,,,,Imaging actual Medicare costs (dollars),generator,GenerateIndicator;50105,synced
+indicator_50106,,indicator,indicator,2,,,,Imaging standardized Medicare costs (dollars),generator,GenerateIndicator;50106,synced
+indicator_50107,,indicator,indicator,2,,,,Durable medical equipment actual Medicare costs (dollars),generator,GenerateIndicator;50107,synced
+indicator_50108,,indicator,indicator,2,,,,Durable medical equipment standardized Medicare costs (dollars),generator,GenerateIndicator;50108,synced
+indicator_50109,,indicator,indicator,2,,,,Tests actual Medicare cost (dollars),generator,GenerateIndicator;50109,synced
+indicator_50110,,indicator,indicator,2,,,,Tests standardized Medicare costs (dollars),generator,GenerateIndicator;50110,synced
+indicator_50111,,indicator,indicator,2,,,,Part B drug actual Medicare cost (dollars),generator,GenerateIndicator;50111,synced
+indicator_50112,,indicator,indicator,2,,,,Part B drug standardized Medicare costs (dollars),generator,GenerateIndicator;50112,synced
+indicator_50113,,indicator,indicator,2,,,,Ambulance actual Medicare cost (dollars),generator,GenerateIndicator;50113,synced
+indicator_50114,,indicator,indicator,2,,,,Ambulance standardized Medicare costs (dollars),generator,GenerateIndicator;50114,synced
+indicator_502,,indicator,indicator,2,,,,Artificial UV tanning: adults,generator,GenerateIndicator;502,synced
+indicator_503,,indicator,indicator,2,,,,Skin cancer protective measures: teens,generator,GenerateIndicator;503,synced
+indicator_504,,indicator,indicator,2,,,,Skin cancer protective measures: adults,generator,GenerateIndicator;504,synced
+indicator_505,,indicator,indicator,2,,,,Cervical cancer screening: women 21-65 years,generator,GenerateIndicator;505,synced
+indicator_506,,indicator,indicator,2,,,,Colorectal cancer screening: persons 50-75 years,generator,GenerateIndicator;506,synced
+indicator_507,,indicator,indicator,2,,,,Mammography: women 50-74 years,generator,GenerateIndicator;507,synced
+indicator_509,,indicator,indicator,2,,,,Invasive colorectal cancer,generator,GenerateIndicator;509,synced
+indicator_51,,indicator,indicator,2,,,,"Liquor stores (per 10,000)",generator,GenerateIndicator;51,synced
+indicator_510,,indicator,indicator,2,,,,Invasive uterine cervical cancer: females,generator,GenerateIndicator;510,synced
+indicator_511,,indicator,indicator,2,,,,Late-stage breast cancer: females,generator,GenerateIndicator;511,synced
+indicator_512,,indicator,indicator,2,,,,Prostate-specific antigen tests counseling: males,generator,GenerateIndicator;512,synced
+indicator_513,,indicator,indicator,2,,,,"Identification of ""people with disabilities"" in data systems",generator,GenerateIndicator;513,synced
+indicator_515,,indicator,indicator,2,,,,Social and emotional support: adults with disabilities,generator,GenerateIndicator;515,synced
+indicator_516,,indicator,indicator,2,,,,Employment: persons 16-64 years with disabilities,generator,GenerateIndicator;516,synced
+indicator_517,,indicator,indicator,2,,,,Inclusion in regular education: students with disabilities,generator,GenerateIndicator;517,synced
+indicator_524,,indicator,indicator,2,,,,Congregate care: adults with disabilities,generator,GenerateIndicator;524,synced
+indicator_525,,indicator,indicator,2,,,,Congregate care: persons <22 years with disabilities,generator,GenerateIndicator;525,synced
+indicator_527,,indicator,indicator,2,,,,Health promotion programs for people with disabilities: States,generator,GenerateIndicator;527,synced
+indicator_528,,indicator,indicator,2,,,,Surveillance programs for caregivers: States,generator,GenerateIndicator;528,synced
+indicator_529,,indicator,indicator,2,,,,Health promotion programs for caregivers: States,generator,GenerateIndicator;529,synced
+indicator_536,,indicator,indicator,2,,,,Transition planning: teens with special health care needs,generator,GenerateIndicator;536,synced
+indicator_537,,indicator,indicator,2,,,,Inappropriate medication use: older adults with disabilities,generator,GenerateIndicator;537,synced
+indicator_539,,indicator,indicator,2,,,,Early intervention services: children with disabilities,generator,GenerateIndicator;539,synced
+indicator_540,,indicator,indicator,2,,,,Medical care: adults with uncontrolled seizures,generator,GenerateIndicator;540,synced
+indicator_541,,indicator,indicator,2,,,,Unemployment: persons 16-64 years with disabilities,generator,GenerateIndicator;541,synced
+indicator_542,,indicator,indicator,2,,,,Visitable features: homes and residential buildings,generator,GenerateIndicator;542,synced
+indicator_543,,indicator,indicator,2,,,,Diagnosis awareness: adults aged 65 years and older with dementias,generator,GenerateIndicator;543,synced
+indicator_544,,indicator,indicator,2,,,,Preventable hospitalizations: persons with dementia,generator,GenerateIndicator;544,synced
+indicator_545,,indicator,indicator,2,,,,Diabetes education: adults with diabetes,generator,GenerateIndicator;545,synced
+indicator_546,,indicator,indicator,2,,,,Diagnosed diabetes: adults with diabetes,generator,GenerateIndicator;546,synced
+indicator_547,,indicator,indicator,2,,,,Diabetes-related deaths,generator,GenerateIndicator;547,synced
+indicator_548,,indicator,indicator,2,,,,Lower extremity amputations: diabetics,generator,GenerateIndicator;548,synced
+indicator_549,,indicator,indicator,2,,,,Urinary microalbumin measurement: diabetic Medicare beneficiaries,generator,GenerateIndicator;549,synced
+indicator_550,,indicator,indicator,2,,,,"Glucose A1c test, biannual: adults with diabetes",generator,GenerateIndicator;550,synced
+indicator_551,,indicator,indicator,2,,,,"Eye examinations, annual: adults with diabetes",generator,GenerateIndicator;551,synced
+indicator_552,,indicator,indicator,2,,,,"Foot examinations, annual: adults with diabetes",generator,GenerateIndicator;552,synced
+indicator_553,,indicator,indicator,2,,,,"Dental examinations, annual:  persons with diabetes",generator,GenerateIndicator;553,synced
+indicator_554,,indicator,indicator,2,,,,"Glucose monitoring, daily: adults with diabetes",generator,GenerateIndicator;554,synced
+indicator_555,,indicator,indicator,2,,,,"Diabetes, new cases",generator,GenerateIndicator;555,synced
+indicator_558,,indicator,indicator,2,,,,Glucose A1c > 9%: adults with diabetes,generator,GenerateIndicator;558,synced
+indicator_559,,indicator,indicator,2,,,,Glucose A1c < 7%: adults with diabetes,generator,GenerateIndicator;559,synced
+indicator_560,,indicator,indicator,2,,,,Blood pressure under control: adults with diabetes,generator,GenerateIndicator;560,synced
+indicator_561,,indicator,indicator,2,,,,Lipids under control: adults with diabetes,generator,GenerateIndicator;561,synced
+indicator_562,,indicator,indicator,2,,,,Increasing physical activity: adults pre-diabetes,generator,GenerateIndicator;562,synced
+indicator_563,,indicator,indicator,2,,,,Trying to lose weight: adults with pre-diabetes,generator,GenerateIndicator;563,synced
+indicator_564,,indicator,indicator,2,,,,Reducing fat/calories in diet: adults pre-diabetes,generator,GenerateIndicator;564,synced
+indicator_565,,indicator,indicator,2,,,,High school completion: adults 18-24 years,generator,GenerateIndicator;565,synced
+indicator_566,,indicator,indicator,2,,,,"Health education, all priority areas: schools",generator,GenerateIndicator;566,synced
+indicator_567,,indicator,indicator,2,,,,"Health education, injury prevention: schools",generator,GenerateIndicator;567,synced
+indicator_568,,indicator,indicator,2,,,,"Health education, violence prevention: schools",generator,GenerateIndicator;568,synced
+indicator_569,,indicator,indicator,2,,,,"Health education, suicide prevention: schools",generator,GenerateIndicator;569,synced
+indicator_570,,indicator,indicator,2,,,,"Health education, tobacco use: schools",generator,GenerateIndicator;570,synced
+indicator_571,,indicator,indicator,2,,,,"Health education, alcohol/drug use: schools",generator,GenerateIndicator;571,synced
+indicator_572,,indicator,indicator,2,,,,"Health education, pregnancy, HIV/AIDS, STD: schools",generator,GenerateIndicator;572,synced
+indicator_573,,indicator,indicator,2,,,,"Health education, nutrition: schools",generator,GenerateIndicator;573,synced
+indicator_574,,indicator,indicator,2,,,,"Health education, physical activity: schools",generator,GenerateIndicator;574,synced
+indicator_576,,indicator,indicator,2,,,,"Health information, injury: post-secondary schools",generator,GenerateIndicator;576,synced
+indicator_577,,indicator,indicator,2,,,,"Health information, violence: post-secondary schools",generator,GenerateIndicator;577,synced
+indicator_578,,indicator,indicator,2,,,,"Health information, suicide: post-secondary schools",generator,GenerateIndicator;578,synced
+indicator_579,,indicator,indicator,2,,,,"Health information, tobacco use: post-secondary schools",generator,GenerateIndicator;579,synced
+indicator_580,,indicator,indicator,2,,,,"Health information, alcohol/drug: post-secondary schools",generator,GenerateIndicator;580,synced
+indicator_581,,indicator,indicator,2,,,,"Health information, unintended pregnancy: post-secondary schools",generator,GenerateIndicator;581,synced
+indicator_582,,indicator,indicator,2,,,,"Health information, HIV & STD: post-secondary schools",generator,GenerateIndicator;582,synced
+indicator_583,,indicator,indicator,2,,,,"Health information, nutrition: post-secondary schools",generator,GenerateIndicator;583,synced
+indicator_584,,indicator,indicator,2,,,,"Health information, physical activity: post-secondary schools",generator,GenerateIndicator;584,synced
+indicator_585,,indicator,indicator,2,,,,School nurse-to-student ratio: schools,generator,GenerateIndicator;585,synced
+indicator_586,,indicator,indicator,2,,,,School nurse-to-student ratio: high schools,generator,GenerateIndicator;586,synced
+indicator_587,,indicator,indicator,2,,,,School nurse-to-student ratio: middle schools,generator,GenerateIndicator;587,synced
+indicator_588,,indicator,indicator,2,,,,School nurse-to-student ratio: elementary schools,generator,GenerateIndicator;588,synced
+indicator_596,,indicator,indicator,2,,,,Injury prevention: community-based organizations,generator,GenerateIndicator;596,synced
+indicator_597,,indicator,indicator,2,,,,Violence prevention: community-based organizations,generator,GenerateIndicator;597,synced
+indicator_598,,indicator,indicator,2,,,,Mental illness prevention: community-based organizations,generator,GenerateIndicator;598,synced
+indicator_599,,indicator,indicator,2,,,,Tobacco use prevention: community-based organizations,generator,GenerateIndicator;599,synced
+indicator_600,,indicator,indicator,2,,,,Substance abuse prevention: community-based organizations,generator,GenerateIndicator;600,synced
+indicator_601,,indicator,indicator,2,,,,Unintended pregnancy prevention: community-based organizations,generator,GenerateIndicator;601,synced
+indicator_602,,indicator,indicator,2,,,,Chronic diseases prevention: community-based organizations,generator,GenerateIndicator;602,synced
+indicator_603,,indicator,indicator,2,,,,Nutrition services: community-based organizations,generator,GenerateIndicator;603,synced
+indicator_604,,indicator,indicator,2,,,,Physical activity: community-based organizations,generator,GenerateIndicator;604,synced
+indicator_606,,indicator,indicator,2,,,,"M.D. training, counseling for health promotion",generator,GenerateIndicator;606,synced
+indicator_607,,indicator,indicator,2,,,,"M.D. training, cultural diversity",generator,GenerateIndicator;607,synced
+indicator_608,,indicator,indicator,2,,,,"M.D. training, evaluation of health sciences literature",generator,GenerateIndicator;608,synced
+indicator_609,,indicator,indicator,2,,,,"M.D. training, environmental health",generator,GenerateIndicator;609,synced
+indicator_610,,indicator,indicator,2,,,,"M.D. training, public health systems",generator,GenerateIndicator;610,synced
+indicator_611,,indicator,indicator,2,,,,"M.D. training, global health",generator,GenerateIndicator;611,synced
+indicator_612,,indicator,indicator,2,,,,"D.O. training, counseling for health promotion",generator,GenerateIndicator;612,synced
+indicator_613,,indicator,indicator,2,,,,"D.O. training, cultural diversity",generator,GenerateIndicator;613,synced
+indicator_614,,indicator,indicator,2,,,,"D.O. training, evaluation of health sciences literature",generator,GenerateIndicator;614,synced
+indicator_615,,indicator,indicator,2,,,,"D.O. training, environmental health",generator,GenerateIndicator;615,synced
+indicator_616,,indicator,indicator,2,,,,"D.O. training, public health systems",generator,GenerateIndicator;616,synced
+indicator_617,,indicator,indicator,2,,,,"D.O. training, global health",generator,GenerateIndicator;617,synced
+indicator_618,,indicator,indicator,2,,,,"Nursing training, counseling for health promotion",generator,GenerateIndicator;618,synced
+indicator_619,,indicator,indicator,2,,,,"Nursing training, cultural diversity",generator,GenerateIndicator;619,synced
+indicator_620,,indicator,indicator,2,,,,"Nursing training, evaluation of health sciences literature",generator,GenerateIndicator;620,synced
+indicator_621,,indicator,indicator,2,,,,"Nursing training, environmental health",generator,GenerateIndicator;621,synced
+indicator_622,,indicator,indicator,2,,,,"Nursing training, public health systems",generator,GenerateIndicator;622,synced
+indicator_623,,indicator,indicator,2,,,,"Nursing training, global health",generator,GenerateIndicator;623,synced
+indicator_624,,indicator,indicator,2,,,,"Nurse practitioner training, health promotion counseling",generator,GenerateIndicator;624,synced
+indicator_625,,indicator,indicator,2,,,,"Nurse practitioner training, cultural diversity",generator,GenerateIndicator;625,synced
+indicator_626,,indicator,indicator,2,,,,"Nurse practitioner training, evaluation of health literature",generator,GenerateIndicator;626,synced
+indicator_627,,indicator,indicator,2,,,,"Nurse practitioner training, environmental health",generator,GenerateIndicator;627,synced
+indicator_628,,indicator,indicator,2,,,,"Nurse practitioner training, public health systems",generator,GenerateIndicator;628,synced
+indicator_629,,indicator,indicator,2,,,,"Nurse practitioner training, global health",generator,GenerateIndicator;629,synced
+indicator_630,,indicator,indicator,2,,,,"Physician asst. training, counseling for health promotion",generator,GenerateIndicator;630,synced
+indicator_631,,indicator,indicator,2,,,,Physician asst. training in cultural diversity,generator,GenerateIndicator;631,synced
+indicator_632,,indicator,indicator,2,,,,"Physician asst. training, evaluation of health literature",generator,GenerateIndicator;632,synced
+indicator_633,,indicator,indicator,2,,,,"Physician asst. training, environmental health",generator,GenerateIndicator;633,synced
+indicator_634,,indicator,indicator,2,,,,"Physician asst. training, public health systems",generator,GenerateIndicator;634,synced
+indicator_635,,indicator,indicator,2,,,,"Physician asst. training, global health",generator,GenerateIndicator;635,synced
+indicator_636,,indicator,indicator,2,,,,"Health ed. goals, concept comprehension: schools",generator,GenerateIndicator;636,synced
+indicator_637,,indicator,indicator,2,,,,"Health ed. goals, information access: schools",generator,GenerateIndicator;637,synced
+indicator_638,,indicator,indicator,2,,,,"Health ed. goals, advocacy: schools",generator,GenerateIndicator;638,synced
+indicator_639,,indicator,indicator,2,,,,"Health ed. goals, external influences: schools",generator,GenerateIndicator;639,synced
+indicator_640,,indicator,indicator,2,,,,"Health ed. goals, healthy behaviors: schools",generator,GenerateIndicator;640,synced
+indicator_641,,indicator,indicator,2,,,,"Health ed. goals, decision-making skills: schools",generator,GenerateIndicator;641,synced
+indicator_642,,indicator,indicator,2,,,,"Health ed. goals, communication skills: schools",generator,GenerateIndicator;642,synced
+indicator_652,,indicator,indicator,2,,,,"Health education, hand washing info: schools",generator,GenerateIndicator;652,synced
+indicator_653,,indicator,indicator,2,,,,"Health education, oral health: schools",generator,GenerateIndicator;653,synced
+indicator_654,,indicator,indicator,2,,,,"Health education, growth & development: schools",generator,GenerateIndicator;654,synced
+indicator_655,,indicator,indicator,2,,,,"Health educations, sun safety: schools",generator,GenerateIndicator;655,synced
+indicator_656,,indicator,indicator,2,,,,"Health education, benefits of sleep: schools",generator,GenerateIndicator;656,synced
+indicator_657,,indicator,indicator,2,,,,"Health education, vision & hearing loss prevention: schools",generator,GenerateIndicator;657,synced
+indicator_658,,indicator,indicator,2,,,,"Health education, health screening: schools",generator,GenerateIndicator;658,synced
+indicator_659,,indicator,indicator,2,,,,Safe drinking water: persons served by community water,generator,GenerateIndicator;659,synced
+indicator_660,,indicator,indicator,2,,,,Waterborne disease outbreaks,generator,GenerateIndicator;660,synced
+indicator_661,,indicator,indicator,2,,,,Pesticide exposures causing health care facility visits,generator,GenerateIndicator;661,synced
+indicator_662,,indicator,indicator,2,,,,Recycling of municipal waste,generator,GenerateIndicator;662,synced
+indicator_663,,indicator,indicator,2,,,,Housing units with physical problems,generator,GenerateIndicator;663,synced
+indicator_664,,indicator,indicator,2,,,,Information systems used for environmental health: states,generator,GenerateIndicator;664,synced
+indicator_665,,indicator,indicator,2,,,,Number of days the Air Quality Index  exceeds 100,generator,GenerateIndicator;665,synced
+indicator_666,,indicator,indicator,2,,,,Bicycling for transportation,generator,GenerateIndicator;666,synced
+indicator_667,,indicator,indicator,2,,,,Walking for transportation,generator,GenerateIndicator;667,synced
+indicator_668,,indicator,indicator,2,,,,Mass transit for transportation,generator,GenerateIndicator;668,synced
+indicator_669,,indicator,indicator,2,,,,Telecommuting,generator,GenerateIndicator;669,synced
+indicator_670,,indicator,indicator,2,,,,Airborne toxins from mobile sources,generator,GenerateIndicator;670,synced
+indicator_671,,indicator,indicator,2,,,,Airborne toxins from area sources,generator,GenerateIndicator;671,synced
+indicator_672,,indicator,indicator,2,,,,Airborne toxins from major sources,generator,GenerateIndicator;672,synced
+indicator_673,,indicator,indicator,2,,,,Domestic water use,generator,GenerateIndicator;673,synced
+indicator_674,,indicator,indicator,2,,,,Beaches open and safe,generator,GenerateIndicator;674,synced
+indicator_676,,indicator,indicator,2,,,,Lead levels: children 1-5 years,generator,GenerateIndicator;676,synced
+indicator_677,,indicator,indicator,2,,,,Hazardous sites posing risk,generator,GenerateIndicator;677,synced
+indicator_678,,indicator,indicator,2,,,,Toxic pollutants,generator,GenerateIndicator;678,synced
+indicator_679,,indicator,indicator,2,,,,"Indoor allergen levels, cockroach",generator,GenerateIndicator;679,synced
+indicator_680,,indicator,indicator,2,,,,"Indoor allergen levels, mouse",generator,GenerateIndicator;680,synced
+indicator_681,,indicator,indicator,2,,,,Radon mitigation systems: homes at risk for radon exposure,generator,GenerateIndicator;681,synced
+indicator_682,,indicator,indicator,2,,,,Radon-reducing construction: new homes,generator,GenerateIndicator;682,synced
+indicator_683,,indicator,indicator,2,,,,Air quality management program: schools,generator,GenerateIndicator;683,synced
+indicator_684,,indicator,indicator,2,,,,Mold problem policy: schools,generator,GenerateIndicator;684,synced
+indicator_685,,indicator,indicator,2,,,,Hazardous material plan: schools,generator,GenerateIndicator;685,synced
+indicator_686,,indicator,indicator,2,,,,Pesticide limited use policy: schools,generator,GenerateIndicator;686,synced
+indicator_687,,indicator,indicator,2,,,,Pesticide area marking policy: schools,generator,GenerateIndicator;687,synced
+indicator_688,,indicator,indicator,2,,,,Pesticide information policy: schools,generator,GenerateIndicator;688,synced
+indicator_689,,indicator,indicator,2,,,,Inspection of drinking water for lead: schools,generator,GenerateIndicator;689,synced
+indicator_690,,indicator,indicator,2,,,,Inspection of drinking water for bacteria: schools,generator,GenerateIndicator;690,synced
+indicator_691,,indicator,indicator,2,,,,Inspection of drinking water for coliforms: schools,generator,GenerateIndicator;691,synced
+indicator_695,,indicator,indicator,2,,,,Arsenic level,generator,GenerateIndicator;695,synced
+indicator_696,,indicator,indicator,2,,,,Cadmium level,generator,GenerateIndicator;696,synced
+indicator_697,,indicator,indicator,2,,,,Lead level,generator,GenerateIndicator;697,synced
+indicator_698,,indicator,indicator,2,,,,Mercury level: children 1-5 years,generator,GenerateIndicator;698,synced
+indicator_699,,indicator,indicator,2,,,,Mercury level: females 16-49 years,generator,GenerateIndicator;699,synced
+indicator_7,,indicator,indicator,2,,,,Physically unhealthy days: adults (per person),generator,GenerateIndicator;7,synced
+indicator_700,,indicator,indicator,2,,,,Chlordane level: persons 12+ years,generator,GenerateIndicator;700,synced
+indicator_701,,indicator,indicator,2,,,,DDT level: persons 12+ years,generator,GenerateIndicator;701,synced
+indicator_702,,indicator,indicator,2,,,,Beta-HCH level: persons 12+ years,generator,GenerateIndicator;702,synced
+indicator_703,,indicator,indicator,2,,,,Para-nitrophenol level: persons 6+ years,generator,GenerateIndicator;703,synced
+indicator_704,,indicator,indicator,2,,,,Chlorpyrifos level: persons 6+ years,generator,GenerateIndicator;704,synced
+indicator_705,,indicator,indicator,2,,,,Pyrethoid level: persons 6+ years,generator,GenerateIndicator;705,synced
+indicator_706,,indicator,indicator,2,,,,"PCB level, nondioxin-like: persons 12+ years",generator,GenerateIndicator;706,synced
+indicator_707,,indicator,indicator,2,,,,"PCB level, dioxin-like: persons 12+ years",generator,GenerateIndicator;707,synced
+indicator_708,,indicator,indicator,2,,,,Dioxin level: persons 12+ years,generator,GenerateIndicator;708,synced
+indicator_709,,indicator,indicator,2,,,,Bisphenol A level: persons 6+ years,generator,GenerateIndicator;709,synced
+indicator_71,,indicator,indicator,2,,,,"Deaths, all causes (per 100,000)",generator,GenerateIndicator;71,synced
+indicator_710,,indicator,indicator,2,,,,Perchlorate level: persons 6+ years,generator,GenerateIndicator;710,synced
+indicator_711,,indicator,indicator,2,,,,Phthalate level: persons 6+ years,generator,GenerateIndicator;711,synced
+indicator_712,,indicator,indicator,2,,,,BDE 47 level: persons 12+ years,generator,GenerateIndicator;712,synced
+indicator_713,,indicator,indicator,2,,,,Lead poisoning monitoring: states,generator,GenerateIndicator;713,synced
+indicator_714,,indicator,indicator,2,,,,Pesticide poisoning monitoring: states,generator,GenerateIndicator;714,synced
+indicator_715,,indicator,indicator,2,,,,Mercury poisoning monitoring: states,generator,GenerateIndicator;715,synced
+indicator_716,,indicator,indicator,2,,,,Arsenic poisoning monitoring: states,generator,GenerateIndicator;716,synced
+indicator_717,,indicator,indicator,2,,,,Cadmium poisoning monitoring: states,generator,GenerateIndicator;717,synced
+indicator_718,,indicator,indicator,2,,,,Acute chemical poisoning monitoring: states,generator,GenerateIndicator;718,synced
+indicator_719,,indicator,indicator,2,,,,Carbon monoxide poisoning monitoring: states,generator,GenerateIndicator;719,synced
+indicator_720,,indicator,indicator,2,,,,Water quality/sanitation/hygiene deaths: global,generator,GenerateIndicator;720,synced
+indicator_721,,indicator,indicator,2,,,,Homes with lead-based paint,generator,GenerateIndicator;721,synced
+indicator_722,,indicator,indicator,2,,,,Homes with lead paint hazards,generator,GenerateIndicator;722,synced
+indicator_723,,indicator,indicator,2,,,,Homes with dust-lead hazards,generator,GenerateIndicator;723,synced
+indicator_724,,indicator,indicator,2,,,,Homes with soil-lead hazards,generator,GenerateIndicator;724,synced
+indicator_725,,indicator,indicator,2,,,,Schools located near highways,generator,GenerateIndicator;725,synced
+indicator_728,,indicator,indicator,2,,,,Health ed. training requirements: elementary schools,generator,GenerateIndicator;728,synced
+indicator_729,,indicator,indicator,2,,,,Health ed. training requirements: middle schools,generator,GenerateIndicator;729,synced
+indicator_730,,indicator,indicator,2,,,,Health ed. training requirements: high schools,generator,GenerateIndicator;730,synced
+indicator_731,,indicator,indicator,2,,,,Health ed. certification requirements: elementary school,generator,GenerateIndicator;731,synced
+indicator_732,,indicator,indicator,2,,,,Health ed. certification requirements: middle school,generator,GenerateIndicator;732,synced
+indicator_733,,indicator,indicator,2,,,,Health ed. certification requirements: high school,generator,GenerateIndicator;733,synced
+indicator_734,,indicator,indicator,2,,,,Health instruction meets time standards: elementary schools,generator,GenerateIndicator;734,synced
+indicator_735,,indicator,indicator,2,,,,Health instruction meets time standards: middle schools,generator,GenerateIndicator;735,synced
+indicator_736,,indicator,indicator,2,,,,Health instruction meets time standards: high schools,generator,GenerateIndicator;736,synced
+indicator_737,,indicator,indicator,2,,,,Health ed. teachers trained in behavior change,generator,GenerateIndicator;737,synced
+indicator_739,,indicator,indicator,2,,,,Positive communication with parents: children 6-17 years,generator,GenerateIndicator;739,synced
+indicator_740,,indicator,indicator,2,,,,Read to by parents: children <5 years,generator,GenerateIndicator;740,synced
+indicator_741,,indicator,indicator,2,,,,Child developmental concerns addressed by doctors: children <5 years,generator,GenerateIndicator;741,synced
+indicator_743,,indicator,indicator,2,,,,Otitis media visits in ambulatory care settings: children,generator,GenerateIndicator;743,synced
+indicator_744,,indicator,indicator,2,,,,Hearing aid use: adults 20-69 years,generator,GenerateIndicator;744,synced
+indicator_745,,indicator,indicator,2,,,,Cochlear implant surgeries: deaf persons,generator,GenerateIndicator;745,synced
+indicator_746,,indicator,indicator,2,,,,Hearing aid use: adults 70+,generator,GenerateIndicator;746,synced
+indicator_747,,indicator,indicator,2,,,,Assistive listening device use: older adults,generator,GenerateIndicator;747,synced
+indicator_748,,indicator,indicator,2,,,,Recent hearing exams: adults 20-69 years,generator,GenerateIndicator;748,synced
+indicator_749,,indicator,indicator,2,,,,Recent hearing exams: older adults,generator,GenerateIndicator;749,synced
+indicator_75,,indicator,indicator,2,,,,Physically or mentally unhealthy days: adults (days),generator,GenerateIndicator;75,synced
+indicator_750,,indicator,indicator,2,,,,Recent hearing exams: teens,generator,GenerateIndicator;750,synced
+indicator_751,,indicator,indicator,2,,,,Health care provider referrals to hearing specialists,generator,GenerateIndicator;751,synced
+indicator_752,,indicator,indicator,2,,,,Use of hearing protection: adults,generator,GenerateIndicator;752,synced
+indicator_753,,indicator,indicator,2,,,,Use of hearing protection: teens,generator,GenerateIndicator;753,synced
+indicator_754,,indicator,indicator,2,,,,"Hearing loss, noise-induced: teens",generator,GenerateIndicator;754,synced
+indicator_755,,indicator,indicator,2,,,,"Hearing loss, noise-induced: adults",generator,GenerateIndicator;755,synced
+indicator_756,,indicator,indicator,2,,,,Neonatal hearing screening,generator,GenerateIndicator;756,synced
+indicator_757,,indicator,indicator,2,,,,Early infant diagnostic hearing evaluation,generator,GenerateIndicator;757,synced
+indicator_758,,indicator,indicator,2,,,,Early intervention services: infants with hearing loss,generator,GenerateIndicator;758,synced
+indicator_759,,indicator,indicator,2,,,,Health care evaluation: adults with tinnitus,generator,GenerateIndicator;759,synced
+indicator_760,,indicator,indicator,2,,,,Specialty health care use: adults with tinnitus,generator,GenerateIndicator;760,synced
+indicator_761,,indicator,indicator,2,,,,Appropriate treatment use: adults with tinnitus,generator,GenerateIndicator;761,synced
+indicator_762,,indicator,indicator,2,,,,Health care evaluation: adults with balance/dizziness problems,generator,GenerateIndicator;762,synced
+indicator_763,,indicator,indicator,2,,,,Specialty health care use: adults with balance/dizziness problems,generator,GenerateIndicator;763,synced
+indicator_765,,indicator,indicator,2,,,,Appropriate treatment use: adults with balance/dizziness problems,generator,GenerateIndicator;765,synced
+indicator_766,,indicator,indicator,2,,,,Condition not improving: adults with balance/dizziness problems,generator,GenerateIndicator;766,synced
+indicator_767,,indicator,indicator,2,,,,Limitation of activity: adults with balance/dizziness problems,generator,GenerateIndicator;767,synced
+indicator_768,,indicator,indicator,2,,,,Sick leave use: adults with balance/dizziness problems,generator,GenerateIndicator;768,synced
+indicator_769,,indicator,indicator,2,,,,Falling: adults with balance/dizziness problems,generator,GenerateIndicator;769,synced
+indicator_770,,indicator,indicator,2,,,,Injuries due to falls: adults with balance/dizziness problems,generator,GenerateIndicator;770,synced
+indicator_779,,indicator,indicator,2,,,,Intended pregnancies,generator,GenerateIndicator;779,synced
+indicator_780,,indicator,indicator,2,,,,Pregnancy despite use of reversible contraceptive method,generator,GenerateIndicator;780,synced
+indicator_781,,indicator,indicator,2,,,,Family planning clinics offering all contraception methods,generator,GenerateIndicator;781,synced
+indicator_782,,indicator,indicator,2,,,,Family planning clinics offering emergency contraception,generator,GenerateIndicator;782,synced
+indicator_784,,indicator,indicator,2,,,,Pregnancies conceived within 18 months of previous birth,generator,GenerateIndicator;784,synced
+indicator_785,,indicator,indicator,2,,,,Contraceptive use at most recent sexual intercourse,generator,GenerateIndicator;785,synced
+indicator_786,,indicator,indicator,2,,,,Reproductive health services receipt: sexually active females,generator,GenerateIndicator;786,synced
+indicator_787,,indicator,indicator,2,,,,Reproductive health services receipt: sexually active males,generator,GenerateIndicator;787,synced
+indicator_788,,indicator,indicator,2,,,,Pregnancies: females 15-17 years,generator,GenerateIndicator;788,synced
+indicator_789,,indicator,indicator,2,,,,Pregnancies: females 18-19 years,generator,GenerateIndicator;789,synced
+indicator_79,,indicator,indicator,2,,,,"Unintentional Injury deaths: No MVA (per 100,000)",generator,GenerateIndicator;79,synced
+indicator_790,,indicator,indicator,2,,,,Never had sexual intercourse: females 15-17 years,generator,GenerateIndicator;790,synced
+indicator_791,,indicator,indicator,2,,,,Never had sexual intercourse: males 15-17 years,generator,GenerateIndicator;791,synced
+indicator_792,,indicator,indicator,2,,,,Never had sexual intercourse: females <16 years,generator,GenerateIndicator;792,synced
+indicator_793,,indicator,indicator,2,,,,Never had sexual intercourse: males <16 years,generator,GenerateIndicator;793,synced
+indicator_794,,indicator,indicator,2,,,,Condom use at first intercourse: females 15-19 years,generator,GenerateIndicator;794,synced
+indicator_795,,indicator,indicator,2,,,,Condom use at first intercourse: males 15-19 years,generator,GenerateIndicator;795,synced
+indicator_796,,indicator,indicator,2,,,,Condom use at last intercourse: females 15-19 years,generator,GenerateIndicator;796,synced
+indicator_797,,indicator,indicator,2,,,,Condom use at last intercourse: males 15-19 years,generator,GenerateIndicator;797,synced
+indicator_798,,indicator,indicator,2,,,,Contraception use at first intercourse: females 15-19 years,generator,GenerateIndicator;798,synced
+indicator_799,,indicator,indicator,2,,,,Contraception use at first intercourse: males 15-19 years,generator,GenerateIndicator;799,synced
+indicator_800,,indicator,indicator,2,,,,Contraception use at last intercourse: females 15-19 years,generator,GenerateIndicator;800,synced
+indicator_801,,indicator,indicator,2,,,,Contraception use at last intercourse: males 15-19 years,generator,GenerateIndicator;801,synced
+indicator_802,,indicator,indicator,2,,,,Abstinence instruction receipt before age 18: females,generator,GenerateIndicator;802,synced
+indicator_803,,indicator,indicator,2,,,,Abstinence instruction receipt before age 18: males,generator,GenerateIndicator;803,synced
+indicator_804,,indicator,indicator,2,,,,Birth control instruction receipt before age 18: females,generator,GenerateIndicator;804,synced
+indicator_805,,indicator,indicator,2,,,,Birth control instruction receipt before age 18: males,generator,GenerateIndicator;805,synced
+indicator_806,,indicator,indicator,2,,,,HIV/AIDS prevention instruction before age 18: females,generator,GenerateIndicator;806,synced
+indicator_807,,indicator,indicator,2,,,,HIV/AIDS prevention instruction before age 18: males,generator,GenerateIndicator;807,synced
+indicator_808,,indicator,indicator,2,,,,STD instruction receipt before age 18: females,generator,GenerateIndicator;808,synced
+indicator_809,,indicator,indicator,2,,,,STD instruction receipt before age 18: males,generator,GenerateIndicator;809,synced
+indicator_810,,indicator,indicator,2,,,,Abstinence discussion with parent before age 18: females,generator,GenerateIndicator;810,synced
+indicator_811,,indicator,indicator,2,,,,Abstinence discussion with parent before age 18: males,generator,GenerateIndicator;811,synced
+indicator_812,,indicator,indicator,2,,,,Birth control discussion with parent before age 18: females,generator,GenerateIndicator;812,synced
+indicator_813,,indicator,indicator,2,,,,Birth control discussion with parent before age 18: males,generator,GenerateIndicator;813,synced
+indicator_814,,indicator,indicator,2,,,,HIV/AIDS prevention discussion with parent before age 18: females,generator,GenerateIndicator;814,synced
+indicator_815,,indicator,indicator,2,,,,HIV/AIDS prevention discussion with parent before age 18: males,generator,GenerateIndicator;815,synced
+indicator_816,,indicator,indicator,2,,,,STD discussion with parent before age 18: females,generator,GenerateIndicator;816,synced
+indicator_817,,indicator,indicator,2,,,,STD discussion with parent before age 18: males,generator,GenerateIndicator;817,synced
+indicator_818,,indicator,indicator,2,,,,Family planning services income eligibility: states,generator,GenerateIndicator;818,synced
+indicator_819,,indicator,indicator,2,,,,Contraceptive services/supplies need and receipt through public sector,generator,GenerateIndicator;819,synced
+indicator_820,,indicator,indicator,2,,,,Allergic reactions to food: adults,generator,GenerateIndicator;820,synced
+indicator_822,,indicator,indicator,2,,,,Campylobacter species infections,generator,GenerateIndicator;822,synced
+indicator_823,,indicator,indicator,2,,,,Escherichia coli infections,generator,GenerateIndicator;823,synced
+indicator_824,,indicator,indicator,2,,,,Listeria monocytogenes infections,generator,GenerateIndicator;824,synced
+indicator_825,,indicator,indicator,2,,,,Salmonella species infections,generator,GenerateIndicator;825,synced
+indicator_826,,indicator,indicator,2,,,,Postdiarrheal hemolytic-uremic syndrome infections,generator,GenerateIndicator;826,synced
+indicator_827,,indicator,indicator,2,,,,Vibrio species infections,generator,GenerateIndicator;827,synced
+indicator_828,,indicator,indicator,2,,,,Yersinia species infections,generator,GenerateIndicator;828,synced
+indicator_829,,indicator,indicator,2,,,,Antimicrobial resistance to ciprofloxacin,generator,GenerateIndicator;829,synced
+indicator_83,,indicator,indicator,2,,,,"Heart disease deaths (per 100,000)",generator,GenerateIndicator;83,synced
+indicator_830,,indicator,indicator,2,,,,Antimicrobial resistance to Ceftriaxone,generator,GenerateIndicator;830,synced
+indicator_831,,indicator,indicator,2,,,,Antimicrobial resistance to Gentamicin,generator,GenerateIndicator;831,synced
+indicator_832,,indicator,indicator,2,,,,Antimicrobial resistance to Ampicillin,generator,GenerateIndicator;832,synced
+indicator_833,,indicator,indicator,2,,,,Antimicrobial resistance to 3+ classes of antimicrobials,generator,GenerateIndicator;833,synced
+indicator_834,,indicator,indicator,2,,,,Antimicrobial resistance to Erythromycin,generator,GenerateIndicator;834,synced
+indicator_835,,indicator,indicator,2,,,,"Clean hands, food safety practice",generator,GenerateIndicator;835,synced
+indicator_836,,indicator,indicator,2,,,,"Separate food, food safety practice",generator,GenerateIndicator;836,synced
+indicator_837,,indicator,indicator,2,,,,"Cook to proper temperature, food safety practice",generator,GenerateIndicator;837,synced
+indicator_838,,indicator,indicator,2,,,,"Refrigerate promptly, food safety practice",generator,GenerateIndicator;838,synced
+indicator_839,,indicator,indicator,2,,,,Outbreak-associated infections associated with beef,generator,GenerateIndicator;839,synced
+indicator_840,,indicator,indicator,2,,,,Outbreak-associated infections: dairy,generator,GenerateIndicator;840,synced
+indicator_841,,indicator,indicator,2,,,,Outbreak-associated infections: fruits/nuts,generator,GenerateIndicator;841,synced
+indicator_842,,indicator,indicator,2,,,,Outbreak-associated infections: vegetables,generator,GenerateIndicator;842,synced
+indicator_843,,indicator,indicator,2,,,,Outbreak-associated infections: chicken,generator,GenerateIndicator;843,synced
+indicator_844,,indicator,indicator,2,,,,Malaria,generator,GenerateIndicator;844,synced
+indicator_845,,indicator,indicator,2,,,,Tuberculosis: foreign born persons,generator,GenerateIndicator;845,synced
+indicator_846,,indicator,indicator,2,,,,Global Disease Detection Regional Centers,generator,GenerateIndicator;846,synced
+indicator_847,,indicator,indicator,2,,,,Global Disease Detection training of public health professionals,generator,GenerateIndicator;847,synced
+indicator_848,,indicator,indicator,2,,,,Global Disease Detection increased testing capacity,generator,GenerateIndicator;848,synced
+indicator_850,,indicator,indicator,2,,,,Genetic counseling: women with family history of breast/ovarian cancer,generator,GenerateIndicator;850,synced
+indicator_851,,indicator,indicator,2,,,,Central line-associated bloodstream infections,generator,GenerateIndicator;851,synced
+indicator_852,,indicator,indicator,2,,,,Methicillin-resistant Staphylococcus aureus infections,generator,GenerateIndicator;852,synced
+indicator_853,,indicator,indicator,2,,,,Health care provider listening skills,generator,GenerateIndicator;853,synced
+indicator_854,,indicator,indicator,2,,,,Health care provider explaining things,generator,GenerateIndicator;854,synced
+indicator_855,,indicator,indicator,2,,,,Health care provider showing respect,generator,GenerateIndicator;855,synced
+indicator_856,,indicator,indicator,2,,,,Health care provider spending enough time with patient,generator,GenerateIndicator;856,synced
+indicator_857,,indicator,indicator,2,,,,Internet access,generator,GenerateIndicator;857,synced
+indicator_858,,indicator,indicator,2,,,,Broadband access to internet,generator,GenerateIndicator;858,synced
+indicator_859,,indicator,indicator,2,,,,Use of mobile devices for internet access,generator,GenerateIndicator;859,synced
+indicator_86,,indicator,indicator,2,,,,"Colorectal cancer deaths (per 100,000)",generator,GenerateIndicator;86,synced
+indicator_860,,indicator,indicator,2,,,,Health care provider uses understandable instructions,generator,GenerateIndicator;860,synced
+indicator_861,,indicator,indicator,2,,,,Health care provider asks how instructions will be followed,generator,GenerateIndicator;861,synced
+indicator_862,,indicator,indicator,2,,,,Health care provider offers help in filling out forms,generator,GenerateIndicator;862,synced
+indicator_863,,indicator,indicator,2,,,,Health websites meeting 3+ criteria to assess reliability,generator,GenerateIndicator;863,synced
+indicator_864,,indicator,indicator,2,,,,Health websites following established usability principles,generator,GenerateIndicator;864,synced
+indicator_865,,indicator,indicator,2,,,,Online health information access,generator,GenerateIndicator;865,synced
+indicator_866,,indicator,indicator,2,,,,Involvement in health care decision making,generator,GenerateIndicator;866,synced
+indicator_867,,indicator,indicator,2,,,,Internet use to track personal health information,generator,GenerateIndicator;867,synced
+indicator_868,,indicator,indicator,2,,,,Internet use to communicate with providers,generator,GenerateIndicator;868,synced
+indicator_870,,indicator,indicator,2,,,,Social support for health concerns,generator,GenerateIndicator;870,synced
+indicator_872,,indicator,indicator,2,,,,Electronic health records in medical practices,generator,GenerateIndicator;872,synced
+indicator_874,,indicator,indicator,2,,,,Social marketing use in health programs: state health departments,generator,GenerateIndicator;874,synced
+indicator_877,,indicator,indicator,2,,,,Coronary heart disease deaths,generator,GenerateIndicator;877,synced
+indicator_878,,indicator,indicator,2,,,,Fibrinolytic therapy timeliness: heart attack patients,generator,GenerateIndicator;878,synced
+indicator_879,,indicator,indicator,2,,,,Percutaneous intervention timeliness: heart attack patients,generator,GenerateIndicator;879,synced
+indicator_88,,indicator,indicator,2,,,,"Lung, trachea, and bronchus cancer deaths (per 100,000)",generator,GenerateIndicator;88,synced
+indicator_881,,indicator,indicator,2,,,,Stroke deaths,generator,GenerateIndicator;881,synced
+indicator_882,,indicator,indicator,2,,,,Blood pressure control: adults with hypertension (percent),generator,GenerateIndicator;882,synced
+indicator_883,,indicator,indicator,2,,,,Blood pressure screening: adults,generator,GenerateIndicator;883,synced
+indicator_884,,indicator,indicator,2,,,,Cholesterol levels: adults,generator,GenerateIndicator;884,synced
+indicator_885,,indicator,indicator,2,,,,High serum cholesterol: adults,generator,GenerateIndicator;885,synced
+indicator_886,,indicator,indicator,2,,,,Cholesterol screening: adults,generator,GenerateIndicator;886,synced
+indicator_887,,indicator,indicator,2,,,,Stroke awareness: symptoms and importance of 911,generator,GenerateIndicator;887,synced
+indicator_888,,indicator,indicator,2,,,,Stroke awareness: symptoms,generator,GenerateIndicator;888,synced
+indicator_889,,indicator,indicator,2,,,,Stroke awareness: importance of calling 9-1-1,generator,GenerateIndicator;889,synced
+indicator_891,,indicator,indicator,2,,,,Heart failure hospitalizations: Medicare beneficiaries 65-74 years,generator,GenerateIndicator;891,synced
+indicator_892,,indicator,indicator,2,,,,Heart failure hospitalizations: Medicare beneficiaries 75-84 years,generator,GenerateIndicator;892,synced
+indicator_893,,indicator,indicator,2,,,,Heart failure hospitalizations: Medicare beneficiaries 85+ years,generator,GenerateIndicator;893,synced
+indicator_894,,indicator,indicator,2,,,,Heart attack awareness: symptoms and importance of 911,generator,GenerateIndicator;894,synced
+indicator_895,,indicator,indicator,2,,,,Heart attack awareness: symptoms,generator,GenerateIndicator;895,synced
+indicator_896,,indicator,indicator,2,,,,Heart attack awareness: importance of calling 911,generator,GenerateIndicator;896,synced
+indicator_897,,indicator,indicator,2,,,,Hypertension: adults,generator,GenerateIndicator;897,synced
+indicator_898,,indicator,indicator,2,,,,Hypertension: children 8-17 years,generator,GenerateIndicator;898,synced
+indicator_9,,indicator,indicator,2,,,,Mentally unhealthy days: adults (per person),generator,GenerateIndicator;9,synced
+indicator_912,,indicator,indicator,2,,,,Hypertension medication compliance (percent),generator,GenerateIndicator;912,synced
+indicator_933,,indicator,indicator,2,,,,HIV/AIDS education: substance abuse treatment,generator,GenerateIndicator;933,synced
+indicator_934,,indicator,indicator,2,,,,HIV testing: TB patients,generator,GenerateIndicator;934,synced
+indicator_935,,indicator,indicator,2,,,,HIV deaths,generator,GenerateIndicator;935,synced
+indicator_936,,indicator,indicator,2,,,,Late HIV diagnosis: persons 13+ years,generator,GenerateIndicator;936,synced
+indicator_938,,indicator,indicator,2,,,,"HIV, perinatally acquired",generator,GenerateIndicator;938,synced
+indicator_942,,indicator,indicator,2,,,,HIV infection status awareness,generator,GenerateIndicator;942,synced
+indicator_945,,indicator,indicator,2,,,,HIV testing: men who have sex with men,generator,GenerateIndicator;945,synced
+indicator_946,,indicator,indicator,2,,,,HIV testing: pregnant women,generator,GenerateIndicator;946,synced
+indicator_959,,indicator,indicator,2,,,,HIV transmission rate: persons living with HIV,generator,GenerateIndicator;959,synced
+indicator_960,,indicator,indicator,2,,,,"HIV infections, new: persons 13+ years",generator,GenerateIndicator;960,synced
+indicator_961,,indicator,indicator,2,,,,Unprotected sex: men who have sex with men,generator,GenerateIndicator;961,synced
+indicator_962,,indicator,indicator,2,,,,Chronic hepatitis B: children 1-24 months,generator,GenerateIndicator;962,synced
+indicator_963,,indicator,indicator,2,,,,Invasive pneumococcal infections: children <5 years,generator,GenerateIndicator;963,synced
+indicator_964,,indicator,indicator,2,,,,Invasive pneumococcal infections: older adults,generator,GenerateIndicator;964,synced
+indicator_965,,indicator,indicator,2,,,,Antibiotic-resistant pneumococcal infections: children <5 years,generator,GenerateIndicator;965,synced
+indicator_966,,indicator,indicator,2,,,,Antibiotic-resistant pneumococcal infections: older adults,generator,GenerateIndicator;966,synced
+indicator_967,,indicator,indicator,2,,,,Hepatitis A,generator,GenerateIndicator;967,synced
+indicator_968,,indicator,indicator,2,,,,Meningococcal disease,generator,GenerateIndicator;968,synced
+indicator_969,,indicator,indicator,2,,,,Tuberculosis,generator,GenerateIndicator;969,synced
+indicator_97,,indicator,indicator,2,,,,Births: women under 18 years (percent),generator,GenerateIndicator;97,synced
+indicator_970,,indicator,indicator,2,,,,TB curative therapy completion,generator,GenerateIndicator;970,synced
+indicator_971,,indicator,indicator,2,,,,TB treatment: persons with latent TB,generator,GenerateIndicator;971,synced
+indicator_972,,indicator,indicator,2,,,,TB test confirmation timeliness,generator,GenerateIndicator;972,synced
+indicator_973,,indicator,indicator,2,,,,Group B streptococcal disease: newborns,generator,GenerateIndicator;973,synced
+indicator_976,,indicator,indicator,2,,,,Vaccination coverage assessment: public health providers,generator,GenerateIndicator;976,synced
+indicator_977,,indicator,indicator,2,,,,Vaccination coverage assessment: private health providers,generator,GenerateIndicator;977,synced
+indicator_978,,indicator,indicator,2,,,,Congenital Rubella Syndrome,generator,GenerateIndicator;978,synced
+indicator_979,,indicator,indicator,2,,,,Hib invasive disease: children <5 years,generator,GenerateIndicator;979,synced
+indicator_98,,indicator,indicator,2,,,,Births: women 40-54 years (percent),generator,GenerateIndicator;98,synced
+indicator_980,,indicator,indicator,2,,,,Hepatitis B: children,generator,GenerateIndicator;980,synced
+indicator_981,,indicator,indicator,2,,,,"Measles, U.S.-acquired",generator,GenerateIndicator;981,synced
+indicator_982,,indicator,indicator,2,,,,"Mumps, U.S.-acquired",generator,GenerateIndicator;982,synced
+indicator_983,,indicator,indicator,2,,,,Pertussis: infants,generator,GenerateIndicator;983,synced
+indicator_984,,indicator,indicator,2,,,,Pertussis: teens,generator,GenerateIndicator;984,synced
+indicator_985,,indicator,indicator,2,,,,"Polio, U.S.-acquired",generator,GenerateIndicator;985,synced
+indicator_986,,indicator,indicator,2,,,,"Rubella, U.S.-acquired",generator,GenerateIndicator;986,synced
+indicator_987,,indicator,indicator,2,,,,Varicella: children,generator,GenerateIndicator;987,synced
+indicator_988,,indicator,indicator,2,,,,Hepatitis B: adults,generator,GenerateIndicator;988,synced
+indicator_989,,indicator,indicator,2,,,,Hepatitis B: injection drug users,generator,GenerateIndicator;989,synced
+indicator_99,,indicator,indicator,2,,,,Births: unmarried women 18-54 years (percent),generator,GenerateIndicator;99,synced
+indicator_991,,indicator,indicator,2,,,,Hepatitis B: men who have sex with men,generator,GenerateIndicator;991,synced
+indicator_992,,indicator,indicator,2,,,,Hepatitis C,generator,GenerateIndicator;992,synced
+indicator_993,,indicator,indicator,2,,,,DTaP vaccination: children 19-35 months,generator,GenerateIndicator;993,synced
+indicator_994,,indicator,indicator,2,,,,Hib vaccination: children 19-35 months,generator,GenerateIndicator;994,synced
+indicator_995,,indicator,indicator,2,,,,HepB vaccination: children 19-35 months,generator,GenerateIndicator;995,synced
+indicator_996,,indicator,indicator,2,,,,MMR vaccination: children 19-35 months,generator,GenerateIndicator;996,synced
+indicator_997,,indicator,indicator,2,,,,Polio vaccination: children 19-35 months,generator,GenerateIndicator;997,synced
+indicator_998,,indicator,indicator,2,,,,Varicella vaccination: children 19-35 months,generator,GenerateIndicator;998,synced
+indicator_999,,indicator,indicator,2,,,,PCV vaccination: children 19-35 months,generator,GenerateIndicator;999,synced
+locales,Locales ,,,1,1,3662,0,,generator,GenerateLocales,built
+timeframes,Timeframes,,,1,1,86,0,,generator,GenerateTimeframes,built

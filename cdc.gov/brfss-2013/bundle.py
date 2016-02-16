@@ -4,6 +4,15 @@ import ambry.bundle
 
 class Bundle(ambry.bundle.Bundle):
     
+    
+    def illegal_to_none(self, v):
+        """ Converts '4 7' value from hlthcvrg field, on row 127231, to None. """
+
+        try:
+            return inv(v)
+        except:
+            return None
+
             
     def meta_source_schema(self):
         """Read the spec from the HTML file, and bergest it with the descriptions

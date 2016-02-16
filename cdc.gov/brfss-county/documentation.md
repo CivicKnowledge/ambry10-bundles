@@ -1,8 +1,4 @@
 
-# {about_title}
-
-{about_summary}
-
 ## Data Conversion
 
 This conversion of the BRFSS County data converts the PERIOD '.' character in the ASCII file to a NULL. 
