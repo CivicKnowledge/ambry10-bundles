@@ -1,17 +1,20 @@
 about:
     access: restricted
     footnote: nll
-    grain: null
-    groups: null
+    grain: ''
+    groups:
+    - null
     license: ckdbl
-    processed: null
+    processed: ''
+    remote: ''
     rights: public
-    source: null
-    space: null
-    subject: null
-    summary: The California High School Exit Examination was a graduation requirement from 2006 to 2015. 
+    source: ''
+    space: ''
+    subject: ''
+    summary: The California High School Exit Examination was a graduation requirement
+        from 2006 to 2015.
     tags: []
-    time: null
+    time: ''
     title: California High School Exit Examination (CAHSEE)
 contacts:
     wrangler:
@@ -19,13 +22,7 @@ contacts:
         name: Eric Busboom
         org: Civic Knowledge
         url: http://civicknowledge.com
-dependencies: {}
 external_documentation:
-    overview:
-        description: Overview of the CAHSEE program.
-        source: null
-        title: California High School Exit Examination (CAHSEE)
-        url: http://www.cde.ca.gov/ta/tg/hs/
     dataset:
         description: Web page the links to other CAHSEE pages.
         source: null
@@ -36,17 +33,24 @@ external_documentation:
         source: null
         title: Download Page
         url: http://cahsee.cde.ca.gov/datafiles.asp
+    overview:
+        description: Overview of the CAHSEE program.
+        source: null
+        title: California High School Exit Examination (CAHSEE)
+        url: http://www.cde.ca.gov/ta/tg/hs/
 identity:
     btime: 2000e
     dataset: cahsee
     id: d059
-    revision: 1
+    revision: 2
     source: cde.ca.gov
-    version: 0.0.1
+    version: 0.0.2
 names:
-    fqname: cde.ca.gov-cahsee-2000e-0.0.1~d059001
+    fqname: cde.ca.gov-cahsee-2000e-0.0.2~d059002
     name: cde.ca.gov-cahsee-2000e
-    vid: d059001
-    vname: cde.ca.gov-cahsee-2000e-0.0.1
-requirements: {}
-versions: {}
+    vid: d059002
+    vname: cde.ca.gov-cahsee-2000e-0.0.2
+pipelines:
+    build:
+        select_partition:
+            - SelectPartitionFromSource

@@ -63,6 +63,7 @@ class WriteIndicatorPartition(WriteToPartition):
         p.description = ind['fulldescription']
         p.notes = (ind['trendissues'] or '' ) + '\n' + ( ind['caveatsandlimitations'] or '')
 
+        self.bundle.commit()
 
         return p
 
@@ -73,6 +74,9 @@ class Bundle(ambry.bundle.Bundle):
     def edit_pipeline(self, pl):
         from ambry.etl import SelectPartition
         from ambry.identity import PartialPartitionName
+        
+        if str(pl.source.source.stage) == '1':
+            return pl
         
 
         def select_f(pipe, bundle, source, row):
@@ -88,6 +92,7 @@ class Bundle(ambry.bundle.Bundle):
                                         grain=grain,
                                         variant=indicator_desc_id,
                                         segment=source.sequence_id)
+          
            
             return pname
         

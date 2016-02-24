@@ -1,20 +1,22 @@
 about:
-    access: restricted
+    access: public
     footnote: nll
     grain: ''
     groups:
     - null
     license: ckdbl
     processed: ''
-    remote: ''
+    remote: public
     rights: public
     source: ''
     space: ''
-    subject: ''
-    summary: Dataset Summary
+    subject: General health statistics
+    summary: The Health Indicator Warehouse is a comprehensive collection of disaggregated health indicators 
+      from a wide variety of Federal health agencies. The indicators consistently formated and available in 
+      national, state, county and hospital aggregations.  This dataset is a copy of the entire indicator set. 
     tags: []
     time: ''
-    title: Dataset Title
+    title: Health Indicator Warehouse
 contacts:
     wrangler:
         email: eric@civicknowledge.com
@@ -26,12 +28,12 @@ external_documentation:
         description: Web page the links to the dataset description
         source: null
         title: Dataset Page
-        url: http://example.com
+        url: http://www.healthindicators.gov/
     download:
-        description: Web page that links to the source files.
+        description: The technical website for the API used to download the data. 
         source: null
-        title: Download Page
-        url: http://example.com
+        title: Developers API Page
+        url: http://developers.healthindicators.gov/
 identity:
     dataset: indicators
     id: d05g
