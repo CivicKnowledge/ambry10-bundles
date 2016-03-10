@@ -21,8 +21,8 @@ class Bundle(ambry.bundle.Bundle):
     
     def init(self):
         
-        
-        self.recode_map = { row.hci_race_eth_code:row.text_code for row in self.dep('race_eth_codes')}
+        pass
+        #self.recode_map = { row.hci_race_eth_code:row.text_code for row in self.dep('race_eth_codes')}
 
     def edit_pipeline(self, pl):
         """Alter the pipeline to add the final routine and the custom partition selector"""
@@ -177,6 +177,33 @@ class Bundle(ambry.bundle.Bundle):
                      for k, v in caster.accumulator.items())
 
         self.commit()
+        
+    def meta_update_valuetypes(self):
+        
+        
+        ob = self.library.bundle('cdph.ca.gov-hci-hdp')
+        
+        maybes = set()
+        
+        for t in ob.tables:
+            for c in t.columns:
+                if c.valuetype.endswith('?'):
+                    maybes.add((t.name, c.name))
+                    
+        for t in self.tables:
+            for c in t.columns:
+                if (t.name, c.name) in maybes and not c.valuetype.endswith('?'):
+                    c.valuetype += '?'
+                    
+        self.commit()
+        self.build_source_files.schema.objects_to_record()
+        self.commit()
+        
+                    
+         
+        
+        
+        
         
         
         

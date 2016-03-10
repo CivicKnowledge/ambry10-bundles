@@ -323,13 +323,13 @@ external_documentation:
 identity:
     dataset: hci
     id: d04p
-    revision: 3
+    revision: 4
     source: cdph.ca.gov
-    version: 0.0.3
+    version: 0.0.4
 names:
-    fqname: cdph.ca.gov-hci-0.0.3~d04p003
+    fqname: cdph.ca.gov-hci-0.0.4~d04p004
     name: cdph.ca.gov-hci
-    vid: d04p003
-    vname: cdph.ca.gov-hci-0.0.3
+    vid: d04p004
+    vname: cdph.ca.gov-hci-0.0.4
 requirements: {}
 versions: {}
