@@ -42,7 +42,7 @@ class Bundle(ambry.bundle.Bundle):
         
     def na_is_none(self, v):
         
-        if v == 'NA':
+        if v == 'NA' or v == '':
             return None
         else:
             return v
@@ -67,20 +67,23 @@ class Bundle(ambry.bundle.Bundle):
         
         from dateutil import parser
         from xlrd.xldate import  xldate_as_datetime
+        import ambry.valuetype
           
         try:
             v =  parser.parse("{}-{}-{}".format(v[0:2],v[2:5],v[5:7])).date()
         except:
             v = xldate_as_datetime(v, 0).date()
             
-        return v  
+        return v
             
     def extract_geoid(self, v, row):
         
         from geoid.census import Place, County, State, Cosub, Tract, Zcta
         from geoid.civick import GVid
+        import ambry.valuetype
         
         CA_STATE = 6
+    
         
         if row.geotype == 'PL':
             r = Place(CA_STATE, int(row.geotypevalue)).convert(GVid)
@@ -92,6 +95,7 @@ class Bundle(ambry.bundle.Bundle):
             r = State(CA_STATE).convert(GVid)
         elif row.geotype == 'CD':
             r = Cosub.parse(row.geotypevalue).convert(GVid)
+
         elif row.geotype == 'CT':
             try:
                 r = Tract.parse(row.geotypevalue).convert(GVid)
@@ -111,13 +115,16 @@ class Bundle(ambry.bundle.Bundle):
             self.error("Unknown geotype {} in row {}".format(row.geotype, row))
             r = None
     
-        return r
+        if r is None:
+            return ambry.valuetype.FailedValue(None)
+    
+        return ambry.valuetype.Geoid(r)
         
     def extract_recode(self, row):
         """Extract and convert the race / ethnicity codes """
         
         try:
-            return self.recode_map.get(row.race_eth_code, None)
+            return None #self.recode_map.get(row.race_eth_code, None)
         except KeyError:
             return None 
         
@@ -178,23 +185,60 @@ class Bundle(ambry.bundle.Bundle):
 
         self.commit()
         
-    def meta_update_valuetypes(self):
+    def meta_update_schema(self):
         
         
-        ob = self.library.bundle('cdph.ca.gov-hci-hdp')
-        
-        maybes = set()
-        
-        for t in ob.tables:
-            for c in t.columns:
-                if c.valuetype.endswith('?'):
-                    maybes.add((t.name, c.name))
-                    
+        def move(col_or_name, in_cols, out_cols):
+
+            print '   ', col_or_name
+
+
+            if isinstance(col_or_name, (str, unicode)):
+                col = [c for c in in_cols if c.name == col_or_name][0]
+            else:
+                col = col_or_name
+                
+            in_cols.remove(col),
+            out_cols.append(col)
+            col.sequence_id = len(out_cols)+1000
+            col.update_number(col)
+         
+            
         for t in self.tables:
-            for c in t.columns:
-                if (t.name, c.name) in maybes and not c.valuetype.endswith('?'):
-                    c.valuetype += '?'
+            
+            print '---- ', t.name
+            
+            in_cols = list(t.columns)
+            reordered_columns = []
+            
+            move('id', in_cols, reordered_columns)
+            
+            for c in t.primary_dimensions:
+                move(c, in_cols, reordered_columns)
+                
+                if c.label:
+                    move(c.label, in_cols, reordered_columns)
                     
+                for child in c.children:
+                    move(child, in_cols, reordered_columns)
+                    
+            for c in t.primary_measures:
+               move(c, in_cols, reordered_columns)
+               
+               if c.label:
+                   move(c.label, in_cols, reordered_columns)
+                   
+               for child in c.children:
+                   move(child, in_cols, reordered_columns)
+
+            for c in reordered_columns:
+                print c.sequence_id, c.vid, c.name, c.valuetype
+                
+           
+            self.commit()
+          
+    
+                   
         self.commit()
         self.build_source_files.schema.objects_to_record()
         self.commit()

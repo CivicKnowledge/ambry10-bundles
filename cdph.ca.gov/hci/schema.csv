@@ -1,716 +1,748 @@
-table,sequence_id,column,datatype,valuetype,transform,description
-,,,,,,
-air_quality,1,id,int,int,extract_desc,HCI Indicator 776.0: Average Ambient PM2.5 concentration (microgram/m3)
-air_quality,2,reportyear,str,str,,Year or years that indicator was reported
-air_quality,3,race_eth_code,int,int,,Race / ethnicity code
-air_quality,4,race_eth_name,str,str,,Race / ethnicity name
-air_quality,5,geotype,str,str,,Code for type of geographic area
-air_quality,6,geotypevalue,int,int,,Census geoid code
-air_quality,7,geoname,str,str,,Census name of geographic area
-air_quality,8,county_name,str,str,,County name
-air_quality,9,county_fips,int,int,,County FIPS code
-air_quality,10,region_name,str,str,,Name of region
-air_quality,11,region_code,int,int,,Numeric code of region
-air_quality,12,numerator,str,str,,
-air_quality,13,poppt,float,float?,,
-air_quality,14,pm25_concentration,float,float?,,
-air_quality,15,ll_95ci,float,float?,^na_is_none,Lower bound of 95% confidence interval
-air_quality,16,ul_95ci,float,float?,^na_is_none,Upper bound of 95% confidence interval
-air_quality,17,se,float,float?,^na_is_none,Standard error
-air_quality,18,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-air_quality,19,pm25_decile,int,int?,,
-air_quality,20,pm25ratio_ca,float,float?,,
-air_quality,21,version,date,date,^version_date,Release version date code
-air_quality,22,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-air_quality,23,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-traffic_fatalities,1,id,int,int,extract_desc,HCI Indicator 753.0: Annual number of fatal and severe road traffic injuries per population and per miles traveled by transport mode
-traffic_fatalities,2,reportyear,str,str,,Year or years that indicator was reported
-traffic_fatalities,3,geotype,str,str,,Code for type of geographic area
-traffic_fatalities,4,geotypevalue,int,int,,Census geoid code
-traffic_fatalities,5,geoname,str,str,,Census name of geographic area
-traffic_fatalities,6,county_name,str,str,,County name
-traffic_fatalities,7,county_fips,int,int,,County FIPS code
-traffic_fatalities,8,region_name,str,str,,Name of region
-traffic_fatalities,9,region_code,int,int,,Numeric code of region
-traffic_fatalities,10,mode,str,str,,
-traffic_fatalities,11,severity,str,str,,
-traffic_fatalities,12,injuries,float,float?,,
-traffic_fatalities,13,totalpop,float,float?,,
-traffic_fatalities,14,poprate,float,float?,,
-traffic_fatalities,15,ll95ci_poprate,float,float?,,Lower bound of 95% confidence interval
-traffic_fatalities,16,ul95ci_poprate,float,float?,,Upper bound of 95% confidence interval
-traffic_fatalities,17,poprate_se,float,float?,,
-traffic_fatalities,18,poprate_rse,float,float?,,
-traffic_fatalities,19,ca_decile_pop,int,int?,^na_is_none,Statewide decile ranking
-traffic_fatalities,20,ca_rr_poprate,float,float?,,Ratio of indicator to state average
-traffic_fatalities,21,avmttotal,float,float?,,
-traffic_fatalities,22,avmtrate,float,float?,,
-traffic_fatalities,23,ll95ci_avmtrate,float,float?,,Lower bound of 95% confidence interval
-traffic_fatalities,24,ul95ci_avmtrate,float,float?,,Upper bound of 95% confidence interval
-traffic_fatalities,25,avmtrate_se,float,float?,,
-traffic_fatalities,26,avmtrate_rse,float,float?,,
-traffic_fatalities,27,ca_decile_avmt,int,int?,^na_is_none,Statewide decile ranking
-traffic_fatalities,28,ca_rr_avmtrate,float,float?,,Ratio of indicator to state average
-traffic_fatalities,29,groupquarters,float,float?,,
-traffic_fatalities,30,version,date,date,^excel_dt_1904|date,Release version date code
-traffic_fatalities,31,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-,,,,,,
-neighborhood_change,1,id,int,int,extract_desc,HCI Indicator 772.0: Neighborhood change: 10-year change in number of households by income and race/ethnicity
-neighborhood_change,2,reportyear,str,str,,Year or years that indicator was reported
-neighborhood_change,3,race_eth_code,int,int,,Race / ethnicity code
-neighborhood_change,4,race_eth_name,str,str,,Race / ethnicity name
-neighborhood_change,5,geotype,str,str,,Code for type of geographic area
-neighborhood_change,6,geotypevalue,int,int,,Census geoid code
-neighborhood_change,7,geoname,str,str,,Census name of geographic area
-neighborhood_change,8,county_name,str,str,,County name
-neighborhood_change,9,county_fips,int,int,,County FIPS code
-neighborhood_change,10,region_name,str,str,,Name of region
-neighborhood_change,11,region_code,int,int,,Numeric code of region
-neighborhood_change,12,strata_name_code,int,int,,Strata name code
-neighborhood_change,13,strata_name,str,str,,Strata name
-neighborhood_change,14,strata_level_name_code,int,int,,Strata level name code
-neighborhood_change,15,strata_level_name,str,str,,Strata level name
-neighborhood_change,16,numberhh00_10dol,int,int?,,
-neighborhood_change,17,numberhh10_10dol,int,int?,,
-neighborhood_change,18,difference,int,int?,,
-neighborhood_change,19,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-neighborhood_change,20,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-neighborhood_change,21,se,float,float?,,Standard error
-neighborhood_change,22,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-neighborhood_change,23,place_decile,str,str,,
-neighborhood_change,24,ca_rr,float,float?,^na_is_none,Ratio of indicator to state average
-neighborhood_change,25,version,date,date,^excel_dt_1904|date,Release version date code
-neighborhood_change,26,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-neighborhood_change,27,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-healthy_food,1,id,int,int,extract_desc,HCI Indicator 75.0: Modified retail food environment index
-healthy_food,2,reportyear,int,int,,Year or years that indicator was reported
-healthy_food,3,race_eth_name,str,str,,Race / ethnicity name
-healthy_food,4,race_eth_code,int,int,,Race / ethnicity code
-healthy_food,5,geotype,str,str,,Code for type of geographic area
-healthy_food,6,geotypevalue,int,int,,Census geoid code
-healthy_food,7,geoname,str,str,,Census name of geographic area
-healthy_food,8,county_name,str,str,,County name
-healthy_food,9,county_fips,int,int,,County FIPS code
-healthy_food,10,region_name,str,str,,Name of region
-healthy_food,11,region_code,int,int,,Numeric code of region
-healthy_food,12,mrfei,float,float?,,
-healthy_food,13,ll95ci,float,float?,^na_is_none,Lower bound of 95% confidence interval
-healthy_food,14,ul95ci,float,float?,^na_is_none,Upper bound of 95% confidence interval
-healthy_food,15,se,float,float?,^na_is_none,Standard error
-healthy_food,16,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-healthy_food,17,ca_decile,int,int?,,Statewide decile ranking
-healthy_food,18,ca_rr,float,float?,,Ratio of indicator to state average
-healthy_food,19,pop00,int,int,,
-healthy_food,20,version,date,date,^excel_dt_1904|date,Release version date code
-healthy_food,21,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-healthy_food,22,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-abuse_neglect,1,id,int,int,extract_desc,HCI Indicator 741.0: Percent of children (under 18) reported with neglect or physical or sexual abuse
-abuse_neglect,2,reportyear,int,int,,Year or years that indicator was reported
-abuse_neglect,3,race_eth_code,int,int,,Race / ethnicity code
-abuse_neglect,4,race_eth_name,str,str,,Race / ethnicity name
-abuse_neglect,5,geotype,str,str,,Code for type of geographic area
-abuse_neglect,6,geotypevalue,int,int,,Census geoid code
-abuse_neglect,7,geoname,str,str,,Census name of geographic area
-abuse_neglect,8,county_fips,int,int,,County FIPS code
-abuse_neglect,9,county_name,str,str,,County name
-abuse_neglect,10,region_code,int,int,,Numeric code of region
-abuse_neglect,11,region_name,str,str,,Name of region
-abuse_neglect,12,strata_name_code,int,int,,Strata name code
-abuse_neglect,13,strata_name,str,str,,Strata name
-abuse_neglect,14,strata_level_name_code,int,int,,Strata level name code
-abuse_neglect,15,strata_level_name,str,str,,Strata level name
-abuse_neglect,16,allegations_children,int,int?,,Number of allegations of abuse
-abuse_neglect,17,total_children,int,int?,,Total child population
-abuse_neglect,18,percent,float,float?,,Ratio of number of allegations to total child population.
-abuse_neglect,19,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-abuse_neglect,20,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-abuse_neglect,21,se,float,float?,,Standard error
-abuse_neglect,22,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-abuse_neglect,23,ca_decile,int,int?,,Statewide decile ranking
-abuse_neglect,24,ca_rr,float,float?,,Ratio of indicator to state average
-abuse_neglect,25,version,date,date,^excel_dt_1904|date,Release version date code
-abuse_neglect,26,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-abuse_neglect,27,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-alcohol_outlets,1,id,int,int,extract_desc,HCI Indicator 774.0: Percent of Population within 1/4 Mile of Alcohol Outlets by Type of Establishment Sales
-alcohol_outlets,2,reportyear,int,int,,Year or years that indicator was reported
-alcohol_outlets,3,race_eth_code,int,int,,Race / ethnicity code
-alcohol_outlets,4,race_eth_name,str,str,,Race / ethnicity name
-alcohol_outlets,5,geotype,str,str,,Code for type of geographic area
-alcohol_outlets,6,geotypevalue,int,int,,Census geoid code
-alcohol_outlets,7,geoname,str,str,,Census name of geographic area
-alcohol_outlets,8,county_fips,int,int,,County FIPS code
-alcohol_outlets,9,county_name,str,str,,County name
-alcohol_outlets,10,region_code,int,int,,Numeric code of region
-alcohol_outlets,11,region_name,str,str,,Name of region
-alcohol_outlets,12,license_type,str,str,,
-alcohol_outlets,13,numerator,int,int,,
-alcohol_outlets,14,denominator,int,int,,
-alcohol_outlets,15,percent,float,float?,,
-alcohol_outlets,16,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-alcohol_outlets,17,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-alcohol_outlets,18,se,float,float?,,Standard error
-alcohol_outlets,19,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-alcohol_outlets,20,ca_decile,int,int?,,Statewide decile ranking
-alcohol_outlets,21,ca_rr,float,float?,,Ratio of indicator to state average
-alcohol_outlets,22,version,date,date,^excel_dt_1904|date,Release version date code
-alcohol_outlets,23,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-alcohol_outlets,24,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-high_school_ed,1,id,int,int,extract_desc,HCI Indicator 369.0: High School or Greater Educational Attainment in the Population Aged 25 Years and Older
-high_school_ed,2,reportyear,str,str,,Year or years that indicator was reported
-high_school_ed,3,race_eth_code,int,int,,Race / ethnicity code
-high_school_ed,4,race_eth_name,str,str,,Race / ethnicity name
-high_school_ed,5,geotype,str,str,,Code for type of geographic area
-high_school_ed,6,geotypevalue,int,int,,Census geoid code
-high_school_ed,7,geoname,str,str,,Census name of geographic area
-high_school_ed,8,county_name,str,str,,County name
-high_school_ed,9,county_fips,int,int,,County FIPS code
-high_school_ed,10,region_name,str,str,,Name of region
-high_school_ed,11,region_code,int,int,,Numeric code of region
-high_school_ed,12,pop25pl_hs,float,float?,,Population over 25 with a high school education
-high_school_ed,13,pop25pl,int,int?,,Population over 25
-high_school_ed,14,p_hs_edatt,float,float?,,Percentage of populatino over 25 with a high school education.
-high_school_ed,15,se,float,float?,,Standard error
-high_school_ed,16,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-high_school_ed,17,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-high_school_ed,18,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-high_school_ed,19,ca_decile,int,int?,,Statewide decile ranking
-high_school_ed,20,ca_rr,float,float?,,Ratio of indicator to state average
-high_school_ed,21,version,date,date,^excel_dt_1904|date,Release version date code
-high_school_ed,22,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-high_school_ed,23,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-household_crowding,1,id,int,int,extract_desc,HCI Indicator 137.0: Percent of household overcrowding (> 1.0 PPR)  and severe overcrowding (> 1.5 PPR)
-household_crowding,2,reportyear,str,str,,Year or years that indicator was reported
-household_crowding,3,race_eth_code,int,int,,Race / ethnicity code
-household_crowding,4,race_eth_name,str,str,,Race / ethnicity name
-household_crowding,5,income_level,str,str,,
-household_crowding,6,tenure,str,str,,
-household_crowding,7,crowding_cat,str,str,,
-household_crowding,8,geotype,str,str,,Code for type of geographic area
-household_crowding,9,geotypevalue,int,int,,Census geoid code
-household_crowding,10,geoname,str,str,,Census name of geographic area
-household_crowding,11,county_name,str,str,,County name
-household_crowding,12,county_fips,int,int,,County FIPS code
-household_crowding,13,region_name,str,str,,Name of region
-household_crowding,14,region_code,int,int,,Numeric code of region
-household_crowding,15,total_hshlds,int,int,,
-household_crowding,16,crowded_hshlds,int,int,,
-household_crowding,17,percent,float,float?,,
-household_crowding,18,ll95ci,float,float?,,Lower bound of 95% confidence interval
-household_crowding,19,ul95ci,float,float?,,Upper bound of 95% confidence interval
-household_crowding,20,se,float,float?,,Standard error
-household_crowding,21,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-household_crowding,22,ca_decile,int,int?,,Statewide decile ranking
-household_crowding,23,ca_rr,float,float?,,Ratio of indicator to state average
-household_crowding,24,version,date,date,^excel_dt_1904|date,Release version date code
-household_crowding,25,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-household_crowding,26,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-ozone,1,id,int,int,extract_desc,HCI Indicator 761.0: Average annual number of unhealthy days of ozone
-ozone,2,reportyear,str,str,,Year or years that indicator was reported
-ozone,3,race_eth_code,int,int,,Race / ethnicity code
-ozone,4,race_eth_name,str,str,,Race / ethnicity name
-ozone,5,geotype,str,str,,Code for type of geographic area
-ozone,6,geotypevalue,int,int,,Census geoid code
-ozone,7,geoname,str,str,,Census name of geographic area
-ozone,8,county_name,str,str,,County name
-ozone,9,county_fips,int,int,,County FIPS code
-ozone,10,region_name,str,str,,Name of region
-ozone,11,region_code,int,int,,Numeric code of region
-ozone,12,numerator,str,str,,
-ozone,13,poppt,float,float?,,
-ozone,14,o3_unhealthy_days,float,float?,,
-ozone,15,ll_95ci,float,float?,^na_is_none,Lower bound of 95% confidence interval
-ozone,16,ul_95ci,float,float?,^na_is_none,Upper bound of 95% confidence interval
-ozone,17,se,float,float?,^na_is_none,Standard error
-ozone,18,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-ozone,19,ozone_decile,str,str,,
-ozone,20,o3ratio_ca,float,float?,,
-ozone,21,version,date,date,^version_date,Release version date code
-ozone,22,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-ozone,23,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-unemployment,1,id,int,int,extract_desc,HCI Indicator 290.0: Unemployment rate
-unemployment,2,reportyear,str,str,,Year or years that indicator was reported
-unemployment,3,race_eth_code,int,int,,Race / ethnicity code
-unemployment,4,race_eth_name,str,str,,Race / ethnicity name
-unemployment,5,geotype,str,str,,Code for type of geographic area
-unemployment,6,geotypevalue,int,int,,Census geoid code
-unemployment,7,geoname,str,str,,Census name of geographic area
-unemployment,8,county_fips,int,int,,County FIPS code
-unemployment,9,county_name,str,str,,County name
-unemployment,10,region_code,int,int,,Numeric code of region
-unemployment,11,region_name,str,str,,Name of region
-unemployment,12,unemployment,float,float?,,Upper bound of 95% confidence interval
-unemployment,13,labor_force,int,int?,,The population in the labor force is the civilian non-institutionalized population 16 years and over who have jobs or are actively looking for jobs
-unemployment,14,unemployment_rate,float,float?,,Unemployment rate: percent of the population in the labor force who are unemployed
-unemployment,15,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-unemployment,16,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-unemployment,17,se,float,float?,,Standard error
-unemployment,18,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-unemployment,19,place_decile,str,str,,Decile ranking among places/
-unemployment,20,ca_rr,float,float?,,Ratio of indicator to state average
-unemployment,21,version,date,date,^excel_dt_1904|date,Release version date code
-unemployment,22,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-unemployment,23,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-open_space,1,id,int,int,extract_desc,"HCI Indicator 469.0: Percent of Population within ½ Mile of Park, Beach, Open Space, or Coastline"
-open_space,2,reportyear,int,int,,Year or years that indicator was reported
-open_space,3,race_eth_code,int,int,,Race / ethnicity code
-open_space,4,race_eth_name,str,str,,Race / ethnicity name
-open_space,5,geotype,str,str,,Code for type of geographic area
-open_space,6,geotypevalue,int,int,,Census geoid code
-open_space,7,geoname,str,str,,Census name of geographic area
-open_space,8,county_name,str,str,,County name
-open_space,9,county_fips,int,int,,County FIPS code
-open_space,10,region_name,str,str,,Name of region
-open_space,11,region_code,int,int,,Numeric code of region
-open_space,12,pop_park_acc,int,int?,,
-open_space,13,pop2010,int,int,,
-open_space,14,p_parkacc,float,float?,,
-open_space,15,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-open_space,16,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-open_space,17,se,float,float?,,Standard error
-open_space,18,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-open_space,19,ca_decile,int,int?,^na_is_none,Statewide decile ranking
-open_space,20,ca_rr,float,float?,,Ratio of indicator to state average
-open_space,21,version,date,date,^excel_dt_1904|date,Release version date code
-open_space,22,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-open_space,23,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-unsafe_water,1,id,int,int,extract_desc,HCI Indicator 426.0: Drinking water quality (Percent of the population served by community water systems not meeting regulations of the Safe Drinking Water Act)
-unsafe_water,2,reportyear,str,str,,Year or years that indicator was reported
-unsafe_water,3,race_eth_code,int,int,,Race / ethnicity code
-unsafe_water,4,race_eth_name,str,str,,Race / ethnicity name
-unsafe_water,5,geotype,str,str,,Code for type of geographic area
-unsafe_water,6,geotypevalue,int,int,,Census geoid code
-unsafe_water,7,geoname,str,str,,Census name of geographic area
-unsafe_water,8,county_fips,int,int,,County FIPS code
-unsafe_water,9,county_name,str,str,,County name
-unsafe_water,10,region_code,int,int,,Numeric code of region
-unsafe_water,11,region_name,str,str,,Name of region
-unsafe_water,12,category,str,str,,
-unsafe_water,13,numerator,int,int,,
-unsafe_water,14,denominator,int,int,,
-unsafe_water,15,percent,float,float?,,
-unsafe_water,16,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-unsafe_water,17,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-unsafe_water,18,se,float,float?,,Standard error
-unsafe_water,19,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-unsafe_water,20,ca_decile,int,int?,^na_is_none,Statewide decile ranking
-unsafe_water,21,ca_rr,float,float?,,Ratio of indicator to state average
-unsafe_water,22,tot_pop,int,int,,
-unsafe_water,23,coverage,float,float?,,
-unsafe_water,24,version,date,date,^excel_dt_1904|date,Release version date code
-unsafe_water,25,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-unsafe_water,26,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-income_inequality,1,id,int,int,extract_desc,HCI Indicator 556.0: Income inequality: Gini coefficient describing the amount of total annual community income generated by the number of households
-income_inequality,2,reportyear,str,str,,Year or years that indicator was reported
-income_inequality,3,race_eth_code,int,int,,Race / ethnicity code
-income_inequality,4,race_eth_name,str,str,,Race / ethnicity name
-income_inequality,5,geotype,str,str,,Code for type of geographic area
-income_inequality,6,geotypevalue,int,int,,Census geoid code
-income_inequality,7,geoname,str,str,,Census name of geographic area
-income_inequality,8,county_name,str,str,,County name
-income_inequality,9,county_fips,int,int,,County FIPS code
-income_inequality,10,region_name,str,str,,Name of region
-income_inequality,11,region_code,int,int,,Numeric code of region
-income_inequality,12,numerator,str,str,,
-income_inequality,13,households,int,int,,
-income_inequality,14,gini_index,float,float?,,
-income_inequality,15,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-income_inequality,16,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-income_inequality,17,se,float,float?,,Standard error
-income_inequality,18,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-income_inequality,19,ca_decile,int,int?,,Statewide decile ranking
-income_inequality,20,ca_rr,float,float?,,Ratio of indicator to state average
-income_inequality,21,median_hh_income,int,int?,,
-income_inequality,22,median_hh_decile,int,int?,,
-income_inequality,23,version,date,date,^version_date,Release version date code
-income_inequality,24,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-income_inequality,25,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-household_type_tracts,1,id,int,int,extract_desc,HCI Indicator 746.0: Household by type of family and head of household
-household_type_tracts,2,reportyear,str,str,,Year or years that indicator was reported
-household_type_tracts,3,race_eth_code,int,int,,Race / ethnicity code
-household_type_tracts,4,race_eth_name,str,str,,Race / ethnicity name
-household_type_tracts,5,geotype,str,str,,Code for type of geographic area
-household_type_tracts,6,geotypevalue,int,int,,Census geoid code
-household_type_tracts,7,geoname,int,int,,Census name of geographic area
-household_type_tracts,8,county_name,str,str,,County name
-household_type_tracts,9,county_fips,int,int,,County FIPS code
-household_type_tracts,10,region_name,str,str,,Name of region
-household_type_tracts,11,region_code,int,int,,Numeric code of region
-household_type_tracts,12,strata_name_code,int,int,,Strata name code
-household_type_tracts,13,strata_name,str,str,,Strata name
-household_type_tracts,14,strata_level_name_code,int,int,,Strata level name code
-household_type_tracts,15,strata_level_name,str,str,,Strata level name
-household_type_tracts,16,households,int,int,,
-household_type_tracts,17,total_households,int,int,,
-household_type_tracts,18,households_percent,float,float,,
-household_type_tracts,19,ll95ci_percent,float,float,,Lower bound of 95% confidence interval
-household_type_tracts,20,ul95ci_percent,float,float,,Upper bound of 95% confidence interval
-household_type_tracts,21,percent_se,float,float,,
-household_type_tracts,22,percent_rse,float,float,,
-household_type_tracts,23,ca_decile,int,int,^na_is_none,Statewide decile ranking
-household_type_tracts,24,ca_rr,float,float,,Ratio of indicator to state average
-household_type_tracts,25,version,date,date,^excel_dt_1904|date,Release version date code
-household_type_tracts,26,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-household_type_tracts,27,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-walk_bicycyle,1,id,int,int,extract_desc,HCI Indicator 778.0: Percent of population aged 16 years or older whose commute to work is 10 minutes /day  or more by walking or biking
-walk_bicycyle,2,reportyear,str,str,,Year or years that indicator was reported
-walk_bicycyle,3,race_eth_code,int,int,,Race / ethnicity code
-walk_bicycyle,4,race_eth_name,str,str,,Race / ethnicity name
-walk_bicycyle,5,geotype,str,str,,Code for type of geographic area
-walk_bicycyle,6,geotypevalue,int,int,,Census geoid code
-walk_bicycyle,7,geoname,str,str,,Census name of geographic area
-walk_bicycyle,8,county_name,str,str,,County name
-walk_bicycyle,9,county_fips,int,int,,County FIPS code
-walk_bicycyle,10,region_name,str,str,,Name of region
-walk_bicycyle,11,region_code,int,int,,Numeric code of region
-walk_bicycyle,12,modetwk,str,str,,
-walk_bicycyle,13,n_total,float,float?,,
-walk_bicycyle,14,n_time_mode,float,float?,,
-walk_bicycyle,15,percent,float,float?,,
-walk_bicycyle,16,ll95ci_percent,float,float?,,Lower bound of 95% confidence interval
-walk_bicycyle,17,ul95ci_percent,float,float?,,Upper bound of 95% confidence interval
-walk_bicycyle,18,percent_se,float,float?,,
-walk_bicycyle,19,percent_rse,float,float?,,
-walk_bicycyle,20,ca_decile,int,int?,^na_is_none,Statewide decile ranking
-walk_bicycyle,21,ca_rr,float,float?,,Ratio of indicator to state average
-walk_bicycyle,22,version,date,date,^excel_dt_1904|date,Release version date code
-walk_bicycyle,23,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-walk_bicycyle,24,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-registered_voters,1,id,int,int,extract_desc,HCI Indicator 653.0: Percent of adults age 18 years and older who are registered voters
-registered_voters,2,reportyear,int,int,,Year or years that indicator was reported
-registered_voters,3,race_eth_code,int,int,,Race / ethnicity code
-registered_voters,4,race_eth_name,str,str,,Race / ethnicity name
-registered_voters,5,geotype,str,str,,Code for type of geographic area
-registered_voters,6,geotypevalue,int,int,,Census geoid code
-registered_voters,7,geoname,str,str,,Census name of geographic area
-registered_voters,8,county_fips,int,int,,County FIPS code
-registered_voters,9,county_name,str,str,,County name
-registered_voters,10,region_code,int,int,,Numeric code of region
-registered_voters,11,region_name,str,str,,Name of region
-registered_voters,12,type,str,str,,Type of record
-registered_voters,13,numerator,int,int?,,"Adults who are registered to vote, or who voted, depending on type of record"
-registered_voters,14,denominator,int,int,,"Population of Adults, 18 years or older"
-registered_voters,15,percent,float,float?,,"Percent of adults who are registered to vote, or who voted, depending on type of record"
-registered_voters,16,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-registered_voters,17,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-registered_voters,18,se,float,float?,,Standard error
-registered_voters,19,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-registered_voters,20,ca_decile,int,int?,^na_is_none,Statewide decile ranking
-registered_voters,21,ca_rr,float,float?,,Ratio of indicator to state average
-registered_voters,22,vap,float,float?,,"Voter age population, from CA Department of Finance."
-registered_voters,23,version,date,date,^excel_dt_1904|date,Release version date code
-registered_voters,24,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-registered_voters,25,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-miles_traveled,1,id,int,int,extract_desc,"HCI Indicator 39.0: Miles traveled per capita by mode (car, public transit, walk/bike)"
-miles_traveled,2,reportyear,int,int,,Year or years that indicator was reported
-miles_traveled,3,geotype,str,str,,Code for type of geographic area
-miles_traveled,4,geotypevalue,int,int,,Census geoid code
-miles_traveled,5,geoname,str,str,,Census name of geographic area
-miles_traveled,6,county_name,str,str,,County name
-miles_traveled,7,county_fips,str,str,,County FIPS code
-miles_traveled,8,region_name,str,str,,Name of region
-miles_traveled,9,region_code,int,int,,Numeric code of region
-miles_traveled,10,mode,str,str,,
-miles_traveled,11,avmttotal,float,float,,
-miles_traveled,12,totalpop,float,float,,
-miles_traveled,13,mpcratio,float,float,,
-miles_traveled,14,ll95ci_mpcratio,float,float,^na_is_none,Lower bound of 95% confidence interval
-miles_traveled,15,ul95ci_mpcratio,float,float,^na_is_none,Upper bound of 95% confidence interval
-miles_traveled,16,mpcratio_se,str,str,,
-miles_traveled,17,mpcratio_rse,str,str,,
-miles_traveled,18,ca_decile_mpcratio,int,int,^na_is_none,Statewide decile ranking
-miles_traveled,19,ca_rr_mpc,float,float,,Ratio of indicator to state average
-miles_traveled,20,areasqmi,str,str,,
-miles_traveled,21,mpsqmiratio,str,str,,
-miles_traveled,22,ll95ci_mpsqmiratio,float,float,^na_is_none,Lower bound of 95% confidence interval
-miles_traveled,23,ul95ci_mpsqmiratio,float,float,^na_is_none,Upper bound of 95% confidence interval
-miles_traveled,24,mpsqmiratio_se,str,str,,
-miles_traveled,25,mpsqmiratio_rse,str,str,,
-miles_traveled,26,ca_decile_mpsqmiratio,int,int,^na_is_none,Statewide decile ranking
-miles_traveled,27,ca_rr_mpsqmi,float,float,^na_is_none,Ratio of indicator to state average
-miles_traveled,28,groupquarters,str,str,,
-miles_traveled,29,version,date,date,^excel_dt_1904|date,Release version date code
-miles_traveled,30,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-,,,,,,
-violent_crime,1,id,int,int,extract_desc,HCI Indicator 752.0: Number of Violent Crimes per 1000 Population
-violent_crime,2,reportyear,int,int,,Year or years that indicator was reported
-violent_crime,3,race_eth_code,int,int,,Race / ethnicity code
-violent_crime,4,race_eth_name,str,str,,Race / ethnicity name
-violent_crime,5,geotype,str,str,,Code for type of geographic area
-violent_crime,6,geotypevalue,int,int,,Census geoid code
-violent_crime,7,geoname,str,str,,Census name of geographic area
-violent_crime,8,county_name,str,str,,County name
-violent_crime,9,county_fips,int,int,,County FIPS code
-violent_crime,10,region_name,str,str,,Name of region
-violent_crime,11,region_code,int,int,,Numeric code of region
-violent_crime,12,numerator,int,int,,
-violent_crime,13,denominator,int,int,,
-violent_crime,14,ratex1000,float,float?,,
-violent_crime,15,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-violent_crime,16,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-violent_crime,17,se,float,float?,,Standard error
-violent_crime,18,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-violent_crime,19,ca_decile,int,int?,,Statewide decile ranking
-violent_crime,20,rr_city2state,float,float?,,
-violent_crime,21,version,date,date,^version_date,Release version date code
-violent_crime,22,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-violent_crime,23,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-housing_cost,1,id,int,int,extract_desc,HCI Indicator 106.0: Percent of households spending more than 30% (50%) of monthly household income on monthly gross rent or selected housing costs
-housing_cost,2,datasource,str,str,,
-housing_cost,3,reportyear,str,str,,Year or years that indicator was reported
-housing_cost,4,burden,str,str,,
-housing_cost,5,tenure,str,str,,
-housing_cost,6,race_eth_code,int,int,,Race / ethnicity code
-housing_cost,7,race_eth_name,str,str,,Race / ethnicity name
-housing_cost,8,income_level,str,str,,
-housing_cost,9,geotype,str,str,,Code for type of geographic area
-housing_cost,10,geotypevalue,int,int,,Census geoid code
-housing_cost,11,geoname,str,str,,Census name of geographic area
-housing_cost,12,county_name,str,str,,County name
-housing_cost,13,county_fips,int,int,,County FIPS code
-housing_cost,14,region_name,str,str,,Name of region
-housing_cost,15,region_code,int,int,,Numeric code of region
-housing_cost,16,total_households,int,int?,,
-housing_cost,17,burdened_households,int,int,,
-housing_cost,18,percent,float,float?,,
-housing_cost,19,ll95ci,float,float?,,Lower bound of 95% confidence interval
-housing_cost,20,ul95ci,float,float?,,Upper bound of 95% confidence interval
-housing_cost,21,se,float,float?,,Standard error
-housing_cost,22,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-housing_cost,23,ca_decile,int,int?,,Statewide decile ranking
-housing_cost,24,ca_rr,float,float?,,Ratio of indicator to state average
-housing_cost,25,version,date,date,^excel_dt_1904|date,Release version date code
-housing_cost,26,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-housing_cost,27,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-transport_work,1,id,int,int,extract_desc,HCI Indicator 42.0: Percent of residents mode of transportation to work
-transport_work,2,reportyear,str,str,,Year or years that indicator was reported
-transport_work,3,race_eth_code,int,int,,Race / ethnicity code
-transport_work,4,race_eth_name,str,str,,Race / ethnicity name
-transport_work,5,geotype,str,str,,Code for type of geographic area
-transport_work,6,geotypevalue,int,int,,Census geoid code
-transport_work,7,geoname,str,str,,Census name of geographic area
-transport_work,8,county_name,str,str,,County name
-transport_work,9,county_fips,int,int,,County FIPS code
-transport_work,10,region_name,str,str,,Name of region
-transport_work,11,region_code,int,int,,Numeric code of region
-transport_work,12,mode,str,str,,
-transport_work,13,mode_name,str,str,,
-transport_work,14,pop_total,int,int?,,
-transport_work,15,pop_mode,int,int?,,
-transport_work,16,percent,float,float?,,
-transport_work,17,ll95ci_percent,float,float?,,Lower bound of 95% confidence interval
-transport_work,18,ul95ci_percent,float,float?,,Upper bound of 95% confidence interval
-transport_work,19,percent_se,float,float?,,
-transport_work,20,percent_rse,float,float?,,
-transport_work,21,ca_decile,int,int?,^na_is_none,Statewide decile ranking
-transport_work,22,ca_rr,float,float?,,Ratio of indicator to state average
-transport_work,23,version,date,date,^excel_dt_1904|date,Release version date code
-transport_work,24,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-transport_work,25,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-jobs_employed_ratio,1,id,int,int,extract_desc,HCI Indicator 769.0: Jobs to employed residents ratio
-jobs_employed_ratio,2,reportyear,int,int,,Year or years that indicator was reported
-jobs_employed_ratio,3,race_eth_code,int,int,,Race / ethnicity code
-jobs_employed_ratio,4,race_eth_name,str,str,,Race / ethnicity name
-jobs_employed_ratio,5,geotype,str,str,,Code for type of geographic area
-jobs_employed_ratio,6,geotypevalue,int,int,,Census geoid code
-jobs_employed_ratio,7,geoname,str,str,,Census name of geographic area
-jobs_employed_ratio,8,county_name,str,str,,County name
-jobs_employed_ratio,9,county_fips,int,int,,County FIPS code
-jobs_employed_ratio,10,msa_name,str,str,,Metropolitan Statistical Area name
-jobs_employed_ratio,11,msa_code,str,str?,,Metropolitan Statistical Area FIPS code
-jobs_employed_ratio,12,strata_name_code,int,int,,Strata name code
-jobs_employed_ratio,13,strata_name,str,str,,Strata name
-jobs_employed_ratio,14,strata_level_name_code,int,int,,Strata level name code
-jobs_employed_ratio,15,strata_level_name,str,str,,Strata level name
-jobs_employed_ratio,16,jobs,int,int,,Number of jobs in geographic area
-jobs_employed_ratio,17,employed_res,int,int,,Number of residents in geographic area
-jobs_employed_ratio,18,ratio,float,float?,,Ratio of jobs to residents
-jobs_employed_ratio,19,ll_95ci,float,float?,^na_is_none,Lower bound of 95% confidence interval
-jobs_employed_ratio,20,ul_95ci,float,float?,^na_is_none,Upper bound of 95% confidence interval
-jobs_employed_ratio,21,ratio_se,float,float?,^na_is_none,Standard error of the ratio
-jobs_employed_ratio,22,ratio_rse,float,float?,^na_is_none,Relative standard error of the ratio
-jobs_employed_ratio,23,ratio_decile,str,str,,Decile ranking among geo regions in the state
-jobs_employed_ratio,24,ms_rr,str,str,,
-jobs_employed_ratio,25,version,date,date,^excel_dt_1904|date,Release version date code
-jobs_employed_ratio,26,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-jobs_employed_ratio,27,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-living_wage,1,id,int,int,extract_desc,HCI Indicator 770.0: Living wage and percent of families with incomes below the living wage
-living_wage,2,reportyear,int,int,,Year or years that indicator was reported
-living_wage,3,family_type,str,str,,
-living_wage,4,race_eth_code,int,int?,,Race / ethnicity code
-living_wage,5,race_eth_name,str,str,,Race / ethnicity name
-living_wage,6,geotype,str,str,,Code for type of geographic area
-living_wage,7,geotypevalue,int,int,,Census geoid code
-living_wage,8,geoname,str,str,,Census name of geographic area
-living_wage,9,county_name,str,str,,County name
-living_wage,10,county_fips,int,int,,County FIPS code
-living_wage,11,region_name,str,str,,Name of region
-living_wage,12,region_code,int,int,,Numeric code of region
-living_wage,13,fam_lt_lw,float,float?,,
-living_wage,14,families,int,int?,,
-living_wage,15,pct_lt_lw,float,float?,,
-living_wage,16,ll_95ci,float,float?,^na_is_none,Lower bound of 95% confidence interval
-living_wage,17,ul_95ci,float,float?,^na_is_none,Upper bound of 95% confidence interval
-living_wage,18,se,float,float?,^na_is_none,Standard error
-living_wage,19,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-living_wage,20,family_type_decile,str,str,,
-living_wage,21,ca_rr,float,float?,,Ratio of indicator to state average
-living_wage,22,livingwage,float,float?,,
-living_wage,23,version,date,date,^excel_dt_1904|date,Release version date code
-living_wage,24,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-living_wage,25,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-public_transit,1,id,int,int,extract_desc,HCI Indicator 51.0:  Percent of population within 1/2 mile of major transit stop
-public_transit,2,reportyear,int,int,,Year or years that indicator was reported
-public_transit,3,race_eth_code,int,int,,Race / ethnicity code
-public_transit,4,race_eth_name,str,str,,Race / ethnicity name
-public_transit,5,geotype,str,str,,Code for type of geographic area
-public_transit,6,geotypevalue,int,int,,Census geoid code
-public_transit,7,geoname,str,str,,Census name of geographic area
-public_transit,8,county_name,str,str,,County name
-public_transit,9,county_fips,int,int,,County FIPS code
-public_transit,10,region_name,str,str,,Name of region
-public_transit,11,region_code,int,int,,Numeric code of region
-public_transit,12,pop_trans_acc,int,int,,
-public_transit,13,pop2010,int,int,,
-public_transit,14,p_trans_acc,float,float?,,
-public_transit,15,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-public_transit,16,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-public_transit,17,se,float,float?,,Standard error
-public_transit,18,rse,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-public_transit,19,mtc_decile,str,str,,
-public_transit,20,sac_decile,str,str,,Decile ranking in Sacramento area
-public_transit,21,sc_decile,str,str,,Decile ranking in Southern California area
-public_transit,22,sd_decile,str,str,,Decile ranking in San Diego area
-public_transit,23,mtc_rr,float,float?,,
-public_transit,24,sac_rr,float,float?,,Ratio of indicator to Sacramento area average
-public_transit,25,sc_rr,float,float?,,Ratio of indicator to  Southern California area average
-public_transit,26,sd_rr,float,float?,,Ratio of indicator to San Diego area average
-public_transit,27,version,date,date,^excel_dt_1904|date,Release version date code
-public_transit,28,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-public_transit,29,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-household_type,1,id,int,int,extract_desc,HCI Indicator 746.0: Household by type of family and head of household
-household_type,2,reportyear,str,str,,Year or years that indicator was reported
-household_type,3,race_eth_code,int,int,,Race / ethnicity code
-household_type,4,race_eth_name,str,str,,Race / ethnicity name
-household_type,5,geotype,str,str,,Code for type of geographic area
-household_type,6,geotypevalue,int,int,,Census geoid code
-household_type,7,geoname,str,str,,Census name of geographic area
-household_type,8,county_name,str,str,,County name
-household_type,9,county_fips,int,int,,County FIPS code
-household_type,10,region_name,str,str,,Name of region
-household_type,11,region_code,int,int,,Numeric code of region
-household_type,12,strata_name_code,int,int,,Strata name code
-household_type,13,strata_name,str,str,,Strata name
-household_type,14,strata_level_name_code,int,int,,Strata level name code
-household_type,15,strata_level_name,str,str,,Strata level name
-household_type,16,households,int,int?,,
-household_type,17,total_households,int,int?,,
-household_type,18,households_percent,float,float?,,
-household_type,19,ll95ci_percent,float,float?,,Lower bound of 95% confidence interval
-household_type,20,ul95ci_percent,float,float?,,Upper bound of 95% confidence interval
-household_type,21,percent_se,float,float?,,
-household_type,22,percent_rse,float,float?,,
-household_type,23,ca_decile,int,int?,,Statewide decile ranking
-household_type,24,ca_rr,float,float?,,Ratio of indicator to state average
-household_type,25,version,date,date,^excel_dt_1904|date,Release version date code
-household_type,26,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-household_type,27,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-poverty_rate,1,id,int,int,extract_desc,"HCI Indicator 754.0: Overall, concentrated, and child (0 to 18 years of age) poverty rate"
-poverty_rate,2,reportyear,str,str,,Year or years that indicator was reported
-poverty_rate,3,race_eth_code,int,int,,Race / ethnicity code
-poverty_rate,4,race_eth_name,str,str,,Race / ethnicity name
-poverty_rate,5,geotype,str,str,,Code for type of geographic area
-poverty_rate,6,geotypevalue,int,int,,Census geoid code
-poverty_rate,7,geoname,str,str,,Census name of geographic area
-poverty_rate,8,county_name,str,str,,County name
-poverty_rate,9,county_fips,int,int,,County FIPS code
-poverty_rate,10,region_name,str,str,,Name of region
-poverty_rate,11,region_code,int,int,,Numeric code of region
-poverty_rate,12,poverty,str,str,,
-poverty_rate,13,totalpop,float,float?,,
-poverty_rate,14,numpov,float,float?,,
-poverty_rate,15,percent,float,float?,,
-poverty_rate,16,ll_95ci_percent,float,float?,,Lower bound of 95% confidence interval
-poverty_rate,17,ul_95ci_percent,float,float?,,Upper bound of 95% confidence interval
-poverty_rate,18,percent_se,float,float?,,
-poverty_rate,19,percent_rse,float,float?,,
-poverty_rate,20,place_decile,str,str,,
-poverty_rate,21,ca_rr,float,float?,,Ratio of indicator to state average
-poverty_rate,22,concentratedct,str,str,,
-poverty_rate,23,version,date,date,^excel_dt_1904|date,Release version date code
-poverty_rate,24,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-poverty_rate,25,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-food_affordability,1,id,int,int,extract_desc,HCI Indicator 757.0: Food affordability for female-headed household with children under 18 years
-food_affordability,2,reportyear,str,str,,Year or years that indicator was reported
-food_affordability,3,race_eth_code,int,int,,Race / ethnicity code
-food_affordability,4,race_eth_name,str,str,,Race / ethnicity name
-food_affordability,5,geotype,str,str,,Code for type of geographic area
-food_affordability,6,geotypevalue,int,int,,Census geoid code
-food_affordability,7,geoname,str,str,,Census name of geographic area
-food_affordability,8,county_name,str,str,,County name
-food_affordability,9,county_fips,int,int,,County FIPS code
-food_affordability,10,region_name,str,str,,Name of region
-food_affordability,11,region_code,int,int,,Numeric code of region
-food_affordability,12,cost_yr,float,float?,,
-food_affordability,13,median_income,float,float?,,
-food_affordability,14,affordability_ratio,float,float?,,
-food_affordability,15,ll95_affordability_ratio,float,float?,,Lower bound of 95% confidence interval
-food_affordability,16,ul95_affordability_ratio,float,float?,,Upper bound of 95% confidence interval
-food_affordability,17,se_food_afford,float,float?,,Standard error
-food_affordability,18,rse_food_afford,float,float?,^catch_dbz,Relative standard error (se/percent * 100) expressed as a percent
-food_affordability,19,food_afford_decile,int,int?,,
-food_affordability,20,ca_rr_affordability,float,float?,,Ratio of indicator to state average
-food_affordability,21,ave_fam_size,float,float?,,
-food_affordability,22,version,date,date,^excel_dt_1904|date,Release version date code
-food_affordability,23,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-food_affordability,24,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
-,,,,,,
-jobs_housing_ratio,1,id,int,int,extract_desc,HCI Indicator 768.0: Jobs to housing ratio
-jobs_housing_ratio,2,reportyear,str,str,,Year or years that indicator was reported
-jobs_housing_ratio,3,race_eth_code,int,int,,Race / ethnicity code
-jobs_housing_ratio,4,race_eth_name,str,str,,Race / ethnicity name
-jobs_housing_ratio,5,geotype,str,str,,Code for type of geographic area
-jobs_housing_ratio,6,geotypevalue,int,int,,Census geoid code
-jobs_housing_ratio,7,geoname,str,str,,Census name of geographic area
-jobs_housing_ratio,8,county_name,str,str,,County name
-jobs_housing_ratio,9,county_fips,int,int,,County FIPS code
-jobs_housing_ratio,10,msa_name,str,str,,
-jobs_housing_ratio,11,msa_code,int,int?,,
-jobs_housing_ratio,12,strata_name_code,int,int,,Strata name code
-jobs_housing_ratio,13,strata_name,str,str,,Strata name
-jobs_housing_ratio,14,strata_level_name_code,int,int,,Strata level name code
-jobs_housing_ratio,15,strata_level_name,str,str,,Strata level name
-jobs_housing_ratio,16,jobs,int,int,,
-jobs_housing_ratio,17,housing,int,int,,
-jobs_housing_ratio,18,ratio,float,float?,,
-jobs_housing_ratio,19,ll_95ci,float,float?,,Lower bound of 95% confidence interval
-jobs_housing_ratio,20,ul_95ci,float,float?,,Upper bound of 95% confidence interval
-jobs_housing_ratio,21,ratio_se,float,float?,,
-jobs_housing_ratio,22,ratio_rse,float,float?,,
-jobs_housing_ratio,23,ratio_decile,int,int?,,
-jobs_housing_ratio,24,ms_rr,float,float?,,
-jobs_housing_ratio,25,version,date,date,^excel_dt_1904|date,Release version date code
-jobs_housing_ratio,26,gvid,census.GVid,census.GVid,^extract_geoid,GVid version of the geotype and geotypeval
-jobs_housing_ratio,27,reid,demo.RECode,demo.RECode,^extract_recode,Civic Knowledge race / ethnicity code.
+"table","column","valuetype","parent","transform","description"
+,,,,,
+"air_quality","id","id",,"extract_desc","HCI Indicator 776.0: Average Ambient PM2.5 concentration (microgram/m3)"
+"air_quality","reportyear","d/interval",,,"Year or years that indicator was reported"
+"air_quality","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"air_quality","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name",
+"air_quality","race_eth_code","d/raceth/hci?","raceth","^na_is_none","Race / ethnicity code"
+"air_quality","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"air_quality","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"air_quality","geoid","d/geo/census?","gvid","||row.gvid.acs","Census geoid code"
+"air_quality","geotype","d/geo?","gvid",,
+"air_quality","geotypevalue","d/geo","gvid",,"Census geoid code"
+"air_quality","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"air_quality","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"air_quality","county_name","d/geo/label","county_fips",,"County name"
+"air_quality","region_code","d/int?","gvid","^na_is_none","Numeric code of region"
+"air_quality","region_name","d/geo/label","region_code",,"Name of region"
+"air_quality","numerator","m?",,,
+"air_quality","poppt","m?",,,
+"air_quality","pm25_concentration","m?",,,"PM 25 Concentration"
+"air_quality","ll_95ci","e/ci/95/l?","pm25_concentration","^na_is_none","Lower bound of 95% confidence interval"
+"air_quality","ul_95ci","e/ci/95/u?","pm25_concentration","^na_is_none","Upper bound of 95% confidence interval"
+"air_quality","se","e/se?","pm25_concentration","^na_is_none","Standard error"
+"air_quality","rse","e/rse?","pm25_concentration","^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"air_quality","pm25_decile","m/decile?","pm25_concentration",,"Decile rank within state. "
+"air_quality","pm25ratio_ca","m?","pm25_concentration",,"PM 25 Ratio to state average"
+"air_quality","version","d/date",,"^version_date","Release version date code"
+,,,,,
+"traffic_fatalities","id","id",,"extract_desc","HCI Indicator 753.0: Annual number of fatal and severe road traffic injuries per population and per miles traveled by transport mode"
+"traffic_fatalities","reportyear","d/interval",,,"Year or years that indicator was reported"
+"traffic_fatalities","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"traffic_fatalities","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"traffic_fatalities","geotypevalue","d/geo","gvid",,"Census geoid code"
+"traffic_fatalities","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"traffic_fatalities","county_name","d/geo/label","county_fips",,"County name"
+"traffic_fatalities","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"traffic_fatalities","region_name","d/geo/label","region_code",,"Name of region"
+"traffic_fatalities","region_code","d/int?","gvid",,"Numeric code of region"
+"traffic_fatalities","mode","d/str?",,,
+"traffic_fatalities","severity","d/str",,,
+"traffic_fatalities","injuries","m?",,,
+"traffic_fatalities","totalpop","m/count?",,,
+"traffic_fatalities","groupquarters","m/count",,,
+"traffic_fatalities","poprate","m/rate?",,,
+"traffic_fatalities","ll95ci_poprate","e/ci/95/l?","poprate",,"Lower bound of 95% confidence interval"
+"traffic_fatalities","ul95ci_poprate","e/ci/95/u?","poprate",,"Upper bound of 95% confidence interval"
+"traffic_fatalities","poprate_se","e/se?","poprate",,
+"traffic_fatalities","poprate_rse","e/rse?","poprate",,
+"traffic_fatalities","ca_decile_pop","d/decile?","poprate","^na_is_none","Statewide decile ranking"
+"traffic_fatalities","ca_rr_poprate","m/ratio?","poprate",,"Ratio of indicator to state average"
+"traffic_fatalities","avmttotal","m/total",,,
+"traffic_fatalities","avmtrate","m/rate",,,
+"traffic_fatalities","ll95ci_avmtrate","e/ci/95/l?","avmtrate",,"Lower bound of 95% confidence interval"
+"traffic_fatalities","ul95ci_avmtrate","e/ci/95/u?","avmtrate",,"Upper bound of 95% confidence interval"
+"traffic_fatalities","avmtrate_se","e/se?","avmtrate",,
+"traffic_fatalities","avmtrate_rse","e/rse?","avmtrate",,
+"traffic_fatalities","ca_decile_avmt","d/decile?","avmtrate","^na_is_none","Statewide decile ranking"
+"traffic_fatalities","ca_rr_avmtrate","m/ratio?","avmtrate",,"Ratio of indicator to state average"
+"traffic_fatalities","version","d/date",,"^excel_dt_1904","Release version date code"
+,,,,,
+,,,,,
+,,,,,
+"neighborhood_change","id","id",,"extract_desc","HCI Indicator 772.0: Neighborhood change: 10-year change in number of households by income and race/ethnicity"
+"neighborhood_change","reportyear","d/interval",,,"Year or years that indicator was reported"
+"neighborhood_change","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"neighborhood_change","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+"neighborhood_change","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"neighborhood_change","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"neighborhood_change","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"neighborhood_change","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"neighborhood_change","geotypevalue","d/geo","gvid",,"Census geoid code"
+"neighborhood_change","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"neighborhood_change","county_name","d/geo/label","county_fips",,"County name"
+"neighborhood_change","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"neighborhood_change","region_name","d/geo/label","region_code",,"Name of region"
+"neighborhood_change","region_code","d/int?","gvid",,"Numeric code of region"
+"neighborhood_change","strata_name_code","d/int",,,"Strata name code"
+"neighborhood_change","strata_name","d/label","strata_name_code",,"Strata name"
+"neighborhood_change","strata_level_name_code","d/int",,,"Strata level name code"
+"neighborhood_change","strata_level_name","d/label",,,"Strata level name"
+"neighborhood_change","numberhh00_10dol","m/count?",,,
+"neighborhood_change","numberhh10_10dol","m/count?",,,
+"neighborhood_change","difference","m/count?",,,
+"neighborhood_change","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"neighborhood_change","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"neighborhood_change","se","e/se?",,,"Standard error"
+"neighborhood_change","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"neighborhood_change","place_decile","m/decile?",,,
+"neighborhood_change","ca_rr","m/ratio?",,"^na_is_none","Ratio of indicator to state average"
+"neighborhood_change","version","d/date",,"^excel_dt_1904","Release version date code"
+,,,,,
+,,,,,
+,,,,,
+,,,,,
+"healthy_food","id","id",,"extract_desc","HCI Indicator 75.0: Modified retail food environment index"
+"healthy_food","reportyear","d/interval//year",,,"Year or years that indicator was reported"
+"healthy_food","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"healthy_food","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"healthy_food","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"healthy_food","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+"healthy_food","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"healthy_food","geotypevalue","d/geo","gvid",,"Census geoid code"
+"healthy_food","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"healthy_food","county_name","d/geo/label","county_fips",,"County name"
+"healthy_food","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"healthy_food","region_name","d/geo/label","region_code",,"Name of region"
+"healthy_food","region_code","d/int?","gvid",,"Numeric code of region"
+"healthy_food","pop00","m/count?",,,
+"healthy_food","mrfei","m?",,,
+"healthy_food","ll95ci","e/ci/95/l?","mrfei","^na_is_none","Lower bound of 95% confidence interval"
+"healthy_food","ul95ci","e/ci/95/u?","mrfei","^na_is_none","Upper bound of 95% confidence interval"
+"healthy_food","se","e/se?","mrfei","^na_is_none","Standard error"
+"healthy_food","rse","e/rse?","mrfei","^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"healthy_food","ca_decile","d/decile?","mrfei",,"Statewide decile ranking"
+"healthy_food","ca_rr","m/ratio?","mrfei",,"Ratio of indicator to state average"
+"healthy_food","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+,,,,,
+,,,,,
+,,,,,
+"abuse_neglect","id","id",,"extract_desc","HCI Indicator 741.0: Percent of children (under 18) reported with neglect or physical or sexual abuse"
+"abuse_neglect","reportyear","d/interval",,,"Year or years that indicator was reported"
+"abuse_neglect","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"abuse_neglect","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"abuse_neglect","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"abuse_neglect","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"abuse_neglect","geotypevalue","d/geo","gvid",,"Census geoid code"
+"abuse_neglect","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"abuse_neglect","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"abuse_neglect","county_name","d/geo/label","county_fips",,"County name"
+"abuse_neglect","region_code","d/int?","gvid",,"Numeric code of region"
+"abuse_neglect","region_name","d/geo/label","region_code",,"Name of region"
+"abuse_neglect","strata_name_code","d/int",,,"Strata name code"
+"abuse_neglect","strata_name","d/label","strata_name_code",,"Strata name"
+"abuse_neglect","strata_level_name_code","d/int",,,"Strata level name code"
+"abuse_neglect","strata_level_name","d/label","strata_level_name_code",,"Strata level name"
+"abuse_neglect","allegations_children","m/count?",,,"Number of allegations of abuse"
+"abuse_neglect","total_children","m/count?",,,"Total child population"
+"abuse_neglect","percent","m/percent?",,,"Ratio of number of allegations to total child population."
+"abuse_neglect","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"abuse_neglect","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"abuse_neglect","se","e/se?",,,"Standard error"
+"abuse_neglect","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"abuse_neglect","ca_decile","d/decile?",,,"Statewide decile ranking"
+"abuse_neglect","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"abuse_neglect","version","d/date",,"^excel_dt_1904","Release version date code"
+"abuse_neglect","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"abuse_neglect","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"alcohol_outlets","id","id",,"extract_desc","HCI Indicator 774.0: Percent of Population within 1/4 Mile of Alcohol Outlets by Type of Establishment Sales"
+"alcohol_outlets","reportyear","d/interval",,,"Year or years that indicator was reported"
+"alcohol_outlets","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"alcohol_outlets","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"alcohol_outlets","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"alcohol_outlets","geotypevalue","d/geo","gvid",,"Census geoid code"
+"alcohol_outlets","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"alcohol_outlets","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"alcohol_outlets","county_name","d/geo/label","county_fips",,"County name"
+"alcohol_outlets","region_code","d/int?","gvid",,"Numeric code of region"
+"alcohol_outlets","region_name","d/geo/label","region_code",,"Name of region"
+"alcohol_outlets","license_type","d?",,,
+"alcohol_outlets","numerator","m/count?",,,
+"alcohol_outlets","denominator","m/count?",,,
+"alcohol_outlets","percent","m/percent?",,,
+"alcohol_outlets","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"alcohol_outlets","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"alcohol_outlets","se","e/se?",,,"Standard error"
+"alcohol_outlets","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"alcohol_outlets","ca_decile","d/decile?",,,"Statewide decile ranking"
+"alcohol_outlets","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"alcohol_outlets","version","d/date",,"^excel_dt_1904","Release version date code"
+"alcohol_outlets","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"alcohol_outlets","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"alcohol_outlets","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"high_school_ed","id","id",,"extract_desc","HCI Indicator 369.0: High School or Greater Educational Attainment in the Population Aged 25 Years and Older"
+"high_school_ed","reportyear","d/interval",,,"Year or years that indicator was reported"
+"high_school_ed","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"high_school_ed","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"high_school_ed","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"high_school_ed","geotypevalue","d/geo","gvid",,"Census geoid code"
+"high_school_ed","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"high_school_ed","county_name","d/geo/label","county_fips",,"County name"
+"high_school_ed","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"high_school_ed","region_name","d/geo/label","region_code",,"Name of region"
+"high_school_ed","region_code","d/int?","gvid",,"Numeric code of region"
+"high_school_ed","pop25pl_hs","m?",,,"Population over 25 with a high school education"
+"high_school_ed","pop25pl","m/count?",,,"Population over 25"
+"high_school_ed","p_hs_edatt","m?",,,"Percentage of populatino over 25 with a high school education."
+"high_school_ed","se","e/se?",,,"Standard error"
+"high_school_ed","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"high_school_ed","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"high_school_ed","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"high_school_ed","ca_decile","d/decile?",,,"Statewide decile ranking"
+"high_school_ed","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"high_school_ed","version","d/date",,"^excel_dt_1904","Release version date code"
+"high_school_ed","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"high_school_ed","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"high_school_ed","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"household_crowding","id","id",,"extract_desc","HCI Indicator 137.0: Percent of household overcrowding (> 1.0 PPR)  and severe overcrowding (> 1.5 PPR)"
+"household_crowding","reportyear","d/interval",,,"Year or years that indicator was reported"
+"household_crowding","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"household_crowding","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"household_crowding","income_level","d?",,,
+"household_crowding","tenure","d/str",,,
+"household_crowding","crowding_cat","d?",,,
+"household_crowding","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"household_crowding","geotypevalue","d/geo","gvid",,"Census geoid code"
+"household_crowding","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"household_crowding","county_name","d/geo/label","county_fips",,"County name"
+"household_crowding","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"household_crowding","region_name","d/geo/label","region_code",,"Name of region"
+"household_crowding","region_code","d/int?","gvid",,"Numeric code of region"
+"household_crowding","total_hshlds","m/count",,,
+"household_crowding","crowded_hshlds","m/count?",,,
+"household_crowding","percent","m/percent?",,,
+"household_crowding","ll95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"household_crowding","ul95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"household_crowding","se","e/se?",,,"Standard error"
+"household_crowding","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"household_crowding","ca_decile","d/decile?",,,"Statewide decile ranking"
+"household_crowding","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"household_crowding","version","d/date",,"^excel_dt_1904","Release version date code"
+"household_crowding","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"household_crowding","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"household_crowding","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"ozone","id","id",,"extract_desc","HCI Indicator 761.0: Average annual number of unhealthy days of ozone"
+"ozone","reportyear","d/interval",,,"Year or years that indicator was reported"
+"ozone","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"ozone","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"ozone","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"ozone","geotypevalue","d/geo","gvid",,"Census geoid code"
+"ozone","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"ozone","county_name","d/geo/label","county_fips",,"County name"
+"ozone","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"ozone","region_name","d/geo/label","region_code",,"Name of region"
+"ozone","region_code","d/int?","gvid",,"Numeric code of region"
+"ozone","numerator","m?",,,
+"ozone","poppt","m?",,,
+"ozone","o3_unhealthy_days","m?",,,
+"ozone","ll_95ci","e/ci/95/l?",,"^na_is_none","Lower bound of 95% confidence interval"
+"ozone","ul_95ci","e/ci/95/u?",,"^na_is_none","Upper bound of 95% confidence interval"
+"ozone","se","e/se?",,"^na_is_none","Standard error"
+"ozone","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"ozone","ozone_decile","d/decile?",,,
+"ozone","o3ratio_ca","m?",,,
+"ozone","version","d/date",,"^version_date","Release version date code"
+"ozone","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"ozone","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"ozone","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"unemployment","id","id",,"extract_desc","HCI Indicator 290.0: Unemployment rate"
+"unemployment","reportyear","d/interval",,,"Year or years that indicator was reported"
+"unemployment","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"unemployment","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"unemployment","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"unemployment","geotypevalue","d/geo","gvid",,"Census geoid code"
+"unemployment","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"unemployment","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"unemployment","county_name","d/geo/label","county_fips",,"County name"
+"unemployment","region_code","d/int?","gvid",,"Numeric code of region"
+"unemployment","region_name","d/geo/label","region_code",,"Name of region"
+"unemployment","unemployment","m",,,"Upper bound of 95% confidence interval"
+"unemployment","labor_force","m/count?",,,"The population in the labor force is the civilian non-institutionalized population 16 years and over who have jobs or are actively looking for jobs"
+"unemployment","unemployment_rate","m/rate?",,,"Unemployment rate: percent of the population in the labor force who are unemployed"
+"unemployment","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"unemployment","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"unemployment","se","e/se?",,,"Standard error"
+"unemployment","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"unemployment","place_decile","m/decile",,,"Decile ranking among places/"
+"unemployment","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"unemployment","version","d/date",,"^excel_dt_1904","Release version date code"
+"unemployment","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"unemployment","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"unemployment","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"open_space","id","id",,"extract_desc","HCI Indicator 469.0: Percent of Population within ½ Mile of Park, Beach, Open Space, or Coastline"
+"open_space","reportyear","d/interval",,,"Year or years that indicator was reported"
+"open_space","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"open_space","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"open_space","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"open_space","geotypevalue","d/geo","gvid",,"Census geoid code"
+"open_space","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"open_space","county_name","d/geo/label","county_fips",,"County name"
+"open_space","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"open_space","region_name","d/geo/label","region_code",,"Name of region"
+"open_space","region_code","d/int?","gvid",,"Numeric code of region"
+"open_space","pop_park_acc","m/count?",,,
+"open_space","pop2010","m/count?",,,
+"open_space","p_parkacc","m?",,,
+"open_space","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"open_space","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"open_space","se","e/se?",,,"Standard error"
+"open_space","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"open_space","ca_decile","d/decile?",,"^na_is_none","Statewide decile ranking"
+"open_space","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"open_space","version","d/date",,"^excel_dt_1904","Release version date code"
+"open_space","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"open_space","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"open_space","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"unsafe_water","id","id",,"extract_desc","HCI Indicator 426.0: Drinking water quality (Percent of the population served by community water systems not meeting regulations of the Safe Drinking Water Act)"
+"unsafe_water","reportyear","d/interval",,,"Year or years that indicator was reported"
+"unsafe_water","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"unsafe_water","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"unsafe_water","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"unsafe_water","geotypevalue","d/geo","gvid",,"Census geoid code"
+"unsafe_water","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"unsafe_water","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"unsafe_water","county_name","d/geo/label","county_fips",,"County name"
+"unsafe_water","region_code","d/int?","gvid",,"Numeric code of region"
+"unsafe_water","region_name","d/geo/label","region_code",,"Name of region"
+"unsafe_water","category","d?",,,
+"unsafe_water","numerator","m/count?",,,
+"unsafe_water","denominator","m/count?",,,
+"unsafe_water","percent","m/percent?",,,
+"unsafe_water","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"unsafe_water","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"unsafe_water","se","e/se?",,,"Standard error"
+"unsafe_water","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"unsafe_water","ca_decile","d/decile?",,"^na_is_none","Statewide decile ranking"
+"unsafe_water","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"unsafe_water","tot_pop","m/count",,,
+"unsafe_water","coverage","m?",,,
+"unsafe_water","version","d/date",,"^excel_dt_1904","Release version date code"
+"unsafe_water","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"unsafe_water","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"unsafe_water","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"income_inequality","id","id",,"extract_desc","HCI Indicator 556.0: Income inequality: Gini coefficient describing the amount of total annual community income generated by the number of households"
+"income_inequality","reportyear","d/interval",,,"Year or years that indicator was reported"
+"income_inequality","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"income_inequality","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"income_inequality","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"income_inequality","geotypevalue","d/geo","gvid",,"Census geoid code"
+"income_inequality","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"income_inequality","county_name","d/geo/label","county_fips",,"County name"
+"income_inequality","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"income_inequality","region_name","d/geo/label","region_code",,"Name of region"
+"income_inequality","region_code","d/int?","gvid",,"Numeric code of region"
+"income_inequality","numerator","m?",,,
+"income_inequality","households","m/count?",,,
+"income_inequality","gini_index","m?",,,
+"income_inequality","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"income_inequality","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"income_inequality","se","e/se?",,,"Standard error"
+"income_inequality","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"income_inequality","ca_decile","d/decile?",,,"Statewide decile ranking"
+"income_inequality","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"income_inequality","median_hh_income","m/count?",,,
+"income_inequality","median_hh_decile","m/decile?",,,
+"income_inequality","version","d/date",,"^version_date","Release version date code"
+"income_inequality","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"income_inequality","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"income_inequality","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"household_type_tracts","id","id",,"extract_desc","HCI Indicator 746.0: Household by type of family and head of household"
+"household_type_tracts","reportyear","d/interval",,,"Year or years that indicator was reported"
+"household_type_tracts","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"household_type_tracts","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"household_type_tracts","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"household_type_tracts","geotypevalue","d/geo","gvid",,"Census geoid code"
+"household_type_tracts","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"household_type_tracts","county_name","d/geo/label","county_fips",,"County name"
+"household_type_tracts","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"household_type_tracts","region_name","d/geo/label","region_code",,"Name of region"
+"household_type_tracts","region_code","d/int?","gvid",,"Numeric code of region"
+"household_type_tracts","strata_name_code","d/int",,,"Strata name code"
+"household_type_tracts","strata_name","d/label","strata_name_code",,"Strata name"
+"household_type_tracts","strata_level_name_code","d/int",,,"Strata level name code"
+"household_type_tracts","strata_level_name","d/label","strata_level_name_code",,"Strata level name"
+"household_type_tracts","households","m/count?",,,
+"household_type_tracts","total_households","m/count",,,
+"household_type_tracts","households_percent","m/pct?",,,
+"household_type_tracts","ll95ci_percent","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"household_type_tracts","ul95ci_percent","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"household_type_tracts","percent_se","e/rse?",,,
+"household_type_tracts","percent_rse","e/rse?",,,
+"household_type_tracts","ca_decile","d/decile?",,"^na_is_none","Statewide decile ranking"
+"household_type_tracts","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"household_type_tracts","version","d/date",,"^excel_dt_1904","Release version date code"
+"household_type_tracts","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"household_type_tracts","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"household_type_tracts","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"walk_bicycyle","id","id",,"extract_desc","HCI Indicator 778.0: Percent of population aged 16 years or older whose commute to work is 10 minutes /day  or more by walking or biking"
+"walk_bicycyle","reportyear","d/interval",,,"Year or years that indicator was reported"
+"walk_bicycyle","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"walk_bicycyle","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"walk_bicycyle","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"walk_bicycyle","geotypevalue","d/geo","gvid",,"Census geoid code"
+"walk_bicycyle","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"walk_bicycyle","county_name","d/geo/label","county_fips",,"County name"
+"walk_bicycyle","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"walk_bicycyle","region_name","d/geo/label","region_code",,"Name of region"
+"walk_bicycyle","region_code","d/int?","gvid",,"Numeric code of region"
+"walk_bicycyle","modetwk","d?",,,
+"walk_bicycyle","n_total","m?",,,
+"walk_bicycyle","n_time_mode","m?",,,
+"walk_bicycyle","percent","m/percent?",,,
+"walk_bicycyle","ll95ci_percent","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"walk_bicycyle","ul95ci_percent","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"walk_bicycyle","percent_se","e/rse?",,,
+"walk_bicycyle","percent_rse","e/rse?",,,
+"walk_bicycyle","ca_decile","d/decile?",,"^na_is_none","Statewide decile ranking"
+"walk_bicycyle","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"walk_bicycyle","version","d/date",,"^excel_dt_1904","Release version date code"
+"walk_bicycyle","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"walk_bicycyle","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"walk_bicycyle","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"registered_voters","id","id",,"extract_desc","HCI Indicator 653.0: Percent of adults age 18 years and older who are registered voters"
+"registered_voters","reportyear","d/interval",,,"Year or years that indicator was reported"
+"registered_voters","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"registered_voters","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"registered_voters","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"registered_voters","geotypevalue","d/geo","gvid",,"Census geoid code"
+"registered_voters","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"registered_voters","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"registered_voters","county_name","d/geo/label","county_fips",,"County name"
+"registered_voters","region_code","d/int?","gvid",,"Numeric code of region"
+"registered_voters","region_name","d/geo/label","region_code",,"Name of region"
+"registered_voters","type","d/str",,,"Type of record"
+"registered_voters","numerator","m/count?",,,"Adults who are registered to vote, or who voted, depending on type of record"
+"registered_voters","denominator","m/count?",,,"Population of Adults, 18 years or older"
+"registered_voters","percent","m/percent?",,,"Percent of adults who are registered to vote, or who voted, depending on type of record"
+"registered_voters","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"registered_voters","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"registered_voters","se","e/se?",,,"Standard error"
+"registered_voters","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"registered_voters","ca_decile","d/decile?",,"^na_is_none","Statewide decile ranking"
+"registered_voters","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"registered_voters","vap","m",,,"Voter age population, from CA Department of Finance."
+"registered_voters","version","d/date",,"^excel_dt_1904","Release version date code"
+"registered_voters","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"registered_voters","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"registered_voters","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"miles_traveled","id","id",,"extract_desc","HCI Indicator 39.0: Miles traveled per capita by mode (car, public transit, walk/bike)"
+"miles_traveled","reportyear","d/interval",,,"Year or years that indicator was reported"
+"miles_traveled","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"miles_traveled","geotypevalue","d/geo","gvid",,"Census geoid code"
+"miles_traveled","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"miles_traveled","county_name","d/geo/label","county_fips",,"County name"
+"miles_traveled","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"miles_traveled","region_name","d/geo/label","region_code",,"Name of region"
+"miles_traveled","region_code","d/int?","gvid",,"Numeric code of region"
+"miles_traveled","mode","d?",,,
+"miles_traveled","avmttotal","m?",,,
+"miles_traveled","totalpop","m/count?",,,
+"miles_traveled","mpcratio","m/ratio?",,,
+"miles_traveled","ll95ci_mpcratio","e/ci/95/l?",,"^na_is_none","Lower bound of 95% confidence interval"
+"miles_traveled","ul95ci_mpcratio","e/ci/95/u?",,"^na_is_none","Upper bound of 95% confidence interval"
+"miles_traveled","mpcratio_se","e/se",,,
+"miles_traveled","mpcratio_rse","e/rse",,,
+"miles_traveled","ca_decile_mpcratio","d/decile?",,"^na_is_none","Statewide decile ranking"
+"miles_traveled","ca_rr_mpc","m/ratio?",,,"Ratio of indicator to state average"
+"miles_traveled","areasqmi","d?",,,
+"miles_traveled","mpsqmiratio","m/ratio?",,,
+"miles_traveled","ll95ci_mpsqmiratio","e/ci/95/l?",,"^na_is_none","Lower bound of 95% confidence interval"
+"miles_traveled","ul95ci_mpsqmiratio","e/ci/95/u?",,"^na_is_none","Upper bound of 95% confidence interval"
+"miles_traveled","mpsqmiratio_se","e/se",,,
+"miles_traveled","mpsqmiratio_rse","e/rse",,,
+"miles_traveled","ca_decile_mpsqmiratio","d/decile?",,"^na_is_none","Statewide decile ranking"
+"miles_traveled","ca_rr_mpsqmi","m/ratio?",,"^na_is_none","Ratio of indicator to state average"
+"miles_traveled","groupquarters","d?",,,
+"miles_traveled","version","d/date",,"^excel_dt_1904","Release version date code"
+"miles_traveled","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+,,,,,
+"violent_crime","id","id",,"extract_desc","HCI Indicator 752.0: Number of Violent Crimes per 1000 Population"
+"violent_crime","reportyear","d/interval",,,"Year or years that indicator was reported"
+"violent_crime","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"violent_crime","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"violent_crime","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"violent_crime","geotypevalue","d/geo","gvid",,"Census geoid code"
+"violent_crime","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"violent_crime","county_name","d/geo/label","county_fips",,"County name"
+"violent_crime","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"violent_crime","region_name","d/geo/label","region_code",,"Name of region"
+"violent_crime","region_code","d/int?","gvid",,"Numeric code of region"
+"violent_crime","numerator","m/count?",,,
+"violent_crime","denominator","m/count?",,,
+"violent_crime","ratex1000","m?",,,
+"violent_crime","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"violent_crime","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"violent_crime","se","e/se?",,,"Standard error"
+"violent_crime","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"violent_crime","ca_decile","d/decile?",,,"Statewide decile ranking"
+"violent_crime","rr_city2state","m/ratio?",,,
+"violent_crime","version","d/date",,"^version_date","Release version date code"
+"violent_crime","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"violent_crime","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"violent_crime","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"housing_cost","id","id",,"extract_desc","HCI Indicator 106.0: Percent of households spending more than 30% (50%) of monthly household income on monthly gross rent or selected housing costs"
+"housing_cost","datasource","d?",,,
+"housing_cost","reportyear","d/interval",,,"Year or years that indicator was reported"
+"housing_cost","burden","d?",,,
+"housing_cost","tenure","d/str",,,
+"housing_cost","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"housing_cost","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"housing_cost","income_level","d?",,,
+"housing_cost","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"housing_cost","geotypevalue","d/geo","gvid",,"Census geoid code"
+"housing_cost","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"housing_cost","county_name","d/geo/label","county_fips",,"County name"
+"housing_cost","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"housing_cost","region_name","d/geo/label","region_code",,"Name of region"
+"housing_cost","region_code","d/int?","gvid",,"Numeric code of region"
+"housing_cost","total_households","m/count?",,,
+"housing_cost","burdened_households","m/count?",,,
+"housing_cost","percent","m/percent?",,,
+"housing_cost","ll95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"housing_cost","ul95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"housing_cost","se","e/se?",,,"Standard error"
+"housing_cost","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"housing_cost","ca_decile","d/decile?",,,"Statewide decile ranking"
+"housing_cost","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"housing_cost","version","d/date",,"^excel_dt_1904","Release version date code"
+"housing_cost","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"housing_cost","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"housing_cost","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"transport_work","id","id",,"extract_desc","HCI Indicator 42.0: Percent of residents mode of transportation to work"
+"transport_work","reportyear","d/interval",,,"Year or years that indicator was reported"
+"transport_work","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"transport_work","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"transport_work","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"transport_work","geotypevalue","d/geo","gvid",,"Census geoid code"
+"transport_work","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"transport_work","county_name","d/geo/label","county_fips",,"County name"
+"transport_work","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"transport_work","region_name","d/geo/label","region_code",,"Name of region"
+"transport_work","region_code","d/int?","gvid",,"Numeric code of region"
+"transport_work","mode","d?",,,
+"transport_work","mode_name","d?",,,
+"transport_work","pop_total","m/count?",,,
+"transport_work","pop_mode","m/count?",,,
+"transport_work","percent","m/percent?",,,
+"transport_work","ll95ci_percent","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"transport_work","ul95ci_percent","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"transport_work","percent_se","e/rse?",,,
+"transport_work","percent_rse","e/rse?",,,
+"transport_work","ca_decile","d/decile?",,"^na_is_none","Statewide decile ranking"
+"transport_work","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"transport_work","version","d/date",,"^excel_dt_1904","Release version date code"
+"transport_work","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"transport_work","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"transport_work","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"jobs_employed_ratio","id","id",,"extract_desc","HCI Indicator 769.0: Jobs to employed residents ratio"
+"jobs_employed_ratio","reportyear","d/interval",,,"Year or years that indicator was reported"
+"jobs_employed_ratio","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"jobs_employed_ratio","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"jobs_employed_ratio","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"jobs_employed_ratio","geotypevalue","d/geo","gvid",,"Census geoid code"
+"jobs_employed_ratio","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"jobs_employed_ratio","county_name","d/geo/label","county_fips",,"County name"
+"jobs_employed_ratio","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"jobs_employed_ratio","msa_name","d/geo/name","gvid",,"Metropolitan Statistical Area name"
+"jobs_employed_ratio","msa_code","d/geo/name","gvid",,"Metropolitan Statistical Area FIPS code"
+"jobs_employed_ratio","strata_name_code","d/int",,,"Strata name code"
+"jobs_employed_ratio","strata_name","d/label","strata_name_code",,"Strata name"
+"jobs_employed_ratio","strata_level_name_code","d/int",,,"Strata level name code"
+"jobs_employed_ratio","strata_level_name","d/label","strata_level_name_code",,"Strata level name"
+"jobs_employed_ratio","jobs","m/count?",,,"Number of jobs in geographic area"
+"jobs_employed_ratio","employed_res","m/count?",,,"Number of residents in geographic area"
+"jobs_employed_ratio","ratio","m/ratio?",,,"Ratio of jobs to residents"
+"jobs_employed_ratio","ll_95ci","e/ci/95/l?",,"^na_is_none","Lower bound of 95% confidence interval"
+"jobs_employed_ratio","ul_95ci","e/ci/95/u?",,"^na_is_none","Upper bound of 95% confidence interval"
+"jobs_employed_ratio","ratio_se","e/se?",,"^na_is_none","Standard error of the ratio"
+"jobs_employed_ratio","ratio_rse","e/se?",,"^na_is_none","Relative standard error of the ratio"
+"jobs_employed_ratio","ratio_decile","m/decile",,,"Decile ranking among geo regions in the state"
+"jobs_employed_ratio","ms_rr","m/ratio?",,,
+"jobs_employed_ratio","version","d/date",,"^excel_dt_1904","Release version date code"
+"jobs_employed_ratio","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"jobs_employed_ratio","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"jobs_employed_ratio","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"living_wage","id","id",,"extract_desc","HCI Indicator 770.0: Living wage and percent of families with incomes below the living wage"
+"living_wage","reportyear","d/interval",,,"Year or years that indicator was reported"
+"living_wage","family_type","d?",,,
+"living_wage","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"living_wage","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"living_wage","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"living_wage","geotypevalue","d/geo","gvid",,"Census geoid code"
+"living_wage","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"living_wage","county_name","d/geo/label","county_fips",,"County name"
+"living_wage","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"living_wage","region_name","d/geo/label","region_code",,"Name of region"
+"living_wage","region_code","d/int?","gvid",,"Numeric code of region"
+"living_wage","fam_lt_lw","m?",,,
+"living_wage","families","m/count?",,,
+"living_wage","pct_lt_lw","m/percent?",,,
+"living_wage","ll_95ci","e/ci/95/l?",,"^na_is_none","Lower bound of 95% confidence interval"
+"living_wage","ul_95ci","e/ci/95/u?",,"^na_is_none","Upper bound of 95% confidence interval"
+"living_wage","se","e/se?",,"^na_is_none","Standard error"
+"living_wage","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"living_wage","family_type_decile","m/decile",,,
+"living_wage","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"living_wage","livingwage","m?",,,
+"living_wage","version","d/date",,"^excel_dt_1904","Release version date code"
+"living_wage","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"living_wage","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"living_wage","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"public_transit","id","id",,"extract_desc","HCI Indicator 51.0:  Percent of population within 1/2 mile of major transit stop"
+"public_transit","reportyear","d/interval",,,"Year or years that indicator was reported"
+"public_transit","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"public_transit","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"public_transit","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"public_transit","geotypevalue","d/geo","gvid",,"Census geoid code"
+"public_transit","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"public_transit","county_name","d/geo/label","county_fips",,"County name"
+"public_transit","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"public_transit","region_name","d/geo/label","region_code",,"Name of region"
+"public_transit","region_code","d/int?","gvid",,"Numeric code of region"
+"public_transit","pop_trans_acc","m/count?",,,
+"public_transit","pop2010","m/count?",,,
+"public_transit","p_trans_acc","m?",,,
+"public_transit","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"public_transit","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"public_transit","se","e/se?",,,"Standard error"
+"public_transit","rse","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"public_transit","mtc_decile","d/decile?",,,
+"public_transit","sac_decile","m/decile",,,"Decile ranking in Sacramento area"
+"public_transit","sc_decile","m/decile",,,"Decile ranking in Southern California area"
+"public_transit","sd_decile","m/decile",,,"Decile ranking in San Diego area"
+"public_transit","mtc_rr","m/ratio?",,,
+"public_transit","sac_rr","m/ratio?",,,"Ratio of indicator to Sacramento area average"
+"public_transit","sc_rr","m/ratio?",,,"Ratio of indicator to  Southern California area average"
+"public_transit","sd_rr","m/ratio?",,,"Ratio of indicator to San Diego area average"
+"public_transit","version","d/date",,"^excel_dt_1904","Release version date code"
+"public_transit","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"public_transit","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"public_transit","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"household_type","id","id",,"extract_desc","HCI Indicator 746.0: Household by type of family and head of household"
+"household_type","reportyear","d/interval",,,"Year or years that indicator was reported"
+"household_type","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"household_type","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"household_type","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"household_type","geotypevalue","d/geo","gvid",,"Census geoid code"
+"household_type","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"household_type","county_name","d/geo/label","county_fips",,"County name"
+"household_type","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"household_type","region_name","d/geo/label","region_code",,"Name of region"
+"household_type","region_code","d/int?","gvid",,"Numeric code of region"
+"household_type","strata_name_code","d/int",,,"Strata name code"
+"household_type","strata_name","d/label","strata_name_code",,"Strata name"
+"household_type","strata_level_name_code","d/int",,,"Strata level name code"
+"household_type","strata_level_name","d/label","strata_level_name_code",,"Strata level name"
+"household_type","households","m/count?",,,
+"household_type","total_households","m/count?",,,
+"household_type","households_percent","m/pct?",,,
+"household_type","ll95ci_percent","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"household_type","ul95ci_percent","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"household_type","percent_se","e/rse?",,,
+"household_type","percent_rse","e/rse?",,,
+"household_type","ca_decile","d/decile?",,,"Statewide decile ranking"
+"household_type","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"household_type","version","d/date",,"^excel_dt_1904","Release version date code"
+"household_type","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"household_type","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"household_type","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"poverty_rate","id","id",,"extract_desc","HCI Indicator 754.0: Overall, concentrated, and child (0 to 18 years of age) poverty rate"
+"poverty_rate","reportyear","d/interval",,,"Year or years that indicator was reported"
+"poverty_rate","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"poverty_rate","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"poverty_rate","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"poverty_rate","geotypevalue","d/geo","gvid",,"Census geoid code"
+"poverty_rate","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"poverty_rate","county_name","d/geo/label","county_fips",,"County name"
+"poverty_rate","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"poverty_rate","region_name","d/geo/label","region_code",,"Name of region"
+"poverty_rate","region_code","d/int?","gvid",,"Numeric code of region"
+"poverty_rate","poverty","m/rate?",,,
+"poverty_rate","totalpop","m/count?",,,
+"poverty_rate","numpov","m/rate?",,,
+"poverty_rate","percent","m/percent?",,,
+"poverty_rate","ll_95ci_percent","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"poverty_rate","ul_95ci_percent","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"poverty_rate","percent_se","e/rse?",,,
+"poverty_rate","percent_rse","e/rse?",,,
+"poverty_rate","place_decile","m/decile",,,
+"poverty_rate","ca_rr","m/ratio?",,,"Ratio of indicator to state average"
+"poverty_rate","concentratedct","d?",,,
+"poverty_rate","version","d/date",,"^excel_dt_1904","Release version date code"
+"poverty_rate","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"poverty_rate","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"poverty_rate","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"food_affordability","id","id",,"extract_desc","HCI Indicator 757.0: Food affordability for female-headed household with children under 18 years"
+"food_affordability","reportyear","d/interval",,,"Year or years that indicator was reported"
+"food_affordability","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"food_affordability","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"food_affordability","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"food_affordability","geotypevalue","d/geo","gvid",,"Census geoid code"
+"food_affordability","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"food_affordability","county_name","d/geo/label","county_fips",,"County name"
+"food_affordability","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"food_affordability","region_name","d/geo/label","region_code",,"Name of region"
+"food_affordability","region_code","d/int?","gvid",,"Numeric code of region"
+"food_affordability","cost_yr","m?",,,
+"food_affordability","median_income","m?",,,
+"food_affordability","affordability_ratio","m/ratio?",,,
+"food_affordability","ll95_affordability_ratio","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"food_affordability","ul95_affordability_ratio","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"food_affordability","se_food_afford","e/se?",,,"Standard error"
+"food_affordability","rse_food_afford","e/rse?",,"^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
+"food_affordability","food_afford_decile","m/decile?",,,
+"food_affordability","ca_rr_affordability","m/ratio?",,,"Ratio of indicator to state average"
+"food_affordability","ave_fam_size","m?",,,
+"food_affordability","version","d/date",,"^excel_dt_1904","Release version date code"
+"food_affordability","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"food_affordability","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"food_affordability","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
+,,,,,
+"jobs_housing_ratio","id","id",,"extract_desc","HCI Indicator 768.0: Jobs to housing ratio"
+"jobs_housing_ratio","reportyear","d/interval",,,"Year or years that indicator was reported"
+"jobs_housing_ratio","race_eth_code","d/raceth/hci?","raceth",,"Race / ethnicity code"
+"jobs_housing_ratio","race_eth_name","d/label","race_eth_code",,"Race / ethnicity name"
+"jobs_housing_ratio","geotype","d/geo?","gvid",,"Code for type of geographic area"
+"jobs_housing_ratio","geotypevalue","d/geo","gvid",,"Census geoid code"
+"jobs_housing_ratio","geoname","d/geo/label","gvid",,"Census name of geographic area"
+"jobs_housing_ratio","county_name","d/geo/label","county_fips",,"County name"
+"jobs_housing_ratio","county_fips","d/geo/census/county","gvid",,"County FIPS code"
+"jobs_housing_ratio","msa_name","d/geo/name","gvid",,
+"jobs_housing_ratio","msa_code","d/geo/name","gvid",,
+"jobs_housing_ratio","strata_name_code","d/int",,,"Strata name code"
+"jobs_housing_ratio","strata_name","d/label","strata_name_code",,"Strata name"
+"jobs_housing_ratio","strata_level_name_code","d/int",,,"Strata level name code"
+"jobs_housing_ratio","strata_level_name","d/label","strata_level_name_code",,"Strata level name"
+"jobs_housing_ratio","jobs","m/count?",,,
+"jobs_housing_ratio","housing","m/count?",,,
+"jobs_housing_ratio","ratio","m/ratio?",,,
+"jobs_housing_ratio","ll_95ci","e/ci/95/l?",,,"Lower bound of 95% confidence interval"
+"jobs_housing_ratio","ul_95ci","e/ci/95/u?",,,"Upper bound of 95% confidence interval"
+"jobs_housing_ratio","ratio_se","e/se?",,,
+"jobs_housing_ratio","ratio_rse","e/se?",,,
+"jobs_housing_ratio","ratio_decile","m/decile?",,,
+"jobs_housing_ratio","ms_rr","m/ratio?",,,
+"jobs_housing_ratio","version","d/date",,"^excel_dt_1904","Release version date code"
+"jobs_housing_ratio","gvid","d/geo/gvid?",,"extract_geoid","GVid version of the geotype and geotypeval"
+"jobs_housing_ratio","raceth","d/raceth/civick?",,"||row.race_eth_code.civick","Civic Knowledge race / ethnicity code."
+"jobs_housing_ratio","raceth_name","d/label?","raceth","||row.race_eth_code.civick.name","Race / Ethnicity Name"
