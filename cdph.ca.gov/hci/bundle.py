@@ -222,6 +222,10 @@ class Bundle(ambry.bundle.Bundle):
                 for child in c.children:
                     move(child, in_cols, reordered_columns)
                     
+                    if child.label:
+                        move(child.label, in_cols, reordered_columns)
+                    
+                    
             for c in t.primary_measures:
                move(c, in_cols, reordered_columns)
                
@@ -230,6 +234,10 @@ class Bundle(ambry.bundle.Bundle):
                    
                for child in c.children:
                    move(child, in_cols, reordered_columns)
+                   
+                   if child.label:
+                       move(child.label, in_cols, reordered_columns)
+                   
 
             for c in reordered_columns:
                 print c.sequence_id, c.vid, c.name, c.valuetype
@@ -245,6 +253,62 @@ class Bundle(ambry.bundle.Bundle):
         
                     
          
+    def meta_print_schema(self):
+    
+    
+        def move(col_or_name, tag):
+
+            print '   ', tag, col_or_name
+
+        
+        for t in self.tables:
+        
+            if t.name != 'healthy_food':
+                continue
+        
+            print '---- ', t.name
+        
+            in_cols = list(t.columns)
+            reordered_columns = []
+        
+            move('id', 'i')
+        
+            for c in t.primary_dimensions:
+                move(c, 'd')
+            
+                if c.label:
+                    move(c.label, 'l')
+                
+                for child in c.children:
+                    move(child, '+')
+                    
+                    if child.label:
+                        move(child.label, 'l')
+                    
+                
+            for c in t.primary_measures:
+               move(c, 'm')
+           
+               if c.label:
+                   move(c.label, 'l')
+               
+               for child in c.children:
+                   move(child, "+")
+                   
+                   if child.label:
+                       move(child.label, 'l')
+
+
+        
+    def set_labels(self):
+        from operator import itemgetter
+        
+        p = self.partition('cdph.ca.gov-hci-unemployment-county')
+        
+        for c in p.primary_dimensions:
+            print c.name, p.labels(c)
+ 
+            
         
         
         

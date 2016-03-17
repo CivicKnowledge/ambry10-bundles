@@ -27,6 +27,10 @@ contacts:
         org: Civic Knowledge
         url: http://civicknowledge.com
 dependencies: {}
+documentation:
+    caveats: |
+        * The parent/child relationship between meny of the measures and the errors isn't thoroughly documented, 
+        so many of these connections are guesses. 
 external_documentation:
     abuse_neglect:
         description: 'Numerator: number of children with allegations of physical abuse,
