@@ -1,0 +1,59 @@
+about:
+    access: restricted
+    footnote: null
+    grain: ''
+    groups:
+    - null
+    license: ckdbl
+    processed: ''
+    remote: ''
+    rights: public
+    source: ''
+    space: ''
+    subject: ''
+    summary: HDI is a model cumulative index of community health disadvantage. It
+        was developed by statewide public health department data experts by adapting
+        international best practices and integrating 27 economic, social, environmental,
+        and health data indicators. Sample HDI indicators include economic security,
+        educational and employment opportunity, civic engagement, neighborhood quality,
+        and premature mortality. Indicators are weighted based on their impact on
+        human health, development and well-being.
+    tags: []
+    time: ''
+    title: Health Disadvantage Index for California, V1.1
+contacts:
+    wrangler:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+documentation:
+    processing: '- For all numeric columns, "NA" values have been converted to Nulls
+
+        '
+external_documentation:
+    dataset:
+        description: Web page the links to the dataset description
+        source: null
+        title: California Health Disadvantage Index Dataset Page
+        url: http://phasocal.org/ca-hdi/
+    map:
+        description: An ArcGIS online map of HDI indicators.
+        title: Interactive Map
+        url: http://phasocal.maps.arcgis.com/apps/Viewer/index.html?appid=e1215eae472a4c458c5e9157d6b8ec8e
+    report:
+        description: This report documents a methodology to summarize cumulative health
+            disadvantage at the census tract level in California.
+        title: Methodology Documentation
+        url: http://phasocal.org/wp-content/uploads/2016/02/HDI1.1FinalReport2016-01-26.pdf
+identity:
+    dataset: hdi
+    id: d05o
+    revision: 1
+    source: phasocal.org
+    version: 0.0.1
+names:
+    fqname: phasocal.org-hdi-0.0.1~d05o001
+    name: phasocal.org-hdi
+    vid: d05o001
+    vname: phasocal.org-hdi-0.0.1

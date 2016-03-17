@@ -1,0 +1,4 @@
+"name","segment","start_line","end_line","header_lines","ref","state","title"
+"definitions",3,1,28,0,"http://phasocal.org/wp-content/uploads/2016/02/HDI1.1Data2016-01-17.xls","ingest_done","Definitions for the indicators and links to data sources"
+"dictionary",2,1,96,0,"http://phasocal.org/wp-content/uploads/2016/02/HDI1.1Data2016-01-17.xls","ingest_done","Data dictionary"
+"hdi",1,1,8058,0,"http://phasocal.org/wp-content/uploads/2016/02/HDI1.1Data2016-01-17.xls","ingest_done","California Health Disadvantage Index"
