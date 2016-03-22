@@ -46,15 +46,15 @@
 "miles_traveled","mpcratio","float","m/ratio?",,,
 "miles_traveled","ll95ci_mpcratio","float","e/ci/95/l?","mpcratio","^na_is_none","Lower bound of 95% confidence interval"
 "miles_traveled","ul95ci_mpcratio","float","e/ci/95/u?","mpcratio","^na_is_none","Upper bound of 95% confidence interval"
-"miles_traveled","mpcratio_se","float","e/se","mpcratio",,
-"miles_traveled","mpcratio_rse","float","e/rse","mpcratio",,
+"miles_traveled","mpcratio_se","float","e/se?","mpcratio",,
+"miles_traveled","mpcratio_rse","float","e/rse?","mpcratio",,
 "miles_traveled","ca_decile_mpcratio","int","d/decile?","mpcratio","^na_is_none","Statewide decile ranking"
 "miles_traveled","ca_rr_mpc","float","m/ratio?","mpcratio",,"Ratio of indicator to state average"
 "miles_traveled","mpsqmiratio","float","m/ratio?",,,
 "miles_traveled","ll95ci_mpsqmiratio","float","e/ci/95/l?","mpsqmiratio","^na_is_none","Lower bound of 95% confidence interval"
 "miles_traveled","ul95ci_mpsqmiratio","float","e/ci/95/u?","mpsqmiratio","^na_is_none","Upper bound of 95% confidence interval"
-"miles_traveled","mpsqmiratio_se","float","e/se","mpsqmiratio",,
-"miles_traveled","mpsqmiratio_rse","float","e/rse","mpsqmiratio",,
+"miles_traveled","mpsqmiratio_se","float","e/se?","mpsqmiratio",,
+"miles_traveled","mpsqmiratio_rse","float","e/rse?","mpsqmiratio",,
 "miles_traveled","ca_decile_mpsqmiratio","int","d/decile?","mpsqmiratio","^na_is_none","Statewide decile ranking"
 "miles_traveled","ca_rr_mpsqmi","float","m/ratio?","mpsqmiratio","^na_is_none","Ratio of indicator to state average"
 ,,,,,,
@@ -291,9 +291,9 @@
 "public_transit","se","float","e/se?","p_trans_acc",,"Standard error"
 "public_transit","rse","float","e/rse?","p_trans_acc","^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
 "public_transit","mtc_decile","int","d/decile?","p_trans_acc",,
-"public_transit","sac_decile","float","m/decile","p_trans_acc",,"Decile ranking in Sacramento area"
-"public_transit","sc_decile","float","m/decile","p_trans_acc",,"Decile ranking in Southern California area"
-"public_transit","sd_decile","float","m/decile","p_trans_acc",,"Decile ranking in San Diego area"
+"public_transit","sac_decile","float","m/decile?","p_trans_acc",,"Decile ranking in Sacramento area"
+"public_transit","sc_decile","float","m/decile?","p_trans_acc",,"Decile ranking in Southern California area"
+"public_transit","sd_decile","float","m/decile?","p_trans_acc",,"Decile ranking in San Diego area"
 "public_transit","mtc_rr","float","m/ratio?","p_trans_acc",,
 "public_transit","sac_rr","float","m/ratio?","p_trans_acc",,"Ratio of indicator to Sacramento area average"
 "public_transit","sc_rr","float","m/ratio?","p_trans_acc",,"Ratio of indicator to  Southern California area average"
@@ -324,7 +324,7 @@
 "jobs_employed_ratio","ul_95ci","float","e/ci/95/u?","ratio","^na_is_none","Upper bound of 95% confidence interval"
 "jobs_employed_ratio","ratio_se","float","e/se?","ratio","^na_is_none","Standard error of the ratio"
 "jobs_employed_ratio","ratio_rse","float","e/se?","ratio","^na_is_none","Relative standard error of the ratio"
-"jobs_employed_ratio","ratio_decile","float","m/decile","ratio",,"Decile ranking among geo regions in the state"
+"jobs_employed_ratio","ratio_decile","float","m/decile?","ratio",,"Decile ranking among geo regions in the state"
 "jobs_employed_ratio","ms_rr","float","m/ratio?","ratio",,
 ,,,,,,
 "alcohol_outlets","id","int","id",,"extract_desc","HCI Indicator 774.0: Percent of Population within 1/4 Mile of Alcohol Outlets by Type of Establishment Sales"
@@ -368,7 +368,7 @@
 "unemployment","race_eth_name","unicode","d/label","race_eth_code",,"Race / ethnicity name"
 "unemployment","unemployment","float","m?",,,"Unemployment  count"
 "unemployment","labor_force","int","m/count?",,,"The population in the labor force is the civilian non-institutionalized population 16 years and over who have jobs or are actively looking for jobs"
-"unemployment","unemployment_rate","float","m/rate?",,,"Unemployment rate: percent of the population in the labor force who are unemployed"
+"unemployment","unemployment_rate","float","m/pct?",,,"Unemployment rate: percent of the population in the labor force who are unemployed"
 "unemployment","ll_95ci","float","e/ci/95/l?","unemployment_rate",,"Lower bound of 95% confidence interval"
 "unemployment","ul_95ci","float","e/ci/95/u?","unemployment_rate",,"Upper bound of 95% confidence interval"
 "unemployment","se","float","e/se?","unemployment_rate",,"Standard error"
@@ -710,6 +710,6 @@
 "living_wage","ul_95ci","float","e/ci/95/u?","pct_lt_lw","^na_is_none","Upper bound of 95% confidence interval"
 "living_wage","se","float","e/se?","pct_lt_lw","^na_is_none","Standard error"
 "living_wage","rse","float","e/rse?","pct_lt_lw","^catch_dbz","Relative standard error (se/percent * 100) expressed as a percent"
-"living_wage","family_type_decile","float","m/decile","pct_lt_lw",,
+"living_wage","family_type_decile","float","m/decile?","pct_lt_lw",,
 "living_wage","ca_rr","float","m/ratio?","pct_lt_lw",,"Ratio of indicator to state average"
 "living_wage","livingwage","float","m?",,,

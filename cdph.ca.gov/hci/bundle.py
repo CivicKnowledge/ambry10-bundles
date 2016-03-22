@@ -299,14 +299,29 @@ class Bundle(ambry.bundle.Bundle):
                        move(child.label, 'l')
 
 
+    def print_row(self, v, row):
+        print v, type(v), v.exc 
+        return v
+
         
     def set_labels(self):
         from operator import itemgetter
         
         p = self.partition('cdph.ca.gov-hci-unemployment-county')
-        
-        for c in p.primary_dimensions:
-            print c.name, p.labels(c)
+
+        for c in p.measuredim.primary_dimensions:
+            print c.name, c.pstats.nuniques, c.label, c.labels
+            
+        df =  p.measuredim.md_frame(
+                    unstack = False,
+                    measure='unemployment_rate', 
+                    p_dim='gvid', 
+                    s_dim='raceth',
+                    filtered_dims={ 'reportyear': '2006/2010'})
+                              
+                              
+        df.to_csv('unemployment.csv')
+      
  
             
         
