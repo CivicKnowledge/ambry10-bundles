@@ -1,0 +1,41 @@
+about:
+    access: public
+    footnote: nll
+    grain: incident
+    groups:
+    - null
+    license: ckdbl
+    remote: ''
+    rights: public
+    source: ''
+    space: San Diego County
+    subject: crime
+    summary: SANDAG crime incident records obtained from two public records requests. The two files have different columns,
+      and overlap, but collectively cover years from 2007 to 2015. 
+    tags: []
+    time: 2007/2015
+    title: SANDAG Crime Incident Data
+contacts:
+    wrangler:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+external_documentation:
+    dataset:
+        description: Download page for the 180 public extract, which is similar to the data in this package. 
+        source: null
+        title: Public Crime Data Extract
+        url: http://www.sandag.org/index.asp?projectid=446&fuseaction=projects.detail
+identity:
+    dataset: crime
+    id: d05p
+    revision: 1
+    source: sandag.org
+    variation: orig
+    version: 0.0.1
+names:
+    fqname: sandag.org-crime-orig-0.0.1~d05p001
+    name: sandag.org-crime-orig
+    vid: d05p001
+    vname: sandag.org-crime-orig-0.0.1
