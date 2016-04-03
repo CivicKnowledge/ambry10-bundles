@@ -28,9 +28,9 @@ contacts:
         url: http://civicknowledge.com
 dependencies: {}
 documentation:
-    caveats: |
-        * The parent/child relationship between meny of the measures and the errors isn't thoroughly documented, 
-        so many of these connections are guesses. 
+    caveats: "* The parent/child relationship between meny of the measures and the\
+        \ errors isn't thoroughly documented, \nso many of these connections are guesses.\
+        \ \n"
 external_documentation:
     abuse_neglect:
         description: 'Numerator: number of children with allegations of physical abuse,
@@ -327,13 +327,13 @@ external_documentation:
 identity:
     dataset: hci
     id: d04p
-    revision: 4
+    revision: 5
     source: cdph.ca.gov
-    version: 0.0.4
+    version: 0.0.5
 names:
-    fqname: cdph.ca.gov-hci-0.0.4~d04p004
+    fqname: cdph.ca.gov-hci-0.0.5~d04p005
     name: cdph.ca.gov-hci
-    vid: d04p004
-    vname: cdph.ca.gov-hci-0.0.4
+    vid: d04p005
+    vname: cdph.ca.gov-hci-0.0.5
 requirements: {}
 versions: {}
