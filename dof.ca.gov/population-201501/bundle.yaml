@@ -1,0 +1,49 @@
+about:
+    access: restricted
+    footnote: nll
+    grain: ''
+    groups:
+    - null
+    license: ckdbl
+    processed: ''
+    remote: ''
+    rights: public
+    source: ''
+    space: ''
+    subject: demographics
+    summary: The Demographic Research Unit of the California Department of Finance produces population and housing estimates at the state, 
+        county, and city level based on the ACS and administrative data, so they are more accurate than ACS estimates. 
+    tags: []
+    time: ''
+    title: California Population Estimates
+contacts:
+    wrangler:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+external_documentation:
+    dataset:
+        description: Web page the links to the dataset description
+        source: null
+        title: Dataset Page
+        url: http://www.dof.ca.gov/research/demographic/Estimates/
+identity:
+    btime: '201501'
+    dataset: population
+    id: d05q
+    revision: 1
+    source: dof.ca.gov
+    version: 0.0.1
+names:
+    fqname: dof.ca.gov-population-201501-0.0.1~d05q001
+    name: dof.ca.gov-population-201501
+    vid: d05q001
+    vname: dof.ca.gov-population-201501-0.0.1
+pipelines:
+    build-pop1415city:
+        first:
+        - CountNonNullRows
+        - Skip('not bool(row.state_county_city.strip())')
+        select_partition:
+        - SelectPartition("dict(grain=row.geotype, table=source.dest_table.name)")

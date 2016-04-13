@@ -1,0 +1,4 @@
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+county_codes,1,sos_code,sos_code,int,,False,,,,,sos_code
+county_codes,2,fips_code,fips_code,int,,False,,,,,fips_code
+county_codes,3,county,county,str,,False,,,,,county

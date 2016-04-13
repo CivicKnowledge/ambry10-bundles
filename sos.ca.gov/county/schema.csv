@@ -1,0 +1,7 @@
+"table","column","valuetype","transform","description"
+,,,,
+"county_codes","id","id",,"CCA Sectrtary of State County Codes"
+"county_codes","sos_code","d/geo/int",,"SOS Code"
+"county_codes","fips_code","d/geo/fips",,"Fips Code"
+"county_codes","gvid","d/geo/gvid","^county_gvid","GVID code"
+"county_codes","county","d/geolabel","^row.county.title()","County Name"

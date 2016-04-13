@@ -1,0 +1,10 @@
+name,time,stage,start_line,end_line,header_lines,encoding,description,reftype,ref
+districts,2016,1,1,1099,0,utf8,California School Districts,,ftp://ftp.cde.ca.gov/demo/schlname/pubdistricts.xls
+schools,2016,1,1,17620,0,utf8,California Public Schools,,ftp://ftp.cde.ca.gov/demo/schlname/pubschls.xls
+county_codes,,,,,,,,ref,sos.ca.gov-county-county_codes
+elementary,,,,,,,,ref,census.gov-acs-geofile-2014-geofile950-20145-950
+secondary,,,,,,,,ref,census.gov-acs-geofile-2014-geofile960-20145-960
+unified,,,,,,,,ref,census.gov-acs-geofile-2014-geofile970-20145-970
+districts,,,,,,,,ref,cde.ca.gov-schools-districts
+schools,,,,,,,,ref,cde.ca.gov-schools-schools
+joined_districts,,2,,,,utf8,,generator,GenerateDistricts

@@ -1,0 +1,7 @@
+name,time,grain,segment,start_line,end_line,comment_lines,header_lines,file,filetype,reftype,ref,state
+counties,,,,,,,,,,reftype,census.gov-tiger-2015-counties,synced
+places,,,,,,,,,,reftype,census.gov-tiger-2015-places,synced
+pop1015,p5ye201501,,,,,,,,,,http://www.dof.ca.gov/research/demographic/reports/estimates/e-2/documents/E-2_Report_July2010-2015w.xls,synced
+pop1415city,p1ye201501,city,1,7,660,,"4,5",,,,http://www.dof.ca.gov/research/demographic/reports/estimates/e-1/documents/E-12015InternetVersion.xls,synced
+pop1415county,p1ye201501,county,2,,,"0,1,2",,,,,http://www.dof.ca.gov/research/demographic/reports/estimates/e-1/documents/E-12015InternetVersion.xls,synced
+projections,,,,1,,,0,P-3_CAProj_STCO,csv,,http://www.dof.ca.gov/research/demographic/reports/projections/P-3/P-3_CAProj_database.zip,ingest_done

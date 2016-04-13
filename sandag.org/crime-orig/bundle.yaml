@@ -34,6 +34,9 @@ identity:
     source: sandag.org
     variation: orig
     version: 0.0.1
+requirements:
+    dstk: http://www.datasciencetoolkit.org/dstk-0.50.tar.gz
+    address_parser: address_parser
 names:
     fqname: sandag.org-crime-orig-0.0.1~d05p001
     name: sandag.org-crime-orig

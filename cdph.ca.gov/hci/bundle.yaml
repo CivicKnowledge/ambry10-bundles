@@ -337,3 +337,7 @@ names:
     vname: cdph.ca.gov-hci-0.0.5
 requirements: {}
 versions: {}
+pipelines:
+    build-b14001:
+        select_partition:
+        - SelectPartition("dict( grain=row.sumlevel, table='b14001'")

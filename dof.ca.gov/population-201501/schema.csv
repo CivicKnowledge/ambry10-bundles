@@ -1,0 +1,36 @@
+"table","sequence_id","column","datatype","valuetype","parent","transform","description"
+,,,,,,,
+"places",1,"id","int",,,,
+,,,,,,,
+"projections",1,"id","int",,,,
+"projections",2,"countycode","int",,,,"CountyCode"
+"projections",3,"countyname","str",,,,"CountyName"
+"projections",4,"year","int",,,,"Year"
+"projections",5,"racecode","int",,,,"RaceCode"
+"projections",6,"racename","str",,,,"RaceName"
+"projections",7,"gender","str",,,,"Gender"
+"projections",8,"age","int",,,,"Age"
+"projections",9,"population","int",,,"^to_float","Population"
+,,,,,,,
+"counties",1,"id","int",,,,
+,,,,,,,
+"pop1015",1,"id","int","int",,,
+"pop1015",2,"col1","str",,,,
+,,,,,,,
+"pop1415county",1,"id","int","int",,,
+"pop1415county",2,"state_county","str",,,,"State/County"
+"pop1415county",3,"total_population","int",,,,"           Total Population"
+"pop1415county",4,"column4","int",,,,
+"pop1415county",5,"percent","types.FloatOrCode",,,,"Percent"
+"pop1415county",6,"percent_codes","str",,,"||row.percent.code","Codes for: Percent"
+,,,,,,,
+"pop1415city",1,"id","int","id",,,
+"pop1415city",2,"gvid","unicode","d/geo/gvid",,"^name_to_gvid","Civick Knowlege Geo Identifier"
+"pop1415city",3,"geoid","unicode","d/geo/acs","gvid","||geoid","ACS Geoid"
+"pop1415city",4,"state_county_city","str","d/geo/label","gvid",,"State/County/City"
+"pop1415city",5,"geotype","unicode","d/geo/acs","gvid","||geotype",
+"pop1415city",6,"county_name","unicode","d/geo/label","gvid","bundle.last_county","County name"
+"pop1415city",7,"city_name","unicode","d/geo/label","gvid","bundle.city_name","City name"
+"pop1415city",8,"total_population_jan2014","int","m/count?",,,"Total Population Jan 2014"
+"pop1415city",9,"total_population_jan2015","int","m/count?",,,"Total Population Jan 2015"
+"pop1415city",10,"percent_change","float","m/pct?",,,"Percent Change"

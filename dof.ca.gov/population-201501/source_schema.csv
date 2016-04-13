@@ -1,0 +1,18 @@
+table,position,source_header,dest_header,datatype,valuetype,has_codes,start,width,size,summary,description
+pop1415county,1,state_county,state_county,str,,False,,,,,State/County
+pop1415county,2,total_population,total_population,int,,False,,,,,           Total Population
+pop1415county,3,,,int,,False,,,,,
+pop1415county,4,percent,percent,float,,True,,,,,Percent
+pop1015,1,col1,col1,str,,False,,,,,
+pop1415city,1,state_county_city,state_county_city,str,,False,,,,,State/County/City
+pop1415city,2,total_population_41640_0,total_population_jan2014,int,,False,,,,,Total Population Jan 2014
+pop1415city,3,total_population_42005_0,total_population_jan2015,int,,False,,,,,Total Population Jan 2015
+pop1415city,4,percent_change,percent_change,float,,False,,,,,Percent Change
+projections,1,countycode,countycode,int,,False,,,,,CountyCode
+projections,2,countyname,countyname,str,,False,,,,,CountyName
+projections,3,year,year,int,,False,,,,,Year
+projections,4,racecode,racecode,int,,False,,,,,RaceCode
+projections,5,racename,racename,str,,False,,,,,RaceName
+projections,6,gender,gender,str,,False,,,,,Gender
+projections,7,age,age,int,,False,,,,,Age
+projections,8,population,population,int,,False,,,,,Population

@@ -1,11 +1,14 @@
-
 Processed crime incidents, based on data supplied by SANDAG.
 
 This dataset includes a set of crime incidents from 1 Jan 2007 to 31 March 2013 that were returned by SANDAG for Public Records request 12-075, and another set that was returned by an unnumbered request, for 2012, 2013, 2014 and 2015. These two dataset have different structures, with the second having more columns that the first, and some of the charges and charge descriptions are different. 
 
-The dataset was provided without documentation, so here are some guesses:
+* `crimea` came from the first request, and covers January 1 2007 to March 31 2013
 
+* `crimeb` came from the second request, and covers reporting dates from January 1 2012 to December 31, 2015, but also includes about 18,000 records with activitydates before 2012.
 
+The dataset was provided without documentation, so the descriptions of columns in the schema are best guesses. 
+
+The two dataset overlap for the year 2012, but the `crimeb` file has 192,947 records for 2012, but `crimea` only has 141,318 records. THis difference has not been explored. 
 
 
 Caveats
@@ -23,11 +26,11 @@ As with most crime data, there are many issues, limitations and problems that us
 
 *Time and dates are often unreliable* Time and dates for many incidents are unreliable, with times being more unreliable than dates. 
 
-  * Property crimes that occur while the owner is gone may be recorded as the time a responsible person left the property, arrived at the property to discover the crime, or the average between the two. There is no information available to select among these possibilities, so these incidents have very unreliable times. 
+* Property crimes that occur while the owner is gone may be recorded as the time a responsible person left the property, arrived at the property to discover the crime, or the average between the two. There is no information available to select among these possibilities, so these incidents have very unreliable times. 
 
-  * Because the time is unreliable, so is the date, for crimes that occurred at night. 
+* Because the time is unreliable, so is the date, for crimes that occurred at night. 
 
-  * Times may have not been recorded in the original report. These times may be entered as midnight, or as another time. 
+* Times may have not been recorded in the original report. These times may be entered as midnight, or as another time. 
 
 
 *Multiple crime incidents may not have all crimes recorded.* If a single person is charged with multiple violations for a single arrest, departments may enter only the most serious charge, the last charge, or all of the charges. There is no information to disambiguate these possibilities. 

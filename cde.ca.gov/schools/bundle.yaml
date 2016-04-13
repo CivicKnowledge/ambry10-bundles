@@ -1,0 +1,47 @@
+about:
+    access: restricted
+    footnote: null
+    grain: schools
+    groups: []
+    license: ckdbl
+    processed: null
+    rights: public
+    source: null
+    space: California
+    subject: schools
+    summary: Downloadable files containing general information about California's
+        public schools and districts.
+    tags: []
+    time: 2013
+    title: California Public Schools
+contacts:
+    creator:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+dependencies: {}
+external_documentation:
+    dataset:
+        description: Webpage that links to data files and data dictionaries.
+        source: null
+        title: Main Dataset Webpage
+        url: http://www.cde.ca.gov/ds/si/ds/pubschls.asp
+    documentation:
+        description: Data dictinoary for public school files.
+        source: null
+        title: Data Dictionary
+        url: http://www.cde.ca.gov/ds/si/ds/fspubschls.asp
+identity:
+    dataset: schools
+    id: d03L
+    revision: 3
+    source: cde.ca.gov
+    version: 0.0.3
+names:
+    fqname: cde.ca.gov-schools-0.0.3~d03L003
+    name: cde.ca.gov-schools
+    vid: d03L003
+    vname: cde.ca.gov-schools-0.0.3
+requirements: {}
+versions: {}

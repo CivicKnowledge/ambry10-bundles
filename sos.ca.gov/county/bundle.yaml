@@ -1,0 +1,35 @@
+about:
+    access: restricted
+    footnote: nll
+    grain: ''
+    groups:
+    - null
+    license: ckdbl
+    processed: ''
+    remote: ''
+    rights: public
+    source: ''
+    space: ''
+    subject: ''
+    summary: County codes for California counties, mapped to gvids and FIPS codes. These codes are used in identifiers for 
+        hospitals and schools. 
+    tags: []
+    title: California Secretary of State County Codes
+contacts:
+    wrangler:
+        email: eric@civicknowledge.com
+        name: Eric Busboom
+        org: Civic Knowledge
+        url: http://civicknowledge.com
+external_documentation: {}
+identity:
+    dataset: county
+    id: d05r
+    revision: 1
+    source: sos.ca.gov
+    version: 0.0.1
+names:
+    fqname: sos.ca.gov-county-0.0.1~d05r001
+    name: sos.ca.gov-county
+    vid: d05r001
+    vname: sos.ca.gov-county-0.0.1
