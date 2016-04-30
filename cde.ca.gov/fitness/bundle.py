@@ -1,18 +1,17 @@
 # -*- coding: utf-8 -*-
 import ambry.bundle
-
+from ambry.util import memoize
 
 class FixEnt11(object):
     """ The Entities 11 file is malformed. It has commas in the name fiel
     but no quotes, so readers see the line as having too many columns. """
     
     def __init__(self, bundle, source, url):
+        
         self._bundle = bundle
         self._source = source
-        self._url = url
+        self._url = source.ref
         
-
-    
         
     def __iter__(self):
         
@@ -51,12 +50,37 @@ class FixEnt11(object):
     
 class Bundle(ambry.bundle.Bundle):
     
-    
+    @property
+    @memoize
+    def county_map(self):
+        return { int(row.sos_code):dict(row) for row in self.dep('county_codes') }
+
+
     def star_is_not_a_number(self, v):
         if v == '*' or v == '**':
             return None
         else:
             return v
             
-    
+    def make_cds(self, row):
+        
+        return "{:02d}{:05d}{:07d}".format(int(row.co), int(row.dist), int(row.schl))
 
+            
+
+    grain_map={
+        None: 'unknown',
+        1: 'school',
+        2: 'district',
+        3: 'county',
+        4: 'state'
+    }
+
+    def select_partition(self, source, row):
+        
+        from ambry.identity import PartialPartitionName
+        
+        return PartialPartitionName(table=source.dest_table_name, 
+                                    time=source.time, 
+                                    grain=self.grain_map[row.level_number])
+        

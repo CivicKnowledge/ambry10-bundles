@@ -1,46 +1,47 @@
-name,title,dest_table_name,time,space,start_line,end_line,header_lines,description,file,filetype,encoding,reftype,ref,state
-entities11,entities11,entities_10_14,2011,California,1,13714,0,2011 PFT Entities,Entities.*,csv,latin1,generator,FixEnt11;http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip,ingest_done
-entities01,entities01,entities_99_10,2001,California,1,7798,0,2001 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip,ingest_done
-entities02,entities02,entities_99_10,2002,California,1,8202,0,2002 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip,ingest_done
-entities03,entities03,entities_99_10,2003,California,1,9365,0,2003 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip,ingest_done
-entities04,entities04,entities_99_10,2004,California,1,9035,0,2004 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip,ingest_done
-entities05,entities05,entities_99_10,2005,California,1,9262,0,2005 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip,ingest_done
-entities06,entities06,entities_99_10,2006,California,1,9564,0,2006 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip,ingest_done
-entities07,entities07,entities_99_10,2007,California,1,9970,0,2007 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip,ingest_done
-entities08,entities08,entities_99_10,2008,California,1,9922,0,2008 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip,ingest_done
-entities09,entities09,entities_99_10,2009,California,1,10245,0,2009 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip,ingest_done
-entities10,entities10,entities_99_10,2010,California,1,10071,0,2010 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip,ingest_done
-entities12,entities12,entities_10_14,2912,California,1,10323,0,2011–12 Physical Fitness Entities,Entities.*,tsv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip,ingest_done
-entities13,entities13,entities_10_14,2013,California,1,10503,0,2012–13 Physical Fitness Entities,Entities.*,tsv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip,ingest_done
-entities14,entities14,entities_10_14,2014,California,1,10589,0,2013–14 Physical Fitness Entities,Entities.*,tsv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip,ingest_done
-entities99,entities99,entities_99_10,1999,California,1,6262,0,1999 PFT Entities,Entities.*,csv,latin1,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip,ingest_done
-physfit01,physfit01,physfit_99_10,2001,California,1,1297291,0,2001 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip,ingest_done
-physfit02,physfit02,physfit_99_10,2002,California,1,1365185,0,2002 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip,ingest_done
-physfit03,physfit03,physfit_99_10,2003,California,1,1322308,0,2003 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip,ingest_done
-physfit04,physfit04,physfit_99_10,2004,California,1,1364286,0,2004 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip,ingest_done
-physfit05,physfit05,physfit_99_10,2005,California,1,1398110,0,2005 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip,ingest_done
-physfit06,physfit06,physfit_99_10,2006,California,1,1577273,0,2006 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip,ingest_done
-physfit07,physfit07,physfit_99_10,2007,California,1,1602597,0,2007 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip,ingest_done
-physfit08,physfit08,physfit_99_10,2008,California,1,1821179,0,2008 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip,ingest_done
-physfit09,physfit09,physfit_99_10,2009,California,1,1854179,0,2009 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip,ingest_done
-physfit10,physfit10,physfit_99_10,2010,California,1,3623041,0,2010 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip,ingest_done
-physfit11,physfit11,physfit_10_14,2011,California,1,2743960,0,2011 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip,ingest_done
-physfit12,physfit12,physfit_10_14,2012,California,1,2175833,0,2011–12 Physical Fitness Research,.*ResearchFile.*,tsv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip,ingest_done
-physfit13,physfit13,physfit_10_14,2013,California,1,2214024,0,2012–13 Physical Fitness Research,.*ResearchFile.*,tsv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip,ingest_done
-physfit14,physfit14,physfit_10_14,2014,California,1,2233436,0,2013–14 Physical Fitness Research,.*ResearchFile.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip,ingest
-physfit99,physfit99,physfit_99_10,1999,California,1,947828,0,1999 PFT Fitness Results,PhysFit.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip,ingest_done
-subgroup01,subgroup01,subgroups_99_10,2001,California,1,166,0,2001 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip,ingest_done
-subgroup02,subgroup02,subgroups_99_10,2002,California,1,166,0,2002 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip,ingest_done
-subgroup03,subgroup03,subgroups_99_10,2003,California,1,152,0,2003 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip,ingest_done
-subgroup04,subgroup04,subgroups_99_10,2004,California,1,152,0,2004 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip,ingest_done
-subgroup05,subgroup05,subgroups_99_10,2005,California,1,152,0,2005 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip,ingest_done
-subgroup06,subgroup06,subgroups_99_10,2006,California,1,331,0,2006 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip,ingest_done
-subgroup07,subgroup07,subgroups_99_10,2007,California,1,331,0,2007 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip,ingest_done
-subgroup08,subgroup08,subgroups_99_10,2008,California,1,361,0,2008 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip,ingest_done
-subgroup09,subgroup09,subgroups_99_10,2009,California,1,361,0,2009 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip,ingest_done
-subgroup10,subgroup10,subgroups_99_10,2010,California,1,361,0,2010 PFT Subgroup,Subgroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip,ingest_done
-subgroup11,subgroup11,subgroups_10_14,2011,California,1,1069,0,2011 PFT Subgroup,Subgroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip,ingest_done
-subgroup12,subgroup12,subgroups_10_14,2012,California,1,845,0,2011–12 Physical Fitness Subgroups,Subgroups.*,tsv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip,ingest_done
-subgroup13,subgroup13,subgroups_10_14,2013,California,1,845,0,2012–13 Physical Fitness Subgroups,Subgroups.*,tsv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip,ingest_done
-subgroup14,subgroup14,subgroups_10_14,2014,California,1,845,0,2013–14 Physical Fitness Subgroups,Subgroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip,ingest_done
-subgroup99,subgroup99,subgroups_99_10,1999,California,1,152,0,1999 PFT Subgroup,SubGroups.*,csv,,,http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip,ingest_done
+"name","title","dest_table_name","time","start_line","end_line","header_lines","description","file","filetype","encoding","reftype","ref","state"
+"entities11","entities11","entities_2011e",2011,1,13714,0,"2011 PFT Entities","Entities.*","csv","latin1","generator","FixEnt11;http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip",
+"entities12","entities12","entities_2011e",2012,1,10323,0,"2011–12 Physical Fitness Entities","Entities.*","tsv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip","ingest_done"
+"entities13","entities13","entities_2011e",2013,1,10503,0,"2012–13 Physical Fitness Entities","Entities.*","tsv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip","ingest_done"
+"entities14","entities14","entities_2011e",2014,1,10589,0,"2013–14 Physical Fitness Entities","Entities.*","tsv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip","ingest_done"
+"entities01","entities01","entities_1999e2010",2001,1,7798,0,"2001 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip","ingest_done"
+"entities02","entities02","entities_1999e2010",2002,1,8202,0,"2002 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip","ingest_done"
+"entities03","entities03","entities_1999e2010",2003,1,9365,0,"2003 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip","ingest_done"
+"entities04","entities04","entities_1999e2010",2004,1,9035,0,"2004 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip","ingest_done"
+"entities05","entities05","entities_1999e2010",2005,1,9262,0,"2005 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip","ingest_done"
+"entities06","entities06","entities_1999e2010",2006,1,9564,0,"2006 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip","ingest_done"
+"entities07","entities07","entities_1999e2010",2007,1,9970,0,"2007 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip","ingest_done"
+"entities08","entities08","entities_1999e2010",2008,1,9922,0,"2008 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip","ingest_done"
+"entities09","entities09","entities_1999e2010",2009,1,10245,0,"2009 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip","ingest_done"
+"entities10","entities10","entities_1999e2010",2010,1,10071,0,"2010 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip","ingest_done"
+"entities99","entities99","entities_1999e2010",1999,1,6262,0,"1999 PFT Entities","Entities.*","csv","latin1",,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip","ingest_done"
+"physfit11","physfit11","physfit_2011e",2011,1,2743960,0,"2011 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip","ingest_done"
+"physfit12","physfit12","physfit_2011e",2012,1,2175833,0,"2011–12 Physical Fitness Research",".*ResearchFile.*","tsv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip","ingest_done"
+"physfit13","physfit13","physfit_2011e",2013,1,2214024,0,"2012–13 Physical Fitness Research",".*ResearchFile.*","tsv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip","ingest_done"
+"physfit14","physfit14","physfit_2011e",2014,1,2233436,0,"2013–14 Physical Fitness Research",".*ResearchFile.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip","ingest"
+"physfit01","physfit01","physfit_1999e2010",2001,1,1297291,0,"2001 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip","ingest_done"
+"physfit02","physfit02","physfit_1999e2010",2002,1,1365185,0,"2002 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip","ingest_done"
+"physfit03","physfit03","physfit_1999e2010",2003,1,1322308,0,"2003 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip","ingest_done"
+"physfit04","physfit04","physfit_1999e2010",2004,1,1364286,0,"2004 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip","ingest_done"
+"physfit05","physfit05","physfit_1999e2010",2005,1,1398110,0,"2005 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip","ingest_done"
+"physfit06","physfit06","physfit_1999e2010",2006,1,1577273,0,"2006 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip","ingest_done"
+"physfit07","physfit07","physfit_1999e2010",2007,1,1602597,0,"2007 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip","ingest_done"
+"physfit08","physfit08","physfit_1999e2010",2008,1,1821179,0,"2008 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip","ingest_done"
+"physfit09","physfit09","physfit_1999e2010",2009,1,1854179,0,"2009 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip","ingest_done"
+"physfit10","physfit10","physfit_1999e2010",2010,1,3623041,0,"2010 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip","ingest_done"
+"physfit99","physfit99","physfit_1999e2010",1999,1,947828,0,"1999 PFT Fitness Results","PhysFit.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip","ingest_done"
+"subgroup11","subgroup11","subgroups_2011e",2011,1,1069,0,"2011 PFT Subgroup","Subgroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles11.zip","ingest_done"
+"subgroup12","subgroup12","subgroups_2011e",2012,1,845,0,"2011–12 Physical Fitness Subgroups","Subgroups.*","tsv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles12.zip","ingest_done"
+"subgroup13","subgroup13","subgroups_2011e",2013,1,845,0,"2012–13 Physical Fitness Subgroups","Subgroups.*","tsv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles13.zip","ingest_done"
+"subgroup14","subgroup14","subgroups_2011e",2014,1,845,0,"2013–14 Physical Fitness Subgroups","Subgroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles14.zip","ingest_done"
+"subgroup01","subgroup01","subgroups_1999e2010",2001,1,166,0,"2001 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles01.zip","ingest_done"
+"subgroup02","subgroup02","subgroups_1999e2010",2002,1,166,0,"2002 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles02.zip","ingest_done"
+"subgroup03","subgroup03","subgroups_1999e2010",2003,1,152,0,"2003 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles03.zip","ingest_done"
+"subgroup04","subgroup04","subgroups_1999e2010",2004,1,152,0,"2004 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles04.zip","ingest_done"
+"subgroup05","subgroup05","subgroups_1999e2010",2005,1,152,0,"2005 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles05.zip","ingest_done"
+"subgroup06","subgroup06","subgroups_1999e2010",2006,1,331,0,"2006 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles06.zip","ingest_done"
+"subgroup07","subgroup07","subgroups_1999e2010",2007,1,331,0,"2007 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles07.zip","ingest_done"
+"subgroup08","subgroup08","subgroups_1999e2010",2008,1,361,0,"2008 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles08.zip","ingest_done"
+"subgroup09","subgroup09","subgroups_1999e2010",2009,1,361,0,"2009 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles09.zip","ingest_done"
+"subgroup10","subgroup10","subgroups_1999e2010",2010,1,361,0,"2010 PFT Subgroup","Subgroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles10.zip","ingest_done"
+"subgroup99","subgroup99","subgroups_1999e2010",1999,1,152,0,"1999 PFT Subgroup","SubGroups.*","csv",,,"http://www3.cde.ca.gov/pftresearchfiles/pftresearchfiles99.zip","ingest_done"
+"county_codes",,,,,,,,,,,"reftype","sos.ca.gov-county-county_codes",

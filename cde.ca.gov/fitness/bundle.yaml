@@ -43,3 +43,7 @@ names:
   vname: cde.ca.gov-fitness-0.0.2
 requirements: {}
 versions: {}
+pipelines:
+    build-physfit_2011e:
+        select_partition:
+            - SelectPartition("bundle.select_partition(source, row)")
