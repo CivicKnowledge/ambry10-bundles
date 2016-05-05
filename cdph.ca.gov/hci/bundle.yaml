@@ -324,6 +324,12 @@ external_documentation:
         title: Percent of workers' daily commute 10 or more minutes by walking or
             biking. Narrative and Examples.
         url: http://www.cdph.ca.gov/programs/Documents/HCI_Walk_Bicycle_778_Narrative_and_examples_3-26-14.pdf
+    daycare:
+        description: Number of licensed daycare center slots per 1,000 children aged 0-5 years
+        source: daycare
+        title:  Number of licensed daycare center slots per 1,000 children aged 0-5 years
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_Licensed%20Daycare%20Center_760_Narrative_11-13-15.pdf
+
 identity:
     dataset: hci
     id: d04p

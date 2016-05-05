@@ -80,7 +80,7 @@ class Bundle(ambry.bundle.Bundle):
         
         from geoid.census import Place, County, State, Cosub, Tract, Zcta
         from geoid.civick import GVid
-        import ambry.valuetype
+        from ambry.valuetype import FailedValue, GeoAcsVT
         
         CA_STATE = 6
     
@@ -116,9 +116,9 @@ class Bundle(ambry.bundle.Bundle):
             r = None
     
         if r is None:
-            return ambry.valuetype.FailedValue(None)
-    
-        return ambry.valuetype.Geoid(r)
+            return FailedValue(None)
+
+        return GeoAcsVT(r)
         
     def extract_recode(self, row):
         """Extract and convert the race / ethnicity codes """
