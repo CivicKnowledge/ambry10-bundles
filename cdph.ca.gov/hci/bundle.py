@@ -116,17 +116,10 @@ class Bundle(ambry.bundle.Bundle):
             r = None
     
         if r is None:
-            return FailedValue(None)
+            return None
 
         return GeoAcsVT(r)
         
-    def extract_recode(self, row):
-        """Extract and convert the race / ethnicity codes """
-        
-        try:
-            return None #self.recode_map.get(row.race_eth_code, None)
-        except KeyError:
-            return None 
         
         
         
