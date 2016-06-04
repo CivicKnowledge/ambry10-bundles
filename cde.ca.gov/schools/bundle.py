@@ -7,6 +7,7 @@ class Bundle(ambry.bundle.Bundle):
     @memoize
     def county_map(self):
         
+
         return { row.sos_code:row.copy() for row in self.dep('county_codes') }
         
         

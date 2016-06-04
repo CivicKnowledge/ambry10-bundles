@@ -5,7 +5,7 @@
 class GenerateDistricts(object):
 
     def __init__(self, bundle, source=None):
-
+        self.bundle = bundle
         pass
 
     def __iter__(self):
@@ -14,25 +14,17 @@ class GenerateDistricts(object):
         import censuslib.dataframe
         import pandas as pd
 
-        # The CensusDataFrame has mehods for doing sums and ratios with 90% margins and
-        # relative standard errors. 
-        df_class = censuslib.dataframe.CensusDataFrame
-
-        l = get_library()
-        b = l.bundle('census.gov-acs-enrollment-p5ye2014-hdp-0.0.1')
-
-
         # The district NCES codes aren't in the district file, although they are in the school file. 
-        schools = b.dep('schools').analysis.dataframe()
+        schools = self.bundle.partition(table='schools').analysis.dataframe()
         schools['cd_code'] = schools.cdscode.apply(lambda cdscode: cdscode[:7])
 
         nces_districts = schools[schools.statustype=='Active'][['ncesdist', 'cd_code']].drop_duplicates()
 
         # The actual districts file
-        ca_districts = b.dep('districts').analysis.dataframe()[['cd_code', 'county_sos','county_fips',
-                                                                'county_gvid','county','district']]
+        ca_districts = self.bundle.partition(table='districts').analysis.dataframe()[
+            ['cd_code', 'county_sos','county_fips','county_gvid','county','district']]
 
-        assert len(nces_districts) == len(ca_districts)
+        #assert len(nces_districts) == len(ca_districts)
 
         # Combine the codes from the school file with the district file
         cd_code_districts = ca_districts.set_index('cd_code').join(nces_districts.set_index('cd_code')).reset_index()
@@ -45,15 +37,19 @@ class GenerateDistricts(object):
         from geoid.civick import GVid
         dist_pred = lambda row: row.state ==6
 
+
         def mk_cd_code(nces):
             return '06{:05d}'.format(nces)
 
         # Combine the three partitions for school districts in the census, and extract the NCES code
-        elem = b.dep('elementary').analysis.dataframe(dist_pred)[['geoid', 'name']].copy()
+        
+        elem = self.bundle.dep('elementary').analysis.dataframe(dist_pred)[['geoid', 'name']].copy()
         elem['nces'] = elem.geoid.apply(lambda geoid: mk_cd_code(AcsGeoid.parse(geoid).sdelm) )
-        second = b.dep('secondary').analysis.dataframe(dist_pred)[['geoid', 'name']].copy()
+        
+        second = self.bundle.dep('secondary').analysis.dataframe(dist_pred)[['geoid', 'name']].copy()
         second['nces'] = second.geoid.apply(lambda geoid: mk_cd_code(AcsGeoid.parse(geoid).sdsec) )
-        unified = b.dep('unified').analysis.dataframe(dist_pred)[['geoid', 'name']].copy()
+        
+        unified = self.bundle.dep('unified').analysis.dataframe(dist_pred)[['geoid', 'name']].copy()
         unified['nces'] = unified.geoid.apply(lambda geoid: mk_cd_code(AcsGeoid.parse(geoid).sduni) )
 
         # Add a GVID
