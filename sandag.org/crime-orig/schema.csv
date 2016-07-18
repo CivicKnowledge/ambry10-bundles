@@ -1,33 +1,24 @@
-"table","sequence_id","column","valuetype",,"description"
-,,,,,
-"crimea",1,"id","id",,"Crime incident data for the first release, from 2007 to 2012"
-"crimea",2,"activitytype","d/str",,"activityType"
-"crimea",3,"agency","d/str",,"AGENCY"
-"crimea",4,"activitydate","d/datetime",,"activityDate"
-"crimea",5,"legend","d/str",,"LEGEND"
-"crimea",6,"charge_description","d/str",,"Charge_Description"
-"crimea",7,"block_address","d/str",,"BLOCK_ADDRESS"
-"crimea",8,"city_name","d/str",,"City_Name"
-"crimea",9,"zipcode","d/geo/usps/zip?",,"ZipCode"
-,,,,,
-"crimeb",1,"id","id",,"Crime incident data for the second release, from 2012 to 2015"
-"crimeb",2,"reportingyear","d/int",,"reportingYear"
-"crimeb",3,"reportingmonth","d/int",,"reportingMonth"
-"crimeb",4,"agency","d/str",,"agency"
-"crimeb",5,"activitystatus","d/str",,"activityStatus"
-"crimeb",6,"activitydate","d/datetime",,"activitydate"
-"crimeb",7,"numberactualreported","d/int",,"numberActualReported"
-"crimeb",8,"block_address","d/str",,"BLOCK_ADDRESS"
-"crimeb",9,"city","d/str",,"city"
-"crimeb",10,"zipcode","d/geo/usps/zip?",,"zipCode"
-"crimeb",11,"censustract","d/str?",,"censusTract"
-"crimeb",12,"censusblock","d/str?",,"censusBlock"
-"crimeb",13,"crimecategory","d/str",,"CrimeCategory"
-"crimeb",14,"crimedescription","d/str",,"CrimeDescription"
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,,
-,,,,," "
+table,sequence_id,column,valuetype,,description
+crimea,1,id,id,,"Crime incident data for the first release, from 2007 to 2012"
+crimea,2,activitytype,dimension/str,,activityType
+crimea,3,agency,dimension/str,,AGENCY
+crimea,4,activitydate,datetime,,activityDate
+crimea,5,legend,dimension/str,,LEGEND
+crimea,6,charge_description,dimension/str,,Charge_Description
+crimea,7,block_address,dimension/text,,BLOCK_ADDRESS
+crimea,8,city_name,dimension/str,,City_Name
+crimea,9,zipcode,zipp4,,ZipCode
+crimeb,1,id,id,,"Crime incident data for the second release, from 2012 to 2015"
+crimeb,2,reportingyear,year,,reportingYear
+crimeb,3,reportingmonth,month,,reportingMonth
+crimeb,4,agency,dimension/str,,agency
+crimeb,5,activitystatus,dimension/str,,activityStatus
+crimeb,6,activitydate,datetime,,activitydate
+crimeb,7,numberactualreported,measure/int,,numberActualReported
+crimeb,8,block_address,dimension/text,,BLOCK_ADDRESS
+crimeb,9,city,dimension/str,,city
+crimeb,10,zipcode,zipp4,,zipCode
+crimeb,11,censustract,dimension/str,,censusTract
+crimeb,12,censusblock,dimension/str,,censusBlock
+crimeb,13,crimecategory,dimension/str,,CrimeCategory
+crimeb,14,crimedescription,dimension/str,,CrimeDescription

@@ -103,12 +103,18 @@ class Bundle(ambry.bundle.Bundle):
         
         return pl
 
+    def null_is_none(self, v):
+
+        if str(v).strip() == 'NULL':
+            return None
+            
+        return v
        
     def mk_gvid(self, row, v):
         
         from geoid.census import State, County
         from geoid.civick import GVid
-                
+
         try:
             if row.localelevelid == 1 or row.name == 'STATEWIDE':
                 r = row.statefipscode.convert(GVid)
@@ -117,7 +123,7 @@ class Bundle(ambry.bundle.Bundle):
             else:
                 r = None
                 
-        except (TypeError, AttributeError) as e:
+        except (TypeError, ValueError, AttributeError) as e:
             r = None
      
         return r

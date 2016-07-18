@@ -70,6 +70,13 @@ external_documentation:
         source: null
         title: Dataset Page
         url: http://www.cdph.ca.gov/programs/Pages/HealthyCommunityIndicators.aspx
+    daycare:
+        description: Number of licensed daycare center slots per 1,000 children aged
+            0-5 years
+        source: daycare
+        title: Number of licensed daycare center slots per 1,000 children aged 0-5
+            years
+        url: http://www.cdph.ca.gov/programs/Documents/HCI_Licensed%20Daycare%20Center_760_Narrative_11-13-15.pdf
     food_affordability:
         description: The ratio of dollars to purchase the annual market basket of
             foods in USDA's low plan for meals eaten at home for a female-headed household
@@ -324,22 +331,16 @@ external_documentation:
         title: Percent of workers' daily commute 10 or more minutes by walking or
             biking. Narrative and Examples.
         url: http://www.cdph.ca.gov/programs/Documents/HCI_Walk_Bicycle_778_Narrative_and_examples_3-26-14.pdf
-    daycare:
-        description: Number of licensed daycare center slots per 1,000 children aged 0-5 years
-        source: daycare
-        title:  Number of licensed daycare center slots per 1,000 children aged 0-5 years
-        url: http://www.cdph.ca.gov/programs/Documents/HCI_Licensed%20Daycare%20Center_760_Narrative_11-13-15.pdf
-
 identity:
     dataset: hci
     id: d04p
-    revision: 6
+    revision: 7
     source: cdph.ca.gov
-    version: 0.0.6
+    version: 0.0.7
 names:
-    fqname: cdph.ca.gov-hci-0.0.6~d04p006
+    fqname: cdph.ca.gov-hci-0.0.7~d04p007
     name: cdph.ca.gov-hci
-    vid: d04p006
-    vname: cdph.ca.gov-hci-0.0.6
+    vid: d04p007
+    vname: cdph.ca.gov-hci-0.0.7
 requirements: {}
 versions: {}
